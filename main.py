@@ -17,6 +17,8 @@ if __name__ == '__main__':
 
     group = Group(3)
 
+    group.multiply_all()
+
     group.print()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
