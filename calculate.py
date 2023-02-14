@@ -5,8 +5,8 @@ class Scalar:
         self.li = li0
         self.lj = lj0
 
-    def print(self):
-        print(f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))')
+    def print(self, end=", "):
+        print(f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))', end=end)
 
 
 class Element:
@@ -36,6 +36,7 @@ class Group:
     def print(self):
         for element in self.elements:
             element.print()
+            print()
 
 
 
