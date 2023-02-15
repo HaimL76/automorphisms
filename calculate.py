@@ -15,6 +15,7 @@ class Element:
         self.i = i0
         self.j = j0
         self.scalars = []
+        self.products = []
 
         for l in range(1, self.n):
             for k in range(l+1, self.n+1):
@@ -47,12 +48,12 @@ class Group:
                 lj: int = 0
 
                 if scalar1.lj == scalar2.li:
-                    li = scalar2.li
-                    lj = scalar1.lj
-
-                if scalar1.li == scalar2.lj:
                     li = scalar1.li
                     lj = scalar2.lj
+
+                if scalar1.li == scalar2.lj:
+                    li = scalar2.li
+                    lj = scalar1.lj
 
                 if li > 0 and lj > 0:
                     element: Element = None
@@ -65,10 +66,22 @@ class Group:
                         if element0.i == li and element0.j == lj:
                             element = element0
 
+                    if element is not None:
+                        scalar1.print()
+                        scalar2.print()
+                        print()
+                        element.products.append((scalar1, scalar2))
+
     def print(self):
         for element in self.elements:
             element.print()
             print()
+
+        for element in self.elements:
+            for product in element.products:
+                pass
+                ##product[0].print()
+                ##product[1].print()
 
 
 
