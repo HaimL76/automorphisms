@@ -9,7 +9,14 @@ class Scalar:
         return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
 
 
-class Element:
+class Product(object):
+    def __init__(self, left0: Scalar, right0: Scalar, is_plus0: bool):
+        self.left = left0
+        self.right = right0
+        self.is_plus = is_plus0
+
+
+class Element(object):
     def __init__(self, n0: int, i0: int, j0: int):
         self.n = n0
         self.i = i0
@@ -18,7 +25,7 @@ class Element:
         self.products = []
 
         for l in range(1, self.n):
-            for k in range(l+1, self.n+1):
+            for k in range(l + 1, self.n + 1):
                 self.scalars.append(Scalar(self.i, self.j, l, k))
 
     def __str__(self):
@@ -35,12 +42,40 @@ class Element:
         return str0
 
 
-class Group:
+def multiply(element1: Element, element2: Element) -> Product:
+    products: list = []
+
+    for scalar1 in element1.scalars:
+        for scalar2 in element2.scalars:
+            li: int = 0
+            lj: int = 0
+
+            is_plus: bool = False
+
+            if scalar1.lj == scalar2.li:
+                li = scalar1.li
+                lj = scalar2.lj
+
+                is_plus = True
+
+            if scalar1.li == scalar2.lj:
+                li = scalar2.li
+                lj = scalar1.lj
+
+                is_plus = False
+
+            if li > 0 and lj > 0:
+                products.append(Product(scalar1, scalar2, is_plus))
+
+    return products
+
+
+class Group(object):
     def __init__(self, n: int):
         self.elements = []
 
         for i in range(1, n):
-            for j in range(i+1, n+1):
+            for j in range(i + 1, n + 1):
                 self.elements.append(Element(n, i, j))
 
     def multiply_all(self):
@@ -48,18 +83,12 @@ class Group:
             for element2 in self.elements:
                 element: Element = self.get_product_element(element1, element2)
 
-                products: list = self.multiply(element1, element2)
+                products: list = multiply(element1, element2)
 
                 if element is not None:
                     for product in products:
-                        if isinstance(product, tuple) and len(product) == 2:
-                            left = product[0]
-                            right = product[1]
-
-                            if left is not None and right is not None:
-                                print(f'{left} * {right}')
-
-                        element.products.append(product)
+                        if isinstance(product, Product):
+                            element.products.append(product)
 
     def get_product_element(self, element1: Element, element2: Element):
         element: Element = None
@@ -93,27 +122,6 @@ class Group:
 
         return element
 
-    def multiply(self, element1: Element, element2: Element):
-        products: list = []
-
-        for scalar1 in element1.scalars:
-            for scalar2 in element2.scalars:
-                li: int = 0
-                lj: int = 0
-
-                if scalar1.lj == scalar2.li:
-                    li = scalar1.li
-                    lj = scalar2.lj
-
-                if scalar1.li == scalar2.lj:
-                    li = scalar2.li
-                    lj = scalar1.lj
-
-                if li > 0 and lj > 0:
-                    products.append((scalar1, scalar2))
-
-        return products
-
     def print(self):
         for element in self.elements:
             print(element, end="")
@@ -121,9 +129,13 @@ class Group:
 
         for element in self.elements:
             for product in element.products:
-                pass
-                ##product[0].print()
-                ##product[1].print()
+                left = product.left
+                right = product.right
 
+                plus_minus = '+'
 
+                if not product.is_plus:
+                    plus_minus = '-'
 
+                if left is not None and right is not None:
+                    print(f'{plus_minus} {left} * {right}')
