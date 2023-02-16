@@ -138,4 +138,6 @@ class Group(object):
                     plus_minus = '-'
 
                 if left is not None and right is not None:
-                    print(f'{plus_minus} {left} * {right}')
+                    print(f'{plus_minus} {left} * {right}', end="")
+
+            print()
