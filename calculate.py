@@ -81,14 +81,21 @@ class Group(object):
     def multiply_all(self):
         for element1 in self.elements:
             for element2 in self.elements:
-                element: Element = self.get_product_element(element1, element2)
+                i1: int = element1.i
+                j1: int = element1.j
 
-                products: list = multiply(element1, element2)
+                i2: int = element2.i
+                j2: int = element2.j
 
-                if element is not None:
-                    for product in products:
-                        if isinstance(product, Product):
-                            element.products.append(product)
+                if i1 < j2:
+                    element: Element = self.get_product_element(element1, element2)
+
+                    products: list = multiply(element1, element2)
+
+                    if element is not None:
+                        for product in products:
+                            if isinstance(product, Product):
+                                element.products.append(product)
 
     def get_product_element(self, element1: Element, element2: Element):
         element: Element = None
