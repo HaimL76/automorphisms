@@ -10,7 +10,9 @@ class Scalar:
 
 
 class Product(object):
-    def __init__(self, left0: Scalar, right0: Scalar, is_plus0: bool):
+    def __init__(self, i0: int, j0: int, left0: Scalar, right0: Scalar, is_plus0: bool):
+        self.i = i0
+        self.j = j0
         self.left = left0
         self.right = right0
         self.is_plus = is_plus0
@@ -41,6 +43,28 @@ class Element(object):
 
         return str0
 
+    def compare_scalars(self):
+        zeros: list = []
+
+        if isinstance(self.scalars, list) and len(self.scalars) > 0:
+            for scalar in self.scalars:
+                if isinstance(scalar, Scalar):
+                    li: int = scalar.li
+                    lj: int = scalar.lj
+
+                    prods: list = []
+
+                    if isinstance(self.products, list) and len(self.products) > 0:
+                        for product in self.products:
+                            if isinstance(product, Product):
+                                if li == product.i and lj == product.j:
+                                    prods.append(product)
+
+                    if len(prods) > 0:
+                        pass
+
+
+
 
 def multiply(element1: Element, element2: Element) -> Product:
     products: list = []
@@ -65,13 +89,14 @@ def multiply(element1: Element, element2: Element) -> Product:
                 is_plus = False
 
             if li > 0 and lj > 0:
-                products.append(Product(scalar1, scalar2, is_plus))
+                products.append(Product(li, lj, scalar1, scalar2, is_plus))
 
     return products
 
 
 class Group(object):
     def __init__(self, n: int):
+        self.equal_to_zero = []
         self.elements = []
 
         for i in range(1, n):
@@ -87,7 +112,7 @@ class Group(object):
                 i2: int = element2.i
                 j2: int = element2.j
 
-                if i1 < j2:
+                if i1 < j2 and (i1 < i2 or j1 < j2):
                     element: Element = self.get_product_element(element1, element2)
 
                     products: list = multiply(element1, element2)
@@ -96,6 +121,10 @@ class Group(object):
                         for product in products:
                             if isinstance(product, Product):
                                 element.products.append(product)
+
+                        element.compare_scalars()
+                    else:
+                        self.equal_to_zero.append((element1, element2, products))
 
     def get_product_element(self, element1: Element, element2: Element):
         element: Element = None
@@ -135,7 +164,29 @@ class Group(object):
             print()
 
         for element in self.elements:
+            print(f'E_({element.i},{element.j})=', end="")
+
             for product in element.products:
+                left = product.left
+                right = product.right
+
+                plus_minus = '+'
+
+                if not product.is_plus:
+                    plus_minus = '-'
+
+                if left is not None and right is not None:
+                    print(f'{plus_minus} {left} * {right}', end="")
+
+            print()
+
+        for tup in self.equal_to_zero:
+            element1: Element = tup[0]
+            element2: Element = tup[1]
+
+            print(f'E_({element1.i},{element1.j})*E_({element2.i},{element2.j})=', end="")
+
+            for product in tup[2]:
                 left = product.left
                 right = product.right
 

@@ -15,7 +15,7 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-    group = Group(4)
+    group = Group(3)
 
     group.multiply_all()
 
