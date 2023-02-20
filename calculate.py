@@ -4,9 +4,13 @@ class Scalar:
         self.uj = uj0
         self.li = li0
         self.lj = lj0
+        self.is_zero = False
 
     def __str__(self):
-        return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
+        if self.is_zero:
+            return "0"
+        else:
+            return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
 
 
 class Product(object):
@@ -62,6 +66,8 @@ class Element(object):
 
                     if len(prods) > 0:
                         pass
+                    else:
+                        scalar.is_zero = True
 
 
 
@@ -121,10 +127,12 @@ class Group(object):
                         for product in products:
                             if isinstance(product, Product):
                                 element.products.append(product)
-
-                        element.compare_scalars()
                     else:
                         self.equal_to_zero.append((element1, element2, products))
+
+        for element in self.elements:
+            if isinstance(element, Element) and element.j > element.i + 1:
+                element.compare_scalars()
 
     def get_product_element(self, element1: Element, element2: Element):
         element: Element = None
