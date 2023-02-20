@@ -11,7 +11,16 @@ class Scalar:
         if self.is_zero:
             return "0"
         else:
-            return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
+            if isinstance(self.products, list) and len(self.products):
+                str0: str = ''
+
+                for product in self.products:
+                    if isinstance(product, Product):
+                        str0 += str(product)
+
+                return str0
+            else:
+                return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
 
 
 class Product(object):
@@ -21,6 +30,14 @@ class Product(object):
         self.left = left0
         self.right = right0
         self.is_plus = is_plus0
+
+    def __str__(self):
+        plus_minus: str = '-'
+
+        if self.is_plus:
+            plus_minus = '+'
+
+        return f'{plus_minus}{self.left}*{self.right}'
 
 
 class Element(object):
