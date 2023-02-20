@@ -5,6 +5,7 @@ class Scalar:
         self.li = li0
         self.lj = lj0
         self.is_zero = False
+        self.products = []
 
     def __str__(self):
         if self.is_zero:
@@ -65,7 +66,8 @@ class Element(object):
                                     prods.append(product)
 
                     if len(prods) > 0:
-                        pass
+                        for prod in prods:
+                            scalar.products.append(prod)
                     else:
                         scalar.is_zero = True
 
