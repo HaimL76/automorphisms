@@ -21,4 +21,6 @@ if __name__ == '__main__':
 
     group.print()
 
+    group.print_scalars()
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

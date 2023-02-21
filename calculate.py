@@ -52,6 +52,22 @@ class Element(object):
             for k in range(l + 1, self.n + 1):
                 self.scalars.append(Scalar(self.i, self.j, l, k))
 
+    def print_scalars(self):
+        for scalar in self.scalars:
+            if isinstance(scalar, Scalar):
+                str0: str = str(scalar)
+
+                if scalar.is_zero:
+                    str0 += '=0'
+                else:
+                    if isinstance(scalar.products, list) and len(scalar.products):
+                        for product in scalar.products:
+                            str0 += f'={product}'
+
+                print(str0)
+
+
+
     def __str__(self):
         str0: str = ""
 
@@ -185,27 +201,34 @@ class Group(object):
 
         return element
 
-    def print(self):
+    def print_scalars(self):
         for element in self.elements:
             print(element, end="")
             print()
 
+    def print(self):
         for element in self.elements:
-            print(f'E_({element.i},{element.j})=', end="")
+            if isinstance(element, Element):
+                print(element, end="")
+                print()
 
-            for product in element.products:
-                left = product.left
-                right = product.right
+        for element in self.elements:
+            if isinstance(element, Element):
+                print(f'E_({element.i},{element.j})=', end="")
 
-                plus_minus = '+'
+                for product in element.products:
+                    left = product.left
+                    right = product.right
 
-                if not product.is_plus:
-                    plus_minus = '-'
+                    plus_minus = '+'
 
-                if left is not None and right is not None:
-                    print(f'{plus_minus} {left} * {right}', end="")
+                    if not product.is_plus:
+                        plus_minus = '-'
 
-            print()
+                    if left is not None and right is not None:
+                        print(f'{plus_minus} {left} * {right}', end="")
+
+                print()
 
         for tup in self.equal_to_zero:
             element1: Element = tup[0]
