@@ -7,6 +7,9 @@ class Scalar:
         self.is_zero = False
         self.products = []
 
+    def format_scalar_indices(self) -> str:
+        return f'a_(({self.ui},{self.uj}),({self.li},{self.lj}))'
+
     def __str__(self):
         if self.is_zero:
             return "0"
@@ -55,7 +58,7 @@ class Element(object):
     def print_scalars(self):
         for scalar in self.scalars:
             if isinstance(scalar, Scalar):
-                str0: str = str(scalar)
+                str0: str = scalar.format_scalar_indices()
 
                 if scalar.is_zero:
                     str0 += '=0'
@@ -65,8 +68,6 @@ class Element(object):
                             str0 += f'={product}'
 
                 print(str0)
-
-
 
     def __str__(self):
         str0: str = ""
@@ -103,8 +104,6 @@ class Element(object):
                             scalar.products.append(prod)
                     else:
                         scalar.is_zero = True
-
-
 
 
 def multiply(element1: Element, element2: Element) -> Product:
@@ -203,7 +202,7 @@ class Group(object):
 
     def print_scalars(self):
         for element in self.elements:
-            print(element, end="")
+            element.print_scalars()
             print()
 
     def print(self):
