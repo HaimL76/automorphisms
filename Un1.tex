@@ -320,6 +320,42 @@ so \( m_{n'}=m_{n+1}=m_{n}+n-1={n-1 \choose 2}+n-1=\frac{(n-1) \cdot (n-2)}{2}+n
 \frac{n^2-n}{2}=\frac{n \cdot (n-1)}{2}={n \choose 2}=m_{n+1}=m_{n'} \), and we proved the assumption \newline
  
 \textbf{The group \( U_{n}(\mathbb{Z}) \)} \newline
-We have proved several basic facts, regarding 
+We have proved several basic facts, regarding elementary matrices, of the form \( \{ E_{i,j} \}_{i<j} \). \newline
+Now, we shall propose a few more basic facts. \newline
+\textbf{Notation} \newline
+We mark by \( U_{n}(\mathbb{Z}) \) the set of all upper triangular matrices \( n \times n \) with \( 1 \) in the main diagonal, 
+and any integer values above the main diagonal, \( a_{i,j} \in \mathbb{Z} \). \newline
 
+\textbf{Exercise} Prove that the set \( U_{n}(\mathbb{Z}) \) is a group, with the usual operation of matrix multiplication. \newline \newline
+\textbf{Proof}
+$$
+(a_{i,j})=A=\begin{pmatrix} 
+	1 & a_{1,2} & \dots & a_{1,n-1} & a_{1,n} \\
+	0 & 1 & \dots & a_{2,n-1} & a_{2,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & a_{k,n-1} & a_{k,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 1 & a_{n-1,n} \\
+	0 & 0 & \dots & 0 & 1 \\
+\end{pmatrix},
+(b_{i,j})=B=\begin{pmatrix} 
+	1 & b_{1,2} & \dots & b_{1,n-1} & b_{1,n} \\
+	0 & 1 & \dots & b_{2,n-1} & b_{2,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & b_{k,n-1} & b_{k,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 1 & b_{n-1,n} \\
+	0 & 0 & \dots & 0 & 1 \\
+\end{pmatrix}
+$$
+We need to prove that \( (c_{i,j})=A \cdot B \in U_{n}(\mathbb{Z}) \) \newline
+1. \( 1 \leq l \leq n, c_{l,l}=\sum_{k=1}^{n} a_{l,k} \cdot b_{k,l} \). \newline
+We observe that \( a_{l,1}=a_{l,2}= \dots =a_{l,l-1}=0 \), and \( b_{l+l,l}=b_{l+2,l}= \dots =b_{n,l}=0 \). \newline
+So, \( c_{l,l}=\sum_{k=1}^{n} a_{l,k} \cdot b_{k,l}=0+0+ \dots +0+a_{l,l} \cdot b_{l,l}+0+0 \dots 0=1 \). \newline
+Thus, we have proved that each element in the main diagonal of \( (c_{i,j}) \) is \( 1 \). \newline \newline
+
+1. \( 1 \leq l \leq n,1 \leq m \leq l-1, c_{l,m}=\sum_{k=1}^{n} a_{l,k} \cdot b_{k,l} \). \newline
+We observe that \( a_{l,1}=a_{l,2}= \dots =a_{l,l-1}=0 \), and \( b_{m+1,m}=b_{m+2,m}= \dots =b_{n,m}=0 \). \newline
+Since \( m \leq l-1 \). \newline
+Thus, we have proved that each element in the main diagonal of \( (c_{i,j}) \) is \( 1 \). \newline
 \end{document}
