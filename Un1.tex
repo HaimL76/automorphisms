@@ -375,4 +375,38 @@ The fact that all matrices of this form have an inverse is obvious by looking at
 a matrix of this form, which, clearly, is \( n \), since the matrix is already in a reduced form. \newline
 
 Conclusion: \( U_{n}(\mathbb{Z}) \) is a group. \newline
+
+\textbf{Exercise} All the matrices of the form \( \{ E_{i,i+1}, 1 \leq i \leq n-1 \} \) generate \( U_{n}(\mathbb{Z}) \). \newline \newline
+\textbf{Proof} \newline
+We already proved that \( [E_{i,j},E_{j,k}]=E_{i,k} \), specifically, \( [E_{i,i+1},E_{i+1,i+2}]=E_{i,i+2} \). \newline
+Also, we proved that \( \forall m \in \mathbb{N}, (a_{i,j})^m=E_{i,j}^m=(a_{i,j}) \) with \( a_{i,j}=m \). \newline
+This mean that all the matrices of the form \( \{ E_{i,i+1} \} \) yield all the matrices which have only one integer above 
+the main diagonal. \newline
+
+Let
+$$
+(a_{i,j})=A=\begin{pmatrix} 
+	1 & 0 & \dots & 0 & 0 \\
+	0 & 1 & \dots & 0 & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & a_{i,j} & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 1 & 0 \\
+	0 & 0 & \dots & 0 & 1 \\
+\end{pmatrix},
+(b_{l,k})=B=\begin{pmatrix} 
+	1 & 0 & \dots & 0 & 0 \\
+	0 & 1 & \dots & 0 & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & b_{l,k} & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 1 & 0 \\
+	0 & 0 & \dots & 0 & 1 \\
+\end{pmatrix}
+$$
+\( |a_{i,j}|,|b_{l,k}|>1 \), and the two pairs of indices, \( \{i,j\},\{l,k\} \), are pairwise disjoint. \newline
+Then, \( (c_{m,p})=A \cdot B \) is the matrix with \( 1 \) on the main diagonal, \( 0 \) below the main diagonal,\newline
+and \( c_{i,j}=a_{i,j},c_{l,k}=b_{l,k} \). \newline
+To prove this, we can observe that since \( |a_{i,j}|,|b_{l,k}|>1 \), we can write (based on what we already proved) \newline
+\( (a_{i,j})=A=E_{i,j}^{a_{i,j}} \)
 \end{document}
