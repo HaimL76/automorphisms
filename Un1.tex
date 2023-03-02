@@ -409,4 +409,34 @@ Then, \( (c_{m,p})=A \cdot B \) is the matrix with \( 1 \) on the main diagonal,
 and \( c_{i,j}=a_{i,j},c_{l,k}=b_{l,k} \). \newline
 To prove this, we can observe that since \( |a_{i,j}|,|b_{l,k}|>1 \), we can write (based on what we already proved) \newline
 \( (a_{i,j})=A=E_{i,j}^{a_{i,j}} \)
+
+
+\textbf{The free Lie algebra \( L_{n}\)} \newline
+The group \( U_{n}(\mathbb{Z}) \) gives rise to a Lie algebra over \( \mathbb{Z} \), \newline
+which consists of all matrices of the form $$ (a_{l,k})=\begin{pmatrix} 
+	0 & a_{1,2} & a_{1,3} & \dots & a_{1,n} \\
+	0 & 0 & a_{2,3} & \dots & a_{2,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & a_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix} 
+$$
+Which means, we have \( 0 \) on the main diagonal and under it, and \( a_{i,j} \in \mathbb{Z},i<j \),
+that is, integer values above the main diagonal. \newline
+
+\textbf{Exercise} This is a Lie algebra over \( \mathbb{Z} \) \newline
+\textbf{Proof} \newline
+Defining the multiplication (Lie brackets) on \( L_{n} \) by the standard matrix commutator
+(i.e., \( \forall A,B \in M_{n}(\mathbb{F}),[A,B] := A \cdot B-B \cdot A \), automatically
+gives all the Lie algebra axioms, for example,\newline
+\( \forall A,B,C \in M_{n}(\mathbb{F}),\alpha,\beta \in \mathbb{F},\newline
+[\alpha \cdot A+\beta \cdot B,C]=(\alpha \cdot A+\beta \cdot B) \cdot C-C \cdot \alpha \cdot A+\beta \cdot B)=\newline
+(\alpha \cdot A) \cdot C+(\beta \cdot B) \cdot C-(C \cdot (\alpha \cdot A)+C \cdot (\beta \cdot B)=\newline
+\alpha \cdot (A \cdot C)+\beta \cdot (B \cdot C)-\alpha \cdot (C \cdot A)-\beta \cdot (C \cdot B)=\newline
+\alpha \cdot (A \cdot C)-\alpha \cdot (C \cdot A)+\beta \cdot (B \cdot C)-\beta \cdot (C \cdot B)=\newline
+\alpha \cdot (A \cdot C-C \cdot A)+\beta \cdot (B \cdot C-C \cdot B)=\alpha \cdot [A,C]+\beta \cdot [B,C]\newline
+\), Thus we prove linearity in the first component. There should be no need to prove all other axioms, \newline
+since they can all be easily proved using the same matrix and scalar multiplications. \newline
+We do need to prove that \( L \) is closed under Lie brackets defined above. \newline
+
 \end{document}
