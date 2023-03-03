@@ -408,11 +408,10 @@ $$
 Then, \( (c_{m,p})=A \cdot B \) is the matrix with \( 1 \) on the main diagonal, \( 0 \) below the main diagonal,\newline
 and \( c_{i,j}=a_{i,j},c_{l,k}=b_{l,k} \). \newline
 To prove this, we can observe that since \( |a_{i,j}|,|b_{l,k}|>1 \), we can write (based on what we already proved) \newline
-\( (a_{i,j})=A=E_{i,j}^{a_{i,j}} \)
-
+\( (a_{i,j})=A=E_{i,j}^{a_{i,j}} \) \newpage
 
 \textbf{The free Lie algebra \( L_{n}\)} \newline
-The group \( U_{n}(\mathbb{Z}) \) gives rise to a Lie algebra over \( \mathbb{Z} \), \newline
+The group \( U_{n}(\mathbb{Z}) \) gives rise to a Lie algebra over some field \( \mathbb{F} \), \newline
 which consists of all matrices of the form $$ (a_{l,k})=\begin{pmatrix} 
 	0 & a_{1,2} & a_{1,3} & \dots & a_{1,n} \\
 	0 & 0 & a_{2,3} & \dots & a_{2,n} \\
@@ -421,10 +420,11 @@ which consists of all matrices of the form $$ (a_{l,k})=\begin{pmatrix}
 	0 & 0 & 0 & \dots & 0 \\
 \end{pmatrix} 
 $$
-Which means, we have \( 0 \) on the main diagonal and under it, and \( a_{i,j} \in \mathbb{Z},i<j \),
-that is, integer values above the main diagonal. \newline
+Which means, we have \( 0 \) on the main diagonal and under it, and \( a_{i,j} \in \mathbb{F},i<j \), \newline
+that is, arbitrary scalars above the main diagonal. These matrices are precisely the matrices of \( U_{n}(\mathbb{Z}) \) \newline
+minus the unit matrix, and with scalars from \( \mathbb{F} \), rather than \( \mathbb{Z} \). \newline
 
-\textbf{Exercise} This is a Lie algebra over \( \mathbb{Z} \) \newline
+\textbf{Exercise} This is a Lie algebra over \( \mathbb{F} \) \newline
 \textbf{Proof} \newline
 Defining the multiplication (Lie brackets) on \( L_{n} \) by the standard matrix commutator
 (i.e., \( \forall A,B \in M_{n}(\mathbb{F}),[A,B] := A \cdot B-B \cdot A \), automatically
@@ -485,6 +485,11 @@ In other words, \( L_{n} \) is a nilpotent Lie algebra. \newline
 After verifying that the Lie brackets operation is defined, as multiplication in \( L_{n} \), we observe also that \( L_{n} \) \newline
 is closed under addition, defined as the standard matrix addition. But this is obvious, since the matrix addition is simply \( a_{i,j}+b_{i,j},1 \leq i,j \leq n \), \newline 
 and so, the sums of all \( 0 \) on the main diagonal and under it, which means \( a_{i,j}+b_{i,j},j \leq i=0+0=0 \)\newline
-And the sums of all elements above the main diagonal, \( a_{i,j}+b_{i,j},j > i \), are sums of two integers, hence integers. \newline
+And the sums of all elements above the main diagonal, \( a_{i,j}+b_{i,j},j > i \), are sums of two scalars in \( \mathbb{F} \),. \newline
+hence, scalars in the same field. \newline
 in the same way, \( L_{n} \) being closed under multiplication by scalar is also a trivial fact. \newline
+
+\textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
+of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
+
 \end{document}
