@@ -438,5 +438,53 @@ gives all the Lie algebra axioms, for example,\newline
 \), Thus we prove linearity in the first component. There should be no need to prove all other axioms, \newline
 since they can all be easily proved using the same matrix and scalar multiplications. \newline
 We do need to prove that \( L \) is closed under Lie brackets defined above. \newline
+Let $$ A=(a_{l,k})=\begin{pmatrix} 
+	0 & a_{1,2} & a_{1,3} & \dots & a_{1,n} \\
+	0 & 0 & a_{2,3} & \dots & a_{2,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & a_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix},B=(b_{l,k})=\begin{pmatrix} 
+	0 & b_{1,2} & b_{1,3} & \dots & b_{1,n} \\
+	0 & 0 & b_{2,3} & \dots & b_{2,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & b_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix}
+$$
+Then,
+$$ A \cdot B=\begin{pmatrix} 
+	0 & 0 & a_{1,2} \cdot b_{2,3} & \dots & \sum_{k=2}^{n-1} a_{1,k} \cdot b_{k,n} \\
+	0 & 0 & 0 & \dots & \sum_{k=3}^{n-1} a_{2,k} \cdot b_{k,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & a_{n-1,n} \cdot b_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix} $$
+$$ B \cdot A=\begin{pmatrix} 
+	0 & 0 & b_{1,2} \cdot a_{2,3} & \dots & \sum_{k=2}^{n-1} b_{1,k} \cdot a_{k,n} \\
+	0 & 0 & 0 & \dots & \sum_{k=3}^{n-1} b_{2,k} \cdot a_{k,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & b_{n-1,n} \cdot a_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix}
+$$
+And then,
+$$ [A,B]=A \cdot B-B \cdot A=\begin{pmatrix} 
+	0 & 0 & a_{1,2}-b_{1,2} \cdot a_{2,3} & \dots & \sum_{k=2}^{n-1} a_{1,k} \cdot b_{k,n}-\sum_{k=2}^{n-1} b_{1,k} \cdot a_{k,n} \\
+	0 & 0 & 0 & \dots & \sum_{k=3}^{n-1} a_{2,k} \cdot b_{k,n}-\sum_{k=3}^{n-1} b_{2,k} \cdot a_{k,n} \\
+	\vdots & \vdots & \ddots & \vdots & \vdots \\
+	0 & 0 & \dots & 0 & a_{n-1,n} \cdot b_{n-1,n}-b_{n-1,n} \cdot a_{n-1,n} \\
+	0 & 0 & 0 & \dots & 0 \\
+\end{pmatrix}
+$$
+So, the Lie brackets operation, defined above, is preserving the form of the matrices in \( L_{n} \). \newline
+In addition, we observe that the second diagonal, above the main diagonal, is also \( 0\), thus we conclude \newline
+that \( \forall A,B,C,D \in L_{n},[[A,B],[C,D]] \) will have the main, the second and the third diagonal all \( 0 \). \newline
+In other words, \( L_{n} \) is a nilpotent Lie algebra. \newline
 
+After verifying that the Lie brackets operation is defined, as multiplication in \( L_{n} \), we observe also that \( L_{n} \) \newline
+is closed under addition, defined as the standard matrix addition. But this is obvious, since the matrix addition is simply \( a_{i,j}+b_{i,j},1 \leq i,j \leq n \), \newline 
+and so, the sums of all \( 0 \) on the main diagonal and under it, which means \( a_{i,j}+b_{i,j},j \leq i=0+0=0 \)\newline
+And the sums of all elements above the main diagonal, \( a_{i,j}+b_{i,j},j > i \), are sums of two integers, hence integers. \newline
+in the same way, \( L_{n} \) being closed under multiplication by scalar is also a trivial fact. \newline
 \end{document}
