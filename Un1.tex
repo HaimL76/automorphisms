@@ -6,7 +6,23 @@
 \usepackage{amsmath}
 \usepackage{tikz-cd}
 \usepackage{xcolor}
+\usepackage{xparse}
 
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }
+ {
+  (
+  \alec_cycle:nn { #1 } { #2 }
+  )
+ }
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+  \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 }
+  \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
 
 \begin{document}
 
@@ -491,5 +507,13 @@ in the same way, \( L_{n} \) being closed under multiplication by scalar is also
 
 \textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
 of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
+
+\textbf{Exercise} The Lie algebra $L_n$, has an automorphism which acts on the base elements as the permutation \newline
+\( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
+This automorphism is of the form,
+$1 \leq i < j \leq n,\eta(e_{i,j}):=-e_{n-i,n-i+1}$  \newline
+\textbf{Proof} \newline
+We prove that $\eta$ is a homomorphism. \newline
+$\eta(e_{i,i+1})=\eta(e_{i,i+1}) \cdot \eta(e_{i,i+1})$
 
 \end{document}
