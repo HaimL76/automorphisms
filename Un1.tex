@@ -508,10 +508,18 @@ in the same way, \( L_{n} \) being closed under multiplication by scalar is also
 \textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
 of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
 
-\textbf{Exercise} The Lie algebra $L_n$, has an automorphism which acts on the base elements as the permutation \newline
+\textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, of the form, \newline
+$1 \leq i<j \leq n,\eta(e_{i,j}):=(-1)^{j-i-1} \cdot e_{n-j+1,n-i+1}$ \newline
+\textbf{Proof} \newline
+We shall define $\eta \in Aut(L_n), \newline
+1 \leq i \leq n,\eta(e_{i,i+1}):=e_{n-i,n-i+1}$  \newline
+So, for \( j=i+1,\eta(e_{i,i+1})=(-1)^{i+1-i-1} \cdot e_{n-(i+1)+1,n-i+1}=(-1)^0 \cdot e_{n-i-1+1,n-i+1}=1 \cdot e_{n-i,n-i+1} \) \newline
+
+
+acts on the base elements as the permutation \newline
 \( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
 This automorphism is of the form,
-$1 \leq i < j \leq n,\eta(e_{i,j}):=-e_{n-i,n-i+1}$  \newline
+$1 \leq i \leq n,\eta(e_{i,i+1}):=e_{n-i,n-i+1}$  \newline
 \textbf{Proof} \newline
 We prove that $\eta$ is a homomorphism. \newline
 $\eta(e_{i,i+1})=\eta(e_{i,i+1}) \cdot \eta(e_{i,i+1})$
