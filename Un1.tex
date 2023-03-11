@@ -499,11 +499,11 @@ that \( \forall A,B,C,D \in L_{n},[[A,B],[C,D]] \) will have the main, the secon
 In other words, \( L_{n} \) is a nilpotent Lie algebra. \newline
 
 After verifying that the Lie brackets operation is defined, as multiplication in \( L_{n} \), we observe also that \( L_{n} \) \newline
-is closed under addition, defined as the standard matrix addition. But this is obvious, since the matrix addition is simply \( a_{i,j}+b_{i,j},1 \leq i,j \leq n \), \newline 
+is closed under addition, defined as the standard matrix addition. But this is obvious since the matrix addition is simply \( a_{i,j}+b_{i,j},1 \leq i,j \leq n \), \newline 
 and so, the sums of all \( 0 \) on the main diagonal and under it, which means \( a_{i,j}+b_{i,j},j \leq i=0+0=0 \)\newline
 And the sums of all elements above the main diagonal, \( a_{i,j}+b_{i,j},j > i \), are sums of two scalars in \( \mathbb{F} \),. \newline
 hence, scalars in the same field. \newline
-in the same way, \( L_{n} \) being closed under multiplication by scalar is also a trivial fact. \newline
+in the same way, \( L_{n} \) being closed under multiplication by a scalar is also a trivial fact. \newline
 
 \textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
 of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
@@ -514,7 +514,12 @@ $1 \leq i<j \leq n,\eta(e_{i,j}):=(-1)^{j-i-1} \cdot e_{n-j+1,n-i+1}$ \newline
 We shall define $\eta \in Aut(L_n), \newline
 1 \leq i \leq n,\eta(e_{i,i+1}):=e_{n-i,n-i+1}$  \newline
 So, for \( j=i+1,\eta(e_{i,i+1})=(-1)^{i+1-i-1} \cdot e_{n-(i+1)+1,n-i+1}=(-1)^0 \cdot e_{n-i-1+1,n-i+1}=1 \cdot e_{n-i,n-i+1} \) \newline
-
+We proved that $\eta$ is an automorphism, for $k=j-i=1$, now we shall prove for k+1, \newline
+$\eta(e_{i,j})=\eta(e_{i,(i+1)+1})=\eta(e_{i,i+2})$ \newline
+But we already saw that $e_{i,i+2}=[e_{i,i+i},e_{i+1,i+2}]$,
+So, $\eta$ should satisfy $\eta(e_{i,i+1})=\eta([e_{i,i+i},e_{i+1,i+2}])=[\eta(e_{i,i+i}),\eta(e_{i+1,i+2})]$ \newline
+But, from the assumption on $k=1$,\newline
+$[\eta(e_{i,i+i}),\eta(e_{i+1,i+2})]=[(-1)^{i+1-i-1} \cdot e_{n-i-1+1,n-i+1},(-1)^{i+2-i-1-1} \cdot e_{n-i-2+1,n-i-1+1}]=[(-1)^0 \cdot e_{n-i,n-i+1},(-1)^0 \cdot e_{n-i-1,n-i}]=[1 \cdot e_{n-i,n-i+1},1 \cdot e_{n-i-1,n-i}]=-e_{n-i-1,n-i+1}=(-1)^{-1} \cdot e_{n-i-1,n-i+1}=(-1)^{i+2-i-1} \cdot e_{n-(i+2)+1,n-i+1}$, which proves the induction for $k+1$ \newline
 
 acts on the base elements as the permutation \newline
 \( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
