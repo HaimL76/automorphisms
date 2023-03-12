@@ -520,10 +520,9 @@ $\eta(e_{i,j})=\eta(e_{i,(i+1)+1})=\eta(e_{i,i+2})$ \newline
 But we already saw that $e_{i,i+2}=[e_{i,i+i},e_{i+1,i+2}]$,
 So, $\eta$ should satisfy $\eta(e_{i,i+1})=\eta([e_{i,i+i},e_{i+1,i+2}])=[\eta(e_{i,i+i}),\eta(e_{i+1,i+2})]$ \newline
 But, from the assumption on $k=1$,\newline
-$[\eta(e_{i,i+i}),\eta(e_{i+1,i+2})]=[\psi(e_{i,i+i}),\psi(e_{i+1,i+2})]=[e_{n-i,n-i+1},e_{n-i-1,n-i}]=-e_{n-i-1,n-i+1}$ \newline
-
-[1 \cdot e_{n-i,n-i+1},1 \cdot e_{n-i-1,n-i}]=[(-1)^0 \cdot e_{n-i,n-i+1},(-1)^0 \cdot e_{n-i-1,n-i}]=[(-1)^{i+1-i-1} \cdot e_{n-i-1+1,n-i+1},(-1)^{i+2-i-1-1} \cdot e_{n-i-2+1,n-i-1+1}]=-e_{n-i-1,n-i+1}=(-1)^{-1} \cdot e_{n-i-1,n-i+1}=(-1)^{i+2-i-1} \cdot e_{n-(i+2)+1,n-i+1}$, which proves the induction for $k+1$ \newline
-Since $\psi$ is a bijection on the base elements of $L_n$, then taking brackets 
+$[\eta(e_{i,i+i}),\eta(e_{i+1,i+2})]=[\psi(e_{i,i+i}),\psi(e_{i+1,i+2})]=\newline
+[(-1)^{i+1-i-1} \cdot e_{n-i-1+1,n-i+1},(-1)^{i+2-i-1-1} \cdot e_{n-i-2+1,n-i-1+1}]=\newline
+[(-1)^0 \cdot e_{n-i,n-i+1},(-1)^0 \cdot e_{n-i-1,n-i}]=[1 \cdot e_{n-i,n-i+1},1 \cdot e_{n-i-1,n-i}]=[e_{n-i,n-i+1},e_{n-i-1,n-i}]=-e_{n-i-1,n-i+1}=(-1)^1 \cdot e_{n-i-1,n-i+1}=(-1)^{i+2-i-1} \cdot e_{n-(i+2)+1,n-i+1}=\eta(e_{i,i+2})$, which proves the induction for $k+1$ \newline
 
 $\eta$ acts on the base elements as the permutation \newline
 \( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
