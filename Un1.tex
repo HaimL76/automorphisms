@@ -509,9 +509,11 @@ in the same way, \( L_{n} \) being closed under multiplication by a scalar is al
 of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
 
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
-$1 \leq i<j \leq n,\eta(e_{i,j}):=(-1)^{j-i+1} \cdot e_{n-j+1,n-i+1}$ \newline
+$1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
+a_{i,j} \cdot (-1)^{j-i+1} \cdot e_{n-j+1,n-i+1}$ \newline
 \textbf{Proof} \newline
 First, we need to show that $\eta$ is a homomorphism. \newline
+We shall omit the scalars, as the Lie brackets operation is bilinear. \newline
 $1 \leq i<j<k \leq n,[\eta(e_{i,j}) ,\eta(e_{j,k})]=\newline
 [(-1)^{j-i+1} \cdot e_{n-j+1,n-i+1},(-1)^{k-j+1} \cdot e_{n-k+1,n-j+1}]=\newline
 (-1)^{j-i+1} \cdot (-1)^{k-j+1} [e_{n-j+1,n-i+1},e_{n-k+1,n-j+1}]=\newline
@@ -519,8 +521,21 @@ $1 \leq i<j<k \leq n,[\eta(e_{i,j}) ,\eta(e_{j,k})]=\newline
 (-1)^{k-i} \cdot (-1)^2 \cdot -e_{n-k+1,n-i+1}=
 (-1)^{k-i} \cdot -e_{n-k+1,n-i+1}=\newline
 (-1)^{k-i} \cdot (-1) \cdot e_{n-k+1,n-i+1}=(-1)^{k-i+1} \cdot e_{n-k+1,n-i+1}=
-\eta(e_{i,k})=\eta([e_{i,j},e_{j,k}])$
-
+\eta(e_{i,k})=\eta([e_{i,j},e_{j,k}])$ \newline
+So, we proved that $\eta$ is a homomorphism, obviously from $L_n$ to itself. \newline
+To prove the rest, we can observe that $\eta$ defines a bijection on the base elements of $L_n$, \newline
+\(
+1 \leq i < n, \newline
+\eta(e_{i,i+1})=(-1)^{i+1-i+1} \cdot e_{n-(i+1)+1,n-i+1}= \newline
+(-1)^2 \cdot e_{n-i-1+1,n-i+1}=1 \cdot e_{n-i,n-i+1}
+\) \newline
+and, \newline
+\(
+\eta(e_{n-i,n-i+1})=(-1)^{n-i+1-(n-i)+1} \cdot e_{n-(n-i+1)+1,n-(n-i)+1}= \newline
+(-1)^{n-n-i+i+1+1} \cdot e_{n-n+i-1+1,n-n+i+1}=(-1)^2 \cdot e_{i,i+1}= 
+1 \cdot e_{i,i+1} \newline
+\)
+Hence, $e_{i,i+1} \leftrightarrow e_{n-i,n-i+1}$ \newline
 $\eta$ acts on the base elements as the permutation \newline
 \( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
 
