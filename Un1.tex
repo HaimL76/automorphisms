@@ -505,8 +505,7 @@ And the sums of all elements above the main diagonal, \( a_{i,j}+b_{i,j},j > i \
 hence, scalars in the same field. \newline
 in the same way, \( L_{n} \) being closed under multiplication by a scalar is also a trivial fact. \newline
 
-\textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
-of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
+\textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
 \proof \newline
 First, we prove the following, \newline
 \textbf{Exercise} Let $(L_n,+)$ be the additive group of Lie algebra \( L_{n} \). \newline
@@ -524,8 +523,12 @@ Which means that we have $1$ only in $a_{l,k},a_{i,j}$, but that equals to $e_{l
 \newline
 $\phi(I)=I-I=0$, and it is simple to observe that $I$ is the only matrix in $U_n$ which maps to $0$ under $\phi$, so $Ker \phi$ is trivial. \newline
 In addition, $\phi((a_{i,j})^{-1}=E_{i,j}^{-1})$, since $E_{i,j}^{-1}$ is the matrix with $-1$ in $a_{i,j}$, as proved earlier, then $\phi(E_{i,j}^{-1})$ is the same inverse matrix, minus $I$, which means, the matrix with $-1$ only in $a_{i,j}$, that is, $\phi(E_{i,j}^{-1})=-e_{i,j}$. \newline
-Saying the above in simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, \newline
+Saying the above in simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, 
 which makes $\phi$ an isomorphism \newline
+
+Now, we can prove that $L_n$ has a base. \newline
+$1 \leq i \leq n,\lambda_i \in \mathbb{F}, \newline
+\sum_{i=1}^n \lambda_i \cdot \phi(E_{i,i+1})=\sum_{i=1}^n \lambda_i \cdot e_{i,i+1}$
 
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
 $1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
