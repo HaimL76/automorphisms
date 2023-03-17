@@ -507,6 +507,23 @@ in the same way, \( L_{n} \) being closed under multiplication by a scalar is al
 
 \textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices \newline
 of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
+\proof \newline
+First, we prove the following, \newline
+\textbf{Exercise} Let $(L_n,+)$ be the additive group of Lie algebra \( L_{n} \). \newline
+Then $(L_n,+) \cong U_n$ \newline
+\proof \newline
+As shown above, for any elementary matrix of the form $E_{i,j},j>i$, 
+the multiplication $E_{i,j} \cdot E_{l,k}$ is operating on $E_{l,k}$ by adding its line $j$ to line $i$ \newline
+So, we define a map $\phi:U_n \rightarrow (L_n,+)$, by, \newline
+$\phi(E_{i,j}):=e_{i,j}$ \newline
+For any two elementary matrices, $E_{i,j},E_{l,k}$
+\( E_{i,j} \) is operating from left on \( E_{l,k} \) by addition of row \( j \) to row \( i \),
+so, the product matrix, \( (a_{n,m})=E_{i,j} \cdot E_{l,k} \) has \( 1 \) on the main diagonal and in \( a_{l,k},a_{i,j} \) \newline
+So, $\phi((a_{n,m}))=\phi(E_{i,j} \cdot E_{l,k})=\phi((a_{n,m}))=(a_{n,m})-I=E_{n,m}-I=e_{n,m}$ \newline
+Which means that we have $1$ only in $a_{l,k},a_{i,j}$, but that equals to $e_{l,k}+e_{i,j}=(E_{l,k}-I)+(E_{i,j}-I)=\phi(E_{l,k})+\phi(E_{i,j})$ \newline so $\phi$ is a homomorphism. \newline
+We can simply observe that the only matrix $A \in U_n$ such that $\phi(A)=A-I=0$ is $I$, so $Ker \phi$ is trivial. \newline
+In simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, \newline
+which makes $\phi$ an isomorphism \newline
 
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
 $1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
