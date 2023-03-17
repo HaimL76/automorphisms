@@ -520,9 +520,11 @@ For any two elementary matrices, $E_{i,j},E_{l,k}$
 \( E_{i,j} \) is operating from left on \( E_{l,k} \) by addition of row \( j \) to row \( i \),
 so, the product matrix, \( (a_{n,m})=E_{i,j} \cdot E_{l,k} \) has \( 1 \) on the main diagonal and in \( a_{l,k},a_{i,j} \) \newline
 So, $\phi((a_{n,m}))=\phi(E_{i,j} \cdot E_{l,k})=\phi((a_{n,m}))=(a_{n,m})-I=E_{n,m}-I=e_{n,m}$ \newline
-Which means that we have $1$ only in $a_{l,k},a_{i,j}$, but that equals to $e_{l,k}+e_{i,j}=(E_{l,k}-I)+(E_{i,j}-I)=\phi(E_{l,k})+\phi(E_{i,j})$ \newline so $\phi$ is a homomorphism. \newline
-We can simply observe that the only matrix $A \in U_n$ such that $\phi(A)=A-I=0$ is $I$, so $Ker \phi$ is trivial. \newline
-In simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, \newline
+Which means that we have $1$ only in $a_{l,k},a_{i,j}$, but that equals to $e_{l,k}+e_{i,j}=(E_{l,k}-I)+(E_{i,j}-I)=\phi(E_{l,k})+\phi(E_{i,j})$ \newline so $\phi$ is a homomorphism. 
+\newline
+$\phi(I)=I-I=0$, and it is simple to observe that $I$ is the only matrix in $U_n$ which maps to $0$ under $\phi$, so $Ker \phi$ is trivial. \newline
+In addition, $\phi((a_{i,j})^{-1}=E_{i,j}^{-1})$, since $E_{i,j}^{-1}$ is the matrix with $-1$ in $a_{i,j}$, as proved earlier, then $\phi(E_{i,j}^{-1})$ is the same inverse matrix, minus $I$, which means, the matrix with $-1$ only in $a_{i,j}$, that is, $\phi(E_{i,j}^{-1})=-e_{i,j}$. \newline
+Saying the above in simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, \newline
 which makes $\phi$ an isomorphism \newline
 
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
