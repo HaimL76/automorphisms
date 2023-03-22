@@ -506,29 +506,27 @@ hence, scalars in the same field. \newline
 in the same way, \( L_{n} \) being closed under multiplication by a scalar is also a trivial fact. \newline
 
 \textbf{Exercise} The Lie algebra \( L_{n} \) has a base, which is all the elementary matrices of the form \( E_{i,i+1} \) minus the unit matrix, that is, \( e_{i,i+1}=E_{i,i+1}-I \). \newline
-\proof \newline
-First, we prove the following, \newline
-\textbf{Exercise} Let $(L_n,+)$ be the additive group of Lie algebra \( L_{n} \). \newline
-Then $(L_n,+) \cong U_n$ \newline
-\proof \newline
-As shown above, for any elementary matrix of the form $E_{i,j},j>i$, 
-the multiplication $E_{i,j} \cdot E_{l,k}$ is operating on $E_{l,k}$ by adding its line $j$ to line $i$ \newline
-So, we define a map $\phi:U_n \rightarrow (L_n,+)$, by, \newline
-$\phi(E_{i,j}):=e_{i,j}$ \newline
-For any two elementary matrices, $E_{i,j},E_{l,k}$
-\( E_{i,j} \) is operating from left on \( E_{l,k} \) by addition of row \( j \) to row \( i \),
-so, the product matrix, \( (a_{n,m})=E_{i,j} \cdot E_{l,k} \) has \( 1 \) on the main diagonal and in \( a_{l,k},a_{i,j} \) \newline
-So, $\phi((a_{n,m}))=\phi(E_{i,j} \cdot E_{l,k})=\phi((a_{n,m}))=(a_{n,m})-I=E_{n,m}-I=e_{n,m}$ \newline
-Which means that we have $1$ only in $a_{l,k},a_{i,j}$, but that equals to $e_{l,k}+e_{i,j}=(E_{l,k}-I)+(E_{i,j}-I)=\phi(E_{l,k})+\phi(E_{i,j})$ \newline so $\phi$ is a homomorphism. 
-\newline
-$\phi(I)=I-I=0$, and it is simple to observe that $I$ is the only matrix in $U_n$ which maps to $0$ under $\phi$, so $Ker \phi$ is trivial. \newline
-In addition, $\phi((a_{i,j})^{-1}=E_{i,j}^{-1})$, since $E_{i,j}^{-1}$ is the matrix with $-1$ in $a_{i,j}$, as proved earlier, then $\phi(E_{i,j}^{-1})$ is the same inverse matrix, minus $I$, which means, the matrix with $-1$ only in $a_{i,j}$, that is, $\phi(E_{i,j}^{-1})=-e_{i,j}$. \newline
-Saying the above in simpler words, we can observe that $\phi$ is a bijection $E_{i,j} \leftrightarrow e_{i,j}$, 
-which makes $\phi$ an isomorphism \newline
 
-Now, we can prove that $L_n$ has a base. \newline
-$1 \leq i \leq n,\lambda_i \in \mathbb{F}, \newline
-\sum_{i=1}^n \lambda_i \cdot \phi(E_{i,i+1})=\sum_{i=1}^n \lambda_i \cdot e_{i,i+1}$
+\textbf{Exercise} The Lie brackets operation on \( L_{n} \) is compatible \newline
+with the operation of the $U_n$ group commutators \newline
+i.e., $[e_{i,j},e_{l,k}] \neq 0 \Leftrightarrow j=l \lor i=k$. \newline
+\textbf{Proof} \newline
+We shall distinguish between the two cases,\newline
+\underline{\textbf{$j=l$}} \newline
+$A=(a_{i,j})$ a matrix with $1$ only in $a_{i,j}$ \newline
+$B=(b_{j,k})$ a matrix with $1$ only in $b_{j,k}$ \newline
+Then $(c_{i,k})=A \cdot B$ is a matrix with $1$ only in $c_{i,k}$ \newline
+(we obtain this by multiplying row $i$ of $A$ with column $k$ of $B$, having only $a_{i,j} \cdot b_{j,k}=1 \cdot 1=1$), \newline
+while $(d_{s,t})=B \cdot A$ is a zero matrix. since multiplying row $j$ of $B$ with column $j$ of $A$ yields $b_{j,k} \cdot a_{k,j}+b_{j,i} \cdot a_{i,j}=\newline
+1 \cdot 0+0 \cdot 1=0+0=0$ \newline
+Hence, $A \cdot B-B \cdot A=(c_{i,k})-0=(c_{i,k})=e_{i,k}=E_{i,k}-I$ \newline \newline
+\underline{\textbf{$i=k$}} \newline
+$A=(a_{i,j})$ a matrix with $1$ only in $a_{i,j}$ \newline
+$B=(b_{k,i})$ a matrix with $1$ only in $b_{k,i}$ \newline
+We can observe that this case is exactly the opposite of the first case, \newline
+since multiplying $A \cdot B$ yields a zero matrix, while multiplying \newline
+$B \cdot A$ yields a matrix $c_{k,j}$ with $1$ only in $c_{k,j}$ \newline
+Hence, $A \cdot B-B \cdot A=0-(c_{k,j})=-(c_{k,j})=-e_{k,j}=E_{k,j}-I$ \newline
 
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
 $1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
