@@ -559,4 +559,15 @@ Hence, $e_{i,i+1} \leftrightarrow e_{n-i,n-i+1}$, so $\eta$ is an automorphism. 
 $\eta$ acts on the base elements as the permutation \newline
 \( \cycle{e_{1,2},e_{n-1,n}} \cdot \cycle{e_{2,3},e_{n-2,n-1}} \dots \cycle{e_{i,i+1},e_{n-i,n-i+1}} \dots \) \newline
 
+\newpage
+\textbf{Exercise}
+Let $\phi \in Aut(L_n)$, and let $e_{l,l+1} \in L_n$, then, \newline
+$\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1})) \Leftrightarrow 1 \leq i \leq n-1,
+a_{i+1,i+2}^{k,k+1}=a_{i,i+1}^{k,k+1} \cdot \frac{a_{i+1,i+2}^{l,l+1}}{a_{i,i+1}^{l,l+1}}$, \newline
+Where, \newline
+$m \in \{l,k\},\phi(e_{m,m+1})=\sum_{i=1}^{n-1} a_{i,i+1}^{m,m+1} \cdot e_{i,i+1}$ \newline
+\textbf{Proof} \newline
+$\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1}))$ means that $[\phi(e_{l,l+1}),\phi(e_{k,k+1})]=[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=[\sum_{i=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot e_{i,i+1},\sum_{j=1}^{n-1} a_{j,j+1}^{l,l+1} \cdot e_{j,j+1}]=0$ \newline
+Lie brackets operation is bilinear, so, \newline
+$[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=\sum_{i=1}^{n-1} \sum_{j=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot a_{j,j+1}^{l,l+1} \cdot [e_{i,i+1},e_{j,j+1}]=0$ \newline
 \end{document}
