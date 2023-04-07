@@ -7,6 +7,7 @@
 \usepackage{tikz-cd}
 \usepackage{xcolor}
 \usepackage{xparse}
+\usepackage{setspace}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
@@ -25,7 +26,6 @@
 \ExplSyntaxOff
 
 \begin{document}
-
 
 \textbf{Exercise}
 Let \( \{ E_{i,j} \}_{i<j} \) be the set of all elementary matrices, of this form. \newline
@@ -570,4 +570,17 @@ $m \in \{l,k\},\phi(e_{m,m+1})=\sum_{i=1}^{n-1} a_{i,i+1}^{m,m+1} \cdot e_{i,i+1
 $\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1}))$ means that $[\phi(e_{l,l+1}),\phi(e_{k,k+1})]=[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=[\sum_{i=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot e_{i,i+1},\sum_{j=1}^{n-1} a_{j,j+1}^{l,l+1} \cdot e_{j,j+1}]=0$ \newline
 Lie brackets operation is bilinear, so, \newline
 $[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=\sum_{i=1}^{n-1} \sum_{j=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot a_{j,j+1}^{l,l+1} \cdot [e_{i,i+1},e_{j,j+1}]=0$ \newline
+
+
+\textbf{Exercise} \newline
+Let $L_n$ be a Lie algebra \newline
+$[\phi(e_{1,2}),\phi(e_{2,3})]=\phi(e_{1,3})=
+[\sum_{i=1}^{n-1} a_{i,i+1}^{1,2} \cdot e_{i,i+1},\sum_{i=1}^{n-1} a_{i,i+1}^{2,3} \cdot e_{i,i+1}]= \newline
+\sum_{i=1}^{n-2} (a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3}) \cdot [e_{i,i+1},e_{i+1,1+2}]$ \newline
+So, if $[\phi(e_{1,2}),\phi(e_{2,3})]=0$,
+it means that all the expressions of the form $(a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3})$ must be 0 (because the $[e_{i,i+1},e_{i+1,1+2}]=e_{i,i+2}$ are linearly independent). \newline
+$a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3}=0 \Rightarrow a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}=a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3} \Rightarrow a_{i+1,i+2}^{2,3}=a_{i,i+1}^{2,3} \cdot \frac{a_{i+1,i+2}^{1,2}}{a_{i,i+1}^{1,2}}$, if $a_{i,i+1}^{1,2} \neq 0$ \newline
+If $a_{i,i+1}^{1,2}=0$, we have a few cases,\newline 
+1. If $a_{i+1,i+2}^{1,2}=0$, then both $a_{i,i+1}^{2,3}$ and $a_{i+1,i+2}^{2,3}$ can be any integers. \newline
+2. If $a_{i+1,i+2}^{1,2} \neq 0$, then $a_{i,i+1}^{2,3}$ must be $0$ \newline
 \end{document}
