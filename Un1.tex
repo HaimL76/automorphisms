@@ -571,16 +571,30 @@ $\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1}))$ means that $[\phi(e_{l,l+1}),\phi
 Lie brackets operation is bilinear, so, \newline
 $[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=\sum_{i=1}^{n-1} \sum_{j=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot a_{j,j+1}^{l,l+1} \cdot [e_{i,i+1},e_{j,j+1}]=0$ \newline
 
+For the following exercise, we shall use the annotation, \newline
+$\phi_k(e_{i,j}):=\sum_l^n a_{l,l+k}^{i,j} \cdot e_{l,l+k}$, that is, a sum of all the expressions of the form $a_{l,m} \cdot e_{l,m}$, where $m-l=k$ (hence, a partial sum to $\phi(e_{i,j})$ itself). \newline
 
 \textbf{Exercise} \newline
 Let $L_n$ be a Lie algebra \newline
-$[\phi(e_{1,2}),\phi(e_{2,3})]=\phi(e_{1,3})=
+$[\phi_1(e_{1,2}),\phi_1(e_{2,3})]=\phi_1(e_{1,3})=
 [\sum_{i=1}^{n-1} a_{i,i+1}^{1,2} \cdot e_{i,i+1},\sum_{i=1}^{n-1} a_{i,i+1}^{2,3} \cdot e_{i,i+1}]= \newline
 \sum_{i=1}^{n-2} (a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3}) \cdot [e_{i,i+1},e_{i+1,1+2}]$ \newline
-So, if $[\phi(e_{1,2}),\phi(e_{2,3})]=0$,
+So, if $[\phi_1(e_{1,2}),\phi_1(e_{2,3})]=0$,
 it means that all the expressions of the form $(a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3})$ must be 0 (because the $[e_{i,i+1},e_{i+1,1+2}]=e_{i,i+2}$ are linearly independent). \newline
 $a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}-a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3}=0 \Rightarrow a_{i,i+1}^{1,2} \cdot a_{i+1,i+2}^{2,3}=a_{i+1,i+2}^{1,2} \cdot a_{i,i+1}^{2,3} \Rightarrow a_{i+1,i+2}^{2,3}=a_{i,i+1}^{2,3} \cdot \frac{a_{i+1,i+2}^{1,2}}{a_{i,i+1}^{1,2}}$, if $a_{i,i+1}^{1,2} \neq 0$ \newline
 If $a_{i,i+1}^{1,2}=0$, we have a few cases,\newline 
 1. If $a_{i+1,i+2}^{1,2}=0$, then both $a_{i,i+1}^{2,3}$ and $a_{i+1,i+2}^{2,3}$ can be any integers. \newline
 2. If $a_{i+1,i+2}^{1,2} \neq 0$, then $a_{i,i+1}^{2,3}$ must be $0$ \newline
+
+We can sum up all the above, and say that when given \newline
+$\phi_1(e_{1,2})=\sum_{i=1}^{n-1} a_{i,i+1}^{1,2} \cdot e_{i,i+1}$, we have, \newline
+If $a_{i,i+1}^{1,2} \neq 0, 1 \leq i \leq n-1$, then the number of free coefficients in an element of the centralizer of $\phi_1(e_{1,2})$ is 1 \newline
+\textbf{Proof} \newline
+Assume we choose $a_{k,k+1}^{2,3}$ to be any integer, then, according to the above, \newline
+$a_{k+1,k+2}^{2,3}=a_{k,k+1}^{2,3} \cdot \frac{a_{k+1,k+2}^{1,2}}{a_{k,k+1}^{1,2}}$, since 
+$a_{l,l+1}^{1,2} \neq 0, 1 \leq l \leq n-1$, so it is easy to observe that this 
+determines all the $a_{k+l,k+l+1}^{2,3}, 1 \leq l \leq n-k-1$ \newline
+Precisely in the same way (but running backward), \newline since $a_{k,k+1}^{2,3}=a_{k-1,k}^{2,3} \cdot \frac{a_{k,k+1}^{1,2}}{a_{k-1,k}^{1,2}} \Rightarrow a_{k-1,k}^{2,3}=a_{k,k+1}^{2,3} \cdot \frac{a_{k-1,k}^{1,2}}{a_{k,k+1}^{1,2}}$, it is easy to observe that the choice of $a_{k,k+1}^{2,3}$ determines also $a_{l,l+1}^{2,3}$, for all $1 \leq l \leq k-1$ \newline
+(or $a_{k-l,k-l+1}^{2,3}, 1 \leq l \leq k-1$) \newline
+
 \end{document}
