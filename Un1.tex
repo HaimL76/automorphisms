@@ -601,6 +601,9 @@ Now, assume that we do not have all $a_{l,l+1}^{1,2} \neq 0$, \newline
 Take $a_{k,k+1}^{1,2}=0$, then, obviously $a_{k,k+1}^{1,2} \cdot a_{k+1,k+2}^{2,3}=0$, \newline
 so, in order for the expression $a_{k,k+1}^{1,2} \cdot a_{k+1,k+2}^{2,3}-a_{k+1,k+2}^{1,2} \cdot a_{k,k+1}^{2,3}$ to be $0$, we must have either $a_{k+1,k+2}^{1,2}=0$ or $a_{k,k+1}^{2,3}=0$ \newline
 Assume we have $a_{k+1,k+2}^{1,2}=0$, so, $a_{k,k+1}^{2,3}$, can be a free choice of an integer. \newline
-So, for the chain of $a_{k+l,k+l+1}^{1,2}=0, 1 \leq l \leq m \leq n-1$, we can have all $a_{k+l,k+l+1}^{2,3}, 1 \leq l < m$ as free integers. Since $a_{m+1,m+2}^{1,2} \neq 0$, \newline
-and $a_{m,m+1}^{1,2}=0 \Rightarrow a_{m,m+1}^{1,2} \cdot a_{m+1,m+2}^{2,3}=0$, then we must have $a_{m,m+1}^{2,3}=0$, so, to conclude, a consecutive chain of $m$ zero coefficients of $\phi_1(e_{1,2})$ will allow $m-1$ free choices of integers for all the coefficients of $\phi_1(e_{2,3})$, with the same indices, except for the last coefficient in the chain. \newline
+So, for the chain of $a_{k+l,k+l+1}^{1,2}=0, 1 \leq l \leq m < n-1$, we can have all $a_{k+l,k+l+1}^{2,3}, 1 \leq l < m$ as free integers. Since $a_{m+1,m+2}^{1,2} \neq 0$, \newline
+and $a_{m,m+1}^{1,2}=0 \Rightarrow a_{m,m+1}^{1,2} \cdot a_{m+1,m+2}^{2,3}=0$, then we must have $a_{m,m+1}^{2,3}=0$, so, a consecutive chain of $m$ zero coefficients of $\phi_1(e_{1,2})$ will allow $m-1$ free choices of integers for all the coefficients of $\phi_1(e_{2,3})$, with the same indices, except for the last coefficient in the chain. \newline
+However, we observe that if $m \leq n-1$, that is, the chain of zeros continues until the last coefficient of $\phi_1(e_{1,2})$ (meaning, $a_{n-1,n}^{1,2}$ is also $0$), then $a_{n-1,n}^{2,3}$ is, obviously, also a free choice of an integer. To make a unification of the cases, we can think of $\phi_1(e_{1,2})$ as $\sum_{i=1}^n a_{i,i+1}^{1,2} \cdot e_{i,i+1}$, where $a_{n,n+1}=0$, but this is only semantics. \newline
+So, in this case, where the chains of $m$ zeros continues to the end, we have $m$ free choices of integers, for the coefficients $a_{l,l+1}^{2,3}, k \leq l \leq m = n-1$, \newline
+of $\phi_1(e_{2,3})$
 \end{document}
