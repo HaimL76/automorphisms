@@ -329,7 +329,7 @@ due to the above equality. So, the number of these equivalence classes is \( 2 \
 By induction on \( n \). For \( n=3 \), we have only one triple, namely \( \{1,2,3\} \), so \( {3-1 \choose 2}={2 \choose 2}=1 \)\newline
 For \( n+1 \), we shall observe that if we add one to the upper bound (i.e. \( n \rightarrow n'=n+1 \), \newline
 then we add one more equivalence class, for each one of the lower bounds of \( n'-1=n \) (i.e., the index \( i \)). \newline
-But we also add a new eqivalence class, whose lower bound is \( i=n+1-2=n-1=n'-2 \), which was not in any equivalence class \newline
+But we also add a new equivalence class, whose lower bound is \( i=n+1-2=n-1=n'-2 \), which was not in any equivalence class \newline
 for \( n=n'-1 \), since we consider only the triples where \( i \leq n-2 \). So, if we mark \( m_{n} \) as the number of equivalence classes \newline
 for \( n \), then we have \( m_{n'}=m_{n+1}=m_{n}+(n-2)+1=m_{n}+n-1 \). But, by the assumption, \( m_{n}={n-1 \choose 2} \), \newline 
 so \( m_{n'}=m_{n+1}=m_{n}+n-1={n-1 \choose 2}+n-1=\frac{(n-1) \cdot (n-2)}{2}+n-1=\frac{n^2-3n+2}{2}+n-1=\frac{n^2-3n+2+2n-2}{2}=
@@ -532,7 +532,30 @@ Hence, $A \cdot B-B \cdot A=0-(c_{k,j})=-(c_{k,j})=-e_{k,j}=E_{k,j}-I$ \newline
 The Lie algebra $L=L_n$, has its lower central series, \newline
 $\gamma_k(L)$ (defined recursively by $\gamma_k(L):=[L,\gamma_{k-1}(L)]$, where $\gamma_1(L):=L$), \newline
 $\gamma_k(L) \neq 0,\forall k<n$, and $\gamma_n(L)=0$ \newline
-
+\newpage
+\textbf{Proof} \newline
+As seen above, $[e_{i,j},e_{l,k}]=$
+$ \left \{
+	\begin{array}{ll}
+		e_{i,k}  & j=l \\
+        -e_{l,j}  & i=k \\
+		0 & otherwise
+	\end{array}
+\right.
+$
+\newline 
+So, if the base of $L_n$ is $B(L)=
+\{ e_{i,i+1} | 1 \leq i \leq n-1 \}$, we can see that \newline
+$\gamma_2(B(L))=[B(L),B(L)]=\{ e_{i,i+2} | 1 \leq i \leq n-1 \}$, \newline
+containing only elements which come from commutators of the form \newline
+$[e_{i,i+1},e_{i+1,i+2}]=e_{i,i+2}$ (or $[e_{i+1,i+2},e_{i,i+1}]=
+-e_{i,i+2}$) \newline
+So, $\gamma_3(B(L))=[B(L),\gamma_2(B(L))]=\{ e_{i,i+3} | 1 \leq i \leq n-1 \}$, since the only commutators that are not 0, are of the form $[e_{i,i+1},e_{i+1,(i+1)+2}]=[e_{i,i+1},e_{i+1,i+1+2}] \newline
+=[e_{i,i+1},e_{i+1,i+3}]=e_{i,i+3}$ \newline
+Obviously, $\gamma_{n-1}(B(L))$ must contain only commutators of the form $e_{i,i+n-1}$, which can only be $e_{1,1+n-1}=e_{1,n}$ \newline
+That means, for $\gamma_{n}(B(L))$, we have no valid commutators, since we do not have any element with a second index $n+1$ \newline
+So, $\gamma_{n}(B(L))=0$ \newline
+\newline
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
 $1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
 a_{i,j} \cdot (-1)^{j-i+1} \cdot e_{n-j+1,n-i+1}$ \newline
