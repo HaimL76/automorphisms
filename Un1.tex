@@ -647,4 +647,15 @@ and $a_{m,m+1}^{1,2}=0 \Rightarrow a_{m,m+1}^{1,2} \cdot a_{m+1,m+2}^{2,3}=0$, t
 However, we observe that if $m \leq n-1$, that is, the chain of zeros continues until the last coefficient of $\phi_1(e_{1,2})$ (meaning, $a_{n-1,n}^{1,2}$ is also $0$), then $a_{n-1,n}^{2,3}$ is, obviously, also a free choice of an integer. To make a unification of the cases, we can think of $\phi_1(e_{1,2})$ as $\sum_{i=1}^n a_{i,i+1}^{1,2} \cdot e_{i,i+1}$, where $a_{n,n+1}=0$, but this is only semantics. \newline
 So, in this case, where the chains of $m$ zeros continues to the end, we have $m$ free choices of integers, for the coefficients $a_{l,l+1}^{2,3}, k \leq l \leq m = n-1$, \newline
 of $\phi_1(e_{2,3})$
+
+So, if we write down the different options for commutating elements.
+
+Suppose we have $\phi(e_{i,i+1})=\sum_{j=1}^{n-1} a_{j,j+1}^{i,i+1}$, then \newline
+If $\phi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}$ (and all other coefficients are $0$), \newline 
+then $\phi(e_{2,3})$ must have $a_{l+1,l+2}^{2,3}=0$, otherwise, $a_{l,l+1}^{1,2} \cdot e_{l,l+1} \cdot a_{l+1,l+2}^{2,3} \cdot e_{l+1,l+2}= \newline
+a_{l,l+1}^{1,2} \cdot a_{l+1,l+2}^{2,3} \cdot [e_{l,l+1},e_{l+1,l+2}]=a_{l,l+2}^{1,2} \cdot a_{l+1,l+2}^{2,3} \cdot e_{l,l+2} \neq 0$ \newline
+
+If $\phi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}+a_{i+1,i+2}^{1,2} \cdot e_{i+1,i+2}$ (and all other coefficients are $0$), \newline 
+then either $\phi(e_{2,3})$ must have $a_{l,l+1}^{2,3}=a_{l+1,l+2}^{2,3}=0$,
+or $a_{l,l+1}^{2,3}, a_{l+1,l+2}^{2,3} \neq 0$
 \end{document}
