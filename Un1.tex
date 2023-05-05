@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{xparse}
 \usepackage{setspace}
+\usepackage{xfrac}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
@@ -557,18 +558,25 @@ That means, for $\gamma_{n}(A(L))$, we have no valid commutators, since we do no
 So, $\gamma_{n}(A(L))=0$ \newline
 \newline
 \textbf{Example} $L=L_6$ \newline
-$\gamma_1(L)=L=\{e_{1,2},e_{2,3},e_{3,4},e_{4,5},e_{5,6}\}$ \newline
+$\gamma_1(L)=L=\{e_{1,2},e_{2,3},e_{3,4},e_{4,5},e_{5,6},e_{1,3},e_{2,4},e_{3,5},e_{4,6},e_{1,4},e_{2,5},e_{3,6},e_{1,5},e_{2,6},e_{1,6}\}$ \newline
 $\gamma_2(L)=[L,\gamma_1(L)]=
-[L,L]=\{e_{1,3},e_{2,4},e_{3,5},e_{4,6}\}$ 
+[L,L]=\{e_{1,3},e_{2,4},e_{3,5},e_{4,6},e_{1,4},e_{2,5},e_{3,6},e_{1,5},e_{2,6},e_{1,6}\}$ 
 \newline
-$\gamma_3(L)=[L,\gamma_2(L)]=\{e_{1,4},e_{2,5},e_{3,6}\}$ 
+$\gamma_3(L)=[L,\gamma_2(L)]=\{e_{1,4},e_{2,5},e_{3,6},e_{1,5},e_{2,6},e_{1,6}\}$ 
 \newline
-$\gamma_4(L)=[L,\gamma_3(L)]=\{e_{1,5},e_{2,6}\}$ 
+$\gamma_4(L)=[L,\gamma_3(L)]=\{e_{1,5},e_{2,6},e_{1,6}\}$ 
 \newline
 $\gamma_5(L)=[L,\gamma_4(L)]=\{e_{1,6}\}$ 
 \newline
 $\gamma_6(L)=[L,\gamma_5(L)]=0$ 
 \newline \newline
+\textbf{Exercise} Each element of the lower central series, $\gamma_k(L_n),1 \leq i \leq n$ is a subalgebra of $L_n$ \newline \newline
+\textbf{proof} \newline 
+As seen above, $\gamma_k(L_n)=\{e_{i,j} | j-i \geq k\}$ \newline
+Let $e_{i,j},e_{m,l}$, where $j-i,l-m \geq k$ \newline
+If $j \neq m \wedge i \neq l$, then $[e_{i,j},e_{m,l}]=[e_{m,l},e_{i,j}]=0$ \newline
+Otherwise, if $j-m$, then $[e_{i,j},e_{m,l}]=[e_{i,m},e_{m,l}]=e_{i,l}$ \newline
+But, $j-i=m-i \geq k$, and $l-m \geq k$, so $l-i=l(-m+m)-i=(l-m)+(m-i) \geq 2 \cdot k>k \Rightarrow [e_{i,j},e_{m,l}]=e_{i,l} \in \gamma_k(L_n)$
 \newpage
 \textbf{Exercise} Let $x \in L_n$ be an element in the Lie algebra of dimension $n$, then, the centralizer of $x$ in $L_n$, denoted as \newline $C_L(x):=\{y \in L | [y,x]=[x,y]=0\}$ \newline
 is a subalgebra of $L_n$. \newline \newline
@@ -614,18 +622,18 @@ $\eta$ acts on the base elements as the permutation \newline
 
 \newpage
 \textbf{Exercise}
-Let $\phi \in Aut(L_n)$, and let $e_{l,l+1} \in L_n$, then, \newline
-$\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1})) \Leftrightarrow 1 \leq i \leq n-1,
+Let $\varphi \in Aut(L_n)$, and let $e_{l,l+1} \in L_n$, then, \newline
+$\varphi(e_{k,k+1}) \in C_{L_n}(\varphi(e_{l,l+1})) \Leftrightarrow 1 \leq i \leq n-1,
 a_{i+1,i+2}^{k,k+1}=a_{i,i+1}^{k,k+1} \cdot \frac{a_{i+1,i+2}^{l,l+1}}{a_{i,i+1}^{l,l+1}}$, \newline
 Where, \newline
-$m \in \{l,k\},\phi(e_{m,m+1})=\sum_{i=1}^{n-1} a_{i,i+1}^{m,m+1} \cdot e_{i,i+1}$ \newline
+$m \in \{l,k\},\varphi(e_{m,m+1})=\sum_{i=1}^{n-1} a_{i,i+1}^{m,m+1} \cdot e_{i,i+1}$ \newline
 \textbf{Proof} \newline
-$\phi(e_{k,k+1}) \in C_{L_n}(\phi(e_{l,l+1}))$ means that $[\phi(e_{l,l+1}),\phi(e_{k,k+1})]=[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=[\sum_{i=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot e_{i,i+1},\sum_{j=1}^{n-1} a_{j,j+1}^{l,l+1} \cdot e_{j,j+1}]=0$ \newline
+$\varphi(e_{k,k+1}) \in C_{L_n}(\varphi(e_{l,l+1}))$ means that $[\varphi(e_{l,l+1}),\varphi(e_{k,k+1})]=[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=[\sum_{i=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot e_{i,i+1},\sum_{j=1}^{n-1} a_{j,j+1}^{l,l+1} \cdot e_{j,j+1}]=0$ \newline
 Lie brackets operation is bilinear, so, \newline
-$[\phi(e_{k,k+1}),\phi(e_{l,l+1})]=\sum_{i=1}^{n-1} \sum_{j=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot a_{j,j+1}^{l,l+1} \cdot [e_{i,i+1},e_{j,j+1}]=0$ \newline
+$[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=\sum_{i=1}^{n-1} \sum_{j=1}^{n-1} a_{i,i+1}^{k,k+1} \cdot a_{j,j+1}^{l,l+1} \cdot [e_{i,i+1},e_{j,j+1}]=0$ \newline
 
 For the following exercise, we shall use the annotation, \newline
-$\phi_k(e_{i,j}):=\sum_l^n a_{l,l+k}^{i,j} \cdot e_{l,l+k}$, that is, a sum of all the expressions of the form $a_{l,m} \cdot e_{l,m}$, where $m-l=k$ (hence, a partial sum to $\phi(e_{i,j})$ itself). \newline
+$\phi_k(e_{i,j}):=\sum_l^n a_{l,l+k}^{i,j} \cdot e_{l,l+k}$, that is, a sum of all the expressions of the form $a_{l,m} \cdot e_{l,m}$, where $m-l=k$ (hence, a partial sum to $\varphi(e_{i,j})$ itself). \newline
 
 \textbf{Exercise} \newline
 Let $L_n$ be a Lie algebra \newline
@@ -662,12 +670,33 @@ of $\phi_1(e_{2,3})$
 
 So, if we write down the different options for commutating elements.
 
-Suppose we have $\phi(e_{i,i+1})=\sum_{j=1}^{n-1} a_{j,j+1}^{i,i+1}$, then \newline
-If $\phi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}$ (and all other coefficients are $0$), \newline 
-then $\phi(e_{2,3})$ must have $a_{l+1,l+2}^{2,3}=0$, otherwise, $a_{l,l+1}^{1,2} \cdot e_{l,l+1} \cdot a_{l+1,l+2}^{2,3} \cdot e_{l+1,l+2}= \newline
+Suppose we have $\varphi(e_{i,i+1})=\sum_{j=1}^{n-1} a_{j,j+1}^{i,i+1}$, then \newline
+If $\varphi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}$ (and all other coefficients are $0$), \newline 
+then $\varphi(e_{2,3})$ must have $a_{l+1,l+2}^{2,3}=0$, otherwise, $a_{l,l+1}^{1,2} \cdot e_{l,l+1} \cdot a_{l+1,l+2}^{2,3} \cdot e_{l+1,l+2}= \newline
 a_{l,l+1}^{1,2} \cdot a_{l+1,l+2}^{2,3} \cdot [e_{l,l+1},e_{l+1,l+2}]=a_{l,l+2}^{1,2} \cdot a_{l+1,l+2}^{2,3} \cdot e_{l,l+2} \neq 0$ \newline
 
-If $\phi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}+a_{i+1,i+2}^{1,2} \cdot e_{i+1,i+2}$ (and all other coefficients are $0$), \newline 
-then either $\phi(e_{2,3})$ must have $a_{l,l+1}^{2,3}=a_{l+1,l+2}^{2,3}=0$,
+If $\varphi(e_{1,2})=a_{l,l+1}^{1,2} \cdot e_{l,l+1}+a_{i+1,i+2}^{1,2} \cdot e_{i+1,i+2}$ (and all other coefficients are $0$), \newline 
+then either $\varphi(e_{2,3})$ must have $a_{l,l+1}^{2,3}=a_{l+1,l+2}^{2,3}=0$,
 or $a_{l,l+1}^{2,3}, a_{l+1,l+2}^{2,3} \neq 0$
+\newpage
+
+\textbf{Construction} \newline
+Let $L_n$ be a Lie algebra of dimension $n$, and $\varphi \in Aut(L_n)$ \newline 
+Let $A_\varphi=A$ be the matrix representing $\varphi$, 
+\newline
+Clearly, $A$ is an $n \times n$ invertible squared matrix (all because $\varphi \in Aut(L_n)$), i.e. $A \in GL_n(L_n)$ \newline
+Given a vector $v$, representing an element in $L_n$, that is \newline
+$v=(a_{1,2} \cdot e_{1,2}, a_{2,3} \cdot e_{2,3},\dots,a_{1,n} \cdot e_{1,n}),a_i,j \in \mathbb{F},e_{i,j} \in B(L_n)$, where $B(L_n)$ is the basis of $L_n$, \newline
+we shall want this vector to be divided and ordered by the quotient algebras that are formed by the lower central series $\gamma_m(L_n)$, that is, \newline
+$v=\newline
+	\begin{array}{ll}
+(a_{1,2} \cdot e_{1,2}, a_{2,3} \cdot e_{2,3},\dots,a_{n-1,n} \cdot e_{n-1,n},0,\dots,0) & + \\
+(0,\dots,0,a_{1,3} \cdot e_{1,3}, a_{2,4} \cdot e_{2,4},\dots,a_{n-2,n} \cdot e_{n-2,n},0,\dots,0) & + \\
+\vdots \\
+(0,\dots,0,a_{1,1+k} \cdot e_{1,1+k}, a_{2,2+k} \cdot e_{2,2+k},\dots,a_{n-k,n} \cdot e_{n-k,n},0,\dots,0) & + \\
+\vdots \\
+(0,\dots,0,a_{1,n} \cdot e_{1,n})
+	\end{array}
+$
+where the first $n-1$ elements are all in $\sfrac{L}{\gamma_2(L)}$
 \end{document}
