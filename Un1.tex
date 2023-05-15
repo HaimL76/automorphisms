@@ -697,6 +697,37 @@ $v=\newline
 \vdots \\
 (0,\dots,0,a_{1,n} \cdot e_{1,n})
 	\end{array}
-$
+$ \newline \newline
 where the first $n-1$ elements are all in $\sfrac{L}{\gamma_2(L)}$
+\newline \newline
+\textbf{Exercise} \newline
+Let $L_n$ be a Lie algebra, and let $\varphi \in Aut(L_n)$, then \newline
+The first $n \times n$ squared block of $\varphi$ is a diagonal matrix. \newline \newline
+\textbf{Proof} \newline
+The first $n-1$ rows of $\varphi$ are $\varphi_1=\varphi(e_{1,2}),\varphi_2=\varphi(e_{2,3}),\dots,
+\varphi_{n-1}=\varphi(e_{n-1,n})$ \newline
+And, each column $j$ represents the coefficient of $e_{j,j+1}$ in $\varphi(e_{i,i+1})= \newline
+\sum_j^{n-1} a_{j,j+1}^{i,i+1} \cdot e_{j,j+1}+\gamma_j(L_n)$
+\newpage
+\textbf{Exercise} \newline
+Let $L_n$ be a Lie algebra, $\varphi \in Aut(L_n)$, and $A=A_\varphi=(a_{i,j})$ the matrix representing $\varphi$ \newline
+Assume that the block $A_1$ of $n-1 \times n-1$ elements, starting from $a_{1,1}$ is diagonal, then, \newline
+All the blocks on the main diagonal of $A$, that is, \newline 
+$A_2$, the block of $n-2 \times n-2$ elements, starting from $a_{n,n}$ \newline
+$A_3$, the block of $n-3 \times n-3$ elements, starting from $a_{2n-2,2n-2}$ \newline
+$\vdots$ \newline
+$A_{n-1}=a_{\binom{n}{2},\binom{n}{2}}$ (a block of $1 \times 1$, i.e., a single element)\newline
+are diagonal, as well, \newline
+
+\textbf{Proof} \newline
+By induction on $k$, where $k$ is the level of the lower central series, modulu the lower central series of the next level, $\sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$ \newline
+We have assumed this is true for $A_1$, which is the block representing $\sfrac{L_n}{\gamma_2(L_n)}=\sfrac{\gamma_1(L_n)}{\gamma_2(L_n)}$ \newline
+So, assume for $k$, we shall prove for $k+1$ \newline
+As seen above, $\sfrac{\gamma_k+1(L_n)}{\gamma_{k+2}(L_n)}=\{e_{i,j} | j-i=k+1\}=\sfrac{[L_n,\gamma_{k}(L_n)]}{\gamma_k+2(L_n)}$ \newline
+So, let $e_{i,j} \in \sfrac{\gamma_k+1(L_n)}{\gamma_{k+2}(L_n)}$, that means, $e_{i,j}=[e_{i,i+1},e_{i+1,j}]$ \newline
+So, $\varphi(e_{i,j})=\varphi([e_{i,i+1},e_{i+1,j}])=[\varphi(e_{i,i+1}),\varphi(e_{i+1,j})]$ \newline
+But, $\varphi(e_{i+1,j}) \in \sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$ \newline
+But, according to the assumption, if $e_{i+1,j} \in  \sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$, then $\varphi(e_{i+1,j})=\lambda_{i+1,j} \cdot e_{i+1,j}$, and, if $e_{i,i+1} \in \sfrac{L_n}{\gamma_2(L_n)}$, then $e_{i,i+1}=\lambda{i,i+1} \cdot e_{i,i+1}$ \newline
+$\Rightarrow [\varphi(e_{i,i+1}),\varphi(e_{i+1,j})]=[\lambda_{i,i+1} \cdot e_{i,i+1},\lambda_{i+1,j} \cdot e_{i+1,j}]=\lambda_{i,i+1} \cdot \lambda_{i+1,j} \cdot [e_{i,i+1},e_{i+1,j}]=\lambda_{i,i+1} \cdot \lambda_{i+1,j} \cdot e_{i,j}$, which proves the induction step, for $k+1$ \newline
+
 \end{document}
