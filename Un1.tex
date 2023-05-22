@@ -588,7 +588,34 @@ $\Rightarrow [x,[y,z]]+[z,[x,y]]+[y,[z,x]]=[x,[y,z]]+0+0=0$
 \newline
 $\Rightarrow [x,[y,z]]=0 \Rightarrow [y,z] \in C_L(x)$ 
 \newline
-
+\newline
+\textbf{Exercise} \newline
+Let $L_n$ be a Lie algebra, then $Aut(L_n)$ is a group \newline
+\textbf{Proof} \newline
+Every automorphism can be represented by an invertible $\binom{n}{2} \times \binom{n}{2}$ matrix, so $Aut(L_n) \cong GL_{\binom{n}{2}}(L_n)$ (and $I_{\binom{n}{2}}$ is the trivial automorphism) \newline
+\newline
+\textbf{Exercise} \newline
+Let $L_n$ be a Lie algebra. Then, \newline for each vector of $n-1$ scalars, $\overline{\lambda}=(\lambda_1,\lambda_2,\dots,\lambda_{n-1})$, \newline
+where $\lambda_r \neq 0,1 \leq r \leq n-1$, the map $\varphi_{\overline{\lambda}}:L_n \rightarrow L_n$, defined as, \newline
+$\varphi_{\overline{\lambda}}(e_{i,j}):=\Pi_{r=i}^{j-1} \lambda_r \cdot e_{i,j}$ is an automorphism
+\newline
+\newline
+\textbf{Proof} 
+It is obvious that $\varphi_{\overline{\lambda}}(e_{i,j})$, as a $\binom{n}{n} \times \binom{n}{2}$ matrix is a diagonal matrix, with $\Pi_{r=i}^{j-1} \neq 0$ in the $a_{l,l}$ cell, matching $i,j$ \newline
+$$
+\varphi_{\overline{\lambda}}(e_{i,j})=\begin{pmatrix} 
+	\lambda_1 & 0 & \dots & 0 & \dots & 0 \\
+	0 & \lambda_2 & \dots & 0 & \dots & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+	0 & 0 & \dots & \Pi_{r=1}^{j-1} \lambda_r  & \dots & 0 \\
+	\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+	0 & 0 & \dots & 0 & \Pi_{r=1}^{n-2} & 0 \\
+	0 & 0 & \dots & 0 & 0 & \Pi_{r=1}^{n-1} \\
+\end{pmatrix},
+$$
+\newline
+\newline
+\newline
 \textbf{Exercise} The Lie algebra $L_n$, has an automorphism, $\eta$, defined by, \newline
 $1 \leq i<j \leq n,a_{i,j} \in \mathbb{F},\eta(a_{i,j} \cdot e_{i,j}):=(-1)^{j-i+1} \cdot (a_{i,j} \cdot e_{n-j+1,n-i+1})=
 a_{i,j} \cdot (-1)^{j-i+1} \cdot e_{n-j+1,n-i+1}$ \newline
@@ -727,7 +754,23 @@ As seen above, $\sfrac{\gamma_k+1(L_n)}{\gamma_{k+2}(L_n)}=\{e_{i,j} | j-i=k+1\}
 So, let $e_{i,j} \in \sfrac{\gamma_k+1(L_n)}{\gamma_{k+2}(L_n)}$, that means, $e_{i,j}=[e_{i,i+1},e_{i+1,j}]$ \newline
 So, $\varphi(e_{i,j})=\varphi([e_{i,i+1},e_{i+1,j}])=[\varphi(e_{i,i+1}),\varphi(e_{i+1,j})]$ \newline
 But, $\varphi(e_{i+1,j}) \in \sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$ \newline
-But, according to the assumption, if $e_{i+1,j} \in  \sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$, then $\varphi(e_{i+1,j})=\lambda_{i+1,j} \cdot e_{i+1,j}$, and, if $e_{i,i+1} \in \sfrac{L_n}{\gamma_2(L_n)}$, then $e_{i,i+1}=\lambda{i,i+1} \cdot e_{i,i+1}$ \newline
+But, according to the assumption, if $e_{i+1,j} \in  \sfrac{\gamma_k(L_n)}{\gamma_{k+1}(L_n)}$, then $\varphi(e_{i+1,j})=\lambda_{i+1,j} \cdot e_{i+1,j}$, and, if $e_{i,i+1} \in \sfrac{L_n}{\gamma_2(L_n)}$, then $\varphi(e_{i,i+1})=\lambda{i,i+1} \cdot e_{i,i+1}$ \newline
 $\Rightarrow [\varphi(e_{i,i+1}),\varphi(e_{i+1,j})]=[\lambda_{i,i+1} \cdot e_{i,i+1},\lambda_{i+1,j} \cdot e_{i+1,j}]=\lambda_{i,i+1} \cdot \lambda_{i+1,j} \cdot [e_{i,i+1},e_{i+1,j}]=\lambda_{i,i+1} \cdot \lambda_{i+1,j} \cdot e_{i,j}$, which proves the induction step, for $k+1$ \newline
-
+(to be convinced of the modulu calculations, we only need to observe that if $a \in \sfrac{\gamma_l(L_n)}{\gamma_k(L_n)},b \in \sfrac{\gamma_m(L_n)}{\gamma_r(L_n)},l<k,m<r$, it means that \newline
+$a=\lambda_{i,j} \cdot e_{i,j}+\gamma_k(L),j-i \geq l$, and \newline
+$b=\lambda_{s,t} \cdot e_{s,t}+\gamma_r(L),t-s \geq m$, \newline 
+which means that, \newline
+$a=\lambda_{i,j} \cdot e_{i,j}+\lambda_{f,g} \cdot e_{f,g},j-i \geq l,g-f \geq k$, and \newline
+$b=\lambda_{s,t} \cdot e_{s,t}+\lambda_{c,d} \cdot e_{c,d},t-s \geq m,d-c \geq r$ \newline
+So, \newline
+$[a,b]=[\lambda_{i,j} \cdot e_{i,j}+\lambda_{f,g} \cdot e_{f,g},\lambda_{s,t} \cdot e_{s,t}+\lambda_{c,d} \cdot e_{c,d}]= \newline
+[\lambda_{i,j} \cdot e_{i,j},\lambda_{s,t} \cdot e_{s,t}]+
+[\lambda_{i,j} \cdot e_{i,j},\lambda_{c,d} \cdot e_{c,d}]+
+[\lambda_{f,g} \cdot e_{f,g},\lambda_{s,t} \cdot e_{s,t}]+
+[\lambda_{f,g} \cdot e_{f,g},\lambda_{c,d} \cdot e_{c,d}]= \newline
+\lambda_{i,j} \cdot \lambda_{s,t} \cdot [e_{i,j},e_{s,t}]+
+\lambda_{i,j} \cdot \lambda_{c,d} \cdot [e_{i,j},e_{c,d}]+
+\lambda_{f,g} \cdot \lambda_{s,t} \cdot [e_{f,g},e_{s,t}]+
+\lambda_{f,g} \cdot \lambda_{c,d} \cdot [e_{f,g},e_{c,d}]$
+)
 \end{document}
