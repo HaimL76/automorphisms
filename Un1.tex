@@ -773,9 +773,26 @@ $[a,b]=[\lambda_{i,j} \cdot e_{i,j}+\lambda_{f,g} \cdot e_{f,g},\lambda_{s,t} \c
 \lambda_{f,g} \cdot \lambda_{s,t} \cdot [e_{f,g},e_{s,t}]+
 \lambda_{f,g} \cdot \lambda_{c,d} \cdot [e_{f,g},e_{c,d}]$
  \newline
-Assume $(j=c \lor i=d) \land (g=s \lor f=l) \land (g=c \lor f=d)$, otherwise, all, or some of $[e_{i,j},e_{c,d}],[e_{f,g},e_{s,t}],[e_{f,g},e_{c,d}]$ equal zero. \newline
+We have several options, for each of the commutators in the product, \newline
 if $j=c \Rightarrow d-i=d-c+c-i=d-c+j-i \geq r+l \newline
 \Rightarrow [e_{i,j},e_{c,d}]=e_{i,d} \in \gamma_{r+l}(L_n) \subseteq \gamma_{r}(L_n),\gamma_{l}(L_n)$ \newline
-if $i=d \Rightarrow j-c=j-i+i-d=j-i+d-c \geq r+l \newline
-\Rightarrow [e_{i,j},e_{c,d}]=-e_{c,j} \in \gamma_{r+l}(L_n) \subseteq \gamma_{r}(L_n),\gamma_{l}(L_n)$
+if $i=d \Rightarrow j-c=j-i+i-d=j-i+d-c \geq l+r \newline
+\Rightarrow [e_{i,j},e_{c,d}]=-e_{c,j} \in \gamma_{l+r}(L_n) \subseteq \gamma_{r}(L_n),\gamma_{l}(L_n)$ \newline
+if $j \neq c \land i \neq d \Rightarrow [e_{i,j},e_{c,d}]=0$
+\newline
+\newline
+if $g=s \Rightarrow t-f=t-s+s-f=t-s+g-f \geq m+k \newline
+\Rightarrow [e_{f,g},e_{s,t}]=e_{f,t} \in \gamma_{m+k}(L_n) \subseteq \gamma_{m}(L_n),\gamma_{k}(L_n)$ \newline
+if $f=t \Rightarrow g-s=g-f+f-s=g-f+t-s \geq k+m \newline
+\Rightarrow [e_{f,g},e_{s,t}]=-e_{s,g} \in \gamma_{k+m}(L_n) \subseteq \gamma_{k}(L_n),\gamma_{m}(L_n)$
+\newline
+if $g \neq s \land f \neq t \Rightarrow [e_{f,g},e_{s,t}]=0$
+\newline
+\newline
+if $g=c \Rightarrow d-f=d-c+c-f=d-c+g-f \geq r+k \newline
+\Rightarrow [e_{f,g},e_{c,d}]=e_{f,d} \in \gamma_{r+k}(L_n) \subseteq \gamma_{r}(L_n),\gamma_{k}(L_n)$ \newline
+if $f=d \Rightarrow g-c=g-f+f-c=g-f+d-c \geq k+r \newline
+\Rightarrow [e_{f,g},e_{c,d}]=-e_{c,g} \in \gamma_{k+r}(L_n) \subseteq \gamma_{k}(L_n),\gamma_{r}(L_n)$
+\newline
+if $g \neq c \land f \neq d \Rightarrow [e_{f,g},e_{c,d}]=0$
 \end{document}
