@@ -794,5 +794,24 @@ if $g=c \Rightarrow d-f=d-c+c-f=d-c+g-f \geq r+k \newline
 if $f=d \Rightarrow g-c=g-f+f-c=g-f+d-c \geq k+r \newline
 \Rightarrow [e_{f,g},e_{c,d}]=-e_{c,g} \in \gamma_{k+r}(L_n) \subseteq \gamma_{k}(L_n),\gamma_{r}(L_n)$
 \newline
-if $g \neq c \land f \neq d \Rightarrow [e_{f,g},e_{c,d}]=0$
+if $g \neq c \land f \neq d \Rightarrow [e_{f,g},e_{c,d}]=0$ \newline
+\newline
+so, we have, \newline
+$[e_{i,j},e_{c,d}]=0 \lor [e_{i,j},e_{c,d}] \in \gamma_{r}(L_n) \newline 
+[e_{f,g},e_{s,t}]=0 \lor
+[e_{f,g},e_{s,t}] \in \gamma_{k}(L_n)  \newline
+[e_{f,g},e_{c,d}]=0 \lor
+[e_{f,g},e_{c,d}] \in \gamma_{k}(L_n),\gamma_{r}(L_n) \newline
+$ \newline
+So, there are several options, here, \newline
+$r<k \Rightarrow \gamma_k \subset \gamma_r \newline
+k<r \Rightarrow \gamma_r \subset \gamma_k \newline
+r=k \Rightarrow \gamma_k=\gamma_r$ \newline
+WLOG, assume $k<r$, so, if $\alpha=[e_{i,j},e_{c,d}]+
+[e_{f,g},e_{s,t}]+
+[e_{f,g},e_{c,d}]$, then $\alpha=0 \lor \alpha \in \gamma_k(L_n)$, but, if $\alpha \in \gamma_k(L_n) \Rightarrow \overline{\alpha}=0 \in \sfrac{L_n}{\gamma_k(L_n)}$ \newline
+Going back to our $[a,b]$ product, we only need to observe that, \newline
+if $j=s \Rightarrow [e_{i,j},e_{s,t}]=e_{i,t}$ \newline
+if $i=t \Rightarrow [e_{i,j},e_{s,t}]=-e_{s,j}$ \newline
+if $j \neq s \land i \neq t \Rightarrow [e_{i,j},e_{s,t}]=0$
 \end{document}
