@@ -814,4 +814,52 @@ Going back to our $[a,b]$ product, we only need to observe that, \newline
 if $j=s \Rightarrow [e_{i,j},e_{s,t}]=e_{i,t}$ \newline
 if $i=t \Rightarrow [e_{i,j},e_{s,t}]=-e_{s,j}$ \newline
 if $j \neq s \land i \neq t \Rightarrow [e_{i,j},e_{s,t}]=0$
+\newpage
+\textbf{Exercise} \newline
+Let $A \in GL_n(\mathbb(F))$, an upper triangular matrix, with no zeros on the main diagonal, over some field, $\mathbb{F}$, Then, \newline
+$A$ has a unique decomposition to a product, $A=A_N \times A_H$, where $A_N$ is a unipotent matrix (that is, an upper triangular matrix, with $1$ on the main diagonal), and $A_H$ is a diagonal matrix. \newline
+\newline
+\textbf{Proof} \newline
+Given a matrix, 
+$$
+	A=\begin{pmatrix} 
+	a_{1,1} & a_{1,2} & \dots & a_{1,n-1} & a_{1,n} \\
+	0 & a_{2,2} & \dots & a_{2,n-1} & a_{2,n} \\
+	0 & 0 & \ddots & a_{k,n-1} & a_{k,n} \\
+	0 & 0 & \dots & a_{n-1,n-1} & a_{n-1,n} \\
+	0 & 0 & \dots & 0 & a_{n,n} \\
+	\end{pmatrix}
+	\quad
+	$$
+For simplicity, we shall write $\lambda_k=a_{k,k},1 \leq k \leq n$ \newline
+We shall write two canonical matrices, \newline
+$$
+A_N=\begin{pmatrix} 
+	1 & \frac{a_{1,2}}{\lambda_2} & \dots & \frac{a_{1,n-1}}{\lambda_{n-1}} & \frac{a_{1,n}}{\lambda_n} \\
+	0 & 1 & \dots & \frac{a_{2,n-1}}{\lambda_{n-1}} & \frac{a_{2,n}}{\lambda_n} \\
+	0 & 0 & \ddots & \frac{a_{k,n-1}}{\lambda_{n-1}} & a_{k,n} \\
+	0 & 0 & \dots & 1 & \frac{a_{n-1,n}}{\lambda_n} \\
+	0 & 0 & \dots & 0 & 1 \\
+	\end{pmatrix}
+	\quad
+ A_H=\begin{pmatrix} 
+	\lambda_1 & 0 & \dots & 0 & 0 \\
+	0 & \lambda_2 & \dots & 0 & 0 \\
+	0 & 0 & \ddots & 0 & 0 \\
+	0 & 0 & \dots & \lambda_{n-1} & 0 \\
+	0 & 0 & \dots & 0 & \lambda_n \\
+	\end{pmatrix}
+	\quad
+	$$
+
+Obviously, $A_N \times A_H=A$ \newline
+
+Although this decomposition is canonical, we still need to prove that it is unique. \newline
+Suppose that $A=B_N \times B_H$, where $B_N$ is a unipotent matrix, and $B_H$ is a diagonal matrix. \newline
+So, $A_N \times A_H=A=B_N \times B_H$ \newline
+These matrices are all in $GL_n(\mathbb{F})$, so, each has its inverse matrix. \newline
+So, we can multiply, \newline
+$A_N^{-1} \times (A_N \times A_H)=A_N^{-1} \times (B_N \times B_H) \Rightarrow (A_N^{-1} \times A_N) \times A_H= \newline A_N^{-1} \times (B_N \times B_H) \Rightarrow A_H=A_N^{-1} \times B_N \times B_H \Rightarrow A_H \times B_H^{-1}= \newline A_N^{-1} \times B_N \times B_H \times B_H^{-1} \Rightarrow A_H=A_N^{-1} \times B_N \times B_H \Rightarrow A_H \times B_H^{-1}= \newline A_N^{-1} \times B_N \times (B_H \times B_H^{-1}) \Rightarrow A_H \times B_H^{-1}=A_N^{-1} \times B_N$
+
+
 \end{document}
