@@ -861,5 +861,86 @@ These matrices are all in $GL_n(\mathbb{F})$, so, each has its inverse matrix. \
 So, we can multiply, \newline
 $A_N^{-1} \times (A_N \times A_H)=A_N^{-1} \times (B_N \times B_H) \Rightarrow (A_N^{-1} \times A_N) \times A_H= \newline A_N^{-1} \times (B_N \times B_H) \Rightarrow A_H=A_N^{-1} \times B_N \times B_H \Rightarrow A_H \times B_H^{-1}= \newline A_N^{-1} \times B_N \times B_H \times B_H^{-1} \Rightarrow A_H=A_N^{-1} \times B_N \times B_H \Rightarrow A_H \times B_H^{-1}= \newline A_N^{-1} \times B_N \times (B_H \times B_H^{-1}) \Rightarrow A_H \times B_H^{-1}=A_N^{-1} \times B_N$
 
+To continue, we need to prove two auxiliary propositions. \newline
 
+\textbf{Exercise} \newline
+Let $\mathbb{F}$ be any field, and $$
+B=\begin{pmatrix} 
+	\lambda_1 & 0 & \dots & 0 & 0 \\
+	0 & \lambda_2 & \dots & 0 & 0 \\
+	0 & 0 & \ddots & 0 & 0 \\
+	0 & 0 & \dots & \lambda_{n-1} & 0 \\
+	0 & 0 & \dots & 0 & \lambda_n \\
+	\end{pmatrix}
+	\quad
+$$, 
+where $\lambda_k \in \mathbf{F},1 \leq k \leq n$, Then, \newline
+$$
+B^{-1}=\begin{pmatrix} 
+	\frac{1}{\lambda_1} & 0 & \dots & 0 & 0 \\
+	0 & \frac{1}{\lambda_2} & \dots & 0 & 0 \\
+	0 & 0 & \ddots & 0 & 0 \\
+	0 & 0 & \dots & \frac{1}{\lambda_{n-1}} & 0 \\
+	0 & 0 & \dots & 0 & \frac{1}{\lambda_n} \\
+	\end{pmatrix}
+	\quad
+$$
+A simple check would show us that $B \times B^{-1}=B^{-1} \times B=I_n$, and, since we have found an inverse matrix to $B$, it is, obviously, unique. \newline
+This means that the inverse of a diagonal matrix is also a diagonal matrix. \newline
+\newline
+\textbf{Exercise} \newline
+Let $\mathbb{F}$ be any field, and $$
+C=\begin{pmatrix} 
+	1 & a_{1,2} & \dots & a_{1,n-1} & a_{1,n} \\
+	0 & 1 & \dots & a_{2,n-1} & a_{2,n} \\
+	0 & 0 & \ddots & a_{k,n-1} & a_{k,n} \\
+	0 & 0 & \dots & 1 & a_{n-1,n} \\
+	0 & 0 & \dots & 0 & 1 \\
+	\end{pmatrix}
+	\quad
+ $$, Then, \newline
+ $$
+C^{-1}=\begin{pmatrix} 
+	1 & a'_{1,2} & \dots & a'_{1,n-1} & a'_{1,n} \\
+	0 & 1 & \dots & a'_{2,n-1} & a'_{2,n} \\
+	0 & 0 & \ddots & a'_{k,n-1} & a'_{k,n} \\
+	0 & 0 & \dots & 1 & a'_{n-1,n} \\
+	0 & 0 & \dots & 0 & 1 \\
+	\end{pmatrix}
+	\quad
+ $$
+\textbf{Proof} \newline
+For this, we will need to use (and briefly prove) a well know fact. \newline
+\textbf{Exercise} \newline
+Let $\mathbb{F}$ be any field, and $D \in GL_n(\mathbb{F})$ an invertible squared matrix over $\mathbb{F}$ \newline
+Let $e_1,e_2,\dots,e_m$ be a sequence of elementary operations on $D$, such that $e_m(e_{m-1}(\dots(e_2(e_1(D))\dots))=I_n$, Then, \newline
+$e_m(e_{m-1}(\dots(e_2(e_1(I_n))\dots))=D^{-1}$ \newline
+\textbf{Proof} \newline
+The three elementary operations translate into a left multiplication, of the operand matrix, A, by an elementary matrix. \newline
+1. $R_i \leftarrow R_i+R_j$ translates into $E_{i,j} \cdot A$, which we have defined above \newline
+2. $R_i \leftarrow \lambda \cdot R_i$ translates into $$
+E_{\lambda_i}=\begin{pmatrix} 
+	1 & 0 & \dots & 0 & 0 \\
+	0 & 1 & \dots & 0 & 0 \\
+	0 & 0 & \lambda_i & 0 & 0 \\
+	0 & 0 & \dots & 1 & 0 \\
+	0 & 0 & \dots & 0 & 1 \\
+	\end{pmatrix}
+	\quad
+$$
+3. $R_i \leftrightarrow R_j$ translates into $$
+E_{\lambda_i}=\begin{pmatrix} 
+	1 & 0 & \dots & 0 & 0 \\
+	0 & 0 & \dots & 1 & 0 \\
+	0 & 0 & \ddots & 0 & 0 \\
+	0 & 1 & \dots & 0 & 0 \\
+	0 & 0 & \dots & 0 & 1 \\
+	\end{pmatrix}
+	\quad
+$$, 
+that is, $I_n$, where $R_i \leftrightarrow R_j$ \newline
+So, 
+$e_m(e_{m-1}(\dots(e_2(e_1(D))\dots))=I_n$ translates into, \newline
+$e_m \times (e_{m-1} \times (\dots \times (e_2 \times (e_1 \times D)\dots))=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D=I_n \newline
+\Rightarrow D^{-1}=I_n \times D^{-1}=(e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D) \times D^{-1}= \newline e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D \times D^{-1}=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times (D \times D^{-1})=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times I_n=e_m(e_{m-1}(\dots(e_2(e_1(I_n))\dots))$ \newline
 \end{document}
