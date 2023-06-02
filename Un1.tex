@@ -876,7 +876,7 @@ B=\begin{pmatrix}
 $$, 
 where $\lambda_k \in \mathbf{F},1 \leq k \leq n$, Then, \newline
 $$
-B^{-1}=\begin{pmatrix} 
+B'=B^{-1}=\begin{pmatrix} 
 	\frac{1}{\lambda_1} & 0 & \dots & 0 & 0 \\
 	0 & \frac{1}{\lambda_2} & \dots & 0 & 0 \\
 	0 & 0 & \ddots & 0 & 0 \\
@@ -885,7 +885,7 @@ B^{-1}=\begin{pmatrix}
 	\end{pmatrix}
 	\quad
 $$
-A simple check would show us that $B \times B^{-1}=B^{-1} \times B=I_n$, and, since we have found an inverse matrix to $B$, it is, obviously, unique. \newline
+A simple check would show us that $B \times B'=B' \times B=I_n$, and, since we have found an inverse matrix to $B$, it is, obviously, unique \newline (because, if $B''$ is also an inverse of $B$, then, $B \times B'=B \times B'' \Rightarrow B' \times B \times B'=B' \times B \times B'' \Rightarrow (B' \times B) \times B'=(B' \times B) \times B'' \Rightarrow I_n \times B'=I_n \times B'' \Rightarrow B'=B''$) \newline
 This means that the inverse of a diagonal matrix is also a diagonal matrix. \newline
 \newline
 \textbf{Exercise} \newline
@@ -938,9 +938,17 @@ E_{\lambda_i}=\begin{pmatrix}
 	\end{pmatrix}
 	\quad
 $$, 
-that is, $I_n$, where $R_i \leftrightarrow R_j$ \newline
+that is, $I_n$, with the operation $R_i \leftrightarrow R_j$ \newline
 So, 
 $e_m(e_{m-1}(\dots(e_2(e_1(D))\dots))=I_n$ translates into, \newline
 $e_m \times (e_{m-1} \times (\dots \times (e_2 \times (e_1 \times D)\dots))=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D=I_n \newline
 \Rightarrow D^{-1}=I_n \times D^{-1}=(e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D) \times D^{-1}= \newline e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times D \times D^{-1}=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times (D \times D^{-1})=e_m \times e_{m-1} \times \dots \times e_2 \times e_1 \times I_n=e_m(e_{m-1}(\dots(e_2(e_1(I_n))\dots))$ \newline
+Going back to finding $C^{-1}$, we observe that, since $(c_{i,j})=C$ is already in a canonical echelon form, with $1$ on the main diagonal, then, to bring $C$ to $I_n$, using elementary operations, would be to perform the sequence of operations, on each row, $R_i$, \newline
+For each element in row $R_i$, $c_{i,j} \neq 0,j>i$, \newline
+1. $R_j \leftarrow -c_{i,j} \cdot R_j$ \newline
+2. $R_i \leftarrow R_i+R_j$ \newline
+3. $R_j \leftarrow -\frac{1}{c_{i,j}} \cdot R_j$ \newline
+So, in order to bring $C$ to $I_n$, we need a sequence of up to $\binom{n-1}{2} \times 3$ elementary operations on $C$, but none of them is $R_i \leftrightarrow R_j$, and, the triple sequence of operations, on each element, preserves the canonical form of $C$  \newline
+This means that performing this sequence of operations on $I_n$ will preserve the canonical form of $I_n$, which shows that $C^{-1}$ is an upper triangular matrix, with $1$ on the main diagonal, as well. And, since we have found an inverse matrix of $C$, it must be unique. \newline
+Going back to the proof that the decomposition of $A=A_H \times A_N$ is unique. \newline
 \end{document}
