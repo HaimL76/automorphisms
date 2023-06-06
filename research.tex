@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{setspace}
+\usepackage{xfrac}
+\usepackage{yfonts}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }
+ {
+  (
+  \alec_cycle:nn { #1 } { #2 }
+  )
+ }
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+  \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 }
+  \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
+
+\begin{document}
+\textbf{1. The group $U_n$} \newline
+\newline
+\textbf{Proposition 1.1} \newline
+Let $E_n=\{ E_{i,j} \}_{i<j}$ be the set of all $n \times n$ matrices, $(e_{l,k})$, \newline where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=1,i<j$, and all other elements are zero. That is, $E_{i,j}$ has $1$ only on the main diagonal, and in one element, anywhere above the main diagonal. Let $A$ be any $n \times n$ matrix. Then,\newline
+Multiplying $A$ by $E_{i,j}$ (from the left), $E_{i,j} \times A$, is operating as performing the elementary operation $R_i \leftarrow R_i+R_j$ on $A$
+\begin{proof}
+$A=(a_{l,k}),B=(b_{l,k})=E_{i_j} \times A=(e_{l,k}) \times (a_{l,k})$ \newline
+$b_{l,k}=\sum_{r=1}^n e_{l,r} \cdot a_{r,k}$ \newline
+For all the rows, except for row $i$, $b_{l,k}=\sum_{r=1}^n e_{l,r} \cdot a_{r,k}=0+0+\dots+e_{l,l} \cdot a_{l,k}+0+0+\dots+0+0=1 \cdot a_{l,k}=a_{l,k}$ \newline
+For row $i$, $b_{i,k}=\sum_{r=1}^n e_{i,r} \cdot a_{r,k}=0+0+\dots+e_{i,i} \cdot a_{i,k}+0+0+e_{i,j} \cdot a_{j,k}+0+0+\dots+0+0=1 \cdot a_{i,k}+1 \cdot a_{j,k}=a_{i,k}+a_{j,k}$ \newline
+This shows that the multiplication preserves the rows of $A$, except for row $i$, which becomes the sum of rows $i,j$
+\end{proof}
+\textbf{Corollary 1.2} \newline
+Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
+$E_{i,j}^{-1}=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=-1,i<j$, and all other elements are zero.
+\begin{proof}
+$(b_{l,k})=E_{i,j} \times (a_{l,k})$ \newline
+Multiplying $(a_{l,k})$ by $E_{i,j}$ from the left is operating on $(a_{l,k})$ as a row addition, $R_i \leftarrow R_i+R_j$, as seen above. \newline 
+For all $1 \leq k \leq n,b_{i,k}=a_{i,k}+a_{j,k}$ \newline
+But, the only element in row $j$ that is not zero is $a_{j,j=1}$, so, $b_{i,j}=a_{i,j}+a_{j,j}= \newline -1+1=0$, and, for all the other columns, $a_{j,k}=0$, so $b_{i,i}=a_{i,i}+a_{j,i}=1+0=1$, and $b_{i,k}=a_{i,k}+a_{j,k}=0+0=0$, which means that $(b_{l,k})=I_n$ \newline 
+Easy to verify that also $(a_{l,k}) \times E_{i,j}=I_n$, and that $(a_{l,k})$ is a unique inverse of $E_{i,j}$, since, suppose we have another inverse matrix, $M=E_{i,j}^{-1}$, then $(a_{l,k}) \times E_{i,j}=I_n=M \times E_{i,j} \Rightarrow ((a_{l,k}) \times E_{i,j}) \times M=(M \times E_{i,j}) \times M
+\Rightarrow (a_{l,k}) \times E_{i,j} \times M=M \times E_{i,j} \times M
+\Rightarrow (a_{l,k}) \times (E_{i,j} \times M)=M \times (E_{i,j} \times M) \Rightarrow (a_{l,k}) \times I_n=M \times I_n \Rightarrow (a_{l,k})=M$ \newline
+So, $(a_{l,k})=E_{i,j}^{-1}$ is the unique inverse of $E_{i,j}$ \newline 
+\end{proof}
+\end{document}
