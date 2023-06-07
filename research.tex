@@ -55,7 +55,16 @@ Easy to verify that also $(a_{l,k}) \times E_{i,j}=I_n$, and that $(a_{l,k})$ is
 So, $(a_{l,k})=E_{i,j}^{-1}$ is the unique inverse of $E_{i,j}$ \newline 
 \end{proof}
 \newpage
-\textbf{Proposition 1.3} \newline
+\textbf{Corollary 1.3} \newline
+Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, and $A=(a_{l,k})$ any $n \times n$ matrix. Then,\newline
+$E_{i,j}^{-1}=(b_{l,k})$ operates on $A$ as the row addition $R_i \leftarrow R_i-R_j$.
+\begin{proof}
+As seen above, $E_{i,j}^{-1}=(b_{l,k})$ is a matrix where $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=-1,i<j$, and all other elements are zero. \newline
+So, the multiplication $(c_{l,k})=E_{i,j}^{-1} \times A=(b_{l,k}) \times (a_{l,k})$ is exactly the same as $E_{i,j} \times A$, for all the rows except for row $i$ \newline
+For row $i$, we have $c_{i,k},1 \leq k \leq n=\sum_{r=1}^n b_{i,r} \cdot a_{r,k}$ \newline
+But, the only elements that are not zero, in row $i$ of $(b_{l,k})$ are $b_{i,i}=1$, and $b_{i,j}=-1$, so, $c_{i_k}=b_{i,1} \cdot a_{1,k}+b_{i,2} \cdot a_{2,k}+\dots+b_{i,i} \cdot a_{i,k}+\dots+b_{i,j} \cdot a_{j,k}+\dots+b_{i,n-1} \cdot a_{n-1,k}+b_{i,n} \cdot a_{n,k}=0 \cdot a_{1,k}+0 \cdot a_{2,k}+\dots+1 \cdot a_{i,k}+\dots+(-1) \cdot a_{j,k}+\dots+0 \cdot a_{n-1,k}+0 \cdot a_{n,k}=0+0+\dots+a_{i,k}+\dots+(-a_{j,k})=a_{i,k}-a_{j,k}$, which shows that in the product matrix, $(c_{l,k})$, $R_i$ turns into $R_i-R_j$ \newline
+\end{proof}
+\textbf{Proposition 1.4} \newline
 Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
 $\forall m \in \mathbb{N},E_{i,j}^m=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=m,i<j$, and all other elements are zero.
 \begin{proof}
