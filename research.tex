@@ -75,4 +75,17 @@ Now, we prove for $m+1$ \newline
 $(a_{l,k})=E_{i,j}^{m+1}=E_{i,j} \times E_{i,j}^m$. But, from the induction assumption, $(b_{l,k})=E_{i,j}^m$, $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=m,i<j$, and all other elements are zero. \newline
 Multiplying from the left $(b_{l,k})$ by $E_{i,j}$ is operating as the row addition $R_i \leftarrow R_i+R_j$, so, $a_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and, $a_{i,j}=b_{i,j}+b_{j,j}=m+1$, and easy to verify that all the other elements are zero, thus, we prove the induction step. \newline
 \end{proof}
+\newpage
+\textbf{Corollary 1.5} \newline
+Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
+$\forall m \in \mathbb{N},(E_{i,j}^{-1})^m=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=-m,i<j$, and all other elements are zero
+\begin{proof}
+By induction on $m$. \newline
+$(a_{l,k})=E_{i,j}^{-1}$
+For $m=2$, we observe that $(E_{i,j}^{-1})^2=E_{i,j}^{-1} \times E_{i,j}^{-1}=(a_{l,k}) \times (a_{l,k})$, means that $E_{i,j}^{-1}$ operates on itself as the row addition $R_i \leftarrow R_i-R_j$ \newline
+So, the product matrix $(b_{l,k})$ has $b_{i,i}=a_{i,i}-a_{j,i}=1-0=1$, and $b_{i,j}=a_{i,j}-a_{j,j}=-1-1=-2$, and all other elements are zero. \newline
+Now, we prove for $m+1$ \newline
+$(a_{l,k})=(E_{i,j}^{-1})^{m+1}=E_{i,j}^{-1} \times (E_{i,j}^{-1})^m$. But, from the induction assumption, $(b_{l,k})=(E_{i,j}^{-1})^m$, has $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=-m,i<j$, and all other elements are zero. \newline
+So, $(a_{l,k})=E_{i,j}^{-1} \times (b_{i,j})$ is the row addition $R_i \leftarrow R_i-R_j$ on $(b_{i,j})$, which means, $a_{i,i}=b_{i,i}-b_{i,j}=1=0=1$, and $a_{i,j}=b_{i,j}-b_{j,j}=-m-1=-(m+1)$, and all the other elements are zero, thus, we prove the induction step. \newline
+\end{proof}
 \end{document}
