@@ -88,4 +88,26 @@ Now, we prove for $m+1$ \newline
 $(a_{l,k})=(E_{i,j}^{-1})^{m+1}=E_{i,j}^{-1} \times (E_{i,j}^{-1})^m$. But, from the induction assumption, $(b_{l,k})=(E_{i,j}^{-1})^m$, has $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=-m,i<j$, and all other elements are zero. \newline
 So, $(a_{l,k})=E_{i,j}^{-1} \times (b_{i,j})$ is the row addition $R_i \leftarrow R_i-R_j$ on $(b_{i,j})$, which means, $a_{i,i}=b_{i,i}-b_{i,j}=1=0=1$, and $a_{i,j}=b_{i,j}-b_{j,j}=-m-1=-(m+1)$, and all the other elements are zero, thus, we prove the induction step. \newline
 \end{proof}
+\textbf{Corollary 1.6} 
+Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
+$\forall m,r \in \mathbb{Z},
+(a_{l,k})=E_{i,j}^(m+r)=E_{i,j}^(r+m)$ is the matrix where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=m+r=r+m,i<j$, and all other elements are zero. \newline
+This shows that multiplying integer powers of matrices, from the set $E_n$ (which means, adding their exponents), is equivalent to adding integer numbers, which means that we have a canonical bijection, $(\mathbb{Z},+) \leftrightarrow (E_{i,j}^{\mathbb{Z}},\cdot)$, for any two fixed indices $i<j$, where $1 \leftrightarrow E_{i,j}^1=E_{i,j}$, and $-1 \leftrightarrow E_{i,j}^{-1}$ \newline 
+\newpage
+\textbf{Proposition 1.7} \newline
+Let $(a_{l,k})=E_{i,j},t \neq i<j,(b_{l,k})=E_{s,t},j \neq s<t \in E_n$, Then, \newline
+$(c_{l,k})=E_{i,j} \cdot E_{s,t}=E_{s,t} \cdot E_{i,j}$ is a matrix with $c_{l,l}=1,1 \leq l \leq n$, and $c_{i,j}=1$, and $c_{s,t}=1$, and, all other elements are zero.
+\begin{proof}
+As seen above, $E_{s,t}$ is operating from the left on $E_{i,j}$ as the addition $R_i,j \leftarrow R_i+R_j$, so, $(c_{l,k})$ is $E_{s,t}$, with row $j$ being added to row $i$. \newline
+So, $c_{i,k}=b_{i,k}+b{j,k},1 \leq k \leq n$. But, since $s \neq j$ the only element in row $j$ of $(b_{l,k})$ which is not zero is $b_{j,j}=1$, and $b_{i,j}=0$, so $c_{i,j}=b_{i,j}+b_{j,j}=0+1=1$ \newline
+Also, $b_{j,i}=0$ (it is below the main diagonal), so, $c_{i,i}=b_{i,i}+b_{j,i}=1+0=1$. \newline
+It is easy to verify that all the other elements in row $i$ of $(c_{j,k})$ are zero, and that all the other rows of $(c_{l,k})$ remain the same as they are in $(b_{l,k})$ \newline
+Also, it is easy to verify that, under the condition that $t \neq i$, the multiplication is commuting, and yields the same product matrix. 
+\end{proof}
+\textbf{Proposition 1.8} \newline
+Let $(a_{l,k})=E_{i,j},i<j,(b_{l,k})=E_{j,r},j<r \in E_n$, Then, \newline
+$(c_{l,k})=E_{i,j} \cdot E_{j,r}$ is a matrix with $c_{l,l}=1,1 \leq l \leq n$, and $c_{i,j}=1$, and $c_{j,r}=1$, and $c_{i,r}=1$, and, all other elements are zero.
+\begin{proof}
+The multiplication from the left of $E_{i,j}$ by $E_{s,t}$ is the addition on row $j$ to row $i$ of the matrix $E_{s,t}$, which gives $c_{i,k}=b_{i,k}+b_{j,k},1 \leq k \leq n$, so $c_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and $c_{i,j}=b_{i,j}+b_{j,j}=0+1=1$, and $c_{i,r}=b_{i,r}+b_{j,r}=0+1=1$, and, it is easy to verify that all other $c_{i,k}$ are zero. \newline
+\end{proof}
 \end{document}
