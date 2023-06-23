@@ -91,7 +91,7 @@ So, $(a_{l,k})=E_{i,j}^{-1} \times (b_{i,j})$ is the row addition $R_i \leftarro
 \textbf{Corollary 1.6} 
 Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
 $\forall m,r \in \mathbb{Z},
-(a_{l,k})=E_{i,j}^(m+r)=E_{i,j}^(r+m)$ is the matrix where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=m+r=r+m,i<j$, and all other elements are zero. \newline
+(a_{l,k})=E_{i,j}^{m+r}=E_{i,j}^{r+m}$ is the matrix where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=m+r=r+m,i<j$, and all other elements are zero. \newline
 This shows that multiplying integer powers of matrices, from the set $E_n$ (which means, adding their exponents), is equivalent to adding integer numbers, which means that we have a canonical bijection, $(\mathbb{Z},+) \leftrightarrow (E_{i,j}^{\mathbb{Z}},\cdot)$, for any two fixed indices $i<j$, where $1 \leftrightarrow E_{i,j}^1=E_{i,j}$, and $-1 \leftrightarrow E_{i,j}^{-1}$ \newline 
 \newpage
 \textbf{Proposition 1.7} \newline
@@ -106,8 +106,37 @@ Also, it is easy to verify that, under the condition that $t \neq i$, the multip
 \end{proof}
 \textbf{Proposition 1.8} \newline
 Let $(a_{l,k})=E_{i,j},i<j,(b_{l,k})=E_{j,r},j<r \in E_n$, Then, \newline
-$(c_{l,k})=E_{i,j} \cdot E_{j,r}$ is a matrix with $c_{l,l}=1,1 \leq l \leq n$, and $c_{i,j}=1$, and $c_{j,r}=1$, and $c_{i,r}=1$, and, all other elements are zero.
+\textbf{1.8.1} $(c_{l,k})=E_{i,j} \cdot E_{j,r}$ is a matrix with $c_{l,l}=1,1 \leq l \leq n$, and $c_{i,j}=1$, and $c_{j,r}=1$, and $c_{i,r}=1$, and, all other elements are zero.
 \begin{proof}
-The multiplication from the left of $E_{i,j}$ by $E_{s,t}$ is the addition on row $j$ to row $i$ of the matrix $E_{s,t}$, which gives $c_{i,k}=b_{i,k}+b_{j,k},1 \leq k \leq n$, so $c_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and $c_{i,j}=b_{i,j}+b_{j,j}=0+1=1$, and $c_{i,r}=b_{i,r}+b_{j,r}=0+1=1$, and, it is easy to verify that all other $c_{i,k}$ are zero. \newline
+The multiplication from the left of $E_{j,r}$ by $E_{j,r}$ is the addition on row $j$ to row $i$ of the matrix $E_{j,}$, which gives $c_{i,k}=b_{i,k}+b_{j,k},1 \leq k \leq n$, so $c_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and $c_{i,j}=b_{i,j}+b_{j,j}=0+1=1$, and $c_{i,r}=b_{i,r}+b_{j,r}=0+1=1$, and, it is easy to verify that all other $c_{i,k}$ are zero. \newline
+\end{proof}
+On the other hand, \newline
+\textbf{1.8.2} $(d_{l,k})=E_{j,r} \cdot E_{i,j}$ is a matrix with $d_{l,l}=1,1 \leq l \leq n$, and $d_{i,j}=1$, and $c_{j,r}=1$, and, all other elements are zero.
+\begin{proof}
+The multiplication from the left of $E_{i,j}$ by $E_{s,t}$ is the addition on row $j$ to row $i$ of the matrix $E_{s,t}$, which gives $c_{i,k}=b_{i,k}+b_{j,k},1 \leq k \leq n$, so $c_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and $c_{i,j}=b_{i,j}+b_{j,j}=0+1=1$, and $c_{i,r}=b_{i,r}+b_{j,r}=0+1=1$, and, it is easy to verify that all other $c_{i,k}$ are zero. 
+\end{proof}
+\textbf{1.8.3} 
+Let $(c_{l,k})=E_{i,j}^{-1},(d_{l,k})=E_{j,r}^{-1}$ \newline
+$(f_{l,k})=E_{i,j}^{-1} \cdot E_{j,r}^{-1}$ is a matrix with $f_{l,l}=1,1 \leq l \leq n$, and $f_{i,j}=-1$, and $f_{j,r}=-1$, and $f_{i,r}=1$ and, all other elements are zero.
+\begin{proof}
+The multiplication from the left of $E_{j,r}^{-1}$ by $E_{i,j}^{-1}$ is the subtraction of row $j$ from row $i$ of the matrix $E_{j,r}^{-1}$, which gives $f_{i,k}=d_{i,k}-d_{j,k},1 \leq k \leq n$, so $f_{i,i}=d_{i,i}-d_{j,i}=1-0=1$, and $f_{i,j}=d_{i,j}-d_{j,j}=0-1=-1$, and $f_{i,r}=d_{i,r}-d_{j,r}=0-(-1)=0+1=1$, and, it is easy to verify that all other $f_{i,k}$ are zero. 
+\end{proof}
+\textbf{1.8.4} 
+Let $(c_{l,k})=E_{i,j}^{-1},(d_{l,k})=E_{j,r}^{-1}$ \newline
+$(g_{l,k})=E_{j,r}^{-1} \cdot E_{i,j}^{-1}$ is a matrix with $f_{l,l}=1,1 \leq l \leq n$, and $f_{i,j}=-1$, and $f_{j,r}=-1$, and, all other elements are zero.
+\begin{proof}
+The multiplication from the left of $E_{i,j}^{-1}$ by $E_{j,r}^{-1}$ is the subtraction of row $r$ from row $j$ of the matrix $E_{i,j}^{-1}$, which gives $g_{i,k}=c_{i,k}-c_{j,k},1 \leq k \leq n$, so $g_{j,j}=c_{j,j}-c_{r,j}=1-0=1$, and $g_{i,j}=c_{i,j}-c_{r,j}=-1-0=-1$, and $g_{j,r}=c_{j,r}-c_{r,r}=0-1=-1$, and, it is easy to verify that all other $g_{j,k},g_{i,k}$ are zero. 
+\end{proof}
+\textbf{Corollary 1.9} 
+Let $(a_{l,k})=E_{i,j},(b_{l,k})=E_{j,r}$, Then\newline
+\textbf{1.9.1}
+$(c_{l,k})=[E_{i,j},E_{j,r}]= E_{i,j} \cdot E_{j,r} \cdot E_{i,j}^{-1} \cdot E_{j,r}^{-1}=E_{i,r}$
+\begin{proof}
+By associativity, $E_{i,j} \cdot E_{j,r} \cdot E_{i,j}^{-1} \cdot E_{j,r}^{-1}=(E_{i,j} \cdot E_{j,r}) \cdot (E_{i,j}^{-1} \cdot E_{j,r}^{-1})$, and we have already calculated these matrix products. \newline
+$(f_{l,k})=E_{i,j} \cdot E_{j,r}=I+F_{i,j}+F_{i,r}+F_{j,r} \newline
+(g_{l,k})=E_{i,j}^-1 \cdot E_{j,r}^-1=I-F_{i,j}+F{i,r}-F_{j,r}$ \newline
+So, in the product matrix, $(c_{l,k})$, $c_{i,j}=\sum_{k=1}^n f_{i,k} \cdot g_{k,j}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,j}+f_{i,j} \cdot g_{j,j}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot -1+1 \cdot 1=-1+1=0$ \newline
+So, $c_{i,j}$ is cancelled by the multiplication. Easy to verify that the same goes also for $c_{j,r}$, but $c_{i,r}=\sum_{k=1}^n f_{i,k} \cdot g_{k,r}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,r}+f_{i,j} \cdot g_{j,r}+f_{i,r} \cdot g_{r,r}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot 1+1 \cdot -1+1 \cdot 1=1+(-1)+1=1-1+1=1$ \newline
+Which means that $[E_{i,j},E_{j,r}]= E_{i,j} \cdot E_{j,r} \cdot E_{i,j}^{-1} \cdot E_{j,r}^{-1}=I+F_{i,r}=E_{i,r}$
 \end{proof}
 \end{document}
