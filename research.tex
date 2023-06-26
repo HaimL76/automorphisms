@@ -136,7 +136,17 @@ By associativity, $E_{i,j} \cdot E_{j,r} \cdot E_{i,j}^{-1} \cdot E_{j,r}^{-1}=(
 $(f_{l,k})=E_{i,j} \cdot E_{j,r}=I+F_{i,j}+F_{i,r}+F_{j,r} \newline
 (g_{l,k})=E_{i,j}^-1 \cdot E_{j,r}^-1=I-F_{i,j}+F{i,r}-F_{j,r}$ \newline
 So, in the product matrix, $(c_{l,k})$, $c_{i,j}=\sum_{k=1}^n f_{i,k} \cdot g_{k,j}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,j}+f_{i,j} \cdot g_{j,j}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot -1+1 \cdot 1=-1+1=0$ \newline
-So, $c_{i,j}$ is cancelled by the multiplication. Easy to verify that the same goes also for $c_{j,r}$, but $c_{i,r}=\sum_{k=1}^n f_{i,k} \cdot g_{k,r}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,r}+f_{i,j} \cdot g_{j,r}+f_{i,r} \cdot g_{r,r}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot 1+1 \cdot -1+1 \cdot 1=1+(-1)+1=1-1+1=1$ \newline
+So, $c_{i,j}$ is canceled by multiplication. Easy to verify that the same goes also for $c_{j,r}$, but $c_{i,r}=\sum_{k=1}^n f_{i,k} \cdot g_{k,r}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,r}+f_{i,j} \cdot g_{j,r}+f_{i,r} \cdot g_{r,r}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot 1+1 \cdot -1+1 \cdot 1=1+(-1)+1=1-1+1=1$ \newline
 Which means that $[E_{i,j},E_{j,r}]= E_{i,j} \cdot E_{j,r} \cdot E_{i,j}^{-1} \cdot E_{j,r}^{-1}=I+F_{i,r}=E_{i,r}$
+\end{proof}
+\textbf{1.9.2}
+$(d_{l,k})=[E_{j,r},E_{i,j}]= E_{j,r} \cdot E_{i,j} \cdot E_{j,r}^{-1} \cdot E_{i,j}^{-1}=E_{i,r}$
+\begin{proof}
+By associativity, $E_{j,r} \cdot E_{i,j} \cdot E_{j,r}^{-1} \cdot E_{i,j}^{-1}=(E_{j,r} \cdot E_{i,j}) \cdot (E_{j,r}^{-1} \cdot E_{i,j}^{-1})$, and we have already calculated these matrix products. \newline
+$(f_{l,k})=E_{j,r} \cdot E_{i,j}=I+F_{i,j}+F_{j,r} \newline
+(g_{l,k})=E_{j,r}^-1 \cdot E_{i,j}^-1=I-F_{i,j}-F_{j,r}$ \newline
+So, in the product matrix, $(d_{l,k})$, $d_{i,j}=\sum_{k=1}^n f_{i,k} \cdot g_{k,j}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,j}+f_{i,j} \cdot g_{j,j}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot -1+1 \cdot 1=-1+1=0$ \newline
+So, $d_{i,j}$ is canceled by multiplication. Easy to verify that the same goes also for $d_{j,r}$, but $d_{i,r}=\sum_{k=1}^n f_{i,k} \cdot g_{k,r}=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot g_{i,r}+f_{i,j} \cdot g_{j,r}+f_{i,r} \cdot g_{r,r}+0 \cdot 0 \dots 0 \cdot 0=0 \cdot 0+ \dots +0 \cdot 0+f_{i,i} \cdot 0+f_{i,j} \cdot g_{j,r}+0 \cdot g_{r,r}+0 \cdot 0 \dots 0 \cdot 0=1 \cdot 0+1 \cdot -1+0 \cdot 1=0+(-1)+0=0-1+0=-1$ \newline
+Which means that $[E_{j,r},E_{i,j}]= E_{j,r} \cdot E_{i,j} \cdot E_{j,r}^{-1} \cdot E_{i,j}^{-1}=I-F_{i,r}=E_{i,r}^{-1}$
 \end{proof}
 \end{document}
