@@ -2,8 +2,10 @@
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother
-\usepackage{amsfonts}
+\usepackage{amsfonts, amssymb}
+\usepackage{mathrsfs, mathdots} 
 \usepackage{amsmath}
+\usepackage{float}
 \usepackage{amsthm}
 \usepackage{tikz-cd}
 \usepackage{xcolor}
@@ -11,6 +13,11 @@
 \usepackage{setspace}
 \usepackage{xfrac}
 \usepackage{yfonts}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
@@ -29,21 +36,40 @@
 \ExplSyntaxOff
 
 \begin{document}
-\textbf{1. The group $U_n$} \newline
-\newline
-\textbf{Proposition 1.1} \newline
-Let $E_n=\{ E_{i,j} \}_{i<j}$ be the set of all $n \times n$ matrices, $(e_{l,k})$, \newline where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=1,i<j$, and all other elements are zero. That is, $E_{i,j}$ has $1$ only on the main diagonal, and in one element, anywhere above the main diagonal. Let $A$ be any $n \times n$ matrix. Then,\newline
-Multiplying $A$ by $E_{i,j}$ (from the left), $E_{i,j} \times A$, is operating as performing the elementary operation $R_i \leftarrow R_i+R_j$ on $A$
+
+\textbf{Annotations}\newline
+\textbf{$F_{ij}(\alpha)$}, where $i<j$, is a $n \times n$ matrix, satisfying, 
+$$
+F_{ij}(\alpha)=(a_{kl})=\begin{cases}
+			\alpha, & k=i \land l=j\\
+            0, & \text{otherwise}
+		 \end{cases}
+$$
+Define $F_{ij}:=F{ij}(1)$ \newline
+\textbf{$E_{ij}(\alpha)$}, where $i<j$, is a $n \times n$ matrix, satisfying, 
+$$
+E_{ij}(\alpha)=(a_{kl})=\begin{cases}
+            1, & k=l\\
+			\alpha, & k=i \land l=j\\
+            0, & \text{otherwise}
+		 \end{cases}
+$$
+Define $E_{ij}:=E{ij}(1)$ \newline
+
+\section{The group $U_n$}
+%\textbf{1. The group $U_n$} 
+
+\begin{proposition} \label{prop:left.elementary.operation}
+Let $A$ be any $n \times n$ matrix. Then multiplying $A$ from the left by any $E_{ij}$, of the same dimensions, yields a result matrix, $B=E_{ij}A$, which has $B_k=A_k$, for all $1 \leq k \leq i-1$, and for all $i+1 \leq k \leq n$, and has $B_i=A_i+\alpha A_j$
+\end{proposition}
 \begin{proof}
-$A=(a_{l,k}),B=(b_{l,k})=E_{i_j} \times A=(e_{l,k}) \times (a_{l,k})$ \newline
-$b_{l,k}=\sum_{r=1}^n e_{l,r} \cdot a_{r,k}$ \newline
-For all the rows, except for row $i$, $b_{l,k}=\sum_{r=1}^n e_{l,r} \cdot a_{r,k}=0+0+\dots+e_{l,l} \cdot a_{l,k}+0+0+\dots+0+0=1 \cdot a_{l,k}=a_{l,k}$ \newline
-For row $i$, $b_{i,k}=\sum_{r=1}^n e_{i,r} \cdot a_{r,k}=0+0+\dots+e_{i,i} \cdot a_{i,k}+0+0+e_{i,j} \cdot a_{j,k}+0+0+\dots+0+0=1 \cdot a_{i,k}+1 \cdot a_{j,k}=a_{i,k}+a_{j,k}$ \newline
-This shows that the multiplication preserves the rows of $A$, except for row $i$, which becomes the sum of rows $i,j$
+Let the elements of $A$ be $(a_{kl})$, and the elements of $E_{ij}(\alpha)$ be $(e_{kl})$. Set the result matrix $B=E_{ij}(\alpha)A$, and let its elements be $(b_{kl})$. For each cell $b_{kl}=\sum_{r=1}^n e_{kr}a_{rl}$. For $k=i$, the sum, for each column $l$, is $0+\dots+0+e{ii}a_{il}+0+\dots+0+e_{ij}a_{jl}+0\dots+0=1a_{il}+\alpha a_{jl}=a_{il}+\alpha a_{jl}$, which proves that $B_i=A_i+\alpha A_j$. The rest is obvious as well.
 \end{proof}
-\textbf{Corollary 1.2} \newline
-Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
+\begin{corollary}
+%By Theorem~\ref{prop:elementary.operations} we have
+Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,
 $E_{i,j}^{-1}=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=-1,i<j$, and all other elements are zero.
+\end{corollary}
 \begin{proof}
 $(b_{l,k})=E_{i,j} \times (a_{l,k})$ \newline
 Multiplying $(a_{l,k})$ by $E_{i,j}$ from the left is operating on $(a_{l,k})$ as a row addition, $R_i \leftarrow R_i+R_j$, as seen above. \newline 
