@@ -59,47 +59,63 @@ Define $E_{ij}:=E{ij}(1)$ \newline
 \section{The group $U_n$}
 %\textbf{1. The group $U_n$} 
 
-\begin{proposition} \label{prop:left.elementary.operation}
-Let $A$ be any $n \times n$ matrix. Then multiplying $A$ from the left by any $E_{ij}$, of the same dimensions, yields a result matrix, $B=E_{ij}A$, which has $B_k=A_k$, for all $1 \leq k \leq i-1$, and for all $i+1 \leq k \leq n$, and has $B_i=A_i+\alpha A_j$
+\begin{proposition} \label{prop:elem.oper.row.add}
+Let $A$ be any $n \times n$ matrix. Then multiplying $A$ from the left by any $E_{ij}(\alpha)$, of the same dimensions, yields a result matrix, $B=E_{ij}(\alpha)A$, whose rows are $$
+B_k=\begin{cases}
+		A_i+\alpha A_j, & k=i\\
+            A_k, & \text{otherwise}
+		 \end{cases}
+$$
+In words, all the rows of $B$ are the rows of $A$, except for row $i$ of $B$, which is the addition of row $i$ of $A$ and the multiplication of row $j$ of A by the scalar $\alpha$.
 \end{proposition}
 \begin{proof}
 Let the elements of $A$ be $(a_{kl})$, and the elements of $E_{ij}(\alpha)$ be $(e_{kl})$. Set the result matrix $B=E_{ij}(\alpha)A$, and let its elements be $(b_{kl})$. For each cell $b_{kl}=\sum_{r=1}^n e_{kr}a_{rl}$. For $k=i$, the sum, for each column $l$, is $0+\dots+0+e{ii}a_{il}+0+\dots+0+e_{ij}a_{jl}+0\dots+0=1a_{il}+\alpha a_{jl}=a_{il}+\alpha a_{jl}$, which proves that $B_i=A_i+\alpha A_j$. The rest is obvious as well.
 \end{proof}
 \begin{corollary}
-%By Theorem~\ref{prop:elementary.operations} we have
-Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,
-$E_{i,j}^{-1}=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=-1,i<j$, and all other elements are zero.
+\label{cor:inv.elem.oper.row.add}
+Let $E_{ij}(\alpha)$ be a matrix of the described form. Then $E_{ij}(\alpha)$ has an inverse matrix, and its inverse is $E_{ij}(\alpha)^{-1}=E_{ij}(-\alpha)$
 \end{corollary}
 \begin{proof}
-$(b_{l,k})=E_{i,j} \times (a_{l,k})$ \newline
-Multiplying $(a_{l,k})$ by $E_{i,j}$ from the left is operating on $(a_{l,k})$ as a row addition, $R_i \leftarrow R_i+R_j$, as seen above. \newline 
-For all $1 \leq k \leq n,b_{i,k}=a_{i,k}+a_{j,k}$ \newline
-But, the only element in row $j$ that is not zero is $a_{j,j=1}$, so, $b_{i,j}=a_{i,j}+a_{j,j}= \newline -1+1=0$, and, for all the other columns, $a_{j,k}=0$, so $b_{i,i}=a_{i,i}+a_{j,i}=1+0=1$, and $b_{i,k}=a_{i,k}+a_{j,k}=0+0=0$, which means that $(b_{l,k})=I_n$ \newline 
-Easy to verify that also $(a_{l,k}) \times E_{i,j}=I_n$, and that $(a_{l,k})$ is a unique inverse of $E_{i,j}$, since, suppose we have another inverse matrix, $M=E_{i,j}^{-1}$, then $(a_{l,k}) \times E_{i,j}=I_n=M \times E_{i,j} \Rightarrow ((a_{l,k}) \times E_{i,j}) \times M=(M \times E_{i,j}) \times M
-\Rightarrow (a_{l,k}) \times E_{i,j} \times M=M \times E_{i,j} \times M
-\Rightarrow (a_{l,k}) \times (E_{i,j} \times M)=M \times (E_{i,j} \times M) \Rightarrow (a_{l,k}) \times I_n=M \times I_n \Rightarrow (a_{l,k})=M$ \newline
-So, $(a_{l,k})=E_{i,j}^{-1}$ is the unique inverse of $E_{i,j}$ \newline 
+Easy to observe that $|E_{ij}(\alpha)|=1\neq 0$, so there exists a matrix $B=E_{ij}(\alpha)^{-1}$. Let the elements of $E_{ij}(\alpha)$ be $(e_{kl})$, and let the elements of $B$ be $(b_{kl})$. From proposition~\ref{prop:elem.oper.row.add}, we know that multiplying $B$ from the left by $E_{ij}(\alpha)$ yields a matrix $C$ with all the rows identical to the rows of $B$, except for row $i$, which is the addition $B_i+\alpha B_j$. Let the elements of $C$ be $(c_{kl})$. But $B=E_{ij}(\alpha)^{-1}$, which means $C=I_n$, so 
+$$
+c_{kl}=\begin{cases}
+		1, & k=l\\
+            0, & \text{otherwise}
+		 \end{cases}
+$$
+This yields the following equations,
+$$
+\begin{cases}
+c_{ii}=1=b_{ii}+\alpha b_{ji}\\
+c_{ij}=0=b_{ij}+\alpha b_{jj}\\
+		 \end{cases}
+$$
+But, $C_j=B_j$, which means that $c_{jj}=1=b_{jj}$. Taking this to the second equation, gives $0=b_{ij}+\alpha 1 \Rightarrow b_{ij}=\alpha$. Similarly, $c_{ji}=0=b_{ji}$. Taking this to the first equation, gives $1=b_{ii}+0 \Rightarrow b_{ii}=1$. It is now clear that $B=E_{ij}(\alpha)^{-1}$ is of the form described above.
 \end{proof}
-\newpage
-\textbf{Corollary 1.3} \newline
-Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, and $A=(a_{l,k})$ any $n \times n$ matrix. Then,\newline
-$E_{i,j}^{-1}=(b_{l,k})$ operates on $A$ as the row addition $R_i \leftarrow R_i-R_j$.
+\begin{corollary}
+Let $A$ be any $n \times n$ matrix. Then multiplying $A$ from the left by any $E_{ij}(\alpha)^{-1}$, of the same dimensions, yields a result matrix, $B=E_{ij}(\alpha)^{-1}A$, whose rows are $$
+B_k=\begin{cases}
+		A_i-\alpha A_j, & k=i\\
+            A_k, & \text{otherwise}
+		 \end{cases}
+$$
+\end{corollary}
 \begin{proof}
-As seen above, $E_{i,j}^{-1}=(b_{l,k})$ is a matrix where $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=-1,i<j$, and all other elements are zero. \newline
-So, the multiplication $(c_{l,k})=E_{i,j}^{-1} \times A=(b_{l,k}) \times (a_{l,k})$ is exactly the same as $E_{i,j} \times A$, for all the rows except for row $i$ \newline
-For row $i$, we have $c_{i,k},1 \leq k \leq n=\sum_{r=1}^n b_{i,r} \cdot a_{r,k}$ \newline
-But, the only elements that are not zero, in row $i$ of $(b_{l,k})$ are $b_{i,i}=1$, and $b_{i,j}=-1$, so, $c_{i_k}=b_{i,1} \cdot a_{1,k}+b_{i,2} \cdot a_{2,k}+\dots+b_{i,i} \cdot a_{i,k}+\dots+b_{i,j} \cdot a_{j,k}+\dots+b_{i,n-1} \cdot a_{n-1,k}+b_{i,n} \cdot a_{n,k}=0 \cdot a_{1,k}+0 \cdot a_{2,k}+\dots+1 \cdot a_{i,k}+\dots+(-1) \cdot a_{j,k}+\dots+0 \cdot a_{n-1,k}+0 \cdot a_{n,k}=0+0+\dots+a_{i,k}+\dots+(-a_{j,k})=a_{i,k}-a_{j,k}$, which shows that in the product matrix, $(c_{l,k})$, $R_i$ turns into $R_i-R_j$ \newline
+From ~\ref{cor:inv.elem.oper.row.add}, we have that $E_{ij}(\alpha)^{-1}A=E_{ij}(-\alpha)A$, and from ~\ref{prop:elem.oper.row.add}, the result above is immediate.
 \end{proof}
-\textbf{Proposition 1.4} \newline
-Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
-$\forall m \in \mathbb{N},E_{i,j}^m=(a_{l,k})$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=m,i<j$, and all other elements are zero.
+\begin{proposition} \label{prop:pow.elem.oper.row.add}
+Let $E_{ij}(\alpha)$ as defined above. then, for any $m \in \mathbb{N}$, we have $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$
+\end{proposition}
 \begin{proof}
-By induction on $m$. \newline
-For $m=2$, we observe that $E_{i,j}^2=E_{i,j} \times E_{i,j}$, which means that the multiplication from the left of $E_{i,j}$ by itself is operating on $E_{i,j}$ as the row addition $R_i \leftarrow R_i+R_j$, so, $a_{i,i}=a_{i,i}+a{j,i}=1+0=1$, and, $a_{i,j}=a_{i,j}+a_{j,j}=1+1=2$, and, all the other elements are zero (easy to verify). \newline 
-So, $(a_{l,k})=E_{i,j}^2$, where $a_{l,l}=1,1 \leq l \leq n$, and $a_{i,j}=2,i<j$, and all other elements are zero. \newline
-Now, we prove for $m+1$ \newline
-$(a_{l,k})=E_{i,j}^{m+1}=E_{i,j} \times E_{i,j}^m$. But, from the induction assumption, $(b_{l,k})=E_{i,j}^m$, $b_{l,l}=1,1 \leq l \leq n$, and $b_{i,j}=m,i<j$, and all other elements are zero. \newline
-Multiplying from the left $(b_{l,k})$ by $E_{i,j}$ is operating as the row addition $R_i \leftarrow R_i+R_j$, so, $a_{i,i}=b_{i,i}+b_{j,i}=1+0=1$, and, $a_{i,j}=b_{i,j}+b_{j,j}=m+1$, and easy to verify that all the other elements are zero, thus, we prove the induction step. \newline
+By induction on $m$.
+For $m=1$, $E_{ij}(\alpha)^1=E_{ij}(1\alpha)$. For $m>1$, we have $E_{ij}(\alpha)^m=E_{ij}(\alpha)E_{ij}(\alpha)^{m-1}$. By the induction hypothesis, $E_{ij}(\alpha)^{m-1}=E_{ij}((m-1)\alpha)$. We denote $A=E_{ij}((m-1)\alpha)$. By proposition ~\ref{prop:elem.oper.row.add}, $B=E_{ij}(\alpha)A$ is the matrix whose rows are
+$$
+B_k=\begin{cases}
+		A_i+\alpha A_j, & k=i\\
+            A_k, & \text{otherwise}
+		 \end{cases}
+$$
+So $b_{ii}=a_{ii}+\alpha a_{ji}=1+\alpha 0=1+0=1$, and $b_{ij}=a_{ij}+\alpha a_{jj}=(m-1)\alpha+\alpha 1=(m-1+1)\alpha=m\alpha$, which proves the induction step.
 \end{proof}
 \newpage
 \textbf{Corollary 1.5} \newline
