@@ -38,7 +38,8 @@
 \begin{document}
 
 \textbf{Annotations}\newline
-\textbf{$F_{ij}(\alpha)$}, where $i<j$, is a $n \times n$ matrix, satisfying, 
+\textbf{$\mathbb{F}$}, an arbitrary field. \newline
+\textbf{$F_{ij}(\alpha)$}, where $\alpha \in \mathbb{F}$, and $i<j$, is a $n \times n$ matrix, satisfying, 
 $$
 F_{ij}(\alpha)=(a_{kl})=\begin{cases}
 			\alpha, & k=i \land l=j\\
@@ -46,7 +47,7 @@ F_{ij}(\alpha)=(a_{kl})=\begin{cases}
 		 \end{cases}
 $$
 Define $F_{ij}:=F{ij}(1)$ \newline
-\textbf{$E_{ij}(\alpha)$}, where $i<j$, is a $n \times n$ matrix, satisfying, 
+\textbf{$E_{ij}(\alpha)$}, where $\alpha \in \mathbb{F}$, and $i<j$, is a $n \times n$ matrix, satisfying, 
 $$
 E_{ij}(\alpha)=(a_{kl})=\begin{cases}
             1, & k=l\\
@@ -103,7 +104,8 @@ $$
 \begin{proof}
 From ~\ref{cor:inv.elem.oper.row.add}, we have that $E_{ij}(\alpha)^{-1}A=E_{ij}(-\alpha)A$, and from ~\ref{prop:elem.oper.row.add}, the result above is immediate.
 \end{proof}
-\begin{proposition} \label{prop:pow.elem.oper.row.add}
+\begin{proposition} 
+\label{prop:pow.elem.oper.row.add}
 Let $E_{ij}(\alpha)$ as defined above. then, for any $m \in \mathbb{N}$, we have $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$
 \end{proposition}
 \begin{proof}
@@ -116,6 +118,52 @@ B_k=\begin{cases}
 		 \end{cases}
 $$
 So $b_{ii}=a_{ii}+\alpha a_{ji}=1+\alpha 0=1+0=1$, and $b_{ij}=a_{ij}+\alpha a_{jj}=(m-1)\alpha+\alpha 1=(m-1+1)\alpha=m\alpha$, which proves the induction step.
+\end{proof}
+\begin{corollary}
+\label{cor:inv.pow.elem.oper.row.add}
+Let $E_{ij}(\alpha)$ be a matrix as defined above. Then, for any $m \in \mathbb{N}$, $E_{ij}(\alpha)^{-m}=(E_{ij}(\alpha)^m)^{-1}=(E_{ij}(\alpha)^{-1})^m=E_{ji}(-m\alpha)$
+\end{corollary}
+\begin{proof}
+By ~\ref{cor:inv.elem.oper.row.add}, $E_{ij}(\alpha)^{-1}=E_{ij}(-\alpha)$, and by ~\ref{prop:pow.elem.oper.row.add}, ($E_{ij}(\alpha)^{-1})^m=E_{ij}(-\alpha)^m=E_{ij}(m\cdot -\alpha)=E_{ij}(-m\alpha)$. We can commute the operations, to obtain exactly the same result.
+\end{proof}
+\begin{corollary}
+Let $E_{ij}(\alpha), E_{ij}(\beta)$ be two matrices as defined above. Then, for any $m,s \in \mathbb{Z}$, $E_{ij}(\alpha)^m E_{ij}(\beta)^s=E_{ij}(m\alpha+s \beta)$
+\end{corollary}
+\begin{proof}
+Set $A=E_{ij}(\alpha)^m$, and let $(a_{kl})$ be its elements.
+If $m>0$, then by ~\ref{prop:pow.elem.oper.row.add}, $A=E_{ij}(\alpha)^m=E_{ij}(m\alpha)$. If $m<0$, then by ~\ref{cor:inv.pow.elem.oper.row.add}, we get the same. If $m=0$, then $A=E_{ij}(\alpha)^0=I_n$, But the unit matrix has $0$ everywhere, except for the main diagonal, which means that also $a_{ij}=0$, which means that $A=E_{ij}(\alpha)^0=I_n=E_{ij}(0)=E_{ij}(0\alpha)$, which proves that $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$, for any $m \in \mathbb{Z}$. So, $E_{ij}(\alpha)^m E_{ij}(\beta)^s=E_{ij}(m\alpha) E_{ij}(s\beta)$, and the rest can be concluded from ~\ref{prop:elem.oper.row.add}.
+\end{proof}
+\begin{corollary}
+Let $A$ be an upper triangular $n x n$ matrix, over $\mathbb{Z}$, with $1$ on the main diagonal.
+\end{corollary}
+\begin{proof}
+Set $A=E_{ij}(\alpha)^m$, and let $(a_{kl})$ be its elements.
+If $m>0$, then by ~\ref{prop:pow.elem.oper.row.add}, $A=E_{ij}(\alpha)^m=E_{ij}(m\alpha)$. If $m<0$, then by ~\ref{cor:inv.pow.elem.oper.row.add}, we get the same. If $m=0$, then $A=E_{ij}(\alpha)^0=I_n$, But the unit matrix has $0$ everywhere, except for the main diagonal, which means that also $a_{ij}=0$, which means that $A=E_{ij}(\alpha)^0=I_n=E_{ij}(0)=E_{ij}(0\alpha)$, which proves that $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$, for any $m \in \mathbb{Z}$. So, $E_{ij}(\alpha)^m E_{ij}(\beta)^s=E_{ij}(m\alpha) E_{ij}(s\beta)$, and the rest can be concluded from ~\ref{prop:elem.oper.row.add}.
+\end{proof}
+
+
+
+
+
+\begin{proposition}
+Let $E_{ij}(\alpha),E_{st}(\beta)$ be two matrices defined as above, that is, $\alpha,\beta \in \mathbb{F}$, and $i<j$, and $s<t$. Then, $C=E_{ij}(\alpha)E_{st}(\beta)$ is an upper triangular matrix over $\mathbb{F}$, with $1$ on the main diagonal.
+\end{proposition}
+\begin{proof}
+Let $(a_{kl})$ be the elements of $E_{ij}(\alpha)$, and let $(b_{kl})$ be the elements of $E_{st}(\beta)$
+From ~\ref{prop:elem.oper.row.add}, we have that $C_k=B_k$, for each row $k \neq i$, and $C_i=B_i+\alpha B_j$. But, for any index $r<i<j$, we have $b_{jr}=0$, so, the sum $c_{ir}=b_{ir}+\alpha b_{jr}$, which means that $$
+c_{ir}=\begin{cases}
+		0, & r<i\\
+            1, & r=i\\
+            b_{ir}, & i<r<j \\
+            b_{ij}+\alpha, & r=j\\
+            b_{ir}+b_{jr}, & j<r<n\\
+		 \end{cases}
+$$, which proves that $C$ is of the form described above.
+\end{proof}
+\begin{corollary}
+The set of all upper triangular matrices, with $1 on the main diagonal$
+\end{corollary}
+\begin{proof}
 \end{proof}
 \newpage
 \textbf{Corollary 1.5} \newline
