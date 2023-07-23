@@ -18,6 +18,7 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
@@ -37,7 +38,7 @@
 
 \begin{document}
 
-\textbf{Annotations}\newline
+\textbf{Notations}\newline
 \textbf{$\mathbb{F}$}, an arbitrary field. \newline
 \textbf{$F_{ij}(\alpha)$}, where $\alpha \in \mathbb{F}$, and $i<j$, is a $n \times n$ matrix, satisfying, 
 $$
@@ -134,18 +135,13 @@ Set $A=E_{ij}(\alpha)^m$, and let $(a_{kl})$ be its elements.
 If $m>0$, then by ~\ref{prop:pow.elem.oper.row.add}, $A=E_{ij}(\alpha)^m=E_{ij}(m\alpha)$. If $m<0$, then by ~\ref{cor:inv.pow.elem.oper.row.add}, we get the same. If $m=0$, then $A=E_{ij}(\alpha)^0=I_n$, But the unit matrix has $0$ everywhere, except for the main diagonal, which means that also $a_{ij}=0$, which means that $A=E_{ij}(\alpha)^0=I_n=E_{ij}(0)=E_{ij}(0\alpha)$, which proves that $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$, for any $m \in \mathbb{Z}$. So, $E_{ij}(\alpha)^m E_{ij}(\beta)^s=E_{ij}(m\alpha) E_{ij}(s\beta)$, and the rest can be concluded from ~\ref{prop:elem.oper.row.add}.
 \end{proof}
 \begin{corollary}
-Let $A$ be an upper triangular $n x n$ matrix, over $\mathbb{Z}$, with $1$ on the main diagonal.
+Let $A$ be an upper triangular $n \times n$ matrix, over $\mathbb{Z}$, with $1$ on the main diagonal.
 \end{corollary}
 \begin{proof}
 Set $A=E_{ij}(\alpha)^m$, and let $(a_{kl})$ be its elements.
 If $m>0$, then by ~\ref{prop:pow.elem.oper.row.add}, $A=E_{ij}(\alpha)^m=E_{ij}(m\alpha)$. If $m<0$, then by ~\ref{cor:inv.pow.elem.oper.row.add}, we get the same. If $m=0$, then $A=E_{ij}(\alpha)^0=I_n$, But the unit matrix has $0$ everywhere, except for the main diagonal, which means that also $a_{ij}=0$, which means that $A=E_{ij}(\alpha)^0=I_n=E_{ij}(0)=E_{ij}(0\alpha)$, which proves that $E_{ij}(\alpha)^m=E_{ij}(m\alpha)$, for any $m \in \mathbb{Z}$. So, $E_{ij}(\alpha)^m E_{ij}(\beta)^s=E_{ij}(m\alpha) E_{ij}(s\beta)$, and the rest can be concluded from ~\ref{prop:elem.oper.row.add}.
 \end{proof}
-
-
-
-
-
-\begin{proposition}
+\begin{proposition} \label{prop:elem.oper.row.add.mult.closed}
 Let $E_{ij}(\alpha),E_{st}(\beta)$ be two matrices defined as above, that is, $\alpha,\beta \in \mathbb{F}$, and $i<j$, and $s<t$. Then, $C=E_{ij}(\alpha)E_{st}(\beta)$ is an upper triangular matrix over $\mathbb{F}$, with $1$ on the main diagonal.
 \end{proposition}
 \begin{proof}
@@ -160,11 +156,34 @@ c_{ir}=\begin{cases}
 		 \end{cases}
 $$, which proves that $C$ is of the form described above.
 \end{proof}
+\begin{proposition}
+Let $A$ be an upper triangular matrix over $\mathbb{F}$, with $1$ on the main diagonal. Then, $A$ can be decomposed into a product of matrices of the form $E_{ij}(\alpha)$
+\end{proposition}
+\begin{proof}
+Suppose $A$ is an upper triangular matrix, with $1$ on the main diagonal. Let $(a_{kl})$ be the elements of $A$, and let $a_{i_0j_0}$ be an arbitrary element of $A$, such that $i_0<j_0$, and $a_{i_0j_0}=\alpha_0\neq 0$.
+We look at the product $A^{(0)}=E_{i_0j_0}(-\alpha_0)A$. By ~\ref{cor:inv.elem.oper.row.add}, we have $A_{i_0}^{(0)}=A_{i_0}+\alpha_0 A_{j_0}$. Let $a_{kl}^{(0)}$ be the elements of $A^{(0)}$, so, $a_{i_0r}^{(0)}=a_{i_0r}+\alpha_0 a_{j_0r}$, for all $1\leq r\leq n$. So, we can easily verify that,
+$$
+a_{i_0r}^{(0)}=\begin{cases}
+		0, & 1\leq r<i_0\\
+            1, & r=i_0\\
+            a_{i_0r}, & i_0<r<j_0\\
+            0, & r=j_0\\
+            a_{i_0r}-\alpha_0 a_{j_0r}, & j<r\leq n\\
+		 \end{cases}
+$$
+Now, we can choose another element, $a_{i_1j_1}$, such that $i_1<j_1$, and $a_{i_1j_1}=\alpha_1\neq 0$, and calculate $A^{(1)}=E_{i_1j_1}A^{(0)}$, in the same way described above. We do this, until all the elements of $A$, above the main diagonal, are $0$, that means, until we obtain the unit matrix, $I_n$. Since $A$ is of a finite dimension, it is obvious that the number of its elements is finite, and therefore, the number of elements above the main diagonal is finite. So, the number of steps, to obtain $I_n$ from $A$ necessarily finite, which means that $I_n=A^{(m)}$, where $m<\infty$.
+So, $I_n=A^{(m)}=E_{i_mj_m}A^{(m-1)}=E_{i_mj_m}E_{i_{m-1}j_{m-1}}A^{(m-2)}=\dots=E_{i_mj_m}E_{i_{m-1}j_{m-1}}\dots E_{i_1j_1}E_{i_0j_0}A$
+\end{proof}
 \begin{corollary}
-The set of all upper triangular matrices, with $1 on the main diagonal$
+The set of all upper triangular matrices over $\mathbb{F}$, with $1$ on the main diagonal, is a multiplicative group.
 \end{corollary}
 \begin{proof}
+By ~\ref{prop:elem.oper.row.add.mult.closed}, we know that for every two matrices of the form $E_{ij}(\alpha)$, we get a product in the form of an upper triangular matrix, with $1$ on the main diagonal. So, if $A=E_{ij}(\alpha)E_{st}(\beta)$, and $B=E_{kl}E_{}$\newline
+
+this set is closed under multiplication. The associativity is obvious, as the operation is matrix multiplication. The standard unit matrix, $I_n=E_{ij}(0)$ is also a neutral matrix for all matrices of this form. And, by ~\ref{cor:inv.elem.oper.row.add}, every $E_{ij}(\alpha)$ has its unique inverse matrix, $E_{ij}(\alpha)^{-1}$, of this form, which makes this set a group, under the multiplication operation.
 \end{proof}
+\begin{notation}
+\end{notation}
 \newpage
 \textbf{Corollary 1.5} \newline
 Let $E_{i,j}=(e_{l,k}),i<j \in E_n$, Then,\newline
