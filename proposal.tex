@@ -46,6 +46,7 @@
 \item $\mathbb{Q}_p$, the fraction field of $\mathbb{Z}_p$.
 \item $L_p$, a $\mathbb{Z}_p$-algebra over the ring of p-adic integers.
 \item $\mathcal{L}_p$, a $\mathbb{Q}_p$-algebra, over the fraction field of $\mathbb{Z}_p$.
+\item $G(\mathcal{L}_p):=Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$, the group of $\mathbb{Q}_p$-automorphisms of $\mathcal{L}_p$.
 \end{itemize}
 \end{notations}
 \begin{proposition} \label{prop:finite.number.subgroups}
@@ -94,5 +95,34 @@ The Riemann $\zeta$-function is decomposing to an infinite product of $\zeta_p$-
 $\zeta(s)=\sum_{n=1}^{\infty}n^{-s}=1+\frac{1}{2^{-s}}+\frac{1}{3^{-s}}+\dots$, but every $n\in\mathbb{N}$ is decomposing to a finite product of powers of primes, $n=2^{k_2}3^{k_3}5^{k_5}\dots$, so, taking this product, $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=(1+\frac{1}{2^s}+\frac{1}{2^{2s}}+\frac{1}{2^s}+\dots)(1+\frac{1}{3^s}+\frac{1}{3^{2s}}+\frac{1}{3^s}+\dots)(1+\frac{1}{5^s}+\frac{1}{5^{2s}}+\frac{1}{5^s}+\dots)\dots=\prod_p(1+\frac{1}{p^s}+\frac{1}{p^{2s}}+\frac{1}{p^s}+\dots)$, we have every expression of the form $\frac{1}{2^{k_2s}3^{k_3s}5^{k_5s}\dots}$, where the denominator is a finite product of powers of primes, and each expression is uniquely existing in this product. From this, it is obvious that this product forms an infinite sum of expressions of the form $\frac{1}{n^s}$, where every $n\in\mathbb{N}$ is uniquely existing. This means that $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=1+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{5^s}+\dots=\sum_{n=1}^\infty\frac{1}{n^s}=\zeta(s)$. This decomposition is called \textbf{Euler Decomposition}. One checks that if $Re(s)>0$, then the sum of the geometric series is $\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=1+\frac{1}{p}+\frac{1}{p^2}+\frac{1}{p^3}+\frac{1}{p^4}+\dots=\frac{1}{1-p^{-s}}$, so $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}=\prod_p\zeta_p(s)$, which completes the proof.
 \end{proof}
 \end{proposition}
-
+\begin{proposition}
+\label{prop.proisomorphic.decomposition}
+Let $G$ be any finitely-generated, nilpotent and torsion-free group, then we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$
+\end{proposition}
+\begin{definition}
+\label{def.lower.central.series}
+Let $G$ be any group, then the \textbf{lower central series} of $G$ is series of subgroups of $G$, defined by the recursive rule, $G_n:=[G,G_{n-1}]$, for every $n\in\mathbb{N}$, where $G_0:=G$.  We recall that $[G,G_n]\leq G$ is the subgroup of commutators, $\{gg_ng^{-1}g_n^{-1} : g\in G,g_n\in G_n\}$
+\end{definition}
+\begin{definition}
+\label{def.nilpotency.class}
+Let $G$ be any group. the \textbf{nilpotency class} of $G$ is $min\{n\in\mathbb{N} : G_n=[G,G_{n-1}]=\{e\}\}$, in words, the smallest natural number, such that the subgroup of commutators of the form $[G,G_n]$ is the trivial group. We can extend this definition, and say that the trivial group nilpotency class is $0$.
+\end{definition}
+\begin{proposition}
+\label{prop.automorphism.group}
+Let $G(\mathcal{L}_p)\leq GL_n(\mathcal{L}_p)$, for $n=dim\mathcal{L}_p$. This is true for any field $\mathbb{F}$ and $\mathbb{F}$-algebra $\mathcal{L}_{\mathbb{F}}$.
+\end{proposition}
+\begin{proof}
+Choose a basis $B=\{b_1,\dots,b_n\}$ of 
+$\mathcal{L}_p$. Let $\varphi\in G(\mathcal{L}_p)$, and $v\in\mathcal{L}_p$. $B$ is a basis, so there are $\lambda_1,\dots,\lambda_n\in\mathbb{Q}_p$, such that $v=\lambda_1b_1,\dots,\lambda_nb_b$. Then, $\varphi(v)=\varphi(\sum_{i=1}^n\lambda_ib_i)=\sum_{i=1}^n\varphi(\lambda_ib_i)=\sum_{i=1}^n\lambda_i\varphi(b_i)$. Mark $B_\varphi=\{\varphi(b_1),\dots,\varphi(b_n)\}$. $B_\varphi$ must span $\mathcal{L}_p$, otherwise, there exists a vector $u\in\mathcal{L}_p$, such that $\sum_{i=1}^n\rho_i\varphi(b_i)\neq u$, for any $\rho_1,\dots,\rho_n\in\mathbb{Q}_p$. But $u=\sum_{i=1}^n\tau_ib_i$, $\varphi$ is an automoprhism, so $u=\varphi\varphi^{-1}(u)=\varphi(\varphi^{-1}(\sum_{i=1}^n\tau_ib_i))=\varphi(\sum_{i=1}^n\varphi^{-1}(\tau_ib_i))=\varphi(\sum_{i=1}^n\tau_i\varphi^{-1}(b_i))=\sum_{i=1}^n\varphi(\tau_i\varphi^{-1}(b_i))=\sum_{i=1}^n\tau_i\varphi(\varphi^{-1}(b_i))=\sum_{i=1}^n\tau_ib_i$, in contradiction to the assumed. $B_\varphi
+$ is also linearly-independent, because, supposed that $\sum_{i=1}\rho_i\varphi(bi)=0$, then, since $\varphi$ is an automorphism, must be that $\varphi^{-1}(\sum_{i=1}\rho_i\varphi(bi))=0$, which means that $\sum_{i=1}\varphi^{-1}(\rho_i\varphi(bi))=\sum_{i=1}\rho_i\varphi^{-1}(\varphi(bi))=\sum_{i=1}\rho_ib_i=0$, which contradicts to thew fact that $B$ is a basis. So, $B_\varphi$ is also a basis of $\mathcal{L}_p$. It is immediate to conclude that the matrix representing $\varphi$ is an inverse $n\times n$ matrix, which means that $\varphi\in GL
+_n(\mathbb{Q}_p)$, and that $\forall\varphi,\psi\in G(\mathbb{Q}_p)$, their compositions $\varphi\psi$, and $\psi\varphi$ are also in $G(\mathbb{Q}_p)$, which means that $G(\mathbb{Q}_p)\leq GL_n(\mathbb{Q}_p)$.
+\end{proof}
+\begin{proposition}
+\label{prop.integers.subalgebra.rationals}
+Let $p$ be any prime number, then $L_p\leq\mathcal{L}_p$
+\end{proposition}
+\begin{proof}
+Let $B=\{b_1,\dots,b_n\}$ a basis of $\mathcal{L}_p$, so, for any $v\in\mathcal{L}_p$, we have that $v=\lambda_1b_1+\dots+\lambda_nb_n$, where $r\lambda_1,\dots,\lambda_n\in\mathbb{Q}_p$. Obviously, for any prime number $p$, we have that $\mathbb{Z}_p\subset\mathbb{Q}_p$, in other words, $\iota:\mathbb{Z}_p\rightarrow\mathbb{Q}_p$ is a monomorphism of rings. This means that the ring $\mathbb{Z}_p$ acts on the left $\mathbb{Q}_p$-module $\mathcal{L}_p$ by restriction of scalars, that is, for every $r\in\mathbb{Z}_p$, and $s\in\mathcal{L}_p$, we have that $rs:=\iota(r)s$, which is well defined, because $\iota(r)\in\mathbb{Q}_p$. This means that $\mathcal{L}_p$ inherits the structure of a left $\mathbb{Z}_p$-module. We mark $L_p:=\{r_1b_1,\dots,r_nb_n\}$, where $r1_,
+\dots,r_n\in\mathbb{Z}_p$. $B$ is generating $L_p$, by the construction, and it is clear that $B$ is $\mathbb{Z}_p$-linearly-independent, since $B$ is $\mathbb{Q}_p$-linearly-independent, and $\mathbb{Z}_p\subset\mathbb{Q}_p$. So, $B$ is a basis also for $L_p$, and it is clear that any $\mathbb{Z}_p$-linear combination of vectors of $B$ is a $\mathbb{Q}_p$-linear combination of vectors of $B$, hence $L_p\leq\mathcal{L}_p$.
+\end{proof}
 \end{document}
