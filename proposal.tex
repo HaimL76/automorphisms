@@ -110,7 +110,7 @@ Let $G$ be any group. the \textbf{nilpotency class} of $G$ is $min\{n\in\mathbb{
 \end{definition}
 \begin{proposition}
 \label{prop.automorphism.group}
-Let $\mathcal{L}_p$ be any $\mathbb{Q}_p$-algebra, with $n=dim\mathcal{L}_p$. Then $G(\mathcal{L}_p)\leq GL_n(\mathcal{L}_p)$. This is true for any field $\mathbb{F}$ and $\mathbb{F}$-algebra $\mathcal{L}_{\mathbb{F}}$.
+Let $\mathcal{L}_p$ be any $\mathbb{Q}_p$-algebra, with $n=dim\mathcal{L}_p$. Then $G(\mathbb{Q}_p)\leq GL_n(\mathbb{Q}_p)$. This is true for any field $\mathbb{F}$ and $\mathbb{F}$-algebra $\mathcal{L}_{\mathbb{F}}$.
 \end{proposition}
 \begin{proof}
 Choose a basis $B=\{b_1,\dots,b_n\}$ of 
@@ -158,6 +158,29 @@ $G^+(\mathbb{Q}_p)=\bigsqcup_{i=1}^n G(\mathbb{Z}_p)g_i$, where $[G(\mathbb{Q}_p
 There is a bijection between $G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ and $\{M\leq L_p : M\cong L_p\}$
 \end{proposition}
 \begin{proof}
-Let $\varphi\in G(\mathbb{Z}_p)g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$, and let $M=\varphi(L_p)$. But, from \ref{prop.right.coset}, we have that $\varphi\in G^+(\mathbb{Q}_p)$, so $M=\varphi(L_p)\subseteq L_p$. Choose a different representative $\psi\in G(\mathbb{Z}_p)g$, we have that $\tau=\psi\varphi^{-1}\in G(\mathbb{Z}_p)$, which means that $\tau(L_p)=L_p$. But $\tau\varphi=\psi\varphi^{-1}\varphi=\psi$, which means that $\psi(L_p)=\tau\varphi(L_p)=\varphi(\tau(L_p))=\varphi(L_p)=M$, so we have that $M$ is the image of any representative of $G(\mathbb{Z}_p)g$. Let $\varphi|_{L_p}:L_p\rightarrow M$ be the restriction of $\varphi$ to $L_p$. Obviously, $\varphi|_{L_p}$ is onto $M$, and is one-to-one, as a restriction of an automorphism. So we have that $\varphi|_{L_p}$ is an isomorphism, which means that $L_p\cong M$. So, we conclude that every right coset of the form $G(\mathbb{Z}_p)g$ defines an isomomorphism of the form $L_p\cong M$. For the opposite direction, we show that for every isomorphism $L_p\cong M$, we can find some $\varphi\in G^{+}(\mathbb{Q}_p)$, for which $\varphi(L_p)=M$. Choose another automoprhism, $\psi\in G^{+}(\mathbb{Q}_p)$, such that $\psi(L_p)=M$, and let $\tau=\varphi\psi^{-1}$. But $\tau(L_p)=\varphi\psi^{-1}(L_p)=\psi^{-1}(\varphi(L_p))=\psi^{-1}(M)=L_p$, which means that $\tau\in G(\mathbb{Z}_p)$. But $\tau\psi=\varphi\psi^{-1}\psi=\varphi\in G(\mathbb{Z}_p)\psi$, and, obviosuly, $\tau^{-1}\varphi=\tau^{-1}\tau\psi=\psi$ means that also $\psi\in G(\mathbb{Z}_p)\varphi$, so $\varphi$ andf $\psi$ are in the same right coset of $\mathbb{Z}_p$, so we have that every isomoprhism $L_p\cong M$ is common to all representatives of the same right coset of $G(\mathbb{Z}_p)$, proving the bijection.
+Let $\varphi\in G(\mathbb{Z}_p)g|\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$, and let $M=\varphi(L_p)$. But, from \ref{prop.right.coset}, we have that $\varphi\in G^+(\mathbb{Q}_p)$, so $M=\varphi(L_p)\subseteq L_p$. Choose a different representative $\psi\in G(\mathbb{Z}_p)g$, we have that $\tau=\psi\varphi^{-1}\in G(\mathbb{Z}_p)$, which means that $\tau(L_p)=L_p$. But $\tau\varphi=\psi\varphi^{-1}\varphi=\psi$, which means that $\psi(L_p)=\tau\varphi(L_p)=\varphi(\tau(L_p))=\varphi(L_p)=M$, so we have that $M$ is the image of any representative of $G(\mathbb{Z}_p)g$. Let $\varphi|_{L_p}:L_p\rightarrow M$ be the restriction of $\varphi$ to $L_p$. Obviously, $\varphi|_{L_p}$ is onto $M$, and is one-to-one, as a restriction of an automorphism. So we have that $\varphi|_{L_p}$ is an isomorphism, which means that $L_p\cong M$. So, we conclude that every right coset of the form $G(\mathbb{Z}_p)g$ defines an isomomorphism of the form $L_p\cong M$. For the opposite direction, we show that for every isomorphism $L_p\cong M$, we can find some $\varphi\in G^{+}(\mathbb{Q}_p)$, for which $\varphi(L_p)=M$. Choose another automoprhism, $\psi\in G^{+}(\mathbb{Q}_p)$, such that $\psi(L_p)=M$, and let $\tau=\varphi\psi^{-1}$. But $\tau(L_p)=\varphi\psi^{-1}(L_p)=\psi^{-1}(\varphi(L_p))=\psi^{-1}(M)=L_p$, which means that $\tau\in G(\mathbb{Z}_p)$. But $\tau\psi=\varphi\psi^{-1}\psi=\varphi\in G(\mathbb{Z}_p)\psi$, and, obviosuly, $\tau^{-1}\varphi=\tau^{-1}\tau\psi=\psi$ means that also $\psi\in G(\mathbb{Z}_p)\varphi$, so $\varphi$ andf $\psi$ are in the same right coset of $\mathbb{Z}_p$, so we have that every isomoprhism $L_p\cong M$ is common to all representatives of the same right coset of $G(\mathbb{Z}_p)$, proving the bijection.
 \end{proof}
+\begin{proposition}
+\label{prop.index.submodule}
+Let $G(\mathbb{Z}_p)g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ be a right coset, and $M\leq L_p$ the image of this coset, as constructed in \ref{prop.prop.coset.bijection}, then $[L_p:M]=|det g|_p^{-1}$.
+\end{proposition}
+\begin{proposition}
+\label{prop.topological.group.open.set}
+Let $\Gamma$ be a topological group, and let $U\subseteq\Gamma$, be an open subset in $\Gamma$. Then $\gamma U:=\{\gamma u : \gamma\in\Gamma, u\in U\}$ is also an open subset of $\Gamma$.
+\begin{proof}
+We define a map $f=f_{\gamma^{-1}}:\Gamma\rightarrow\Gamma$, by $f(g):=\gamma^{-1}g$, for any $g\in\Gamma$. Clearly, $f$ is continuous, as a composition of continuous maps, that is, the inverse map $\gamma\mapsto\gamma^{-1}$, and the multiplication map $(\gamma^{-1},g)\mapsto\gamma^{-1}g$, so any inverse image $f^{-1}$ of an open subset is an open subset. But $f^{-1}(U)=\{g\in G : f(g)=\gamma^{-1}g\in U\}=\{\gamma h : f(\gamma h)=\gamma^{-1}\gamma h=h\in U\}=\{\gamma h : h\in U\}=\gamma U$, which proves that $\gamma U$ is an open subset in $\Gamma$.
+\end{proof}
+\end{proposition}
+\begin{proposition}
+\label{prop.compact.subset.right.haar.measure}
+Let $\Gamma$ be a locally compact topological group, i.e., $\forall\gamma\in\Gamma$, there is an open environment $U_{\gamma}$ of $\gamma$, and a compact subset $K_{\gamma}$, such that $\gamma\in U_{\gamma}\subset K_{\gamma}$. Then there is a measure $\mu$, with the following property: for any measurable subset, $U\subseteq\Gamma$, and any $\gamma\in\Gamma$, $\mu(U\gamma)=\mu(U)$, where $U\gamma:=\{u\gamma : u\in U\}$, and $\mu$ is unique up to multiplication in constant. $\mu$ is called a \textbf{Right Haar Measure}
+\end{proposition}
+\begin{proposition}
+\label{prop.padic.field.automorphisms.locally.compact.group}
+Let $p$ be a prime number, then $G(\mathbb{Q}_p)$ is a locally compact topological group.
+\end{proposition}
+\begin{proposition}
+\label{prop.padic.field.automorphisms.haar.measure}
+Let $p$ be a prime number, then $G(\mathbb{Q}_p)$ has a unique right Haar measure $\mu$, with the following property: $\mu(G(\mathbb{Z}_p))=1$.
+\end{proposition}
 \end{document}
