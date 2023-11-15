@@ -189,9 +189,17 @@ For every $g\in G(\mathbb{Q}_p)$, we have that $\mu(G(\mathbb{Z}_p)g)=\mu(G(\mat
 \end{corollary}
 \begin{proposition}
 \label{prop.padic.integers.integral}
-Let $s\in\mathbb{C}$, and let $g\in G^+(\mathbb{Q}_p)$, then $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_h^sd\mu$.
+Let $p$ be a prime number, $s\in\mathbb{C}$, and let $g\in G^+(\mathbb{Q}_p)$, then $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_h^sd\mu$.
 \end{proposition}
 \begin{proof}
 We saw in \ref{prop.index.submodule} that for every $g\in G(\mathbb{Z}_p)h$, we have that $|det(g)|_p^{-1}$ does not depend on the choice of representative, which means that $|det(g)|_p$ is constant on the entire coset, which means that $|det(g)|_p=|det(h)|_p$. so, $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(g)|_p^sd\mu=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu$. But, $\mu=\mu(G(\mathbb{Z}_p)h)$, and we saw in \ref{cor.haar.measure.padic.integers.cosets} that $\mu(G(\mathbb{Z}_p)h)=\mu(G(\mathbb{Z}_p))=1$, so $\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu=|det(g)|_p^s\cdot 1=|det(g)|_p^s$
 \end{proof}
+\begin{corollary}
+\label{cor.proisomorphic.integral}
+Let $p$ be a prime number, $s\in\mathbb{C}$, then $\widehat{\zeta_{L,p}}(s)=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}|det(g)|_p^s=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}\displaystyle\int_{h\in G(\mathbb{Z}_p)g}|det(h)|_p^s d\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^s d\mu$
+\end{corollary}
+\begin{theorem}
+\label{thm.rational.function}
+Let $p$ be a prime number, $s\in\mathbb{C}$, then there exists a rational function, $w_p(s):=\frac{f(x)}{g(x)}$, where $f,g\in\mathbb{Z}_p[x]$, which satisfies $\widehat{\zeta_{L,p}}(s)=w_p(p^{-s})$.
+\end{theorem}
 \end{document}
