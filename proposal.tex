@@ -14,7 +14,7 @@
 \usepackage{xfrac}
 \usepackage{yfonts}
 
-\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -39,17 +39,12 @@
 \ExplSyntaxOff
 
 \begin{document}
-\section{Technical Background}
-\begin{notations},
-\begin{itemize}
-\item $\mathbb{Z}_p$, the ring of p-adic integers.
-\item $\mathbb{Q}_p$, the fraction field of $\mathbb{Z}_p$.
-\item $L_p$, a $\mathbb{Z}_p$-algebra over the ring of p-adic integers.
-\item $\mathcal{L}_p$, a $\mathbb{Q}_p$-algebra, over the fraction field of $\mathbb{Z}_p$.
-\item $G(L_p):=Aut_{\mathbb{Z}_p}(L_p)$, the group of $\mathbb{Z}_p$-automorphisms of $L_p$.
-\item $G(\mathcal{L}_p):=Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$, the group of $\mathbb{Q}_p$-automorphisms of $\mathcal{L}_p$.
-\end{itemize}
-\end{notations}
+\begin{abstract}
+Let $G$ be any group. For any natural number $n\in\mathbb{N}$, let $a_n$ be the number of subgroups $H\leq G$, such that $[G:H]=n$. Assume $G$ is finitely-generated, then $a_n<\infty$, and we can define a $\zeta$-function of the form $\zeta_G(s):=\sum_{i=1}^\infty a_nn^{-s}$, where $s\in\mathbb{C}$. Assume, in addition, that $G$ is also nilpotent and torsion-free, then this function has properties of the Riemann $\zeta$-function, mainly the decomposition of $\zeta$ to an Euler product of local factors indexed by primes. 
+Using different variations of the $\zeta$-function and its factorization, we can obtain more information about $G$ and specific subgroups of $G$. Specifically, we are interested in the number of pro-isomorphic subgroups of $G$, and in this research we shall display an approach to the problem of counting them. 
+\end{abstract}
+\section{Scientific Background}
+\subsection{Introduction}
 \begin{proposition} \label{prop:finite.number.subgroups}
 Let $G$ be any finitely generated group, and let $n\in\mathbb{N}$ any natural number. Then there is a finite number of subgroups $H\leq G$, such that $[G:H]=n$
 \end{proposition}
@@ -108,6 +103,8 @@ Let $G$ be any group, then the \textbf{lower central series} of $G$ is series of
 \label{def.nilpotency.class}
 Let $G$ be any group. the \textbf{nilpotency class} of $G$ is $min\{n\in\mathbb{N} : G_n=[G,G_{n-1}]=\{e\}\}$, in words, the smallest natural number, such that the subgroup of commutators of the form $[G,G_n]$ is the trivial group. We can extend this definition, and say that the trivial group nilpotency class is $0$.
 \end{definition}
+\subsection{Linearization}
+For finitely-generated torsion-free nilpotent groups we associate nilpotent Lie algebras over $\mathbb{Z}_p$, the ring of $p$-adic integers. We show here the basic properties of $\mathbb{Z}_p$-algebras, as subalgebras of $\mathbb{Q}_p$-algebras, where $\mathbb{Q}_p$ is the fraction field of $\mathbb{Z}_p$.
 \begin{proposition}
 \label{prop.automorphism.group}
 Let $\mathcal{L}_p$ be any $\mathbb{Q}_p$-algebra, with $n=dim\mathcal{L}_p$. Then $G(\mathbb{Q}_p)\leq GL_n(\mathbb{Q}_p)$. This is true for any field $\mathbb{F}$ and $\mathbb{F}$-algebra $\mathcal{L}_{\mathbb{F}}$.
@@ -164,6 +161,7 @@ Let $\varphi\in G(\mathbb{Z}_p)g|\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)
 \label{prop.index.submodule}
 Let $G(\mathbb{Z}_p)g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ be a right coset, and $M\leq L_p$ the image of this coset, as constructed in \ref{prop.prop.coset.bijection}, then $[L_p:M]=|det g|_p^{-1}$.
 \end{proposition}
+\subsection{$p$-adic Integration}
 \begin{proposition}
 \label{prop.topological.group.open.set}
 Let $\Gamma$ be a topological group, and let $U\subseteq\Gamma$, be an open subset in $\Gamma$. Then $\gamma U:=\{\gamma u : \gamma\in\Gamma, u\in U\}$ is also an open subset of $\Gamma$.
@@ -202,4 +200,141 @@ Let $p$ be a prime number, $s\in\mathbb{C}$, then $\widehat{\zeta_{L,p}}(s)=\dis
 \label{thm.rational.function}
 Let $p$ be a prime number, $s\in\mathbb{C}$, then there exists a rational function, $w_p(s):=\frac{f(x)}{g(x)}$, where $f,g\in\mathbb{Z}_p[x]$, which satisfies $\widehat{\zeta_{L,p}}(s)=w_p(p^{-s})$.
 \end{theorem}
+\section{Research}
+\subsection{The group $U_n$}
+\begin{proposition}
+\label{prop.integer.matrix.inverse}
+Let $A\in\mathcal{M}_n(\mathbb{Z}_p)$, then $A\in GL_n(\mathbb{Z}_p)$ iff $det(A)=\pm 1$
+\end{proposition}
+\begin{proof}
+We shall prove only one direction. Assume $det(A)=\pm 1$. 
+For $A$, we calculate the adjoint matrix, $Adj(A)$, by calculating minors for all the elements of $A$, and create the cofactor matrix of $A$, then take the transpose of the cofactor matrix. With this calculation, $A^{-1}=\frac{Adj(A)}{det(A)}$, and, since calculating minors requires multiplication and subtraction between elements of the $A$. But $\mathbb{Z}_p$ is a ring, so closed under multiplication and subtraction, hence all the minors are also in the ring, which means that $Adj(A)\in\mathcal{M}_n(\mathbb{Z}_p)$. But $det(A)=\pm 1$, so $A^{-1}=\frac{Adj(A)}{det(A)}=\pm 1\cdot Adj(A)\in\mathcal{M}_n(\mathbb{Z}_p)$, which means that $A,A^{-1}\in GL_n(\mathbb{Z}_p)$.
+\end{proof}
+\begin{corollary}    
+\label{cor.unipotent.matrix.inverse}
+Let $A$ be a $n\times n$ matrix, with $1$ on the main diagonal, and $a_{ij}\in\mathbb{Z}_p$, where $i<j$, and all the other elements, namely, the elements below the main diagonal, are $0$. Then every matrix $A$ of this form has an inverse matrix, $A^{-1}$, of the same form.
+\begin{proof}
+One checks that all the minors of the elements on the main diagonal are $1$, all the minors of the elements above the main diagonal are $0$, and all the minors of the elements below the main diagonal can be any $p$-adic integers. constructing the cofactor matrix and transposing it, gives a matrix of the form described above, which is the inverse matrix of $A$, as we prove in \ref{prop.integer.matrix.inverse}.
+\end{proof}
+\end{corollary}
+\begin{corollary}
+\label{cor.un.group}
+Let $U_n$ be the set of all matrices of the form described in \ref{cor.unipotent.matrix.inverse}, then $(U_n, \cdot)$ is a group, where $\cdot$ is the standard matrix multiplication.
+\end{corollary}
+\begin{proof}
+One checks that multiplying two matrices in $U_n$ gives a product matrix of the same form. Associativity comes from the standard matrix multiplication, and clearly, the standard unit matrix, $I_n$, is also in $U_n$. By \ref{cor.unipotent.matrix.inverse}, we know that $A$ has an inverse matrix, $A^{-1}$, which is of the same form, hence $A^{-1}\in U_n$, which completes the proof.
+\end{proof}
+\begin{proposition}
+\label{prop.unipotent.matrix.integer.addition}
+Let $E_{ij}\in U_n$, where $1\leq i<j\leq n$, be a $n\times n$ matrix, with $1$ on the main diagonal, and $a_{ij}=1$, and $0$ anywhere else. Then, $E_{ij}^m$ is a matrix of the same form, except that $a_{ij}=m$.
+\end{proposition}
+\begin{proof}
+By induction on $m$. For $m=1$, $E_{ij}^1=E_{ij}$, so, trivially, $a_{ij}=1=m$.
+For $m+1$, we have that $E_{ij}^{m+1}=E_{ij}^mE_{ij}$. But $E_{ij}^m$ has that $a_{ij}=m$, by the assumption, and one checks that $E_{ij}^mE_{ij}=\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & m & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}=\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & m+1 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}$, which proves the induction step, and the proposition.
+\end{proof}
+\begin{corollary}
+\label{cor.unipotent.matrix.integer.addition}
+Let $A=E_{ij}^m$, and $B=E_{ij}^r$. Then, $D=AB=E_{ij}^mE_{ij}^r$ is the matrix with $1$ on the main diagonal, $d_{ij}=m+r$, and all the other elements are $0$.
+\end{corollary}
+\begin{proof}
+One checks that the product matrix has also $1$ on the main digonal, and all the other elements are $0$, except for $d_{ij}=1\cdot r+m\cdot 1=m+r$
+\end{proof}
+\begin{proposition}
+\label{prop.unipotent.matrix.integer.inverse}
+Let $E_{ij}\in U_n$ be a matrix of the form described in \ref{prop.unipotent.matrix.integer.addition}. then $E_{ij}^{-m}$ is a matrix of the same form, but with $a_{ij}=-m$.
+\end{proposition}
+\begin{proof}
+From \ref{prop.unipotent.matrix.integer.addition}, we have that $E_{ij}^m=\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & m & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}$. 
+From \ref{cor.unipotent.matrix.inverse}, we know that $B=(E_{ij}^m)^{-1}\in U_n$, that is, $B=\begin{pmatrix}
+1 & b_{12} & \dots & \dots & b_{1n}\\
+0 & 1 & b_{23} & \dots & b_{2n}\\
+0 & 0 & 1 & bij & b_{in}\\
+0 & 0 & 0 & 1 & b_{n-1n}\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}$, which means that
+$\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & m & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}\begin{pmatrix}
+1 & b_{12} & \dots & \dots & b_{1n}\\
+0 & 1 & b_{23} & \dots & b_{2n}\\
+0 & 0 & 1 & b_{ij} & b_{in}\\
+0 & 0 & 0 & 1 & b_{n-1n}\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}=\begin{pmatrix}
+1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+\end{pmatrix}$. Easy to check that all the elements $b_{kl}$ must be $0$, but for the element in row $i$ and column $j$, we must have that $1\cdot b_{ij}+m\cdot 1=0$, which means that $b_{ij}=-m$. One checks that the same calculation holds for $(E_{ij}^{-1})^m$, and so, $E_{ij}^{-m}=(E_{ij}^m)^{-1}=(E_{ij}^{-1})^m$ is of the form described above.
+\end{proof}
+\begin{proposition}
+\label{prop.commutators}
+Let $A=E_{ij},B=E_{kl}\in U_n$ be two matrices of the form described in \ref{cor.unipotent.matrix.inverse}, i.e., $1$ on the main diagonal, and all the other elements are $0$, except for $a_{ij}$ and $b_{kl}$, which are $1$. Then the commutator, $[E_{ij},E_{kl}] =
+\left\{
+	\begin{array}{ll}
+		E_{il}, & j=k\\
+        E_{kj}^{-1}, & i=l\\
+        0, & j\neq k\land i\neq l
+	\end{array}
+\right.$
+\end{proposition}
+\begin{proof}
+There are two cases, The first, is where $j=i+1$, or $l=k+1$, and the second is where $j>i+1$, and $l>k+1$. One checks that the proposition is true in both cases.
+\end{proof}
+\begin{corollary}
+\label{cor.unipotent.generators}
+Let $A=E_i=E_{ii+1}\in U_n$, be a matrix of the form described in \ref{prop.unipotent.matrix.integer.addition}, where the only $1$ which is outside the main diagonal is one of the elements $a_{12},a_{23},\dots,a_{n-1n}$, i.e., on the diagonal above the main diagonal. Then the set $\mathcal{E}_n=\{E_1,E_2,\dots,E_{n-1}\}$ is a set of generators for the unipotent group $U_n$.
+\begin{proof}
+By proposition \ref{prop.commutators}, we can create any matrix $E_{ij}\in U_n$ by composition of commutators of the form $[E_i,[E_{i+1},[\dots[E_{j-2},E_{j-1}]]]$. From \ref{prop.unipotent.matrix.integer.addition}, we know that $A=E_{ij}^m$ has that $a_{ij}=m\in\mathbb{Z}_p$, and by \ref{cor.unipotent.matrix.integer.addition}, we know that $D=AB=E_{ij}^mE_{ij}^r$ is the matrix with $1$ on the main diagonal, and all the other elements are $0$, except for $d_{ij}=m+r$. Checking further gives that if $A=E_{ij}^m$ and $B=E_{jk}^r$, then the commutator $[E_{ij^m},E_{kl}^r]$ is the matrix with $1$ on the main diagonal, and all the other elements are $0$, except for $d_{ik}=mr$. Easy to see how to apply the above calculations also for the inverse matrices. This means that we can generate any matrix in $U_n$, by multiplying matrices that come from commutators on the set $\mathcal{E}_n=\{E_1,E_2,\dots,E_n-1\}$, which means that $\mathcal{E}_n$ generates the unipotent group $U_n$.
+\end{proof}
+\end{corollary}
+\begin{proposition}
+\label{prop.unipotent.group.nilpotent}
+The unipotent group $U_n$ is nilpotent of nilpotency class $n$.
+\end{proposition}
+\begin{proof}
+Easy to observe that for the set of generators, $\mathcal{E}_n$, the longest composition of commutators, $[E_{i_1},[E_{i_2},[\dots[E_{i_k}]]]$ has that $i_1=1,i_2=2,\dots,i_k=n-1$, or $i_1=n-1,i_2=n-2,\dots,i_k=1$, which means that composing $n-1$ commutators of elements in $\mathcal{E}_n$ leaves only $E_{1n-1}$ and $E_{1n-1}^{-1}$, but $[E_{1n-1},E_{1n-1}^{-1}]=[E_{1n-1}^{-1},E_{an-1}]=I_n$. One can check that this holds for the unipotent group $U_n$ itself, genrated by $\mathcal{E}_n$.
+\end{proof}
+\subsection{The algebra $L_n$}
+\begin{proposition}
+\label{prop.lie.algebra}
+\end{proposition}
+\section{Notations}
+\begin{itemize}
+\item $\mathbb{Z}_p$, the ring of p-adic integers.
+\item $\mathbb{Q}_p$, the fraction field of $\mathbb{Z}_p$.
+\item $L_p$, a $\mathbb{Z}_p$-algebra over the ring of p-adic integers.
+\item $\mathcal{L}_p$, a $\mathbb{Q}_p$-algebra, over the fraction field of $\mathbb{Z}_p$.
+\item $G(L_p):=Aut_{\mathbb{Z}_p}(L_p)$, the group of $\mathbb{Z}_p$-automorphisms of $L_p$.
+\item $G(\mathcal{L}_p):=Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$, the group of $\mathbb{Q}_p$-automorphisms of $\mathcal{L}_p$.
+\end{itemize}
 \end{document}
