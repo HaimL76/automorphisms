@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  29 NOV 2023 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  4 DEC 2023 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,8 +505,7 @@ Now handling font encoding LYG ...
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 )
 \c@theorem=\count295
-
-No file proposal.aux.
+ (./proposal.aux)
 \openout1 = `proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -527,6 +526,7 @@ LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
+
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
@@ -598,24 +598,7 @@ m/m/it/12 ^^\[]b[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([][]
 ) =
  []
 
-[3] [4]
-
-LaTeX Warning: Reference `prop.integers.subalgebra.rationals' on page 5 undefin
-ed on input line 145.
-
-
-LaTeX Warning: Reference `prop.integer.automorphism' on page 5 undefined on inp
-ut line 145.
-
-
-LaTeX Warning: Reference `prop.right.coset' on page 5 undefined on input line 1
-58.
-
-
-LaTeX Warning: Reference `prop.prop.coset.bijection' on page 5 undefined on inp
-ut line 162.
-
-[5]
+[3] [4] [5]
 Overfull \hbox (8.71992pt too wide) in paragraph at lines 186--187
 []\OT1/cmr/bx/n/12 Corollary 1.3.5. []\OT1/cmr/m/it/12 For ev-ery $\OML/cmm/m/i
 t/12 g \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 G\OT1/cmr/m/n/12 (\U/msb/m/n/12 Q[]\
@@ -624,14 +607,6 @@ m/n/12 (\OML/cmm/m/it/12 G\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )\O
 ML/cmm/m/it/12 g\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 G\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )) =
  []
-
-
-LaTeX Warning: Reference `prop.index.submodule' on page 6 undefined on input li
-ne 193.
-
-
-LaTeX Warning: Reference `cor.haar.measure.padic.integers.cosets' on page 6 und
-efined on input line 193.
 
 
 Overfull \hbox (21.6163pt too wide) in paragraph at lines 193--194
@@ -654,98 +629,23 @@ Overfull \hbox (83.06151pt too wide) in paragraph at lines 197--198
 /cmm/m/it/12 g\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 =
  []
 
-[6]
-
-LaTeX Warning: Reference `prop.integer.matrix.inverse' on page 7 undefined on i
-nput line 217.
-
-
-LaTeX Warning: Reference `cor.unipotent.matrix.inverse' on page 7 undefined on 
-input line 222.
-
-
-LaTeX Warning: Reference `cor.unipotent.matrix.inverse' on page 7 undefined on 
-input line 225.
-
-[7]
+[6] [7]
 Overfull \hbox (13.61194pt too wide) in paragraph at lines 232--252
 \OT1/cmr/m/n/12 sump-tion, and one checks that $\OML/cmm/m/it/12 E[]E[] \OT1/cm
 r/m/n/12 = [] [] =
  []
 
 
-LaTeX Warning: Reference `prop.unipotent.matrix.integer.addition' on page 8 und
-efined on input line 262.
-
-
-LaTeX Warning: Reference `prop.unipotent.matrix.integer.addition' on page 8 und
-efined on input line 265.
-
-
-LaTeX Warning: Reference `cor.unipotent.matrix.inverse' on page 8 undefined on 
-input line 272.
-
-
 Overfull \hbox (14.16188pt too wide) in paragraph at lines 265--298
 \OT1/cmr/m/n/12 means that $[] [] = []$.
  []
 
-[8]
+[8] [9] [10]
 
-LaTeX Warning: Reference `cor.unipotent.matrix.inverse' on page 9 undefined on 
-input line 301.
-
-
-LaTeX Warning: Reference `prop.unipotent.matrix.integer.addition' on page 9 und
-efined on input line 315.
+LaTeX Warning: Command \L invalid in math mode on input line 375.
 
 
-LaTeX Warning: Reference `prop.commutators' on page 9 undefined on input line 3
-17.
-
-
-LaTeX Warning: Reference `prop.unipotent.matrix.integer.addition' on page 9 und
-efined on input line 317.
-
-
-LaTeX Warning: Reference `cor.unipotent.matrix.integer.addition' on page 9 unde
-fined on input line 317.
-
-[9]
-
-LaTeX Warning: Reference `prop.unipotent.matrix.integer.addition' on page 10 un
-defined on input line 332.
-
-
-LaTeX Warning: Reference `prop.lie.algebra.commutator' on page 10 undefined on 
-input line 344.
-
-[10]
-
-LaTeX Warning: Reference `cor.lie.algebra' on page 11 undefined on input line 3
-60.
-
-
-LaTeX Warning: Reference `prop.lie.algebra.commutator' on page 11 undefined on 
-input line 367.
-
-
-LaTeX Warning: Reference `prop.unipotent.group.nilpotent' on page 11 undefined 
-on input line 367.
-
-
-Overfull \hbox (3.56711pt too wide) in paragraph at lines 367--369
-[]\OT1/cmr/m/n/12 It is fol-lowed di-rectly from [], and from [], since $[\OML/
-cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = [\OML/cmm/m/it/12 E[]; E[]\OT1/cmr/m/n/
-12 ] \OMS/cmsy/m/n/12 ^^@
- []
-
-
-LaTeX Warning: Reference `prop.integer.automorphism' on page 11 undefined on in
-put line 370.
-
-
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 370--370
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 377--377
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -762,20 +662,17 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  14991 strings out of 474934
- 314092 string characters out of 5763815
+ 314131 string characters out of 5763815
  1946801 words of memory out of 5000000
  36251 multiletter control sequences out of 15000+600000
- 578213 words of font info for 119 fonts, out of 8000000 for 9000
+ 577592 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,12n,121p,1800b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,121p,1791b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2023/texmf-
@@ -793,7 +690,7 @@ nts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on proposal.pdf (12 pages, 272768 bytes).
+Output written on proposal.pdf (12 pages, 274886 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
