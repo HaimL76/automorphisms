@@ -117,11 +117,18 @@ _n(\mathbb{Q}_p)$, and that $\forall\varphi,\psi\in G(\mathbb{Q}_p)$, their comp
 \end{proof}
 \begin{proposition}
 \label{prop.integers.subalgebra.rationals}
-Let $p$ be any prime number, then $L_p\leq\mathcal{L}_p$
+Let $p$ be any prime number, then $L_p<\mathcal{L}_p$
 \end{proposition}
 \begin{proof}
 Let $B=\{b_1,\dots,b_n\}$ a basis of $\mathcal{L}_p$, so, for any $v\in\mathcal{L}_p$, we have that $v=\lambda_1b_1+\dots+\lambda_nb_n$, where $r\lambda_1,\dots,\lambda_n\in\mathbb{Q}_p$. Obviously, for any prime number $p$, we have that $\mathbb{Z}_p\subset\mathbb{Q}_p$, in other words, $\iota:\mathbb{Z}_p\rightarrow\mathbb{Q}_p$ is a monomorphism of rings. This means that the ring $\mathbb{Z}_p$ acts on the left $\mathbb{Q}_p$-module $\mathcal{L}_p$ by restriction of scalars, that is, for every $r\in\mathbb{Z}_p$, and $s\in\mathcal{L}_p$, we have that $rs:=\iota(r)s$, which is well defined, because $\iota(r)\in\mathbb{Q}_p$. This means that $\mathcal{L}_p$ inherits the structure of a left $\mathbb{Z}_p$-module. We mark $L_p:=\{r_1b_1,\dots,r_nb_n\}$, where $r1_,
 \dots,r_n\in\mathbb{Z}_p$. $B$ is generating $L_p$, by the construction, and it is clear that $B$ is $\mathbb{Z}_p$-linearly-independent, since $B$ is $\mathbb{Q}_p$-linearly-independent, and $\mathbb{Z}_p\subset\mathbb{Q}_p$. So, $B$ is a basis also for $L_p$, and it is clear that any $\mathbb{Z}_p$-linear combination of vectors of $B$ is a $\mathbb{Q}_p$-linear combination of vectors of $B$, hence $L_p\leq\mathcal{L}_p$.
+\end{proof}
+\begin{proposition}
+\label{prop.padic.field.algebra}
+Let $p$ be a prime number, and let $L_n(\mathbb{Z}_p)$ be a $\mathbb{Z}_p$-algebra, for any $n\in\mathbb{N}$, then there exists a $\mathbb{Q}_p$-algebra, denoted by $\mathcal{L}_n(\mathbb{Q}_p)$, such that \ref{prop.integers.subalgebra.rationals} holds.
+\end{proposition}
+\begin{proof}
+We construct $\mathcal{L}_n(\mathbb{Q}_p)$ from $L_n(\mathbb{Z}_p)$ by extension of scalars. $\mathbb{Q}_p$ is a $\mathbb{Z}_p$-module, as a trivial fact, so, taking the tensor product $L_n\otimes_{\mathbb{Z}_p}\mathbb{Q}_p$, we have, for all $a\in\L_n(\mathbb{Z}_p)$, and for all $r,r'\in\mathbb{Q}_p$, that $r'(a\otimes r)=a\otimes rr'=rr'(a\otimes 1)$, which is well-defined, because of the multiplication in $\mathbb{Q}_p$, and so, given $B=\{b_1,b2_,\dots,b_n\}$, a basis for $L_n(\mathbb{Z}_p)$, we have a natural bijection between $b_i$ and $b_i\otimes 1$, for $1\leq i\leq n$, which means that $\{b_1\otimes 1,b_2\otimes 1,\dots,b_n\otimes 1\}$ is a basis for $L_n\otimes_{\mathbb{Z}_p} \mathbb{Q}_p$, we denote $\mathcal{L}_n(\mathbb{Q}_p):=L_n\otimes_{\mathbb{Z}_p} \mathbb{Q}_p$, and we got that $\mathcal{L}_n(\mathbb{Q}_p)$ is a $\mathbb{Q}_p$-algebra, with the same basis, $B$, but with scalars from $\mathbb{Q}_p$, which proves that $L_n<\mathcal{L}_n$.
 \end{proof}
 \begin{proposition}
 \label{prop.integer.automorphism}
@@ -366,13 +373,6 @@ Let $p$ be a prime number, and let $n\in\mathbb{N}$ be any natural number, then 
 \begin{proof}
 It is followed directly from \ref{prop.lie.algebra.commutator}, and from \ref{prop.unipotent.group.nilpotent}, since $[e_{ij},e_{jk}]=[E_{ij},E_{jk}]-I_n=E_{ik}-I
 _n=e_{ik}$, where the first brackets are Lie Brackets of $L_n(\mathbb{Z}_p)$, and the second brackets are a group commutator of $U_n(\mathbb{Z}_p)$.
-\end{proof}
-\begin{proposition}
-\label{prop.padic.field.algebra}
-Let $p$ be a prime number, $n\in\mathbb{N}$, then $L_n(\mathbb{Z}_p)<\mathcal{L}_n(\mathbb{Q}_p)$.
-\end{proposition}
-\begin{proof}
-We construct $\mathcal{L}_n(\mathbb{Q}_p)$ from $L_n(\mathbb{Z}_p)$ by extension of scalars. $\mathbb{Q}_p$ is a $\mathbb{Z}_p$-module, as a trivial fact, so, taking the tensor product $L_n\otimes_{\mathbb{Z}_p}\mathbb{Q}_p$, we have, for all $a\in\L_n(\mathbb{Z}_p)$, and for all $r,r'\in\mathbb{Q}_p$, that $r'(a\otimes r)=a\otimes rr'=rr'(a\otimes 1)$, which is well-defined, because of the multiplication in $\mathbb{Q}_p$, and so, given $B=\{b_1,b2_,\dots,b_n\}$, a basis for $L_n(\mathbb{Z}_p)$, we have a natural bijection between $b_i$ and $b_i\otimes 1$, for $1\leq i\leq n$, which means that $\{b_1\otimes 1,b_2\otimes 1,\dots,b_n\otimes 1\}$ is a basis for $L_n\otimes_{\mathbb{Z}_p} \mathbb{Q}_p$, we denote $\mathcal{L}_n(\mathbb{Q}_p):=L_n\otimes_{\mathbb{Z}_p} \mathbb{Q}_p$, and we got that $\mathcal{L}_n(\mathbb{Q}_p)$ is a $\mathbb{Q}_p$-algebra, with the same basis, $B$, but with scalars from $\mathbb{Q}_p$, which proves that $L_n<\mathcal{L}_n$.
 \end{proof}
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated intgeral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
