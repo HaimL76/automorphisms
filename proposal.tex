@@ -374,7 +374,50 @@ Let $p$ be a prime number, and let $n\in\mathbb{N}$ be any natural number, then 
 It is followed directly from \ref{prop.lie.algebra.commutator}, and from \ref{prop.unipotent.group.nilpotent}, since $[e_{ij},e_{jk}]=[E_{ij},E_{jk}]-I_n=E_{ik}-I
 _n=e_{ik}$, where the first brackets are Lie Brackets of $L_n(\mathbb{Z}_p)$, and the second brackets are a group commutator of $U_n(\mathbb{Z}_p)$.
 \end{proof}
-By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated intgeral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
+By considering the behavior of $\mathcal{L}_n(\mathbb{Q}_p)$ under the Lie brackets, we can learn about the structure of $Aut_{\mathbb{Q}_p}(\mathcal{L}_n)$. As a basic fact, every $\mathcal{L}_n(\mathbb{Q}_p)$-automorphism $\varphi$ must obey the $\mathcal{L}_n$ Lie brackets, meaning that for all $x,y\in\mathcal{L}_n$, we must have that $\varphi([x,y])=[\varphi(x),\varphi(y)]$. Let $B=\{b_1,b_2,\dots,b_m\}$ be a basis for $\mathcal{L}_n$, we have that $x=\sum_{i=1}^m\lambda_i b_i$, and $y=\sum_{i=1}^m\rho_i b_i$, so $\varphi([x,y])=[\varphi(\sum_{i=1}^m\lambda_i b_i),\varphi(\sum_{i=1}^m\rho_i b_i)]=[\sum_{i=1}^m\varphi(\lambda_i b_i),\sum_{i=1}^m\varphi(\rho_i b_i)]=[\sum_{i=1}^m\lambda_i\varphi(b_i),\sum_{i=1}^m\rho_i\varphi(b_i)]=\sum_{i=1}^m\sum_{j=1}^m[\lambda_i\varphi(b_i),\rho_j\varphi(b_j)]=\sum_{i=1}^m\sum_{j=1}^m\lambda_i\rho_j[\varphi(b_i),\varphi(b_j)]$. This technique can be demonstrated in the most simple case, which is the Heisenberg group.
+\subsection{The Heisenberg group}
+\begin{definition}
+\label{def.heisenberg.group}
+The \textbf{Heisenberg group} is the unipotent group of $3\times 3$ matrices, over $\mathbb{Q}_p$, namely $U_3(\mathbb{Q}_p)$. Every matrix $A\in U_3$ is of the form $$
+\begin{pmatrix}
+1 & a_{12} & a_{13}\\
+0 & 1 & a_{23}\\
+0 & 0 & 1\\
+\end{pmatrix}
+$$ where $a_1,a_2,a_3\in\mathbb{Q}_p$.
+\end{definition}
+The $\mathbb{Q}_p$-algebra associated with $U_3$ consists of matrices of the form $$A-I_3=
+\begin{pmatrix}
+0 & a_{12} & a_{13}\\
+0 & 0 & a_{23}\\
+0 & 0 & 0\\
+\end{pmatrix}=a_{12}e_{12}+a_{13}e_{13}+a_{23}e_{23}
+$$. Let $\varphi\in Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$ be an $\mathcal{L}_{p,n}$-automorphism. The image of every $A\in\mathcal{L}_{p,n}$, as a linear combination of elements of the basis, is a linear combination of the images of these elements. So, let $v=(e_{12},e_{23},e_{13})$, we have that $\varphi(v)=\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}\\
+\end{pmatrix}\begin{pmatrix}
+e_{12}\\
+e_{23}\\
+a_{13}\\
+\end{pmatrix}
+$, which means that $$
+\varphi(e_{12})=a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13}$$
+$$\varphi(e_{23})=a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}$$
+$$\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}
+$$.
+We want to find relations between the elements of $\varphi$. Considering the fact that $[\varphi(x),\varphi(y)]=\varphi([x,y])=$, we observe that the Lie brackets on images of any two commuting elements of the basis give $0$, as they are images of $0$, i.e., for every $x,y\in\mathcal{L}_n$, such that $[x,y]=0$, we have that $[\varphi(x),\varphi(y)]=\varphi([x,y])=\varphi(0)=0$. Hence, the only images that do not vanish under Lie brackets are $[\varphi(e_{12}),\varphi(e_{23})]=[a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13},a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}]=a_{11}a_{21}[e_{12},e_{12}]+a_{11}a_{22}[e_{12},e_{23}]\dots+a_{13}a_{23}[e_{13},e_{13}]=\varphi([e_{12},e_{23}])=\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}$. Considering again only the non-vanishing Lie brackets, we have that $[\varphi(e_{12}),\varphi(e_{23})]=a_{11}a_{22}[e_{12},e_{23}]+a_{12}a_{21}[e_{23},e_{12}]=a_{11}a_{22}e_{13}-a_{12}a_{21}e_{13}=(a_{11}a_{22}-a_{12}a_{21})e_{13}=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}=\varphi(e_{13})$. Comparing the scalars, for the three elements of the basis, gives the following relations, $$
+a_{31}=0$$
+$$a_{32}=0$$
+$$a_{33}=(a_{11}a_{22}-a_{12}a_{21})\neq 0
+$$.
+which gives the following matrix, $$\varphi(v)=\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+0 & 0 & a_{33}\\
+\end{pmatrix}
+$$
+By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
 \begin{itemize}
 \item $\mathbb{Z}_p$, the ring of $p$-adic integers.
