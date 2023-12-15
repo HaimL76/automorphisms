@@ -64,7 +64,7 @@ Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{pro-isomorphic}, if
 \end{definition}
 \begin{definition}
 \label{def:zeta.pro.isomorphic}
-Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\widehat{\zeta_G}(s):=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$. We assume, in this research, that $\widehat{a_n}(G)$ is finite for all $G$. A sufficient condition for this would be that $G$ is finitely-generated, by proposition \ref{prop:finite.number.subgroups}.
+Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\widehat{\zeta_G}(s):=\sum_{n=1}^{\infty}\widehat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$. We assume, in this research, that $\widehat{a_n}(G)$ is finite for all $G$. A sufficient condition for this would be that $G$ is finitely-generated, by proposition \ref{prop:finite.number.subgroups}.
 \end{definition}
 \begin{example}
 $G=(\mathbb{Z},+)$. $G$ is an abelian group, and every $H\leq G$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong G$, as both are infinite cyclic groups. From this, it is obvious that $\widehat{H}\cong\widehat{G}$, for every $H\leq G$. Any such $H=n\mathbb{Z}$ is the only subgroup of $G$, which is of index $n$, therefore, the pro-isomoprhic $\zeta$-function of $G$ is $\widehat{\zeta_G}(s)=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, where $\widehat{a_n}(G)=1$, which comes to $\widehat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
@@ -75,7 +75,7 @@ The Riemann $\zeta$-function decomposes to an infinite product of $\zeta_p$-func
 \end{proposition}
 \begin{proposition}
 \label{prop.proisomorphic.decomposition}
-Let $G$ be any finitely-generated, nilpotent and torsion-free group, then we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$
+Let $G$ be any finitely-generated, nilpotent and torsion-free group, then we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$, where $\widehat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)\frac{1}{p^{ks}}$
 \end{proposition}
 \begin{definition}
 \label{def.lower.central.series}
