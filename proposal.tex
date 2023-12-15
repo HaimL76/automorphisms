@@ -51,45 +51,27 @@ Let $G$ be any finitely generated group, and let $n\in\mathbb{N}$ any natural nu
 \begin{proof}
 Let $H\leq G$, such that $[G:H]=n$, then $\sfrac{G}{H}:=\{g_1H,g_2H,\dots,g_nH\}$ is the set containing all left cosets of $H$. We shall define an operation $*:G\times\sfrac{G}{H}\rightarrow \sfrac{G}{H}$, in the following way. $\forall g\in G$, and $\forall g_iH\in\sfrac{G}{H}$, the operation is $g*g_iH:=(gg_i)H=g_jH$, that is, $g$ maps a left cost to another left coset. But that means that $g$ maps every index $i\in [n]$ to another index, which means that $g$ operates as a permutation on $[n]$, so $*$ defines a homomorphism $f:G\rightarrow\mathcal{S}_n$, from $G$ to the symmetric group of order $n$. $H$ is a subgroup, so $\forall g\in G$, it is clear that $g\in H$ iff $gH=H$. Assume that $i_0$  is the index of the left coset which identifies with $H$, i.e. $g_{i_0}H=H$, then $g\in H$ iff $g*g_{i_0}H=H$, which means that the permutation $f(g)$ stabilizes $i_0$, i.e. $f(g)(i_0)=i_0$. So, we can write $H=\{g\in G : f(g)(i_0)=i_0\}$. From this observation, it is clear that $\#\{H\leq G : [G:H]=n\}\leq\#\{f:G\rightarrow \mathcal{S}_n\}$. But all $f$ are homomorphisms from a finitely generated group to a finite group, and since group homomorphisms are uniquely determined by the mapping of the generators, it is clear that $\#\{f:G\rightarrow \mathcal{S}_n\}<\infty$, which proves the proposition.
 \end{proof}
-\begin{proposition}
-\label{prop:inverse.limit}
+\begin{definition}
+\label{def:inverse.limit}
 Let G be a group, and let $\mathcal{N}:=\{N\trianglelefteq G\}$ the set of all normal subgroups of $G$. Let $I\subset\mathbb{N}$ be a set of indices, for which we shall define the following partial order, $\forall i,j\in I$, $i\leq j$ iff $N_j\subseteq N_i$ iff $\sfrac{G}{N_i}\subseteq\sfrac{G}{N_j}$. So, for each $i\leq j$, there exists an epimorphism $\pi_{ji}:\sfrac{G}{N_
 j}\rightarrow\sfrac{G}{N_i}$, which projects $\sfrac{G}{N_
 j}$ onto $\sfrac{G}{N_
-i}$. Then,
-\begin{itemize}
-  \item $I$ is a directed set.
-  \item $\{\sfrac{G}{N_k}\}_{k\in I}$ is a projective system.
-  \item $\widehat{G}=\underset{\leftarrow}{lim}\{\sfrac{G}{N_k}\}_{k\in I}:=\{(h_k)_{k\in I}\in\prod_{k\in I}\sfrac{G}{N_k} : \pi_{ji}(h_j)=h_i,\forall i\leq j\}$ is an inverse limit of $\{\sfrac{G}{N_k}\}_{k\in I}$
-\end{itemize}
-\end{proposition}
-\begin{proof}
-    One checks that all the above is according to the definitions.
-\end{proof}
-\begin{proposition}
-\label{prop:homomorphism.inserve.limit}
-Let $G$ be any group, with $\widehat{G}$ defined as above. Then there is a canonical homomorphism, $\varphi:G\rightarrow\widehat{G}$, defined by $\forall g\in G, \varphi(g):=(gN_k)_{k\in I}$, and $ker\varphi=\bigcap_{k\in I}N_k$
-\end{proposition}
-\begin{proof}
-Easy to verify that $\varphi$ is a well-defined homomorphism. Let $g\in\bigcap_{k\in I}N_k$. then $\forall k\in I, gN_k=N_k$, then $\varphi(g)=(gN_k)_{k\in I}=(N_k)_{k\in I}=([e]\in\sfrac{G}{N_k})_{k\in I}=[e]\in\prod_{k\in I}\sfrac{G}{N_k}$
-\end{proof}
+i}$. Then, $\widehat{G}=\underset{\leftarrow}{lim}\{\sfrac{G}{N_k}\}_{k\in I}:=\{(h_k)_{k\in I}\in\prod_{k\in I}\sfrac{G}{N_k} : \pi_{ji}(h_j)=h_i,\forall i\leq j\}$ is an inverse limit of $\{\sfrac{G}{N_k}\}_{k\in I}$, and is called the \textbf{profinite closure} of $G$.
+\end{definition}
 \begin{definition}
 \label{def:pro.isomorphic}
 Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{pro-isomorphic}, if $\widehat{H}\cong\widehat{G}$.
 \end{definition}
 \begin{definition}
 \label{def:zeta.pro.isomorphic}
-Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\widehat{\zeta_G}(s):=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$
+Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\widehat{\zeta_G}(s):=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$. We assume, in this research, that $\widehat{a_n}(G)$ is finite for all $G$. A sufficient condition for this would be that $G$ is finitely-generated, by proposition \ref{prop:finite.number.subgroups}.
 \end{definition}
 \begin{example}
-$G=(\mathbb{Z},+)$. $G$ is an abelian group, and every $H\leq G$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong G$, as both are infinite cyclic groups. For any $n\in\mathbb{N}$, we can construct a poset of normal subgroups, of the form $\{n\mathbb{Z},2n\mathbb{Z},3n\mathbb{Z},\dots\}$, which is naturally in bijection with the poset of all normal subgroups of $\mathbb{Z}$ itself. This construction forms a projective system, for $G$, and for every $H\leq G$, by taking all the quotient groups of the form $\sfrac{G}{kn\mathbb{Z}}$. From this, it is obvious that $\widehat{H}\cong\widehat{G}$, for every $H\leq G$. Any such $H=n\mathbb{Z}$ is the only subgroup of $G$, which is of index $n$, therefore, the pro-isomoprhic $\zeta$-function of $G$ is $\widehat{\zeta_G}(s)=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, where $\widehat{a_n}(G)=1$, which comes to $\widehat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
+$G=(\mathbb{Z},+)$. $G$ is an abelian group, and every $H\leq G$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong G$, as both are infinite cyclic groups. From this, it is obvious that $\widehat{H}\cong\widehat{G}$, for every $H\leq G$. Any such $H=n\mathbb{Z}$ is the only subgroup of $G$, which is of index $n$, therefore, the pro-isomoprhic $\zeta$-function of $G$ is $\widehat{\zeta_G}(s)=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, where $\widehat{a_n}(G)=1$, which comes to $\widehat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
 \end{example}
 \begin{proposition}
 \label{prop:zeta.decomposition}
-The Riemann $\zeta$-function is decomposing to an infinite product of $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}$, where $p$ is prime, and the product consists of all the prime number existing.
-\begin{proof}
-$\zeta(s)=\sum_{n=1}^{\infty}n^{-s}=1+\frac{1}{2^{-s}}+\frac{1}{3^{-s}}+\dots$, but every $n\in\mathbb{N}$ is decomposing to a finite product of powers of primes, $n=2^{k_2}3^{k_3}5^{k_5}\dots$, so, taking this product, $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=(1+\frac{1}{2^s}+\frac{1}{2^{2s}}+\frac{1}{2^s}+\dots)(1+\frac{1}{3^s}+\frac{1}{3^{2s}}+\frac{1}{3^s}+\dots)(1+\frac{1}{5^s}+\frac{1}{5^{2s}}+\frac{1}{5^s}+\dots)\dots=\prod_p(1+\frac{1}{p^s}+\frac{1}{p^{2s}}+\frac{1}{p^s}+\dots)$, we have every expression of the form $\frac{1}{2^{k_2s}3^{k_3s}5^{k_5s}\dots}$, where the denominator is a finite product of powers of primes, and each expression is uniquely existing in this product. From this, it is obvious that this product forms an infinite sum of expressions of the form $\frac{1}{n^s}$, where every $n\in\mathbb{N}$ is uniquely existing. This means that $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=1+\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{5^s}+\dots=\sum_{n=1}^\infty\frac{1}{n^s}=\zeta(s)$. This decomposition is called \textbf{Euler Decomposition}. One checks that if $Re(s)>0$, then the sum of the geometric series is $\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=1+\frac{1}{p}+\frac{1}{p^2}+\frac{1}{p^3}+\frac{1}{p^4}+\dots=\frac{1}{1-p^{-s}}$, so $\prod_p\sum_{k=0}^{\infty}\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}=\prod_p\zeta_p(s)$, which completes the proof.
-\end{proof}
+The Riemann $\zeta$-function decomposes to an infinite product of $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}$, where $p$ is prime, and the product runs over all the prime numbers.
 \end{proposition}
 \begin{proposition}
 \label{prop.proisomorphic.decomposition}
@@ -406,15 +388,21 @@ $, which means that $$
 $$\varphi(e_{23})=a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}$$
 $$\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}
 $$.
-We want to find relations between the elements of $\varphi$. Considering the fact that $[\varphi(x),\varphi(y)]=\varphi([x,y])=$, we observe that the Lie brackets on images of any two commuting elements of the basis give $0$, as they are images of $0$, i.e., for every $x,y\in\mathcal{L}_n$, such that $[x,y]=0$, we have that $[\varphi(x),\varphi(y)]=\varphi([x,y])=\varphi(0)=0$. Hence, the only images that do not vanish under Lie brackets are $[\varphi(e_{12}),\varphi(e_{23})]=[a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13},a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}]=a_{11}a_{21}[e_{12},e_{12}]+a_{11}a_{22}[e_{12},e_{23}]\dots+a_{13}a_{23}[e_{13},e_{13}]=\varphi([e_{12},e_{23}])=\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}$. Considering again only the non-vanishing Lie brackets, we have that $[\varphi(e_{12}),\varphi(e_{23})]=a_{11}a_{22}[e_{12},e_{23}]+a_{12}a_{21}[e_{23},e_{12}]=a_{11}a_{22}e_{13}-a_{12}a_{21}e_{13}=(a_{11}a_{22}-a_{12}a_{21})e_{13}=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}=\varphi(e_{13})$. Comparing the scalars, for the three elements of the basis, gives the following relations, $$
+We want to find relations between the elements of $\varphi$. Considering the fact that $[\varphi(x),\varphi(y)]=\varphi([x,y])=$, we observe that the Lie brackets on images of any two commuting elements of the basis give $0$, as they are images of $0$, i.e., for every $x,y\in\mathcal{L}_n$, such that $[x,y]=0$, we have that $[\varphi(x),\varphi(y)]=\varphi([x,y])=\varphi(0)=0$. Hence, the only images that do not vanish under Lie brackets are $[\varphi(e_{12}),\varphi(e_{23})]=[a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13},a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}]=a_{11}a_{21}[e_{12},e_{12}]+a_{11}a_{22}[e_{12},e_{23}]+\dots+a_{13}a_{23}[e_{13},e_{13}]=\varphi([e_{12},e_{23}])=\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}$. Considering again only the non-vanishing Lie brackets, we have that $[\varphi(e_{12}),\varphi(e_{23})]=a_{11}a_{22}[e_{12},e_{23}]+a_{12}a_{21}[e_{23},e_{12}]=a_{11}a_{22}e_{13}-a_{12}a_{21}e_{13}=(a_{11}a_{22}-a_{12}a_{21})e_{13}=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}=\varphi(e_{13})$. Comparing the scalars, for the three elements of the basis, gives the following relations, $$
 a_{31}=0$$
 $$a_{32}=0$$
 $$a_{33}=(a_{11}a_{22}-a_{12}a_{21})\neq 0
-$$.
+$$
 which gives the following matrix, $$\varphi(v)=\begin{pmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
-0 & 0 & a_{33}\\
+0 & 0 & det(A)\\
+\end{pmatrix}
+$$
+where $A$ is the minor $$
+A=\begin{pmatrix}
+a_{11} & a_{12}\\
+a_{21} & a_{22}\\
 \end{pmatrix}
 $$
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
