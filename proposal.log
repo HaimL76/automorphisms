@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  7 DEC 2023 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  20 DEC 2023 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,9 +587,8 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 
 [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2{c:/texlive/2
-023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (8.93887pt too wide) in paragraph at lines 113--117
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (8.93887pt too wide) in paragraph at lines 95--99
 \OT1/cmr/m/n/12 an au-to-mo-prhism, so $\OML/cmm/m/it/12 u \OT1/cmr/m/n/12 = \O
 ML/cmm/m/it/12 ''[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u\OT1/cmr/m/n/12 ) = \OML/
 cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '[]\OT1/cmr/m/n/12 ([][] \OML/cm
@@ -600,10 +599,10 @@ m/m/it/12 ^^\[]b[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([][]
 
 [3]
 
-LaTeX Warning: Command \L invalid in math mode on input line 131.
+LaTeX Warning: Command \L invalid in math mode on input line 113.
 
 [4] [5]
-Overfull \hbox (8.71992pt too wide) in paragraph at lines 193--194
+Overfull \hbox (8.71992pt too wide) in paragraph at lines 175--176
 []\OT1/cmr/bx/n/12 Corollary 1.3.5. []\OT1/cmr/m/it/12 For ev-ery $\OML/cmm/m/i
 t/12 g \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 G\OT1/cmr/m/n/12 (\U/msb/m/n/12 Q[]\
 OT1/cmr/m/n/12 )$\OT1/cmr/m/it/12 , we have that $\OML/cmm/m/it/12 ^^V\OT1/cmr/
@@ -612,8 +611,8 @@ ML/cmm/m/it/12 g\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 G\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )) =
  []
 
-[6]
-Overfull \hbox (21.6163pt too wide) in paragraph at lines 200--201
+
+Overfull \hbox (21.6163pt too wide) in paragraph at lines 182--183
 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 det\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g\OT1/c
 mr/m/n/12 )\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = [][] \OMS/cmsy/m/n/12 j\OML/c
 mm/m/it/12 det\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h\OT1/cmr/m/n/12 )\OMS/cmsy/m/n
@@ -625,7 +624,7 @@ det\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j[] [][
  []
 
 
-Overfull \hbox (83.06151pt too wide) in paragraph at lines 204--205
+Overfull \hbox (83.06151pt too wide) in paragraph at lines 186--187
 []\OT1/cmr/bx/n/12 Corollary 1.3.7. []\OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 p$
  \OT1/cmr/m/it/12 be a prime num-ber, $\OML/cmm/m/it/12 s \OMS/cmsy/m/n/12 2 \U
 /msb/m/n/12 C$\OT1/cmr/m/it/12 , then $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT
@@ -633,19 +632,19 @@ Overfull \hbox (83.06151pt too wide) in paragraph at lines 204--205
 /cmm/m/it/12 g\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 =
  []
 
-[7]
-Overfull \hbox (13.61194pt too wide) in paragraph at lines 239--259
+[6]
+Overfull \hbox (13.61194pt too wide) in paragraph at lines 221--241
 \OT1/cmr/m/n/12 sump-tion, and one checks that $\OML/cmm/m/it/12 E[]E[] \OT1/cm
 r/m/n/12 = [] [] =
  []
 
-[8]
-Overfull \hbox (14.16188pt too wide) in paragraph at lines 272--305
+[7]
+Overfull \hbox (14.16188pt too wide) in paragraph at lines 254--287
 \OT1/cmr/m/n/12 means that $[] [] = []$.
  []
 
-[9] [10]
-Overfull \hbox (73.44952pt too wide) in paragraph at lines 377--378
+[8] [9] [10]
+Overfull \hbox (73.44952pt too wide) in paragraph at lines 359--360
 \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([][] \OML/cmm/m/it/12 ^^U[]
 b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 ([][] \OML/cmm/m/it/12 
 ^^Z[]b[]\OT1/cmr/m/n/12 )] = [[][] \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/
@@ -656,13 +655,14 @@ m/it/12 ^^U[]b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; [][] '\OT1/cmr/m/n/12 (\OML
  []
 
 [11] [12]
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 419--420
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 407--408
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
  []
 
-[13] [14] (./proposal.aux)
+[13{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+(./proposal.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -677,10 +677,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 14992 strings out of 474934
- 314153 string characters out of 5763815
- 1943801 words of memory out of 5000000
- 36252 multiletter control sequences out of 15000+600000
+ 14993 strings out of 474934
+ 314172 string characters out of 5763815
+ 1949801 words of memory out of 5000000
+ 36253 multiletter control sequences out of 15000+600000
  577592 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1791b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -701,10 +701,10 @@ nts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on proposal.pdf (14 pages, 280660 bytes).
+Output written on proposal.pdf (13 pages, 276845 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 146 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
