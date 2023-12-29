@@ -374,14 +374,18 @@ The $\mathbb{Q}_p$-algebra associated with $U_3$ consists of matrices of the for
 0 & 0 & a_{23}\\
 0 & 0 & 0\\
 \end{pmatrix}=a_{12}e_{12}+a_{13}e_{13}+a_{23}e_{23}
-$$. Let $\varphi\in Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$ be an $\mathcal{L}_{p,n}$-automorphism. The image of every $A\in\mathcal{L}_{p,n}$, as a linear combination of elements of the basis, is a linear combination of the images of these elements. So, let $v=(e_{12},e_{23},e_{13})$, we have that $\varphi(v)=\begin{pmatrix}
+$$. Let $\varphi\in Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$ be an $\mathcal{L}_{p,n}$-automorphism. The image of every $A\in\mathcal{L}_{p,n}$, as a linear combination of elements of the basis, is a linear combination of the images of these elements. So, let $v=(x,y,z)=xe_{12}+y_{23}+z_{13}$, where $x,y,z\in\mathbb{Q}_p$, we have that $\varphi(v)=\begin{pmatrix}
+x & y & z\\
+\end{pmatrix}\begin{pmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33}\\
-\end{pmatrix}\begin{pmatrix}
-e_{12}\\
-e_{23}\\
-a_{13}\\
+\end{pmatrix}=\begin{pmatrix}
+a_{11}x+a_{12}x+a_{13}x & a_{21}y+a_{22}y+a_{23}y & a_{31}z+a_{32}z+a_{33}z\\
+\end{pmatrix}=\\\begin{pmatrix}
+(a_{11}+a_{12}+a_{13})x & (a_{21}+a_{22}+a_{23})y & (a_{31}+a_{32}+a_{33})z\\
+\end{pmatrix}=\begin{pmatrix}
+\varphi(x) & \varphi(y) & \varphi(z)\\
 \end{pmatrix}
 $, which means that $$
 \varphi(e_{12})=a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13}$$
@@ -405,6 +409,44 @@ a_{11} & a_{12}\\
 a_{21} & a_{22}\\
 \end{pmatrix}
 $$
+We can observe that for every $v\in\mathcal{L}_{p,n}$, writing $M=\varphi(v)$ lines in the following way,
+$$
+M=\begin{pmatrix}
+\varphi(e_{12})\\
+\varphi(e_{23})\\
+\varphi(e_{n-1n})\\
+\varphi(e_{13})\\
+\vdots\\
+\varphi(e_{n-1n})\\
+\vdots\\
+\varphi(e_{1n})\\
+\end{pmatrix}\\
+$$
+where $m=\binom{n}{2}$, divides $M$ to a block matrix, $$M=\begin{pmatrix}
+M_{11} & \vline & M_{12}&\vline & \dots& \vline & M_{1n-1} & \vline&M_{1n}\\
+\hline
+M_{21} & \vline & M_{22}&\vline & \dots &\vline & M_{2n-1} &\vline& M_{2n}\\
+\hline
+\vdots & \vline & \vdots&\vline & \dots &\vline & \vdots &\vline& \vdots\\
+\hline
+M_{n1} & \vline & M_{n2}&\vline & \dots &\vline & M_{nn-1} &\vline& M_{nn}\\
+\end{pmatrix}
+$$
+where $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Q}_p)$, $k=$dim$(\gamma_i\mathcal{L}),l=$dim$(\gamma_j\mathcal{L})$. From this, we can understand that the blocks on the main diagonal of $M$ are squared matrices, $A_{ii}\in\mathcal{M}_{n-i}$. From the calculation on $\mathcal{L}_{p,3}$, we understand also that any element $e_{ii+k}\in\gamma_k\mathcal{L}_{p,n}$ must vanish in the images of elements from higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
+M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{1m}\\
+\hline
+0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+\hline
+\vdots & \vline & \vdots&\vline & \vdots & \dots &\vline & \vdots &\vline& \vdots\\
+\hline
+0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+\hline
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{2m}\\
+\end{pmatrix}
+$$
+A deeper into the structure of $M$ will show us that the first block on the main diagonal, $M_{11}$, must be either diagonal or anti-diagonal.................
+So, we assume that $M_{11}$ is diagonal. 
+\newline
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
 \begin{itemize}
