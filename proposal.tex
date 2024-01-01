@@ -446,7 +446,33 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{
 $$
 A deeper into the structure of $M$ will show us that the first block on the main diagonal, $M_{11}$, must be either diagonal or anti-diagonal.................
 So, we assume that $M_{11}$ is diagonal. 
-\newline
+\begin{proposition}
+\label{prop.h.matrix.determinant}
+Let $n\in\mathbb{N}$, and let $$
+A_n=\begin{pmatrix}
+\lambda_1 & & & & & & & &\\
+& \lambda_2 & & & & & & &\\
+& & \ddots & & & & & &\\
+& & & \lambda_n & & & & &\\
+& & & & \lambda_1\lambda_2 & & & &\\
+& & & & & \lambda_2\lambda_3 & & &\\
+& & & & & & \ddots & &\\
+& & & & & & & \lambda_{n-1}\lambda_n & &\\
+& & & & & & & & \ddots &\\
+& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_n\\
+\end{pmatrix}
+$$
+where $\lambda_1,\lambda_2,\dots,\lambda_n\in\mathbb{Q}_p$, then, $det(A_n)=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+\begin{proof}
+We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
+det(A_1)=\lambda_1$$
+$$det(A_2)=det(A_1)\lambda_1\lambda_2^2$$
+$$det(A_3)=det(A_2)\lambda_1\lambda_2^2\lambda_3^3$$
+$$\vdots$$
+$$det(A_n)=det(A_{n-1})\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_n^n$$
+Calculating the general element, $a_n=det(A_n)$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
+\end{proof}
+\end{proposition}
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
 \begin{itemize}
