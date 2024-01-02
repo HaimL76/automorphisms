@@ -447,6 +447,36 @@ $$
 A deeper into the structure of $M$ will show us that the first block on the main diagonal, $M_{11}$, must be either diagonal or anti-diagonal.................
 So, we assume that $M_{11}$ is diagonal. 
 \begin{proposition}
+\label{prop.involution}
+Let $p$ be a prime number, and let $n\in\mathbb{N}$. $B_n=\{e_1,\dots,e_{m-1}\}$, where $m=\binom{n}{2}$. Then, the map $\eta_n:B_n\rightarrow B_n$, defined by $\eta_n(e_i):=e_{m-i}$ is a $\mathcal{L}_{p,n}$-automorphism, which is also an involution.
+\end{proposition}
+\begin{proof}
+Clearly, $\eta_n$ is the anti-diagonal $m\times m$ matrix,$$
+\eta_n=\begin{pmatrix}
+& & & 1 &\\
+& & 1 &\\
+& \iddots & &\\
+1 & & &\\
+\end{pmatrix}
+$$
+$\eta_n$ is an invertible matrix, which operates on any vector $$v=(a_1,a_2,\dots,a_{m-1})=\sum_{i=1}^{m-1}a_ie_i$$ in the following way,$$
+\eta_n(v)=\eta_n\bigg(\sum_{i=1}^{m-1}a_ie_i\bigg)=\begin{pmatrix}
+a_1 & a_2 & \dots & a_{m-1}\\
+\end{pmatrix}\begin{pmatrix}
+& & & 1 &\\
+& & 1 &\\
+& \iddots & &\\
+1 & & &\\
+\end{pmatrix}=\begin{pmatrix}
+a_{m-1} & a_{m-2} & \dots & a_1\\
+\end{pmatrix}=$$
+$$\begin{pmatrix}
+\eta_n(a_1) & \eta_n(a_2) & \dots & \eta_n(a_{m-1})\\
+\end{pmatrix}=\sum_{i=1}^{m-1}\eta_n(a_ie_i)=\sum_{i=1}^{m-1}a_i\eta_n(e_i)
+$$
+And, $\eta_n^2(v)=\eta_n(\eta_n(v))=\eta_n\bigg(\eta_n\bigg(\sum_{i=1}^{m-1}a_ie_i\bigg)\bigg)=\eta_n\bigg(\sum_{i=1}^{m-1}a_i\eta_n(e_i)\bigg)=\sum_{i=1}^{m-1}a_i\eta_n^2(e_i)=\sum_{i=1}^{m-1}a_i\eta_n(e_{n-i})=\sum_{i=1}^{m-1}a_ie_i$
+\end{proof}
+\begin{proposition}
 \label{prop.h.matrix.determinant}
 Let $n\in\mathbb{N}$, and let $$
 A_n=\begin{pmatrix}
