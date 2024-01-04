@@ -444,8 +444,20 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{2m}\\
 \end{pmatrix}
 $$
-A deeper into the structure of $M$ will show us that the first block on the main diagonal, $M_{11}$, must be either diagonal or anti-diagonal.................
-So, we assume that $M_{11}$ is diagonal. 
+We observe that the matrix $M_{ij}$ blocks represent quotients of the form $\sfrac{\gamma_i\mathcal{L}_{p,n}}{\gamma_{i+1}\mathcal{L}_{p,n}},\sfrac{\gamma_j\mathcal{L}_{p,n}}{\gamma_{j+1}\mathcal{L}_{p,n}}$. We shall state, as a fact, that the block $M_{11}$ is either diagonal or anti-diagonal, i.e., $$M_{11}=\begin{pmatrix}
+\lambda_1 & & &\\
+& \lambda_2 & &\\
+& & \ddots &\\
+& & & \lambda_n\\
+\end{pmatrix}$$
+or
+$$M_{11}=\begin{pmatrix}
+& & & \lambda_1\\
+& & \lambda_2 &\\
+& \iddots & &\\
+\lambda_n & & &\\
+\end{pmatrix}$$
+In the case of an anti-diagonal block, we have the following proposition,
 \begin{proposition}
 \label{prop.involution}
 Let $p$ be a prime number, and let $n\in\mathbb{N}$. $B_n=\{e_1,\dots,e_{m-1}\}$, where $m=\binom{n}{2}$. Then, the map $\eta_n:B_n\rightarrow B_n$, defined by $\eta_n(e_i):=e_{m-i}$ is a $\mathcal{L}_{p,n}$-automorphism, which is also an involution.
@@ -476,6 +488,7 @@ $$\begin{pmatrix}
 $$
 And, $\eta_n^2(v)=\eta_n(\eta_n(v))=\eta_n\bigg(\eta_n\bigg(\sum_{i=1}^{m-1}a_ie_i\bigg)\bigg)=\eta_n\bigg(\sum_{i=1}^{m-1}a_i\eta_n(e_i)\bigg)=\sum_{i=1}^{m-1}a_i\eta_n^2(e_i)=\sum_{i=1}^{m-1}a_i\eta_n(e_{n-i})=\sum_{i=1}^{m-1}a_ie_i$
 \end{proof}
+From this proposition, we realize that if $M_{11}$ is anti-diagonal, then $\eta_n\varphi$ is the automorphism which has that $M_11$ is diagonal.
 \begin{proposition}
 \label{prop.h.matrix.determinant}
 Let $n\in\mathbb{N}$, and let $$
