@@ -441,7 +441,7 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{
 \hline
 0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
 \hline
-0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{2m}\\
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{mm}\\
 \end{pmatrix}
 $$
 We observe that the matrix $M_{ij}$ blocks represent quotients of the form $\sfrac{\gamma_i\mathcal{L}_{p,n}}{\gamma_{i+1}\mathcal{L}_{p,n}},\sfrac{\gamma_j\mathcal{L}_{p,n}}{\gamma_{j+1}\mathcal{L}_{p,n}}$. We shall state, as a fact, that the block $M_{11}$ is either diagonal or anti-diagonal, i.e., $$M_{11}=\begin{pmatrix}
@@ -488,7 +488,27 @@ $$\begin{pmatrix}
 $$
 And, $\eta_n^2(v)=\eta_n(\eta_n(v))=\eta_n\bigg(\eta_n\bigg(\sum_{i=1}^{m-1}a_ie_i\bigg)\bigg)=\eta_n\bigg(\sum_{i=1}^{m-1}a_i\eta_n(e_i)\bigg)=\sum_{i=1}^{m-1}a_i\eta_n^2(e_i)=\sum_{i=1}^{m-1}a_i\eta_n(e_{n-i})=\sum_{i=1}^{m-1}a_ie_i$
 \end{proof}
-From this proposition, we realize that if $M_{11}$ is anti-diagonal, then $\eta_n\varphi$ is the automorphism which has that $M_11$ is diagonal.
+From this proposition, we realize that if $M_{11}$ is anti-diagonal, then $\eta_n\varphi$ is the automorphism which has that $M_{11}$ is diagonal.
+\begin{proposition}
+\label{prop.main.diagonal.blocks}
+Let $p$ be a prime number, and let $n\in\mathbb{N}$, and let $M=\varphi\in\mathcal{L}_{p,n}$. Then, all the blocks on the main diagonal, $M_{ii},\dots,M_{n-1n-1}$, are diagonal, of the form,$$
+M=\varphi=\begin{pmatrix}
+\lambda_1 & & & & & & & &\\
+& \lambda_2 & & & & & & &\\
+& & \ddots & & & & & &\\
+& & & \lambda_n & & & & &\\
+& & & & \lambda_1\lambda_2 & & & &\\
+& & & & & \lambda_2\lambda_3 & & &\\
+& & & & & & \ddots & &\\
+& & & & & & & \lambda_{n-1}\lambda_n & &\\
+& & & & & & & & \ddots &\\
+& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_n\\
+\end{pmatrix}
+$$
+\end{proposition}
+\begin{proof}
+By simple induction. We have already assumed that $M_{11}$ is diagonal. Every sequential block $M_{ii}$ contains the coefficients of elements of $\sfrac{\gamma_i\mathcal{L}_{p,n}}{\gamma_{i+1}\mathcal{L}_{p,n}}$ as summands in images of elements of the same quotient algebra. So, $\varphi(e_{ii+2})=\sum_{i=1}^{n-2}a_{ii+2}e_{ii+2}$, but $e_{ii+2}=[e_{ii+1},e_{i+1i+2}]$, so $\varphi(e_{ii+2})=[\varphi(e_{ii+1}),\varphi(e_{i+1i+2})]$, hence, $\lambda_{i+2}=a_{ii+2}=a_{ii+1}a_{i+1i+2}=\lambda_{i}\lambda_{i+1}$, which proves the proposition.
+\end{proof}
 \begin{proposition}
 \label{prop.h.matrix.determinant}
 Let $n\in\mathbb{N}$, and let $$
@@ -506,6 +526,7 @@ A_n=\begin{pmatrix}
 \end{pmatrix}
 $$
 where $\lambda_1,\lambda_2,\dots,\lambda_n\in\mathbb{Q}_p$, then, $det(A_n)=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+\end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
 det(A_1)=\lambda_1$$
@@ -515,7 +536,69 @@ $$\vdots$$
 $$det(A_n)=det(A_{n-1})\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_n^n$$
 Calculating the general element, $a_n=det(A_n)$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
 \end{proof}
+This means that every $M=\varphi\in\mathcal{L}_{p,n}$ is of the form,$$M=\varphi=\begin{pmatrix}
+\begin{matrix}\lambda_1 & & &\\
+& \lambda_2 & &\\
+& & \ddots &\\
+& & & \lambda_n\\
+\end{matrix} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{1m}\\
+\hline
+0 & \vline & \begin{matrix}\lambda_1\lambda_2 & & &\\
+& \lambda_2\lambda_3 & &\\
+& & \ddots &\\
+& & & \lambda_{n-1}\lambda_n\\
+\end{matrix}&\vline & M_{23} & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+\hline
+\vdots & \vline & \vdots&\vline & \vdots & \dots &\vline & \vdots &\vline& \vdots\\
+\hline
+0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+\hline
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_n\\
+\end{pmatrix}$$
+The above discussion gives rise to the decomposition of each $\varphi\in\mathcal{L}_{p,n}$ to two matrices, one is the diagonal matrix $$h=\begin{pmatrix}
+\lambda_1 & & & & & & & &\\
+& \lambda_2 & & & & & & &\\
+& & \ddots & & & & & &\\
+& & & \lambda_n & & & & &\\
+& & & & \lambda_1\lambda_2 & & & &\\
+& & & & & \lambda_2\lambda_3 & & &\\
+& & & & & & \ddots & &\\
+& & & & & & & \lambda_{n-1}\lambda_n & &\\
+& & & & & & & & \ddots &\\
+& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_n\\
+\end{pmatrix}
+$$
+and the other matrix is $$n=\begin{pmatrix}
+1 &* &* &* &* &* &* & *\\
+& 1 &* &* &* &* &* &*\\
+& & \ddots & *& *& *& *& *&\\
+& & & 1 &* &* & *& *\\
+& & & & 1 &* &* & *\\
+& & & & & 1 & *& *\\
+& & & & & & \ddots & *\\
+& & & & & & & 1
+\end{pmatrix}
+$$
+So, we have the following proposition,
+\begin{proposition}
+\label{prop.automorphism.matrix,decomposition}
+Let $p$ be a prime number, and let $n\in\mathbb{N}$, and let $M=\varphi\in\mathcal{L}_{p,n}$. Then, $M=\varphi=nh$, where $n$ and $h$ are of the above form.
 \end{proposition}
+\begin{proof}
+Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$M^{-1}=\varphi^{-1}\begin{pmatrix}
+\lambda_1^{-1} & & & & & & & &\\
+& \lambda_2^{-1} & & & & & & &\\
+& & \ddots & & & & & &\\
+& & & \lambda_n^{-1} & & & & &\\
+& & & & (\lambda_1\lambda_2)^{-1} & & & &\\
+& & & & & (\lambda_2\lambda_3)^{-1} & & &\\
+& & & & & & \ddots & &\\
+& & & & & & & (\lambda_{n-1}\lambda_n)^{-1} & &\\
+& & & & & & & & \ddots &\\
+& & & & & & & & & (\lambda_1\lambda_2\cdots\lambda_n)^{-1}\\
+\end{pmatrix}
+$$
+\end{proof}
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
 \begin{itemize}
