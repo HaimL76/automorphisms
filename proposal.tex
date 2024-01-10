@@ -585,7 +585,7 @@ So, we have the following proposition,
 Let $p$ be a prime number, and let $n\in\mathbb{N}$, and let $M=\varphi\in\mathcal{L}_{p,n}$. Then, $M=\varphi=nh$, where $n$ and $h$ are of the above form.
 \end{proposition}
 \begin{proof}
-Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$M^{-1}=\varphi^{-1}\begin{pmatrix}
+Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$h^{-1}=\begin{pmatrix}
 \lambda_1^{-1} & & & & & & & &\\
 & \lambda_2^{-1} & & & & & & &\\
 & & \ddots & & & & & &\\
@@ -598,7 +598,81 @@ Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$M^{-1}=\
 & & & & & & & & & (\lambda_1\lambda_2\cdots\lambda_n)^{-1}\\
 \end{pmatrix}
 $$
+Easy to check that $n=Mh^{-1}$ is also an invertible matrix, with $1$ on the main diagonal, and $0$ below it.
 \end{proof}
+We observe that all the matrices with non-zero elements on the main diagonal, and $0$ everywhere else form an abelian subgroup of $G_n(\mathbb{Q}_p)$, since multiplying such matrices yields a matrix of the same specification. Let $$h_{\alpha}=\begin{pmatrix}
+\alpha_1 & & &\\
+& \alpha_2 & &\\
+& & \ddots &\\
+& & & \alpha_m\\
+\end{pmatrix},h_{\beta}=\begin{pmatrix}
+\beta_1 & & &\\
+& \beta_2 & &\\
+& & \ddots &\\
+& & & \beta_m\\
+\end{pmatrix}$$
+Then, $$h_{\alpha}h_{\beta}=\begin{pmatrix}
+\alpha_1\beta_1 & & &\\
+& \alpha_2\beta_2 & &\\
+& & \ddots &\\
+& & & \alpha_m\beta_m\\
+\end{pmatrix}=\begin{pmatrix}
+\beta_1\alpha_1 & & &\\
+& \beta_2\alpha_2 & &\\
+& & \ddots &\\
+& & & \beta_m\alpha_m\\
+\end{pmatrix}=h_{\beta}h_{\alpha}
+$$
+Obviously, this subgroup, which we shall denote as $H<G_n(\mathbb{Q}_p)$ is not normal, as we observe by taking the $n$ matrix described above, and multiplying $A=nhn^{-1}$, clearly $A\notin H$. On the other hand, the set of all $n$ matrices if a normal subgroup of $G_n(\mathbb{Q}_p)$, because if $$n_{\alpha}=\begin{pmatrix}
+1 & \alpha_{12} & \alpha_{13} & \dots & \alpha_{1m}\\
+& 1 & \alpha_{23} & \dots & \alpha_{2m}\\
+& & \ddots &  \vdots& \vdots &\\
+& &  &  1& \alpha_{m-1m} &\\
+& & & & 1\\
+\end{pmatrix},n_{\beta}=\begin{pmatrix}
+1 & \beta_{12} & \beta_{13} & \dots & \beta_{1m}\\
+& 1 & \beta_{23} & \dots & \beta_{2m}\\
+& & \ddots &  \vdots& \vdots &\\
+& &  &  1& \beta_{m-1m} &\\
+& & & & 1\\
+\end{pmatrix}
+$$
+Then $$n_\alpha n_\beta=\begin{pmatrix}
+1 & \alpha_{12}+\beta_{12} & * & \dots & *\\
+& 1 & * & \dots & *\\
+& & \ddots &  \vdots& \vdots &\\
+& &  &  1& \alpha_{m-1m}+\beta_{m-1m} &\\
+& & & & 1\\
+\end{pmatrix}
+$$
+which proves that all the $n$ matrices form a subgroup, which we shall denote by $N\in G_n(\mathbb{Q}_p)$.
+taking any matrix, $g\in G_n(\mathbb{Q}_p)$, and taking the product $A=gng^{-1}$, if we look at the main diagonals, we see that the product is of the general form $$
+gng^{-1}=\begin{pmatrix}
+\lambda_1 & a_{12} & \dots & a_{1m}\\
+0 & \lambda_2 & \dots & a_{2m}\\
+& & \ddots &*\\
+& & & \lambda_m\\
+\end{pmatrix}\begin{pmatrix}
+1 & b_{12} & \dots & b_{1m}\\
+0 & 1 & \dots & b_{2m}\\
+& & \ddots &*\\
+& & & 1\\
+\end{pmatrix}\begin{pmatrix}
+\lambda_1^{-1} & c_{12} & \dots & c_{1m}\\
+0 & \lambda_2^{-1} & \dots & c_{2m}\\
+& & \ddots &*\\
+& & & \lambda_m^{-1}\\
+\end{pmatrix}=$$
+$$
+\begin{pmatrix}
+1 & d_{12} & \dots & d_{1m}\\
+0 & 1 & \dots & d_{2m}\\
+& & \ddots &*\\
+& & & 1\\
+\end{pmatrix}\in N
+$$
+So, $N\lhd G_n(\mathbb{Q}_p)$ is a normal subgroup.
+
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
 \section{Notations}
 \begin{itemize}

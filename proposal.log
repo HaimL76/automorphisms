@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  4 JAN 2024 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  10 JAN 2024 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -671,18 +671,23 @@ Overfull \hbox (106.75818pt too wide) detected at line 557
  []
 
 [16] [17]
-Overfull \hbox (95.88745pt too wide) detected at line 600
-\OML/cmm/m/it/12 M[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 '[] []
+Overfull \hbox (68.97217pt too wide) detected at line 600
+\OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
+ []
+
+[18]
+Overfull \hbox (10.13109pt too wide) detected at line 665
+\OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 602--602
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 676--676
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
  []
 
-[18] [19{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[19] [20{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 (./proposal.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
@@ -692,9 +697,6 @@ L3 programming layer <2023-08-29>
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -722,10 +724,10 @@ nts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on proposal.pdf (19 pages, 290191 bytes).
+Output written on proposal.pdf (20 pages, 294317 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 169 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
