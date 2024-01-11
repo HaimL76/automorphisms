@@ -45,12 +45,12 @@ Using different variations of the $\zeta$-function and its factorization, we can
 \end{abstract}
 \section{Scientific Background}
 \subsection{Introduction}
-\begin{proposition} \label{prop:finite.number.subgroups}
-Let $G$ be any finitely generated group, and let $n\in\mathbb{N}$ any natural number. Then there is a finite number of subgroups $H\leq G$, such that $[G:H]=n$
-\end{proposition}
+We start our discussion by the basic fact, that for any finitely generated group, $G$, and for any natural number, $n\in\mathbb{N}$ number, there is a finite number of subgroups $H\leq G$, such that $[G:H]=n$.
 \begin{proof}
 Let $H\leq G$, such that $[G:H]=n$, then $\sfrac{G}{H}:=\{g_1H,g_2H,\dots,g_nH\}$ is the set containing all left cosets of $H$. We shall define an operation $*:G\times\sfrac{G}{H}\rightarrow \sfrac{G}{H}$, in the following way. $\forall g\in G$, and $\forall g_iH\in\sfrac{G}{H}$, the operation is $g*g_iH:=(gg_i)H=g_jH$, that is, $g$ maps a left cost to another left coset. But that means that $g$ maps every index $i\in [n]$ to another index, which means that $g$ operates as a permutation on $[n]$, so $*$ defines a homomorphism $f:G\rightarrow\mathcal{S}_n$, from $G$ to the symmetric group of order $n$. $H$ is a subgroup, so $\forall g\in G$, it is clear that $g\in H$ iff $gH=H$. Assume that $i_0$  is the index of the left coset which identifies with $H$, i.e. $g_{i_0}H=H$, then $g\in H$ iff $g*g_{i_0}H=H$, which means that the permutation $f(g)$ stabilizes $i_0$, i.e. $f(g)(i_0)=i_0$. So, we can write $H=\{g\in G : f(g)(i_0)=i_0\}$. From this observation, it is clear that $\#\{H\leq G : [G:H]=n\}\leq\#\{f:G\rightarrow \mathcal{S}_n\}$. But all $f$ are homomorphisms from a finitely generated group to a finite group, and since group homomorphisms are uniquely determined by the mapping of the generators, it is clear that $\#\{f:G\rightarrow \mathcal{S}_n\}<\infty$, which proves the proposition.
 \end{proof}
+After proving the fact above, we know that some types of subgroups are countable, because we can divide all the subgroups $H<G$, of a finitely generated group, to infinitely many equivalence classes of subgroups of index $n$, for every $n\in\mathbb{N}$, each class of finite cardinality, and index the subgroups in each class by some arbitrary order, thus making the set of all subgroups of $G$ a countable set.
+Trivially, any subset of the set of $G$ subgroups is countable, and in this research work, we shall base our discussion of a specific type of subgroups, as shall be described in the following definitions. 
 \begin{definition}
 \label{def:inverse.limit}
 Let G be a group, and let $\mathcal{N}:=\{N\trianglelefteq G\}$ the set of all normal subgroups of $G$. Let $I\subset\mathbb{N}$ be a set of indices, for which we shall define the following partial order, $\forall i,j\in I$, $i\leq j$ iff $N_j\subseteq N_i$ iff $\sfrac{G}{N_i}\subseteq\sfrac{G}{N_j}$. So, for each $i\leq j$, there exists an epimorphism $\pi_{ji}:\sfrac{G}{N_
@@ -69,14 +69,7 @@ Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\
 \begin{example}
 $G=(\mathbb{Z},+)$. $G$ is an abelian group, and every $H\leq G$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong G$, as both are infinite cyclic groups. From this, it is obvious that $\widehat{H}\cong\widehat{G}$, for every $H\leq G$. Any such $H=n\mathbb{Z}$ is the only subgroup of $G$, which is of index $n$, therefore, the pro-isomoprhic $\zeta$-function of $G$ is $\widehat{\zeta_G}(s)=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, where $\widehat{a_n}(G)=1$, which comes to $\widehat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
 \end{example}
-\begin{proposition}
-\label{prop:zeta.decomposition}
-The Riemann $\zeta$-function decomposes to an infinite product of $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}$, where $p$ is prime, and the product runs over all the prime numbers.
-\end{proposition}
-\begin{proposition}
-\label{prop.proisomorphic.decomposition}
-Let $G$ be any finitely-generated, nilpotent and torsion-free group, then we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$, where $\widehat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)\frac{1}{p^{ks}}$
-\end{proposition}
+After establishing the basic definitions, we observe a fact that is a major motivation for this research, which says that the Riemann $\zeta$-function decomposes to an infinite product of $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}$, where $p$ is prime, and the product runs over all the prime numbers. Following this fact, regarding the Riemann $zeta$-function, we observe that for any finitely-generated, nilpotent and torsion-free group, $G$, we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$, where $\widehat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)\frac{1}{p^{ks}}$
 \begin{definition}
 \label{def.lower.central.series}
 Let $G$ be any group, then the \textbf{lower central series} of $G$ is series of subgroups of $G$, defined by the recursive rule, $G_n:=[G,G_{n-1}]$, for every $n\in\mathbb{N}$, where $G_0:=G$.  We recall that $[G,G_n]\leq G$ is the subgroup of commutators, $\{gg_ng^{-1}g_n^{-1} : g\in G,g_n\in G_n\}$
