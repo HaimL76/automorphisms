@@ -41,33 +41,34 @@
 \begin{document}
 \begin{abstract}
 Let $G$ be any group. For any natural number $n\in\mathbb{N}$, let $a_n$ be the number of subgroups $H\leq G$, such that $[G:H]=n$. Assume $G$ is finitely-generated, then $a_n<\infty$, and we can define a $\zeta$-function of the form $\zeta_G(s):=\sum_{i=1}^\infty a_nn^{-s}$, where $s\in\mathbb{C}$. Assume, in addition, that $G$ is also nilpotent and torsion-free, then this function has properties of the Riemann $\zeta$-function, mainly the decomposition of $\zeta$ to an Euler product of local factors indexed by primes. 
-Using different variations of the $\zeta$-function and its factorization, we can obtain more information about $G$ and specific subgroups of $G$. Specifically, we are interested in the number of pro-isomorphic subgroups of $G$, and in this research we shall display an approach to the problem of counting them. 
+Using different variations of the $\zeta$-function and its factorization, we can obtain more information about $G$ and specific subgroups of $G$. Specifically, we are interested in the number of pro-isomorphic subgroups of $G$, and in this research, we shall display an approach to the problem of counting them. 
 \end{abstract}
 \section{Scientific Background}
 \subsection{Introduction}
-We start our discussion by the basic fact, that for any finitely generated group, $G$, and for any natural number, $n\in\mathbb{N}$ number, there is a finite number of subgroups $H\leq G$, such that $[G:H]=n$.
+We start our discussion with the following proposition, which stands at the very base of our subject.
+\begin{proposition} \label{prop:finite.number.subgroups}
+Let $G$ be any finitely generated group, and let $n\in\mathbb{N}$ any natural number. Then there is a finite number of subgroups $H\leq G$, such that $[G:H]=n$
+\end{proposition}
 \begin{proof}
 Let $H\leq G$, such that $[G:H]=n$, then $\sfrac{G}{H}:=\{g_1H,g_2H,\dots,g_nH\}$ is the set containing all left cosets of $H$. We shall define an operation $*:G\times\sfrac{G}{H}\rightarrow \sfrac{G}{H}$, in the following way. $\forall g\in G$, and $\forall g_iH\in\sfrac{G}{H}$, the operation is $g*g_iH:=(gg_i)H=g_jH$, that is, $g$ maps a left cost to another left coset. But that means that $g$ maps every index $i\in [n]$ to another index, which means that $g$ operates as a permutation on $[n]$, so $*$ defines a homomorphism $f:G\rightarrow\mathcal{S}_n$, from $G$ to the symmetric group of order $n$. $H$ is a subgroup, so $\forall g\in G$, it is clear that $g\in H$ iff $gH=H$. Assume that $i_0$  is the index of the left coset which identifies with $H$, i.e. $g_{i_0}H=H$, then $g\in H$ iff $g*g_{i_0}H=H$, which means that the permutation $f(g)$ stabilizes $i_0$, i.e. $f(g)(i_0)=i_0$. So, we can write $H=\{g\in G : f(g)(i_0)=i_0\}$. From this observation, it is clear that $\#\{H\leq G : [G:H]=n\}\leq\#\{f:G\rightarrow \mathcal{S}_n\}$. But all $f$ are homomorphisms from a finitely generated group to a finite group, and since group homomorphisms are uniquely determined by the mapping of the generators, it is clear that $\#\{f:G\rightarrow \mathcal{S}_n\}<\infty$, which proves the proposition.
 \end{proof}
-After proving the fact above, we know that some types of subgroups are countable, because we can divide all the subgroups $H<G$, of a finitely generated group, to infinitely many equivalence classes of subgroups of index $n$, for every $n\in\mathbb{N}$, each class of finite cardinality, and index the subgroups in each class by some arbitrary order, thus making the set of all subgroups of $G$ a countable set.
-Trivially, any subset of the set of $G$ subgroups is countable, and in this research work, we shall base our discussion of a specific type of subgroups, as shall be described in the following definitions. 
+This proposition gives rise to an entire subject in group theory, called \textbf{Subgroup Growth}. We denote by $a_n(G)$ the number of $G$-subgroups of index n, and claim, without proving, that the sequence $\{a_n(G)\}$ depends on $n$, and is monotonically increasing, hence the name, subgroup growth. Several important results have been found, regarding bounds of this $n$-dependent growth, including polynomial, exponential, and intermediate bounds. These bounds may vary by certain characteristics of the group $G$. In addition, we can also research the growth of $G$-subgroups of specific types. This research will concentrate on the growth of \textbf{pro-isomorphic} subgroups, which we now define.
 \begin{definition}
-\label{def:inverse.limit}
-Let G be a group, and let $\mathcal{N}:=\{N\trianglelefteq G\}$ the set of all normal subgroups of $G$. Let $I\subset\mathbb{N}$ be a set of indices, for which we shall define the following partial order, $\forall i,j\in I$, $i\leq j$ iff $N_j\subseteq N_i$ iff $\sfrac{G}{N_i}\subseteq\sfrac{G}{N_j}$. So, for each $i\leq j$, there exists an epimorphism $\pi_{ji}:\sfrac{G}{N_
-j}\rightarrow\sfrac{G}{N_i}$, which projects $\sfrac{G}{N_
-j}$ onto $\sfrac{G}{N_
-i}$. Then, $\widehat{G}=\underset{\leftarrow}{lim}\{\sfrac{G}{N_k}\}_{k\in I}:=\{(h_k)_{k\in I}\in\prod_{k\in I}\sfrac{G}{N_k} : \pi_{ji}(h_j)=h_i,\forall i\leq j\}$ is an inverse limit of $\{\sfrac{G}{N_k}\}_{k\in I}$, and is called the \textbf{profinite closure} of $G$.
+\label{def:profinite.closure}
+Let $G$ be any group, and let $\mathcal{N}:=\{N\trianglelefteq G\}$ the set of all normal subgroups of $G$. We define a partial order on $\mathcal{N}$, by inclusion, and assign $G$ an infinite set of indices, $I\subset\mathbb{N}$.
+$\widehat{G}=\underset{\leftarrow}{lim}\{\sfrac{G}{N_k}\}_{k\in I}:=\{(h_k)_{k\in I}\in\prod_{k\in I}\sfrac{G}{N_k} : \pi_{ji}(h_j)=h_i,\forall i\leq j\}$ is an inverse limit of $\{\sfrac{G}{N_k}\}_{k\in I}$, and is called the \textbf{Profinite Closure} of $G$.
 \end{definition}
 \begin{definition}
 \label{def:pro.isomorphic}
-Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{pro-isomorphic}, if $\widehat{H}\cong\widehat{G}$.
+Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{Pro-Isomorphic}, if $\widehat{H}\cong\widehat{G}$.
 \end{definition}
 \begin{definition}
 \label{def:zeta.pro.isomorphic}
-Let $G$ be any group, and let $\widehat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\widehat{\zeta_G}(s):=\sum_{n=1}^{\infty}\widehat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$. We assume, in this research, that $\widehat{a_n}(G)$ is finite for all $G$. A sufficient condition for this would be that $G$ is finitely-generated, by proposition \ref{prop:finite.number.subgroups}.
+Let $G$ be any group, and let $\hat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. The \textbf{Pro-Isomorphic $\zeta$-Function} of $G$ is defined by $\hat{\zeta_G}(s):=\sum_{n=1}^{\infty}\hat{a_n}(G)n^{-s}$, for some $s\in\mathbb{C}$. 
 \end{definition}
+In this research, we discuss only groups for which $\hat{a_n}(G)<\infty$, for every $n\in\mathbb{N}$. A sufficient condition for this would be that $G$ is finitely-generated, by proposition \ref{prop:finite.number.subgroups}.
 \begin{example}
-$G=(\mathbb{Z},+)$. $G$ is an abelian group, and every $H\leq G$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong G$, as both are infinite cyclic groups. From this, it is obvious that $\widehat{H}\cong\widehat{G}$, for every $H\leq G$. Any such $H=n\mathbb{Z}$ is the only subgroup of $G$, which is of index $n$, therefore, the pro-isomoprhic $\zeta$-function of $G$ is $\widehat{\zeta_G}(s)=\sum_{i=1}^{\infty}\widehat{a_n}(G)n^{-s}$, where $\widehat{a_n}(G)=1$, which comes to $\widehat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
+$G=(\mathbb{Z},+)$. $\mathbb{Z}$ is an abelian group, and every $H\leq \mathbb{Z}$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong \mathbb{Z}$, as both are infinite cyclic groups, and so, $\widehat{H}\cong\widehat{\mathbb{Z}}$. Since we have only one $\mathbb{Z}$-subgroup of index $n$, for every $n\in\mathbb{N}$, then $a_n(\mathbb{Z})=\hat{a_n}(\mathbb{Z})=1$, thus, its pro-isomorphic $\zeta$-function is $\hat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function. 
 \end{example}
 After establishing the basic definitions, we observe a fact that is a major motivation for this research, which says that the Riemann $\zeta$-function decomposes to an infinite product of $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty\frac{1}{p^{ks}}=\prod_p\frac{1}{1-p^{-s}}$, where $p$ is prime, and the product runs over all the prime numbers. Following this fact, regarding the Riemann $zeta$-function, we observe that for any finitely-generated, nilpotent and torsion-free group, $G$, we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\widehat{\zeta_G}(s)=\prod_p\widehat{\zeta_{G,p}}(s)$, where $\widehat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)\frac{1}{p^{ks}}$
 \begin{definition}
