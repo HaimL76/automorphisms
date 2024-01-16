@@ -91,45 +91,19 @@ This basic fact comes immediately from choosing a basis for $\mathcal{L}_{p,n}$,
 After establishing the basic fact, regarding the structure of $\mathcal{L}_p,n$-automorphisms as invertible matrices over $\mathbb{Q}_p$, we observe that $\mathcal{L}_{p,n}$ can be restricted to an algebra over the ring of $p$-adic integers, which we denote as $L_{p,n}<\mathcal{L}_{p,n}$. This comes from the fact that $\mathbb{Z}_p<\mathbb{Q}_p$, so if $\mathcal{B}_n=\{b_1,\dots,
 b_n\}$ is a basis for for $\mathcal{L}_{p,n}$, and if $v=\sum_{i=1}^n\alpha_i b_i$, and $u=\sum_{i=1}^n\beta_i b_i$, where $\alpha_i,\beta_i\in\mathbb{Z}_p$, then clearly, $v+u,vu\in L_{p,n}$.
 For the construction of the algebras we shall study, in this research, we need to show the opposite direction of the above claim. Suppose we have $\mathcal{A}_n$, a $\mathbb{Z}$-algebra, with a basis $\mathcal{B}_n=\{b_1,\dots,b_n\}$. We observe that $\mathbb{Z}_p$, as an abelian group, has a natural structure of $\mathbb{Z}$-module, and therefore, we can take the tensor product $\mathcal{A}_n\otimes_{\mathbb{Z}}\mathbb{Z}_p$, and so we have, for all $a\in\mathcal{A}_n$, and for all $r,s\in\mathbb{Z}_p$, that $s(a\otimes r)=a\otimes rs= rs(a\otimes 1)$, which is well-defined, because of the multiplication in $\mathbb{Z}_p$, and so, given $B=\{b_1,b2_,\dots,b_n\}$, a basis for $L_n(\mathbb{Z}_p)$, we have a natural bijection between $b_i$ and $b_i\otimes 1$, for $1\leq i\leq n$, which means that $\{b_1\otimes 1,b_2\otimes 1,\dots,b_n\otimes 1\}$ is a basis for $\mathcal{A}_n\otimes_{\mathbb{Z}}\mathbb{Z}_p$, we denote $L_{p,n}:=\mathcal{A}_n\otimes_{\mathbb{Z}}\mathbb{Z}_p$, and we got that $L_{p,n}$ is a $\mathbb{Z}_p$-algebra, with the same basis, $\mathcal{B}_n$, but with scalars from $\mathbb{Z}_p$, which proves that $L_n<\mathcal{L}_n$.
-The same construction exactly extends $L_{p,n}$ to $\mathcal{L}_{p,n}$.
-\begin{proposition}
-\label{prop.integer.automorphism}
-Let $B=\{b_1,\dots,b_n\}$ be any basis of $\mathcal{L}_p$, and $\varphi\in G(\mathbb{Q}_p)$ any $\mathbb{Q}_p$-automorphism. Then $\varphi(L_p)\subseteq L_p$ iff $\varphi(b_1),\dots,\varphi(b_n)\in L_p$
-\end{proposition}
-\begin{proof}
-Clearly, if $\varphi(v)\in L_p$, for every $v\in L_p$, then also $\varphi(b_1),\dots,\varphi(b_n)\in L_p$. We prove the opposite by taking $v=r_1b_1+\dots+r_nb_n$, then $\varphi(v)=\varphi(\sum_{i=1}^nr_ib_i)=\sum_{i=1}^n\varphi(r_ib_i)=\sum_{i=1}^nr_i\varphi(b_i)$, but $\varphi(b_1),\dots,\varphi(b_n)\in L_p$, so $\sum_{i=1}^nr_i\varphi(b_i)$ is a $\mathbb{Z}_p$-linear combination, hence $\varphi(v)\in L_p$
-\end{proof}
-\begin{proposition}
-\label{prop.monoid}
-Let $G^{+}(\mathbb{Q}_p):=G(\mathbb{Q}_p)\cap\mathcal{M}_n(\mathbb{Z}_p)=\{\varphi\in Aut_{\mathbb{Q}_p}(\mathcal{L}_p) : \varphi\in\mathcal{M}_n(\mathbb{Z}_p)\}$, in words, all the $\mathcal{L}_p$-automorphisms, which are matrices over $\mathbb{Z}_p$. Then, $G^{+}(\mathbb{Q}_p)$ is a monoid.
-\end{proposition}
-\begin{proof}
-$G(\mathbb{Q}_p)$ is a group, thus a monoid, and $\mathcal{M}_n(\mathbb{Z}_p)$ is a monoid, so, their intersection is a monoid.
-\end{proof}
-\begin{proposition}
-\label{prop.right.coset}
-Let $g\in G^{+}(\mathbb{Q}_p)$, then, the right coset $G(\mathbb{Z}_p)g\subseteq G^{+}(\mathbb{Q}_p)$
-\end{proposition}
-\begin{proof}
-Let $h\in G(\mathbb{Z}_p)$. We proved in \ref{prop.integers.subalgebra.rationals} that $L_p\leq\mathcal{L}_p$, so $h\in G(\mathbb{Q}_p)$. But, $h(L_p)\subseteq L_p$, and from \ref{prop.integer.automorphism}, we know that $h$ is a $\mathbb{Z}_p$-linear combination of vectors in $L_p$, which means that $h$ is a matrix with coefficients in $\mathbb{Z}_p$, that means, $h\in\mathcal{M}_n(\mathbb{Z}_p)$, so $h\in G({\mathbb
-{Q}_p})\cap\mathcal{M}_n(\mathbb{Z}_p)$, which means that $hg\in G({\mathbb
-{Q}_p})\cap\mathcal{M}_n(\mathbb{Z}_p)$.
-\end{proof}
-\begin{corollary}
-\label{cor.coset.union}
-$G^+(\mathbb{Q}_p)=\bigsqcup_{i=1}^n G(\mathbb{Z}_p)g_i$, where $[G(\mathbb{Q}_p):G(\mathbb{Z}_p)]=n$
-\end{corollary}
-\begin{proposition}
-\label{prop.prop.coset.bijection}
-There is a bijection between $G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ and $\{M\leq L_p : M\cong L_p\}$
-\end{proposition}
-\begin{proof}
-Let $\varphi\in G(\mathbb{Z}_p)g|\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$, and let $M=\varphi(L_p)$. But, from \ref{prop.right.coset}, we have that $\varphi\in G^+(\mathbb{Q}_p)$, so $M=\varphi(L_p)\subseteq L_p$. Choose a different representative $\psi\in G(\mathbb{Z}_p)g$, we have that $\tau=\psi\varphi^{-1}\in G(\mathbb{Z}_p)$, which means that $\tau(L_p)=L_p$. But $\tau\varphi=\psi\varphi^{-1}\varphi=\psi$, which means that $\psi(L_p)=\tau\varphi(L_p)=\varphi(\tau(L_p))=\varphi(L_p)=M$, so we have that $M$ is the image of any representative of $G(\mathbb{Z}_p)g$. Let $\varphi|_{L_p}:L_p\rightarrow M$ be the restriction of $\varphi$ to $L_p$. Obviously, $\varphi|_{L_p}$ is onto $M$, and is one-to-one, as a restriction of an automorphism. So we have that $\varphi|_{L_p}$ is an isomorphism, which means that $L_p\cong M$. So, we conclude that every right coset of the form $G(\mathbb{Z}_p)g$ defines an isomomorphism of the form $L_p\cong M$. For the opposite direction, we show that for every isomorphism $L_p\cong M$, we can find some $\varphi\in G^{+}(\mathbb{Q}_p)$, for which $\varphi(L_p)=M$. Choose another automoprhism, $\psi\in G^{+}(\mathbb{Q}_p)$, such that $\psi(L_p)=M$, and let $\tau=\varphi\psi^{-1}$. But $\tau(L_p)=\varphi\psi^{-1}(L_p)=\psi^{-1}(\varphi(L_p))=\psi^{-1}(M)=L_p$, which means that $\tau\in G(\mathbb{Z}_p)$. But $\tau\psi=\varphi\psi^{-1}\psi=\varphi\in G(\mathbb{Z}_p)\psi$, and, obviously, $\tau^{-1}\varphi=\tau^{-1}\tau\psi=\psi$ means that also $\psi\in G(\mathbb{Z}_p)\varphi$, so $\varphi$ andf $\psi$ are in the same right coset of $\mathbb{Z}_p$, so we have that every isomorphism $L_p\cong M$ is common to all representatives of the same right coset of $G(\mathbb{Z}_p)$, proving the bijection.
-\end{proof}
-\begin{proposition}
-\label{prop.index.submodule}
-Let $G(\mathbb{Z}_p)g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ be a right coset, and $M\leq L_p$ the image of this coset, as constructed in \ref{prop.prop.coset.bijection}, then $[L_p:M]=|det g|_p^{-1}$.
-\end{proposition}
+The same construction exactly extends $L_{p,n}$ to $\mathcal{L}_{p,n}$.\par
+The above discussion brings us closer to the essence of our research background, for now we are able to observe the following important fact. If $\mathcal{B}_n$ is a basis for $\mathcal{L}_{p,n}$, then, for every $\varphi\in G_n(\mathbb{Q}_p)$, we have that $\varphi(L_{p,n})\subseteq L_{p,n}$ iff $\varphi(b_1),\dots,\varphi(b_n)\in L_{p,n}$, in words, the image of every vector in $L_{p,n}$ is in $L_{p,n}$ itself if and only if the coefficients of the $\mathbb{Q}_p$-linear transformation $\varphi$, i.e., the rows of the $n\times n$ matrix that represents $\varphi$, are in $\mathbb{Z}_p$ itself. The less obvious direction comes from the fact that if $v=\sum_{i=1}^n\lambda_i b_i$, where $\lambda_1,\dots,\lambda_n\in\mathbb{Z}_p$, then $\varphi(v)=\varphi(\sum_{i=1}^n\lambda_ib_i)=\sum_{i=1}^n\varphi(\lambda_ib_i)=\sum_{i=1}^n\lambda_i\varphi(b_i)$, but $\varphi(b_1),\dots,\varphi(b_n)\in L_p$, so $\sum_{i=1}^n\lambda_i\varphi(b_i)$ is a $\mathbb{Z}_p$-linear combination, hence $\varphi(v)\in L_p$.\par
+Another important step in the direction of our research would be to introduce the following object. $G_n^{+}(\mathbb{Q}_p):=G_n(\mathbb{Q}_p)\cap\mathcal{M}_n(\mathbb{Z}_p)$, in words, all the $\mathcal{L}_{p,n}$-automorphisms, which are matrices over $\mathbb{Z}_p$. We immediately observe that $G_n^{+}(\mathbb{Q}_p)$ is a monoid, since 
+$G_n(\mathbb{Q}_p)$ is a group, thus a monoid, and $\mathcal{M}_n(\mathbb{Z}_p)$ is a monoid, so, their intersection is a monoid.\par
+A very important attribute of this object is that it absorbs $L_{p,n}$-automorphisms by multiplication from right, i.e., for every $g\in G_n^{+}(\mathbb{Q}_p)$, the right coset $G_n(\mathbb{Z}_p)g\subseteq G_n^{+}(\mathbb{Q}_p)$. This comes from the fact that if $\varphi\in G_n(\mathbb{Z}_p)$, then clearly $\varphi\in G(\mathbb{Q}_p)$, but on the other hand, $\varphi(L_{p,n)}\subseteq L_{p,n}$, as we saw earlier, which means that $\varphi$ is a $n\times n$ matrix with coefficients from $\mathbb{Z}_p$, so $\varphi\in\mathcal{M}_n(\mathbb{Z}_p)$, as well, and the two inclusions give us that $\varphi\in G({\mathbb
+{Q}_p})\cap\mathcal{M}_n(\mathbb{Z}_p)$, hence, $\varphi g\in G({\mathbb
+{Q}_p})\cap\mathcal{M}_n(\mathbb{Z}_p)$. This gives way to the following result,
+$G^+(\mathbb{Q}_p)=\bigsqcup_{i=1}^m G(\mathbb{Z}_p)g_i$, where $[G(\mathbb{Q}_p):G(\mathbb{Z}_p)]=m$, in words, the monoid $G_n^{+}(\mathbb{Q}_p)$ is a disjoint union of right-cosets of $G_n(\mathbb{Z}_p)$ in $G_n(\mathbb{Q}_p)$.\par
+The discussion above reveals the construction we base our research upon.
+We observe that there is a bijection between $G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ and $\{M\leq L_{p,n} : M\cong L_{p,n}\}$, in words, we have a bijective map between each right-coset of $G_n(\mathbb{Z}_p)$ in $G_n^{+}(\mathbb{Q}_p)$ and each $L_{p,n}$-subalgebra which is isomorphic to $L_{p,n}$ itself.
+The general idea behind this observation is that if we take an automorphism in a right-coset of $G_n(\mathbb{Z}_p)$, namely $\varphi\in G_n(\mathbb{Z}_p)g\in G_n(\mathbb{Z}_p)\backslash G_n^+(\mathbb{Q}_p)$, and denote $M=\varphi(L_{p,n})$, since $\varphi\in G_n^{+}(\mathbb{Q}_p)=G_n(\mathbb{Q}_p)\cap\mathcal{M}_n(\mathbb{Z}_p)$, we have that $M=\varphi(L_{p,n})\subseteq L_{p,n}$, as we saw earlier. If we choose a different representative of the same right-coset, namely $\psi\in G(\mathbb{Z}_p)g$, we have that $\tau=\psi\varphi^{-1}\in G(\mathbb{Z}_p)$, which means that $\tau(L_{p,n})=L_{p,n}$. But $\tau\varphi=\psi\varphi^{-1}\varphi=\psi$, which means that $\psi(L_{p,n})=\tau\varphi(L_{p,n})=\varphi(\tau(L_{p,n}))=\varphi(L_{p,n})=M$, so we have that $M$ is the image of any representative of $G(\mathbb{Z}_p)g$. We further observe that the restriction $\varphi|_{L_{p,n}}$ is a one-to-one map from $L_{p,n}$ onto $L_{p,n}$ itself, and therefore, it is an isomorphism. If we take $M=\varphi_{L_{p,n}}(L_{p,n})$, we have that $M\cong L_{p,n}$, as the image of the restriction of any choice of representative of $G(\mathbb{Z}_p)g$, which generally shows where this bijection comes from.\par
+We end this part, as a preparation for the final part of this technical background review, with the following result, which says that for each right-coset of $G_n(\mathbb{Z}_p)$ in $G_n^{+}(\mathbb{Q}_p)$, namely, $G_n(\mathbb{Z}_p)g$, taking any representative of this coset $\varphi\in G_n(\mathbb{Z}_p)g$, and taking the image $M=\varphi(L_{p,n})\leq L_{p,n}$, then $[L_{p,n}:M]=|det(g)|_p^{-1}$.
+
 \subsection{$p$-adic Integration}
 \begin{proposition}
 \label{prop.topological.group.open.set}
