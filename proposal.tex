@@ -103,185 +103,68 @@ The discussion above reveals the construction we base our research upon.
 We observe that there is a bijection between $G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)$ and $\{M\leq L_{p,n} : M\cong L_{p,n}\}$, in words, we have a bijective map between each right-coset of $G_n(\mathbb{Z}_p)$ in $G_n^{+}(\mathbb{Q}_p)$ and each $L_{p,n}$-subalgebra which is isomorphic to $L_{p,n}$ itself.
 The general idea behind this observation is that if we take an automorphism in a right-coset of $G_n(\mathbb{Z}_p)$, namely $\varphi\in G_n(\mathbb{Z}_p)g\in G_n(\mathbb{Z}_p)\backslash G_n^+(\mathbb{Q}_p)$, and denote $M=\varphi(L_{p,n})$, since $\varphi\in G_n^{+}(\mathbb{Q}_p)=G_n(\mathbb{Q}_p)\cap\mathcal{M}_n(\mathbb{Z}_p)$, we have that $M=\varphi(L_{p,n})\subseteq L_{p,n}$, as we saw earlier. If we choose a different representative of the same right-coset, namely $\psi\in G(\mathbb{Z}_p)g$, we have that $\tau=\psi\varphi^{-1}\in G(\mathbb{Z}_p)$, which means that $\tau(L_{p,n})=L_{p,n}$. But $\tau\varphi=\psi\varphi^{-1}\varphi=\psi$, which means that $\psi(L_{p,n})=\tau\varphi(L_{p,n})=\varphi(\tau(L_{p,n}))=\varphi(L_{p,n})=M$, so we have that $M$ is the image of any representative of $G(\mathbb{Z}_p)g$. We further observe that the restriction $\varphi|_{L_{p,n}}$ is a one-to-one map from $L_{p,n}$ onto $L_{p,n}$ itself, and therefore, it is an isomorphism. If we take $M=\varphi_{L_{p,n}}(L_{p,n})$, we have that $M\cong L_{p,n}$, as the image of the restriction of any choice of representative of $G(\mathbb{Z}_p)g$, which generally shows where this bijection comes from.\par
 We end this part, as a preparation for the final part of this technical background review, with the following result, which says that for each right-coset of $G_n(\mathbb{Z}_p)$ in $G_n^{+}(\mathbb{Q}_p)$, namely, $G_n(\mathbb{Z}_p)g$, taking any representative of this coset $\varphi\in G_n(\mathbb{Z}_p)g$, and taking the image $M=\varphi(L_{p,n})\leq L_{p,n}$, then $[L_{p,n}:M]=|det(g)|_p^{-1}$.
-
 \subsection{$p$-adic Integration}
-\begin{proposition}
-\label{prop.topological.group.open.set}
-Let $\Gamma$ be a topological group, and let $U\subseteq\Gamma$, be an open subset in $\Gamma$. Then $\gamma U:=\{\gamma u : \gamma\in\Gamma, u\in U\}$ is also an open subset of $\Gamma$.
-\begin{proof}
-We define a map $f=f_{\gamma^{-1}}:\Gamma\rightarrow\Gamma$, by $f(g):=\gamma^{-1}g$, for any $g\in\Gamma$. Clearly, $f$ is continuous, as a composition of continuous maps, that is, the inverse map $\gamma\mapsto\gamma^{-1}$, and the multiplication map $(\gamma^{-1},g)\mapsto\gamma^{-1}g$, so any inverse image $f^{-1}$ of an open subset is an open subset. But $f^{-1}(U)=\{g\in G : f(g)=\gamma^{-1}g\in U\}=\{\gamma h : f(\gamma h)=\gamma^{-1}\gamma h=h\in U\}=\{\gamma h : h\in U\}=\gamma U$, which proves that $\gamma U$ is an open subset in $\Gamma$.
-\end{proof}
-\end{proposition}
-\begin{proposition}
+In this final part of the technical background review, we finally get to the motivation for all the construction we have presented in the first parts.
+We start with a basic observation about topological groups, which says that if $\Gamma$ is a topological group, and $U\subseteq\Gamma$, is an open subset of $\Gamma$, then $\gamma U:=\{\gamma u : \gamma\in\Gamma, u\in U\}$ is also an open subset of $\Gamma$. To show this is true, We define a map $f=f_{\gamma^{-1}}:\Gamma\rightarrow\Gamma$, by $f(g):=\gamma^{-1}g$, for any $g\in\Gamma$. Clearly, $f$ is continuous, as a composition of the group inverse and multiplication maps, both continuous in $\Gamma$, therefore, taking, for every open set $U\subseteq\Gamma$, the inverse image  $f^{-1}(U)=\{g\in G : f(g)=\gamma^{-1}g\in U\}=\{\gamma h : f(\gamma h)=\gamma^{-1}\gamma h=h\in U\}=\{\gamma h : h\in U\}=\gamma U$, proves that $\gamma U$ is also an open subset in $\Gamma$.\par
+We shall now define a very central object for our research. Prior to defining this object, we actually claim, without proving, that it does exist, under the prerequisites of the definition.
+\begin{definition}
 \label{prop.compact.subset.right.haar.measure}
 Let $\Gamma$ be a locally compact topological group, i.e., $\forall\gamma\in\Gamma$, there is an open environment $U_{\gamma}$ of $\gamma$, and a compact subset $K_{\gamma}$, such that $\gamma\in U_{\gamma}\subset K_{\gamma}$. Then there is a measure $\mu$, with the following property: for any measurable subset, $U\subseteq\Gamma$, and any $\gamma\in\Gamma$, $\mu(U\gamma)=\mu(U)$, where $U\gamma:=\{u\gamma : u\in U\}$, and $\mu$ is unique up to multiplication in constant. $\mu$ is called a \textbf{Right Haar Measure}
-\end{proposition}
-\begin{proposition}
-\label{prop.padic.field.automorphisms.locally.compact.group}
-Let $p$ be a prime number, then $G(\mathbb{Q}_p)$ is a locally compact topological group.
-\end{proposition}
-\begin{proposition}
-\label{prop.padic.field.automorphisms.haar.measure}
-Let $p$ be a prime number, then $G(\mathbb{Q}_p)$ has a unique right Haar measure $\mu$, with the following property: $\mu(G(\mathbb{Z}_p))=1$.
-\end{proposition}
-\begin{corollary}
-\label{cor.haar.measure.padic.integers.cosets}
-For every $g\in G(\mathbb{Q}_p)$, we have that $\mu(G(\mathbb{Z}_p)g)=\mu(G(\mathbb{Z}_p))=1$
-\end{corollary}
-\begin{proposition}
-\label{prop.padic.integers.integral}
-Let $p$ be a prime number, $s\in\mathbb{C}$, and let $g\in G^+(\mathbb{Q}_p)$, then $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_h^sd\mu$.
-\end{proposition}
-\begin{proof}
-We saw in \ref{prop.index.submodule} that for every $g\in G(\mathbb{Z}_p)h$, we have that $|det(g)|_p^{-1}$ does not depend on the choice of representative, which means that $|det(g)|_p$ is constant on the entire coset, which means that $|det(g)|_p=|det(h)|_p$. so, $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(g)|_p^sd\mu=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu$. But, $\mu=\mu(G(\mathbb{Z}_p)h)$, and we saw in \ref{cor.haar.measure.padic.integers.cosets} that $\mu(G(\mathbb{Z}_p)h)=\mu(G(\mathbb{Z}_p))=1$, so $\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu=|det(g)|_p^s\cdot 1=|det(g)|_p^s$
-\end{proof}
-\begin{corollary}
-\label{cor.proisomorphic.integral}
-Let $p$ be a prime number, $s\in\mathbb{C}$, then $\widehat{\zeta_{L,p}}(s)=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}|det(g)|_p^s=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}\displaystyle\int_{h\in G(\mathbb{Z}_p)g}|det(h)|_p^s d\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^s d\mu$
-\end{corollary}
+\end{definition}
+Equipped with the newly-defined right Haar measure, we can finally make use of the construction from above. We start by claiming, without proof, that if $p$ be a prime number, then $G_n(\mathbb{Q}_p)$, that is, the group of automoprhisms, for any $n$-dimensional $\mathbb{Z}_p$-algebra, $L_{p,n}$, is a locally compact topological group.\par
+We continue to claim that $G_n(\mathbb{Q}_p)$, the group of $\mathcal{L}_{p,n}$-automorphisms, has a unique right Haar measure $\mu$, with the property that $\mu(G(\mathbb{Z}_p))=1$.\par
+Moreover, we claim that for every $g\in G_n(\mathbb{Q}_p)$, we also have that $\mu(G(\mathbb{Z}_p)g)=\mu(G(\mathbb{Z}_p))=1$.
+With this observation, we go directly to the calculation of the $p$-adic valuation of the determinant as an integral, and say that if $p$ is a prime number, $s\in\mathbb{C}$, and $g\in G_n^+(\mathbb{Q}_p)$, then $|det(g)|_p^s=\displaystyle\int_{h\in G_n^+(\mathbb{Q}_p)}|det(h)|_h^sd\mu$.\par
+This comes from the above claim, that for every right-coset of $G_n(\mathbb{Z}_p)$ in $G_n^{+}(\mathbb{Q}_p)$, we have that for every $L_{p,n}$-automorphism, $g\in G(\mathbb{Z}_p)h$, the inverse of the $p$-adic valuation of the determinant, $|det(g)|_p^{-1}$, does not depend on the choice of representative, which means that $|det(g)|_p$ is constant on the entire right-coset, so we have that $|det(g)|_p=|det(h)|_p$, hence, $|det(g)|_p^s=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(g)|_p^sd\mu=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu$. But, $\mu=\mu(G(\mathbb{Z}_p)h)$, and we saw earlier that $\mu(G(\mathbb{Z}_p)h)=\mu(G(\mathbb{Z}_p))=1$, so $\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^sd=|det(g)|_p^s\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}d\mu=|det(g)|_p^s\cdot 1=|det(g)|_p^s$\par
+Now we can conclude all this construction by the following observation, that if $p$ is a prime number, and $s\in\mathbb{C}$, then $\hat{\zeta_{L,p}}(s)=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}|det(g)|_p^s=\displaystyle\sum_{G(\mathbb{Z})g\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}\displaystyle\int_{h\in G(\mathbb{Z}_p)g}|det(h)|_p^s d\mu=\displaystyle\int_{h\in G^+(\mathbb{Q}_p)}|det(h)|_p^s d\mu$, which brings us back to our initial quest, which is, finding a way to calculate the local pro-isomorphic $\hat\zeta_{G,p}$-function, for every prime number $p$.
+We end this technical background review by a theorem, brought with no proof,
 \begin{theorem}
 \label{thm.rational.function}
-Let $p$ be a prime number, $s\in\mathbb{C}$, then there exists a rational function, $w_p(s):=\frac{f(x)}{g(x)}$, where $f,g\in\mathbb{Z}_p[x]$, which satisfies $\widehat{\zeta_{L,p}}(s)=w_p(p^{-s})$.
+Let $p$ be a prime number, $s\in\mathbb{C}$, then there exists a rational function, $w_p(s):=\frac{f(x)}{g(x)}$, where $f,g\in\mathbb{Z}_p[x]$, which satisfies $\hat{\zeta_{L,p}}(s)=w_p(p^{-s})$.
 \end{theorem}
 \section{Research Goals and Methodology}
-\subsection{The group $U_n$}
-\begin{proposition}
-\label{prop.integer.matrix.inverse}
-Let $A\in\mathcal{M}_n(\mathbb{Z}_p)$, then $A\in GL_n(\mathbb{Z}_p)$ iff $det(A)=\pm 1$
-\end{proposition}
-\begin{proof}
-We shall prove only one direction. Assume $det(A)=\pm 1$. 
-For $A$, we calculate the adjoint matrix, $Adj(A)$, by calculating minors for all the elements of $A$, and create the cofactor matrix of $A$, then take the transpose of the cofactor matrix. With this calculation, $A^{-1}=\frac{Adj(A)}{det(A)}$, and, since calculating minors requires multiplication and subtraction between elements of the $A$. But $\mathbb{Z}_p$ is a ring, so closed under multiplication and subtraction, hence all the minors are also in the ring, which means that $Adj(A)\in\mathcal{M}_n(\mathbb{Z}_p)$. But $det(A)=\pm 1$, so $A^{-1}=\frac{Adj(A)}{det(A)}=\pm 1\cdot Adj(A)\in\mathcal{M}_n(\mathbb{Z}_p)$, which means that $A,A^{-1}\in GL_n(\mathbb{Z}_p)$.
-\end{proof}
-\begin{corollary}    
-\label{cor.unipotent.matrix.inverse}
-Let $A$ be a $n\times n$ matrix, with $1$ on the main diagonal, and $a_{ij}\in\mathbb{Z}_p$, where $i<j$, and all the other elements, namely, the elements below the main diagonal, are $0$. Then every matrix $A$ of this form has an inverse matrix, $A^{-1}$, of the same form.
-\begin{proof}
-One checks that all the minors of the elements on the main diagonal are $1$, all the minors of the elements above the main diagonal are $0$, and all the minors of the elements below the main diagonal can be any $p$-adic integers. constructing the cofactor matrix and transposing it, gives a matrix of the form described above, which is the inverse matrix of $A$, as we prove in \ref{prop.integer.matrix.inverse}.
-\end{proof}
-\end{corollary}
-\begin{corollary}
-\label{cor.un.group}
-Let $U_n$ be the set of all matrices of the form described in \ref{cor.unipotent.matrix.inverse}, then $(U_n, \cdot)$ is a group, where $\cdot$ is the standard matrix multiplication.
-\end{corollary}
-\begin{proof}
-One checks that multiplying two matrices in $U_n$ gives a product matrix of the same form. Associativity comes from the standard matrix multiplication, and clearly, the standard unit matrix, $I_n$, is also in $U_n$. By \ref{cor.unipotent.matrix.inverse}, we know that $A$ has an inverse matrix, $A^{-1}$, which is of the same form, hence $A^{-1}\in U_n$, which completes the proof.
-\end{proof}
-\begin{proposition}
-\label{prop.unipotent.matrix.integer.addition}
-Let $E_{ij}\in U_n$, where $1\leq i<j\leq n$, be a $n\times n$ matrix, with $1$ on the main diagonal, and $a_{ij}=1$, and $0$ anywhere else. Then, $E_{ij}^m$ is a matrix of the same form, except that $a_{ij}=m$.
-\end{proposition}
-\begin{proof}
-By induction on $m$. For $m=1$, $E_{ij}^1=E_{ij}$, so, trivially, $a_{ij}=1=m$.
-For $m+1$, we have that $E_{ij}^{m+1}=E_{ij}^mE_{ij}$. But $E_{ij}^m$ has that $a_{ij}=m$, by the assumption, and one checks that $E_{ij}^mE_{ij}=\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & m & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & 1 & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}=\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & m+1 & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}$, which proves the induction step, and the proposition.
-\end{proof}
-\begin{corollary}
-\label{cor.unipotent.matrix.integer.addition}
-Let $A=E_{ij}^m$, and $B=E_{ij}^r$. Then, $D=AB=E_{ij}^mE_{ij}^r$ is the matrix with $1$ on the main diagonal, $d_{ij}=m+r$, and all the other elements are $0$.
-\end{corollary}
-\begin{proof}
-One checks that the product matrix has also $1$ on the main digonal, and all the other elements are $0$, except for $d_{ij}=1\cdot r+m\cdot 1=m+r$
-\end{proof}
-\begin{proposition}
-\label{prop.unipotent.matrix.integer.inverse}
-Let $E_{ij}\in U_n$ be a matrix of the form described in \ref{prop.unipotent.matrix.integer.addition}. then $E_{ij}^{-m}$ is a matrix of the same form, but with $a_{ij}=-m$.
-\end{proposition}
-\begin{proof}
-From \ref{prop.unipotent.matrix.integer.addition}, we have that $E_{ij}^m=\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & m & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}$. 
-From \ref{cor.unipotent.matrix.inverse}, we know that $B=(E_{ij}^m)^{-1}\in U_n$, that is, $B=\begin{pmatrix}
-1 & b_{12} & \dots & \dots & b_{1n}\\
-0 & 1 & b_{23} & \dots & b_{2n}\\
-0 & 0 & 1 & bij & b_{in}\\
-0 & 0 & 0 & 1 & b_{n-1n}\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}$, which means that
-$\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & m & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}\begin{pmatrix}
-1 & b_{12} & \dots & \dots & b_{1n}\\
-0 & 1 & b_{23} & \dots & b_{2n}\\
-0 & 0 & 1 & b_{ij} & b_{in}\\
-0 & 0 & 0 & 1 & b_{n-1n}\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}=\begin{pmatrix}
-1 & 0 & 0 & 0 & 0\\
-0 & 1 & 0 & 0 & 0\\
-0 & 0 & 1 & 0 & 0\\
-0 & 0 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 1\\
-\end{pmatrix}$. Easy to check that all the elements $b_{kl}$ must be $0$, but for the element in row $i$ and column $j$, we must have that $1\cdot b_{ij}+m\cdot 1=0$, which means that $b_{ij}=-m$. One checks that the same calculation holds for $(E_{ij}^{-1})^m$, and so, $E_{ij}^{-m}=(E_{ij}^m)^{-1}=(E_{ij}^{-1})^m$ is of the form described above.
-\end{proof}
-\begin{proposition}
-\label{prop.commutators}
-Let $A=E_{ij},B=E_{kl}\in U_n$ be two matrices of the form described in \ref{cor.unipotent.matrix.inverse}, i.e., $1$ on the main diagonal, and all the other elements are $0$, except for $a_{ij}$ and $b_{kl}$, which are $1$. Then the commutator, $[E_{ij},E_{kl}] =
-\left\{
-	\begin{array}{ll}
-		E_{il}, & j=k\\
-        E_{kj}^{-1}, & i=l\\
-        0, & j\neq k\land i\neq l
-	\end{array}
-\right.$
-\end{proposition}
-\begin{proof}
-There are two cases, The first, is where $j=i+1$, or $l=k+1$, and the second is where $j>i+1$, and $l>k+1$. One checks that the proposition is true in both cases.
-\end{proof}
-\begin{corollary}
-\label{cor.unipotent.generators}
-Let $A=E_i=E_{ii+1}\in U_n$, be a matrix of the form described in \ref{prop.unipotent.matrix.integer.addition}, where the only $1$ which is outside the main diagonal is one of the elements $a_{12},a_{23},\dots,a_{n-1n}$, i.e., on the diagonal above the main diagonal. Then the set $\mathcal{E}_n=\{E_1,E_2,\dots,E_{n-1}\}$ is a set of generators for the unipotent group $U_n$.
-\begin{proof}
-By proposition \ref{prop.commutators}, we can create any matrix $E_{ij}\in U_n$ by composition of commutators of the form $[E_i,[E_{i+1},[\dots[E_{j-2},E_{j-1}]]]$. From \ref{prop.unipotent.matrix.integer.addition}, we know that $A=E_{ij}^m$ has that $a_{ij}=m\in\mathbb{Z}_p$, and by \ref{cor.unipotent.matrix.integer.addition}, we know that $D=AB=E_{ij}^mE_{ij}^r$ is the matrix with $1$ on the main diagonal, and all the other elements are $0$, except for $d_{ij}=m+r$. Checking further gives that if $A=E_{ij}^m$ and $B=E_{jk}^r$, then the commutator $[E_{ij^m},E_{kl}^r]$ is the matrix with $1$ on the main diagonal, and all the other elements are $0$, except for $d_{ik}=mr$. Easy to see how to apply the above calculations also for the inverse matrices. This means that we can generate any matrix in $U_n$, by multiplying matrices that come from commutators on the set $\mathcal{E}_n=\{E_1,E_2,\dots,E_n-1\}$, which means that $\mathcal{E}_n$ generates the unipotent group $U_n$.
-\end{proof}
-\end{corollary}
-\begin{proposition}
-\label{prop.unipotent.group.nilpotent}
-The unipotent group $U_n$ is nilpotent, of nilpotency class $n$.
-\end{proposition}
-\begin{proof}
-Easy to observe that for the set of generators, $\mathcal{E}_n$, the longest composition of commutators, $[E_{i_1},[E_{i_2},[\dots[E_{i_k}]]]$ has that $i_1=1,i_2=2,\dots,i_k=n-1$, or $i_1=n-1,i_2=n-2,\dots,i_k=1$, which means that composing $n-1$ commutators of elements in $\mathcal{E}_n$ leaves only $E_{1n-1}$ and $E_{1n-1}^{-1}$, but $[E_{1n-1},E_{1n-1}^{-1}]=[E_{1n-1}^{-1},E_{an-1}]=I_n$. One can check that this holds for the unipotent group $U_n$ itself, as generated by $\mathcal{E}_n$.
-\end{proof}
-\begin{proposition}
-\label{prop.unipotent.group.torsion.free}
-The unipotent group $U_n$ is torsion free.
-\end{proposition}
-\begin{proof}
-Again, we show the proposition for the set of generators, $\mathcal{E}_n$. Let $A=E_i\in\mathcal{E}_n$, and suppose it has a finite order, which means that there exists a $m\in\mathbb{N}$, such that $E_i^m=I_n$. But by $\ref{prop.unipotent.matrix.integer.addition}$, we know that $E_i^m$ is the matrix with $a_{ii+1}=m$, which means that $m=0$, which is a contradiction.
-\end{proof}
-\subsection{The algebra $L_n$}
-\begin{proposition}
-\label{prop.lie.algebra.commutator}
-Let $E_{ij}\in\mathcal{E}_n$. Let $e_{ij}=E_{ij}-I_n$, in words, $e_{ij}$ is obtained by replacing all the $1$ on the main diagonal with $0$. Then $e_{ij}e_{jk}=e_{ik}$, and $e_{jk}e_{ij}=0_n$, where $0_n$ is the $n\times n$ zero matrix.
-\end{proposition}
-\begin{proof}
-Clearly, since $A=e_{ij}$ has a single non-zero element, $a_{ij}=1$, and $B=e_{jk}$ has that $b_{jk}=1$, then the product matrix $D=AB=e_{ij}e_{jk}$ has a single element, $d_{ik}=a_{ij}b_{jk}=1\cdot 1=1$, but in the product $BA=e_{jk}e_{ij}$, we observe that $b_{jk}$ is multiplied by all the elements of the $k$th row of $A$, which is all zeros, and $a_{ij}$ is being multiplied by the $i$th column of $B$, which is all zeros, thus the product matrix, $BA$, is all zeros.
-\end{proof}
+\subsection{The group $U_n(\mathbb{Z}_p)$}
+We start by this following definition.
+\begin{definition}
+\label{def.unipotent.matrix}
+Let $\mathcal{R}$ be a commutative ring. Let $U_n(\mathcal{R})\leq GL_n(\mathcal{R})$ be the subgroup of upper triangular matrices, i.e. $U_n(\mathcal{R})=\Bigg\{
+\begin{pmatrix}
+1 & a_{12} &\\
+  & \ddots & \ddots\\
+  & & 1\\
+\end{pmatrix}\Bigg\}$
+\end{definition}
+Looking deeper into the structure of $U_n(\mathbb{Z}_p)$, we observe that $U_n(\mathbb{Z}_p)$ can be generated by matrices of the form $E_{ij}=\begin{pmatrix}
+1 & 0 & \dots & 0\\
+  & \ddots & 1 & 0\\
+  &  & 1 & 0\\
+  & & & 1\\
+  \end{pmatrix}$, where besides the elements on the main diagonal, only the element in row $i$ and column $j$, satisfying the condition that $i<j$, is $1$, and all the other elements are $0$. It is easy to observe that $E_{ij}^m=\begin{pmatrix}
+1 & 0 & \dots & 0\\
+  & \ddots & m & 0\\
+  &  & 1 & 0\\
+  & & & 1\\
+  \end{pmatrix}$, for every $m\in\mathbb{Z}$, by simple induction.\par
+Now we introduce a fact that is very basic to our research and will come in handy when we move from the group $U_n(\mathbb{Z}_p)$ to the appropriate Lie algebra. Taking any two such elementary matrices, $E_{ij},E_{kl}$, and calculating their commutator, $[E_{ij},E_{kl}]=E_{ij}E_{kl}E_{ij}^{-1}E_{kl}^{-1}$, we can easily check that $E_{ij}E_{kl}=E_{il}$ iff $j=k$, and $E_{ij}E_{kl}=-E_{kj}$ iff ${i=l}$, and $E_{ij}E_{kl}=I_n$ in any other case.
+For example, $\Bigg[\begin{pmatrix}
+    1 & 1 & 0\\
+     & 1 & 0\\
+     &  & 1\\
+\end{pmatrix},\begin{pmatrix}
+    1 & 0 & 0\\
+     & 1 & 1\\
+     &  & 1\\
+\end{pmatrix}\Bigg]=\begin{pmatrix}
+    1 & 0 & 1\\
+     & 1 & 0\\
+     &  & 1\\
+\end{pmatrix}$
+This fact puts $U_n(\mathbb{Z}_p)$ in the category of nilpotent groups, since, taking $\mathcal{E}(\mathbb{Z}_p):\{E_{ij} : i<j\}$, the set of $U_n(\mathbb{Z}_p)$ generators from the set of $U_n(\mathbb{Z}_p)$ generators, and observing its lower central series, we see that $\mathcal{E}_{n-1}=\{I_n\}$, which says that $U_n(\mathbb{Z}_p)$ is of nilpotency class $n-1$.\par
+Considering the behavior of this said set of generators, we observe that we need a significantly smaller set, because, if we start only with elementary matrices of the form $E_{i,i+1}$, where $1\leq i\leq n-1$, we can obtain any matrix $E_{ij}$ of the wider set, by taking any chain of commutators of the form $[E_{i,i+1},[E_{i+1,i+2},[\dots,[E_{i+k,j}]]]]$, where $i+k+1=j$.
+We end this $U_n(\mathbb{Z}_p)$ review by stating another important fact, that $U_n(\mathbb{Z}_p)$ is torsion-free.
+Again, we show this by looking at the set of generators, $\mathcal{E}$, and we observe that for any $E_{ij}\in\mathcal{E}$, since $E_{ij}^m$, for any $m\in\mathbb{Z}$, has one element equals to $m$, as we saw above, clearly, $m\neq 0$, which means that there is no $m\in\mathbb{N}$, for which $E_{ij}^m=I_n$. These facts $U_n(\mathbb{Z}_p)$ place it as a group of our interest, for this research, and bring us next to its associated Lie algebra.
+\subsection{The algebra $L_{p,n}$}
+We start with $E_{ij}$ from above and define matrices of the form $e_{ij}=E_{ij}-I_n$, in words, $e_{ij}$ is obtained by replacing all the $1$ on the main diagonal with $0$. Then clearly, $e_{ij}e_{kl}=e_{il}$ where $j=k$, $e_{ij}e_{kl}=-e_{kj}$ where ${i=j}$, and $e_{ij}e_{kl}=0$ in any other case.
 \begin{corollary}
 \label{cor.lie.algebra}
 Let $\mathcal{B}_n$ be the set $\{e_{ij} : i<j\}$, of all the matrices of the form described in \ref{prop.lie.algebra.commutator}. Then $\mathcal{B}_n$, with the standard matrix addition, and a multiplication operation $\ast$, defined by $e_{ij}*e_{jk}=e_{ij}e_{jk}-e_{jk}e_{ij}$, is a basis for a Lie algerba over $\mathbb{Z}_p$, which shall be denoted by $L_n(\mathbb{Z}_p)$, or $L_n$, for abbreviation, which is the $\mathbb{Z}_p$-algebra of all the matrices $A\in\mathcal{M}_n(\mathbb{Z}_p)$, with $0$ on the main diagonal. The multiplication operation $\ast$ shall be denoted by Lie Brackets, that is, $e_{ij}*e_{jk}=[e_{ij},e_{jk}]$.
