@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  21 JAN 2024 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  21 JAN 2024 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,10 +688,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14970 strings out of 474934
- 313481 string characters out of 5763815
+ 14969 strings out of 474934
+ 313441 string characters out of 5763815
  1945801 words of memory out of 5000000
- 36230 multiletter control sequences out of 15000+600000
+ 36229 multiletter control sequences out of 15000+600000
  577592 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,17n,121p,1731b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -712,7 +712,7 @@ nts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on proposal.pdf (17 pages, 278176 bytes).
+Output written on proposal.pdf (17 pages, 278151 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
