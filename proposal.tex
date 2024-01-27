@@ -66,7 +66,7 @@ Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{pro-isomorphic}, if
 \label{def:zeta.pro.isomorphic}
 Let $G$ be any group, and let $\hat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. Assume $\hat{a_n}(G)<\infty$, for all $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\hat{\zeta_G}(s):=\sum_{n=1}^{\infty}\hat{a_n}(G)n^{-s}$, for $s\in\mathbb{C}$.
 \end{definition}
-After we have a such a convergent Dirichlet series, we can reconstruct its coefficients, $\hat{a_n(G)}$, which, in our case, are the number of subgroups of our interest.
+After we have a such a convergent Dirichlet series, we can reconstruct its coefficients, $\hat{a_n(G)}$, which, in our case, are the number of subgroups of our interest. This reconstruction can be achieved by the \textbf{Perron's forumla}, which is an implementation of a \textbf{reverse Mellin transform}, as discussed, for example, in \cite{MontgomeryVaughan}. This discussion is out of the scope of our actual study, for this research, so we shall not go deeper into the details.
 It has been found that if $\hat{a_n}(G)$ grows polynomially, then $\hat{\zeta}_G(s)$ converges on some right half-plane of $\mathbb{C}$. For instance, we take the group $G=(\mathbb{Z},+)$. $\mathbb{Z}$ is an abelian group, and every $H\leq \mathbb{Z}$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong \mathbb{Z}$, as both are infinite cyclic groups, and so, $\widehat{H}\cong\widehat{\mathbb{Z}}$. Since we have only one $\mathbb{Z}$-subgroup of index $n$, for every $n\in\mathbb{N}$, then $a_n(\mathbb{Z})=\hat{a_n}(\mathbb{Z})=1$, thus, its pro-isomorphic $\zeta$-function is $\hat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function, which is known to converge for $Re(s)>1$.\par
 After establishing the basic definitions, we observe a fact that is a major motivation for this research, which says that the Riemann $\zeta$-function decomposes to an infinite product of local $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty p^{-ks}=\prod_p\frac{1}{1-p^{-s}}$, where the product runs over all the prime numbers. Following this fact, regarding the Riemann $zeta$-function, we observe that for any finitely-generated, nilpotent and torsion-free group, $G$, we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\hat{\zeta_G}(s)=\prod_p\hat{\zeta_{G,p}}(s)$, where $\hat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)p^{-ks}$
 We hereby bring several basic definitions of group nilpotency, which are very important for this research.
@@ -149,7 +149,7 @@ As stated above, this research will focus on studying $U_n(\mathbb{Z}_p)$ and it
 2. \textbf{Showing that the pro-isomorphic $\hat{\zeta_{L,p}}$-function, for $L_p$, is unified for all $n\in\mathbb{N}$.}\par
 3. \textbf{Giving an explicit formula for the $\hat{\zeta_{L,p}}$-function, for specific values of $n$, if not for all $n\in\mathbb{N}$.}\par
 We will have to give a full description of $G(\mathbb{Z}_p)$, for dimension of $L_p$. This approach is based on the natural assumption that all $L_p$, regardless of their dimensions, obey the same rules, and therefore, their automorphism groups behave in the same way, which we need to display and prove, and that will achieve the first step.
-These automorphism groups have been studied for decades from a different point of view.  There are classical results showing that any automorphism may be expressed as a product of automorphisms of a specific type; see, for instance, the main result of Gibbs \cite{gibbs}.  These results are not explicit enough for our purposes; indeed, the submonoid $G^+(\mathbb{Q}_p)$ arises, for us, as the domain of integration of a p-adic integral.  In order to compute this integral, we need to decompose the automorphism group $G(\mathbb{Q}_p)$ into a repeated semi-direct product of groups with a simple structure.
+These automorphism groups have been studied for decades from a different point of view.  There are classical results showing that any automorphism may be expressed as a product of automorphisms of a specific type; see, for instance, the main result of Gibbs \cite{Gibbs}.  These results are not explicit enough for our purposes; indeed, the submonoid $G^+(\mathbb{Q}_p)$ arises, for us, as the domain of integration of a p-adic integral.  In order to compute this integral, we need to decompose the automorphism group $G(\mathbb{Q}_p)$ into a repeated semi-direct product of groups with a simple structure.
 \par
 After we have analyzed the structure of $G(\mathbb{Z}_p)$, we will need to construct the monoid $G^{+}(\mathbb{Q}_p)$ and its $G(\mathbb{Z}_p)$ right-cosets, as we have seen above. This will give us both the function to integrate, which is $det\varphi$, for every $G(\mathbb{Z}_p)$ right-coset, $G(\mathbb{Z}_p)\varphi$, and the domain of integration, which is the right-coset itself. We will use this information to analyze the behavior the $p$-adic integral we have described above, and prove that its calculation depends only on $p$, thus showing that the $\hat{\zeta_{L,p}}$-function is unified, regardless of $dimL_p$
 \subsection{The Heisenberg group}
@@ -465,9 +465,8 @@ By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automor
 \end{itemize}
 \begin{thebibliography}{2}
 
-\bibitem{gibbs} John A. Gibbs, Automorphisms of certain unipotent groups, J. Algebra 14 (1970), 203-228.
-
-\bibitem{bb} Brenda Bradshaw, 2018, Worries.
+\bibitem{Gibbs} John A. Gibbs, Automorphisms of certain unipotent groups, J. Algebra 14 (1970), 203-228.
+\bibitem{MontgomeryVaughan} Hugh L. Montgomery and Robert C. Vaughan, Multiplicative Number Theory I. Classical Theory, Cambridge Studies in Advanced Mathematics 97, chapter 5.
 
 \end{thebibliography}
 \end{document}

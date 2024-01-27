@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JAN 2024 23:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  28 JAN 2024 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,16 +647,20 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3] [4] [5] [6]
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `gibbs' on page 7 undefined on input line 152.
+LaTeX Warning: Citation `MontgomeryVaughan' on page 2 undefined on input line 6
+9.
 
-[7]
+[2] [3] [4] [5] [6]
+
+LaTeX Warning: Citation `Gibbs' on page 7 undefined on input line 152.
+
+[7] [8]
 
 LaTeX Warning: Command \L invalid in math mode on input line 186.
 
-[8] [9]
+[9]
 Overfull \hbox (81.726pt too wide) detected at line 258
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
@@ -707,10 +711,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14995 strings out of 474486
- 319481 string characters out of 5743755
+ 14997 strings out of 474486
+ 319507 string characters out of 5743755
  1956528 words of memory out of 5000000
- 36996 multiletter control sequences out of 15000+600000
+ 36998 multiletter control sequences out of 15000+600000
  577592 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,17n,121p,1733b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -737,7 +741,7 @@ a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (17 pages, 299708 bytes).
+Output written on proposal.pdf (17 pages, 300674 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
