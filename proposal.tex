@@ -66,10 +66,11 @@ Let $G$ be any group. a subgroup $H\leq G$ is called \textbf{pro-isomorphic}, if
 \label{def:zeta.pro.isomorphic}
 Let $G$ be any group, and let $\hat{a_n}(G):=\#\{H\leq G : \widehat{H}\cong\widehat{G}, [G:H]=n\}$, in words, the number of pro-isomorphic subgroups of $G$, of index $n$. Assume $\hat{a_n}(G)<\infty$, for all $n$. The \textbf{pro-isomorphic $\zeta$-function} of $G$ is defined by $\hat{\zeta_G}(s):=\sum_{n=1}^{\infty}\hat{a_n}(G)n^{-s}$, for $s\in\mathbb{C}$.
 \end{definition}
-After we have a such a convergent Dirichlet series, we can reconstruct its coefficients, $\hat{a_n(G)}$, which, in our case, are the number of subgroups of our interest. This reconstruction can be achieved by the \textbf{Perron's forumla}, which is an implementation of a \textbf{reverse Mellin transform}, as discussed, for example, in \cite{MontgomeryVaughan}. This discussion is out of the scope of our actual study, for this research, so we shall not go deeper into the details.
+If our $\zeta$-function, which is a special case of the Dirichlet series, has some properties of convergence, on some subset of $\mathbb{C}$, one may reconstruct its coefficients, $\hat{a_n(G)}$, which, in our case, are the number of subgroups of our interest, using the \textbf{Perron's forumla}, which is an implementation of a \textbf{reverse Mellin transform}, as discussed, for example, in \cite{MontgomeryVaughan}. This method, including the specific properties of convergence required for the reconstruction, is out of the scope of our research, and therefore will not be further discussed, at this stage.\par
 It has been found that if $\hat{a_n}(G)$ grows polynomially, then $\hat{\zeta}_G(s)$ converges on some right half-plane of $\mathbb{C}$. For instance, we take the group $G=(\mathbb{Z},+)$. $\mathbb{Z}$ is an abelian group, and every $H\leq \mathbb{Z}$ is of the form $H=n\mathbb{Z}=\langle n\rangle$, for some $n\in\mathbb{N}$, which means that $H\cong \mathbb{Z}$, as both are infinite cyclic groups, and so, $\widehat{H}\cong\widehat{\mathbb{Z}}$. Since we have only one $\mathbb{Z}$-subgroup of index $n$, for every $n\in\mathbb{N}$, then $a_n(\mathbb{Z})=\hat{a_n}(\mathbb{Z})=1$, thus, its pro-isomorphic $\zeta$-function is $\hat{\zeta_{\mathbb{Z}}}=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann $\zeta$-function, which is known to converge for $Re(s)>1$.\par
 After establishing the basic definitions, we observe a fact that is a major motivation for this research, which says that the Riemann $\zeta$-function decomposes to an infinite product of local $\zeta_p$-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty p^{-ks}=\prod_p\frac{1}{1-p^{-s}}$, where the product runs over all the prime numbers. Following this fact, regarding the Riemann $zeta$-function, we observe that for any finitely-generated, nilpotent and torsion-free group, $G$, we have the same decomposition as above, for the pro-isomorphic $\zeta$-function, $\hat{\zeta_G}(s)=\prod_p\hat{\zeta_{G,p}}(s)$, where $\hat{\zeta_{G,p}}(s):=\sum_{k=0}^\infty a_{p^{ks}}(G)p^{-ks}$
-We hereby bring several basic definitions of group nilpotency, which are very important for this research.
+We hereby bring several basic definitions of group nilpotency, which are very important for this research.\par
+The general construction of $\zeta$-functions, as well as their Euler decomposition to local $\zeta_p$-functions, for the study of subgroup growth, were well established by Grunewald, Segal and Smith, in \cite{GrunewaldSegalSmith}.
 \begin{definition}
 \label{def.lower.central.series}
 Let $G$ be any group, then the \textbf{lower central series} of $G$ is a sequence of subgroups of $G$, defined by the recursive rule, $G_n:=[G,G_{n-1}]$, for every $n\in\mathbb{N}$, where $G_0:=G$.  We recall that $[G,G_n]\leq G$ is the subgroup of commutators, $\{gg_ng^{-1}g_n^{-1} : g\in G,g_n\in G_n\}$
@@ -98,16 +99,22 @@ Let $\Gamma$ be a locally compact topological group, i.e., for all $\gamma\in\Ga
 Equipped with the right Haar measure, we can finally make use of the construction from above. We start by claiming, without proof, that for every prime number $p$, the group $G(\mathbb{Q}_p)$ is a locally compact topological group. Therefore, it has a unique right Haar measure. We also claim that the right Haar measure has the property that $\mu(G(\mathbb{Z}_p))=1$, and that the measure on all the right-cosets of $G(\mathbb{Z}_p)$ equals to the measure on $G(\mathbb{Z}_p)$ itself, i.e., for every $g\in G^{+}(\mathbb{Q}_p)$, we have that $\mu(G(\mathbb{Z}_p)g)=\mu(G(\mathbb{Z}_p))=1$.
 With this observation, we go directly to the calculation of the $p$-adic norm of the determinant of every $L_p$-automorphism, as a $p$-adic integral over our measure space.
 First, we observe that given any $L_p$-automorphism in some right-coset, $\varphi\in G(\mathbb{Z}_p)\varphi$, we have that $|det\varphi|_p^s=\displaystyle\int_{G(\mathbb{Z}_p)\varphi}|det\varphi|_p^sd\mu$, because $\mu(G(\mathbb{Z}_p)\varphi)=1$, and $|det\varphi|_p^{-1}$ is fixed on $G(\mathbb{Z}_p)\varphi$.\par
-Going back to our desired function, we observe that\par $\hat{\zeta_{L,p}}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}{\sum}|det\varphi|_p^s=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}{\sum}\displaystyle\int_{G(\mathbb{Z}_p)\varphi}|det\varphi|_p^sd\mu=\displaystyle\int_{G^{+}(\mathbb{Z}_p)}|det\varphi|_p^sd\mu$. This integral is the main object we shall study, in this research.
+Going back to our desired function, we observe that\par $\hat{\zeta_{L,p}}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}{\sum}|det\varphi|_p^s=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^+(\mathbb{Q}_p)}{\sum}\displaystyle\int_{G(\mathbb{Z}_p)\varphi}|det\varphi|_p^sd\mu=\displaystyle\int_{G^{+}(\mathbb{Z}_p)}|det\varphi|_p^sd\mu$.\par 
+This calculation of the local $\zeta_p$-function as a $p$-adic integral was established by the work of du Sautoy and Lubotzky, in \cite{DuSautoyLubotzky}.
+This integral is the main object we shall study, in this research.
 We end this part, of the technical background review, by a definition and a theorem, which stand in the center of our research goals.
 \begin{definition}
-Let $L$ be a $\mathbb{Z}$-algebra. $\hat{\zeta_L}(s)$ is called \textbf{unified}, if there exists a rational function, $W\in\mathbb{Q}(X,Y)$, such that for every prime number $p$, the local function $\zeta_{L,p}(s)=W(p,p^{-1})$.\par Here, $\mathbb{Q}(X,Y):=\{\frac{f}{g} : f,g\in\mathbb{Q}[X,Y]\}$, the field of rational functions in two variables.\par
-The term unified expresses that the rational function depends, for every $p$, only on $p$ and its inverse.
+Let $L$ be a $\mathbb{Z}$-algebra. $\hat{\zeta_L}(s)$ is called \textbf{uniform}, if there exists a rational function, $W\in\mathbb{Q}(X,Y)$, such that for every prime number $p$, the local function $\zeta_{L,p}(s)=W(p,p^{-1})$.\par 
+Sometimes, we prefer to say that $\zeta_{L,p}(s)$ is \textbf{uniform}, if there exists a function $W_p\in\mathbb{Q}(X)$, such that $\zeta_{L,p}(s)=W_p(p^{-s})$.\par
+Both definitions are just two different ways of writing the rational function $W_p(p^{-s})=W(p,p^{-s})$.\par
+Here, $\mathbb{Q}(X)$ and $\mathbb{Q}(X,Y)$ are the fields of rational functions in one variable and two variables, respectively.\par
+The term uniform expresses that the rational function depends, for every $p$, only on $p$ and its inverse.\par
 \end{definition}
 \begin{theorem}
 \label{thm.rational.function}
-Let $p$ be a prime number, $s\in\mathbb{C}$, then there exists a rational function, $w_p(s):=\frac{f(x)}{g(x)}$, where $f,g\in\mathbb{Z}_p[x]$, which satisfies $\hat{\zeta_{L,p}}(s)=w_p(p^{-s})$.
+Let $p$ be a prime number, $s\in\mathbb{C}$, then $\hat{\zeta_{L,p}}(s)$ is uniform. 
 \end{theorem}
+The uniformity is also established in the work of Grunewald, Segal and Smith, see \cite{GrunewaldSegalSmith}.
 \section{Research Goals and Methodology}
 \subsection{The unipotent group $U_n$}
 We start by this following definition.
@@ -454,19 +461,15 @@ This means that calculating the integral, for $G_n(\mathbb{Q}_p)$, reduces to ca
 
 
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
-\section{Notations}
-\begin{itemize}
-\item $\mathbb{Z}_p$, the ring of $p$-adic integers.
-\item $\mathbb{Q}_p$, the fraction field of $\mathbb{Z}_p$.
-\item $L_p$, a $\mathbb{Z}_p$-algebra over the ring of p-adic integers.
-\item $\mathcal{L}_p$, a $\mathbb{Q}_p$-algebra, over the fraction field of $\mathbb{Z}_p$.
-\item $G(L_p):=Aut_{\mathbb{Z}_p}(L_p)$, the group of $\mathbb{Z}_p$-automorphisms of $L_p$.
-\item $G(\mathcal{L}_p):=Aut_{\mathbb{Q}_p}(\mathcal{L}_p)$, the group of $\mathbb{Q}_p$-automorphisms of $\mathcal{L}_p$.
-\end{itemize}
+
 \begin{thebibliography}{2}
 
 \bibitem{Gibbs} John A. Gibbs, Automorphisms of certain unipotent groups, J. Algebra 14 (1970), 203-228.
 \bibitem{MontgomeryVaughan} Hugh L. Montgomery and Robert C. Vaughan, Multiplicative Number Theory I. Classical Theory, Cambridge Studies in Advanced Mathematics 97, chapter 5.
-
+\bibitem{GrunewaldSegalSmith} F. J. Grunewald, D. Segal, and G. C. Smith, Subgroups of finite index in nilpotent groups,
+Invent. Math. 93 (1988), no. 1, 185–223, DOI 10.1007/BF01393692. MR943928.
+\bibitem{DuSautoyLubotzky} M.P.F. du Sautoy and A. Lubotzky, Functional equations and uniformity for
+local zeta functions of nilpotent groups, Amer. J. Math. 118 (1996), no. 1, 39–
+90.
 \end{thebibliography}
 \end{document}

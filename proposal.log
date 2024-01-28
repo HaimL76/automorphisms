@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  28 JAN 2024 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  28 JAN 2024 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,53 +647,59 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 
-LaTeX Warning: Citation `MontgomeryVaughan' on page 2 undefined on input line 6
-9.
+LaTeX Warning: Citation `GrunewaldSegalSmith' on page 3 undefined on input line
+ 73.
 
-[2] [3] [4] [5] [6]
+[3] [4]
 
-LaTeX Warning: Citation `Gibbs' on page 7 undefined on input line 152.
+LaTeX Warning: Citation `DuSautoyLubotzky' on page 5 undefined on input line 10
+3.
 
-[7] [8]
+[5]
 
-LaTeX Warning: Command \L invalid in math mode on input line 186.
+LaTeX Warning: Citation `GrunewaldSegalSmith' on page 6 undefined on input line
+ 117.
 
-[9]
-Overfull \hbox (81.726pt too wide) detected at line 258
+[6] [7] [8]
+
+LaTeX Warning: Command \L invalid in math mode on input line 193.
+
+[9] [10]
+Overfull \hbox (81.726pt too wide) detected at line 265
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
  []
 
-[10] [11]
-Overfull \hbox (106.75818pt too wide) detected at line 331
+[11] [12]
+Overfull \hbox (106.75818pt too wide) detected at line 338
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ' \OT1/cmr/m/n/12 = []
  []
 
-[12] [13]
-Overfull \hbox (68.97217pt too wide) detected at line 374
+[13]
+Overfull \hbox (68.97217pt too wide) detected at line 381
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
-[14]
-Overfull \hbox (10.13109pt too wide) detected at line 439
+[14] [15]
+Overfull \hbox (10.13109pt too wide) detected at line 446
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
-[15]
+[16]
 
-LaTeX Warning: Reference `prop.integer.automorphism' on page 16 undefined on in
-put line 456.
+LaTeX Warning: Reference `prop.integer.automorphism' on page 17 undefined on in
+put line 463.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 456--456
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 463--463
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
  []
 
-[16] [17] (proposal.aux)
+[17] (proposal.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -711,39 +717,38 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14997 strings out of 474486
- 319507 string characters out of 5743755
- 1956528 words of memory out of 5000000
- 36998 multiletter control sequences out of 15000+600000
- 577592 words of font info for 117 fonts, out of 8000000 for 9000
+ 14992 strings out of 474486
+ 319441 string characters out of 5743755
+ 1952528 words of memory out of 5000000
+ 36994 multiletter control sequences out of 15000+600000
+ 577255 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,17n,121p,1733b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\isila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
-rs/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/isil
-a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-<C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (17 pages, 300674 bytes).
+<C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isi
+la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
+sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/isila/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Us
+ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/symbols/msbm7.pfb>
+Output written on proposal.pdf (17 pages, 299702 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
