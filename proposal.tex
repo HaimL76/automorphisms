@@ -190,7 +190,8 @@ a_{21} & a_{22}\\
 \end{pmatrix}
 $
 \subsection{$U_n(\mathbb{Z}_p)$ groups of higher cardinality}
-We can observe that for every $v\in\L_p$, where $L_p$ is the $\mathbb{Z}$-Lie algebra associated with $U_n(\mathbb{Z})$, where $n>3$, writing $M=\varphi$ as a $d\times d$ matrix, where $d=dimL_p\binom{n}{2}$, whose lines are set, by the order we have defined above, i.e., in the following way,
+Mark N. Berman, in his doctoral thesis\cite{Berman}, has displayed an explicit formula for $n=4$, and proved that for $n=5$, the $\zeta_p$-function is, indeed, uniform.
+Following his work, we can observe that for every $v\in\L_p$, where $L_p$ is the $\mathbb{Z}$-Lie algebra associated with $U_n(\mathbb{Z})$, where $n>3$, writing $M=\varphi$ as a $d\times d$ matrix, where $d=dimL_p\binom{n}{2}$, whose lines are set, by the order we have defined above, i.e., in the following way,
 $$
 M=\begin{pmatrix}
 \varphi(e_{12})\\
@@ -461,7 +462,8 @@ This means that calculating the integral, for $G_n(\mathbb{Q}_p)$, reduces to ca
 
 
 By \ref{prop.integer.automorphism}, we have that any $L_p(\mathbb{Z}_p)$-automorphism must be in $G_n(\mathbb{Z}_p)$, in words, any $\varphi\in G(\mathbb{Z}_p)$ is an invertible matrix with elements in $\mathbb{Z}_p$. Our goal is to find a way to compute $G(\mathbb{Z}_p)$, the automorphism group of $L_n(\mathbb{Z}_p)$, for any $n\in\mathbb{N}$. After finding a general formula for this calculation, we shall be able to show a way to compute the $n$-multiple $p$-adic integral of the form $\displaystyle\int\int\dots\int\int_{D_1\times D_2\dots\times D_{n-1}\times D_n}f(h_1,h_2,\dots,h_{n-1},h_n)d(\mu_1,\mu_2,\dots,\mu_{n-1},\mu_n)$, where $D_i$ is the set of $G(\mathbb{Z}_p)$-cosets, for $G(\mathbb{Z}_p)$, the group of $\mathbb{Z}_p$-automorphisms on the algebra $L_i(\mathbb{Z}_p)$, and $h_i$ is any element of this group, and $\mu_i$ is the Haar measure on this group. By Fubini, this multiple integral can be calculated as the iterated integral $$\displaystyle\int_{D_n}\left(\int_{D_{n-1}}\dots\left(\int_{D_2}\left(\int_{D_1}f(h_1,h_2,\dots,h_{n-1},h_n)d\mu_1\right)d\mu_2\right)\dots d\mu_{n-1}\right)d\mu_n$$. Alternatively, if we do not find an explicit formula for this calculation, we will show the general approach for this calculation, and prove the necessary conditions for its validity. 
-
+\subsection{Possible Extension}
+To conclude this part, of the research goals review, we shall display a possible extension, considering a general ring of integers, as our associated Lie algebra. Taking some number field, $K=\sfrac{K}{\mathbb{Q}}$, of a finite degree, $d$, over $\mathbb{Q}$, and its ring of integers, $\mathcal{O}_K$, which is a $d$-dimensional $\mathbb{Z}$-algebra. We can try applying everything we have established, regarding algebras over $\mathbb{Z}_p$ and $\mathbb{Q}_p$, to, for example, algebras over $\mathbb{Z}[\sqrt{p}]$ and $\mathbb{Q}[\sqrt{p}]$, respectively. This approach is only one possible way to extend our research, and therefore, we shall not go into the details of it, at this stage.
 \begin{thebibliography}{2}
 
 \bibitem{Gibbs} John A. Gibbs, Automorphisms of certain unipotent groups, J. Algebra 14 (1970), 203-228.
@@ -471,5 +473,9 @@ Invent. Math. 93 (1988), no. 1, 185–223, DOI 10.1007/BF01393692. MR943928.
 \bibitem{DuSautoyLubotzky} M.P.F. du Sautoy and A. Lubotzky, Functional equations and uniformity for
 local zeta functions of nilpotent groups, Amer. J. Math. 118 (1996), no. 1, 39–
 90.
+\bibitem{Berman} M. N. Berman,
+Proisomorphic zeta functions of groups
+, Ph.D. thesis, University of Oxford,
+2005.
 \end{thebibliography}
 \end{document}
