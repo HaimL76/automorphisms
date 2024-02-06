@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  7 FEB 2024 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  7 FEB 2024 01:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,44 +505,67 @@ Now handling font encoding LYG ...
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 )
 \c@theorem=\count295
- (./proposal.aux
+
+(c:/texlive/2023/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen269
+\dashlinegap=\dimen270
+\adl@box=\box70
+\adl@height=\dimen271
+\adl@heightsave=\dimen272
+\adl@depth=\dimen273
+\adl@depthsave=\dimen274
+\adl@finaldepth=\dimen275
+\adl@columns=\count296
+\adl@ncol=\count297
+\adl@currentcolumn=\count298
+\adl@currentcolumnsave=\count299
+\adl@totalheight=\count300
+\adl@totalheightsave=\count301
+\adl@dash=\count302
+\adl@gap=\count303
+\adl@cla=\count304
+\adl@clb=\count305
+\adl@everyvbox=\toks44
+\adl@LTpagetotal=\dimen276
+) (./proposal.aux
 
 LaTeX Warning: Label `def.nilpotency.class' multiply defined.
 
 )
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count296
-\scratchdimen=\dimen269
-\scratchbox=\box70
-\nofMPsegments=\count297
-\nofMParguments=\count298
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count299
-\MPscratchDim=\dimen270
-\MPnumerator=\count300
-\makeMPintoPDFobject=\count301
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count306
+\scratchdimen=\dimen277
+\scratchbox=\box71
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen278
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks46
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -552,84 +575,80 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 43
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 47
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 52.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 56.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 52.
+(Font)              size <5> substituted on input line 56.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 52.
+(Font)              size <5> substituted on input line 56.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 52.
+(Font)              size <5> substituted on input line 56.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 52.
+(Font)              size <5> substituted on input line 56.
 
 [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 [4] [5]
-Overfull \hbox (49.6324pt too wide) in paragraph at lines 125--131
+Overfull \hbox (49.6324pt too wide) in paragraph at lines 129--135
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7] [8]
-
-LaTeX Warning: Command \L invalid in math mode on input line 196.
-
-[9] [10]
-Overfull \hbox (81.726pt too wide) detected at line 268
+[6] [7] [8] [9] [10]
+Overfull \hbox (81.726pt too wide) detected at line 275
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
  []
 
 [11] [12]
-Overfull \hbox (106.75818pt too wide) detected at line 341
+Overfull \hbox (105.95819pt too wide) detected at line 348
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ' \OT1/cmr/m/n/12 = []
  []
 
 [13]
-Overfull \hbox (68.97217pt too wide) detected at line 384
+Overfull \hbox (68.97217pt too wide) detected at line 391
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
 [14] [15]
-Overfull \hbox (10.13109pt too wide) detected at line 449
+Overfull \hbox (10.13109pt too wide) detected at line 456
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
 [16]
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 17 undefined on in
-put line 466.
+put line 473.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 466--466
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 473--473
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -653,13 +672,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14967 strings out of 474934
- 313395 string characters out of 5763815
- 1945801 words of memory out of 5000000
- 36229 multiletter control sequences out of 15000+600000
+ 15183 strings out of 474934
+ 316472 string characters out of 5763815
+ 1951801 words of memory out of 5000000
+ 36441 multiletter control sequences out of 15000+600000
  577255 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,17n,121p,1799b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,19n,121p,1799b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2023/texmf-
@@ -677,7 +696,7 @@ nts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (18 pages, 281669 bytes).
+Output written on proposal.pdf (18 pages, 282584 bytes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams

@@ -37,7 +37,11 @@
   \seq_use:Nn \l_alec_cycle_seq { #1 }
  }
 \ExplSyntaxOff
+\usepackage{arydshln}
 
+\setlength{\dashlinedash}{1.2pt}
+\setlength{\dashlinegap}{1.5pt}
+\setlength{\arrayrulewidth}{0.2pt}
 \begin{document}
 \begin{abstract}
 Let $G$ be any group. For any natural number $n\in\mathbb{N}$, let $a_n$ be the number of subgroups $H\leq G$, such that $[G:H]=n$. Assume $G$ is finitely-generated, then $a_n<\infty$, and we can define a Dirichlet series of the form $\zeta_G(s):=\sum_{i=1}^\infty a_n n^{-s}$, where $s\in\mathbb{C}$. Assume, in addition, that $G$ is also nilpotent and torsion-free, then this function has some properties of the Riemann $\zeta$-function, such as the Euler decomposition of $\zeta$ into a product of local factors indexed by primes. A version of this $\zeta$-function counts pro-isomorphic subgroups, and an analogous function may be defined for appropriate Lie rings. We study here the pro-isomorphic $\zeta$-functions for a family of nilpotent Lie rings of unbounded nilpotency class. We shall compute the automorphism groups of these Lie rings explicitly, prove uniformity of the local factors of the pro-isomorphic $\zeta$-functions local factors, and aim to determine them explicitly.
@@ -183,7 +187,7 @@ $$
 which means that $\varphi$ is the following matrix, $\varphi=\begin{pmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
-0 & 0 & detA\\
+0 & 0 & \det A\\
 \end{pmatrix}
 $
 where $A=\begin{pmatrix}
@@ -191,18 +195,21 @@ a_{11} & a_{12}\\
 a_{21} & a_{22}\\
 \end{pmatrix}
 $, and $A$ must be invertible, otherwise $\varphi$ is not bijective.
-\subsection{$U_n(\mathbb{Z}_p)$ groups of higher cardinality}
-Mark N. Berman, in his doctoral thesis\cite{Berman}, has displayed an explicit formula for $n=4$, and proved that for $n=5$, the $\zeta_p$-function is, indeed, uniform.
-Following his work, we can observe that for every $v\in\L_{n,p}$, where $L_{n,p}$ is the $\mathbb{Z}$-Lie algebra associated with $U_n(\mathbb{Z})$, where $n>3$, writing $M=\varphi$ as a $d\times d$ matrix, where $d=dimL_p\binom{n}{2}$, whose lines are set, by the order we have defined above, i.e., in the following way,
+\subsection{$U_n(\mathbb{Z}_p)$ groups for $n>3$}
+Mark N. Berman, in his doctoral thesis\cite{Berman}, has displayed an explicit formula for $\zeta_{L_{4,p}}$, and proved that $\zeta_{L_{5,p}}$ is, indeed, uniform.
+Following his work, we can observe that for every $v\in L_{n,p}$, where $L_{n,p}$ is the $\mathbb{Z}_p$-Lie algebra associated with $U_n(\mathbb{Z}_p)$, where $n>3$, writing $M=\varphi$ as a $r\times r$ matrix, where $r$=rank$L_{n,p}=\binom{n}{2}$, whose lines are set, by the order we have defined above, i.e., in the following way,
 $$
 M=\begin{pmatrix}
 \varphi(e_{12})\\
 \varphi(e_{23})\\
-\varphi(e_{n-1n})\\
+\varphi(e_{n-1,n})\\
+\hdashline
 \varphi(e_{13})\\
 \vdots\\
-\varphi(e_{n-1n})\\
+\varphi(e_{n-2,n})\\
+\hdashline
 \vdots\\
+\hdashline
 \varphi(e_{1n})\\
 \end{pmatrix}\\
 $$
