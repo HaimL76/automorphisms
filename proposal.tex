@@ -317,15 +317,15 @@ A_n=\begin{pmatrix}
 & & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det(A_n)=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det A_k=\prod_{i=1}^{k}\lambda_i^{i(k+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
-\det(A_1)=\lambda_1$$
-$$\det(A_2)=\det(A_1)\lambda_1\lambda_2^2$$
-$$\det(A_3)=\det(A_2)\lambda_1\lambda_2^2\lambda_3^3$$
+\det A_1=\lambda_1$$
+$$\det A_2=\det A_1\lambda_1\lambda_2^2$$
+$$\det A_3=\det A_2\lambda_1\lambda_2^2\lambda_3^3$$
 $$\vdots$$
-$$\det(A_n)=\det(A_{n-1})\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_n^n$$
+$$\det A_{n-1}=\det A_{n-2}\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_{n-1}^{n-1}$$
 Calculating the general element, $a_n=\det(A_n)$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
 \end{proof}
 This means that every $M=\varphi\in\mathcal{L}_{p,n}$ is of the form,$$M=\begin{pmatrix}
@@ -383,13 +383,13 @@ Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$h^{-1}=\
 \lambda_1^{-1} & & & & & & & &\\
 & \lambda_2^{-1} & & & & & & &\\
 & & \ddots & & & & & &\\
-& & & \lambda_n^{-1} & & & & &\\
+& & & \lambda_{n-1}^{-1} & & & & &\\
 & & & & (\lambda_1\lambda_2)^{-1} & & & &\\
 & & & & & (\lambda_2\lambda_3)^{-1} & & &\\
 & & & & & & \ddots & &\\
-& & & & & & & (\lambda_{n-1}\lambda_n)^{-1} & &\\
+& & & & & & & (\lambda_{n-2}\lambda_{n-1})^{-1} & &\\
 & & & & & & & & \ddots &\\
-& & & & & & & & & (\lambda_1\lambda_2\cdots\lambda_n)^{-1}\\
+& & & & & & & & & (\lambda_1\lambda_2\cdots\lambda_{n-1})^{-1}\\
 \end{pmatrix}
 $$
 Easy to check that $n=Mh^{-1}$ is also an invertible matrix, with $1$ on the main diagonal, and $0$ below it.
