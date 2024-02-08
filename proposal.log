@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 FEB 2024 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 FEB 2024 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -695,22 +695,22 @@ Overfull \hbox (106.5394pt too wide) detected at line 349
  []
 
 [13] [14]
-Overfull \hbox (68.97217pt too wide) detected at line 392
+Overfull \hbox (68.97217pt too wide) detected at line 394
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
 [15]
-Overfull \hbox (10.13109pt too wide) detected at line 457
+Overfull \hbox (10.13109pt too wide) detected at line 459
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
 [16]
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 17 undefined on in
-put line 474.
+put line 476.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 474--474
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 476--476
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -763,7 +763,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Us
 ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/symbols/msbm7.pfb>
-Output written on proposal.pdf (18 pages, 305022 bytes).
+Output written on proposal.pdf (18 pages, 305348 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
