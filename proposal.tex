@@ -197,7 +197,7 @@ a_{21} & a_{22}\\
 $, and $A$ must be invertible, otherwise $\varphi$ is not bijective. Based on the construction from earlier, of $L_{n,p}$ and $\mathcal{L}_{n,p}$, all the above applies also for $G(\mathbb{Z}_p)$ and for $G(\mathbb{Q}_p)$, respectively.
 \subsection{$U_n(\mathbb{Z}_p)$ groups for $n>3$}
 Mark N. Berman, in his doctoral thesis\cite{Berman}, has displayed an explicit formula for $\zeta_{L_{4,p}}$, and proved that $\zeta_{L_{5,p}}$ is, indeed, uniform.
-Following his work, we first observe that for every $v\in L_{n,p}$, where $L_{n,p}$ is the $\mathbb{Z}_p$-Lie algebra associated with $U_n(\mathbb{Z}_p)$, where $n\geq3$, we present $\varphi(v)$ as the multiplication of $v$ by a matrix from the right $\varphi(v)=vM$. As stated earlier, $M$ is an $r\times r$ matrix, where $r$=rank$L_{n,p}=\binom{n}{2}$, whose lines are set by the order we have defined above, i.e., considering the standard basis \[\mathcal{B}_n=\{e_{
+Following his work, we first observe that for every $v\in L_{n,p}$ the $\mathbb{Z}_p$-Lie algebra associated with $U_n(\mathbb{Z}_p)$, where $n\geq3$, we present $\varphi(v)$ as the multiplication of $v$ by a matrix from the right $\varphi(v)=vM$. As stated earlier, $M$ is an $r\times r$ matrix, where $r$=rank$L_{n,p}=\binom{n}{2}$, whose lines are set by the order we have defined above, i.e., considering the standard basis \[\mathcal{B}_n=\{e_{
 12},e_{23},\dots,e_{n-1,n},e_{13},\dots,e_{n-1.n},\dots,e_{1n}\}\] then $M$ is the following matrix,
 $$
 M=\begin{pmatrix}
@@ -224,7 +224,7 @@ M_{21} & \vline & M_{22}&\vline & \dots &\vline & M_{2n-1} &\vline& M_{2n}\\
 M_{n1} & \vline & M_{n2}&\vline & \dots &\vline & M_{nn-1} &\vline& M_{nn}\\
 \end{pmatrix}
 $$
-each block is $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Z}_p)$, where $k=$dim$(\gamma_iL_{n,p})$ and $l=$dim$(\gamma_jL_{n,p})$. From this, we can understand that the blocks on the main diagonal of $M$ are squared matrices, $A_{ii}\in\mathcal{M}_{n-i}$. From the calculation on the Heisenberg group, we understand also that any element $e_{ii+k}\in\gamma_kL_p$ must vanish in the images of elements of higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
+each block is $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Z}_p)$, where $k$=rank$\gamma_iL_{n,p}$ and $l$=rank$\gamma_jL_{n,p}$. From this, we can understand that the blocks on the main diagonal of $M$ are squared matrices, $A_{ii}\in\mathcal{M}_{n-i}$. From the calculation on the Heisenberg group, we understand also that any element $e_{ii+k}\in\gamma_kL_p$ must vanish in the images of elements of higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
 M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{1m}\\
 \hline
 0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
@@ -288,13 +288,13 @@ M=\varphi=\begin{pmatrix}
 \lambda_1 & & & & & & & &\\
 & \lambda_2 & & & & & & &\\
 & & \ddots & & & & & &\\
-& & & \lambda_n & & & & &\\
+& & & \lambda_{n-1} & & & & &\\
 & & & & \lambda_1\lambda_2 & & & &\\
 & & & & & \lambda_2\lambda_3 & & &\\
 & & & & & & \ddots & &\\
-& & & & & & & \lambda_{n-1}\lambda_n & &\\
+& & & & & & & \lambda_{n-2}\lambda_{n-1} & &\\
 & & & & & & & & \ddots &\\
-& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_n\\
+& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
 \end{proposition}
@@ -308,16 +308,16 @@ A_n=\begin{pmatrix}
 \lambda_1 & & & & & & & &\\
 & \lambda_2 & & & & & & &\\
 & & \ddots & & & & & &\\
-& & & \lambda_n & & & & &\\
+& & & \lambda_{n-1} & & & & &\\
 & & & & \lambda_1\lambda_2 & & & &\\
 & & & & & \lambda_2\lambda_3 & & &\\
 & & & & & & \ddots & &\\
-& & & & & & & \lambda_{n-1}\lambda_n & &\\
+& & & & & & & \lambda_{n-2}\lambda_{n-1} & &\\
 & & & & & & & & \ddots &\\
-& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_n\\
+& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-where $\lambda_1,\lambda_2,\dots,\lambda_n\in\mathbb{Q}_p$, then, $\det(A_n)=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det(A_n)=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
@@ -328,24 +328,24 @@ $$\vdots$$
 $$\det(A_n)=\det(A_{n-1})\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_n^n$$
 Calculating the general element, $a_n=\det(A_n)$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
 \end{proof}
-This means that every $M=\varphi\in\mathcal{L}_{p,n}$ is of the form,$$M=\varphi=\begin{pmatrix}
+This means that every $M=\varphi\in\mathcal{L}_{p,n}$ is of the form,$$M=\begin{pmatrix}
 \begin{matrix}\lambda_1 & & &\\
 & \lambda_2 & &\\
 & & \ddots &\\
-& & & \lambda_n\\
-\end{matrix} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{1m}\\
+& & & \lambda_{n-1}\\
+\end{matrix} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,m-2} & \vline&M_{1,m-1}\\
 \hline
 0 & \vline & \begin{matrix}\lambda_1\lambda_2 & & &\\
 & \lambda_2\lambda_3 & &\\
 & & \ddots &\\
 & & & \lambda_{n-1}\lambda_n\\
-\end{matrix}&\vline & M_{23} & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+\end{matrix}&\vline & M_{23} & \dots &\vline & M_{2,m-2} &\vline& M_{2,m-1}\\
 \hline
 \vdots & \vline & \vdots&\vline & \vdots & \dots &\vline & \vdots &\vline& \vdots\\
 \hline
-0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+0 & \vline & 0&\vline & 0 & \dots &\vline & \ddots &\vline& M_{m-2,m-1}\\
 \hline
-0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_n\\
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_{n-1}\\
 \end{pmatrix}$$
 The above discussion gives rise to the decomposition of each $\varphi\in\mathcal{L}_{p,n}$ to two matrices, one is the diagonal matrix $$h=\begin{pmatrix}
 \lambda_1 & & & & & & & &\\
