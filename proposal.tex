@@ -231,15 +231,15 @@ $$
 each block is $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Z}_p)$, where $k$=rank$\gamma_iL_{n,p}$ and $l$=rank$\gamma_jL_{n,p}$. From this, we can understand that the blocks on the main diagonal of $M$ are square matrices, $M_{ii}\in\mathcal{M}_{n-i}$. In the next section, we present our very first conclusions, regarding these blocks. Handling $M$ by blocks is our main strategy for computing the general form of $M$, because, as we shall start showing in the next section, one block determines other blocks related to it.
 \subsection{Preliminary results}
 In a similar way to the computation on the Heisenberg group, we directly observe that any element $e_{i,i+k}\in\gamma_kL_p$ must vanish in the images of elements of higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
-M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1m-1} & \vline&M_{1m}\\
+M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_{1,n-1}\\
 \hline
-0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
 \hline
 \vdots & \vline & \vdots&\vline & \vdots & \ddots &\vline & \vdots &\vline& \vdots\\
 \hline
-0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2m-1} &\vline& M_{2m}\\
+0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
 \hline
-0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{mm}\\
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{n-1,n-1}\\
 \end{pmatrix}
 $$
 We observe that the matrix $M_{ij}$ blocks represent quotients of the form $\sfrac{\gamma_i\mathcal{L}_{p,n}}{\gamma_{i+1}\mathcal{L}_{p,n}},\sfrac{\gamma_j\mathcal{L}_{p,n}}{\gamma_{j+1}\mathcal{L}_{p,n}}$. We shall state, as a fact, that the block $M_{11}$ is either diagonal or anti-diagonal, i.e., $$M_{11}=\begin{pmatrix}
