@@ -256,10 +256,14 @@ We observe that the matrix blocks $M_{ij}$  represent quotients of the form $\sf
 Therefore, if we obtain, through our computation, that $M_{11}=M'_{11}$, then we say that $M_{11}$ is diagonal, but in the case of the anti-diagonal block $M''_{11}$, we have the following proposition,
 \begin{proposition}
 \label{prop.involution}
-Let $L_{n,p}$ be a $\mathbb{Z}$-Lie algebra, and let $\mathcal{B}_n=\{e_{12},e_{23},\dots,e_{1n}\}$ be its basis. Then, the map $\eta_n:\mathcal{B}_n\rightarrow \mathcal{B}_n$, defined by \[\eta_n(e_{ij}):=(-1)^{j-i-1}e_{n+i-j}e_{n+i-j}\] is an involution, hence, also an $L_{n,p}$-automorphism.
+Let $L_{n,p}$ be a $\mathbb{Z}$-Lie algebra, and let $\mathcal{B}_n=\{e_{12},e_{23},\dots,e_{1n}\}$ be its basis. Then, the map $\eta_n:\mathcal{B}_n\rightarrow \mathcal{B}_n$, defined by \[\eta_n(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}\] is an involution, hence, also an $L_{n,p}$-automorphism.
 \end{proposition}
 \begin{proof}
-Clearly, $\eta_n$ is the anti-diagonal $m\times m$ matrix,$$
+Clearly, we calculate $\eta^2_n(e_{ij})$ by taking $k=n+1-j$ and $l=n+1-i$. Hence, \[\eta(\eta(e_{ij}))=\eta(e_{kl})=(-1)^{l-k-1}e_{n+1-l,n+1-k}=\]\[=(-1)^{n+1-i-(n+1-j)-1}e_{n+1-(n+1-i),n+1-(n+1-j)}=(-1)^{j-i-1}e_{ij}\] 
+
+
+
+is the anti-diagonal $m\times m$ matrix,$$
 \eta_n=\begin{pmatrix}
 & & & 1 &\\
 & & 1 &\\
