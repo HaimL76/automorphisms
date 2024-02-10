@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 FEB 2024 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  9 FEB 2024 05:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,24 +589,24 @@ LaTeX Warning: Label `def.nilpotency.class' multiply defined.
 )
 \openout1 = `proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -633,90 +633,90 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
 
  (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
 
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 47
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 49
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 56.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 60.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 60.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 60.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 60.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 60.
 
 [1
 
 {C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 [3] [4] [5]
-Overfull \hbox (49.6324pt too wide) in paragraph at lines 129--135
+Overfull \hbox (49.6324pt too wide) in paragraph at lines 133--139
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7] [8] [9] [10]
-Overfull \hbox (81.726pt too wide) detected at line 276
+[6] [7] [8] [9] [10] [11]
+Overfull \hbox (81.726pt too wide) detected at line 282
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
  []
 
-[11]
-Overfull \hbox (18.62766pt too wide) detected at line 299
+
+Overfull \hbox (18.62766pt too wide) detected at line 305
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ' \OT1/cmr/m/n/12 = []
  []
 
-[12]
-Overfull \hbox (106.5394pt too wide) detected at line 349
+[12] [13]
+Overfull \hbox (106.5394pt too wide) detected at line 355
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[13] [14]
-Overfull \hbox (95.85217pt too wide) detected at line 394
+[14]
+Overfull \hbox (95.85217pt too wide) detected at line 400
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
-[15]
-Overfull \hbox (10.13109pt too wide) detected at line 459
+[15] [16]
+Overfull \hbox (10.13109pt too wide) detected at line 465
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
-[16]
+[17]
 
-LaTeX Warning: Reference `prop.integer.automorphism' on page 17 undefined on in
-put line 476.
+LaTeX Warning: Reference `prop.integer.automorphism' on page 18 undefined on in
+put line 482.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 476--476
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 482--482
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
  []
 
-[17] [18] (proposal.aux)
+[18] [19] (proposal.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -734,13 +734,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15212 strings out of 474486
- 322661 string characters out of 5743755
- 1964528 words of memory out of 5000000
- 37210 multiletter control sequences out of 15000+600000
- 577255 words of font info for 116 fonts, out of 8000000 for 9000
+ 15215 strings out of 474486
+ 322736 string characters out of 5743755
+ 1958528 words of memory out of 5000000
+ 37213 multiletter control sequences out of 15000+600000
+ 577554 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,19n,121p,1801b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,19n,121p,1778b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -753,19 +753,20 @@ la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
 sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
 fb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/isila/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Us
-ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/symbols/msbm7.pfb>
-Output written on proposal.pdf (18 pages, 305348 bytes).
+fonts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/is
+ila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
+b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msbm7.pfb>
+Output written on proposal.pdf (19 pages, 320496 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
