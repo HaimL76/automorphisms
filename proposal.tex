@@ -242,21 +242,21 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{n-1,n-1}\\
 \end{pmatrix}
 $$
-We observe that the matrix blocks $M_{ij}$  represent quotients of the form $\sfrac{\gamma_i L_{n,p}}{\gamma_{i+1} L_{n,p}},\sfrac{\gamma_j L_{n,p}}{\gamma_{j+1} L_{n,p}}$, where the row index $i$ represents the $i$th qutient in the domain of $\varphi$, and the column index $j$ represents the $j$th quotient in the image of $\varphi$, that is, the basis elements $e_{kl}$ where $l-k=i$ and where $l-k=j$, respectively. We shall state, as a fact, that for $n\geq 4$, the block $M_{11}$ is either diagonal or anti-diagonal, i.e., one of the following two forms: \[M_{11}=\begin{pmatrix}
+We observe that the matrix blocks $M_{ij}$  represent quotients of the form $\sfrac{\gamma_i L_{n,p}}{\gamma_{i+1} L_{n,p}},\sfrac{\gamma_j L_{n,p}}{\gamma_{j+1} L_{n,p}}$, where the row index $i$ represents the $i$th qutient in the domain of $\varphi$, and the column index $j$ represents the $j$th quotient in the image of $\varphi$, that is, the basis elements $e_{kl}$ where $l-k=i$ and where $l-k=j$, respectively. We shall state, as a fact, that for $n\geq 4$, the block $M_{11}$ is either diagonal or anti-diagonal, i.e., one of the following two forms: \[M'_{11}=\begin{pmatrix}
 \lambda_1 & & &\\
 & \lambda_2 & &\\
 & & \ddots &\\
 & & & \lambda_{n-1}\\
-\end{pmatrix},M'_{11}=\begin{pmatrix}
+\end{pmatrix},M''_{11}=\begin{pmatrix}
 & & & \lambda_1\\
 & & \lambda_2 &\\
 & \iddots & &\\
 \lambda_{n-1} & & &\\
 \end{pmatrix}\]
-In the case of an anti-diagonal block, we have the following proposition,
+Therefore, if we obtain, through our computation, that $M_{11}=M'_{11}$, then we say that $M_{11}$ is diagonal, but in the case of the anti-diagonal block $M''_{11}$, we have the following proposition,
 \begin{proposition}
 \label{prop.involution}
-Let $p$ be a prime number, and let $n\in\mathbb{N}$. $B_n=\{e_1,\dots,e_{m-1}\}$, where $m=\binom{n}{2}$. Then, the map $\eta_n:B_n\rightarrow B_n$, defined by $\eta_n(e_i):=e_{m-i}$ is a $\mathcal{L}_{p,n}$-automorphism, which is also an involution.
+Let $L_{n,p}$ be a $\mathbb{Z}$-Lie algebra, and let $\mathcal{B}_n=\{e_{12},e_{23},\dots,e_{1n}\}$ be its basis. Then, the map $\eta_n:\mathcal{B}_n\rightarrow \mathcal{B}_n$, defined by \[\eta_n(e_{ij}):=(-1)^{j-i-1}e_{n+i-j}e_{n+i-j}\] is an involution, hence, also an $L_{n,p}$-automorphism.
 \end{proposition}
 \begin{proof}
 Clearly, $\eta_n$ is the anti-diagonal $m\times m$ matrix,$$

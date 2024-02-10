@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  10 FEB 2024 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  10 FEB 2024 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,7 +528,11 @@ Package: arydshln 2019/02/21 v1.76
 \adl@clb=\count305
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
-) (./proposal.aux)
+) (./proposal.aux
+
+LaTeX Warning: Label `def.nilpotency.class' multiply defined.
+
+)
 \openout1 = `proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -549,8 +553,7 @@ LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
-
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
 \scratchdimen=\dimen277
@@ -610,45 +613,23 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 
 [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `LubotzkyMannSegal' on page 2 undefined on input line 6
-4.
-
-[2]
-
-LaTeX Warning: Citation `MontgomeryVaughan' on page 3 undefined on input line 7
-8.
-
-
-LaTeX Warning: Citation `GrunewaldSegalSmith' on page 3 undefined on input line
- 82.
-
-[3] [4] [5]
-
-LaTeX Warning: Citation `DuSautoyLubotzky' on page 6 undefined on input line 11
-3.
-
-
-LaTeX Warning: Citation `GrunewaldSegalSmith' on page 6 undefined on input line
- 127.
-
-
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+[4] [5]
 Overfull \hbox (49.6324pt too wide) in paragraph at lines 133--139
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7]
+[6] [7] [8] [9] [10] [11]
+Overfull \hbox (9.51408pt too wide) in paragraph at lines 259--259
+[]\OT1/cmr/bx/n/12 Proposition 2.6.1. []\OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 
+L[]$ \OT1/cmr/m/it/12 be a $\U/msb/m/n/12 Z$\OT1/cmr/m/it/12 -Lie al-ge-bra, an
+d let $\OMS/cmsy/m/n/12 B[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/1
+2 e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 g$
+ []
 
-LaTeX Warning: Citation `Gibbs' on page 8 undefined on input line 171.
 
-[8] [9]
-
-LaTeX Warning: Citation `Berman' on page 10 undefined on input line 203.
-
-[10] [11]
 Overfull \hbox (81.726pt too wide) detected at line 280
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
@@ -700,7 +681,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -729,7 +710,7 @@ y8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
 :/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 298656 bytes).
+Output written on proposal.pdf (19 pages, 298560 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
