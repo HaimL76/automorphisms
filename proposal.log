@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  10 FEB 2024 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  12 FEB 2024 09:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -622,46 +622,68 @@ OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 .
  []
 
 [6] [7] [8] [9] [10] [11]
-Overfull \hbox (9.51408pt too wide) in paragraph at lines 259--259
-[]\OT1/cmr/bx/n/12 Proposition 2.6.1. []\OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 
-L[]$ \OT1/cmr/m/it/12 be a $\U/msb/m/n/12 Z$\OT1/cmr/m/it/12 -Lie al-ge-bra, an
-d let $\OMS/cmsy/m/n/12 B[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/1
-2 e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 g$
+Overfull \hbox (48.71973pt too wide) detected at line 262
+\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
+(\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
+= (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12
+ 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n
+/12 =
  []
 
 
-Overfull \hbox (81.726pt too wide) detected at line 284
-\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 ) = \O
-ML/cmm/m/it/12 ^^Q[][] [] a[]e[][] \OT1/cmr/m/n/12 = [] [] = [] =
+Overfull \hbox (30.64902pt too wide) detected at line 262
+\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
+@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
+^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
+ e[] \OT1/cmr/m/n/12 =
  []
 
-[12]
-Overfull \hbox (18.62766pt too wide) detected at line 307
-\OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ' \OT1/cmr/m/n/12 = []
+
+Overfull \hbox (45.80693pt too wide) detected at line 264
+\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
+@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
+/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
+m/n/12 ) =
  []
 
-[13]
-Overfull \hbox (106.5394pt too wide) detected at line 357
+
+Overfull \hbox (14.06839pt too wide) detected at line 264
+\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
+@\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
+\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^Q
+[]\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
+ []
+
+
+Overfull \hbox (3.31244pt too wide) detected at line 282
+\OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
+ []
+
+[12] [13]
+Overfull \hbox (106.5394pt too wide) detected at line 333
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [14]
-Overfull \hbox (95.85217pt too wide) detected at line 402
+Overfull \hbox (95.85217pt too wide) detected at line 378
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
 [15] [16]
-Overfull \hbox (10.13109pt too wide) detected at line 467
+Overfull \hbox (10.13109pt too wide) detected at line 443
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
 [17]
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 18 undefined on in
-put line 484.
+put line 460.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 484--484
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 460--460
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -710,7 +732,7 @@ y8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
 :/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 298885 bytes).
+Output written on proposal.pdf (19 pages, 298452 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
