@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  24 FEB 2024 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  25 FEB 2024 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,7 +528,11 @@ Package: arydshln 2019/02/21 v1.76
 \adl@clb=\count305
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
-) (./proposal.aux)
+) (./proposal.aux
+
+LaTeX Warning: Label `def.nilpotency.class' multiply defined.
+
+)
 \openout1 = `proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -549,8 +553,7 @@ LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
-
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
 \scratchdimen=\dimen277
@@ -610,46 +613,16 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 
 [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `LubotzkyMannSegal' on page 2 undefined on input line 6
-4.
-
-[2]
-
-LaTeX Warning: Citation `MontgomeryVaughan' on page 3 undefined on input line 7
-8.
-
-
-LaTeX Warning: Citation `GrunewaldSegalSmith' on page 3 undefined on input line
- 82.
-
-[3] [4] [5]
-
-LaTeX Warning: Citation `DuSautoyLubotzky' on page 6 undefined on input line 11
-3.
-
-
-LaTeX Warning: Citation `GrunewaldSegalSmith' on page 6 undefined on input line
- 127.
-
-
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+[4] [5]
 Overfull \hbox (49.6324pt too wide) in paragraph at lines 133--139
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7]
-
-LaTeX Warning: Citation `Gibbs' on page 8 undefined on input line 171.
-
-[8] [9]
-
-LaTeX Warning: Citation `Berman' on page 10 undefined on input line 203.
-
-[10] [11]
-Overfull \hbox (48.71973pt too wide) detected at line 262
+[6] [7] [8] [9] [10] [11]
+Overfull \hbox (48.71973pt too wide) detected at line 263
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -660,7 +633,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 262
+Overfull \hbox (30.64902pt too wide) detected at line 263
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -668,7 +641,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 262
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 264
+Overfull \hbox (45.80693pt too wide) detected at line 265
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -676,7 +649,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 264
+Overfull \hbox (14.06839pt too wide) detected at line 265
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -685,32 +658,32 @@ Overfull \hbox (14.06839pt too wide) detected at line 264
  []
 
 
-Overfull \hbox (5.31241pt too wide) detected at line 282
+Overfull \hbox (5.31241pt too wide) detected at line 283
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[12] [13]
-Overfull \hbox (106.5394pt too wide) detected at line 333
+[12] [13] [14]
+Overfull \hbox (106.5394pt too wide) detected at line 334
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[14] [15]
-Overfull \hbox (95.85217pt too wide) detected at line 378
+[15]
+Overfull \hbox (95.85217pt too wide) detected at line 379
 \OML/cmm/m/it/12 h[] \OT1/cmr/m/n/12 = []
  []
 
 [16]
-Overfull \hbox (10.13109pt too wide) detected at line 443
+Overfull \hbox (10.13109pt too wide) detected at line 444
 \OML/cmm/m/it/12 gng[] \OT1/cmr/m/n/12 = [] [] [] =
  []
 
 [17]
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 18 undefined on in
-put line 460.
+put line 461.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 460--460
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 461--461
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -730,7 +703,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -759,7 +732,7 @@ y8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
 :/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 301515 bytes).
+Output written on proposal.pdf (19 pages, 302627 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
