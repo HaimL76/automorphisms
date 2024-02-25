@@ -332,7 +332,8 @@ This means that every $M=\varphi\in L_{n,p}$ is of the form,$$M=\begin{pmatrix}
 \hline
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_{n-1}\\
 \end{pmatrix}$$
-The above discussion gives rise to the decomposition of each $\varphi\in L_{p,n}$ to two matrices, one is the diagonal matrix $$h=\begin{pmatrix}
+The above discussion gives rise to the decomposition of each $\varphi\in G(
+\mathbb{Q}_p)$ to two matrices, one is the diagonal matrix $$H=\begin{pmatrix}
 \lambda_1 & & & & & & & &\\
 & \lambda_2 & & & & & & &\\
 & & \ddots & & & & & &\\
@@ -345,7 +346,7 @@ The above discussion gives rise to the decomposition of each $\varphi\in L_{p,n}
 & & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-and the other matrix is $$n=\begin{pmatrix}
+and the other matrix is $$N=\begin{pmatrix}
 1 &0 &\dots &0 &\vline &* &\dots &* &\vline& *\\
 0& 1 &\vdots &0 &\vline&* &\dots &* &\vline&*\\
 \vdots& \dots& \ddots & 0&\vline& *& \dots& *&\vline & *\\
@@ -361,24 +362,8 @@ $$
 So, we have the following proposition,
 \begin{proposition}
 \label{prop.automorphism.matrix,decomposition}
-Let $p$ be a prime number, and let $n\in\mathbb{N}$, and let $M=\varphi\in\mathcal{L}_{p,n}$. Then, $M=\varphi=nh$, where $n$ and $h$ are of the above form.
+Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let $M$ be the coefficient matrix of $\varphi$. Then, $M$ has a unique decomposition $M=NH$, where $N$ and $H$ are matrices of the form defined above.
 \end{proposition}
-\begin{proof}
-Trivially, $h$ is an invertible matrix, and its inverse is the matrix $$h^{-1}=\begin{pmatrix}
-\lambda_1^{-1} & & & & & & & &\\
-& \lambda_2^{-1} & & & & & & &\\
-& & \ddots & & & & & &\\
-& & & \lambda_{n-1}^{-1} & & & & &\\
-& & & & (\lambda_1\lambda_2)^{-1} & & & &\\
-& & & & & (\lambda_2\lambda_3)^{-1} & & &\\
-& & & & & & \ddots & &\\
-& & & & & & & (\lambda_{n-2}\lambda_{n-1})^{-1} & &\\
-& & & & & & & & \ddots &\\
-& & & & & & & & & (\lambda_1\lambda_2\cdots\lambda_{n-1})^{-1}\\
-\end{pmatrix}
-$$
-Easy to check that $n=Mh^{-1}$ is also an invertible matrix, with $1$ on the main diagonal, and $0$ below it.
-\end{proof}
 We observe that all the matrices with non-zero elements on the main diagonal, and $0$ everywhere else form an abelian subgroup of $G_n(\mathbb{Q}_p)$, since multiplying such matrices yields a matrix of the same specification. Let $$h_{\alpha}=\begin{pmatrix}
 \alpha_1 & & &\\
 & \alpha_2 & &\\
