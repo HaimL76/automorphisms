@@ -332,21 +332,22 @@ This means that every $M=\varphi\in L_{n,p}$ is of the form,$$M=\begin{pmatrix}
 \hline
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_{n-1}\\
 \end{pmatrix}$$
-The above discussion gives rise to the decomposition of each $\varphi\in G(
-\mathbb{Q}_p)$ to two matrices, one is the diagonal matrix $$H=\begin{pmatrix}
-\lambda_1 & & & & & & & &\\
-& \lambda_2 & & & & & & &\\
-& & \ddots & & & & & &\\
-& & & \lambda_{n-1} & & & & &\\
-& & & & \lambda_1\lambda_2 & & & &\\
-& & & & & \lambda_2\lambda_3 & & &\\
-& & & & & & \ddots & &\\
-& & & & & & & \lambda_{n-2}\lambda_{n-1} & &\\
-& & & & & & & & \ddots &\\
-& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
+The above discussion gives rise to the basic strategy of decomposing each matrix $M=\varphi\in G(
+\mathbb{Q}_p)$ into simpler matrices.
+We start by presenting two forms of matrices.
+Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}_p$-Lie algebra associated with $U_n(\mathbb{Z}_p)$, and let $G_n(\mathbb{Q}_p)$ be its group of automorphisms. We denote by $H$ a diagonal $m\times m$ matrix of the form, \[N=\begin{pmatrix}
+\alpha_1 & & & & & & & & \\
+ &\alpha_2 & & & & & & & \\
+ & & \ddots & & & & & & \\
+& & & & & & & & \\
+& & & & & & & & \\
+ & & & & & & \ddots & & \\
+ & & & & & & & \alpha_{m-1}& \\
+ & & & & & & & & \alpha_m\\
 \end{pmatrix}
-$$
-and the other matrix is $$N=\begin{pmatrix}
+\]
+where $m=\binom{n}{2}$ and $\alpha_1,\alpha_2,\dots,\alpha_m\neq 0\in\mathbb{Q}_p$.
+We also denote by $N$ a unipotent $m\times m$ matrix of the form, \[N=\begin{pmatrix}
 1 &0 &\dots &0 &\vline &* &\dots &* &\vline& *\\
 0& 1 &\vdots &0 &\vline&* &\dots &* &\vline&*\\
 \vdots& \dots& \ddots & 0&\vline& *& \dots& *&\vline & *\\
@@ -358,35 +359,32 @@ and the other matrix is $$N=\begin{pmatrix}
 \hline
 0&\dots &0 & 0& \vline & 0 & 0 & 0 &\vline &1\\
 \end{pmatrix}
-$$
-So, we have the following proposition,
+\]
+where the main diagonal blocks of $N$ are $I_{n-1},I_{n-2},\dots,I_1$.
+We have the following set of propositions, one easily checks that they are correct,
 \begin{proposition}
-\label{prop.automorphism.matrix,decomposition}
-Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let $M$ be the coefficient matrix of $\varphi$. Then, $M$ has a unique decomposition $M=NH$, where $N$ and $H$ are matrices of the form defined above.
+\label{prop.automorphism.subgroup.h}
+Let $H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $H_n(\mathbb{Q}_p)$ is an abeliean subgroup of $G_n(\mathbb{Q}_p)$
 \end{proposition}
-We observe that all the matrices with non-zero elements on the main diagonal, and $0$ everywhere else form an abelian subgroup of $G_n(\mathbb{Q}_p)$, since multiplying such matrices yields a matrix of the same specification. Let $$h_{\alpha}=\begin{pmatrix}
-\alpha_1 & & &\\
-& \alpha_2 & &\\
-& & \ddots &\\
-& & & \alpha_m\\
-\end{pmatrix},h_{\beta}=\begin{pmatrix}
-\beta_1 & & &\\
-& \beta_2 & &\\
-& & \ddots &\\
-& & & \beta_m\\
-\end{pmatrix}$$
-Then, $$h_{\alpha}h_{\beta}=\begin{pmatrix}
-\alpha_1\beta_1 & & &\\
-& \alpha_2\beta_2 & &\\
-& & \ddots &\\
-& & & \alpha_m\beta_m\\
-\end{pmatrix}=\begin{pmatrix}
-\beta_1\alpha_1 & & &\\
-& \beta_2\alpha_2 & &\\
-& & \ddots &\\
-& & & \beta_m\alpha_m\\
-\end{pmatrix}=h_{\beta}h_{\alpha}
-$$
+\begin{proposition}
+\label{prop.automorphism.subgroup.n}
+Let $N_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $N$, then $N_n(\mathbb{Q}_p)$ is a normal subgroup of $G_n(\mathbb{Q}_p)$
+\end{proposition}
+\begin{proposition}
+\label{prop.automorphism.matrix.decomposition}
+Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let $M$ be the coefficient matrix of $\varphi$, as described above. Then, $M$ has a unique decomposition $M=NH$, where \[H=\begin{pmatrix}
+\lambda_1 & & & & & & & & \\
+ &\lambda_2 & & & & & & & \\
+ & & \ddots & & & & & & \\
+& & & \lambda_{n-1} & & & & & \\
+& & & & \lambda_1\lambda_2 & & & & \\
+ & & & & & \lambda_2\lambda_3 & & & \\
+ & & & & & & \ddots & & \\
+ & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
+\end{pmatrix}
+\]
+that is, $H$ is a diagonal matrix with the same main diagonal as $M$, and $N=MH^{-1}$ is a unipotent matrix of the form described above.
+\end{proposition}
 Obviously, this subgroup, which we shall denote as $H<G_n(\mathbb{Q}_p)$ is not normal, as we observe by taking the $n$ matrix described above, and multiplying $A=nhn^{-1}$, clearly $A\notin H$. On the other hand, the set of all $n$ matrices if a normal subgroup of $G_n(\mathbb{Q}_p)$, because if $$n_{\alpha}=\begin{pmatrix}
 1 & \alpha_{12} & \alpha_{13} & \dots & \alpha_{1m}\\
 & 1 & \alpha_{23} & \dots & \alpha_{2m}\\
