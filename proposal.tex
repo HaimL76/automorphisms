@@ -261,7 +261,7 @@ Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}$-Lie algebra associated with $U_n(\ma
 \end{proposition}
 \begin{proof}
 Clearly, we calculate $\eta_n^2(e_{ij})$ by taking $k=n+1-j$ and $l=n+1-i$. Hence, \[\eta_n(\eta_n(e_{ij}))=\eta_n((-1)^{j-i-1}e_{kl})=(-1)^{j-i-1}\eta_n(e_{ij})=(-1)^{j-i-1}(-1)^{l-k-1}e_{n+1-l,n+1-k}=\]\[=(-1)^{j-i-1}(-1)^{n+1-i-(n+1-j)-1}e_{n+1-(n+1-i),n+1-(n+1-j)}=(-1)^{j-i-1}(-1)^{j-i-1}e_{ij}=\]\[=e_{ij}\]
-To complete the prove, we need to show that $\eta_n$ is, indeed, a homomorphism,
+To complete the proof, we need to show that $\eta_n$ is, indeed, a homomorphism,
 \[[\eta_n(e_{ij}),\eta_n(e_{jk})]=[(-1)^{j-i-1}e_{n+1-j,n+1-i},(-1)^{k-j-1}e_{n+1-k,n+1-j}]=\]\[=(-1)^{j-i-1}(-1)^{k-j-1}[e_{n+1-j,n+1-i},e_{n+1-k,n+1-j}]=(-1)^{j-i-1+k-j-1}(-e_{n+1-k,n+1-i})=\]\[=(-1)^{k-i-2}(-1)e_{n+1-k,n+1-i}=(-1)^{k-i-1}e_{n+1-k,n+1-i}=\eta_n(e_{ik})=\eta_n([e_{i,j},e_{j,k}])\]
 \end{proof}
 From this proposition, we get that if $M_{11}=M''_{11}$, we can turn $\varphi$ to be $\eta_n\varphi$, thus changing $M_{11}$ to the restriction of $\eta_n$ on $M''_{11}$, which becomes a diagonal block. Therefore, without loss of generality, we can say that $M_{11}$ is always diagonal. The importance of this fact is well explained in the following proposition,
@@ -364,7 +364,7 @@ where the main diagonal blocks of $N$ are $I_{n-1},I_{n-2},\dots,I_1$.
 We have the following set of propositions, one easily checks that they are correct,
 \begin{proposition}
 \label{prop.automorphism.subgroup.h}
-Let $H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $H_n(\mathbb{Q}_p)$ is an abeliean subgroup of $G_n(\mathbb{Q}_p)$
+Let $H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $H_n(\mathbb{Q}_p)$ is an abelian subgroup of $G_n(\mathbb{Q}_p)$
 \end{proposition}
 \begin{proposition}
 \label{prop.automorphism.subgroup.n}
@@ -385,59 +385,11 @@ Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let
 \]
 that is, $H$ is a diagonal matrix with the same main diagonal as $M$, and $N=MH^{-1}$ is a unipotent matrix of the form described above.
 \end{proposition}
-Obviously, this subgroup, which we shall denote as $H<G_n(\mathbb{Q}_p)$ is not normal, as we observe by taking the $n$ matrix described above, and multiplying $A=nhn^{-1}$, clearly $A\notin H$. On the other hand, the set of all $n$ matrices if a normal subgroup of $G_n(\mathbb{Q}_p)$, because if $$n_{\alpha}=\begin{pmatrix}
-1 & \alpha_{12} & \alpha_{13} & \dots & \alpha_{1m}\\
-& 1 & \alpha_{23} & \dots & \alpha_{2m}\\
-& & \ddots &  \vdots& \vdots &\\
-& &  &  1& \alpha_{m-1m} &\\
-& & & & 1\\
-\end{pmatrix},n_{\beta}=\begin{pmatrix}
-1 & \beta_{12} & \beta_{13} & \dots & \beta_{1m}\\
-& 1 & \beta_{23} & \dots & \beta_{2m}\\
-& & \ddots &  \vdots& \vdots &\\
-& &  &  1& \beta_{m-1m} &\\
-& & & & 1\\
-\end{pmatrix}
-$$
-Then $$n_\alpha n_\beta=\begin{pmatrix}
-1 & \alpha_{12}+\beta_{12} & * & \dots & *\\
-& 1 & * & \dots & *\\
-& & \ddots &  \vdots& \vdots &\\
-& &  &  1& \alpha_{m-1m}+\beta_{m-1m} &\\
-& & & & 1\\
-\end{pmatrix}
-$$
-which proves that all the $n$ matrices form a subgroup, which we shall denote by $N\in G_n(\mathbb{Q}_p)$.
-taking any matrix, $g\in G_n(\mathbb{Q}_p)$, and taking the product $A=gng^{-1}$, if we look at the main diagonals, we see that the product is of the general form $$
-gng^{-1}=\begin{pmatrix}
-\lambda_1 & a_{12} & \dots & a_{1m}\\
-0 & \lambda_2 & \dots & a_{2m}\\
-& & \ddots &*\\
-& & & \lambda_m\\
-\end{pmatrix}\begin{pmatrix}
-1 & b_{12} & \dots & b_{1m}\\
-0 & 1 & \dots & b_{2m}\\
-& & \ddots &*\\
-& & & 1\\
-\end{pmatrix}\begin{pmatrix}
-\lambda_1^{-1} & c_{12} & \dots & c_{1m}\\
-0 & \lambda_2^{-1} & \dots & c_{2m}\\
-& & \ddots &*\\
-& & & \lambda_m^{-1}\\
-\end{pmatrix}=$$
-$$
-\begin{pmatrix}
-1 & d_{12} & \dots & d_{1m}\\
-0 & 1 & \dots & d_{2m}\\
-& & \ddots &*\\
-& & & 1\\
-\end{pmatrix}\in N
-$$
-So, $N\lhd G_n(\mathbb{Q}_p)$ is a normal subgroup.
-This discussion gives rise to the decomposition of $G_n(\mathbb{Q}_p)$. 
-Since only $N$ is a normal subgroup of $G_n(\mathbb{Q}_p)$, we decompose $G_n(\mathbb{Q}_p)$ to a semi-direct product, $G\cong N\rtimes H$, where the map $\phi:H\rightarrow Aut(N)$, given by $\phi(h)(n):=hnh^{-1}$, for every $h\in H$, and $n\in N$, is a homomorphism, as we can see by the fact that for every $h_1,h_2\in H$, and for every $n\in N$, $\phi(h_1)\phi(h_2)(n)=h_1n(h_2nh_2^{-1})h_1^{-1}=h_1h_2nh_2^{-1}h_1^{-1}=(h_1h_2)n(h_1h_2)^{-1}=\phi(h1h2)
-(n)$
-This means that calculating the integral, for $G_n(\mathbb{Q}_p)$, reduces to calculating a double integral, $\displaystyle\int_{N\rtimes H}$. We mean to show in the research that the normal subgroup $N$ can itself be decomposed to a semi-direct product of several subgroups, thus simplyifing the integration.
+It is readily seen that $H_n(\mathbb{Q}_p)$ is not a normal subgroup, thus we have the following important result,
+\begin{corollary}
+Let $G_n(\mathbb{Q}_p)$ be the group of $\mathcal{L}_{n,p}$-automorphisms, and let $\phi:H_n(\mathbb{Q}_p)\rightarrow Aut(N_n(\mathbb{Q}_p))$ be the homomorphism defined by $\phi(H)(N):=HNH^{-1}$, for every $H\in H_n(\mathbb{Q}_p)$ and every $N\in N_n(\mathbb{Q}_p)$. Then, $G_n(\mathbb{Q}_p)=N_n(\mathbb{Q}_p)\rtimes_{\phi}H_n(\mathbb{Q}_p)$, in words, $G_n(\mathbb{Q}_p)$ decomposes into an inner semidirect product of $N_n(\mathbb{Q}_p)$ and $H_n(\mathbb{Q}_p)$, induced by conjugation.
+\end{corollary}
+This means that calculating the integral, for $G_n(\mathbb{Q}_p)$, reduces to calculating a double integral, $\displaystyle\int_{N\rtimes H}$. We mean to show in the research that the normal subgroup $N$ can itself be decomposed to a semi-direct product of several subgroups, thus simplifying the integration.
 
 
 
