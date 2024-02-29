@@ -229,9 +229,8 @@ M_{21} & \vline & M_{22}&\vline & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
 M_{n-1,1} & \vline & M_{n-1,2}&\vline & \dots &\vline & M_{n-1,n-2} &\vline& M_{n-1,n-1}\\
 \end{pmatrix}
 $$
-each block is denoted by $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Z}_p)$, where $k$=rank$\sfrac{\gamma_i L_{n,p}}{\gamma_{i+1} L_{n,p}}$ and $l$=rank$\sfrac{\gamma_j L_{n,p}}{\gamma_{j+1} L_{n,p}}$. From this, we can understand that the blocks on the main diagonal of $M$, which are the induced quotient maps defined above, are square matrices $\overline{\varphi_i}=M_{ii}\in\mathcal{M}_{n-i}$. In the next section, we present our very first conclusions, regarding these blocks. Handling $M$ by blocks is our main strategy for computing the general form of $M$, because, as we shall start showing in the next section, one block determines other blocks related to it.
-\subsection{Preliminary results}
-In a similar way to the computation on the Heisenberg group, we directly observe that any element $e_{i,i+k}\in\gamma_kL_p$ must vanish in the images of elements of higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
+each block is denoted by $M_{ij}\in\mathcal{M}_{k\times l}(\mathbb{Z}_p)$, where $k$=rank$\sfrac{\gamma_i L_{n,p}}{\gamma_{i+1} L_{n,p}}$ and $l$=rank$\sfrac{\gamma_j L_{n,p}}{\gamma_{j+1} L_{n,p}}$. From this, we can understand that the blocks on the main diagonal of $M$, which are the induced quotient maps defined above, are square matrices $\overline{\varphi_i}=M_{ii}\in\mathcal{M}_{n-i}$. In the next section, we present our very first conclusions, regarding these blocks. Dividing $M$ into blocks is our main strategy for computing the general form of the $\mathcal{L}_{n,p}$-automorphisms, because, as we shall start showing in the next section of preliminary results, one block determines other blocks related to it.
+A trivial result, as seen above in the computation on the Heisenberg group, is that any element $e_{i,i+k}\in\gamma_kL_p$ must vanish in the images of elements of higher nilpotency classes, i.e. $\varphi(e_{i,i+l})$, where $l>k$, which means that all the elements under every squared block on the main diagonal must be zero, so $M$ has the form, $$M=\begin{pmatrix}
 M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_{1,n-1}\\
 \hline
 0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
@@ -243,6 +242,7 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{n-1,n-1}\\
 \end{pmatrix}
 $$
+\subsection{Preliminary results}
 We observe that the matrix blocks $M_{ij}$  represent quotients of the form $\sfrac{\gamma_i L_{n,p}}{\gamma_{i+1} L_{n,p}},\sfrac{\gamma_j L_{n,p}}{\gamma_{j+1} L_{n,p}}$, where the row index $i$ represents the $i$th qutient in the domain of $\varphi$, and the column index $j$ represents the $j$th quotient in the image of $\varphi$, that is, the basis elements $e_{kl}$ where $l-k=i$ and where $l-k=j$, respectively. We shall state, as a fact, that for $n\geq 4$, the block $M_{11}$ is either diagonal or anti-diagonal, i.e., one of the following two forms: \[M'_{11}=\begin{pmatrix}
 \lambda_1 & & &\\
 & \lambda_2 & &\\
@@ -302,7 +302,7 @@ M=\begin{pmatrix}
 & & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Z}_p$, then, $\det A_k=\prod_{i=1}^{k}\lambda_i^{i(k+1-i)}$.
+where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det A_k=\prod_{i=1}^{k}\lambda_i^{i(k+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
@@ -361,14 +361,14 @@ We also denote by $N$ a unipotent $m\times m$ matrix of the form, \[N=\begin{pma
 \end{pmatrix}
 \]
 where the main diagonal blocks of $N$ are $I_{n-1},I_{n-2},\dots,I_1$.
-We have the following set of propositions, one easily checks that they are correct,
+We have the following set of propositions, one easily checks that all of them are correct,
 \begin{proposition}
 \label{prop.automorphism.subgroup.h}
-Let $H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $H_n(\mathbb{Q}_p)$ is an abelian subgroup of $G_n(\mathbb{Q}_p)$
+Let $\mathcal{H}=H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $\mathcal{H}$ is an abelian subgroup of $G_n(\mathbb{Q}_p)$
 \end{proposition}
 \begin{proposition}
 \label{prop.automorphism.subgroup.n}
-Let $N_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $N$, then $N_n(\mathbb{Q}_p)$ is a normal subgroup of $G_n(\mathbb{Q}_p)$
+Let $\mathcal{N}=N_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $N$, then $\mathcal{N}$ is a normal subgroup of $G_n(\mathbb{Q}_p)$
 \end{proposition}
 \begin{proposition}
 \label{prop.automorphism.matrix.decomposition}
@@ -385,11 +385,15 @@ Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let
 \]
 that is, $H$ is a diagonal matrix with the same main diagonal as $M$, and $N=MH^{-1}$ is a unipotent matrix of the form described above.
 \end{proposition}
-It is readily seen that $H_n(\mathbb{Q}_p)$ is not a normal subgroup. In addition, $H_n(\mathbb{Q}_p)\cup N_n(\mathbb{Q}_p)=G_n(\mathbb{Q}_p)$, as a disjunction of sets , and $H_n(\mathbb{Q}_p)\cap N_n(\mathbb{Q}_p)=\{I_m\}$, thus we have the following important result,
+It is readily seen that $\mathcal{H}$ is not a normal subgroup. In addition, $\mathcal{H}\cup \mathcal{N}=G_n(\mathbb{Q}_p)$, as a union of sets , and $\mathcal{H}\cap \mathcal{N}=\{I_m\}$, thus we have the following important result,
 \begin{corollary}
-Let $G_n(\mathbb{Q}_p)$ be the group of $\mathcal{L}_{n,p}$-automorphisms, and let $\phi:H_n(\mathbb{Q}_p)\rightarrow Aut(N_n(\mathbb{Q}_p))$ be the homomorphism defined by $\phi(H)(N):=HNH^{-1}$, for every $H\in H_n(\mathbb{Q}_p)$ and every $N\in N_n(\mathbb{Q}_p)$. Then, $G_n(\mathbb{Q}_p)=N_n(\mathbb{Q}_p)\rtimes_{\phi}H_n(\mathbb{Q}_p)$, in words, $G_n(\mathbb{Q}_p)$ decomposes into an inner semidirect product of $N_n(\mathbb{Q}_p)$ and $H_n(\mathbb{Q}_p)$, induced by conjugation.
+Let $G_n(\mathbb{Q}_p)$ be the group of $\mathcal{L}_{n,p}$-automorphisms, and let $\phi:\mathcal{H}\rightarrow Aut(\mathcal{N})$ be the homomorphism defined by $\phi(H)(N):=HNH^{-1}$, for every $H\in \mathcal{H}$ and every $N\in \mathcal{N}$. Then, $G_n(\mathbb{Q}_p)=\mathcal{N}\rtimes_{\phi}\mathcal{H}$, in words, $G_n(\mathbb{Q}_p)$ decomposes into an inner semidirect product of $\mathcal{N}$ and $\mathcal{H}$, induced by conjugation.
 \end{corollary}
-This corollary is highly important for our research because it enables us to simplify the domain of integration, for the $p$-adic integral that we aim to calculate. As we saw earlier, in order to calculate $\hat{\zeta_{L,p}}(s)$, we need to calculate the $p$-adic integral $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$, which is foreseen to be a complicated task. We can use the identity found above, and claim that $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu=\displaystyle\int_{N_n(\mathbb{Z}_p)\rtimes_{\phi}H_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$.
+This corollary is highly important for our research because it enables us to simplify the domain of integration, for the $p$-adic integral that we aim to calculate. As we saw earlier, in order to calculate $\hat{\zeta_{L,p}}(s)$, we need to calculate the $p$-adic integral $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$, which is foreseen to be a complicated task. The next step, after calculating the general form of the $\mathcal{L}_{n,p}$-automorphisms, would be to identify $G_n(\mathbb{Z}_p)$ as a subgroup of $G_n(\mathbb{Q}_p)$. 
+
+
+
+We can use the identity found above, and observe that $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu=\displaystyle\int_{N_n(\mathbb{Z}_p)\rtimes_{\phi}H_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$.
 
 that calculating the integral, for $G_n(\mathbb{Q}_p)$, reduces to calculating a double integral, $\displaystyle\int_{N\rtimes H}$. We mean to show in the research that the normal subgroup $N$ can itself be decomposed to a semi-direct product of several subgroups, thus simplifying the integration.
 
