@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  2 MAR 2024 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  3 MAR 2024 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,18 +668,12 @@ Overfull \hbox (112.78976pt too wide) detected at line 335
  []
 
 [15] [16]
-Overfull \hbox (8.07301pt too wide) in paragraph at lines 403--404
-[]\OT1/cmr/m/n/12 We can use the iden-tity found above, and ob-serve that $[][]
- \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 d
-^^V \OT1/cmr/m/n/12 =
- []
-
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 17 undefined on in
-put line 409.
+put line 399.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 409--409
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 399--399
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -728,7 +722,7 @@ y8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
 :/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 304113 bytes).
+Output written on proposal.pdf (19 pages, 304867 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
