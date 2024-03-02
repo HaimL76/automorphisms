@@ -319,19 +319,19 @@ This means that every $M=\varphi\in L_{n,p}$ is of the form,$$M=\begin{pmatrix}
 & \lambda_2 & &\\
 & & \ddots &\\
 & & & \lambda_{n-1}\\
-\end{matrix} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,m-2} & \vline&M_{1,m-1}\\
+\end{matrix} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_{1,n-1}\\
 \hline
 0 & \vline & \begin{matrix}\lambda_1\lambda_2 & & &\\
 & \lambda_2\lambda_3 & &\\
 & & \ddots &\\
-& & & \lambda_{n-1}\lambda_n\\
-\end{matrix}&\vline & M_{23} & \dots &\vline & M_{2,m-2} &\vline& M_{2,m-1}\\
+& & & \lambda_{n-2}\lambda_{n-1}\\
+\end{matrix}&\vline & M_{23} & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
 \hline
 \vdots & \vline & \vdots&\vline & \vdots & \dots &\vline & \vdots &\vline& \vdots\\
 \hline
-0 & \vline & 0&\vline & 0 & \dots &\vline & \ddots &\vline& M_{m-2,m-1}\\
+0 & \vline & 0&\vline & 0 & \dots &\vline & \ddots &\vline& M_{n-2,n-1}\\
 \hline
-0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda1\lambda2\cdots\lambda_{n-1}\\
+0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}$$
 The above discussion gives rise to the basic strategy of decomposing each matrix $M=\varphi\in G(
 \mathbb{Q}_p)$ into simpler matrices.
@@ -390,7 +390,13 @@ It is readily seen that $\mathcal{H}$ is not a normal subgroup. In addition, $\m
 \begin{corollary}
 Let $G_n(\mathbb{Q}_p)$ be the group of $\mathcal{L}_{n,p}$-automorphisms, and let $\phi:\mathcal{H}\rightarrow Aut(\mathcal{N})$ be the homomorphism defined by $\phi(H)(N):=HNH^{-1}$, for every $H\in \mathcal{H}$ and every $N\in \mathcal{N}$. Then, $G_n(\mathbb{Q}_p)=\mathcal{N}\rtimes_{\phi}\mathcal{H}$, in words, $G_n(\mathbb{Q}_p)$ decomposes into an inner semidirect product of $\mathcal{N}$ and $\mathcal{H}$, induced by conjugation.
 \end{corollary}
-This corollary is highly important for our research because it enables us to simplify the domain of integration, for the $p$-adic integral that we aim to calculate. As we saw earlier, in order to calculate $\hat{\zeta_{L,p}}(s)$, we need to calculate the $p$-adic integral $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$, which is foreseen to be a complicated task. The next step, after calculating the general form of the $\mathcal{L}_{n,p}$-automorphisms, would be to identify $G_n(\mathbb{Z}_p)$ as a subgroup of $G_n(\mathbb{Q}_p)$. 
+This corollary is highly important for our research because it enables us to simplify the domain of integration, for the $p$-adic integral that we aim to calculate. As we saw earlier, the calculation of $\hat{\zeta_{L_{n,p}}}$ requires computing $G_n(\mathbb{Z}_p)$ first. Assuming we have already computed $G_n(\mathbb{Q}_p)$, based on the strategy that we have presented above, we need to identify $Q_n(\mathbb{Z}_p)$ as a subgroup of $G_n(\mathbb{Q}_p)$
+
+
+
+
+
+$\hat{\zeta_{L,p}}(s)$, we need to calculate the $p$-adic integral $\displaystyle\int_{G_n(\mathbb{Z}_p)\varphi}|\det\varphi|_p^sd\mu$, which is foreseen to be a complicated task. The next step, after calculating the general form of the $\mathcal{L}_{n,p}$-automorphisms, would be to identify $G_n(\mathbb{Z}_p)$ as a subgroup of $G_n(\mathbb{Q}_p)$. 
 
 
 
