@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  3 MAR 2024 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  4 MAR 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,8 +621,8 @@ S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7] [8] [9] [10] [11]
-Overfull \hbox (48.71973pt too wide) detected at line 265
+[6] [7] [8] [9] [10] [11] [12]
+Overfull \hbox (48.71973pt too wide) detected at line 272
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -633,15 +633,15 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 265
+Overfull \hbox (30.64902pt too wide) detected at line 272
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
  e[] \OT1/cmr/m/n/12 =
  []
 
-[12]
-Overfull \hbox (45.80693pt too wide) detected at line 267
+
+Overfull \hbox (45.80693pt too wide) detected at line 274
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -649,7 +649,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 267
+Overfull \hbox (14.06839pt too wide) detected at line 274
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -658,22 +658,22 @@ Overfull \hbox (14.06839pt too wide) detected at line 267
  []
 
 
-Overfull \hbox (5.31241pt too wide) detected at line 285
+Overfull \hbox (5.31241pt too wide) detected at line 292
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [13] [14]
-Overfull \hbox (112.78976pt too wide) detected at line 336
+Overfull \hbox (112.78976pt too wide) detected at line 343
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [15] [16] [17]
 
 LaTeX Warning: Reference `prop.integer.automorphism' on page 18 undefined on in
-put line 400.
+put line 407.
 
 
-Overfull \hbox (17.98946pt too wide) in paragraph at lines 400--400
+Overfull \hbox (17.98946pt too wide) in paragraph at lines 407--407
 [] []  [] [] [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h[]; h[];
  [] ; h[]; h[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (\OML/cmm/m/it
 /12 ^^V[]; ^^V[]; [] ; ^^V[]; ^^V[]\OT1/cmr/m/n/12 )$, where
@@ -699,7 +699,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15267 strings out of 474934
  317969 string characters out of 5763815
- 1949801 words of memory out of 5000000
+ 1952801 words of memory out of 5000000
  36525 multiletter control sequences out of 15000+600000
  584004 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -724,7 +724,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (20 pages, 324105 bytes).
+Output written on proposal.pdf (20 pages, 324730 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
