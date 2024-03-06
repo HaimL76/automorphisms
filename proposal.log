@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  5 MAR 2024 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  6 MAR 2024 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,8 +621,13 @@ S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (48.71973pt too wide) detected at line 272
+[6] [7] [8] [9] [10] [11]
+Overfull \hbox (1.46866pt too wide) detected at line 249
+ [] 
+ []
+
+[12]
+Overfull \hbox (48.71973pt too wide) detected at line 278
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -633,7 +638,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 272
+Overfull \hbox (30.64902pt too wide) detected at line 278
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -641,7 +646,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 272
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 274
+Overfull \hbox (45.80693pt too wide) detected at line 280
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -649,7 +654,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 274
+Overfull \hbox (14.06839pt too wide) detected at line 280
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -657,18 +662,18 @@ Overfull \hbox (14.06839pt too wide) detected at line 274
 []\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  []
 
-
-Overfull \hbox (5.31241pt too wide) detected at line 292
+[13]
+Overfull \hbox (5.31241pt too wide) detected at line 298
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[13] [14] [15]
-Overfull \hbox (112.78976pt too wide) detected at line 343
+[14] [15]
+Overfull \hbox (112.78976pt too wide) detected at line 349
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [16] [17]
-Overfull \hbox (6.76764pt too wide) in paragraph at lines 401--402
+Overfull \hbox (6.76764pt too wide) in paragraph at lines 407--408
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 . 
  []
 
@@ -689,7 +694,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15266 strings out of 474934
  317942 string characters out of 5763815
- 1951801 words of memory out of 5000000
+ 1946801 words of memory out of 5000000
  36524 multiletter control sequences out of 15000+600000
  584004 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -714,7 +719,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 322270 bytes).
+Output written on proposal.pdf (19 pages, 323034 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
