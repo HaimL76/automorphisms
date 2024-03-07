@@ -303,21 +303,26 @@ By induction. Given some $1<i\leq n-1$, we assume this is true for all $M_{kk}$,
 \end{proof}
 \begin{proposition}
 \label{prop.h.matrix.determinant}
-Let $n\in\mathbb{N}$, and let $$
+Let $n=2,3,4,\dots$, and let $$
 A_n=\begin{pmatrix}
-\lambda_1 & & & & & & & & &\\
-& \lambda_2 & & & & & & & &\\
-& & \ddots & & & & & & &\\
-& & & \lambda_{n-1} & & & & & &\\
-& & & & \lambda_1\lambda_2 & & & &\\
-& & & & & \lambda_2\lambda_3 & & &\\
-& & & & & & \ddots & &\\
-& & & & & & & \lambda_{n-2}\lambda_{n-1} &\\
-& & & & & & & & \ddots &\\
-& & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
+\begin{matrix}\lambda_1 & & &\\
+& \lambda_2 & &\\
+& & \ddots &\\
+& & & \lambda_{n-1}\\
+\end{matrix} & \vline & &\vline &  &  & \vline&\\
+\hline
+ & \vline & \begin{matrix}\lambda_1\lambda_2 & & &\\
+& \lambda_2\lambda_3 & &\\
+& & \ddots &\\
+& & & \lambda_{n-2}\lambda_{n-1}\\
+\end{matrix}&\vline &  & &\vline& \\
+\hline
+ & \vline & &\vline &  & \ddots &\vline& \\
+\hline
+ & \vline &  &\vline &  &  &\vline& \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-be the diagonal $m\times m$ matrix of $n-1$ scalars, where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\neq 0\in\mathbb{Q}_p$ and $m=\binom{n}{2}$, and $A_n$ is divided to  then $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+be the diagonal $m\times m$ matrix of $n-1$ scalars $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\neq 0\in\mathbb{Q}_p$, where $m=\binom{n}{2}$, and $A_n$ is divided into blocks of size $n-1,n-2,\dots,1$, as discussed above, then $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=2,3,4,\dots$, form a recursive sequence,
@@ -326,9 +331,9 @@ $$a_3=\det A_3=\det A_2\lambda_1\lambda_2^2=\lambda_1^2\lambda2^2$$
 $$a_4=\det A_4=\det A_3\lambda_1\lambda_2^2\lambda_3^3=\lambda_1^3\lambda_2^4\lambda_3^3$$
 $$\vdots$$
 $$a_n=\det A_n=\det A_{n-1}\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_{n-1}^{n-1}$$
-Calculating the general element, $a_n=\det A_n$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
+Calculating the general element, $a_n=\det A_n$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det A_n=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
 \end{proof}
-This means that every $M=\varphi\in L_{n,p}$ is of the form,$$M=\begin{pmatrix}
+This means that every $M=\varphi\in\mathcal{L}_{n,p}$ has the form,$$M=\begin{pmatrix}
 \begin{matrix}\lambda_1 & & &\\
 & \lambda_2 & &\\
 & & \ddots &\\
