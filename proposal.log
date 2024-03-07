@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  7 MAR 2024 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  7 MAR 2024 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,15 +667,7 @@ Overfull \hbox (5.31241pt too wide) detected at line 298
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[14]
-Overfull \hbox (7.08577pt too wide) in paragraph at lines 319--321
-\OT1/cmr/m/it/12 be the di-ag-o-nal ma-trix of $\OML/cmm/m/it/12 n$ \OT1/cmr/m/
-it/12 scalars, where $\OML/cmm/m/it/12 ^^U[]; ^^U[]; [] ; ^^U[] \OMS/cmsy/m/n/1
-2 2 \U/msb/m/n/12 Q[]$\OT1/cmr/m/it/12 , then, $[] \OML/cmm/m/it/12 A[] \OT1/cm
-r/m/n/12 =
- []
-
-[15]
+[14] [15]
 Overfull \hbox (112.78976pt too wide) detected at line 349
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
@@ -727,7 +719,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (19 pages, 323125 bytes).
+Output written on proposal.pdf (19 pages, 323260 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams

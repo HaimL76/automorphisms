@@ -317,16 +317,16 @@ A_n=\begin{pmatrix}
 & & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-be the diagonal matrix of $n$ scalars, where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+be the diagonal $m\times m$ matrix of $n-1$ scalars, where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$ and $m=\binom{n}{2}$, then $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
-\det A_1=\lambda_1$$
-$$\det A_2=\det A_1\lambda_1\lambda_2^2$$
-$$\det A_3=\det A_2\lambda_1\lambda_2^2\lambda_3^3$$
+a_1=\det A_1=\lambda_1$$
+$$a_2=\det A_2=\det A_1\lambda_1\lambda_2^2$$
+$$a_3=\det A_3=\det A_2\lambda_1\lambda_2^2\lambda_3^3$$
 $$\vdots$$
-$$\det A_{n-1}=\det A_{n-2}\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_{n-1}^{n-1}$$
-Calculating the general element, $a_n=\det(A_n)$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
+$$a_{n-1}=\det A_{n-1}=\det A_{n-2}\lambda_1\lambda_2^2\lambda_3^3\cdots\lambda_{n-1}^{n-1}$$
+Calculating the general element, $a_n=\det A_n$, we see that we have $n$ times $\lambda_1$, $n-1$ times $\lambda_2^2$, $n-2$ times $\lambda_3^3$, and so forth. In general, we have $n-i+1$ times $\lambda_i^i$, which means that we have $i(n-i+1)$ times $\lambda_i$, and in total, $a_n=\det(A_n)=\prod_{i=1}^n\lambda_i^{i(n+1-i)}$.
 \end{proof}
 This means that every $M=\varphi\in L_{n,p}$ is of the form,$$M=\begin{pmatrix}
 \begin{matrix}\lambda_1 & & &\\
