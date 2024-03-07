@@ -304,20 +304,20 @@ By induction. Given some $1<i\leq n-1$, we assume this is true for all $M_{kk}$,
 \begin{proposition}
 \label{prop.h.matrix.determinant}
 Let $n\in\mathbb{N}$, and let $$
-M=\begin{pmatrix}
+A_n=\begin{pmatrix}
 \lambda_1 & & & & & & & & &\\
 & \lambda_2 & & & & & & & &\\
 & & \ddots & & & & & & &\\
 & & & \lambda_{n-1} & & & & & &\\
-& & & & & \lambda_1\lambda_2 & & & &\\
-& & & & & & \lambda_2\lambda_3 & & &\\
-& & & & & & & \ddots & &\\
-& & & & & & & & \lambda_{n-2}\lambda_{n-1} &\\
+& & & & \lambda_1\lambda_2 & & & &\\
+& & & & & \lambda_2\lambda_3 & & &\\
+& & & & & & \ddots & &\\
+& & & & & & & \lambda_{n-2}\lambda_{n-1} &\\
 & & & & & & & & \ddots &\\
 & & & & & & & & & \lambda_1\lambda_2\cdots\lambda_{n-1}\\
 \end{pmatrix}
 $$
-where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det A_k=\prod_{i=1}^{k}\lambda_i^{i(k+1-i)}$.
+be the diagonal matrix of $n$ scalars, where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, then, $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=1,2,3,\dots$, form a recursive sequence, $$
