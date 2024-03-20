@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  19 MAR 2024 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  20 MAR 2024 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,11 +528,7 @@ Package: arydshln 2019/02/21 v1.76
 \adl@clb=\count305
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
-) (./proposal.aux
-
-LaTeX Warning: Label `def.nilpotency.class' multiply defined.
-
-)
+) (./proposal.aux)
 \openout1 = `proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -553,7 +549,8 @@ LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
- (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
 \scratchdimen=\dimen277
@@ -614,20 +611,23 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-[4]
+[4] [5]
+Overfull \hbox (21.8112pt too wide) in paragraph at lines 113--113
+[]$[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []\OMS/cmsy/m/n/12 
+j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = [] [][] \OMS/cmsy
+/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 d^^V \OT1/c
+mr/m/n/12 =
+ []
 
-LaTeX Warning: Reference `def.nilpotent.group' on page 5 undefined on input lin
-e 103.
-
-[5] [6]
-Overfull \hbox (49.6324pt too wide) in paragraph at lines 135--141
+[6]
+Overfull \hbox (49.6324pt too wide) in paragraph at lines 134--140
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
 [7] [8] [9] [10]
-Overfull \hbox (10.72115pt too wide) in paragraph at lines 233--235
+Overfull \hbox (10.72115pt too wide) in paragraph at lines 232--234
 \OT1/cmr/m/n/12 each block is de-noted by $\OML/cmm/m/it/12 M[] \OMS/cmsy/m/n/1
 2 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Q[]\OT1/cmr/m/n/12 )$, where $\OML/cmm/m/
 it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
@@ -635,12 +635,12 @@ it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
  []
 
 [11]
-Overfull \hbox (1.46866pt too wide) detected at line 251
+Overfull \hbox (1.46866pt too wide) detected at line 250
  [] 
  []
 
 [12] [13]
-Overfull \hbox (48.71973pt too wide) detected at line 281
+Overfull \hbox (48.71973pt too wide) detected at line 280
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -651,7 +651,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 281
+Overfull \hbox (30.64902pt too wide) detected at line 280
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -659,7 +659,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 281
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 283
+Overfull \hbox (45.80693pt too wide) detected at line 282
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -667,7 +667,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 283
+Overfull \hbox (14.06839pt too wide) detected at line 282
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -676,22 +676,22 @@ Overfull \hbox (14.06839pt too wide) detected at line 283
  []
 
 
-Overfull \hbox (5.31241pt too wide) detected at line 301
+Overfull \hbox (5.31241pt too wide) detected at line 300
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [14] [15]
-Overfull \hbox (82.42236pt too wide) detected at line 325
+Overfull \hbox (82.42236pt too wide) detected at line 324
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [16]
-Overfull \hbox (33.76686pt too wide) detected at line 344
+Overfull \hbox (33.76686pt too wide) detected at line 343
 \OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = []
  []
 
 [17] [18]
-Overfull \hbox (19.19347pt too wide) in paragraph at lines 393--394
+Overfull \hbox (19.19347pt too wide) in paragraph at lines 392--393
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 . All
  []
 
@@ -704,12 +704,6 @@ L3 programming layer <2023-08-29>
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.95001pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -740,7 +734,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (20 pages, 331564 bytes).
+Output written on proposal.pdf (20 pages, 331692 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
