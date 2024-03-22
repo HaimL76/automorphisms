@@ -245,12 +245,7 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_
 0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{n-1,n-1}\\
 \end{pmatrix}
 $$
-One easily checks that $\varphi_{ij}:\sfrac{\gamma_i}{\gamma_j}\rightarrow\sfrac{\gamma_i}{\gamma_j}$, where $1\leq i<j\leq n-1$, is the sequence of blocks \[
-\begin{matrix}
-M_{ii},M_{i,i+1},\dots,M_{i,j-1},M_{i+1,i},M_{i+1,i+1},\dots,M_{i+1,j-1},\dots,M_{j-1,i},M_{j-1,i+1}\dots,\\M_{j-1,j-1}
-\end{matrix}
-\]
-which forms an extended square block in $M$. These extended blocks shall become handy, for computing elements of $M$ that lie further away from the main diagonal.
+In the research itself, we shall also consider larger quotients $\sfrac{\gamma_i}{\gamma_j}$, where $j>i+1$, represented by square submatrices of $M$, starting at $M_{ii}$ and ending at $M_{jj}$. These submatrices shall become handy, for computing elements of $M$ that lie further away from the main diagonal.
 \subsection{Preliminary results}
 \label{preliminary.results}
 A major step towards the computation of $G_n(\mathbb{Q}_p)$ would be to observe some invariants of $\mathcal{L}_{n,p}$, which must be preserved under any $\mathcal{L}_{n,p}$-automorphism $\varphi\in G_n(\mathbb{Q}_p)$, and analyze the constraints on the structure of the $\mathcal{L}_{n,p}$-automorphisms that come out of this observation. We shall start by examining dimensions of centralizers of basis elements relative to subalgebras of $\mathcal{L}_{n,p}$ and their quotients. As we saw earlier, dividing the matrix $M$ into blocks means that we consider the operation of $\varphi$ only on subalgebras of $\mathcal{L}_{n,p}$ and their quotients. Starting from the very first block $M_{11}$, which means that we consider only the operation $\varphi_{11}:\sfrac{\gamma_1}{\gamma_2}\rightarrow\sfrac{\gamma_1}{\gamma_2}$. We start the block analysis with the following proposition,

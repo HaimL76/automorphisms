@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 04:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 04:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -640,13 +640,8 @@ it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
 ]$.
  []
 
-
-Overfull \hbox (1.46866pt too wide) detected at line 252
- [] 
- []
-
 [12]
-Overfull \hbox (8.11612pt too wide) in paragraph at lines 259--260
+Overfull \hbox (8.11612pt too wide) in paragraph at lines 254--255
 []\OT1/cmr/bx/n/12 Proposition 2.6.1. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 
 L[]$ \OT1/cmr/m/it/12 be a $\U/msb/m/n/12 Q[]$\OT1/cmr/m/it/12 -Lie al-ge-bra. 
 If $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 5$\OT1/cmr/m/it/12 
@@ -655,7 +650,7 @@ If $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 5$\OT1/cmr/m/it/12
  []
 
 [13]
-Overfull \hbox (48.71973pt too wide) detected at line 287
+Overfull \hbox (48.71973pt too wide) detected at line 282
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -666,7 +661,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 287
+Overfull \hbox (30.64902pt too wide) detected at line 282
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -674,7 +669,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 287
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 289
+Overfull \hbox (45.80693pt too wide) detected at line 284
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -682,7 +677,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 289
+Overfull \hbox (14.06839pt too wide) detected at line 284
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -691,22 +686,22 @@ Overfull \hbox (14.06839pt too wide) detected at line 289
  []
 
 [14]
-Overfull \hbox (5.31241pt too wide) detected at line 307
+Overfull \hbox (5.31241pt too wide) detected at line 302
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [15]
-Overfull \hbox (82.42236pt too wide) detected at line 331
+Overfull \hbox (82.42236pt too wide) detected at line 326
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [16]
-Overfull \hbox (33.76686pt too wide) detected at line 350
+Overfull \hbox (33.76686pt too wide) detected at line 345
 \OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = []
  []
 
 [17] [18]
-Overfull \hbox (19.19347pt too wide) in paragraph at lines 399--400
+Overfull \hbox (19.19347pt too wide) in paragraph at lines 394--395
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 . All
  []
 
@@ -752,7 +747,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (21 pages, 333715 bytes).
+Output written on proposal.pdf (21 pages, 333515 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
