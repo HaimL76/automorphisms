@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  20 MAR 2024 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 04:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,28 +619,43 @@ j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = [] [][] \OMS/cmsy
 mr/m/n/12 =
  []
 
+
+Overfull \hbox (7.01682pt too wide) in paragraph at lines 127--130
+[]\OT1/cmr/m/n/12 The the-o-rem en-sures that for any $\U/msb/m/n/12 Z$\OT1/cmr
+/m/n/12 -Lie al-ge-bra, all the lo-cal pro-isomorphic
+ []
+
 [6]
-Overfull \hbox (49.16232pt too wide) in paragraph at lines 131--137
+Overfull \hbox (49.16232pt too wide) in paragraph at lines 135--141
 \OT1/cmr/m/it/12 the sub-group of up-per uni-tri-an-gu-lar ma-tri-ces over $\OM
 S/cmsy/m/n/12 R$\OT1/cmr/m/it/12 , i.e. $\OMS/cmsy/m/n/12 U[]\OT1/cmr/m/n/12 (\
 OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 . 
  []
 
-[7] [8] [9] [10]
-Overfull \hbox (10.72115pt too wide) in paragraph at lines 229--231
+[7] [8] [9] [10] [11]
+Overfull \hbox (10.72115pt too wide) in paragraph at lines 234--236
 \OT1/cmr/m/n/12 each block is de-noted by $\OML/cmm/m/it/12 M[] \OMS/cmsy/m/n/1
 2 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Q[]\OT1/cmr/m/n/12 )$, where $\OML/cmm/m/
 it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
 ]$.
  []
 
-[11]
-Overfull \hbox (1.46866pt too wide) detected at line 247
+
+Overfull \hbox (1.46866pt too wide) detected at line 252
  [] 
  []
 
-[12] [13]
-Overfull \hbox (48.71973pt too wide) detected at line 277
+[12]
+Overfull \hbox (8.11612pt too wide) in paragraph at lines 259--260
+[]\OT1/cmr/bx/n/12 Proposition 2.6.1. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 
+L[]$ \OT1/cmr/m/it/12 be a $\U/msb/m/n/12 Q[]$\OT1/cmr/m/it/12 -Lie al-ge-bra. 
+If $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 5$\OT1/cmr/m/it/12 
+, then dim$\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/
+12 ) =
+ []
+
+[13]
+Overfull \hbox (48.71973pt too wide) detected at line 287
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -651,7 +666,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 277
+Overfull \hbox (30.64902pt too wide) detected at line 287
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -659,7 +674,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 277
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 279
+Overfull \hbox (45.80693pt too wide) detected at line 289
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
@@ -667,7 +682,7 @@ m/n/12 ) =
  []
 
 
-Overfull \hbox (14.06839pt too wide) detected at line 279
+Overfull \hbox (14.06839pt too wide) detected at line 289
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -675,27 +690,27 @@ Overfull \hbox (14.06839pt too wide) detected at line 279
 []\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  []
 
-
-Overfull \hbox (5.31241pt too wide) detected at line 297
+[14]
+Overfull \hbox (5.31241pt too wide) detected at line 307
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-[14] [15]
-Overfull \hbox (82.42236pt too wide) detected at line 321
+[15]
+Overfull \hbox (82.42236pt too wide) detected at line 331
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [16]
-Overfull \hbox (33.76686pt too wide) detected at line 340
+Overfull \hbox (33.76686pt too wide) detected at line 350
 \OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = []
  []
 
 [17] [18]
-Overfull \hbox (19.19347pt too wide) in paragraph at lines 389--390
+Overfull \hbox (19.19347pt too wide) in paragraph at lines 399--400
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 . All
  []
 
-[19] [20] (./proposal.aux)
+[19] [20] [21] (./proposal.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -705,12 +720,15 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.95001pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15270 strings out of 474934
- 318013 string characters out of 5763815
- 1949801 words of memory out of 5000000
- 36528 multiletter control sequences out of 15000+600000
+ 15271 strings out of 474934
+ 318045 string characters out of 5763815
+ 1947801 words of memory out of 5000000
+ 36529 multiletter control sequences out of 15000+600000
  584722 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,19n,121p,3023b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -734,10 +752,10 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (20 pages, 330867 bytes).
+Output written on proposal.pdf (21 pages, 333715 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
