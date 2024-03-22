@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 05:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 05:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,7 +650,7 @@ If $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 5$\OT1/cmr/m/it/12
  []
 
 [13]
-Overfull \hbox (48.71973pt too wide) detected at line 282
+Overfull \hbox (48.71973pt too wide) detected at line 285
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -661,7 +661,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 282
+Overfull \hbox (30.64902pt too wide) detected at line 285
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -669,15 +669,15 @@ Overfull \hbox (30.64902pt too wide) detected at line 282
  []
 
 
-Overfull \hbox (45.80693pt too wide) detected at line 284
+Overfull \hbox (45.80693pt too wide) detected at line 287
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
 /n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 e[]\OT1/cmr/
 m/n/12 ) =
  []
 
-
-Overfull \hbox (14.06839pt too wide) detected at line 284
+[14]
+Overfull \hbox (14.06839pt too wide) detected at line 287
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@
 \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ^^Q
@@ -685,27 +685,27 @@ Overfull \hbox (14.06839pt too wide) detected at line 284
 []\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  []
 
-[14]
-Overfull \hbox (5.31241pt too wide) detected at line 302
+
+Overfull \hbox (5.31241pt too wide) detected at line 305
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [15]
-Overfull \hbox (82.42236pt too wide) detected at line 326
+Overfull \hbox (82.42236pt too wide) detected at line 329
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [16]
-Overfull \hbox (33.76686pt too wide) detected at line 345
+Overfull \hbox (33.76686pt too wide) detected at line 348
 \OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = []
  []
 
-[17] [18]
-Overfull \hbox (19.19347pt too wide) in paragraph at lines 394--395
+[17] [18] [19]
+Overfull \hbox (19.19347pt too wide) in paragraph at lines 397--398
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 . All
  []
 
-[19] [20] [21] (./proposal.aux)
+[20] [21] (./proposal.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -715,11 +715,14 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.95001pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  15271 strings out of 474934
  318045 string characters out of 5763815
- 1947801 words of memory out of 5000000
+ 1948801 words of memory out of 5000000
  36529 multiletter control sequences out of 15000+600000
  584722 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -744,7 +747,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (21 pages, 333737 bytes).
+Output written on proposal.pdf (21 pages, 335161 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
