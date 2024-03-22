@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 07:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.7)  22 MAR 2024 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,7 +660,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 /12 =
  []
 
-
+[14]
 Overfull \hbox (30.64902pt too wide) detected at line 285
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
@@ -668,7 +668,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 285
  e[] \OT1/cmr/m/n/12 =
  []
 
-[14]
+
 Overfull \hbox (45.80693pt too wide) detected at line 287
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m
@@ -744,7 +744,7 @@ texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/20
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (21 pages, 335588 bytes).
+Output written on proposal.pdf (21 pages, 335829 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
