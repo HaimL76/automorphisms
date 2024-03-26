@@ -303,7 +303,7 @@ where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p^*$. In other words
 \]
 \end{proposition}
 \begin{proof}
-By induction, $\varphi(e_{j,j+i-1})=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1$, where $z_1\in\gamma_i\mathcal{L}_{n,p}$. This is by the assumption. Also, $\varphi(e_{j+i-1,j+1})=\lambda_{j+i-1}e_{j+i-1,j+1}+z_2$, where $z_2\in\gamma_2\mathcal{L}_{n,p}$. This is by the construction display for the first block $M_{11}$. Therefore, $\varphi(e_{j,j+i})=\varphi([e_{j,j+i-1},e_{j+i-1,j+i}])=[\varphi(e_{j,j+i-1}),\varphi(e_{j+i-1,j+i})]=[\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1,\lambda_{j+i-1}e_{j+i-1,j+1}+z_2]=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}\lambda_{j+i-1}e_{j,j+i}+z_1\lambda_{j+i-1}e_{j+i-1,j+1}+z_2\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1z_2=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}\lambda_{j+i-1}e_{j,j+i}+z_3$, where $z_3=0$ or $z_3\in\gamma_{i+1}\mathcal{L}_{n,p}\subset\gamma_{i+1}\mathcal{L}_{n,p}$, which proves the induction step.
+By induction, $\varphi(e_{j,j+i-1})=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1$, where $z_1\in\gamma_i\mathcal{L}_{n,p}$. This is by the assumption. Also, $\varphi(e_{j+i-1,j+1})=\lambda_{j+i-1}e_{j+i-1,j+1}+z_2$, where $z_2\in\gamma_2\mathcal{L}_{n,p}$. This is by the construction display for the first block $M_{11}$. Therefore, $\varphi(e_{j,j+i})=\varphi([e_{j,j+i-1},e_{j+i-1,j+i}])=[\varphi(e_{j,j+i-1}),\varphi(e_{j+i-1,j+i})]=[\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1,\lambda_{j+i-1}e_{j+i-1,j+1}+z_2]=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}\lambda_{j+i-1}e_{j,j+i}+z_1\lambda_{j+i-1}e_{j+i-1,j+1}+z_2\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}e_{j,j+i-1}+z_1z_2=\lambda_j\lambda_{j+1}\cdots\lambda_{j+i-2}\lambda_{j+i-1}e_{j,j+i}+z_3$, where $z_3=0$ or $z_3\in\gamma_{i+1}\mathcal{L}_{n,p}$, which proves the induction step.
 \end{proof}
 This means that every $M=\varphi\in\mathcal{L}_{n,p}$ has the form,$$M=\begin{pmatrix}
 \begin{matrix}\lambda_1 & & &\\
@@ -356,21 +356,21 @@ and the other is represented by a unipotent matrix of the form, \[N=\begin{pmatr
 0&\dots &0 & 0& \vline & 0 & 0 & 0 &\vline &1\\
 \end{pmatrix}
 \]
-where the main diagonal blocks of $N$ are $I_{n-1},I_{n-2},\dots,I_1$. It is readily seen that the decomposition $\varphi=NH$ is unique, since $H$ has the main diagonal of $\varphi$, and as both matrices are invertible, $N$ is uniquely determined by $H$, since $N=\varphi H^{-1}$.
+where the main diagonal blocks of $N$ are $I_{n-1},I_{n-2},\dots,I_1$. It is readily seen that the decomposition $\varphi=NH$ is unique, because, let $\mathcal{N}$ be the set of all matrices of the same form of $N$ and let $\mathcal{H}$ be the set of all matrices of the same form of $H$, then $\mathcal{N}\cap\mathcal{H}=\{I\}$, hence, suppose that $M=NH=N'H'$, where $N'\neq N$ and $H'\neq H$, then $N'^{-1}N=H'H^{-1}$, but then $N'^{-1}N,H'H^{-1}\in\mathcal{N}\cap\mathcal{H}=\{I\}$, which means that $N'^{-1}N=H'H^{-1}=I$, so $N=N'$ and $H'=H$, which contradicts the assumption that $M$ is not uniquely decomposed.
 This observation gives the following set of propositions, one easily checks that all of them are correct,
 \begin{proposition}
 \label{prop.automorphism.subgroup.h}
-Let $\mathcal{H}=H_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $H$, then $\mathcal{H}$ is an abelian subgroup which forms the \textbf{reductive} part of $G_n(\mathbb{Q}_p)$
+Let $\mathcal{H}=H_n(\mathbb{Q}_p)$ be the set of all matrices of the same form of $H$, then $\mathcal{H}$ is an abelian subgroup which forms the \textbf{reductive} part of $G_n(\mathbb{Q}_p)$
 \end{proposition}
 \begin{proposition}
 \label{prop.automorphism.subgroup.n}
-Let $\mathcal{N}=N_n(\mathbb{Q}_p)$ be the set of all matrices of the form of $N$, then $\mathcal{N}$ is a normal subgroup which forms the \textbf{unipotent radical} of $G_n(\mathbb{Q}_p)$
+Let $\mathcal{N}=N_n(\mathbb{Q}_p)$ be the set of all matrices of the same form of $N$, then $\mathcal{N}$ is a normal subgroup which forms the \textbf{unipotent radical} of $G_n(\mathbb{Q}_p)$
 \end{proposition}
 \begin{proposition}
 \label{prop.automorphism.matrix.decomposition}
 Let $\varphi\in G(\mathbb{Q}_p)$ be an $\mathcal{L}_{n,p}$-automorphism, and let $M$ be the coefficient matrix of $\varphi$, then, $M$ has a unique decomposition $M=NH$, where $H$ and $N$ are as described above.
 \end{proposition}
-It is readily seen that $\mathcal{H}$ is not a normal subgroup. In addition, $\mathcal{H}\cup \mathcal{N}=G_n(\mathbb{Q}_p)$, as a union of sets , and $\mathcal{H}\cap \mathcal{N}=\{I_m\}$, thus we have the following important result,
+It is readily seen that $\mathcal{H}$ is not a normal subgroup, also, one checks that $G_n(\mathbb{Q}_p)$ is entirely generated as products of the form $NH$, and as seen earlier, this decomposition if unique, thus we have the following important result,
 \begin{corollary}
 Let $G_n(\mathbb{Q}_p)$ be the group of $\mathcal{L}_{n,p}$-automorphisms, and let $\phi:\mathcal{H}\rightarrow Aut(\mathcal{N})$ be the homomorphism defined by $\phi(H)(N):=HNH^{-1}$, for every $H\in \mathcal{H}$ and every $N\in \mathcal{N}$. Then, $G_n(\mathbb{Q}_p)=\mathcal{N}\rtimes_{\phi}\mathcal{H}$, in words, $G_n(\mathbb{Q}_p)$ decomposes into an inner semidirect product of $\mathcal{N}$ and $\mathcal{H}$, induced by conjugation.
 \end{corollary}
@@ -380,7 +380,7 @@ The advantage that we gain by this decomposition is that it simplifies the calcu
 \begin{proposition}
 \label{prop.h.matrix.determinant}
 Let $n=2,3,4,\dots$, and let $A_n$ 
-be the diagonal $m\times m$ matrix where $m=\binom{n}{2}$, of the form of $H$ from above for $n-1$ scalars, then $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
+be the diagonal $m\times m$ matrix where $m=\binom{n}{2}$, of the same form of $H$ from above for $n-1$ scalars, then $\det A_n=\prod_{i=1}^{n}\lambda_i^{i(n+1-i)}$.
 \end{proposition}
 \begin{proof}
 We observe that the determinants, for $n=2,3,4,\dots$, form a recursive sequence,
