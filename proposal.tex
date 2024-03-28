@@ -38,7 +38,7 @@
  }
 \ExplSyntaxOff
 \usepackage{arydshln}
-
+\setcounter{tocdepth}{2}
 \setlength{\dashlinedash}{1.2pt}
 \setlength{\dashlinegap}{1.5pt}
 \setlength{\arrayrulewidth}{0.2pt}
@@ -47,6 +47,7 @@
 \date{\today}
 \begin{document}
 \maketitle
+\tableofcontents
 \begin{abstract}
 Let $G$ be any group. For any natural number $n\in\mathbb{N}$, let $a_n$ be the number of subgroups $H\leq G$, such that $[G:H]=n$. Assume $G$ is finitely-generated, then $a_n<\infty$, and we can define a Dirichlet series of the form $\zeta_G(s):=\sum_{i=1}^\infty a_n n^{-s}$, where $s\in\mathbb{C}$. Assume, in addition, that $G$ is also nilpotent and torsion-free, then this function has some properties of the Riemann $\zeta$-function, such as the Euler decomposition of $\zeta$ into a product of local factors indexed by primes. A version of this $\zeta$-function counts pro-isomorphic subgroups, and an analogous function may be defined for appropriate Lie rings. We study here the pro-isomorphic $\zeta$-functions for a family of nilpotent Lie rings of unbounded nilpotency class. We shall compute the automorphism groups of these Lie rings explicitly, prove uniformity of the local factors of the pro-isomorphic $\zeta$-functions, and aim to determine them explicitly.
 \end{abstract}
@@ -250,10 +251,10 @@ $$
 In the research itself, we shall also consider larger quotients $\sfrac{\gamma_i}{\gamma_j}$, where $j>i+1$, represented by square submatrices of $M$, starting at $M_{ii}$ and ending at $M_{j-1,j-1}$. These submatrices shall become handy, for computing elements of $M$ that lie further away from the main diagonal.
 \subsection{Preliminary results}
 \label{preliminary.results}
-A major step towards the computation of $G_n(\mathbb{Q}_p)$ would be to observe some invariants of $\mathcal{L}_{n,p}$, which must be preserved under any $\mathcal{L}_{n,p}$-automorphism $\varphi\in G_n(\mathbb{Q}_p)$, and analyze the constraints on the structure of the $\mathcal{L}_{n,p}$-automorphisms that come out of this observation. We shall start by examining dimensions of centralizers of basis elements relative to subalgebras of $\mathcal{L}_{n,p}$ and their quotients. As we saw earlier, dividing the matrix $M$ into blocks means that we consider the operation of $\varphi$ only on subalgebras of $\mathcal{L}_{n,p}$ and their quotients. Starting from the very first block $M_{11}$, which means that we consider only the operation $\varphi_{11}:\sfrac{\gamma_1}{\gamma_2}\rightarrow\sfrac{\gamma_1}{\gamma_2}$. We start the block analysis with the following proposition,
+A major step towards the computation of $G_n(\mathbb{Q}_p)$ would be to observe some invariants of elements of $\mathcal{L}_{n,p}$, which must be preserved under any $\mathcal{L}_{n,p}$-automorphism $\varphi\in G_n(\mathbb{Q}_p)$, and analyze the constraints on the structure of the $\mathcal{L}_{n,p}$-automorphisms that come out of this observation. We shall start by examining dimensions of centralizers of basis elements relative to subalgebras of $\mathcal{L}_{n,p}$ and their quotients. As we saw earlier, dividing the matrix $M$ into blocks corresponds to considering the operation of $\varphi$ on subalgebras of $\mathcal{L}_{n,p}$ and their quotients. For instance, the block $M_{11}$ is the matrix of the induced automorphism $\varphi_{11}:\sfrac{\gamma_1}{\gamma_2}\rightarrow\sfrac{\gamma_1}{\gamma_2}$. We start the block analysis with the following proposition,
 \begin{proposition}
 \label{prop.n.geq.5.centralizer.codimension}
-Let $\mathcal{L}_{n,p}$ be a $\mathbb{Q}_p$-Lie algebra. If $n\geq 5$, then dim$\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)=1$ if and only if $x\in\{\lambda e_{12}+\gamma_2\mathcal{L}_{n,p}\}$ or $x\in\{\lambda e_{n-1,n}+\gamma_2\mathcal{L}_{n,p}\}$, for a non-zero scalar $\lambda\in\mathbb{Q}_p$. If $n=4$, then dim$\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)=1$ if and only if $x\in\{\lambda e_{12}+\mu e_{34}+\gamma_2\mathcal{L}_{n,p}\}$, for $\lambda,\mu\in\mathbb{Q}_p$ not both zero.
+Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}_p$-Lie algebra associated with $\mathcal{U}_n(\mathbb{Z})$. If $n\geq 5$, then $\dim\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)=\dim\mathcal{L}_{n,p}-1$ if and only if $x\in\{\lambda e_{12}+\gamma_2\mathcal{L}_{n,p}\}$ or $x\in\{\lambda e_{n-1,n}+\gamma_2\mathcal{L}_{n,p}\}$, for a non-zero scalar $\lambda\in\mathbb{Q}_p$. If $n=4$, then $\dim\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)=\dim\mathcal{L}_{n,p}-1$ if and only if $x\in\{\lambda e_{12}+\mu e_{34}+\gamma_2\mathcal{L}_{n,p}\}$, for $\lambda,\mu\in\mathbb{Q}_p$ not both zero.
 \end{proposition}
 \begin{proof}
 As seen above, the only basis elements that do no commute with $e_{ij}$ are $S=\{e_{ki},e_{jl}\}$, for some $1\leq k<l\leq n$. Therefore, if $x=\lambda e_{12}+z$, where $z\in\gamma_2\mathcal{L}_{n,p}$, it is readily seen that the only element in $\sfrac{\gamma_1}{\gamma_3}$ that do not commute with it is $\mu e_{23}+y$, for some $\mu\in\mathbb{Q}_p$ and $y\in\gamma_2\mathcal{L}_{n,p}$, since $[\lambda e_{12}+z,\mu e_{23}+y]=\lambda\mu[e_{12},e_{23}]+\lambda e_{12}y+\mu e_{23}z+yz$. But $\lambda e_{12}y,\mu e_{23}z\in\gamma_3\mathcal{L}_{n,p}$ and $yz\in\gamma_4\mathcal{L}_{n,p}$, hence the entire product is in $\sfrac{\gamma_2}{\gamma_3}$, and is necessarily non-zero because $\lambda,\mu\neq 0$ (while $\lambda e_{12}y$, $\mu e_{23}z$ and $yz$ can be $0$). For $n=4$, since any element of the form $\rho e_{23}$ does not commute both with $\lambda e_{12}$ and $\mu e_{34}$, for some $\lambda,\mu,\rho\in\mathbb{Q}_p$, then it does not commute also with any non-zero linear combination of them, and it is the only element to do so in $\sfrac{\gamma_1}{\gamma_3}$. The computation for $\lambda e_{12}+\gamma_2\mathcal{L}_{n,p}$, $\mu e_{34}+\gamma_2\mathcal{L}_{n,p}$ and $\lambda e_{23}+\gamma_2\mathcal{L}_{n,p}$
