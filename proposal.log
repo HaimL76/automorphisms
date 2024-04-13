@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 APR 2024 01:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 APR 2024 02:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,20 +732,13 @@ Overfull \hbox (20.02075pt too wide) detected at line 281
 /12 e[]; e[]\OT1/cmr/m/n/12 ] =
  []
 
-[15]
-Overfull \hbox (13.841pt too wide) in paragraph at lines 304--305
-\OML/cmm/m/it/12 z; [][] a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 w\OT1/cmr/m/
-n/12 ] = \OML/cmm/m/it/12 ^^U[]e[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z [
-][] a[]e[] \OT1/cmr/m/n/12 +
- []
-
-[16]
-Overfull \hbox (5.31241pt too wide) detected at line 328
+[15] [16]
+Overfull \hbox (5.31241pt too wide) detected at line 307
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 
-Overfull \hbox (68.91444pt too wide) in paragraph at lines 339--340
+Overfull \hbox (68.91444pt too wide) in paragraph at lines 318--319
 \OT1/cmr/m/n/12 shown for $\OML/cmm/m/it/12 M[]$\OT1/cmr/m/n/12 . There-fore, $
 \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML
 /cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ]) = [
@@ -754,42 +747,42 @@ m/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] =
  []
 
 
-Overfull \hbox (21.75053pt too wide) in paragraph at lines 339--340
+Overfull \hbox (21.75053pt too wide) in paragraph at lines 318--319
 \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 ^^U[]^^U[] [] ^^U[]e[] \OT1/cmr/m/n/12 + \OML
 /cmm/m/it/12 z[]; ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]\OT1/cmr/m/n/1
 2 ] = \OML/cmm/m/it/12 ^^U[]^^U[] [] ^^U[]^^U[]e[] \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (30.37569pt too wide) in paragraph at lines 339--340
+Overfull \hbox (30.37569pt too wide) in paragraph at lines 318--319
 \OML/cmm/m/it/12 z[]^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]^^U[]^^U[] [
 ] ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]z[] \OT1/cmr/m/n/12 = \OML/cmm
 /m/it/12 ^^U[]^^U[] [] ^^U[]^^U[]e[] \OT1/cmr/m/n/12 +
  []
 
 [17]
-Overfull \hbox (82.42236pt too wide) detected at line 359
+Overfull \hbox (82.42236pt too wide) detected at line 338
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 361
+LaTeX Font Info:    Trying to load font information for U+euf on input line 340
 .
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (29.35948pt too wide) detected at line 378
+Overfull \hbox (29.35948pt too wide) detected at line 357
 \U/euf/m/n/12 h \OT1/cmr/m/n/12 = []
  []
 
 [18] [19]
-Overfull \hbox (18.79071pt too wide) detected at line 406
+Overfull \hbox (18.79071pt too wide) detected at line 385
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][] \OMS/cmsy/m/n/12 
 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 d^^V[] \OT1/cmr/m/n
 /12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 [20]
-Overfull \hbox (57.51566pt too wide) in paragraph at lines 422--424
+Overfull \hbox (57.51566pt too wide) in paragraph at lines 401--403
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
  []
 
@@ -803,18 +796,15 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  15327 strings out of 474486
  324724 string characters out of 5743755
- 1952528 words of memory out of 5000000
+ 1954528 words of memory out of 5000000
  37311 multiletter control sequences out of 15000+600000
  579601 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,19n,121p,4267b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,19n,121p,6794b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -842,7 +832,7 @@ ler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal.pdf (23 pages, 373754 bytes).
+Output written on proposal.pdf (23 pages, 374044 bytes).
 PDF statistics:
  199 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
