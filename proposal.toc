@@ -1,12 +1,12 @@
-\contentsline {section}{\numberline {1}Scientific Background}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Introduction}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Linearization}{5}{}%
-\contentsline {subsection}{\numberline {1.3}$p$-adic Integration}{6}{}%
-\contentsline {section}{\numberline {2}Research Goals and Methodology}{7}{}%
-\contentsline {subsection}{\numberline {2.1}The unipotent group $\mathcal {U}_n$}{7}{}%
-\contentsline {subsection}{\numberline {2.2}The Lie algebras $L_{n,p}$}{9}{}%
-\contentsline {subsection}{\numberline {2.3}Research goals}{9}{}%
-\contentsline {subsection}{\numberline {2.4}The Heisenberg group}{10}{}%
-\contentsline {subsection}{\numberline {2.5}$\mathcal {U}_n(\mathbb {Z}_p)$ groups for $n>3$}{11}{}%
-\contentsline {subsection}{\numberline {2.6}Preliminary results}{13}{}%
-\contentsline {subsection}{\numberline {2.7}Base Extension}{22}{}%
+\contentsline {section}{\numberline {1}Scientific Background}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Linearization}{6}{}%
+\contentsline {subsection}{\numberline {1.3}$p$-adic Integration}{7}{}%
+\contentsline {section}{\numberline {2}Research Goals and Methodology}{8}{}%
+\contentsline {subsection}{\numberline {2.1}The unipotent group $\mathcal {U}_n$}{8}{}%
+\contentsline {subsection}{\numberline {2.2}The Lie algebras $L_{n,p}$}{10}{}%
+\contentsline {subsection}{\numberline {2.3}Research goals}{10}{}%
+\contentsline {subsection}{\numberline {2.4}The Heisenberg group}{11}{}%
+\contentsline {subsection}{\numberline {2.5}$\mathcal {U}_n(\mathbb {Z}_p)$ groups for $n>3$}{12}{}%
+\contentsline {subsection}{\numberline {2.6}Preliminary results}{14}{}%
+\contentsline {subsection}{\numberline {2.7}Base Extension}{23}{}%
