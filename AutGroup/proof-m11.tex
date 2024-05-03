@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{proof-m11}
+\author{haiml76 }
+\date{May 2024}
+
+\begin{document}
+
+For every $1\leq i\leq n-1$, denote by $c_i$ the constraint equation $[\lambda_i e_{i,i+1},\mu_{i+1}e_{i+1,i+2}]-[\lambda_{i+1}e_{i+1,i+2},\mu_i e_{i,i+1}]=(\lambda_i\mu_{i+1}-\lambda_{i+1}\mu_i)e_{i,i+2}=0$. We observe that for each $2\leq j\leq n-2$, $\mu_j$ is obviously determined by the two constraints $c_{j-1}$ and $c_j$, which means that we have several options for $\lambda_{j-1},\lambda_j,\lambda_{j+1}$. We look at the two equations: \[
+c_{j-1}=(\lambda_{j-1}\mu_j-\lambda_j\mu_{j-1})e_{j-1,j+1}=0
+\]\[
+c_j=(\lambda_j\mu_{j+1}-\lambda_{j+1}\mu_j)e_{j,j+2}=0
+\]
+Obviously, if $\lambda_{j-1}=\lambda_j=\lambda_{j+1}=0$, then both $c_{j-1}$ and $c_j$ are invalid constraints, which means that $\mu_j$ can assume any value, we usually denote this by $\mu_j=\ast$.
+Suppose that we have only two zeros, then if $\lambda_{j-1}=\lambda_j=0$ and $\lambda_{j+1}\neq 0$ or if $\lambda_j=\lambda_{j+1}=0$ and $\lambda_{j-1}\neq 0$, then we must also have that $\lambda_{j+1}\mu_j=0$ or $\lambda_{j-1}\mu_j=0$, respectively, which means that $\mu_j=0$. On the other hand, if $\lambda_{j-1}=\lambda_{j+1}=0$ and $\lambda_j\neq 0$, then we must have $
+\lambda_j\mu_{j-1}=\lambda_j\mu_{j+1}=0$, which means that $\mu_{j-1}=\mu_{j+1}=0$, and since $\mu_j$ depends only on $c_{j-1}$ and $c_j$, we have that $\mu_j=\ast$.
+Suppose that only one of the three $\lambda$ coefficients is zero, then if $\lambda_{j-1}=0$, we must have that $\mu_{j-1}=0$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j$. If $lambda_j=0$, then we must have that $\lambda_{j-1}\mu_j=\lambda_{j+1}\mu_j=0$, which means that $\mu_j=0$. If $\lambda_{j+1}=0$, then we must have that $\mu_{j+1}=0$, and $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$. If the three $\lambda$ coefficients are non-zero, then we must have that $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j=\frac{\lambda_{j+1}}{\lambda_j}\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}=\frac{\lambda_{j+1}}{\lambda_{j-1}}\mu_{j-1}$.
+\end{document}
