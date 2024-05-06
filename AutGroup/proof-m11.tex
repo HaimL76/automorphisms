@@ -1,13 +1,72 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{graphicx} % Required for inserting images
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\usepackage{amsfonts, amssymb}
+\usepackage{mathrsfs, mathdots} 
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{setspace}
+\usepackage{xfrac}
+\usepackage{yfonts}
 
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notations}[theorem]{Notations}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }
+ {
+  (
+  \alec_cycle:nn { #1 } { #2 }
+  )
+ }
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+  \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 }
+  \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+\usepackage{arydshln}
+\setcounter{tocdepth}{2}
+\setlength{\dashlinedash}{1.2pt}
+\setlength{\dashlinegap}{1.5pt}
+\setlength{\arrayrulewidth}{0.2pt}
 \title{proof-m11}
 \author{haiml76 }
 \date{May 2024}
 
 \begin{document}
+\begin{proposition}
+Let $x=\sum_{i=1}^{n-1}\lambda_i e_{i,i+1}$, where $\lambda_i\in\mathbb{Q}_p$ not all zero. Then $\dim\mathcal{C}_{\gamma_3}(x)=\#\{i : \lambda_i=0\}+1$
+\end{proposition}
+\begin{proof}
+Let $y=\sum_{i=1}^{n-1}\mu_i e_{i,i+1}\in\mathcal{C}_{\gamma_3}(x)$, where $\lambda_i\in\mathbb{Q}_p$.
+For every $1\leq i\leq n-1$, denote by $c_i$ the constraint equation $[\lambda_i e_{i,i+1},\mu_{i+1}e_{i+1,i+2}]-[\lambda_{i+1}e_{i+1,i+2},\mu_i e_{i,i+1}]=(\lambda_i\mu_{i+1}-\lambda_{i+1}\mu_i)e_{i,i+2}=0$. Suppose $\lambda_j=0$, for some $2\leq j\leq n-1$, and $\lambda_i\neq 0$, for all $i<j$, then by constraints $c_1,c_2,\dots,c_{j-2}$, we have that $\mu_{j-1}=\frac{\lambda_{j-1}}{\lambda_{j-2}}\mu_{j-2}=\frac{\lambda_{j-1}}{\lambda_{j-2}}\frac{\lambda_{j-2}}{\lambda_{j-3}}\mu_{j-3}=\frac{\lambda_{j-1}}{\lambda_{j-3}}\mu_{j-3}=\cdots=\frac{\lambda_{j-1}}{\lambda_1}\mu_1$
+\end{proof}
 
-For every $1\leq i\leq n-1$, denote by $c_i$ the constraint equation $[\lambda_i e_{i,i+1},\mu_{i+1}e_{i+1,i+2}]-[\lambda_{i+1}e_{i+1,i+2},\mu_i e_{i,i+1}]=(\lambda_i\mu_{i+1}-\lambda_{i+1}\mu_i)e_{i,i+2}=0$. We observe that for each $2\leq j\leq n-2$, $\mu_j$ is obviously determined by the two constraints $c_{j-1}$ and $c_j$, which means that we have several options for $\lambda_{j-1},\lambda_j,\lambda_{j+1}$. We look at the two equations: \[
+
+
+
+We observe that for each $2\leq j\leq n-2$, $\mu_j$ is obviously determined by the two constraints $c_{j-1}$ and $c_j$, which means that we have several options for $\lambda_{j-1},\lambda_j,\lambda_{j+1}$. We look at the two equations: \[
 c_{j-1}=(\lambda_{j-1}\mu_j-\lambda_j\mu_{j-1})e_{j-1,j+1}=0
 \]\[
 c_j=(\lambda_j\mu_{j+1}-\lambda_{j+1}\mu_j)e_{j,j+2}=0
@@ -15,5 +74,5 @@ c_j=(\lambda_j\mu_{j+1}-\lambda_{j+1}\mu_j)e_{j,j+2}=0
 Obviously, if $\lambda_{j-1}=\lambda_j=\lambda_{j+1}=0$, then both $c_{j-1}$ and $c_j$ are invalid constraints, which means that $\mu_j$ can assume any value, we usually denote this by $\mu_j=\ast$.
 Suppose that we have only two zeros, then if $\lambda_{j-1}=\lambda_j=0$ and $\lambda_{j+1}\neq 0$ or if $\lambda_j=\lambda_{j+1}=0$ and $\lambda_{j-1}\neq 0$, then we must also have that $\lambda_{j+1}\mu_j=0$ or $\lambda_{j-1}\mu_j=0$, respectively, which means that $\mu_j=0$. On the other hand, if $\lambda_{j-1}=\lambda_{j+1}=0$ and $\lambda_j\neq 0$, then we must have $
 \lambda_j\mu_{j-1}=\lambda_j\mu_{j+1}=0$, which means that $\mu_{j-1}=\mu_{j+1}=0$, and since $\mu_j$ depends only on $c_{j-1}$ and $c_j$, we have that $\mu_j=\ast$.
-Suppose that only one of the three $\lambda$ coefficients is zero, then if $\lambda_{j-1}=0$, we must have that $\mu_{j-1}=0$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j$. If $lambda_j=0$, then we must have that $\lambda_{j-1}\mu_j=\lambda_{j+1}\mu_j=0$, which means that $\mu_j=0$. If $\lambda_{j+1}=0$, then we must have that $\mu_{j+1}=0$, and $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$. If the three $\lambda$ coefficients are non-zero, then we must have that $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j=\frac{\lambda_{j+1}}{\lambda_j}\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}=\frac{\lambda_{j+1}}{\lambda_{j-1}}\mu_{j-1}$.
+Suppose that only one of the three $\lambda$ coefficients is zero, then if $\lambda_{j-1}=0$, we must have that $\mu_{j-1}=0$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j$. If $lambda_j=0$, then we must have that $\lambda_{j-1}\mu_j=\lambda_{j+1}\mu_j=0$, which means that $\mu_j=0$. If $\lambda_{j+1}=0$, then we must have that $\mu_{j+1}=0$, and $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$. If the three $\lambda$ coefficients are non-zero, then we must have that $\mu_j=\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}$, and $\mu_{j+1}=\frac{\lambda_{j+1}}{\lambda_j}\mu_j=\frac{\lambda_{j+1}}{\lambda_j}\frac{\lambda_j}{\lambda_{j-1}}\mu_{j-1}=\frac{\lambda_{j+1}}{\lambda_{j-1}}\mu_{j-1}$. We conclude that every chain of non-zero consecutive coefficients $\lambda_j,\lambda_{j+1},\dots\,\lambda_{j+l-1}$, where $l$ is clearly the length of the chain, has that $\mu_{k+1}=\frac{\lambda_{k+1}}{\lambda_j}\mu_j$, which means that 
 \end{document}
