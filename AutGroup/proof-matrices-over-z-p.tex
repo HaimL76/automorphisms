@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\usepackage{amsfonts, amssymb}
+\usepackage{mathrsfs, mathdots} 
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{setspace}
+\usepackage{xfrac}
+\usepackage{yfonts}
+
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notations}[theorem]{Notations}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }
+ {
+  (
+  \alec_cycle:nn { #1 } { #2 }
+  )
+ }
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+  \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 }
+  \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+\usepackage{arydshln}
+\setcounter{tocdepth}{2}
+\setlength{\dashlinedash}{1.2pt}
+\setlength{\dashlinegap}{1.5pt}
+\setlength{\arrayrulewidth}{0.2pt}
+\title{proof-m11}
+\author{haiml76 }
+\date{May 2024}
+
+\begin{document}
+\section{}
+\subsection{}
+\begin{proposition}
+\label{prop.centralizer.dimension}
+Let $\mathfrak{m}\in G_n(\mathbb{Q}_p)$ be a coefficient matrix representing an $\mathcal{L}_{n,p}$-automorphism, and let $\mathfrak{n}\in\mathcal{N}_n(\mathbf{Q}_p)$ and $\mathfrak{h}\in\mathcal{H}_n(\mathbf{Q}_p)$ be the two matrices in the unique decomposition $\mathfrak{m}=\mathfrak{n}\mathfrak{h}$, then $m\in G(\mathbb{Z}_p)$ if and only if $n\in\mathcal{N}(\mathbb{Z}_p)$ and $h\in\mathcal{H}(\mathbb{Z}_p)$.
+\end{proposition}
+\begin{proof}
+We prove only the non-trivial direction. Assume $\mathfrak{m}\in G(\mathbf{Z}_p)$. By the construction of the automorphism coefficient matrices, the diagonal of $\mathfrak{m}$ is $\lambda_1,\lambda_2,\dots,\lambda_{n-1},\lambda_1\lambda_2,\lambda_2\lambda_3,\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_1\lambda_2\cdots\lambda_{n-1}$, where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, but we assumed $\mathfrak{m}\in G_n(\mathbb{Z}_p)$, hence we must have all the $\lambda$ coefficients and their products in $\mathbb{Z}_p$ itself. Moreover, if $\mathfrak{m}\in G_n(\mathbb{Z}_p)$, it means that $\det\mathfrak{m}\in\mathbb{Z}_p^\ast$, in words, the determinant of $\mathfrak{m}$ is invertible in $\mathbb{Z}_p$. The matrix $\mathfrak{h}$ has precisely the same diagonal, and determinant, as $\mathfrak{m}$, and zero in all the other cells. As seen earlier, the determinant of $\mathfrak{h}$, and of $\mathfrak{m}$, for every $n\geq 2$, is $\prod_{k=1}^{n-1}\lambda_k^{k(n-k)}$, so if $\det\mathfrak{h}$ is invertible, hence the valuation $v(\det\mathfrak{h})=v(\prod_{k=1}^{n-1}\lambda_k^{k(n-k)})=\sum_{k=1}^{n-1}v(\lambda_k^{k(n-k)})=\sum_{k=1}^{n-1}\sum_{l=1}^{k(n-k)}v(\lambda_k)=0$, but $\lambda_k\in\mathbb{Z}_p$, for every $1\leq k\leq n-1$, hence $v(\lambda_k)\geq 0$, but if the total sum is zero, then we must have $v(\lambda_k)=0$, for every $k$, which means that $\lambda_k\in\mathbb{Z}_p^\ast$, hence $\mathfrak{h}\in G_n(\mathbb{Z}_p)$. But if $\mathfrak{m},\mathfrak{h}\in G_n(\mathbb{Z}_p)$, then $\mathfrak{n}=\mathfrak{m}\mathfrak{h^{-1}}\in G_n(\mathbb{Z}_p)$.
+\end{proof}
+\end{document}
