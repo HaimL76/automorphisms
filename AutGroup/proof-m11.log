@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JUN 2024 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JUN 2024 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,7 +588,7 @@ Package: arydshln 2019/02/21 v1.76
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
 )
-No file proof-m11.aux.
+(proof-m11.aux)
 \openout1 = `proof-m11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -682,18 +682,9 @@ ero, then by con-straints $(\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
 T1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )$,
  []
 
-
-LaTeX Warning: Reference `prop.centralizer.dimension' on page 1 undefined on in
-put line 75.
-
 [1
 
 {C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-
-LaTeX Warning: Reference `prop.n.geq.4.centralizer.codimension' on page 3 undef
-ined on input line 90.
-
-
 Overfull \hbox (1.89291pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/n/12 We look at the cen-tral-izer of $\OML/cmm/m/it/12 e[]$ \OT1/c
 mr/m/n/12 in the quo-tient $[]$, namely $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\
@@ -710,18 +701,12 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15276 strings out of 474486
- 323543 string characters out of 5743755
+ 15279 strings out of 474486
+ 323633 string characters out of 5743755
  1958528 words of memory out of 5000000
- 37267 multiletter control sequences out of 15000+600000
+ 37268 multiletter control sequences out of 15000+600000
  580196 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,107p,4902b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -750,7 +735,7 @@ s/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 ti12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (4 pages, 246576 bytes).
+Output written on proof-m11.pdf (4 pages, 247509 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
