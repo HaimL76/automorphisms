@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JUN 2024 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JUN 2024 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,16 +670,24 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 62.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 66.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 62.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (43.73286pt too wide) in paragraph at lines 65--68
-\OML/cmm/m/it/12 ^^U[]; ^^U[]; [] ; ^^U[]; ^^U[]$ \OT1/cmr/m/n/12 are all non-z
-ero, then by con-straints $(\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 
-; \OT1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; [] ; \O
-T1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )$,
+Overfull \hbox (25.24878pt too wide) in paragraph at lines 65--68
+\OT1/cmr/m/n/12 straints $(\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
+ \OT1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; [] ; \OT
+1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )$, we have that $\OML/cmm/m/it/
+12 ^^V[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 = [][]\OML/
+cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (23.4534pt too wide) in paragraph at lines 65--68
+\OT1/cmr/m/n/12 that we need to look at con-straint $(\U/euf/m/n/12 C[]\OT1/cmr
+/m/n/12 )$, that is, $\OML/cmm/m/it/12 ^^U[]^^V[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm
+/m/it/12 ^^U[]^^V[] \OT1/cmr/m/n/12 =
  []
 
 [1
@@ -703,41 +711,40 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 15279 strings out of 474486
- 323633 string characters out of 5743755
+ 15277 strings out of 474486
+ 323602 string characters out of 5743755
  1958528 words of memory out of 5000000
- 37268 multiletter control sequences out of 15000+600000
- 580196 words of font info for 128 fonts, out of 8000000 for 9000
+ 37267 multiletter control sequences out of 15000+600000
+ 579591 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,13n,107p,4902b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isila/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/isil
-a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
-ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pf
-b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr5.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/isila/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/User
-s/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ti12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (4 pages, 247509 bytes).
+fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isila/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/isila/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isila/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users
+/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr5.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/isila/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/i
+sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C
+:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/e
+ufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on proof-m11.pdf (4 pages, 238468 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
