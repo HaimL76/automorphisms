@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 JUN 2024 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  28 JUN 2024 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -675,25 +675,10 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 62.
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (25.24878pt too wide) in paragraph at lines 65--68
-\OT1/cmr/m/n/12 straints $(\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;
- \OT1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; [] ; \OT
-1/cmr/m/n/12 (\U/euf/m/n/12 C[]\OT1/cmr/m/n/12 )$, we have that $\OML/cmm/m/it/
-12 ^^V[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 = [][]\OML/
-cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 =
- []
-
-
-Overfull \hbox (23.4534pt too wide) in paragraph at lines 65--68
-\OT1/cmr/m/n/12 that we need to look at con-straint $(\U/euf/m/n/12 C[]\OT1/cmr
-/m/n/12 )$, that is, $\OML/cmm/m/it/12 ^^U[]^^V[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm
-/m/it/12 ^^U[]^^V[] \OT1/cmr/m/n/12 =
- []
-
 [1
 
 {C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Overfull \hbox (1.89291pt too wide) in paragraph at lines 90--91
+Overfull \hbox (1.89291pt too wide) in paragraph at lines 89--90
 []\OT1/cmr/m/n/12 We look at the cen-tral-izer of $\OML/cmm/m/it/12 e[]$ \OT1/c
 mr/m/n/12 in the quo-tient $[]$, namely $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )$.
@@ -709,11 +694,14 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  15277 strings out of 474486
  323602 string characters out of 5743755
- 1958528 words of memory out of 5000000
+ 1960528 words of memory out of 5000000
  37267 multiletter control sequences out of 15000+600000
  579591 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -742,7 +730,7 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C
 :/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/e
 ufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (4 pages, 238468 bytes).
+Output written on proof-m11.pdf (4 pages, 239810 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
