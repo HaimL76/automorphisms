@@ -105,10 +105,17 @@ To complete the proof, we need to show that $\eta$ is indeed a homomorphism,
 We observe that if $n+1-i=n+1-l$ or $n+1-j=n+1-k$ then the Lie brackets evaluate to a non-zero element, but this happens if and only if $i=l$ or $j=k$, respectively. Assume $j=k$, then \[(-1)^{j-i+l-k-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]=(-1)^{l-i-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-j}]=\]\[(-1)^{l-i-2}\cdot-e_{n+1-l,n+1-i}=(-1)^{l-i-1}e_{n+1-l,n+1-i}=\eta(e_{il})=\eta[e_{ij},e_{jl}]\] 
 \end{proof}
 \begin{corollary}
+\label{m11.diagonal}
 Let $\mathcal{L}_{n,p}$, where $n\geq 4$, then the block $M_{11}$ is diagonal.
 \end{corollary}
 \begin{proof}
 By \ref{m11.n.5} and \ref{m11.n.4}, we have that $M_{11}$ is either diagonal or anti-diagonal. Assume that $M_{11}$ is anti-diagonal, that is, $\varphi(e_{12})=\lambda_{n-1}e_{n-1,n}+z_{n-1},\varphi(e_{23})=\lambda_{n-2} e_{n-2,n-1}+z_{n-2},\dots,\varphi(e_{n-1,n})=\lambda_1 e_{12}+z_1$, where $z_1,z_2,\dots,z_{n-1}\in\gamma_2\mathcal{L}_{n,p}$, then we define a new automorphism by the composition $\psi=\varphi\eta$. Let $e_{i,i+1}\in\sfrac{\gamma_1}{\gamma_2}$, where $1\leq i\leq n-1$, then $\psi(e_{i,i+1})=\varphi\eta(e_{i,i+1})=\varphi((-1)^{i+1-i-1}e_{n+1-(i+1),n+1-i})=\varphi(e_{n-i,n-i+1})
 $, hence $\psi(e_{12})=\varphi(e_{n-1,n})=\lambda_1 e_{12}+z_1,\psi(e_{23})=\varphi(e_{n-2,n-1})=\lambda_2 e_{23}+z_2,\dots,\psi(e_{n-1,n})=\varphi(e_{12})=\lambda_{n-1}e_{n-1,n}+z_{n-1}$, which means that $M_{11}$, as the first block of the matrix representing $\psi$, is diagonal.  
+\end{proof}
+\begin{corollary}
+Let $\mathcal{L}_{n,p}$, where $n\geq 4$, then all the blocks $M_{11},M_{22},\dots,M_{n-1,n-1}$ are diagonal.
+\end{corollary}
+\begin{proof}
+By simple induction on the index $1\leq k\leq n-1$ of the diagonal block. For $k=1$ we proved this in \ref{m11.diagonal}, for $k+1$ we observe that for any $i$, we have the identity $\varphi(e_{i,i+k+1})=\varphi([e_{i,i+j},e_{i+j,i+k+1}])=[\varphi(e_{i,i+j}),\varphi(e_{i+j,i+k+1})]$, for $1\leq j\leq k$, but by the assumption we have that $\varphi(e_{i,i+j})=a_{i,i+j}e_{i,i+j}+z_{i,i+j}$ and $\varphi(e_{i+j,i+k+1})=\varphi(e_{i+j,i+k+1})=a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{i+j,i+k+1}$, where $z_{i,i+j}\in\gamma_{j+1}\mathcal{L}_{n,p}$ and $z_{i+j,i+k+1}\in\gamma_{k-j+2}\mathcal{L}_{n,p}$, hence $\varphi(e_{i,i+k+1})=[a_{i,i+j}e_{i,i+j}+z_{i,i+j},a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{i+j,i+k+1}]=a_{i,i+j}a_{i+j,i+k+1}e_{i,i+k+1}+z$, where $z\in$
 \end{proof}
 \end{document}
