@@ -96,18 +96,19 @@ We observe\footnote{Here again $e_{24}\in\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}
 \end{proof}
 \begin{proposition}
 \label{prop.involution}
-Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}$-Lie algebra associated with $\mathcal{U}_n(\mathbb{Z}_p)$, and let $\mathcal{B}_n=\{e_{12},e_{23},\dots,e_{1n}\}$ be its basis. Then, the map $\eta_n:\mathcal{B}_n\rightarrow \mathcal{B}_n$, defined by \[\eta_n(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}\] is an involution, hence, also an $\mathcal{L}_{n,p}$-automorphism.
+Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}$-Lie algebra associated with $\mathcal{U}_n(\mathbb{Z}_p)$, and let $\mathcal{B}_n=\{e_{12},e_{23},\dots,e_{1n}\}$ be its basis. Then, the map $\eta:\mathcal{B}_n\rightarrow \mathcal{B}_n$, defined by \[\eta(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}\] is an involution, hence, also an $\mathcal{L}_{n,p}$-automorphism.
 \end{proposition}
 \begin{proof}
-Clearly, we calculate $\eta_n^2(e_{ij})$ by taking $k=n+1-j$ and $l=n+1-i$. Hence, \[\eta_n(\eta_n(e_{ij}))=\eta_n((-1)^{j-i-1}e_{kl})=(-1)^{j-i-1}\eta_n(e_{ij})=(-1)^{j-i-1}(-1)^{l-k-1}e_{n+1-l,n+1-k}=\]\[=(-1)^{j-i-1}(-1)^{n+1-i-(n+1-j)-1}e_{n+1-(n+1-i),n+1-(n+1-j)}=(-1)^{j-i-1}(-1)^{j-i-1}e_{ij}=\]\[=(-1)^{2(j-i-1)}e_{ij}=e_{ij}\]
-To complete the proof, we need to show that $\eta_n$ is indeed a homomorphism,
-\[[\eta_n(e_{ij}),\eta_n(e_{kl})]=[(-1)^{j-i-1}e_{n+1-j,n+1-i},(-1)^{l-k-1}e_{n+1-l,n+1-k}]=\]\[=(-1)^{j-i-1}(-1)^{l-k-1}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]=\]\[(-1)^{j-i+l-k-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]\]
-We observe that if $n+1-i=n+1-l$ or $n+1-j=n+1-k$ then the Lie brackets evaluate to a non-zero element, but this happens if and only if $i=l$ or $j=k$, respectively. Assume $j=k$, then \[(-1)^{j-i+l-k-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]=(-1)^{l-i-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-j}]=\]\[(-1)^{l-i-2}\cdot-e_{n+1-l,n+1-i}=(-1)^{l-i-1}e_{n+1-l,n+1-i}=\eta_n(e_{il})=\eta_n[e_{ij},e_{jl}]\] 
+Clearly, we calculate $\eta^2(e_{ij})$ by taking $k=n+1-j$ and $l=n+1-i$. Hence, \[\eta(\eta(e_{ij}))=\eta((-1)^{j-i-1}e_{kl})=(-1)^{j-i-1}\eta(e_{ij})=(-1)^{j-i-1}(-1)^{l-k-1}e_{n+1-l,n+1-k}=\]\[=(-1)^{j-i-1}(-1)^{n+1-i-(n+1-j)-1}e_{n+1-(n+1-i),n+1-(n+1-j)}=(-1)^{j-i-1}(-1)^{j-i-1}e_{ij}=\]\[=(-1)^{2(j-i-1)}e_{ij}=e_{ij}\]
+To complete the proof, we need to show that $\eta$ is indeed a homomorphism,
+\[[\eta(e_{ij}),\eta(e_{kl})]=[(-1)^{j-i-1}e_{n+1-j,n+1-i},(-1)^{l-k-1}e_{n+1-l,n+1-k}]=\]\[=(-1)^{j-i-1}(-1)^{l-k-1}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]=\]\[(-1)^{j-i+l-k-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]\]
+We observe that if $n+1-i=n+1-l$ or $n+1-j=n+1-k$ then the Lie brackets evaluate to a non-zero element, but this happens if and only if $i=l$ or $j=k$, respectively. Assume $j=k$, then \[(-1)^{j-i+l-k-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-k}]=(-1)^{l-i-2}[e_{n+1-j,n+1-i},e_{n+1-l,n+1-j}]=\]\[(-1)^{l-i-2}\cdot-e_{n+1-l,n+1-i}=(-1)^{l-i-1}e_{n+1-l,n+1-i}=\eta(e_{il})=\eta[e_{ij},e_{jl}]\] 
 \end{proof}
 \begin{corollary}
 Let $\mathcal{L}_{n,p}$, where $n\geq 4$, then the block $M_{11}$ is diagonal.
 \end{corollary}
 \begin{proof}
-By \ref{m11.n.5} and \ref{m11.n.4}, we have that $M_{11}$ is either diagonal or anti-diagonal, 
+By \ref{m11.n.5} and \ref{m11.n.4}, we have that $M_{11}$ is either diagonal or anti-diagonal. Assume that $M_{11}$ is anti-diagonal, that is, $\varphi(e_{12})=\lambda_{n-1}e_{n-1,n}+z_{n-1},\varphi(e_{23})=\lambda_{n-2} e_{n-2,n-1}+z_{n-2},\dots,\varphi(e_{n-1,n})=\lambda_1 e_{12}+z_1$, where $z_1,z_2,\dots,z_{n-1}\in\gamma_2\mathcal{L}_{n,p}$, then we define a new automorphism by the composition $\psi=\varphi\eta$. Let $e_{i,i+1}\in\sfrac{\gamma_1}{\gamma_2}$, where $1\leq i\leq n-1$, then $\psi(e_{i,i+1})=\varphi\eta(e_{i,i+1})=\varphi((-1)^{i+1-i-1}e_{n+1-(i+1),n+1-i})=\varphi(e_{n-i,n-i+1})
+$, hence $\psi(e_{12})=\varphi(e_{n-1,n})=\lambda_1 e_{12}+z_1,\psi(e_{23})=\varphi(e_{n-2,n-1})=\lambda_2 e_{23}+z_2,\dots,\psi(e_{n-1,n})=\varphi(e_{12})=\lambda_{n-1}e_{n-1,n}+z_{n-1}$, which means that $M_{11}$, as the first block of the matrix representing $\psi$, is diagonal.  
 \end{proof}
 \end{document}
