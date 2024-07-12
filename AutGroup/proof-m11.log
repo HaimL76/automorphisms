@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 JUL 2024 01:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  12 JUL 2024 03:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -737,19 +737,11 @@ Overfull \hbox (39.24632pt too wide) in paragraph at lines 88--88
 
 Overfull \hbox (1.54721pt too wide) in paragraph at lines 88--88
 \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]; e[]; [] ; e[]; e[]; e[]; e[]; e[];
- [] ; e[]; e[]; e[]; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 .
+ [] ; e[]; e[]; e[]; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 ,
  []
 
-[6]
-Overfull \hbox (90.0379pt too wide) detected at line 88
-\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 
-+ \OML/cmm/m/it/12 ^^U[]e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/
-12 e[]; e[]; e[]; [] ; e[]; e[]; e[]; e[]; [] ; e[]; e[]; e[]; e[]; e[]; [] ; e
-[]\OMS/cmsy/m/n/12 i
- []
-
-[7]
-Overfull \hbox (24.20802pt too wide) in paragraph at lines 95--96
+[6] [7]
+Overfull \hbox (24.20802pt too wide) in paragraph at lines 99--100
 []\OT1/cmr/m/n/12 We ob-serve[] that $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]
 ; e[]; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 , hence $[] \OMS/cmsy/m/n/12 C[]\O
@@ -757,33 +749,52 @@ T1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/
 m/n/12 )) =
  []
 
-
-Overfull \hbox (48.71973pt too wide) detected at line 102
-\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
-OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
-(\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
-= (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/1
-2 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12
- 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n
-/12 =
+[8]
+Overfull \hbox (27.81207pt too wide) detected at line 106
+\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OMS/
+cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OM
+S/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\O
+MS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 102
+Overfull \hbox (30.64902pt too wide) detected at line 106
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
  e[] \OT1/cmr/m/n/12 =
  []
 
-[8]
-Overfull \hbox (20.02075pt too wide) detected at line 105
+
+Overfull \hbox (20.02075pt too wide) detected at line 109
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[];
  e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it
 /12 e[]; e[]\OT1/cmr/m/n/12 ] =
  []
 
-[9] (proof-m11.aux)
+
+Overfull \hbox (37.08635pt too wide) in paragraph at lines 116--118
+\OML/cmm/m/it/12 z[]; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) =
+ \OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; [] ; '\OT1/c
+mr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^U[]e[] \O
+T1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]$\OT1/cmr/m/n/12 , where $\OML/cmm/m/it/12 
+z[]; z[]; [] ; z[] \OMS/cmsy/m/n/12 2
+ []
+
+
+Overfull \hbox (28.09169pt too wide) in paragraph at lines 120--121
+[]\OT1/cmr/bx/n/12 Corollary 1.1.8. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
+]$\OT1/cmr/m/it/12 , where $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/
+n/12 4$\OT1/cmr/m/it/12 , then all the blocks $\OML/cmm/m/it/12 M[]; M[]; [] ; 
+M[]$
+ []
+
+
+LaTeX Warning: Reference `m11.diagonal' on page 9 undefined on input line 123.
+
+[9] [10] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -793,15 +804,21 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.125pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15442 strings out of 474486
- 326372 string characters out of 5743755
+ 15443 strings out of 474486
+ 326386 string characters out of 5743755
  1977528 words of memory out of 5000000
- 37432 multiletter control sequences out of 15000+600000
+ 37433 multiletter control sequences out of 15000+600000
  595449 words of font info for 199 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,22n,107p,9383b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,107p,8510b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -827,9 +844,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 2.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (9 pages, 288314 bytes).
+Output written on proof-m11.pdf (10 pages, 293642 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
+ 148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
