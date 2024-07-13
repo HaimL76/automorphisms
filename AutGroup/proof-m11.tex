@@ -117,9 +117,28 @@ By \ref{m11.n.5} and \ref{m11.n.4}, we have that $M_{11}$ is either diagonal or 
 $, hence $\psi(e_{12})=\varphi(e_{n-1,n})=\lambda_1 e_{12}+z_1,\psi(e_{23})=\varphi(e_{n-2,n-1})=\lambda_2 e_{23}+z_2,\dots,\psi(e_{n-1,n})=\varphi(e_{12})=\lambda_{n-1}e_{n-1,n}+z_{n-1}$, which means that $M_{11}$, as the first block of the matrix representing $\psi$, is diagonal.  
 \end{proof}
 \begin{corollary}
+\label{main.diagonal.blocks}
 Let $\mathcal{L}_{n,p}$, where $n\geq 4$, then all the blocks $M_{11},M_{22},\dots,M_{n-1,n-1}$ are diagonal.
 \end{corollary}
 \begin{proof}
-By simple induction on the index $1\leq k\leq n-1$ of the diagonal block. For $k=1$ we proved this in \ref{m11.diagonal}, for $k+1$ we observe that for any $i$, we have the identity $\varphi(e_{i,i+k+1})=\varphi([e_{i,i+j},e_{i+j,i+k+1}])=[\varphi(e_{i,i+j}),\varphi(e_{i+j,i+k+1})]$, for $1\leq j\leq k$, but by the assumption we have that $\varphi(e_{i,i+j})=a_{i,i+j}e_{i,i+j}+z_{j+1}$ and $\varphi(e_{i+j,i+k+1})=\varphi(e_{i+j,i+k+1})=a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{k+2-j}$, where $z_{j+1}\in\gamma_{j+1}\mathcal{L}_{n,p}$ and $z_{k+2-j}\in\gamma_{k+2-j}\mathcal{L}_{n,p}$, hence $\varphi(e_{i,i+k+1})=[a_{i,i+j}e_{i,i+j}+z_{j+1},a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{k+2-j}]=a_{i,i+j}a_{i+j,i+k+1}e_{i,i+k+1}+a_{i,i+j}e_{i,i+j}z_{k+2-j}+a_{i+j,i+k+1}e_{i+j,i+k+1}z_{j+1}+z_{k+2-j}z_{j+1}=a_{i,i+j}a_{i+j,i+k+1}e_{i,i+k+1}+z_{k+2-j}$, where $z_{k+2-j}\in\gamma_{k+2-j}\mathcal{L}_{n,p}$, which proves the induction step.
+By simple induction on the index $1\leq k\leq n-1$ of the diagonal block. For $k=1$ we proved this in \ref{m11.diagonal}, for $k+1$ we observe that for every $1\leq i\leq n-k$, we have the identity $\varphi(e_{i,i+k+1})=\varphi([e_{i,i+j},e_{i+j,i+k+1}])=[\varphi(e_{i,i+j}),\varphi(e_{i+j,i+k+1})]$, for $1\leq j\leq k$, but by the assumption we have that $\varphi(e_{i,i+j})=a_{i,i+j}e_{i,i+j}+z_{j+1}$ and $\varphi(e_{i+j,i+k+1})=a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{k+2-j}$, where $z_{j+1}\in\gamma_{j+1}\mathcal{L}_{n,p}$ and $z_{k+2-j}\in\gamma_{k+2-j}\mathcal{L}_{n,p}$, hence $\varphi(e_{i,i+k+1})=[a_{i,i+j}e_{i,i+j}+z_{j+1},a_{i+j,i+k+1}e_{i+j,i+k+1}+z_{k+2-j}]=a_{i,i+j}a_{i+j,i+k+1}e_{i,i+k+1}+a_{i,i+j}e_{i,i+j}z_{k+2-j}+a_{i+j,i+k+1}e_{i+j,i+k+1}z_{j+1}+z_{k+2-j}z_{j+1}=a_{i,i+j}a_{i+j,i+k+1}e_{i,i+k+1}+z_{k+2-j}$, where $z_{k+2-j}\in\gamma_{k+2-j}\mathcal{L}_{n,p}$, which proves the induction step.
+\end{proof}
+\begin{corollary}
+Let $\mathcal{L}_{n,p}$, where $n\geq 4$, then the main diagonal is
+\[\begin{pmatrix}
+\lambda_1 \\
+& \lambda_2  \\
+& & \ddots\\
+& & & \lambda_{n-1}\\
+& & & &\lambda_1\lambda_2\\
+& & & & &\ddots\\
+& & & & & &\lambda_{n-1}\lambda_{n-2}\\
+& & & & & & &\ddots\\
+& & & & & & & &\lambda_1\lambda_2\cdots\lambda_{n-2}\lambda_{n-1}\\
+\end{pmatrix}\]
+where $\lambda_1,\lambda_2,\dots,\lambda_{n-1}\in\mathbb{Q}_p$, such that for every $1\leq k\leq n-1$ and for every $1\leq i\leq n-k$, we have that $\varphi(e_{i,i+k})=\lambda_i\lambda_{i+1}\lambda_{i+2}\cdots\lambda_{i+k-2}\lambda_{i+k-1}e_{i,i+k}+z_{k+1}$, where $z_{k+1}\in\gamma_{k+2}\mathcal{L}_{n,p}$
+\end{corollary}
+\begin{proof}
+Following the proof of \ref{main.diagonal.blocks}, we have that for every $1\leq k\leq n-1$ and for every $1\leq i\leq n-k$, $\varphi(e_{i,i+k})=\lambda_{i,i+k}e_{i,i+k}+z_{k+1}$, where $z_{k+1}\in\gamma_{k+1}\mathcal{L}_{n,p}$, and we use the same method of induction on $k$. For $k=1$, we already proved in \ref{m11.n.5} that $\varphi(e_{12})=\lambda_1 e_{12}+z_1,\varphi(e_{23})=\lambda_2 e_{23}+z_2,\dots,\varphi(e_{n-1,n})=\lambda_{n-1}e_{n-1,n}+z_{n-1}$, where $z_i\in\gamma_i\mathcal{L}_{n,p}$, for every $1\leq i\leq n-1$. For $k+1$, we have that $\varphi(e_{i,i+k+1})=\varphi([e_{i,i+j},e_{i+j,i+k+1}])=[\varphi(e_{i,i+j}),\varphi(e_{i+j,i+k+1})]$, for every $1\leq j\leq k$, but by the assumption we have that $\varphi(e_{i,i+j})=\lambda_i\lambda_{i+1}\cdots\lambda_{i+j}+z_{i+j+1}$ and $\varphi(e_{i+j,i+k+1})=\lambda_{i+j}\lambda_{i+j+1}\cdots\lambda_{i+k+1}+z_{i+k+2}$, where $z_{i+j+1}\in\gamma_{i+j+1}\mathcal{L}_{n,p}$ and $z_{i+k+2}\in\gamma_{i+k+2}\mathcal{L}_{n,p}$, hence $\varphi(e_{i,i+k+1})=\varphi([e_{i,i+j},e_{i+j,i+k+1}])=[\varphi(e_{i,i+j}),\varphi(e_{i+j,i+k+1})]=[\lambda_i\lambda_{i+1}\cdots\lambda_{i+j}+z_{i+j+1},\lambda_{i+j}\lambda_{i+j+1}\cdots\lambda_{i+k+1}+z_{i+k+2}]=\lambda_i\lambda_{i+1}\lambda_{i+2}\lambda_{i+k}\cdots\lambda_{i+k+1}+z_{i+k+2}$, which proves the induction step.
 \end{proof}
 \end{document}
