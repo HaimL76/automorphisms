@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  12 JUL 2024 03:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  15 JUL 2024 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,24 +591,24 @@ Package: arydshln 2019/02/21 v1.76
 (proof-m11.aux)
 \openout1 = `proof-m11.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -635,75 +635,75 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
  (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
 
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 62.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 63.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
-LaTeX Font Info:    Calculating math sizes for size <5.6> on input line 62.
+LaTeX Font Info:    Calculating math sizes for size <5.6> on input line 63.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.91998> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.8> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.91998> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.8> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.91998> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.8> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.91998> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2.8> not available
-(Font)              size <5> substituted on input line 62.
+(Font)              size <5> substituted on input line 63.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 62.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 63.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -712,14 +712,14 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 
 {C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 [3] [4] [5]
-Overfull \hbox (2.48685pt too wide) detected at line 88
+Overfull \hbox (2.48685pt too wide) detected at line 89
 \OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \O
 MS/cmsy/m/n/12 f\OML/cmm/m/it/12 e[]; e[]; e[]; [] ; e[]; e[]; e[]; e[]; e[]; [
 ] ; e[]; e[]\OMS/cmsy/m/n/12 g
  []
 
 
-Overfull \hbox (72.50125pt too wide) in paragraph at lines 88--88
+Overfull \hbox (72.50125pt too wide) in paragraph at lines 89--89
 [][]\OT1/cmr/m/n/10 To show this ex-plic-itly, $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/
 n/10 (\OML/cmm/m/it/10 ^^U[]e[]\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 f\OML/cmm/m
 /it/10 ^^V[]e[]; ^^V[]e[]; ^^V[]e[]; [] ; ^^V[]; e[]; b[]e[]; [] ; b[]e[]\OMS/c
@@ -727,7 +727,7 @@ msy/m/n/10 g$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (39.24632pt too wide) in paragraph at lines 88--88
+Overfull \hbox (39.24632pt too wide) in paragraph at lines 89--89
 \OT1/cmr/m/n/10 and $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^U[
 ]e[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^U[]e[]\OT1/cmr/m/n/10 ) = \OMS/cmsy/m
 /n/10 f\OML/cmm/m/it/10 ^^V[]e[] \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 ^^V[]e[];
@@ -735,13 +735,13 @@ Overfull \hbox (39.24632pt too wide) in paragraph at lines 88--88
  []
 
 
-Overfull \hbox (1.54721pt too wide) in paragraph at lines 88--88
+Overfull \hbox (1.54721pt too wide) in paragraph at lines 89--89
 \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]; e[]; [] ; e[]; e[]; e[]; e[]; e[];
  [] ; e[]; e[]; e[]; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 ,
  []
 
 [6] [7]
-Overfull \hbox (24.20802pt too wide) in paragraph at lines 99--100
+Overfull \hbox (24.20802pt too wide) in paragraph at lines 104--105
 []\OT1/cmr/m/n/12 We ob-serve[] that $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]
 ; e[]; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 , hence $[] \OMS/cmsy/m/n/12 C[]\O
@@ -750,7 +750,7 @@ m/n/12 )) =
  []
 
 [8]
-Overfull \hbox (27.81207pt too wide) detected at line 106
+Overfull \hbox (27.81207pt too wide) detected at line 111
 \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
 cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OMS/
 cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OM
@@ -760,7 +760,7 @@ MS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 106
+Overfull \hbox (30.64902pt too wide) detected at line 111
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -768,14 +768,14 @@ Overfull \hbox (30.64902pt too wide) detected at line 106
  []
 
 
-Overfull \hbox (20.02075pt too wide) detected at line 109
+Overfull \hbox (20.02075pt too wide) detected at line 114
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[];
  e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it
 /12 e[]; e[]\OT1/cmr/m/n/12 ] =
  []
 
 
-Overfull \hbox (37.08635pt too wide) in paragraph at lines 116--118
+Overfull \hbox (37.08635pt too wide) in paragraph at lines 121--123
 \OML/cmm/m/it/12 z[]; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) =
  \OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; [] ; '\OT1/c
 mr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^U[]e[] \O
@@ -783,8 +783,8 @@ T1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]$\OT1/cmr/m/n/12 , where $\OML/cmm/m/it/12
 z[]; z[]; [] ; z[] \OMS/cmsy/m/n/12 2
  []
 
-
-Overfull \hbox (28.09169pt too wide) in paragraph at lines 120--121
+[9]
+Overfull \hbox (28.09169pt too wide) in paragraph at lines 126--127
 []\OT1/cmr/bx/n/12 Corollary 1.1.8. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
 ]$\OT1/cmr/m/it/12 , where $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/
 n/12 4$\OT1/cmr/m/it/12 , then all the blocks $\OML/cmm/m/it/12 M[]; M[]; [] ; 
@@ -792,9 +792,26 @@ M[]$
  []
 
 
-LaTeX Warning: Reference `m11.diagonal' on page 9 undefined on input line 123.
+Overfull \hbox (60.37865pt too wide) in paragraph at lines 129--130
+\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]
+; a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]\OT1/cmr/m/n/12 ] = \OML/cmm/m/i
+t/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]z[] \OT1/cmr/m/n/12 +
+ []
 
-[9] [10] (proof-m11.aux)
+
+LaTeX Warning: Reference `main.diagonal.blocks' on page 10 undefined on input l
+ine 147.
+
+
+Overfull \hbox (87.27841pt too wide) in paragraph at lines 147--148
+\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
+ = [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OM
+L/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] = [\OM
+L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
+^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
+ []
+
+[10] [11] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -812,13 +829,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15443 strings out of 474486
- 326386 string characters out of 5743755
+ 15492 strings out of 474486
+ 327572 string characters out of 5743755
  1977528 words of memory out of 5000000
- 37433 multiletter control sequences out of 15000+600000
- 595449 words of font info for 199 fonts, out of 8000000 for 9000
+ 37482 multiletter control sequences out of 15000+600000
+ 595749 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,22n,107p,8510b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,107p,8510b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -844,9 +861,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 2.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (10 pages, 293642 bytes).
+Output written on proof-m11.pdf (11 pages, 299877 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
