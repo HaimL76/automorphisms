@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  16 JUL 2024 00:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  19 JUL 2024 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,7 +740,7 @@ Overfull \hbox (1.54721pt too wide) in paragraph at lines 89--89
  [] ; e[]; e[]; e[]; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 ,
  []
 
-[6] [7]
+[6] [7] [8]
 Overfull \hbox (24.20802pt too wide) in paragraph at lines 100--101
 []\OT1/cmr/m/n/12 We ob-serve[] that $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]
@@ -749,7 +749,7 @@ T1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/
 m/n/12 )) =
  []
 
-[8]
+[9]
 Overfull \hbox (27.81207pt too wide) detected at line 107
 \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
 cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OMS/
@@ -767,7 +767,7 @@ Overfull \hbox (30.64902pt too wide) detected at line 107
  e[] \OT1/cmr/m/n/12 =
  []
 
-[9]
+
 Overfull \hbox (20.02075pt too wide) detected at line 110
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[];
  e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it
@@ -783,7 +783,7 @@ T1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]$\OT1/cmr/m/n/12 , where $\OML/cmm/m/it/12
 z[]; z[]; [] ; z[] \OMS/cmsy/m/n/12 2
  []
 
-
+[10]
 Overfull \hbox (28.09169pt too wide) in paragraph at lines 122--123
 []\OT1/cmr/bx/n/12 Corollary 1.1.8. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
 ]$\OT1/cmr/m/it/12 , where $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/
@@ -798,7 +798,7 @@ Overfull \hbox (60.37865pt too wide) in paragraph at lines 125--126
 t/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]z[] \OT1/cmr/m/n/12 +
  []
 
-[10]
+
 Overfull \hbox (87.27841pt too wide) in paragraph at lines 143--144
 \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  = [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OM
@@ -807,7 +807,7 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
 ^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
  []
 
-[11] (proof-m11.aux)
+[11] [12] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -817,6 +817,9 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.125pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  15492 strings out of 474486
@@ -825,7 +828,7 @@ Here is how much of TeX's memory you used:
  37482 multiletter control sequences out of 15000+600000
  595749 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,22n,107p,8510b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,107p,8510b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -851,9 +854,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 2.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (11 pages, 302373 bytes).
+Output written on proof-m11.pdf (12 pages, 305988 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
+ 154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
