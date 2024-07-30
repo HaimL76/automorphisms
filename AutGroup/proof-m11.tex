@@ -24,7 +24,7 @@
 \newtheorem{notations}[theorem]{Notations}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
-
+\setcounter{MaxMatrixCols}{20}
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
  {
@@ -211,7 +211,38 @@ such that $Av=0$. We take the minor \[B=\begin{pmatrix}
 0 & 0 & -\lambda_3 & 0\\
 0 & a_{24} & 0 & -\lambda_4\\
 \end{pmatrix}\]
-We observe that $\det B=-\lambda_3^3\lambda_4=0$, but we know that $\lambda_3\neq 0$ hence we must have that $\lambda_4=0$, which rules out that $\varphi(e_{34})=\lambda_3 e_{34}+\lambda_4 e_{45}+z_2$.
+We observe that $\det B=-\lambda_3^3\lambda_4=0$, but we know that $\lambda_3\neq 0$ hence we must have that $\lambda_4=0$, which rules out that $\varphi(e_{34})=\lambda_3 e_{34}+\lambda_4 e_{45}+z_2$. For $n=6$, assume that $\varphi(e_{34})=\lambda_3 e_{34}+\lambda_5 e_{56}+z_2$, and we observe that $\mathfrak{l}(x)=\mathfrak{l}(e_{34})+1$, but $\mathfrak{m}(x)=\mathfrak{m}(e_{34})-1$, hence $\dim\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)=\dim\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{34})$, so here again we look at a larger quotient, and we have the following equations: \circled{1} $-\lambda_3\mu_2 e_{24}=0$, \circled{2} $\lambda_3\mu_4 e_{35}=0$, \circled{3} $-\lambda_5\mu_4 e_{46}=0$, \circled{4} $(-\mu_1 a_{24}+a_{13}\mu_3-\lambda_3 b_{13})e_{14}=0$, \circled{5} $(\lambda_3 b_{46}-a_{46}\mu_3+a_{35}\mu_5-b_{35}\lambda_5)e_{36}$, and we observe that equations \circled{2} and \circled{3} yield the same constraint $\mu_4=0$, hence we have four independent constraints, which is matching to $\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{34})=4$. Therefore, we look at a larger quotient, and add the equations \circled{6} $-a_{25}\mu_1+a_{13}b_{35}-a_{35}b_{13} e_{15}=0$ and \circled{7} $(a_{24}b_{46}-a_{46}b_{24}+a_{25}\mu_5-\lambda_5 b_{25})e_{26}$, but $\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_5}}(e_{34})=4$, because $e_{47}\notin\mathcal{L}_{6,p}$, hence these equations cannot yield more independent constraints, hence we have the following $5\times 11$ matrix: \[A=\begin{pmatrix}
+0 & -\lambda_3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & \lambda_3 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+-a_{24} & 0 & a_{13} & 0 & 0 & -\lambda_3 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & -a_{46} & 0 & 0 & a_{35} & 0 & -\lambda_5 & \lambda_3 & 0 & 0\\
+0 & 0 & 0 & 0 & a_{25} & 0 & -a_{46} & 0 & a_{24} & 0 & \lambda_5\\
+\end{pmatrix}\]
+which is ordered in relation to the vector \[
+v=\begin{pmatrix}
+\mu_1\\
+\mu_2\\
+\mu_3\\
+\mu_4\\
+\mu_5\\
+b_{13}\\
+b_{24}\\
+b_{35}\\
+b_{46}\\
+b_{14}\\
+b_{25}\\
+\end{pmatrix}
+\]
+such that $Av=0$. We take the $5\times 5$ minor \[
+B=\begin{pmatrix}
+-\lambda_3 & 0 & 0 & 0 & 0\\
+0 & \lambda_3 & 0 & 0 & 0\\
+0 & 0 & -\lambda_3 & 0 & 0\\
+0 & 0 & a_{35} & -\lambda_5 & 0\\
+0 & 0 & 0 & 0 & \lambda_5\\
+\end{pmatrix}
+\]
+and we observe that $\det B=-\lambda_3^3\lambda_5^2$, but we know that $\lambda_3\neq 0$, hence we must have that $\lambda_5=0$, which rules out that $\varphi(e_{34})=\lambda_3 e_{34}+\lambda_5 e_{56}+z_2$.
 
 
 
