@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  2 AUG 2024 02:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  5 AUG 2024 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,14 +798,32 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
 ^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
  []
 
+[16]
+Overfull \hbox (5.90459pt too wide) detected at line 341
+\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cm
+r/m/n/12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n
+/12 )] = [\OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \
+OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 u[]
+; ^^U[]^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 v[]\OT1/cmr/m/n/12 ]
+ []
 
-Overfull \hbox (108.51022pt too wide) in paragraph at lines 301--302
+
+Overfull \hbox (68.79053pt too wide) detected at line 341
+\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cm
+r/m/n/12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n
+/12 )] = [\OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \
+OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 u[]
+; ^^U[]^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 v[]\OT1/cmr/m/n/12 ]
+ []
+
+
+Overfull \hbox (108.51022pt too wide) in paragraph at lines 343--344
 \OML/cmm/m/it/12 ^^U[]^^U[]e[] \OT1/cmr/m/n/12 + [][] \OML/cmm/m/it/12 ^^U[]a[]
 e[] \OMS/cmsy/m/n/12 ^^@ [][] \OML/cmm/m/it/12 ^^U[]a[]e[] \OT1/cmr/m/n/12 + []
 [] \OML/cmm/m/it/12 ^^U[]a[]e[] \OMS/cmsy/m/n/12 ^^@
  []
 
-[16] [17] (proof-m11.aux)
+[17] [18] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -814,9 +832,6 @@ L3 programming layer <2024-01-04>
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.125pt have occurred.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -853,9 +868,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 /euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/latxfont/line10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (17 pages, 319984 bytes).
+Output written on proof-m11.pdf (18 pages, 324598 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
