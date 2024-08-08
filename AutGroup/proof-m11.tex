@@ -68,6 +68,69 @@ Let $x=\sum_{i=0}^n\lambda_i e_{i,i+1}$, where $\lambda_i\in\mathbb{Q}_p$ are no
 Let $y=\sum_{i=1}^{n-1}\mu_i e_{i,i+1}$, where $\lambda_i\in\mathbb{Q}_p$, be an element in the quotient $\sfrac{\gamma_1}{\gamma_2}$.
 For every $1\leq i\leq n-1$, denote by $(\mathfrak{C}_i)$ the constraint equation $[\lambda_i e_{i,i+1},\mu_{i+1}e_{i+1,i+2}]-[\lambda_{i+1}e_{i+1,i+2},\mu_i e_{i,i+1}]=(\lambda_i\mu_{i+1}-\lambda_{i+1}\mu_i)e_{i,i+2}=0$, and it is clear that $y\in\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}$ if and only if all the $(\mathfrak{C}_i)$ constraints are satisfied. We observe that each $\mu_i$ participates in two constraints, $(\mathfrak{C}_{i-1})$ and $(\mathfrak{C}_i)$, that is, $\lambda_{i-1}\mu_i-\lambda_i\mu_{i-1}=\lambda_i\mu_{i+1}-\lambda_{i+1}\mu_i=0$. If $\lambda_i=0$, then $\lambda_i\mu_{i-1}=\lambda_i\mu_{i+1}=0$, hence by constraint $(\mathfrak{C}_{i-1})$ we have that $\lambda_{i-1}\mu_i=0$, and by constraint $(\mathfrak{C}_i)$ we have that $\lambda_{i+1}\mu_i=0$. Hence, if either $\lambda_{i-1}$ or $\lambda_{i+1}$ are non-zero, then $\mu_i=0$. But if $\lambda_{i-1}=\lambda_{i+1}=0$, then both constraints are satisfied for any choice of $\mu_i$, which increases $\dim\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}$ by $1$. We need to prove that for any sequence of $k$ consecutive zero coefficients of $x$, where $k\geq 3$, that is $\lambda_{j+1}=\lambda_{j+2}=\cdots=\lambda_{j+k}=0$, for $1\leq j\leq n-2$, we have that the sequence $\mu_{j+2},\mu_{j+3},\dots,\mu_{j+k-1}$ of $k-2$ consecutive coefficients of $y$ is made of scalars of any choice, thus $\dim\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}$ is increased by $k-2$. We prove that by simple induction on $k$. For $k=3$, we just proved that if $\lambda_{i-1}=\lambda_i=\lambda_{i+1}=0$, then $\mu_i$ can be any scalar. For $k+1$, we look at the sequence of $k+1$ zero coefficients, $\lambda_{j+1}=\lambda_{j+2}=\cdots=\lambda_{j+k}=\lambda_{j+k+1}=0$. By constraints $(\mathfrak{C}_{j+k-1})$ and $(\mathfrak{C}_{j+k})$, we have that $\lambda_{j+k-1}\mu_{j+k}-\lambda_{j+k}\mu_{j+k-1}=\lambda_{j+k}\mu_{j+k+1}-\lambda_{j+k+1}\mu_{j+k}=0$, and since $\lambda_{j+k-1}=\lambda_{j+k}=\lambda_{j+k+1}=0$, we have that $\mu_{j+k}$ can be any scalar, as we proved earlier. By the assumption, we have that all $k-2$ previous coefficients, that is $\mu_{j+2},\dots,\mu_{j+k-1}$ can also be any scalars, so in total the whole sequence of $k-1=(k+1)-2$ coefficients of $y$ can be any scalars, which proves the induction step. Suppose that we have $m$ sequences of three or more consecutive zero coefficients in $x$, whose lengths are $k_1,k_2,\dots,k_m$, then $\mathfrak{m}(x)=\sum_{l=1}^m k_l-2m$ is the total number of zero coefficients $\lambda_j=0$ such that also $\lambda_{j-1}=\lambda_{j+1}=0$, as proposed. Using again the two consecutive constraints, $(\mathfrak{C}_{i-1})$ and $(\mathfrak{C}_i)$,
 suppose now that $\lambda_i\neq 0$. If $\lambda_{i-1}=0$, then by constraint $(\mathfrak{C}_{i-1})$ we must have that $\mu_{i-1}=0$, but if $\lambda_{i-1}\neq 0$, then by this constraint we have $\mu_i=\frac{\lambda_i\mu_{i-1}}{\lambda_{i-1}}$, which means that $\mu_i$ depends on $\mu_{i-1}$. Precisely the same way for constraint $(\mathfrak{C}_i)$, we have that if $\lambda_{i+1}=0$ then $\mu_{i+1}=0$, otherwise $\mu_{i+1}=\frac{\lambda_{i+1}\mu_i}{\lambda_i}$, which means that $\mu_{i+1}$ depends on $\mu_i$, and if also $\lambda_{i-1}\neq 0$, then $\mu_{i+1}=\frac{\lambda_{i+1}\frac{\lambda_i\mu_{i-1}}{\lambda_{i-1}}}{\lambda_i}=\frac{\lambda_{i+1}\mu_{i-1}}{\lambda_{i-1}}$, which means that both $\mu_{i+1}$ and $\mu_i$ depend on $\mu_{i-1}$. We need to prove this is true for any sequence of $k$ consecutive non-zero coefficients of $x$, that is, for a given sequence of coefficients, $\lambda_{j+1},\lambda_{j+2},\dots,\lambda_{j+k}$, where $1\leq j\leq n-1$, we need to prove that $\mu_{j+1}$ can be any scalar, while $\mu_{j+2},\mu_{j+3},\dots,\mu_{j+k}$ all depend on $\mu_{j+1}$. Here again, we use a simple induction on $k$. For $k=1,2,3$, we already proved this. For $k+1$, we look into a sequence of $k+1$ consecutive non-zero coefficients of $x$, that is $\lambda_{j+1},\dots,\lambda_{j+k},\lambda_{j+k+1}$. By constraint $(\mathfrak{C}_{j+k})$ we have $\lambda_{j+k}\mu_{j+k+1}-\lambda_{j+k+1}\mu_{j+k}=0$, and since $\lambda_{j+k}\neq 0$, we have $\mu_{j+k+1}=\frac{\lambda_{j+k+1}\mu_{j+k}}{\lambda_{j+k}}$, but by the assumption, $\mu_{j+k}=\frac{\lambda_{j+k}\mu_{j+k-1}}{\lambda_{j+k-1}}=\frac{\lambda_{j+k}}{\lambda_{j+k-1}}\frac{\lambda_{j+k-1}\mu_{j+k-2}}{\lambda_{j+k-2}}=\frac{\lambda_{j+k}}{\lambda_{j+k-1}}\frac{\lambda_{j+k-1}}{\lambda_{j+k-2}}\frac{\lambda_{j+k-2}\mu_{j+k-3}}{\lambda_{j+k-3}}=\cdots=\frac{\lambda_{j+k}\mu_{j+1}}{\lambda_{j+1}}$, hence $\mu_{j+k+1}=\frac{\lambda_{j+k+1}\mu_{j+k}}{\lambda_{j+k}}=\frac{\lambda_{j+k+1}}{\lambda_{j+k}}\frac{\lambda_{j+k}\mu_{j+1}}{\lambda_{j+1}}=\frac{\lambda_{j+k+1}\mu_{j+1}}{\lambda_{j+1}}$, which proves the induction step. Looking again at $(\mathfrak{C}_{i-1})$ and $(\mathfrak{C}_i)$, we observe that if $\lambda_{i-1}$ and $\lambda_{i+1}$ are non-zero and $\lambda_i=0$, then $\lambda_i\mu_{i-1}=\lambda_i\mu_{i+1}=0$, hence by constraint $(\mathfrak{C}_{i-1})$ we have that $\lambda_{i-1}\mu_i=0$, and by constraint $(\mathfrak{C}_i)$ we have that $\lambda_{i+1}\mu_i=0$, so $\mu_i=0$ by both constraints, which means that there is no dependency between $\mu_{i+1}$ and $\mu_{i-1}$. This shows that any zero coefficient between two non-zero coefficients of $x$ creates two separate sequences, each sequences increases $\dim\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}$ by $1$, hence, if we have $l$ sequences of consecutive non-zero coefficients of $x$, they increase $\dim\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}$ by $l$, and we denote $\mathfrak{l}(x)=l$. All this shows that $\dim\sfrac{\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(x)}{\gamma_2}=\mathfrak{l}(x)+\mathfrak{m}(x)$, as proposed.
+
+
+Assume that,
+\[\varphi(e_{12})= a_{12}^{12}e_{12}+a_{34}^{12}e_{34}+a_{13}^{12}e_{13}+a_{24}^{12}e_{24}+a_{14}^{12}e_{14}\]
+\[\varphi(e_{23})= a_{23}^{23}e_{23}+a_{13}^{23}e_{13}+a_{24}^{23}e_{24}+a_{14}^{23}e_{14}\]
+\[\varphi(e_{34})= a_{12}^{34}e_{12}+a_{34}^{34}e_{34}+a_{13}^{34}e_{13}+a_{24}^{34}e_{24}+a_{14}^{34}e_{14}\]
+We know that
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{12})=\{e_{12},\cancel{e_{23}},e_{34}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{23})=\{\cancel{e_{12}},e_{23},\cancel{e_{34}}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{34})=\{e_{12},\cancel{e_{23}},e_{34}\}\]
+And we have the equations,
+\[a_{12}^{12}b_{23}^{12}e_{13}=0\Rightarrow b_{23}^{12}=0\]
+\[-a_{34}^{12}b_{23}^{12}e_{24}=0\Rightarrow b_{23}^{12}=0\]
+\[-a_{23}^{23}b_{12}^{23}e_{13}=0\Rightarrow b_{12}^{23}=0\]
+\[a_{23}^{23}b_{34}^{23}e_{24}=0\Rightarrow b_{34}^{23}=0\]
+\[-a_{34}^{34}b_{23}^{34}e_{24=0}\Rightarrow b_{23}^{34}=0\]
+\[a_{12}^{34}b_{23}^{34}e_{13=0}\Rightarrow b_{23}^{34}=0\]
+Hence,
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{12})=1\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{23})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{34})=1\]
+This means that
+\[ b_{23}^{12}=0, b_{12}^{12}=*, b_{34}^{12}=*\]
+\[ b_{12}^{23}= b_{34}^{23}=0, b_{23}^{23}=*\]
+\[ b_{23}^{34}=0, b_{12}^{34}=*, b_{34}^{34}=*\]
+We have the equations,
+\[( a_{12}^{12}b_{24}^{12}- b_{12}^{12}a_{24}^{12}+a_{13}^{12}b_{34}-b_{13}^{12}a_{34}^{12})e_{14}=0\]
+\[(-a_{34}^{34}b_{13}^{34}+a_{13}^{34}b_{34}^{34}-a_{24}^{34}b_{12}^{34}+a_{12}^{34}b_{24}^{34})e_{14}=0\]
+Hence we have that,
+\[b_{24}^{12}=\frac{ b_{12}^{12}a_{24}^{12}-a_{13}^{12}b_{34}^{12}+b_{13}^{12}a_{34}^{12}}{ a_{12}^{12}}\] or \[b_{13}^{12}=\frac{ b_{12}^{12}a_{24}^{12}-a_{13}^{12}b_{34}^{12}-b_{24}^{12}a_{12}^{12}}{-a_{34}^{12}}\]
+And we have that,
+\[b_{13}^{34}=\frac{a_{13}^{34}b_{34}^{34}-a_{24}^{34}b_{12}^{34}+a_{12}^{34}b_{24}^{34}}{a_{34}^{34}}\]
+or
+\[b_{24}^{34}=\frac{-a_{13}^{34}b_{34}^{34}+a_{24}^{34}b_{12}^{34}+a_{34}^{34}b_{13}^{34}}{a_{12}^{34}}\]
+We also know that
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{12})=\{e_{12},\cancel{e_{23}},e_{34},e_{13},\cancel{e_{24}}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{23})=\{\cancel{e_{12}},e_{23},\cancel{e_{34}},e_{13},e_{24}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{34})=\{e_{12},\cancel{e_{23}},e_{34},\cancel{e_{13}},e_{24}\}\]
+Hence,
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{12})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{23})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{34})=2\]
+This means that,
+\[b_{23}^{12}=0,b_{12}^{12}=*,b_{34}^{12}=*,b_{24}^{12}\sim b_{13}^{12}\]
+\[b_{12}^{23}=0,b_{34}^{23}=0,b_{23}^{23}=*,b_{24}^{23}=*,b_{13}^{23}=*\]
+\[b_{23}^{34}=0,b_{12}^{34}=*,b_{34}^{34}=*,b_{24}^{34}\sim b_{13}^{34}\]
+Which means that the number of constraints fit precisely the co dimension of each element and its image. 
+Now we compute,
+\[\varphi(e_{13})=[\varphi(e_{12}),\varphi(e_{23})]= a_{12}^{12}a_{23}^{23}e_{13}+a_{12}^{12}a_{24}^{23}e_{14}-a_{23}^{23}a_{34}^{12}e_{24}-a_{13}^{23}a_{34}^{12}e_{14}=\]\[=a_{12}^{12}a_{23}^{23}e_{13}-a_{23}^{23}a_{34}^{12}e_{24}+(a_{12}^{12}a_{24}^{23}e_{14}-a_{13}^{23}a_{34}^{12})e_{14}\]
+And we compute,
+\[
+0=[\varphi(e_{12}),\varphi(e_{13})]=\]\[=[a_{12}^{12}e_{12}+a_{34}^{12}e_{34}+a_{13}^{12}e_{13}+a_{24}^{12}e_{24}+a_{14}^{12}e_{14},a_{12}^{12}a_{23}^{12}e_{13}-a_{23}^{23}a_{34}^{12}e_{24}+(a_{12}^{12}a_{24}^{23}e_{14}-a_{13}^{23}a_{34}^{12})e_{14}]=\]\[=[-a_{12}^{12}e_{12},a_{23}^{23}a_{34}^{12}e_{24}]-[a_{12}^{12}a_{23}^{23}e_{13}a_{34}^{12}e_{34}]=-a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}-a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}=-2a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}=0
+\]
+But this is possible only if at least one of the coefficients $a_{12}^{12}$, $a_{23}^{23}$ and $a_{34}^{12}$ is zero.
+
+
+
+
+
+
+
+
+
 \end{proof}
 \begin{proposition}
 \label{prop.n.geq.5.centralizer.codimension}
