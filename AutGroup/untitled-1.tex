@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{xfrac}
+\usepackage{yfonts}
+\usepackage{cancel}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+Assume that,
+\[\varphi(e_{12})= a_{12}^{12}e_{12}+a_{34}^{12}e_{34}+a_{13}^{12}e_{13}+a_{24}^{12}e_{24}+a_{14}^{12}e_{14}\]
+\[\varphi(e_{23})= a_{23}^{23}e_{23}+a_{13}^{23}e_{13}+a_{24}^{23}e_{24}+a_{14}^{23}e_{14}\]
+\[\varphi(e_{34})= a_{12}^{34}e_{12}+a_{34}^{34}e_{34}+a_{13}^{34}e_{13}+a_{24}^{34}e_{24}+a_{14}^{34}e_{14}\]
+We know that
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{12})=\{e_{12},\cancel{e_{23}},e_{34}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{23})=\{\cancel{e_{12}},e_{23},\cancel{e_{34}}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{34})=\{e_{12},\cancel{e_{23}},e_{34}\}\]
+And we have the equations,
+\[a_{12}^{12}b_{23}^{12}e_{13}=0\Rightarrow b_{23}^{12}=0\]
+\[-a_{34}^{12}b_{23}^{12}e_{24}=0\Rightarrow b_{23}^{12}=0\]
+\[-a_{23}^{23}b_{12}^{23}e_{13}=0\Rightarrow b_{12}^{23}=0\]
+\[a_{23}^{23}b_{34}^{23}e_{24}=0\Rightarrow b_{34}^{23}=0\]
+\[-a_{34}^{34}b_{23}^{34}e_{24=0}\Rightarrow b_{23}^{34}=0\]
+\[a_{12}^{34}b_{23}^{34}e_{13=0}\Rightarrow b_{23}^{34}=0\]
+Hence,
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{12})=1\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{23})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}\varphi(e_{34})=1\]
+This means that
+\[ b_{23}^{12}=0, b_{12}^{12}=*, b_{34}^{12}=*\]
+\[ b_{12}^{23}= b_{34}^{23}=0, b_{23}^{23}=*\]
+\[ b_{23}^{34}=0, b_{12}^{34}=*, b_{34}^{34}=*\]
+We have the equations,
+\[( a_{12}^{12}b_{24}^{12}- b_{12}^{12}a_{24}^{12}+a_{13}^{12}b_{34}-b_{13}^{12}a_{34}^{12})e_{14}=0\]
+\[(-a_{34}^{34}b_{13}^{34}+a_{13}^{34}b_{34}^{34}-a_{24}^{34}b_{12}^{34}+a_{12}^{34}b_{24}^{34})e_{14}=0\]
+Hence we have that,
+\[b_{24}^{12}=\frac{ b_{12}^{12}a_{24}^{12}-a_{13}^{12}b_{34}^{12}+b_{13}^{12}a_{34}^{12}}{ a_{12}^{12}}\] or \[b_{13}^{12}=\frac{ b_{12}^{12}a_{24}^{12}-a_{13}^{12}b_{34}^{12}-b_{24}^{12}a_{12}^{12}}{-a_{34}^{12}}\]
+And we have that,
+\[b_{13}^{34}=\frac{a_{13}^{34}b_{34}^{34}-a_{24}^{34}b_{12}^{34}+a_{12}^{34}b_{24}^{34}}{a_{34}^{34}}\]
+or
+\[b_{24}^{34}=\frac{-a_{13}^{34}b_{34}^{34}+a_{24}^{34}b_{12}^{34}+a_{34}^{34}b_{13}^{34}}{a_{12}^{34}}\]
+We also know that
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{12})=\{e_{12},\cancel{e_{23}},e_{34},e_{13},\cancel{e_{24}}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{23})=\{\cancel{e_{12}},e_{23},\cancel{e_{34}},e_{13},e_{24}\}\]
+\[\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}(e_{34})=\{e_{12},\cancel{e_{23}},e_{34},\cancel{e_{13}},e_{24}\}\]
+Hence,
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{12})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{23})=2\]
+\[\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_4}}\varphi(e_{34})=2\]
+This means that,
+\[b_{23}^{12}=0,b_{12}^{12}=*,b_{34}^{12}=*,b_{24}^{12}\sim b_{13}^{12}\]
+\[b_{12}^{23}=0,b_{34}^{23}=0,b_{23}^{23}=*,b_{24}^{23}=*,b_{13}^{23}=*\]
+\[b_{23}^{34}=0,b_{12}^{34}=*,b_{34}^{34}=*,b_{24}^{34}\sim b_{13}^{34}\]
+Which means that the number of constraints fit precisely the co dimension of each element and its image. 
+Now we compute,
+\[\varphi(e_{13})=[\varphi(e_{12}),\varphi(e_{23})]= a_{12}^{12}a_{23}^{23}e_{13}+a_{12}^{12}a_{24}^{23}e_{14}-a_{23}^{23}a_{34}^{12}e_{24}-a_{13}^{23}a_{34}^{12}e_{14}=\]\[=a_{12}^{12}a_{23}^{23}e_{13}-a_{23}^{23}a_{34}^{12}e_{24}+(a_{12}^{12}a_{24}^{23}e_{14}-a_{13}^{23}a_{34}^{12})e_{14}\]
+And we compute,
+\[
+0=[\varphi(e_{12}),\varphi(e_{13})]=\]\[=[a_{12}^{12}e_{12}+a_{34}^{12}e_{34}+a_{13}^{12}e_{13}+a_{24}^{12}e_{24}+a_{14}^{12}e_{14},a_{12}^{12}a_{23}^{12}e_{13}-a_{23}^{23}a_{34}^{12}e_{24}+(a_{12}^{12}a_{24}^{23}e_{14}-a_{13}^{23}a_{34}^{12})e_{14}]=\]\[=[-a_{12}^{12}e_{12},a_{23}^{23}a_{34}^{12}e_{24}]-[a_{12}^{12}a_{23}^{23}e_{13}a_{34}^{12}e_{34}]=-a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}-a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}=-2a_{12}^{12}a_{23}^{23}a_{34}^{12}e_{14}=0
+\]
+But this is possible only if at least one of the coefficients $a_{12}^{12}$, $a_{23}^{23}$ and $a_{34}^{12}$ is zero. 
+\end{document}

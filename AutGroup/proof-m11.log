@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 AUG 2024 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  9 AUG 2024 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,6 +8,16 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip48
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
@@ -19,8 +29,8 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count192
 \c@figure=\count193
 \c@table=\count194
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
 \bibindent=\dimen140
 )
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
@@ -74,7 +84,7 @@ th.
 \MDodotkern=\muskip18
 ) (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -134,8 +144,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen151
 \lineht@=\dimen152
 \@envbody=\toks22
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip52
+\multlinetaggap=\skip53
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -155,9 +165,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks28
 \thm@notefont=\toks29
 \thm@headpunct=\toks30
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
 \dth@everypar=\toks31
 )
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/tikz-cd\tikz-cd.sty
@@ -532,7 +542,7 @@ Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen263
 \l__xtemplate_tmp_int=\count296
 \l__xtemplate_tmp_muskip=\muskip20
-\l__xtemplate_tmp_skip=\skip56
+\l__xtemplate_tmp_skip=\skip57
 )
 Package: xfrac 2023-10-10 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box68
@@ -564,9 +574,9 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip57
-\thanksmargin=\skip58
-\droptitle=\skip59
+\thanksmarkwidth=\skip58
+\thanksmargin=\skip59
+\droptitle=\skip60
 )
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/arydshln\arydshln.sty
 Package: arydshln 2019/02/21 v1.76 
@@ -680,61 +690,62 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3]
-Overfull \hbox (47.43372pt too wide) detected at line 122
-\OT1/cmr/m/n/12 = [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a
-[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it
-/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]; a[]a[]e[] \OMS/cmsy/m/n/1
-2 ^^@ \OML/cmm/m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 + (\OML/cmm/m/it/12 a[]a[]e[] 
-\OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e
-[]\OT1/cmr/m/n/12 ] =
- []
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Calculating math sizes for size <4.9> on input line 77.
 
-
-Overfull \hbox (75.26701pt too wide) detected at line 123
-\OT1/cmr/m/n/12 = [\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]e[]; a[]a[]e[]\OT1/c
-mr/m/n/12 ] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]a[]e[]a[]
-e[]\OT1/cmr/m/n/12 ] = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]a[]a[]e[] \OMS/c
-msy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]a[]e[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12
- ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 a[]a[]a[]e[] \OT1/cmr/m/n/12 = 0
- []
-
-LaTeX Font Info:    Calculating math sizes for size <4.9> on input line 140.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.42998> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.45> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 140.
+(Font)              size <5> substituted on input line 77.
 
-[4] [5] [6] [7]
-Overfull \hbox (30.13031pt too wide) in paragraph at lines 154--155
+[2] [3] [4] [5]
+Overfull \hbox (47.43372pt too wide) detected at line 115
+ $\OT1/cmr/m/n/12 = [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12
+ a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/
+it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]; a[]a[]e[] \OMS/cmsy/m/n
+/12 ^^@ \OML/cmm/m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 + (\OML/cmm/m/it/12 a[]a[]e[
+] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12
+ e[]\OT1/cmr/m/n/12 ] =$ 
+ []
+
+
+Overfull \hbox (75.26701pt too wide) detected at line 116
+ $\OT1/cmr/m/n/12 = [\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]e[]; a[]a[]e[]\OT1
+/cmr/m/n/12 ] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]a[]e[]a
+[]e[]\OT1/cmr/m/n/12 ] = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]a[]a[]e[] \OMS
+/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]a[]e[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/
+12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 a[]a[]a[]e[] \OT1/cmr/m/n/12 = 0$ 
+ []
+
+[6]
+Overfull \hbox (30.13031pt too wide) in paragraph at lines 136--137
 [][] \OML/cmm/m/it/12 ^^U[]^^Z[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; e[]\OT1/
 cmr/m/n/12 ] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$, but this is true only if $
 \OML/cmm/m/it/12 ^^Z[] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$, thus $[][] \OML/
@@ -743,14 +754,14 @@ cmm/m/it/12 ^^U[]^^Z[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12
  []
 
 
-Overfull \hbox (23.53516pt too wide) detected at line 155
-\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \O
-MS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; e[]; []; e[]; [] ; e[]; e[]; e[]; []; e[];
- [] ; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i
+Overfull \hbox (23.53516pt too wide) detected at line 137
+ $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = 
+\OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; e[]; []; e[]; [] ; e[]; e[]; e[]; []; e[
+]; [] ; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$ 
  []
 
-[8] [9] [10] [11] [12] [13] [14]
-Overfull \hbox (15.2079pt too wide) in paragraph at lines 319--320
+[7] [8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (15.2079pt too wide) in paragraph at lines 301--302
 []\OT1/cmr/m/n/12 We ob-serve that $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]; 
 e[]; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 , hence $[] \OMS/cmsy/m/n/12 C[]\OT1
@@ -759,32 +770,33 @@ n/12 )) =
  []
 
 [15]
-Overfull \hbox (27.81207pt too wide) detected at line 326
-\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
-cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OMS/
-cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OM
-S/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/
-cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\O
-MS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
+Overfull \hbox (27.81207pt too wide) detected at line 308
+ $\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OM
+S/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\
+OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](
+\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =$
+ 
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 326
-\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
-@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
-^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
- e[] \OT1/cmr/m/n/12 =
- []
-
-[16]
-Overfull \hbox (20.02075pt too wide) detected at line 329
-\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[];
- e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it
-/12 e[]; e[]\OT1/cmr/m/n/12 ] =
+Overfull \hbox (30.64902pt too wide) detected at line 308
+ $\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 
+^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12
+ ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/
+12 e[] \OT1/cmr/m/n/12 =$ 
  []
 
 
-Overfull \hbox (37.08635pt too wide) in paragraph at lines 336--338
+Overfull \hbox (20.02075pt too wide) detected at line 311
+ $\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[
+]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/
+it/12 e[]; e[]\OT1/cmr/m/n/12 ] =$ 
+ []
+
+
+Overfull \hbox (37.08635pt too wide) in paragraph at lines 318--320
 \OML/cmm/m/it/12 z[]; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) =
  \OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; [] ; '\OT1/c
 mr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^U[]e[] \O
@@ -792,8 +804,8 @@ T1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]$\OT1/cmr/m/n/12 , where $\OML/cmm/m/it/12
 z[]; z[]; [] ; z[] \OMS/cmsy/m/n/12 2
  []
 
-
-Overfull \hbox (28.09169pt too wide) in paragraph at lines 341--342
+[16]
+Overfull \hbox (28.09169pt too wide) in paragraph at lines 323--324
 []\OT1/cmr/bx/n/12 Corollary 1.1.8. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
 ]$\OT1/cmr/m/it/12 , where $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/
 n/12 4$\OT1/cmr/m/it/12 , then all the blocks $\OML/cmm/m/it/12 M[]; M[]; [] ; 
@@ -801,14 +813,14 @@ M[]$
  []
 
 
-Overfull \hbox (60.37865pt too wide) in paragraph at lines 344--345
+Overfull \hbox (60.37865pt too wide) in paragraph at lines 326--327
 \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]
 ; a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]\OT1/cmr/m/n/12 ] = \OML/cmm/m/i
 t/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]z[] \OT1/cmr/m/n/12 +
  []
 
-[17]
-Overfull \hbox (87.27841pt too wide) in paragraph at lines 362--363
+
+Overfull \hbox (87.27841pt too wide) in paragraph at lines 344--345
 \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  = [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OM
 L/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] = [\OM
@@ -816,7 +828,7 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
 ^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
  []
 
-[18] [19] [20] (proof-m11.aux)
+[17] [18] [19] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -831,10 +843,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15535 strings out of 474486
- 328412 string characters out of 5743755
- 1972528 words of memory out of 5000000
- 37521 multiletter control sequences out of 15000+600000
+ 15544 strings out of 474486
+ 328648 string characters out of 5743755
+ 1975528 words of memory out of 5000000
+ 37527 multiletter control sequences out of 15000+600000
  595749 words of font info for 200 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,22n,107p,7488b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -864,9 +876,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 /euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/latxfont/line10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (20 pages, 327883 bytes).
+Output written on proof-m11.pdf (19 pages, 328555 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
+ 182 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
