@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  9 AUG 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  15 AUG 2024 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,43 +690,31 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Calculating math sizes for size <4.9> on input line 77.
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+[3] [4] [5]
+Overfull \hbox (74.69016pt too wide) detected at line 118
+ $\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = [\
+OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] = \OML/cmm/
+m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 
++ \OML/cmm/m/it/12 a[]a[]e[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]e[] \O
+MS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]e[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/i
+t/12 a[]a[]e[] \OT1/cmr/m/n/12 =$ 
+ []
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 77.
+Overfull \hbox (74.69016pt too wide) detected at line 119
+ $\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = [\
+OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] = \OML/cmm/
+m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]a[]e[] \OMS/cmsy/m/n/12
+ ^^@ \OML/cmm/m/it/12 a[]a[]e[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]e[]
+ \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]a[]e[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/i
+t/12 a[]a[]e[] \OT1/cmr/m/n/12 =$ 
+ []
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.42998> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.45> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.42998> not available
-(Font)              size <5> substituted on input line 77.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2.45> not available
-(Font)              size <5> substituted on input line 77.
-
-[2] [3] [4] [5]
-Overfull \hbox (47.43372pt too wide) detected at line 115
+Overfull \hbox (47.43372pt too wide) detected at line 123
  $\OT1/cmr/m/n/12 = [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12
  a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/
 it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]; a[]a[]e[] \OMS/cmsy/m/n
@@ -736,7 +724,7 @@ it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]; a[]a[]e[] \OMS/cmsy/m/n
  []
 
 
-Overfull \hbox (75.26701pt too wide) detected at line 116
+Overfull \hbox (75.26701pt too wide) detected at line 124
  $\OT1/cmr/m/n/12 = [\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]e[]; a[]a[]e[]\OT1
 /cmr/m/n/12 ] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]a[]e[]a
 []e[]\OT1/cmr/m/n/12 ] = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]a[]a[]e[] \OMS
@@ -745,7 +733,18 @@ Overfull \hbox (75.26701pt too wide) detected at line 116
  []
 
 [6]
-Overfull \hbox (30.13031pt too wide) in paragraph at lines 136--137
+Overfull \hbox (108.86853pt too wide) detected at line 127
+ $\OT1/cmr/m/n/12 = [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12
+ a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/
+it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]; a[]a[]e[] \OMS/cmsy/m/n
+/12 ^^@ \OML/cmm/m/it/12 a[]a[]e[] \OT1/cmr/m/n/12 + (\OML/cmm/m/it/12 a[]a[] \
+OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 
+a[]a[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 a[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/
+it/12 e[] \OT1/cmr/m/n/12 =$ 
+ []
+
+[7]
+Overfull \hbox (30.13031pt too wide) in paragraph at lines 142--143
 [][] \OML/cmm/m/it/12 ^^U[]^^Z[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; e[]\OT1/
 cmr/m/n/12 ] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$, but this is true only if $
 \OML/cmm/m/it/12 ^^Z[] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$, thus $[][] \OML/
@@ -754,14 +753,14 @@ cmm/m/it/12 ^^U[]^^Z[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12
  []
 
 
-Overfull \hbox (23.53516pt too wide) detected at line 137
+Overfull \hbox (23.53516pt too wide) detected at line 143
  $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = 
 \OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; e[]; []; e[]; [] ; e[]; e[]; e[]; []; e[
 ]; [] ; e[]; e[]; [] ; e[]\OMS/cmsy/m/n/12 i$ 
  []
 
-[7] [8] [9] [10] [11] [12] [13] [14]
-Overfull \hbox (15.2079pt too wide) in paragraph at lines 301--302
+[8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (15.2079pt too wide) in paragraph at lines 307--308
 []\OT1/cmr/m/n/12 We ob-serve that $\OMS/cmsy/m/n/12 C[]\OT1/cmr/m/n/12 (\OML/c
 mm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 e[]; e[]; 
 e[]; e[]\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 , hence $[] \OMS/cmsy/m/n/12 C[]\OT1
@@ -770,7 +769,7 @@ n/12 )) =
  []
 
 [15]
-Overfull \hbox (27.81207pt too wide) detected at line 308
+Overfull \hbox (27.81207pt too wide) detected at line 314
  $\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OM
 L/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 ((\OM
 S/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\
@@ -781,22 +780,22 @@ L/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](
  []
 
 
-Overfull \hbox (30.64902pt too wide) detected at line 308
+Overfull \hbox (30.64902pt too wide) detected at line 314
  $\OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 
 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12
  ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/
 12 e[] \OT1/cmr/m/n/12 =$ 
  []
 
-
-Overfull \hbox (20.02075pt too wide) detected at line 311
+[16]
+Overfull \hbox (20.02075pt too wide) detected at line 317
  $\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[
 ]; e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/
 it/12 e[]; e[]\OT1/cmr/m/n/12 ] =$ 
  []
 
 
-Overfull \hbox (37.08635pt too wide) in paragraph at lines 318--320
+Overfull \hbox (37.08635pt too wide) in paragraph at lines 324--326
 \OML/cmm/m/it/12 z[]; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) =
  \OML/cmm/m/it/12 ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; [] ; '\OT1/c
 mr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 ^^U[]e[] \O
@@ -804,23 +803,23 @@ T1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]$\OT1/cmr/m/n/12 , where $\OML/cmm/m/it/12
 z[]; z[]; [] ; z[] \OMS/cmsy/m/n/12 2
  []
 
-[16]
-Overfull \hbox (28.09169pt too wide) in paragraph at lines 323--324
-[]\OT1/cmr/bx/n/12 Corollary 1.1.8. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
+
+Overfull \hbox (28.09169pt too wide) in paragraph at lines 329--330
+[]\OT1/cmr/bx/n/12 Corollary 1.1.9. []\OT1/cmr/m/it/12 Let $\OMS/cmsy/m/n/12 L[
 ]$\OT1/cmr/m/it/12 , where $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/
 n/12 4$\OT1/cmr/m/it/12 , then all the blocks $\OML/cmm/m/it/12 M[]; M[]; [] ; 
 M[]$
  []
 
 
-Overfull \hbox (60.37865pt too wide) in paragraph at lines 326--327
+Overfull \hbox (60.37865pt too wide) in paragraph at lines 332--333
 \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]
 ; a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]\OT1/cmr/m/n/12 ] = \OML/cmm/m/i
 t/12 a[]a[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]e[]z[] \OT1/cmr/m/n/12 +
  []
 
-
-Overfull \hbox (87.27841pt too wide) in paragraph at lines 344--345
+[17]
+Overfull \hbox (87.27841pt too wide) in paragraph at lines 350--351
 \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ])
  = [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )\OM
 L/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] = [\OM
@@ -828,7 +827,7 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
 ^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
  []
 
-[17] [18] [19] (proof-m11.aux)
+[18] [19] [20] [21] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -836,49 +835,45 @@ L3 programming layer <2024-01-04>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 4.125pt have occurred.
+(Font)              up to 3.95001pt have occurred.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15544 strings out of 474486
- 328648 string characters out of 5743755
- 1975528 words of memory out of 5000000
- 37527 multiletter control sequences out of 15000+600000
- 595749 words of font info for 200 fonts, out of 8000000 for 9000
+ 15473 strings out of 474486
+ 327478 string characters out of 5743755
+ 1973528 words of memory out of 5000000
+ 37456 multiletter control sequences out of 15000+600000
+ 588229 words of font info for 166 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,22n,107p,7488b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,20n,107p,6859b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/isila/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isila/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/isila/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr5.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/isila/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/i
-sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
-/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/euler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/latxfont/line10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on proof-m11.pdf (19 pages, 328555 bytes).
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/isila/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isila/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/isila/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/isila/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
+:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5
+.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/isila/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
+a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
+><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on proof-m11.pdf (21 pages, 286620 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
