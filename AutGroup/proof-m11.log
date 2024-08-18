@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  16 AUG 2024 01:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  19 AUG 2024 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,7 +827,21 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
 ^^U[] [] ^^U[] \OT1/cmr/m/n/12 +
  []
 
-[18] [19] [20] [21] (proof-m11.aux)
+[18]
+Overfull \hbox (48.38554pt too wide) in paragraph at lines 365--367
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]b[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/1
+2 ^^V[]a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]^^V[] \OMS/cmsy/m/n/12 ^^@ \OM
+L/cmm/m/it/12 b[]^^U[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
+ []
+
+[19]
+Overfull \hbox (28.30411pt too wide) in paragraph at lines 368--369
+[]$\OT1/cmr/m/n/12 ([][] \OML/cmm/m/it/12 a[]b[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/
+m/it/12 b[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = 0$, but $
+\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 =
+ []
+
+[20] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -868,9 +882,9 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
 a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
 ><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proof-m11.pdf (21 pages, 287158 bytes).
+Output written on proof-m11.pdf (20 pages, 283542 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
