@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  19 AUG 2024 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  21 AUG 2024 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,20 +828,20 @@ L/cmm/m/it/12 ^^U[]^^U[] [] ^^U[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]; ^^U[]
  []
 
 [18]
-Overfull \hbox (48.38554pt too wide) in paragraph at lines 365--367
+Overfull \hbox (48.38554pt too wide) in paragraph at lines 366--368
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U[]b[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/1
 2 ^^V[]a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[]^^V[] \OMS/cmsy/m/n/12 ^^@ \OM
 L/cmm/m/it/12 b[]^^U[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
  []
 
 [19]
-Overfull \hbox (28.30411pt too wide) in paragraph at lines 368--369
-[]$\OT1/cmr/m/n/12 ([][] \OML/cmm/m/it/12 a[]b[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/
-m/it/12 b[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = 0$, but $
-\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 =
+Overfull \hbox (57.29445pt too wide) in paragraph at lines 373--376
+\OT1/cmr/m/n/12 1.1.11[], us-ing the equa-tion $([][] \OML/cmm/m/it/12 a[]b[] \
+OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 b[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[
+] \OT1/cmr/m/n/12 =
  []
 
-[20] (proof-m11.aux)
+[20] [21] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -853,10 +853,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 15473 strings out of 474486
- 327478 string characters out of 5743755
+ 15474 strings out of 474486
+ 327489 string characters out of 5743755
  1973528 words of memory out of 5000000
- 37456 multiletter control sequences out of 15000+600000
+ 37457 multiletter control sequences out of 15000+600000
  588229 words of font info for 166 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,20n,107p,6859b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -882,9 +882,9 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
 a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
 ><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proof-m11.pdf (20 pages, 283542 bytes).
+Output written on proof-m11.pdf (21 pages, 287151 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 168 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
