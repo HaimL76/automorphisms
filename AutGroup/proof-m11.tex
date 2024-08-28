@@ -370,6 +370,41 @@ We saw in the proof of \ref{m11.n.5} that for $2\leq i\leq n-2$, we have the two
 Let $\varphi\in G_n(\mathbb{Q}_p)$ be an automorphism of $\mathcal{L}_{n,p}$, and let $M$ be the coefficient matrix representing $M$, then $M_{1,k}$ has the same form of $M_{12}$, for all $3\leq k\leq n-1$.
 \end{proposition}
 \begin{proof}
+For all $1\leq i\leq n-1$ and any $k\geq 2$, we have that $[\varphi(e_{i,i+2})]=[\varphi(e_{i,i+1}),\varphi(e_{i+1,i+2})]=$\[=a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i,i+2}-a_{i+1,i+2}^{i+1}a_{i+2,i+4}^{i}e_{i+1,i+4}-a_{i+1,i+2}^{i+1}a_{i+2,i+5}^{i}e_{i+1,i+5}-\cdots\]\[\cdots-a_{i+1,i+2}^{i+1}a_{i+2,i+k}^{i}e_{i+1,i+k}-a_{i+1,i+2}^{i+1}a_{i+2,i+k+1}^{i}e_{i+1,i+k+1}+c_3\]
+where $c_3\in\gamma_3\mathcal{L}_{n,p}$, and we compute $[\varphi(e_{i,i+1}),\varphi(e_{i,i+2})]=$\[=[a_{i,i+1}^{i}e_{i,i+1},-[a_{i+1,i+2}^{i+1}e_{i,i+2},a_{i+2,i+4}^{i}e_{i+2,i+4}]]-\]\[-[[a_{i,i+1}^{i}e_{i,i+1},a_{i+1,i+2}^{i+1}e_{i+1,i+2}],a_{i+2,i+4}^{i}e_{i+2,i+4}]+\cdots\]\[\cdots+[a_{i,i+1}^{i}e_{i,i+1},-[a_{i+1,i+2}^{i+1}e_{i,i+2},a_{i+2,i+k}^{i}e_{i+2,i+k}]]-\]\[-[[a_{i,i+1}^{i}e_{i,i+1},a_{i+1,i+2}^{i+1}e_{i+1,i+2}],a_{i+2,i+k}^{i}e_{i+2,i+k}]+\]\[+
+[a_{i,i+1}^{i}e_{i,i+1},-[a_{i+1,i+2}^{i+1}e_{i,i+2},a_{i+2,i+k+1}^{i}e_{i+2,i+k+1}]]-\]\[-[[a_{i,i+1}^{i}e_{i,i+1},a_{i+1,i+2}^{i+1}e_{i+1,i+2}],a_{i+2,i+k+1}^{i}e_{i+2,i+k+1}]=\]\[=
+-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+4}e_{i,i+4}-\cdots\]\[\cdots-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+k}e_{i,i+k}-\cdots\]\[\cdots-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+k+1}e_{i,i+k+1}=0
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For all $1\leq i\leq n-1$ and any $k\geq 2$, we have that $[\varphi(e_{i,i+k})]=[\varphi(e_{i,i+j_1}),\varphi(e_{i+j_1,i+k})]=[[\varphi(e_{i,i+j_2}),\varphi(e_{i+j_2,i+j_1})],[\varphi(e_{i+j_1,i+j_3}),\varphi(e_{i+j_3,i+k})]]=\cdots=[\varphi(e_{i,i+1}),[\varphi(e_{i+1,i+2},[\cdots[\varphi(e_{i+k-2,i+k-1}),\varphi(e_{i+k-1,i+k})]\cdots]]=$\[=\prod_{j=1}^{k-1}a_{i+j,i+j+1}^{i}e_{i+j,i+j+1}+\prod_{j=1}^{k-2}a_{i+j,i+j+1}^{i}e_{i+j,i+j+1}+\].
+
+
+
+
+
+
+
+
+
+
+
 Let $\varphi(e_{i,i+1})=\sum_{k=1}^{n-1}\sum_{j=1}^{n-k}a_{j,j+k}e_{j,j+k}$, we prove that $a_{i+1,i+1+k}^i=0$, for all $1\leq i\leq n-1$, by induction on $k$. For $k=2$ we already proved that in \ref{block.m12}, using the equation
 $(\sum_{j=1}^{k-1}a_{i+1,i+1+j}^i 
 b_{i+1+j,i+1+k}^i-b_{i+1,i+1+j}^i a_{i+1+j,i+1+k}^i)e_{i+1,i+1+k}=0$, therefore, for $k+1$, we have the equation
@@ -378,5 +413,13 @@ b_{i+1+j,i+k+2}^i-b_{i+1,i+1+j}^i a_{i+1+j,i+k+2}^i)e_{i+1,i+k+2}=\]\[=a_{i+1,i+
 b_{i+1+j,i+k+2}^i-b_{i+1,i+1+j}^i a_{i+1+j,i+k+2}^i)e_{i+1,i+k+2}+\]\[+a_{i+1,i+k+1}^i b_{i+k+1,i+k+2}^i e_{i+1,i+k+2}-b_{i+1,i+k+1}^i a_{i+k+1,i+k+2}^i e_{i+1,i+k+2}=0\]
 but we know from \ref{m11.n.5} that $a_{i+1,i+2}^i=a_{i+k+1,i+k+2}^i=0$, and we know by the equation $a_{i,i+1}^i b_{i+1,i+2}^i e_{i,i+2}=0$ that $b_{i+1,i+2}^i=0$ and from dimension considerations we know that $b_{l,l+1}\neq 0$, for any $l\notin\{i-1,i+1\}$, which means that $b_{i+k+1,i+k+2}^i\neq 0$. We also know by the assumption that $a_{r,r+k}^i=0$, for all $i+1\leq r\leq n-k$, hence $\sum_{j=2}^{k-1}(a_{i+1,i+1+j}^i 
 b_{i+1+j,i+k+2}^i-b_{i+1,i+1+j}^i a_{i+1+j,i+k+2}^i)e_{i+1,i+k+2}=0$, which means that all the coefficients in the equation vanish, except for $a_{i+1,i+k+1}^i b_{i+k+1,i+k+2}^i$, and since we know that $b_{i+k+1,i+k+2}^i\neq 0$, then we have that $a_{i+1,i+k+1}^i=0$, which proves the induction step.
+
+
+
+we prove this by induction, on $1\leq k\leq n-1$ and $1\leq j$
+
+
+For $k=1$, we have that $\varphi(e_{i,i+1})=\lambda_{i}e_{i,i+1}+z_2=a_{i,i+1}^{i}e_{i,i+1}+z_2$, hence $a_{i+j,i+j+1}^{i}=a_{i+j,i+j+k}^{i}=0$, for all $1\leq j\leq n-k$. For $k'=k+1$, we have the following equation, \[(a_{i+1,i+1+k'}^{i}b_{i+1+k',i+2+k'}^{i}-b_{i+1,i+1+k'}^{i}a_{i+1+k',i+2+k'}^{i}+\]\[+\sum_{j=1}^{k'-2}(a_{i+1,i+1+k'-j}^{i}b_{i+1+k'-j,i+2+k'}^{i}-b_{i+1,i+1+k'-j}^{i}a_{i+1+k'-j,i+2+k'}^{i})+\]\[+a_{i+1,i+2}^{i}b_{i+2,i+2+k'}-b_{i+1,i+2}^{i}a_{i+2,i+2+k'})e_{i+1,i+2+k'}\]
+and we have that $a_{i+1,i+2}^{i}=a_{i+1+k',i+2+k'}^{i}=0$, and by the equation $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}$, we have that $b_{i+1,i+2}^{i}=0$. In addition, $i+1+k'-j-(i+1)=k'-j=k+1-j\leq k$ and $i+2+k'-(i+1+k'-j)=j+1\leq k'-2=k-1$, hence by the assumption we have that $a_{i+1,i+1+k'-j}^{i}=a_{i+1+k'-j,i+2+k'}^{i}=0$, therefore the equation becomes $a_{i+1,i+1+k'}^{i}b_{i+1+k',i+2+k'}^{i}e_{i+1,i+2+k'}=a_{i+1,i+2+k}^{i}b_{i+2+k,i+3+k}^{i}e_{i+1,i+3+k}=0$, but $\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(\varphi(e_{i,i+1}))=\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{i,i+1})\leq 2$, which means that the only possible constraints in this quotient are $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}=0$ and $-b_{i-1,i}^{i}a_{i,i+1}^{i}e_{i-1,i+1}=0$, hence $b_{i+1+j,i+2+j}$ is a free choice, for all $1\leq j\leq n-1$, but this means that $a_{i+1,i+2+k}^{i}=a_{i+1,i+1+(k+1)}=0$, which proves the induction step.
 \end{proof}
 \end{document}
