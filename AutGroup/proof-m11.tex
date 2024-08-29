@@ -420,6 +420,25 @@ we prove this by induction, on $1\leq k\leq n-1$ and $1\leq j$
 
 
 For $k=1$, we have that $\varphi(e_{i,i+1})=\lambda_{i}e_{i,i+1}+z_2=a_{i,i+1}^{i}e_{i,i+1}+z_2$, hence $a_{i+j,i+j+1}^{i}=a_{i+j,i+j+k}^{i}=0$, for all $1\leq j\leq n-k$. For $k'=k+1$, we have the following equation, \[(a_{i+1,i+1+k'}^{i}b_{i+1+k',i+2+k'}^{i}-b_{i+1,i+1+k'}^{i}a_{i+1+k',i+2+k'}^{i}+\]\[+\sum_{j=1}^{k'-2}(a_{i+1,i+1+k'-j}^{i}b_{i+1+k'-j,i+2+k'}^{i}-b_{i+1,i+1+k'-j}^{i}a_{i+1+k'-j,i+2+k'}^{i})+\]\[+a_{i+1,i+2}^{i}b_{i+2,i+2+k'}-b_{i+1,i+2}^{i}a_{i+2,i+2+k'})e_{i+1,i+2+k'}\]
-and we have that $a_{i+1,i+2}^{i}=a_{i+1+k',i+2+k'}^{i}=0$, and by the equation $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}$, we have that $b_{i+1,i+2}^{i}=0$. In addition, $i+1+k'-j-(i+1)=k'-j=k+1-j\leq k$ and $i+2+k'-(i+1+k'-j)=j+1\leq k'-2=k-1$, hence by the assumption we have that $a_{i+1,i+1+k'-j}^{i}=a_{i+1+k'-j,i+2+k'}^{i}=0$, therefore the equation becomes $a_{i+1,i+1+k'}^{i}b_{i+1+k',i+2+k'}^{i}e_{i+1,i+2+k'}=a_{i+1,i+2+k}^{i}b_{i+2+k,i+3+k}^{i}e_{i+1,i+3+k}=0$, but $\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(\varphi(e_{i,i+1}))=\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{i,i+1})\leq 2$, which means that the only possible constraints in this quotient are $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}=0$ and $-b_{i-1,i}^{i}a_{i,i+1}^{i}e_{i-1,i+1}=0$, hence $b_{i+1+j,i+2+j}$ is a free choice, for all $1\leq j\leq n-1$, but this means that $a_{i+1,i+2+k}^{i}=a_{i+1,i+1+(k+1)}=0$, which proves the induction step.
+and we have that $a_{i+1,i+2}^{i}=a_{i+1+k',i+2+k'}^{i}=0$, and by the equation $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}$, we have that $b_{i+1,i+2}^{i}=0$. In addition, $i+1+k'-j-(i+1)=k'-j=k+1-j\leq k$ and $i+2+k'-(i+1+k'-j)=j+1\leq k'-2=k-1$, hence by the assumption we have that $a_{i+1,i+1+k'-j}^{i}=a_{i+1+k'-j,i+2+k'}^{i}=0$, therefore the equation becomes $a_{i+1,i+1+k'}^{i}b_{i+1+k',i+2+k'}^{i}e_{i+1,i+2+k'}=a_{i+1,i+2+k}^{i}b_{i+2+k,i+3+k}^{i}e_{i+1,i+3+k}=0$, but $\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(\varphi(e_{i,i+1}))=\mathrm{codim}\mathcal{C}_{\sfrac{\gamma_1}{\gamma_3}}(e_{i,i+1})\leq 2$, which means that the only possible constraints in this quotient are $a_{i,i+1}^{i}b_{i+1,i+2}^{i}e_{i,i+2}=0$ and $-b_{i-1,i}^{i}a_{i,i+1}^{i}e_{i-1,i+1}=0$, hence $b_{i+1+j,i+2+j}$ is a free choice, for all $1\leq j\leq n-1$, but this means that $a_{i+1,i+2+k}^{i}=a_{i+1,i+1+(k+1)}=0$, which proves the induction step on $k'=k+1$ for the coefficient in index $i+1$.
+For $i+2$, we compute $\varphi(e_{i,i+2})=[\varphi(e_{i,i+1}),\varphi(e_{i+1,i+2})]=a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i,i+2}+z_3$, and then we compute \[[\varphi(e_{i,i+1}),\varphi(e_{i,i+2})]=\]\[=[[a_{i,i+1}^{i}e_{i,i+1},a_{i+1,i+2}^{i+1}e_{i+1,i+2}],a_{i+2,i+2+k'}^{i}e_{i+2,i+2+k'}]]+\]\[+[a_{i,i+1}^{i}e_{i,i+1},[a_{i+1,i+2}^{i+1}e_{i+1,i+2},a_{i+2,i+2+k'}^{i}e_{i+2,i+2+k'}]]+z_4=\]\[=-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+2+k'}^{i}e_{i,i+2+k'}^{i}+z_4=0\]
+Suppose that $z_4$ contains some \[{\rho}e_{i,i+2+k'}=a_{i,i+r}^{i}e_{i,i+r}a_{i+r,i+r+j}^{i+1}e_{i+r,i+r+j}a_{i+r+j,i+2+k'}^{i}e_{i+r+j,i+2+k'}\]
+for some $1\leq r\leq k'$ and $2\leq j\leq k'+1-r$, but $i+2+k'-i=k+3$, and any partition of $k+3$ must be a permutation of $(\alpha,\beta,k+3-(\alpha+\beta))$, where $1\leq\alpha\leq{k+1}$ and $1\leq\beta\leq{k+3-\alpha}$. Assume we have a permutation of $(\alpha,\beta,k+3-(\alpha+\beta))$, then we have only two categorical options, \[\alpha=\beta=1\Rightarrow{\rho}e_{i,i+k+3}=a_{i,i+1}^{i}e_{i,i+1}a_{i+1,i+2}^{i+1}e_{i+1,i+2}a_{i+2,i+k+3}^{i}e_{i+2,i+k+3}\]
+or  \[\alpha>1\lor\beta>1\Rightarrow{\rho}e_{i,i+k+3}=a_{i,i+\alpha}^{i}e_{i,i+\alpha}a_{i+\alpha,i+\alpha+\beta}^{i+1}e_{i+\alpha,i+\alpha+\beta}a_{i+\alpha+\beta,i+k+3}^{i}e_{i+\alpha+\beta,i+k+3}\]
+but since either $a>1$ or $\beta>1$, then $i+k+3-(i+\alpha+\beta))\leq{k}$, which means that $a_{i+\alpha+\beta,i+k+3}^{i}=0$, by the assumption. Hence, the only valid option for ${\rho}e_{i,i+k+3}\neq{0}$ is the first options, but this means that $-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+2+k'}^{i}e_{i,i+2+k'}^{i}=0$, without any other combination from $z_4$, but since $a_{i,i+1}^{i}\neq{0}$ and $a_{i+1,i+2}^{i+1}\neq{0}$, we must have that $a_{i+2,i+2+k'}^{i}=a_{i+2,i+k+3}^{i}=0$, which proves the induction step on $k'=k+1$ for $i+2$.
+
+
+
+
+
+or \[\mathrm{\circled{3}}{\rho}e_{i,i+k+3}=a_{i,i+1+\beta}^{i}e_{i,i+1+\beta}a_{i+1+\beta,i+k+2-\beta}^{i+1}e_{i+1+\beta,i+k+2-\beta}a_{i+k+2-\beta,i+k+3}^{i}e_{i+k+2-\beta,i+k+3}\]
+because for any other permutation of , the 
+
+
+
+
+\[{\tau}e_{i,i+2+k'}=a_{i,i+m}^{i+1}e_{i,i+m}a_{i+m,i+m+d}^{i}e_{i+r,i+m+d}a_{i+m+d,i+2+k'}^{i}e_{i+m+d,i+2+k'}\]
+for some $2\leq m\leq k'$ and $1\leq d\leq k'+1-m$,
+but 
 \end{proof}
 \end{document}
