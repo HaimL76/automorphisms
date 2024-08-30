@@ -426,19 +426,7 @@ Suppose that $z_4$ contains some \[{\rho}e_{i,i+2+k'}=a_{i,i+r}^{i}e_{i,i+r}a_{i
 for some $1\leq r\leq k'$ and $2\leq j\leq k'+1-r$, but $i+2+k'-i=k+3$, and any partition of $k+3$ must be a permutation of $(\alpha,\beta,k+3-(\alpha+\beta))$, where $1\leq\alpha\leq{k+1}$ and $1\leq\beta\leq{k+3-\alpha}$. Assume we have a permutation of $(\alpha,\beta,k+3-(\alpha+\beta))$, then we have only two categorical options, \[\alpha=\beta=1\Rightarrow{\rho}e_{i,i+k+3}=a_{i,i+1}^{i}e_{i,i+1}a_{i+1,i+2}^{i+1}e_{i+1,i+2}a_{i+2,i+k+3}^{i}e_{i+2,i+k+3}\]
 or  \[\alpha>1\lor\beta>1\Rightarrow{\rho}e_{i,i+k+3}=a_{i,i+\alpha}^{i}e_{i,i+\alpha}a_{i+\alpha,i+\alpha+\beta}^{i+1}e_{i+\alpha,i+\alpha+\beta}a_{i+\alpha+\beta,i+k+3}^{i}e_{i+\alpha+\beta,i+k+3}\]
 but since either $a>1$ or $\beta>1$, then $i+k+3-(i+\alpha+\beta))\leq{k}$, which means that $a_{i+\alpha+\beta,i+k+3}^{i}=0$, by the assumption. Hence, the only valid option for ${\rho}e_{i,i+k+3}\neq{0}$ is the first options, but this means that $-2a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}a_{i+2,i+2+k'}^{i}e_{i,i+2+k'}^{i}=0$, without any other combination from $z_4$, but since $a_{i,i+1}^{i}\neq{0}$ and $a_{i+1,i+2}^{i+1}\neq{0}$, we must have that $a_{i+2,i+2+k'}^{i}=a_{i+2,i+k+3}^{i}=0$, which proves the induction step on $k'=k+1$ for $i+2$.
-
-
-
-
-
-or \[\mathrm{\circled{3}}{\rho}e_{i,i+k+3}=a_{i,i+1+\beta}^{i}e_{i,i+1+\beta}a_{i+1+\beta,i+k+2-\beta}^{i+1}e_{i+1+\beta,i+k+2-\beta}a_{i+k+2-\beta,i+k+3}^{i}e_{i+k+2-\beta,i+k+3}\]
-because for any other permutation of , the 
-
-
-
-
-\[{\tau}e_{i,i+2+k'}=a_{i,i+m}^{i+1}e_{i,i+m}a_{i+m,i+m+d}^{i}e_{i+r,i+m+d}a_{i+m+d,i+2+k'}^{i}e_{i+m+d,i+2+k'}\]
-for some $2\leq m\leq k'$ and $1\leq d\leq k'+1-m$,
-but 
+For every $1\leq{k}\leq{n-1}$, we prove that $a_{i+j,i+j+k}^{i}=0$, for every $1\leq{j}\leq{n-k}$. We already proved this for $j=1$ and $j=2$, by induction on $k$. Fixing $k$, we shall prove this for $j'=j+1$, using the equation \[\sum_{l=1}^{k-1}(a_{i+j',i+j'+l}^{i}b_{i+j'+l,i+j'+k}^{i}-b_{i+j',i+j'+l}^{i}a_{i+j'+l,i+j'+k}^{i})e_{i+j',i+j'+k}=0\]
+But since $a_{i+j',i+j'+l}^{i},a_{i+j'+l,i+j'+k}^{i}\in\gamma_{k-1}\mathcal{L}_{n,p}$, then by the assumption, we have that $a_{i+j',i+j'+l}^{i}=a_{i+j'+l,i+j'+k}^{i}=0$, for all $2\leq{l}\leq{k-1}$, hence our equation becomes $a_{i+j',i+j'+1}^{i}b_{i+j'+1,i+j'+k}^{i}-a_{i+j'+1,i+j'+k}^{i}b_{i+j',i+j'+1}^{i}e_{i+j'+1,i+j'+k}=0$.
 \end{proof}
 \end{document}
