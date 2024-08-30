@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  30 AUG 2024 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  30 AUG 2024 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,9 +874,17 @@ tions, but this means that $\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (15.02911pt too wide) in paragraph at lines 429--431
-\OT1/cmr/m/n/12 equa-tion be-comes $\OML/cmm/m/it/12 a[]b[] \OMS/cmsy/m/n/12 ^^
-@ \OML/cmm/m/it/12 a[]b[]e[] \OT1/cmr/m/n/12 =
+Overfull \hbox (24.16791pt too wide) in paragraph at lines 429--431
+\OT1/cmr/m/n/12 equa-tion be-comes $(\OML/cmm/m/it/12 a[]b[] \OMS/cmsy/m/n/12 ^
+^@ \OML/cmm/m/it/12 a[]b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12
+ =
+ []
+
+
+Overfull \hbox (88.06158pt too wide) in paragraph at lines 429--431
+\OT1/cmr/m/n/12 0$, but $\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = 0$, which means
+ that the equa-tion is $\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]b[]e[] \OT1/cmr
+/m/n/12 =
  []
 
 [23] (proof-m11.aux)
@@ -920,7 +928,7 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
 a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
 ><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proof-m11.pdf (23 pages, 297557 bytes).
+Output written on proof-m11.pdf (23 pages, 297953 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
