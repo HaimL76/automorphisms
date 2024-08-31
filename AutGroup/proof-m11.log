@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  30 AUG 2024 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 AUG 2024 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,60 +834,48 @@ Overfull \hbox (48.38554pt too wide) in paragraph at lines 366--368
 L/cmm/m/it/12 b[]^^U[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 =
  []
 
-[19] [20]
-Overfull \hbox (7.2511pt too wide) in paragraph at lines 396--396
-\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cm
-r/m/n/12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n
-/12 )] = [[\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/
-12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )]
-\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm
-/m/it/12 e[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 e[]\OT1/cmr/m/n/12 )]] =
+[19]
+Overfull \hbox (4.96867pt too wide) in paragraph at lines 373--374
+[]\OT1/cmr/m/n/12 we prove this by sev-eral in-duc-tion steps, first we prove t
+his for $\OML/cmm/m/it/12 a[]$
  []
 
 
-Overfull \hbox (57.29445pt too wide) in paragraph at lines 408--411
-\OT1/cmr/m/n/12 1.1.11[], us-ing the equa-tion $([][] \OML/cmm/m/it/12 a[]b[] \
-OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 b[]a[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[
-] \OT1/cmr/m/n/12 =
- []
-
-[21]
-Overfull \hbox (33.4856pt too wide) in paragraph at lines 422--424
+Overfull \hbox (33.4856pt too wide) in paragraph at lines 374--376
 \OT1/cmr/m/n/12 and we have that $\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = \OML/c
 mm/m/it/12 a[] \OT1/cmr/m/n/12 = 0$, and by the equa-tion $\OML/cmm/m/it/12 a[]
 b[]e[]$\OT1/cmr/m/n/12 ,
  []
 
-[22]
-Overfull \hbox (27.63765pt too wide) detected at line 427
+[20]
+Overfull \hbox (27.63765pt too wide) detected at line 379
  $\OML/cmm/m/it/12  > \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 ^^
 L > \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ) \OML/cmm/m/it/12 ^^Ze[] \OT1/cmr/m/n/1
 2 = \OML/cmm/m/it/12 a[]e[]a[]e[]a[]e[]$ 
  []
 
 
-Overfull \hbox (52.25989pt too wide) in paragraph at lines 427--429
+Overfull \hbox (52.25989pt too wide) in paragraph at lines 379--381
 \OML/cmm/m/it/12 ^^Ze[] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = 0$ is the first op-
 tions, but this means that $\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/
 12 a[]a[]a[]e[] \OT1/cmr/m/n/12 =
  []
 
-
-Overfull \hbox (24.16791pt too wide) in paragraph at lines 429--431
+[21]
+Overfull \hbox (24.16791pt too wide) in paragraph at lines 381--383
 \OT1/cmr/m/n/12 equa-tion be-comes $(\OML/cmm/m/it/12 a[]b[] \OMS/cmsy/m/n/12 ^
 ^@ \OML/cmm/m/it/12 a[]b[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12
  =
  []
 
 
-Overfull \hbox (88.06158pt too wide) in paragraph at lines 429--431
+Overfull \hbox (88.06158pt too wide) in paragraph at lines 381--383
 \OT1/cmr/m/n/12 0$, but $\OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = 0$, which means
  that the equa-tion is $\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a[]b[]e[] \OT1/cmr
 /m/n/12 =
  []
 
-[23] (proof-m11.aux)
+[22] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -928,9 +916,9 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
 a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
 ><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proof-m11.pdf (23 pages, 297953 bytes).
+Output written on proof-m11.pdf (22 pages, 296000 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
