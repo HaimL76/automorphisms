@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 AUG 2024 23:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  2 SEP 2024 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,7 +875,7 @@ Overfull \hbox (88.06158pt too wide) in paragraph at lines 381--383
 /m/n/12 =
  []
 
-[22] (proof-m11.aux)
+[22] [23] (proof-m11.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -916,9 +916,9 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/isil
 a/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb
 ><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on proof-m11.pdf (22 pages, 296000 bytes).
+Output written on proof-m11.pdf (23 pages, 299142 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

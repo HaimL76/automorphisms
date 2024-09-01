@@ -385,7 +385,30 @@ But since $a_{i+j',i+j'+l}^{i},a_{i+j'+l,i+j'+k}^{i}\in\gamma_{k-1}\mathcal{L}_{
 Let $\varphi\in{G_n(\mathbb{Q}_p})$ be an automorphism of $\mathcal{L}_{n,p}$, and let $\varphi(e_{i,i+1})=\sum_{k=1}^{n-1}\sum_{j=1}^{n-k}a_{i,i+k}^{i}e_{i,i+k}$, for all $1\leq{i}\leq{n-1}$, be the images of the elements in $\sfrac{\mathcal{L}_{n,p}}{\gamma_2}$, then $a_{i-j,i-j+k}^{i}=0$, for every $1\leq{j}\leq{i-k}$.
 \end{proposition}
 \begin{proof}
-By the same induction on $k$. We know this is true for $k=1$, because $\varphi(e_{i,i+1}=a_{i,i+1}^{i}e_{i,i+1}$. We prove this for $k'=k+1$ by computing $\varphi(e_{i,i+2})=[\varphi(e_{i,i+1}),\varphi(e_{i,i+1}),\varphi(e_{i+1,i+2})]$, and computing \[[\varphi(e_{i,i+1}),\varphi(e_{i,i+2})]=[a_{i-k',i}^{i}e_{i-k',i},[a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i,i+2}]+z_3=\]\[=a_{i-k',i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i-k',i+2}+z_3=0\]
-Suppose that $i+2-(i-k')=i+2-i+k+1=k+3$ can be partitioned into $(k+3-(\alpha+\beta),\alpha,\beta)$, where either $\alpha>1$ or $\beta>1$, then $k+3-(\alpha+\beta)\leq{k}$, which means that the first factor is $a_{i-k-1,i-k-1+j}^{i}$, where $1\leq{j}\leq{k}$, but by the assumption, $a_{i-k-1,i-k-1+j}^{i}=0$, hence the only valid combination for $e_{i-k-1,i+2}$ is $a_{i-k-1,i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i-k-1,i+2}$, which means that $a_{i-k-1,i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}=0$, and since $a_{i,i+1}^{i}\neq{0}$ and $a_{i+1,i+2}^{i+1}\neq{0}$, then we must have that $a_{i-k-1,i+2}^{i}=0$, which proves the indcution step.
+By the same induction on $k$. We know this is true for $k=1$, because $\varphi(e_{i,i+1}=a_{i,i+1}^{i}e_{i,i+1}$. We prove this for $k'=k+1$ by computing $\varphi(e_{i,i+2})=[\varphi(e_{i,i+1}),\varphi(e_{i,i+1}),\varphi(e_{i+1,i+2})]$, and computing \[[\varphi(e_{i,i+1}),\varphi(e_{i,i+2})]=[a_{i-k',i}^{i}e_{i-k',i},[a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i,i+2}]+z_4=\]\[=a_{i-k',i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i-k',i+2}+z_3=0\]
+Suppose that $i+2-(i-k')=i+2-i+k+1=k+3$ can be partitioned into $(k+3-(\alpha+\beta),\alpha,\beta)$, where either $\alpha>1$ or $\beta>1$, then $k+3-(\alpha+\beta)\leq{k}$, which means that the first factor is $a_{i-k-1,i-k-1+j}^{i}$, where $1\leq{j}\leq{k}$, but by the assumption, $a_{i-k-1,i-k-1+j}^{i}=0$, hence the only valid combination for $e_{i-k-1,i+2}$ is $a_{i-k-1,i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}e_{i-k-1,i+2}$, which means that $a_{i-k-1,i}^{i}a_{i,i+1}^{i}a_{i+1,i+2}^{i+1}=0$, and since $a_{i,i+1}^{i}\neq{0}$ and $a_{i+1,i+2}^{i+1}\neq{0}$, then we must have that $a_{i-k-1,i}^{i}=0$, which proves the induction step on $k'=k+1$ for $a_{i-k,i}$. Now we prove that $a_{i-1-k,i-1}^{i}=0$, for every $k\in\mathbb{N}$. For $k=1$, we saw that $a_{i-2,i-1}^{i}=0$. For $k'=k+1$, we prove this by computing $\varphi(e_{i-1,i+1})=[\varphi(e_{i-1,i}),\varphi(e_{i,i+1})]$, and computing \[[\varphi(e_{i,i+1}),\varphi(e_{i-1,i+1})]=\]\[=[a_{i-1-k',i-1}^{i}e_{i-1-k',i-1},[a_{i-1,i}^{i-1}e_{i-1,i},a_{i,i+1}^{i}e_{i,i+1}]]+\]\[+[[a_{i-1-k',i-1}^{i}e_{i-1-k',i-1},a_{i-1,i}^{i-1}e_{i-1,i}],a_{i,i+1}^{i}e_{i,i+1}]+z_4=\]\[=
+-2a_{i-1-k',i-1}^{i}a_{i-1,i}^{i-1}a_{i,i+1}^{i}e_{i-1-k',i+1}+z_4
+\]
+Suppose there are other partitions $(k+3-(\alpha+\beta),\alpha,\beta)$ of $i+1-(i-1-(k+1))=k+3$, where either $\alpha>1$ or $\beta>1$, then $k+3-(\alpha+\beta)\leq{k}$, and by the assumption, for all $1\leq{l}\leq{k}$, we have $a_{i-2-k,i-2-k+l}^{i}=0$, hence the only valid partition of $k+3$ is $k+1,1,1)$, which means that $-2a_{i-2-k,i-1}^{i}a_{i-1,i}^{i-1}a_{i,i+1}^{i}=0$, but $a_{i-1,i}^{i-1}\neq{0}$ and $a_{i,i+1}^{i}\neq{0}$, then we must have $a_{i-2-k,i-1}^{i}=0$, which proves the induction step on $k'=k+1$ for $a_{i-1-k,i-1}^{i}$.
+
+
+
+
+
+
+
+
+
+
+
+Fixing $k$, we prove that $a_{i-j,i-j+k}^{i}=0$, for all $k\leq{j}\leq{i-1}$, by induction on $j$. For $j=k$, we already proved that $a_{i-k,i}^{i}=0$, for every $k\in\mathbb{N}$, for $j'=k+1$, we have the equation \[
+a_{}
+\]
+\end{proof}
+\begin{proposition}
+Let $x=\varphi(e_{i,i+1})=\sum_{k=1}^{n-1}\sum_{j=1}^{n-k}a_{j,j+k}^{i}e_{j,j+k}$, and $y=\sum_{k=1}^{n-1}\sum_{j=1}^{n-k}b_{j,j+k}^{i}e_{j,j+k}\in\mathcal{C}(x)$
+\end{proposition}
+\begin{proof}
+By induction on $k$. For $k=1$, we know that $a_{}$
 \end{proof}
 \end{document}
