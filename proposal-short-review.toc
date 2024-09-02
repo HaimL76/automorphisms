@@ -9,4 +9,4 @@
 \contentsline {subsection}{\numberline {2.4}The Heisenberg group}{11}{}%
 \contentsline {subsection}{\numberline {2.5}$\mathcal {U}_n(\mathbb {Z}_p)$ groups for $n>3$}{12}{}%
 \contentsline {subsection}{\numberline {2.6}Preliminary results}{14}{}%
-\contentsline {subsection}{\numberline {2.7}Base Extension}{24}{}%
+\contentsline {subsection}{\numberline {2.7}Base Extension}{23}{}%
