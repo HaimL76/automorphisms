@@ -187,13 +187,19 @@ We start with the first step of calculating $Aut_{\mathbb{Q}_p}(\mathcal{L}_{n,p
 After we have analyzed the structure of $G_n(\mathbb{Z}_p)$, we will need to construct the monoid $G_n^+(\mathbb{Q}_p)$ and its $G_n(\mathbb{Z}_p)$ right-cosets, as we have seen above. This will give us both the function to integrate, which is $\det\varphi$ for every $G_n(\mathbb{Z}_p)$ right-coset $G_n(\mathbb{Z}_p)\varphi$, and the domain of integration, which is the monoid $G_n^+(\mathbb{Q}_p)$. We will use this information to analyze the behavior of the $p$-adic integral we have described above and prove that its calculation depends only on $p$, thus showing that the $\hat{\zeta_{L,p}}$-function is uniform.
 \subsection{The Heisenberg group}
 We show the very basic approach to this problem by the simplest example, the \textbf{Heisenberg group}, which is simply $\mathcal{U}_3(\mathbb{Z})$, and its associated $\mathbb{Z}$-Lie algebra. However, this example is far from complying with the general case of $n>3$, as we shall see later, and we only use it to demonstrate the basic technique we shall be using. 
-Since $\mathcal{U}_3(\mathbb{Z})$ is the group of unipotent $3\times 3$ matrices over $\mathbb{Z}$, we observe that the standard basis for the associated $\mathbb{Z}$-Lie algebra is $\mathcal{B}_3(\mathbb{Z})=\{e_{12},e_{13},e_{23}\}$. We also observe that for every $L_n$ we can apply a linear order to the basis $\mathcal{B}_n(\mathbb{Z})$, where $e_{ij}<e_{kl}$ if $j-i<l-k$, or if $j-i=l-k$ and $i<k$. In other words, we apply an order that divides $\mathcal{B}_n(\mathbb{Z})$ to basis elements of the quotients $\sfrac{L_n}{\gamma_2},\sfrac{\gamma_2}{\gamma_3},\dots,\sfrac{\gamma_{n-2}}{\gamma_{n-1}},\gamma_{n-1}$. Therefore, we set the basis of $L_3$ according to this order, $\mathcal{B}_3(\mathbb{Z})=\{e_{12},e_{23},e_{13}\}$. This means that if we analyze some $\varphi\in{G_3(\mathbb{Z})}$ by its operation on the basis elements, then $\varphi$ must be some $3\times 3$ matrix over $\mathbb{Z}$, such that multiplying any vector $v=xe_{12}+ye_{23}+ze_{13}\in L_{n,p}$ with $\varphi$ from the right yields a vector $u=\varphi(v)=x\varphi(e_{12})+y\varphi(e_{23})+z\varphi(e_{13})\in L_{n,p}$, such that $\varphi(u)=\varphi^2(v)=v$, i.e. \[\begin{pmatrix}
+Since $\mathcal{U}_3(\mathbb{Z})$ is the group of unipotent $3\times 3$ matrices over $\mathbb{Z}$, we observe that the standard basis for the associated $\mathbb{Z}$-Lie algebra is $\mathcal{B}_3(\mathbb{Z})=\{e_{12},e_{13},e_{23}\}$. We also observe that for every $L_n$ we can apply a linear order to the basis $\mathcal{B}_n(\mathbb{Z})$, where $e_{ij}<e_{kl}$ if $j-i<l-k$, or if $j-i=l-k$ and $i<k$. In other words, we apply an order that divides $\mathcal{B}_n(\mathbb{Z})$ to basis elements of the quotients $\sfrac{L_n}{\gamma_2},\sfrac{\gamma_2}{\gamma_3},\dots,\sfrac{\gamma_{n-2}}{\gamma_{n-1}},\gamma_{n-1}$. Therefore, we set the basis of $L_3$ according to this order, $\mathcal{B}_3(\mathbb{Z})=\{e_{12},e_{23},e_{13}\}$. This means that if we analyze some $\varphi\in{G_3(\mathbb{Z})}$ by its operation on the basis elements, then $\varphi$ must be some $3\times 3$ matrix over $\mathbb{Z}$, such that multiplying any vector $v=xe_{12}+ye_{23}+ze_{13}\in L_{n,p}$ with $\varphi$ from the right yields a vector $u=\varphi(v)=x\varphi(e_{12})+y\varphi(e_{23})+z\varphi(e_{13})\in L_{n,p}$, i.e. \[\begin{pmatrix}
 x & y & z\\
 \end{pmatrix}\begin{pmatrix}
 a_{11} & a_{12} & a_{13}\\
 a_{21} & a_{22} & a_{23}\\
 a_{31} & a_{32} & a_{33}\\
-\end{pmatrix}=\begin{pmatrix}
+\end{pmatrix}=\]\[=
+\begin{pmatrix}
+a_{11}x+a_{21}y+a_{31}z &
+a_{12}x+a_{22}y+a_{32}z &
+a_{13}x+a_{23}y+a_{33}z\\
+\end{pmatrix}=\]\[=
+\begin{pmatrix}
 \varphi(x) & \varphi(y) & \varphi(z)\\
 \end{pmatrix}\]
 Every $\varphi\in G_3(\mathbb{Z})$ must obey the Lie brackets, hence we observe that $a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}=\varphi(e_{13})=\varphi[(e_{12}),(e_{23})]=[\varphi(e_{12}),\varphi(e_{23})]=[a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13},a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}]=(a_{11}a_{22}-a_{12}a_{21})e_{13}$, which gives the following relations, $$

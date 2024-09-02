@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  2 SEP 2024 22:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  2 SEP 2024 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,7 +700,7 @@ OMS/cmsy/m/n/12 R\OT1/cmr/m/n/12 ) = [] [] []$\OT1/cmr/m/it/12 ,
  []
 
 [8] [9] [10] [11] [12]
-Overfull \hbox (10.72115pt too wide) in paragraph at lines 245--247
+Overfull \hbox (10.72115pt too wide) in paragraph at lines 251--253
 \OT1/cmr/m/n/12 each block is de-noted by $\OML/cmm/m/it/12 M[] \OMS/cmsy/m/n/1
 2 2 M[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Q[]\OT1/cmr/m/n/12 )$, where $\OML/cmm/m/
 it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
@@ -708,7 +708,7 @@ it/12 k$\OT1/cmr/m/n/12 =dim$[]$ and $\OML/cmm/m/it/12 l$\OT1/cmr/m/n/12 =dim$[
  []
 
 [13] [14]
-Overfull \hbox (48.71973pt too wide) detected at line 276
+Overfull \hbox (48.71973pt too wide) detected at line 282
 \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) 
@@ -719,7 +719,7 @@ OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 ^^Q[]\OT1/cmr/m/n/12 (
  []
 
 [15]
-Overfull \hbox (30.64902pt too wide) detected at line 276
+Overfull \hbox (30.64902pt too wide) detected at line 282
 \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^
 @\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^
 ^@\OT1/cmr/m/n/12 1)[](\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12
@@ -727,19 +727,19 @@ Overfull \hbox (30.64902pt too wide) detected at line 276
  []
 
 
-Overfull \hbox (20.02075pt too wide) detected at line 279
+Overfull \hbox (20.02075pt too wide) detected at line 285
 \OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it/12 e[];
  e[]\OT1/cmr/m/n/12 ] = (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1)[][\OML/cmm/m/it
 /12 e[]; e[]\OT1/cmr/m/n/12 ] =
  []
 
 [16] [17]
-Overfull \hbox (5.31241pt too wide) detected at line 305
+Overfull \hbox (5.31241pt too wide) detected at line 311
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [18]
-Overfull \hbox (68.91444pt too wide) in paragraph at lines 316--317
+Overfull \hbox (68.91444pt too wide) in paragraph at lines 322--323
 \OT1/cmr/m/n/12 shown for $\OML/cmm/m/it/12 M[]$\OT1/cmr/m/n/12 . There-fore, $
 \OML/cmm/m/it/12 '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 ) = \OML
 /cmm/m/it/12 '\OT1/cmr/m/n/12 ([\OML/cmm/m/it/12 e[]; e[]\OT1/cmr/m/n/12 ]) = [
@@ -748,43 +748,43 @@ m/m/it/12 ; '\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 )] =
  []
 
 
-Overfull \hbox (21.75053pt too wide) in paragraph at lines 316--317
+Overfull \hbox (21.75053pt too wide) in paragraph at lines 322--323
 \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 ^^U[]^^U[] [] ^^U[]e[] \OT1/cmr/m/n/12 + \OML
 /cmm/m/it/12 z[]; ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]\OT1/cmr/m/n/1
 2 ] = \OML/cmm/m/it/12 ^^U[]^^U[] [] ^^U[]^^U[]e[] \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (30.37569pt too wide) in paragraph at lines 316--317
+Overfull \hbox (30.37569pt too wide) in paragraph at lines 322--323
 \OML/cmm/m/it/12 z[]^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]^^U[]^^U[] [
 ] ^^U[]e[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 z[]z[] \OT1/cmr/m/n/12 = \OML/cmm
 /m/it/12 ^^U[]^^U[] [] ^^U[]^^U[]e[] \OT1/cmr/m/n/12 +
  []
 
 
-Overfull \hbox (82.42236pt too wide) detected at line 336
+Overfull \hbox (82.42236pt too wide) detected at line 342
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 338
+LaTeX Font Info:    Trying to load font information for U+euf on input line 344
 .
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [19]
-Overfull \hbox (29.35948pt too wide) detected at line 355
+Overfull \hbox (29.35948pt too wide) detected at line 361
 \U/euf/m/n/12 h \OT1/cmr/m/n/12 = []
  []
 
 [20]
-Overfull \hbox (18.79071pt too wide) detected at line 383
+Overfull \hbox (18.79071pt too wide) detected at line 389
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][] \OMS/cmsy/m/n/12 
 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 d^^V[] \OT1/cmr/m/n
 /12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 [21]
-Overfull \hbox (38.47746pt too wide) in paragraph at lines 399--401
+Overfull \hbox (38.47746pt too wide) in paragraph at lines 405--407
 \OT1/cmr/m/n/12 com-po-si-tion of $\OML/cmm/m/it/12 N[]\OT1/cmr/m/n/12 (\U/msb/
 m/n/12 Q[]\OT1/cmr/m/n/12 )$, for ev-ery $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2
  \U/msb/m/n/12 N$\OT1/cmr/m/n/12 , which means that $[][] \OMS/cmsy/m/n/12 j []
@@ -793,7 +793,7 @@ m/n/12 Q[]\OT1/cmr/m/n/12 )$, for ev-ery $\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (57.51566pt too wide) in paragraph at lines 399--401
+Overfull \hbox (57.51566pt too wide) in paragraph at lines 405--407
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
  []
 
@@ -843,7 +843,7 @@ ler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public
 ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-short-review.pdf (24 pages, 374934 bytes).
+Output written on proposal-short-review.pdf (24 pages, 374977 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
