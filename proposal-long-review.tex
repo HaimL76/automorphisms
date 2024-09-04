@@ -21,6 +21,7 @@
 \newtheorem{notations}[theorem]{Notations}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
 
 \ExplSyntaxOn
 \NewDocumentCommand{\cycle}{ O{\;} m }
@@ -129,12 +130,15 @@ The theorem ensures that for any $\mathbb{Z}$-Lie algebra, all the local pro-iso
 The uniformity is also established in the work of Grunewald, Segal and Smith, see \cite{GrunewaldSegalSmith}.
 Proving the uniformity of the pro-isomorphic zeta-functions of the algebras we are studying is one of the main goals of our research.
 \section{Research Goals and Methodology}
-\subsection{The Lie algebras $L_{n,p}$}
+\subsection{The Lie algebras $L_{n}$}
 Let $e_{ij}$ be an $n\times{n}$ matrix, in which all the elements are zero, except for the element in row $i$ and column $j$ which has $1$. On the set $\mathcal{E}_n=\{e_{ij} : 1\leq{i}\leq{n-1}\land{{i+1}\leq{j}\leq{n}}\}$ we define a bracket operation: for every $1\leq{k,l}\leq{n-1}$, define $[e_{k,k+1},e_{l,l+1}]:=e_{k,k+1}e_{l,l+1}-e_{l,l+1}e_{k,k+1}$. Let $\mathcal{R}$ be some commutative ring, then the standard operation of $\mathcal{R}$ on $\mathcal{E}_n$, along with the defined bracket operation, form a nilpotent $\mathcal{R}$-Lie algebra. Considering $\mathcal{R}=\mathbb{Z}$, we obtain a nilpotent $\mathbb{Z}$-Lie algebra of strictly upper triangular matrices over $\mathbb{Z}$, which we denote by $L_n$, with the standard bracket operation as its Lie brackets. As discussed above, this $\mathbb{Z}$-Lie algebra can be extended to a $\mathbb{Z}_p$-algebra, which we denote by $L_{n,p}$, and then to a $\mathbb{Q}_p$-algebra, which we denote by $\mathcal{L}_{n,p}$.
 It is readily seen that the set of matrices of the form $e_{ij}$ where $i<j$, spans the whole $\mathbb{Z}$-Lie algebra $L_n$ and is $\mathbb{Z}$-linearly independent. Therefore, it forms a basis for $L_n$ as a free module over $\mathbb{Z}$, $\mathcal{B}_n(\mathbb{Z}):=\{e_{12},e_{13},\dots,e_{1n},e_{23},\dots,e_{2,n},\dots,e_{n-1,n}\}$, which we call \textbf{the standard basis of $L_n$}. One easily checks that $r=\mathrm{rank}L_n=|\mathcal{B}_n(\mathbb{Z})|=\binom{n}{2}$, which is the number of elements above the main diagonal for every $n\in\mathbb{N}$. To this standard basis we apply a linear order by defining $e_{ij}<e_{kl}$ if $j-i<l-k$ or if $j-i=l-k$ and $i<k$. In other words, we apply an order that divides $\mathcal{B}_n(\mathbb{Z})$ to basis elements of the quotients $\sfrac{L_n}{\gamma_2},\sfrac{\gamma_2}{\gamma_3},\dots,\sfrac{\gamma_{n-2}}{\gamma_{n-1}},\gamma_{n-1}$
 
 
 Obviously, the same goes also for the extensions of $L_n$, namely $L_{n,p}$ and $\mathcal{L}_{n,p}$. The target of our research is studying the $\hat{\zeta_{L,p}}$-function on these $\mathbb{Z}_p$-Lie algebras, and the related constructions.
+\begin{remark}
+Let $\mathcal{R}$ be a commutative ring, and let $\mathcal{U}_n(\mathcal{R})$ be the group of $n\times{n}$ upper unitriangular matrices over $\mathcal{R}$, with the standard matrix multiplication as the group operation. Denote by $\mathcal{U}_{n,p}=\mathcal{U}_n(\mathbb{Z}_p)$ the unitriangular matrix group over $\mathbb{Z}_p$, then by Mal'cev correspondence, $\hat{\zeta_{\mathcal{U}_{n,p}}}(s)=\hat{\zeta_{L_{n,p}}}(s)$, for all but finitely many primes $p$. This relates the subject of research to the motivation presented at the beginning of this paper.
+\end{remark}
 \subsection{Research goals}
 The project consists of two independent parts.\par
 \textbf{The first part} is completing the work of Mark N. Berman on $L_{5,p}$, which we mention later in this paper, and express its $\hat{\zeta_{L,p}}$-function by an explicit formula.\par

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  4 SEP 2024 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  4 SEP 2024 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,24 +591,24 @@ Package: arydshln 2019/02/21 v1.76
 (proposal-long-review.aux)
 \openout1 = `proposal-long-review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -635,18 +635,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
 
  (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
 
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -660,68 +660,68 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout4 = `proposal-long-review.toc'.
 
  [2]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 77.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 78.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 77.
+(Font)              size <5> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 77.
+(Font)              size <5> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 77.
+(Font)              size <5> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 77.
+(Font)              size <5> substituted on input line 78.
 
 [3] [4] [5]
 
 LaTeX Warning: Reference `def.lower.central.series' on page 6 undefined on inpu
-t line 100.
+t line 101.
 
 
 LaTeX Warning: Reference `def.nilpotent.group' on page 6 undefined on input lin
-e 100.
+e 101.
 
 [6]
-Overfull \hbox (7.01682pt too wide) in paragraph at lines 128--131
+Overfull \hbox (7.01682pt too wide) in paragraph at lines 129--132
 []\OT1/cmr/m/n/12 The the-o-rem en-sures that for any $\U/msb/m/n/12 Z$\OT1/cmr
 /m/n/12 -Lie al-ge-bra, all the lo-cal pro-isomorphic
  []
 
 [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
-Overfull \hbox (5.31241pt too wide) detected at line 273
+Overfull \hbox (5.31241pt too wide) detected at line 277
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 
-Overfull \hbox (82.42236pt too wide) detected at line 301
+Overfull \hbox (82.42236pt too wide) detected at line 305
 \OML/cmm/m/it/12 M \OT1/cmr/m/n/12 = []
  []
 
 [17]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 303
+LaTeX Font Info:    Trying to load font information for U+euf on input line 307
 .
  (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (29.35948pt too wide) detected at line 320
+Overfull \hbox (29.35948pt too wide) detected at line 324
 \U/euf/m/n/12 h \OT1/cmr/m/n/12 = []
  []
 
 [18] [19]
-Overfull \hbox (18.79071pt too wide) detected at line 348
+Overfull \hbox (18.79071pt too wide) detected at line 352
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][] \OMS/cmsy/m/n/12 
 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12 d^^V[] \OT1/cmr/m/n
 /12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 
-Overfull \hbox (57.51566pt too wide) in paragraph at lines 355--358
+Overfull \hbox (57.51566pt too wide) in paragraph at lines 359--362
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
  []
 
@@ -740,10 +740,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15321 strings out of 474486
- 324788 string characters out of 5743755
+ 15326 strings out of 474486
+ 324868 string characters out of 5743755
  1957528 words of memory out of 5000000
- 37305 multiletter control sequences out of 15000+600000
+ 37310 multiletter control sequences out of 15000+600000
  579601 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,19n,121p,6806b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -777,7 +777,7 @@ ts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/isila/AppData/Local/Programs
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/
 isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.p
 fb>
-Output written on proposal-long-review.pdf (22 pages, 383314 bytes).
+Output written on proposal-long-review.pdf (22 pages, 384805 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
