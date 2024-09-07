@@ -206,6 +206,10 @@ Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $
 \end{proposition}
 We shall explain in details, in the research itself, that computing $\hat\zeta_{L_{n,p}}(s)$ is invariant to whether we assume $M_{11}$ is diagonal or we assume that $M_{11}$ is anti-diagonal. 
 \begin{proposition}
+Let $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^{\times}$ be the elements on the main diagonal of the matrix block $M_{11}$, where $M$ is the matrix representing $\varphi\in{G}_n(\mathbb{Q}_p)$. Then the main diagonal of $M$ is \[\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\lambda_{2}\lambda_{3},\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-1}\].
+\end{proposition}
+This proposition is easily proved by recursively evaluating the relation $\varphi(e_{i,j})=[\varphi(e_{i,j-1}),\varphi(e_{j-1,j})]$, for all $1\leq{i}<{j}\leq{n-1}$.
+\begin{proposition}
 Let $\varphi\in{N_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, with its representing matrix $M$. Then, for all $1\leq{r}\leq{n-1}$, the matrix block $M_{1r}=(m_{kl})\in\mathcal{M}_{n-1,n-r}(\mathbb{Q}_p)$ has the constraint that $m_{kl}=0$ for all ${k+1}\leq{l}\leq{n-r}$ and for all $1\leq{l}\leq{k-r}$. Specifically for $r=1$, $M_{11}=I_{n-1}$, which is an already known result.
 \end{proposition}
 We shall describe the strategy for proving this proposition, the full details shall be described in the research itself. For all $1\leq{i}\leq{n-1}$, $\varphi(e_{i,i+1})=a_{i,i+1}^{i}e_{i,i+1}+\sum_{r=2}^{n-1}\sum_{j=1}^{n-r}a_{j,j+r}e_{j,j+r}$. We aim to prove that for all $1\leq{r}\leq{n-1}$ and for all $1\leq{i}\leq{n-1}$, we have the constraints $a_{i+j,i+j+r}^{i}=0$ for all $1\leq{j}\leq{n-r-i}$, and $a_{i-r-(j-1),i-(j-1)}$ for $1\leq{j}\leq {i+1}$. We establish the assumption for $r=1$, because we already know that $M_{11}$ is a diagonal matrix. Moving to $r>1$, we show first that $a_{i+1,i+1+r}^{i}=0$ and that $a_{i-r,i}^{i}=0$, by utilizing the relation $[\varphi(e_{i,i+1}),\varphi(e_{i+1,i+3})]=0$ and the induction assumption.
