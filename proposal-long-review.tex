@@ -131,6 +131,7 @@ The uniformity is also established in the work of Grunewald, Segal and Smith, se
 Proving the uniformity of the pro-isomorphic zeta-functions of the algebras we are studying is one of the main goals of our research.
 \section{Research Goals and Methodology}
 \subsection{The Lie algebras $L_{n}$}
+In all the following, given some algebra $L$, we may denote the quotients $\sfrac{\gamma_{k}L}{\gamma_{l}L}$ by $\sfrac{\gamma_{k}}{\gamma_{l}}$, for some $1\leq{k}<{l}\leq{n-1}$, for abbreviation. We may also denote the quotient $\sfrac{L}{\gamma_{k}}$ by $\sfrac{\gamma_{1}}{\gamma_{k}}$.\par
 Let $e_{ij}$ be an $n\times{n}$ matrix, in which all the elements are zero, except for the element in row $i$ and column $j$ which has $1$. On the set $\mathcal{E}_n=\{e_{ij} : 1\leq{i}\leq{n-1}\land{{i+1}\leq{j}\leq{n}}\}$ we define a bracket operation: for every $1\leq{k,l}\leq{n-1}$, define $[e_{k,k+1},e_{l,l+1}]:=e_{k,k+1}e_{l,l+1}-e_{l,l+1}e_{k,k+1}$. Let $\mathcal{R}$ be some commutative ring, then the standard operation of $\mathcal{R}$ on $\mathcal{E}_n$, along with the defined bracket operation, form a nilpotent $\mathcal{R}$-Lie algebra. Considering $\mathcal{R}=\mathbb{Z}$, we obtain a nilpotent $\mathbb{Z}$-Lie algebra of strictly upper triangular matrices over $\mathbb{Z}$, which we denote by $L_n$, with the standard bracket operation as its Lie brackets. As discussed above, this $\mathbb{Z}$-Lie algebra can be extended to a $\mathbb{Z}_p$-algebra, which we denote by $L_{n,p}$, and then to a $\mathbb{Q}_p$-algebra, which we denote by $\mathcal{L}_{n,p}$.
 It is readily seen that the set of matrices of the form $e_{ij}$ where $i<j$, spans the whole $\mathbb{Z}$-Lie algebra $L_n$ and is $\mathbb{Z}$-linearly independent. Therefore, it forms a basis for $L_n$ as a free module over $\mathbb{Z}$, $\mathcal{B}_n(\mathbb{Z}):=\{e_{12},e_{13},\dots,e_{1n},e_{23},\dots,e_{2,n},\dots,e_{n-1,n}\}$, which we call \textbf{the standard basis of $L_n$}. One easily checks that $r=\mathrm{rank}L_n=|\mathcal{B}_n(\mathbb{Z})|=\binom{n}{2}$, which is the number of elements above the main diagonal for every $n\in\mathbb{N}$. To this standard basis we apply a linear order by defining $e_{ij}<e_{kl}$ if $j-i<l-k$ or if $j-i=l-k$ and $i<k$. In other words, we apply an order that divides $\mathcal{B}_n(\mathbb{Z})$ to basis elements of the quotients $\sfrac{L_n}{\gamma_2},\sfrac{\gamma_2}{\gamma_3},\dots,\sfrac{\gamma_{n-2}}{\gamma_{n-1}},\gamma_{n-1}$
 
@@ -149,39 +150,6 @@ As we elaborate further, steps 1 and 2 are already known entirely for $n\leq 5$,
 We start with the first step of calculating $Aut_{\mathbb{Q}_p}(\mathcal{L}_{n,p})$. These automorphism groups have been studied for decades from a different point of view.  There are classical results showing that any automorphism may be expressed as a product of automorphisms of a specific type; see, for instance, the main result of Gibbs \cite{Gibbs}.  These results are not explicit enough for our purposes; indeed, the submonoid $G_n^+(\mathbb{Q}_p)$ arises for us as the domain of integration of a $p$-adic integral.  In order to calculate this integral, we need to decompose the automorphism group $G_n(\mathbb{Q}_p)$ into a repeated semi-direct product of groups with a simple structure.
 \par
 After we have analyzed the structure of $G_n(\mathbb{Z}_p)$, we will need to construct the monoid $G_n^+(\mathbb{Q}_p)$ and its $G_n(\mathbb{Z}_p)$ right-cosets, as we have seen above. This will give us both the function to integrate, which is $\det\varphi$ for every $G_n(\mathbb{Z}_p)$ right-coset $G_n(\mathbb{Z}_p)\varphi$, and the domain of integration, which is the monoid $G_n^+(\mathbb{Q}_p)$. We will use this information to analyze the behavior of the $p$-adic integral we have described above and prove that its calculation depends only on $p$, thus showing that the $\hat{\zeta_{L,p}}$-function is uniform.
-\subsection{The Heisenberg Lie algebra $L_3$}
-We show the very basic approach to this problem by the simplest example, the \textbf{Heisenberg Lie algebra $L_3$}, which is defined by the set of three matrices $\{e_{12},e_{13},e_{23}\}$ with the bracket operation we defined above, to which we define the standard \textbf{ordered} basis as $\mathcal{B}_3(\mathbb{Z})=\{e_{12},e_{23},e_{13}\}$. This means that if we analyze some $\varphi\in{G_3(\mathbb{Z})}$ by its operation on the basis elements, then $\varphi$ must be some $3\times 3$ matrix over $\mathbb{Z}$, such that multiplying any vector $v=xe_{12}+ye_{23}+ze_{13}\in L_{n,p}$ with $\varphi$ from the right\footnote{We multiply from the right, because we want the rows of $\varphi$ to represent the images of the basis elements, $\varphi(e_{12})$, $\varphi(e_{23})$ and $\varphi(e_{13})$} yields a vector $u=\varphi(v)=x\varphi(e_{12})+y\varphi(e_{23})+z\varphi(e_{13})\in L_{n,p}$, i.e. \[\begin{pmatrix}
-x & y & z\\
-\end{pmatrix}\begin{pmatrix}
-a_{11} & a_{12} & a_{13}\\
-a_{21} & a_{22} & a_{23}\\
-a_{31} & a_{32} & a_{33}\\
-\end{pmatrix}=\]\[=
-\begin{pmatrix}
-xa_{11}+ya_{21}+za_{31} &
-xa_{12}+ya_{22}+za_{32} &
-xa_{13}+ya_{23}+za_{33}\\
-\end{pmatrix}\]
-which means that\[
-\varphi(e_{12})=a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13}\]\[
-\varphi(e_{23})=a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}\]\[
-\varphi(e_{13})=a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}\]
-Every $\varphi\in G_3(\mathbb{Z})$ must obey the Lie brackets, hence we observe that $a_{31}e_{12}+a_{32}e_{23}+a_{33}e_{13}=\varphi(e_{13})=\varphi[(e_{12}),(e_{23})]=[\varphi(e_{12}),\varphi(e_{23})]=[a_{11}e_{12}+a_{12}e_{23}+a_{13}e_{13},a_{21}e_{12}+a_{22}e_{23}+a_{23}e_{13}]=(a_{11}a_{22}-a_{12}a_{21})e_{13}$, which gives the following relations, $$
-a_{31}=0$$
-$$a_{32}=0$$
-$$a_{33}=(a_{11}a_{22}-a_{12}a_{21})\neq 0
-$$
-which means that $\varphi$ is the following matrix, $\varphi=\begin{pmatrix}
-a_{11} & a_{12} & a_{13}\\
-a_{21} & a_{22} & a_{23}\\
-0 & 0 & \det A\\
-\end{pmatrix}
-$
-where $A=\begin{pmatrix}
-a_{11} & a_{12}\\
-a_{21} & a_{22}\\
-\end{pmatrix}
-$, and $A$ must be invertible, otherwise $\varphi$ is not bijective. Based on the construction of $L_{n,p}$ and $\mathcal{L}_{n,p}$ from earlier, all the above applies also for $G_3(\mathbb{Z}_p)$ and for $G_3(\mathbb{Q}_p)$, respectively.
 \subsection{$L_{n,p}$-Lie algebras for $n>3$}
 Mark N. Berman, in his doctoral thesis \cite{Berman}, has displayed an explicit formula for $\hat{\zeta_{L_{4,p}}}$, and proved that $\hat{\zeta_{L_{5,p}}}$ is indeed uniform. We aim to generalize his work to prove that $\hat{\zeta_{L_{n,p}}}$ is uniform for all $n$. We also aim to compute $\hat{\zeta_{\mathcal{L}_{n,p}}}(s)$ explicitly for all $n$, or at least to obtain explicit formulas for some $n\geq 5$, and specifically for $n=5$. By analyzing carefully Berman's work on $L_{4,p}$ and $L_{5,p}$, we gain the basic understanding of the expected structure of the local zeta-functions in the general case.
 We begin our discussion of the first goal, which is computing $G_n(\mathbb{Z}_p)$, by first recalling that for every $v\in L_{n,p}$, where $n\geq3$, we present $\varphi(v)$ as the multiplication of $v$ by a matrix from the right $\varphi(v)=vM$. As stated earlier, $M$ is an $r\times r$ matrix, where $r=\mathrm{rank}L_{n,p}=\binom{n}{2}$, whose lines are set by the order we have defined above, i.e. considering the standard ordered basis \[\mathcal{B}_n=\{e_{
@@ -227,7 +195,18 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_
 \subsection{Preliminary results}
 \label{preliminary.results}
 \begin{proposition}
-Let $\varphi\in{N_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $M$ its representing matrix, divided into matrix blocks, as shown earlier. Then, for all $1\leq{r}\leq{n-1}$, the matrix block $M_{1r}=(m_{kl})\in\mathcal{M}_{n-1,n-r}(\mathbb{Q}_p)$ has the constraint that $m_{kl}=0$ for all ${k+1}\leq{l}\leq{n-r}$ and for all $1\leq{l}\leq{k-r}$. Specifically for $r=1$, $M_{11}=I_{n-1}$, which is an already known result.
+Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $M$ its representing matrix, divided into matrix blocks, as shown earlier. Then, $M_{11}\in\mathcal{M}_{n-1}(\mathbb{Q}_p)$ is either diagonal or anti-diagonal.
+\end{proposition}
+\begin{proposition}
+Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}_p$-algebra of our research. Define the map $\eta_{n}(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}$, for $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$. Then $\eta$ is an involution, hence also an $\mathcal{L}_{n,p}$-automorphism.
+\end{proposition}
+One easily checks that the above is true.
+\begin{proposition}
+Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $M$ its representing matrix. Then if $M_{11}$ is anti-diagonal, replacing $\varphi$ with $\varphi\circ\eta_{n}$, we may assume, without loss of generality, that $M_{11}$ is diagonal.
+\end{proposition}
+We shall explain in details, in the research itself, that computing $\hat\zeta_{L_{n,p}}(s)$ is invariant to whether we assume $M_{11}$ is diagonal or we assume that $M_{11}$ is anti-diagonal. 
+\begin{proposition}
+Let $\varphi\in{N_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, with its representing matrix $M$. Then, for all $1\leq{r}\leq{n-1}$, the matrix block $M_{1r}=(m_{kl})\in\mathcal{M}_{n-1,n-r}(\mathbb{Q}_p)$ has the constraint that $m_{kl}=0$ for all ${k+1}\leq{l}\leq{n-r}$ and for all $1\leq{l}\leq{k-r}$. Specifically for $r=1$, $M_{11}=I_{n-1}$, which is an already known result.
 \end{proposition}
 We shall describe the strategy for proving this proposition, the full details shall be described in the research itself. For all $1\leq{i}\leq{n-1}$, $\varphi(e_{i,i+1})=a_{i,i+1}^{i}e_{i,i+1}+\sum_{r=2}^{n-1}\sum_{j=1}^{n-r}a_{j,j+r}e_{j,j+r}$. We aim to prove that for all $1\leq{r}\leq{n-1}$ and for all $1\leq{i}\leq{n-1}$, we have the constraints $a_{i+j,i+j+r}^{i}=0$ for all $1\leq{j}\leq{n-r-i}$, and $a_{i-r-(j-1),i-(j-1)}$ for $1\leq{j}\leq {i+1}$. We establish the assumption for $r=1$, because we already know that $M_{11}$ is a diagonal matrix. Moving to $r>1$, we show first that $a_{i+1,i+1+r}^{i}=0$ and that $a_{i-r,i}^{i}=0$, by utilizing the relation $[\varphi(e_{i,i+1}),\varphi(e_{i+1,i+3})]=0$ and the induction assumption.
 In the same way, we prove that $a_{i-1-r,i-1}^{i}=0$, utilizing the relation $[\varphi(e_{i,i+1}),\varphi(e_{i-1,i+1})]=0$ and the assumption.
