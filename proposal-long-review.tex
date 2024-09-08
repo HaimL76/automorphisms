@@ -206,12 +206,48 @@ Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $
 \end{proposition}
 We shall explain in details, in the research itself, that computing $\hat\zeta_{L_{n,p}}(s)$ is invariant to whether we assume $M_{11}$ is diagonal or we assume that $M_{11}$ is anti-diagonal. 
 \begin{proposition}
+\label{m.main.diagonal}
 Let $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^{\times}$ be the elements on the main diagonal of the matrix block $M_{11}$, where $M$ is the matrix representing $\varphi\in{G}_n(\mathbb{Q}_p)$. Then the main diagonal of $M$ is \[\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\lambda_{2}\lambda_{3},\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-1}\]
+such that for all $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$, \[\varphi(e_{ij})=\lambda_{i}\lambda_{i+1}\cdots\lambda_{j-2}\lambda_{j-1}e_{ij}+\gamma_{k+1}\mathcal{L}_{n,p}\]
+where $k=j-i$.
 \end{proposition}
+\begin{proof}
+Consider the relation \[\varphi(e_{i,j})=[\varphi(e_{i,i+1}),\varphi(e_{i+1,j})]=[\varphi(e_{i,i+1}),[\varphi(e_{i+1,i+2}),\varphi(e_{i+2,j})]]=\]\[=[\varphi(e_{i,i+1}),[\varphi(e_{i+1,i+2}),[\cdots,[\varphi(e_{j-2,j-1}),\varphi(e_{j-1,j})]]\cdots]=\]\[=[\lambda_{i}{e_{i,i+1}}+a_{i},[\lambda_{i+1}{e_{i+1,i+2}}+a_{i+1},[\cdots,[\lambda_{j-2}{e_{j-2,j-1}}+a_{j-2},\lambda_{j-1}e_{j-1,j}+a_{j-1}]]\cdots]=\]\[=\lambda_{i}\lambda_{i+1}\cdots\lambda_{j-2}\lambda_{j-1}e_{ij}+\gamma_{k+1}\mathcal{L}_{n,p}\in\gamma_{k}\mathcal{L}_{n,p}\]
+where $a_{i},a_{i+1},\dots,a_{j-2},a_{j-1}\in\gamma_{2}\mathcal{L}_{n,p}$, for all $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$. This means that the only element in the linear combination that forms $\varphi(e_{ij})$, which exists inside the quotient $\sfrac{\gamma_{k}}{\gamma_{k+1}}$, is a scalar multiplication of $e_{ij}$ by the scalar $\lambda_{i},\lambda_{i+1},\cdots\lambda_{j-2}\lambda_{j-1}$, hence it must be on the main diagonal of $M$, specifically the $i\mathrm{th}$ diagonal element of the matrix block $M_{kk}$.
+\end{proof}
+\begin{corollary}
+\label{diagonal.automorphism}
+Let $\mathcal{L}_{n,p}$ be a $\mathbb{Q}_p$-Lie algebra, and let $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^{\times}$, any non-zero scalars in $\mathbb{Q}_{p}$, then there exists an $\mathcal{L}_{n,p}$-automorphism $\psi:{\mathcal{L}_{n,p}}\rightarrow{\mathcal{L}_{n,p}}$, such that $\psi(e_{ij})=\lambda_{i}\lambda_{i+1}\cdots\lambda_{j-1}e_{ij}$, for all $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$, and the diagonal matrix $M_{\psi}$, whose main diagonal is
+\[\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\lambda_{2}\lambda_{3},\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-1}\]
+represents $\psi$.
+\begin{proof}
+Given $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}$, we can construct an automorphism $\psi_{1}:\sfrac{\mathcal{L}_{n,p}}{\gamma_{2}}\rightarrow\sfrac{\mathcal{L}_{n,p}}{\gamma_{2}}$, by setting $\psi_{1}(e_{i,i+1}):=\lambda_{i}e_{i,i+1}$, for all $1\leq{i}\leq{n-1}$, which is obviously an automoprhism from $\sfrac{\mathcal{L}_{n,p}}{\gamma_{2}}$ onto itself, represented by an $(n-1)\times{(n-1)}$ matrix $M_{\psi_{1}}$, whose main diagonal has $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}$, and all other elements are zero. Now construct $\psi_{2}:\sfrac{\mathcal{L}_{n,p}}{\gamma_{3}}\rightarrow\sfrac{\mathcal{L}_{n,p}}{\gamma_{3}}$, by setting $\psi_{2}(e_{i,i+1}):=\psi_{1}(e_{i,i+1})=\lambda_{i}e_{i,i+1}$, and $\psi_{2}(e_{i,i+2})=[\psi_{2}(e_{i,i+1}),\psi_{2}(e_{i+1,i+2})]=\lambda_{i}\lambda_{i+1}e_{i,i+2}$, which means that $\psi_{2}$ is represented by a $(2n-3)\times(2n-3)$ matrix $M_{\psi_{2}}$ with $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_1\lambda_2,\lambda_2\lambda_3,\dots,\lambda_{n-1}\lambda_{n-2}$ on its main diagonal, and all other elements are zero. Continue this, to obtain $M_{\psi}$ as the matrix representing an automorphism, which we called $\psi$, from $\mathcal{L}_{n,p}$ onto itself.
+\end{proof}
+\end{corollary}
 \begin{proposition}
-
+Let $\varphi\in{G_{n}(\mathbb{\mathbb{Q}_p})}$, with $M$ as described above. Then $M$ has a unique decomposition $M=\mathfrak{n}\mathfrak{h}$, where $\mathfrak{h}$ is a diagonal matrix whose main diagonal equals to that of $M$, and $\mathfrak{n}$ is a unipotent matrix.
 \end{proposition}
-This proposition is easily proved by recursively evaluating the relation $\varphi(e_{i,j})=[\varphi(e_{i,j-1}),\varphi(e_{j-1,j})]$, for all $1\leq{i}<{j}\leq{n-1}$.
+\begin{corollary}
+Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, given the unique decomposition $M=\mathfrak{n}\mathfrak{h}$, then $\mathfrak{n},\mathfrak{h}\in{G_{n}}(\mathbb{Q}_p)$.
+\begin{proof}
+By \ref{diagonal.automorphism} we know that $\mathfrak{h}\in{G_{n}(\mathbb{Q}_p)}\Rightarrow\mathfrak{h}^{-1}\in{G_{n}(\mathbb{Q}_p)}\Rightarrow\mathfrak{n}=M\mathfrak{h}^{-1}\in{G_{n}(\mathbb{Q}_p)}$.
+\end{proof}
+\end{corollary}
+\begin{corollary}
+Let $\mathcal{H}_{n}(\mathbb{Q}_p):=\{\mathfrak{h}\in{G_{n}(\mathbb{Q}_p)}\}$ be the set of diagonal $\mathcal{L}_{n,p}$-automorphisms, then $\mathcal{H}_{n}(\mathbb{Q}_p)$ is as abelian subgroup of $G_{n}(\mathbb{Q}_p)$ called the \textbf{reductive part} of $G_{n}(\mathbb{Q}_p)$.
+\end{corollary}
+\begin{corollary}
+Let $\mathcal{N}_{n}(\mathbb{Q}_p):=\{\mathfrak{n}\in{G_{n}(\mathbb{Q}_p)}\}$ be the set of matrices such that $n=M\mathfrak{h}$, then $\mathcal{N}_{n}(\mathbb{Q}_p)$ is a normal subgroup of $G_{n}(\mathbb{Q}_p)$ called the \textbf{unipotent radical} of $G_{n}(\mathbb{Q}_p)$.
+\end{corollary}
+\begin{corollary}
+Define the map $\phi:\mathcal{H}_{n}(\mathbb{Q}_p)\rightarrow\mathrm{Aut}{\mathcal{N}_{n}}(\mathbb{Q}_p)$ by $\phi(\mathfrak{h})(\mathfrak{n}):=\mathfrak{h}\mathfrak{n}\mathfrak{h}^{-1}$, for all $\mathfrak{h}\in\mathcal{H}_{n}(\mathbb{Q}_p)$ and all $\mathfrak{n}\in\mathcal{N}_{n}(\mathbb{Q}_p)$. Then $G_{n}(\mathbb{Q}_p)=\mathcal{N}_{n}(\mathbb{Q}_p)\rtimes_{\phi}\mathcal{H}_{n}(\mathbb{Q}_p)$.
+\end{corollary}
+\begin{proof}
+Since every $\varphi\in{G_{n}(\mathbb{Q}_p)}$ has the unique decomposition $M=\mathfrak{n}\mathfrak{h}$, then $G_{n}(\mathbb{Q}_p)=\mathcal{N}_{n}(\mathbb{Q}_p)\mathcal{H}_{n}(\mathbb{Q}_p)$ as a set, and clearly $\mathcal{N}_{n}(\mathbb{Q}_p)\cap\mathcal{H}_{n}(\mathbb{Q}_p)=\{I_{n}\}$, and since $\mathcal{N}_{n}(\mathbb{Q}_p)$ is a normal subgroup of $G_{n}(\mathbb{Q}_p)$ then $G_{n}(\mathbb{Q}_p)$ is the inner semidirect product stated in the proposition.  
+\end{proof}
+\begin{proposition}
+Let $\varphi\in{G_{n}(\mathbb{\mathbb{Q}_p})}$, with $M$ as described above. Then the matrix $\mathfrak{h}$ in the decomposition $M=\mathfrak{n}\mathfrak{h}$ is itself an $\mathcal{L}_{n,p}$-automorphism
+\end{proposition}
 \begin{proposition}
 Let $\varphi\in{N_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, with its representing matrix $M$. Then, for all $1\leq{r}\leq{n-1}$, the matrix block $M_{1r}=(m_{kl})\in\mathcal{M}_{n-1,n-r}(\mathbb{Q}_p)$ has the constraint that $m_{kl}=0$ for all ${k+1}\leq{l}\leq{n-r}$ and for all $1\leq{l}\leq{k-r}$. Specifically for $r=1$, $M_{11}=I_{n-1}$, which is an already known result.
 \end{proposition}
