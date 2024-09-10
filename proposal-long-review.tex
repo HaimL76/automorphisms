@@ -227,6 +227,9 @@ Given $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}$, we can construct an automor
 \begin{proposition}
 Let $\varphi\in{G_{n}(\mathbb{\mathbb{Q}_p})}$, with $M$ as described above. Then $M$ has a unique decomposition $M=\mathfrak{n}\mathfrak{h}$, where $\mathfrak{h}$ is a diagonal matrix whose main diagonal equals to that of $M$, and $\mathfrak{n}$ is a unipotent matrix.
 \end{proposition}
+\begin{proof}
+The fact that there is such a decomposition is trivial. Suppose that $M=\mathfrak{n}_{1}\mathfrak{h}_{1}=\mathfrak{n}_{2}\mathfrak{h}_{2}$, then $\mathfrak{n}_{2}^{-1}\mathfrak{n}_{1}=\mathfrak{h}_{2}\mathfrak{h}_{1}^{-1}$, but $\mathfrak{n}_{2}^{-1}\mathfrak{n}_{1}$ is a product of unipotent matrices hence unipotent, and $\mathfrak{h}_{2}\mathfrak{h}_{1}^{-1}$ is a product of diagonal matrices hence diagonal, but this means that $\mathfrak{n}_{2}^{-1}\mathfrak{n}_{1}=\mathfrak{h}_{2}\mathfrak{h}_{1}^{-1}=I_{n}$, which shows that $\mathfrak{n}_{2}=\mathfrak{n}_{1}$ and $\mathfrak{h}_{2}=\mathfrak{h}_{1}$.
+\end{proof}
 \begin{corollary}
 Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, given the unique decomposition $M=\mathfrak{n}\mathfrak{h}$, then $\mathfrak{n},\mathfrak{h}\in{G_{n}}(\mathbb{Q}_p)$.
 \begin{proof}
@@ -246,8 +249,21 @@ Define the map $\phi:\mathcal{H}_{n}(\mathbb{Q}_p)\rightarrow\mathrm{Aut}{\mathc
 Since every $\varphi\in{G_{n}(\mathbb{Q}_p)}$ has the unique decomposition $M=\mathfrak{n}\mathfrak{h}$, then $G_{n}(\mathbb{Q}_p)=\mathcal{N}_{n}(\mathbb{Q}_p)\mathcal{H}_{n}(\mathbb{Q}_p)$ as a set, and clearly $\mathcal{N}_{n}(\mathbb{Q}_p)\cap\mathcal{H}_{n}(\mathbb{Q}_p)=\{I_{n}\}$, and since $\mathcal{N}_{n}(\mathbb{Q}_p)$ is a normal subgroup of $G_{n}(\mathbb{Q}_p)$ then $G_{n}(\mathbb{Q}_p)$ is the inner semidirect product stated in the proposition.  
 \end{proof}
 \begin{proposition}
-Let $\varphi\in{G_{n}(\mathbb{\mathbb{Q}_p})}$, with $M$ as described above. Then the matrix $\mathfrak{h}$ in the decomposition $M=\mathfrak{n}\mathfrak{h}$ is itself an $\mathcal{L}_{n,p}$-automorphism
+
 \end{proposition}
+\begin{proof}
+For all $2\leq{r}\leq{n-1}$ and for all $x\in\mathcal{L}_{n,p}$, we define a map $[x,-]_{r}:\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+1}}\rightarrow\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+2}}$, by $[x,y+\gamma_{r+1}\mathcal{L}_{n,p}]_{r}:=[x,y]+[x,\gamma_{r+1}\mathcal{L}_{n,p}]\in\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+2}}$, for all $y\in\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+1}}$. Obviously, $[x,-]_{r}$ is well-defined. Let $\mathcal{A}_{r}(x):=[x,\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+1}}]\cap\sfrac{\gamma_{r+1}}{\gamma_{r+2}}$, in words, the subalgebra of all the images $[x,y+\gamma_{r+1}\mathcal{L}_{n,p}]_{r}$ that are also in the quotient $\sfrac{\gamma_{r+1}}{\gamma_{r+2}}$, and set $d_r(x):=\dim\mathcal{A}_{r}(x)$. 
+Let $x=e_{i,i+1}$, then for all $y\in\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+1}}$, we have $[e_{i,i+1},y+\gamma_{r+1}\mathcal{L}_{n,p}]_{r}=[e_{i,i+1},y]+\mathcal{L}_{r+2}$, which means that $[e_{i,i+1},\sfrac{\mathcal{L}_{n,p}}{\gamma_{r+1}}]=\mathrm{sp}\langle[e_{i,i+1},e_{j,j+l}+\gamma_{r+1}\mathcal{L}_{n,p}]_{r}\rangle=\mathrm{sp}\langle[e_{i,i+1},e_{j,j+l}]\rangle+[e_{i,i+1},\gamma_{r+1}\mathcal{L}_{n,p}]$, where $1\leq{l}\leq{r}$ and $1\leq{j}\leq{n-l}$. But $[e_{i,i+1},\gamma_{r+1}\mathcal{L}_{n,p}]\in\gamma_{r+2}\mathcal{L}_{n,p}$, hence $\mathcal{A}_{r}(e_{i,i+1})=\mathrm{sp}\langle[e_{i,i+1},e_{j,j+r}]\rangle+[e_{i,i+1},\gamma_{r+1}\mathcal{L}_{n,p}]$. By the Lie bracket operation on $\mathcal{L}_{n,p}$, we observe that the only non-zero elements of the spanning set of $\mathcal{A}_{r}(e_{i,i+1})$ are $[e_{i,i+1},e_{i+1,i+1+r}]=e_{i,i+r+1}$, if $i+r+1\leq{n}\Rightarrow{i\leq{n-r-1}}$, and $[e_{i-r,i},e_{i,i+1}]=e_{i-r,i+1}$, if $i-r\geq{1}\Rightarrow{i\geq{r+1}}$, and clearly both elements are linearly independent, which means that they form a basis of $\mathcal{A}_{r}(e_{i,i+1})$. To sum all this up, we have that
+\[
+    d_{r}(e_{i,i+1})=
+    \begin{cases}
+        2 & {r+1}\leq{i}\leq{n-r-1} \\
+        0 & {n-r}\leq{i}\leq{r} \\
+        1 & \mathrm{otherwise}
+    \end{cases}
+\]
+Which means that $d_{r}(e_{i,i+1})=2$ if and only if $r+1\leq{n-r-1}\Rightarrow{r\leq{\frac{n}{2}-1}}$, and $d_{r}(e_{i,i+1})=0$ if and only if $n-r\leq{r}\Rightarrow{r\geq{\frac{n}{2}}}$.
+\end{proof}
 \begin{proposition}
 Let $\varphi\in{N_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, with its representing matrix $M$. Then, for all $1\leq{r}\leq{n-1}$, the matrix block $M_{1r}=(m_{kl})\in\mathcal{M}_{n-1,n-r}(\mathbb{Q}_p)$ has the constraint that $m_{kl}=0$ for all ${k+1}\leq{l}\leq{n-r}$ and for all $1\leq{l}\leq{k-r}$. Specifically for $r=1$, $M_{11}=I_{n-1}$, which is an already known result.
 \end{proposition}

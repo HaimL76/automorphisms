@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 SEP 2024 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  10 SEP 2024 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,11 +715,16 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 228
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [12]
+Overfull \hbox (21.95094pt too wide) in paragraph at lines 255--257
+\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; ^^M[]\OMS/cmsy/m/n/12 L[]\OT1/cmr/m/n/12
+ ] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 ^^M[]\OMS/cmsy/m/n/12 L[]$\OT1/cmr/m/n/1
+2 , hence $\OMS/cmsy/m/n/12 A[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\OT1/cmr/m/
+n/12 ) = []\OMS/cmsy/m/n/12 h\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 e[]; e[]\OT1/cmr
+/m/n/12 ]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 + [\OML/cmm/m/it/12 e[]; ^^M[]\OMS/
+cmsy/m/n/12 L[]\OT1/cmr/m/n/12 ]$.
+ []
 
-LaTeX Warning: Reference `diagonal.automorphism' on page 13 undefined on input 
-line 233.
-
-[13] [14] [15] (proposal-long-review.aux)
+[13] [14] [15] [16] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -732,15 +737,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15328 strings out of 474486
- 324835 string characters out of 5743755
+ 15330 strings out of 474486
+ 324889 string characters out of 5743755
  1948528 words of memory out of 5000000
- 37313 multiletter control sequences out of 15000+600000
+ 37315 multiletter control sequences out of 15000+600000
  581104 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,13n,121p,1975b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -770,9 +772,9 @@ ler/eufm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 329820 bytes).
+Output written on proposal-long-review.pdf (16 pages, 334926 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
