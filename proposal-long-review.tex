@@ -194,17 +194,12 @@ M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_
 \]
 \subsection{Preliminary results}
 \label{preliminary.results}
+We have made progress towards step 1 of our research program, namely determining the automorphism groups $G_{n}(\mathbb{Q}_p)$.
+The first result in this direction appears already in the thesis of M. N. Berman\cite[Prop. 3.6]{Berman}.
 \begin{proposition}
 Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $M$ its representing matrix, divided into matrix blocks, as shown earlier. Then, $M_{11}\in\mathcal{M}_{n-1}(\mathbb{Q}_p)$ is either diagonal or anti-diagonal.
 \end{proposition}
-\begin{proposition}
-Let $\mathcal{L}_{n,p}$ be the $\mathbb{Q}_p$-algebra of our research. Define the map $\eta_{n}(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}$, for $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$. Then $\eta$ is an involution, hence also an $\mathcal{L}_{n,p}$-automorphism.
-\end{proposition}
-One easily checks that the above is true.
-\begin{proposition}
-Let $\varphi\in{G_n(\mathbb{Q}_p)}$ be a $\mathcal{L}_{n,p}$-automorphism, and $M$ its representing matrix. Then if $M_{11}$ is anti-diagonal, replacing $\varphi$ with $\varphi\circ\eta_{n}$, we may assume, without loss of generality, that $M_{11}$ is diagonal.
-\end{proposition}
-We shall explain in details, in the research itself, that computing $\hat\zeta_{L_{n,p}}(s)$ is invariant to whether we assume $M_{11}$ is diagonal or we assume that $M_{11}$ is anti-diagonal. 
+Define an involution $\eta\in{G_{n}(\mathbb{Q}_p)}$ by $\eta(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}$, for $1\leq{i}\leq{n-1}$ and ${i+1}\leq{j}\leq{n}$. Replacing $\varphi$ by $\varphi\circ\eta$, we assume without loss of generality that $M_{11}$ is diagonal.
 \begin{proposition}
 \label{m.main.diagonal}
 Let $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^{\times}$ be the elements on the main diagonal of the matrix block $M_{11}$, where $M$ is the matrix representing $\varphi\in{G}_n(\mathbb{Q}_p)$. Then the main diagonal of $M$ is \[\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\lambda_{2}\lambda_{3},\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-1}\]
