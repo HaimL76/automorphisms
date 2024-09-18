@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  18 SEP 2024 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  18 SEP 2024 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,53 +660,53 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout4 = `proposal-long-review.toc'.
 
  [2]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 78.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 77.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 78.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 78.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 78.
+(Font)              size <5> substituted on input line 77.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 78.
+(Font)              size <5> substituted on input line 77.
 
 [3] [4] [5]
 
 LaTeX Warning: Reference `def.lower.central.series' on page 6 undefined on inpu
-t line 101.
+t line 107.
 
 
 LaTeX Warning: Reference `def.nilpotent.group' on page 6 undefined on input lin
-e 101.
+e 107.
 
 [6]
-Overfull \hbox (7.01682pt too wide) in paragraph at lines 129--132
+Overfull \hbox (7.01682pt too wide) in paragraph at lines 135--138
 []\OT1/cmr/m/n/12 The the-o-rem en-sures that for any $\U/msb/m/n/12 Z$\OT1/cmr
 /m/n/12 -Lie al-ge-bra, all the lo-cal pro-isomorphic
  []
 
-[7] [8] [9] [10] [11]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 207
+[7] [8] [9] [10]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 212
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-[12]
-Overfull \hbox (57.51566pt too wide) in paragraph at lines 223--225
+[11] [12]
+Overfull \hbox (57.51566pt too wide) in paragraph at lines 229--231
 [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (2.03627pt too wide) in paragraph at lines 223--225
+Overfull \hbox (2.03627pt too wide) in paragraph at lines 229--231
 \OT1/cmr/m/n/12 One checks that ev-ery $\OMS/cmsy/m/n/12 N[]$ \OT1/cmr/m/n/12 d
 e-pends on $\OML/cmm/m/it/12 h; n[]; n[]; [] ; n[]$\OT1/cmr/m/n/12 , if $\OML/c
 mm/m/it/12 ' \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 n[] [] n[]n[]h$\OT1/cmr/m/n/12 
@@ -764,7 +764,7 @@ ts/euler/eufm7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (14 pages, 320143 bytes).
+Output written on proposal-long-review.pdf (14 pages, 319913 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
