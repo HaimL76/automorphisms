@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 SEP 2024 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  18 SEP 2024 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,7 +693,27 @@ Overfull \hbox (7.01682pt too wide) in paragraph at lines 129--132
 /m/n/12 -Lie al-ge-bra, all the lo-cal pro-isomorphic
  []
 
-[7] [8] [9] [10] [11] [12] [13] (proposal-long-review.aux)
+[7] [8] [9] [10] [11]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 207
+.
+
+(C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[12]
+Overfull \hbox (57.51566pt too wide) in paragraph at lines 223--225
+[][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (2.03627pt too wide) in paragraph at lines 223--225
+\OT1/cmr/m/n/12 One checks that ev-ery $\OMS/cmsy/m/n/12 N[]$ \OT1/cmr/m/n/12 d
+e-pends on $\OML/cmm/m/it/12 h; n[]; n[]; [] ; n[]$\OT1/cmr/m/n/12 , if $\OML/c
+mm/m/it/12 ' \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 n[] [] n[]n[]h$\OT1/cmr/m/n/12 
+,
+ []
+
+[13] [14] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -706,41 +726,47 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15297 strings out of 474486
- 324232 string characters out of 5743755
- 1949528 words of memory out of 5000000
- 37288 multiletter control sequences out of 15000+600000
- 578272 words of font info for 119 fonts, out of 8000000 for 9000
+ 15319 strings out of 474486
+ 324662 string characters out of 5743755
+ 1950528 words of memory out of 5000000
+ 37303 multiletter control sequences out of 15000+600000
+ 579601 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,13n,121p,1975b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isi
-la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
-sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+ublic/amsfonts/cm/cmbx8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isi
+la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
+sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
 fb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/is
-ila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
-b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (13 pages, 295822 bytes).
+/cmr10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isi
+la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
+Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euf
+m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/euler/eufm7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on proposal-long-review.pdf (14 pages, 320143 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
