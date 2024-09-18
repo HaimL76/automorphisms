@@ -5,6 +5,6 @@
 \contentsline {section}{\numberline {2}Research Goals and Methodology}{8}{}%
 \contentsline {subsection}{\numberline {2.1}The Lie algebras $L_{n,p}$}{8}{}%
 \contentsline {subsection}{\numberline {2.2}Research goals}{9}{}%
-\contentsline {subsection}{\numberline {2.3}$L_{n,p}$-Lie algebras for $n>3$}{10}{}%
+\contentsline {subsection}{\numberline {2.3}$L_{n,p}$-Lie algebras for $n>3$}{9}{}%
 \contentsline {subsection}{\numberline {2.4}Preliminary results}{11}{}%
 \contentsline {subsection}{\numberline {2.5}Base Extension}{13}{}%
