@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  20 SEP 2024 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  20 SEP 2024 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,30 +679,27 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 77.
 
 [3] [4] [5] [6] [7] [8] [9] [10]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 198
+LaTeX Font Info:    Trying to load font information for U+euf on input line 195
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [11]
-Overfull \hbox (57.51566pt too wide) in paragraph at lines 215--217
-[][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
+Overfull \hbox (189.3588pt too wide) in paragraph at lines 203--206
+[][] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/
+12 d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]$\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (2.03627pt too wide) in paragraph at lines 215--217
+Overfull \hbox (2.03627pt too wide) in paragraph at lines 203--206
 \OT1/cmr/m/n/12 One checks that ev-ery $\OMS/cmsy/m/n/12 N[]$ \OT1/cmr/m/n/12 d
 e-pends on $\OML/cmm/m/it/12 h; n[]; n[]; [] ; n[]$\OT1/cmr/m/n/12 , if $\OML/c
 mm/m/it/12 ' \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 n[] [] n[]n[]h$\OT1/cmr/m/n/12 
 ,
  []
 
-
-LaTeX Warning: Reference `def.finitely.uniform' on page 12 undefined on input l
-ine 225.
-
-[12] [13] [14] (proposal-long-review.aux)
+[12] [13] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -712,15 +709,12 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 15314 strings out of 474486
- 324566 string characters out of 5743755
+ 15311 strings out of 474486
+ 324490 string characters out of 5743755
  1949528 words of memory out of 5000000
- 37298 multiletter control sequences out of 15000+600000
+ 37295 multiletter control sequences out of 15000+600000
  578883 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,13n,121p,1976b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -750,9 +744,9 @@ ts/euler/eufm7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (14 pages, 321971 bytes).
+Output written on proposal-long-review.pdf (13 pages, 319977 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
