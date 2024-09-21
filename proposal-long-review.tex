@@ -157,9 +157,9 @@ M=\begin{pmatrix}
 \varphi(e_{1n})\\
 \end{pmatrix}\\
 $$
-Given an $\mathcal{L}$-automorphism $\varphi$, we denote by $\varphi_k:\gamma_k\mathcal{L}\rightarrow\gamma_k\mathcal{L}$ the operation of $\varphi$ on all the $n-k$ elements of the lower central series starting from $k$, that is, we consider only the images \[\varphi(e_{1,1+k}),\varphi(e_{2,2+k}),\dots,\varphi(e_{n-k,n}),\varphi(e_{1,2+k}),\dots,\varphi(e_{n-k-1,n}),\dots,\varphi(e_{1n})\]
-For every $\varphi_k$, we have the induced map denoted by $\varphi_{kk}$, from the quotient algebra $\sfrac{\gamma_k}{\gamma_{k+1}}$ to itself, defined by $\varphi_{kk}(e_{l,l+k}+\gamma_{k+1}\mathcal{L}):=a_{1,1+k}e_{1,1+k}+a_{2,2+k}e_{2,2+k}+\cdots+a_{n-k,n}e_{n-k,n}+z_{k+1}$, where $z_{k+1}\in\gamma_{k+1}\mathcal{L}$, for every $1\leq{l}\leq{n-k}$. Clearly, $\varphi_{kk}$ is well-defined, since $\varphi_k(\gamma_k\mathcal{L})=\gamma_k\mathcal{L}$, for every $1\leq{k}\leq{n-1}$.
-Following this division of $\mathcal{L}$ by the lower central series and its quotients, we view $M$ as a block matrix, \[M=\begin{pmatrix}
+Given an $\mathcal{L}$-automorphism $\varphi$, we denote by $\varphi_k:\gamma_k\mathcal{L}\rightarrow\mathcal{L}$ the operation of $\varphi$ on all the $n-k$ elements of the lower central series starting from $k$, that is, we consider only the images \[\varphi(e_{1,1+k}),\varphi(e_{2,2+k}),\dots,\varphi(e_{n-k,n}),\varphi(e_{1,2+k}),\dots,\varphi(e_{n-k-1,n}),\dots,\varphi(e_{1n})\]
+Since all the elements of the lower central series of $\mathcal{L}$ are characteristic subalgebras, we have that $\varphi_k(\gamma_k\mathcal{L})=\gamma_k\mathcal{L}$, for all $1\leq{k}\leq{n-1}$, hence we have an induced map $\varphi_{kk}:\sfrac{\gamma_k\mathcal{L}}{\gamma_{k+1}\mathcal{L}}\rightarrow\sfrac{\gamma_k\mathcal{L}}{\gamma_{k+1}\mathcal{L}}$, defined by $\varphi_{kk}(e_{l,l+k}+\gamma_{k+1}\mathcal{L}):=a_{1,1+k}e_{1,1+k}+a_{2,2+k}e_{2,2+k}+\cdots+a_{n-k,n}e_{n-k,n}+z_{k+1}$, where $z_{k+1}\in\gamma_{k+1}\mathcal{L}$, for all $1\leq{l}\leq{n-k}$, one checks easily that since we also have that $\varphi(\gamma_{k+1}\mathcal{L})=\gamma_{k+1}\mathcal{L}$, then $\varphi_{kk}$ is well-defined and maps $\sfrac{\gamma_{k}\mathcal{L}}{\gamma_{k+1}\mathcal{L}}$ onto itself.
+Following the division of $\mathcal{L}$ into quotients of elements of the lower central series, we view $M$ as a block matrix, \[M=\begin{pmatrix}
 M_{11} & \vline & M_{12}&\vline & \dots& \vline & M_{1,n-2} & \vline&M_{1,n-1}\\
 \hline
 M_{21} & \vline & M_{22}&\vline & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
@@ -168,7 +168,7 @@ M_{21} & \vline & M_{22}&\vline & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
 \hline
 M_{n-1,1} & \vline & M_{n-1,2}&\vline & \dots &\vline & M_{n-1,n-2} &\vline& M_{n-1,n-1}\\
 \end{pmatrix}\]
-each block is denoted by $M_{kl}\in\mathcal{M}_{m\times{r}}(\mathbb{Q}_p)$, where $m=\dim\sfrac{\gamma_k}{\gamma_{k+1}}$ and $r=\dim\sfrac{\gamma_l}{\gamma_{l+1}}$. From this, we can understand that the blocks on the main diagonal of $M$, which are the induced quotient maps defined above, are square matrices $\varphi_{kk}=M_{kk}\in\mathcal{M}_{n-k}(\mathbb{Q}_p)$. A trivial observation is that since all the elements of the lower central series of $\mathcal{L}$ are characteristic subalgebras, then $\sfrac{\varphi(\gamma_k\mathcal{L})}{\gamma_k\mathcal{L}}=0$, which means that all the matrix blocks $M_{kl}$, where $k<l$, must be zero, therefore $M$ has the form, \[M=\begin{pmatrix}
+each block is denoted by $M_{kl}\in\mathcal{M}_{m\times{r}}(\mathbb{Q}_p)$, where $m=\dim\sfrac{\gamma_k\mathcal{L}}{\gamma_{k+1}\mathcal{L}}$ and $r=\dim\sfrac{\gamma_l\mathcal{L}}{\gamma_{l+1}\mathcal{L}}$. From this we understand that the blocks on the main diagonal of $M$, which are the induced maps defined above, are square matrices $\varphi_{kk}=M_{kk}\in\mathcal{M}_{n-k}(\mathbb{Q}_p)$. We also observe that for all $l<k$, since $\varphi_{k}(\sfrac{\gamma_{l}\mathcal{L}}{\gamma_k\mathcal{L}})=0$, as implied above, then $M_{kl}=0$, and therefore $M$ has the form, \[M=\begin{pmatrix}
 M_{11} & \vline & M_{12}&\vline & M_{13} & \dots& \vline & M_{1,n-2} & \vline&M_{1,n-1}\\
 \hline
 0 & \vline & M_{22}&\vline & M_{23} & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
