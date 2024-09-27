@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 SEP 2024 10:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 SEP 2024 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -676,31 +676,31 @@ L/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][]
 \OT1/cmr/m/n/12 ) =
  []
 
-[4] [5] [6]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 127.
+[4] [5]
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 113.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 113.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 113.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 113.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 127.
+(Font)              size <5> substituted on input line 113.
 
-[7] [8] [9] [10] [11]
-Overfull \hbox (52.22713pt too wide) detected at line 204
+[6] [7] [8] [9] [10]
+Overfull \hbox (52.22713pt too wide) detected at line 190
 \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
-[12] [13] (proposal-long-review.aux)
+[11] [12] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -715,10 +715,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15290 strings out of 474486
- 324145 string characters out of 5743755
- 1953528 words of memory out of 5000000
- 37281 multiletter control sequences out of 15000+600000
+ 15288 strings out of 474486
+ 324087 string characters out of 5743755
+ 1950528 words of memory out of 5000000
+ 37279 multiletter control sequences out of 15000+600000
  577125 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,13n,121p,1307b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -746,9 +746,9 @@ Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (13 pages, 310182 bytes).
+Output written on proposal-long-review.pdf (12 pages, 305618 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
