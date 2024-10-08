@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 OCT 2024 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  8 OCT 2024 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,7 +668,7 @@ mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
 [3]
-Overfull \hbox (4.49594pt too wide) in paragraph at lines 89--90
+Overfull \hbox (4.49594pt too wide) in paragraph at lines 92--94
 []\OT1/cmr/bx/it/12 Euler de-com-po-si-tion\OT1/cmr/m/it/12 . We have that $\OM
 L/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][] 
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$\OT1
@@ -676,49 +676,41 @@ L/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = [][]
 \OT1/cmr/m/n/12 ) =
  []
 
-[4] [5]
-Overfull \hbox (13.7419pt too wide) detected at line 117
-\OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
-\OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = 
-[][][]\OML/cmm/m/it/12 d^^V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 )
- =
- []
-
-[6] [7]
-Overfull \hbox (0.44136pt too wide) in paragraph at lines 141--142
+[4] [5] [6] [7]
+Overfull \hbox (0.44136pt too wide) in paragraph at lines 143--144
 \OT1/cmr/m/n/12 To sum up what is al-ready known about $\OML/cmm/m/it/12 L[]$\O
 T1/cmr/m/n/12 -automorphisms, let $\OML/cmm/m/it/12 ' \OMS/cmsy/m/n/12 2 []\OT1
 /cmr/m/n/12 (\U/msb/m/n/12 Q[]\OT1/cmr/m/n/12 )$.
  []
 
 [8]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 177.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 179.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 177.
+(Font)              size <5> substituted on input line 179.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 177.
+(Font)              size <5> substituted on input line 179.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 177.
+(Font)              size <5> substituted on input line 179.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 177.
+(Font)              size <5> substituted on input line 179.
 
-
-Overfull \hbox (0.37576pt too wide) detected at line 187
+[9]
+Overfull \hbox (0.37576pt too wide) detected at line 189
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
 [] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
  d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
-[9]
-Overfull \hbox (52.22713pt too wide) detected at line 195
+
+Overfull \hbox (52.22713pt too wide) detected at line 197
 \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
@@ -736,7 +728,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  15289 strings out of 474486
  324120 string characters out of 5743755
- 1943528 words of memory out of 5000000
+ 1945528 words of memory out of 5000000
  37280 multiletter control sequences out of 15000+600000
  577125 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -765,7 +757,7 @@ Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (12 pages, 302082 bytes).
+Output written on proposal-long-review.pdf (12 pages, 301135 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
