@@ -5,6 +5,5 @@
 \contentsline {section}{\numberline {2}Research Goals and Methodology}{6}{}%
 \contentsline {subsection}{\numberline {2.1}The Lie algebras $L_{n}$}{6}{}%
 \contentsline {subsection}{\numberline {2.2}Research goals}{7}{}%
-\contentsline {subsection}{\numberline {2.3}Representing matrices of $L_{n,p}$-automorphisms}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Representing matrices of $L_{n,p}$-automorphisms}{9}{}%
 \contentsline {subsection}{\numberline {2.4}Preliminary results}{9}{}%
-\contentsline {subsection}{\numberline {2.5}Base Extension}{11}{}%
