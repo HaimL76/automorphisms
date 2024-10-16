@@ -203,13 +203,44 @@ is the collection of all $\varphi\in{G_{n}(\mathbb{Q}_{p})}$ that induce the tri
 \begin{proposition}
 Let $M_{1r}=(a)_{ij}$ an $(n-1)\times{(n-r)}$ matrix, then,
 \begin{enumerate}
-    \item Let $2\leq{r}\leq{n-3}$. If $a_{ij}=0$, then $i=j$ or $i=j+r-1$.
-    \item Let $r=n-2$. If $a_{ij}=0$, then $i=j$ or $i=j+r-1$ or $(i,j)\in\{(1,2),(n-1,1)\}$.
+    \item Let $2\leq{r}\leq{n-3}$. If $a_{ij}=0$, then either $i=j$ or $i=j+r-1$.
+    \item Let $r=n-2$. If $a_{ij}=0$, then either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(1,2),(n-1,1)\}$.
 \end{enumerate}
 \end{proposition}
 \begin{proof}
-From the relation $[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=0$ where $l>k+1$, we deduce that $a_{ij}\neq{0}$ only if either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(r+1,1),(r+2,1),(n-r-2,n-r),(n-r-1,n-r)\}$.
+From the relation $[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=0$ where $l>k+1$, we deduce that $a_{ij}\neq{0}$ only if either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(r+1,1),(r+2,1),(n-r-2,n-r),(n-r-1,n-r)\}$. If $r<n-2$ then it follows from the conditions,
+\[
+[\varphi(e_{n-r-2,n-r-1}),\varphi(e_{n-r-2,n-r})]=0
+\]
+\[
+[\varphi(e_{n-r-1,n-r}),\varphi(e_{n-r-2,n-r})]=0
+\]
+\[
+[\varphi(e_{r+1,r+2}),\varphi(e_{r+1,r+3})]=0
+\]
+\[
+[\varphi(e_{r+2,r+3}),\varphi(e_{r+1,r+3})]=0
+\]
+that the four exceptional cases cannot occur. One checks which of the cases apply for $r=n-2$ and the implied constraints.
 \end{proof}
+\begin{proposition}
+\begin{enumerate}
+Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$. 
+\item There is an automoprhism $\varphi\in{G_n(\mathbb{Q}_{p})}$ determined by \[
+    \varphi(e_{i,i+1})=\begin{cases}
+        e_{k,k+1}+a{e_{k,k+r}} & : i=k\\
+        e_{k+r,k+r+1}-a{e_{k+1,k+r+1}} & : i=k+r\\
+        e_{i,i+1} & : i\notin\{k,k+r\}
+    \end{cases}
+\]
+\item Suppose that $r=n-2$, let $(k,l)\in\{(1,2),(n-1,1)\}$, and let $a\in\mathbb{Q}_{p}$. There is an automorphism $\varphi\in{G_n(\mathbb{Q}_{p}}$ determined by \[
+    \varphi(e_{i,i+1})=\begin{cases}
+        e_{k,k+1}+a{e_{l,l+r}} & : i=k\\
+        e_{i,i+1} & : i\neq{k}
+    \end{cases}
+\]
+\end{enumerate}
+\end{proposition}
 We can simplify the domain of integration, for the $p$-adic integral that we aim to calculate, at the price of replacing a single integral by multiple integrals. As we saw earlier, the calculation of $\zeta_{L}^{\wedge}(s)$ requires computing $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. Assuming we have already computed $G_{n}(\mathbb{Q}_p)$, based on the strategy that we have presented above, we need to identify $G_{n}(\mathbb{Z}_p)$ as a subgroup of $G_{n}(\mathbb{Q}_p)$, which is expected not to be difficult, and continue from there to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge. By applying \textbf{Fubini's theorem} for semidirect products of topological groups, we have that \[\zeta_{\mathcal{L}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det\varphi|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
 where $H^+(\mathbb{Q}_p)$ consists of all $h\in H(\mathbb{Q}_p)$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in G_{n}^{+}(\mathbb{Q}_p)$, and, for a given $h\in H^+(\mathbb{Q}_p)$, we set $N_h^+(\mathbb{Q}_p):=\{u\in N(\mathbb{Q}_p) : uh\in{G}^+(\mathbb{Q}_p)\}$. The integrand of the inner integral is constant, so the integral amounts to computing the measure of the set $N_{h}^+(\mathbb{Q}_p)$. The advantage that we gain by this decomposition is that it simplifies the calculation of the integral. The integral function $|\det{uh}|_p^s=|\det{h}|_p^s$ depends only on $h$, so computing the inner integral amounts to finding the measure of $N_{h}^+(\mathbb{Q}_p)$. For the unipotent matrix $u$, the determinant is $1$, for the digonal matrix $h$, we have the following proposition,
 \begin{proposition}
