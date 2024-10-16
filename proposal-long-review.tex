@@ -226,21 +226,32 @@ that the four exceptional cases cannot occur. One checks which of the cases appl
 \begin{proposition}
 \begin{enumerate}
 Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$. 
-\item There is an automoprhism $\varphi\in{G_n(\mathbb{Q}_{p})}$ determined by \[
-    \varphi(e_{i,i+1})=\begin{cases}
+\item There is an automoprhism $\varphi_{r,k}(a)\in{G_n(\mathbb{Q}_{p})}$ determined by \[
+    \varphi_{r,k}(a)(e_{i,i+1})=\begin{cases}
         e_{k,k+1}+a{e_{k,k+r}} & : i=k\\
         e_{k+r,k+r+1}-a{e_{k+1,k+r+1}} & : i=k+r\\
         e_{i,i+1} & : i\notin\{k,k+r\}
     \end{cases}
 \]
-\item Suppose that $r=n-2$, let $(k,l)\in\{(1,2),(n-1,1)\}$, and let $a\in\mathbb{Q}_{p}$. There is an automorphism $\varphi\in{G_n(\mathbb{Q}_{p}}$ determined by \[
-    \varphi(e_{i,i+1})=\begin{cases}
+\item Suppose that $r=n-2$, let $(k,l)\in\{(1,2),(n-1,1)\}$, and let $a\in\mathbb{Q}_{p}$. There is an automorphism $\varphi_{n-2,k}(a)\in{G_n(\mathbb{Q}_{p}}$ determined by \[
+    \varphi_{n-2,k}(a)(e_{i,i+1})=\begin{cases}
         e_{k,k+1}+a{e_{l,l+r}} & : i=k\\
         e_{i,i+1} & : i\neq{k}
     \end{cases}
 \]
 \end{enumerate}
 \end{proposition}
+\begin{proof}
+To check the compatibility of $\varphi_{r,k}(a)$ with our Lie bracket, we observe that the defining relations of $\varphi_{r,k}(a)$ imply that \[
+\varphi(e_{k+1-h,k+1})=e_{k+1-h,k+1}+a{e_{k+1-h,k+r}}
+\]
+\[
+\varphi(e_{k+r,k+r+h})=e_{k+r,k+r+h}-a{e_{k+1,k+r+h}}
+\]
+\[
+\varphi(ij)=e_{ij}, \mathrm{if}\,i\neq{k+r}\,\mathrm{and}\,j\neq{k+1}
+\]
+\end{proof}
 We can simplify the domain of integration, for the $p$-adic integral that we aim to calculate, at the price of replacing a single integral by multiple integrals. As we saw earlier, the calculation of $\zeta_{L}^{\wedge}(s)$ requires computing $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. Assuming we have already computed $G_{n}(\mathbb{Q}_p)$, based on the strategy that we have presented above, we need to identify $G_{n}(\mathbb{Z}_p)$ as a subgroup of $G_{n}(\mathbb{Q}_p)$, which is expected not to be difficult, and continue from there to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge. By applying \textbf{Fubini's theorem} for semidirect products of topological groups, we have that \[\zeta_{\mathcal{L}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det\varphi|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
 where $H^+(\mathbb{Q}_p)$ consists of all $h\in H(\mathbb{Q}_p)$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in G_{n}^{+}(\mathbb{Q}_p)$, and, for a given $h\in H^+(\mathbb{Q}_p)$, we set $N_h^+(\mathbb{Q}_p):=\{u\in N(\mathbb{Q}_p) : uh\in{G}^+(\mathbb{Q}_p)\}$. The integrand of the inner integral is constant, so the integral amounts to computing the measure of the set $N_{h}^+(\mathbb{Q}_p)$. The advantage that we gain by this decomposition is that it simplifies the calculation of the integral. The integral function $|\det{uh}|_p^s=|\det{h}|_p^s$ depends only on $h$, so computing the inner integral amounts to finding the measure of $N_{h}^+(\mathbb{Q}_p)$. For the unipotent matrix $u$, the determinant is $1$, for the digonal matrix $h$, we have the following proposition,
 \begin{proposition}
