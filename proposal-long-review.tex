@@ -190,7 +190,7 @@ represents an automorphism of $\mathcal{L}$. Thus, multiplying $\varphi$ from th
 $H(\mathbb{Q}_{p}):=\{\mathrm{diag}(\lambda_{1},\lambda_{2},\dots) : \lambda_{1},\lambda_{2},\dots\in\mathbb{Q}_{p}^{\ast}\}$ is the \textbf{reductive part} of $\mathbb{Q}_{p}$, while $N(\mathbb{Q}_{p}):=\{\varphi\in{G_{n}(\mathbb{Q}_{p})}$ with $1$'s
  in diagonal $\}$ is the \textbf{unipotent radical} of $G_{n}(\mathbb{Q}_{p})$.
 Every $g\in{G_{n}(\mathbb{Q}_{p})}$ has a unique decomposition $g=uh$, with $u\in{N}(\mathbb{Q}_{p})$, $h\in{H(\mathbb{Q}_{p})}$. We aim to determine the structure of the unipotent radical $N(\mathbb{Q}_p)$ by decomposing it into a semidirect product of abelian subgroups.
-For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\subset{N(\mathbb{Q}_{p})}$ the subset of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. We check that $N_{r}$ is a subgroup of $N(\mathbb{Q}_{p})$. It is easy to see that \[
+For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\subseteq{N(\mathbb{Q}_{p})}$ the subset of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. We check that $N_{r}$ is a subgroup of $N(\mathbb{Q}_{p})$. It is easy to see that \[
 N_{n-1}=\left\{\begin{pmatrix}
 1 & 0 & \cdots & 0 & c_{1}\\
 0 & 1 & \cdots & 0 & c_{2}\\
@@ -224,6 +224,7 @@ From the relation $[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=0$ where $l>k+1$, we 
 that the four exceptional cases cannot occur. One checks which of the cases apply for $r=n-2$ and the implied constraints.
 \end{proof}
 \begin{proposition}
+\label{phi.r.k}
 \begin{enumerate}
 Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$. 
 \item There is an automoprhism $\varphi_{r,k}(a)\in{G_n(\mathbb{Q}_{p})}$ determined by \[
@@ -239,6 +240,7 @@ Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p
         e_{i,i+1} & : i\neq{k}
     \end{cases}
 \]
+    We denote by $\varphi'_{n-2}(a)$ the automorphism where $(k,l)=(1,2)$ and by $\varphi''_{n-2}(a)$ the automorphism where $(k,l)=(n-1,1)$.
 \end{enumerate}
 \end{proposition}
 \begin{proof}
@@ -252,9 +254,27 @@ To check the compatibility of $\varphi_{r,k}(a)$ with our Lie bracket, we observ
 \varphi(ij)=e_{ij}, \mathrm{if}\,i\neq{k+r}\,\mathrm{and}\,j\neq{k+1}
 \]
 for $h>0$.
-Assume that \[[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]=\]\[=[[\varphi_{r,k}(a)(e_{i,i+1}),\varphi_{r,k}(a)(e_{i+1,j})],\varphi_{r,k}(a)(e_{l,m})]=\cdots=\]\[=\cdots=[[\varphi_{r,k}(a)(e_{ij}),[\varphi_{r,k}(a)(e_{l,m-1}),\varphi_{r,k}(a)(e_{m-1,m})]]=\cdots=\]\[=\cdots=\varphi_{r,k}(a)[e_{ij},e_{lm}]\]
-for all $i<j$ and $l<m$. In words, $\varphi_{r,k}(a)$ is compatible with the Lie bracket, regardless of how we decompose $e_{ij}$ and $e_{lm}$. Indeed, for $n=4$ and $r=2$, we have only one way to decompose $e_{i,i+2}=[e_{i,i+1},e_{i+1,i+2}]$. For any $n>4$, we define 
+Considering $[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]$ for $i<j$ and $l<m$, we have the options \[
+    [\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]=\begin{cases}
+    \varphi_{r,k}(a)(e_{im}) & : j=l\\
+        -\varphi_{r,k}(a)(e_{lj}) & : i=m\\
+        0 & : \mathrm{otherwise}
+    \end{cases}
+\]
+We can easily verify that for $n=4$, all these options are compatible with the relations stated above. For $n>4$, one considers the injection map $\iota:\mathcal{L}_{n-1}\hookrightarrow\mathcal{L}_{n}$, mapping each $e_{i,i+1}\in\mathcal{L}_{n-1}$ to $e_{i,i+1}\in\mathcal{L}_{n}$, for all $1\leq{i}\leq{n-2}$. For $1\leq{i,j,l,m}\leq{n-1-r}$ and for $1\leq{k}\leq{n-1-r}$, we have $[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]=\iota([\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})])$, but according to our assumption for $n-1$, we have that the Lie bracket is compatible with the relations from above, and based on this we can verify that compatibility holds also in the case where $k=n-r$ and where $j=n-r$ or $m=n-r$. The same technique shall be applied also for the case $r=n-2$.
 \end{proof}
+Fix some $r,k$ and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. It is easy to see that $N_{r,k}<G_{n}(\mathbb{Q}_{p})$ and $N_{r,k}\cong\mathbb{Q}_{p}$.
+Also denote by $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and by $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}$, and it is easy to see that the same applies for $N'_{n-2}$ and $N''_{n-2}$.
+\begin{proposition}
+For all $\varphi\in{N_{r}}$, denote by $\psi$ the automorphism $\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r1})$, where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
+$\psi$ is the identity map.
+\end{proposition}
+\begin{proposition}
+For all $2\leq{r}\leq{n-3}$, we have the decomposition $N_{r}=N_{r+1}\rtimes(N_{r,n-r}\times(\cdots(N_{r,1}\rtimes{N_{r,0}})\cdots))$, and for $r=n-2$, we have $N_{n-2}=N_{n-1}\rtimes(N''_{n-2}\rtimes(N'_{n-2}\times(N_{n-2,2}\rtimes(N_{n-2,1}\rtimes{N_{n-2,0}}))))$.
+\end{proposition}
+\begin{corollary}
+For all $n\geq{4}$, the unipotent radical of $G_{n}(\mathbb{Q}_{p})$ has the decomposition $N(\mathbb{Q}_{p})=N_{2}=N_{3}\rtimes(N_{2,n-2}\rtimes(\cdots\rtimes(N_{2,1}\rtimes{N_{2,0}})\cdots))$, which decomposes recursively into a semidirect sum of abelian subgroups, recursion stops at $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$.
+\end{corollary}
 We can simplify the domain of integration, for the $p$-adic integral that we aim to calculate, at the price of replacing a single integral by multiple integrals. As we saw earlier, the calculation of $\zeta_{L}^{\wedge}(s)$ requires computing $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. Assuming we have already computed $G_{n}(\mathbb{Q}_p)$, based on the strategy that we have presented above, we need to identify $G_{n}(\mathbb{Z}_p)$ as a subgroup of $G_{n}(\mathbb{Q}_p)$, which is expected not to be difficult, and continue from there to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge. By applying \textbf{Fubini's theorem} for semidirect products of topological groups, we have that \[\zeta_{\mathcal{L}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det\varphi|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
 where $H^+(\mathbb{Q}_p)$ consists of all $h\in H(\mathbb{Q}_p)$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in G_{n}^{+}(\mathbb{Q}_p)$, and, for a given $h\in H^+(\mathbb{Q}_p)$, we set $N_h^+(\mathbb{Q}_p):=\{u\in N(\mathbb{Q}_p) : uh\in{G}^+(\mathbb{Q}_p)\}$. The integrand of the inner integral is constant, so the integral amounts to computing the measure of the set $N_{h}^+(\mathbb{Q}_p)$. The advantage that we gain by this decomposition is that it simplifies the calculation of the integral. The integral function $|\det{uh}|_p^s=|\det{h}|_p^s$ depends only on $h$, so computing the inner integral amounts to finding the measure of $N_{h}^+(\mathbb{Q}_p)$. For the unipotent matrix $u$, the determinant is $1$, for the digonal matrix $h$, we have the following proposition,
 \begin{proposition}
