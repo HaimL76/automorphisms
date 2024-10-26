@@ -282,7 +282,12 @@ $\psi_{n-2}\in{N_{n-2}}$ and the $(1,r)$ block of $\psi_{n-2}$ is $0$.
 For $\psi$ it is immediate to see that the matrix multiplication annihilates all the block entries except for $(r+1,1),(r+2,1),(n-r-2,n-r)$ and $(n-r-1,n-r)$. The vanishing of these four entries is shown through computation on the identities $[\psi(e_{n-r-2,n-r-1}),\psi(e_{n-r-2,n-r})]=[\psi(e_{n-r-1,n-r}),\psi(e_{n-r-2,n-r})]=[\psi(e_{r+1,r+2}),\psi(e_{r+1,r+3})]=[\psi(e_{r+2,r+3}),\psi(e_{r+1,r+3})]=0$. For $\psi_{n-2}$ we use the same approach, considering the fact that for $M_{1,n-2}$ the entries $a_{n-r-2,n-r}=a_{02}$ and $a_{r+2,1}=a_{n1}$ do not exist. 
 \end{proof}
 \begin{proposition}
-For all $2\leq{r}\leq{n-3}$, we have the decomposition $N_{r}=N_{r+1}\rtimes(N_{r,n-r}\times(\cdots(N_{r,1}\rtimes{N_{r,0}})\cdots))$, and for $r=n-2$, we have $N_{n-2}=N_{n-1}\rtimes(N''_{n-2}\rtimes(N'_{n-2}\times(N_{n-2,2}\rtimes(N_{n-2,1}\rtimes{N_{n-2,0}}))))$.
+We have the following decompositions
+\begin{enumerate}
+    \item 
+For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,n-r}\rtimes(\cdots(N_{r,1}\rtimes{N_{r,0}})\cdots))\]
+\item For $r=n-2$, we have \[N_{n-2}=N_{n-1}\rtimes(N''_{n-2}\rtimes(N'_{n-2}\rtimes(N_{n-2,2}\rtimes(N_{n-2,1}\rtimes{N_{n-2,0}}))))\]
+\end{enumerate}
 \end{proposition}
 \begin{corollary}
 For all $n\geq{4}$, the unipotent radical of $G_{n}(\mathbb{Q}_{p})$ has the decomposition $N(\mathbb{Q}_{p})=N_{2}=N_{3}\rtimes(N_{2,n-2}\rtimes(\cdots\rtimes(N_{2,1}\rtimes{N_{2,0}})\cdots))$, which decomposes recursively into a semidirect sum of abelian subgroups, recursion stops at $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$.
