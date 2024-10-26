@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  25 OCT 2024 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  27 OCT 2024 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -687,18 +687,27 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 183.
 
 [9] [10] [11]
-Overfull \hbox (0.37576pt too wide) detected at line 278
+Overfull \hbox (13.23087pt too wide) in paragraph at lines 282--283
+\OT1/cmr/m/n/12 the iden-ti-ties $[\OML/cmm/m/it/12  \OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 e[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 e[]\OT1/cmr/m/n/12 )] = [\OML/cmm/m/it/12  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ e[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e[]\
+OT1/cmr/m/n/12 )] =
+ []
+
+[12]
+Overfull \hbox (0.37576pt too wide) detected at line 290
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
 [] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
  d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
-[12]
-Overfull \hbox (52.22713pt too wide) detected at line 286
+[13]
+Overfull \hbox (52.22713pt too wide) detected at line 298
 \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
-[13] [14] (proposal-long-review.aux)
+[14] [15] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -707,9 +716,6 @@ L3 programming layer <2024-01-04>
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -744,9 +750,9 @@ Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (14 pages, 314381 bytes).
+Output written on proposal-long-review.pdf (15 pages, 316584 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

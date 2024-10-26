@@ -266,9 +266,21 @@ We can easily verify that for $n=4$, all these options are compatible with the r
 Fix some $r,k$ and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. It is easy to see that $N_{r,k}<G_{n}(\mathbb{Q}_{p})$ and $N_{r,k}\cong\mathbb{Q}_{p}$.
 Also denote by $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and by $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}$, and it is easy to see that the same applies for $N'_{n-2}$ and $N''_{n-2}$.
 \begin{proposition}
-For all $\varphi\in{N_{r}}$, denote by $\psi$ the automorphism $\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r1})$, where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
-$\psi$ is the identity map.
+For all $\varphi\in{N_{r}}$
+\begin{enumerate}
+    \item 
+when $r<n-2$, denote by $\psi$ the automorphism \[\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r1})\]
+where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
+$\psi\in{N_{r}}$ and the $(1,r)$ block of $\psi$ is $0$.
+    \item 
+when $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0})\]
+where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
+$\psi_{n-2}\in{N_{n-2}}$ and the $(1,r)$ block of $\psi_{n-2}$ is $0$.
+\end{enumerate}
 \end{proposition}
+\begin{proof}
+For $\psi$ it is immediate to see that the matrix multiplication annihilates all the block entries except for $(r+1,1),(r+2,1),(n-r-2,n-r)$ and $(n-r-1,n-r)$. The vanishing of these four entries is shown through computation on the identities $[\psi(e_{n-r-2,n-r-1}),\psi(e_{n-r-2,n-r})]=[\psi(e_{n-r-1,n-r}),\psi(e_{n-r-2,n-r})]=[\psi(e_{r+1,r+2}),\psi(e_{r+1,r+3})]=[\psi(e_{r+2,r+3}),\psi(e_{r+1,r+3})]=0$. For $\psi_{n-2}$ we use the same approach, considering the fact that for $M_{1,n-2}$ the entries $a_{n-r-2,n-r}=a_{02}$ and $a_{r+2,1}=a_{n1}$ do not exist. 
+\end{proof}
 \begin{proposition}
 For all $2\leq{r}\leq{n-3}$, we have the decomposition $N_{r}=N_{r+1}\rtimes(N_{r,n-r}\times(\cdots(N_{r,1}\rtimes{N_{r,0}})\cdots))$, and for $r=n-2$, we have $N_{n-2}=N_{n-1}\rtimes(N''_{n-2}\rtimes(N'_{n-2}\times(N_{n-2,2}\rtimes(N_{n-2,1}\rtimes{N_{n-2,0}}))))$.
 \end{proposition}
