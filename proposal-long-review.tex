@@ -189,14 +189,20 @@ We check, for any $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^
 represents an automorphism of $\mathcal{L}_{n,p}$. Thus every $g\in{G_{n}^{0}(\mathbb{Q}_{p})}$ has a unique decomposition $g=uh$, where $h$ is of the above form and $u$ has $1$'s on the diagonal. The collection $H(\mathbb{Q}_{p})$ of $h$'s as above is the reductive part of $G_{n}^{0}(\mathbb{Q}_{p})$. The collection $N(\mathbb{Q}_{p})$ of $u$'s as above is the unipotent radical of $G_{n}^{0}(\mathbb{Q}_{p})$. We aim to determine the structure of the unipotent radical $N(\mathbb{Q}_p)$ by decomposing it into a semidirect product of abelian subgroups.
 For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\leq{N(\mathbb{Q}_{p})}$ the subgroup of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. It is easy to see that \[
 N_{n-1}=\left\{\begin{pmatrix}
-1 & 0 & \cdots & 0 & c_{1}\\
-0 & 1 & \cdots & 0 & c_{2}\\
+I_{n-1} & 0 & \cdots & 0 & M_{1,n-1}\\
+0 & I_{n-2} & \cdots & 0 & 0\\
 \vdots & \vdots & \ddots & \vdots & \vdots\\
-0 & 0 & \cdots & 1 & c_{n-1}\\
+0 & 0 & \cdots & I_{2} & 0\\
 0 & 0 & \cdots & 0 & 1\\
-\end{pmatrix} : c_{1},c_{2},\dots,c_{n-1}\in\mathbb{Q}_{p}\right\}\cong\mathbb{Q}_{p}^{n-1}
+\end{pmatrix}\right\}
 \]
-is the collection of all $\varphi\in{G_{n}(\mathbb{Q}_{p})}$ that induce the trivial automorphism on $\sfrac{\mathcal{L}_{n,p}}{Z(\mathcal{L}_{n,p})}$.
+where $M_{1,n-1}=\begin{pmatrix}
+c_{1}\\
+c_{2}\\
+\vdots\\
+c_{n-2}\\
+c_{n-1}\\
+\end{pmatrix}\in\mathbb{Q}_{p}^{n-1}$ is the collection of all $u\in{N(\mathbb{Q}_{p})}$ that induce the trivial automorphism on $\sfrac{\mathcal{L}_{n,p}}{Z(\mathcal{L}_{n,p})}$.
 \begin{proposition}
 \label{block.1r.structure}
 Let $M_{1r}=(a_{ij})$ an $(n-1)\times{(n-r)}$ matrix, then,
