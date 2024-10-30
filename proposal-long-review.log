@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  30 OCT 2024 08:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 OCT 2024 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,50 +668,44 @@ mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
 [3] [4] [5] [6] [7] [8]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 183.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 187.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 183.
+(Font)              size <5> substituted on input line 187.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 183.
+(Font)              size <5> substituted on input line 187.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 183.
+(Font)              size <5> substituted on input line 187.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 183.
-
-[9] [10] [11]
-
-LaTeX Warning: Reference `prop:psi.automorphism' on page 12 undefined on input 
-line 278.
+(Font)              size <5> substituted on input line 187.
 
 
-LaTeX Warning: Reference `cor:Nr.decomposition' on page 12 undefined on input l
-ine 280.
+LaTeX Warning: Reference `eq:p-adic.integral' on page 9 undefined on input line
+ 191.
 
-[12]
-Overfull \hbox (28.02231pt too wide) detected at line 294
-\OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
-[] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
- d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
+[9] [10] [11] [12]
+Overfull \hbox (5.83618pt too wide) in paragraph at lines 306--306
+[]\OT1/cmr/m/n/12 By ap-ply-ing Fu-bini's the-o-rem for semidi-rect prod-ucts o
+f topo-log-i-cal groups,
  []
+
+
+LaTeX Warning: Reference `prop:G.n.Zp.decomposition' on page 13 undefined on in
+put line 307.
 
 [13]
-Overfull \hbox (40.49438pt too wide) detected at line 300
-\OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
-[] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
- d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[] \OT1/cmr/m/n/12 =
- []
-
-
-Overfull \hbox (37.65701pt too wide) detected at line 300
-\OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
+Overfull \hbox (7.54454pt too wide) detected at line 313
+\OMS/cmsy/m/n/12 N[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h; u[]; [] ; u[]\OT1/cmr/
+m/n/12 ) := \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[] \OMS/cmsy/m/n/12 2 N[] \OT1/
+cmr/m/n/12 : \OMS/cmsy/m/n/12 9[][] []\OML/cmm/m/it/12 u[] [] []h \OMS/cmsy/m/n
+/12 2 []g
  []
 
 [14] [15] (proposal-long-review.aux)
@@ -732,10 +726,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15294 strings out of 474486
- 324299 string characters out of 5743755
+ 15297 strings out of 474486
+ 324369 string characters out of 5743755
  1945528 words of memory out of 5000000
- 37287 multiletter control sequences out of 15000+600000
+ 37290 multiletter control sequences out of 15000+600000
  576504 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,14n,121p,1506b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -762,7 +756,7 @@ ila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
 b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 307342 bytes).
+Output written on proposal-long-review.pdf (15 pages, 308011 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
