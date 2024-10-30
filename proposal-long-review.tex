@@ -187,7 +187,7 @@ We have made progress towards step 1 of our research program, namely determining
 Define $\eta\in{G_{n}(\mathbb{Q}_p)}$ by $\eta(e_{ij}):=(-1)^{j-i-1}e_{n+1-j,n+1-i}$, for $1\leq{i}<{j}\leq{n}$. Replacing $\varphi$ by $\varphi\circ\eta$, if necessary we may assume without loss of generality that $M_{11}$ is diagonal. Indeed, let $G_{n}^{0}(\mathbb{Q}_{p})\leq{G_{n}(\mathbb{Q}_{p})}$ be the subgroup of automorphisms with diagonal block $M_{11}$, then $G_{n}(\mathbb{Q}_{p})=G_{n}^{0}(\mathbb{Q}_{p})\coprod{G_{n}(\mathbb{Q}_{p})}\eta$, and as in \cite{DuSautoyLubotzky} we may replace the domain of integration in \eqref{equation.proisomorphic.zeta} by $G_{n}^{0}(\mathbb{Q}_{p})\cap{G_{n}^{+}(\mathbb{Q}_{p})}$ after a suitable renormalization of the Haar measure. We proceed to determine $G_{n}^{0}(\mathbb{Q}_{p})$.
 We check, for any $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^{\ast}$, that the diagonal matrix \[h=\mathrm{diag}(\lambda_{1},\lambda_{2},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\lambda_{2}\lambda_{3}\dots,\lambda_{n-2}\lambda_{n-1},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1})\]
 represents an automorphism of $\mathcal{L}_{n,p}$. Thus every $g\in{G_{n}^{0}(\mathbb{Q}_{p})}$ has a unique decomposition $g=uh$, where $h$ is of the above form and $u$ has $1$'s on the diagonal. The collection $H(\mathbb{Q}_{p})$ of $h$'s as above is the reductive part of $G_{n}^{0}(\mathbb{Q}_{p})$. The collection $N(\mathbb{Q}_{p})$ of $u$'s as above is the unipotent radical of $G_{n}^{0}(\mathbb{Q}_{p})$. We aim to determine the structure of the unipotent radical $N(\mathbb{Q}_p)$ by decomposing it into a semidirect product of abelian subgroups.
-For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\leq{N(\mathbb{Q}_{p})}$ the subgroup of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. It is easy to see that \[
+For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\leq{N(\mathbb{Q}_{p})}$ the subgroup of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. We denote $N_{n-1}$ explicitly as the following set of block matrices \[
 N_{n-1}=\left\{\begin{pmatrix}
 I_{n-1} & 0 & \cdots & 0 & M_{1,n-1}\\
 0 & I_{n-2} & \cdots & 0 & 0\\
@@ -196,13 +196,7 @@ I_{n-1} & 0 & \cdots & 0 & M_{1,n-1}\\
 0 & 0 & \cdots & 0 & 1\\
 \end{pmatrix}\right\}
 \]
-where $M_{1,n-1}=\begin{pmatrix}
-c_{1}\\
-c_{2}\\
-\vdots\\
-c_{n-2}\\
-c_{n-1}\\
-\end{pmatrix}\in\mathbb{Q}_{p}^{n-1}$ is the collection of all $u\in{N(\mathbb{Q}_{p})}$ that induce the trivial automorphism on $\sfrac{\mathcal{L}_{n,p}}{Z(\mathcal{L}_{n,p})}$.
+where $M_{1,n-1}$ is an arbitrary $(n-1)\times{1}$ matrix with entries in $\mathbb{Q}_{p}$ and of course the $0$ are zero matrices of suitable size. We observe that $N_{n-1}$ is the collection of all $u\in{N(\mathbb{Q}_{p})}$ that induce the trivial automorphism on $\sfrac{\mathcal{L}_{n,p}}{Z(\mathcal{L}_{n,p})}$ and that the map $\varphi\mapsto{M_{1,n-1}}$ for all $\varphi\in{N_{n-1}}$ gives an isomorphism $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$.
 \begin{proposition}
 \label{block.1r.structure}
 Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
@@ -257,36 +251,47 @@ We need to verify that for all $1\leq{i<j}\leq{n}$ and $1\leq{l<m}\leq{n}$ we ha
 \]
 We can verify explicitly for $n=4$ that these relations are true. For $n>4$, one considers the injection $\iota:\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, mapping each $e_{i,i+1}\in\mathcal{L}_{n-1,p}$ to $e_{i,i+1}\in\mathcal{L}_{n,p}$ for all $1\leq{i}\leq{n-2}$. By induction it suffices to consider the cases $j=n$ and $m=n$. The exceptional cases $\varphi'_{n-2}(a)$ and $\varphi''_{n-2}(a)$ can easily be verified directly to be automorphisms.
 \end{proof}
-Fix some $r,k$ and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. It is easy to see that $N_{r,k}<G_{n}(\mathbb{Q}_{p})$ and $N_{r,k}\cong\mathbb{Q}_{p}$.
+Fix some $r,k$ and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. It is easy to see that $N_{r,k}\leq{G_{n}^{0}(\mathbb{Q}_{p})}$ and $N_{r,k}\cong\mathbb{Q}_{p}$.
 Also denote by $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and by $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}$, and it is easy to see that the same applies for $N'_{n-2}$ and $N''_{n-2}$.
 \begin{proposition}
-For all $\varphi\in{N_{r}}$
+\label{prop:psi.automorphism}
+Consider $\varphi\in{N_{r}}$.
 \begin{enumerate}
     \item 
-when $r<n-2$, denote by $\psi$ the automorphism \[\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r1})\]
-where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
-$\psi\in{N_{r}}$ and the $(1,r)$ block of $\psi$ is $0$.
+If $r<n-2$, denote by $\psi$ the automorphism \[\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r+1,1})\]
+Then $\psi\in{N_{r+1}}$.
     \item 
-when $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0})\]
-where $M_{1r}=(a_{ij})$ is the $(1,r)$ block of $\varphi$. Then
-$\psi_{n-2}\in{N_{n-2}}$ and the $(1,r)$ block of $\psi_{n-2}$ is $0$.
-\end{enumerate}
-\end{proposition}
-\begin{proof}
-For $\psi$ it is immediate to see that the matrix multiplication annihilates all the block entries except for $(r+1,1),(r+2,1),(n-r-2,n-r)$ and $(n-r-1,n-r)$. The vanishing of these particular four entries, when $r<n-2$ and when $r=n-2$ is already discussed in the proof of \ref{block.1r.structure}. 
-\end{proof}
-\begin{proposition}
-We have the following decompositions
-\begin{enumerate}
-    \item 
-For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,n-r}\rtimes(\cdots(N_{r,1}\rtimes{N_{r,0}})\cdots))\]
-\item For $r=n-2$, we have \[N_{n-2}=N_{n-1}\rtimes(N''_{n-2}\rtimes(N'_{n-2}\rtimes(N_{n-2,2}\rtimes(N_{n-2,1}\rtimes{N_{n-2,0}}))))\]
+If $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0})\]
+Then $\psi_{n-2}\in{N_{n-1}}$.
 \end{enumerate}
 \end{proposition}
 \begin{corollary}
-For all $n\geq{4}$, the unipotent radical of $G_{n}(\mathbb{Q}_{p})$ has the decomposition $N(\mathbb{Q}_{p})=N_{2}=N_{3}\rtimes(N_{2,n-2}\rtimes(\cdots\rtimes(N_{2,1}\rtimes{N_{2,0}})\cdots))$, which decomposes recursively into a semidirect sum of abelian subgroups, recursion stops at $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$. This gives us a satisfactory description of $G_{n}(\mathbb{Q}_{p})=N(\mathbb{Q}_{p})\rtimes{H(\mathbb{Q}_{p})}$.
+\label{cor:Nr.decomposition}
+We have the following decompositions
+\begin{enumerate}
+    \item 
+For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,0}\rtimes(\cdots(N_{r,n-r-1}\rtimes{N_{r,n-r}})\cdots))\]
+\item For $r=n-2$, we have 
+\[N_{n-2}=N_{n-1}\rtimes({N_{n-2,0}}\rtimes(N_{n-2,1}\rtimes(N_{n-2,2}\rtimes(N'_{n-2}\rtimes{N''_{n-2}}))))\]
+\end{enumerate}
 \end{corollary}
-As we saw earlier, the calculation of $\zeta_{L_{n,p}}^{\wedge}(s)$ requires computing $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. After computing $G_{n}(\mathbb{Q}_p)$ through on the decomposition presented in the corollary, we need to identify $G_{n}(\mathbb{Z}_p)$ as a subgroup of $G_{n}(\mathbb{Q}_p)$, which is expected not to be difficult, and continue from there to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge. By applying \textbf{Fubini's theorem} for semidirect products of topological groups, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det\varphi|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+(\mathbb{Q}_p)}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
+This is immediate from \ref{prop:psi.automorphism}.
+
+Corollary \ref{cor:Nr.decomposition} provides a recursive decomposition of the unipotent radical $N(\mathbb{Q}_{p})$ as an iterated semidirect product of $N_{n-1}$ and subgroups isomorphic to $\mathbb{Q}_{p}$.
+
+As we saw earlier, the calculation of $\zeta_{L_{n,p}}^{\wedge}(s)$ requires computing $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. 
+\begin{proposition}
+For all $n\geq{4}$ the group $G_{n}^{0}(\mathbb{Z}_{p})$ has the decomposition $G_{n}^{0}(\mathbb{Z}_{p})=N(\mathbb{Z}_{p})\rtimes{H(\mathbb{Z}_{p})}$, where \[N(\mathbb{Z}_{p}):=G_{n}^{0}(\mathbb{Z}_{p})\cap{N(\mathbb{Q}_{p})}\]
+\[H(\mathbb{Z}_{p}):=G_{n}^{0}(\mathbb{Z}_{p})\cap{H(\mathbb{Q}_{p})}\]
+$N(\mathbb{Z}_{p})$ itself has the decomposition \[N(\mathbb{Z}_{p})=\Tilde{N}_{2}(\mathbb{Z}_{p})=
+\Tilde{N}_{n-1}\rtimes({\Tilde{N}_{n-2,0}}\rtimes(\Tilde{N}_{n-2,1}\rtimes(\Tilde{N}_{n-2,2}\rtimes(\Tilde{N}'_{n-2}\rtimes{\Tilde{N}''_{n-2}}))))\rtimes\cdots\]\[\cdots\rtimes{(\Tilde{N}_{2,0}\rtimes(\cdots(\Tilde{N}_{2,n-3}\rtimes{\Tilde{N}_{r,n-2}})\cdots))}
+\]
+where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=N_{r,k}\cap{N(\mathbb{Z}_{p})}$
+\end{proposition}
+\begin{proof}
+$G_{n}^{0}(\mathbb{Z}_{p})=G_{n}^{0}(\mathbb{Q}_{p})\cap{GL_{m}(\mathbb{Z}_{p})}$ where $m=\mathrm{rank}\,L_{n,p}=\binom{n}{2}$. Let $g=uh\in{G_{n}^{0}(\mathbb{Z}_{p})}$ where $h\in{H(\mathbb{Q}_{p})}$ and $u\in{N(\mathbb{Q}_{p})}$. Since $\det{g}=\det{h}=\prod_{i=1}^{n-1}\lambda_i^{i(n-i)}\in\mathbb{Z}_{p}^{\ast}$ and $\lambda_{i}\in\mathbb{Z}_{p}$ for all $1\leq{i}\leq{n-1}$, then $\det{h}\in\mathbb{Z}_{p}^{\ast}$ if and only if $\lambda_{i}\in\mathbb{Z}_{p}^{\ast}$ for all $1\leq{i}\leq{n-1}$, which means that $h\in{G_{n}^{0}(\mathbb{Z}_{p})}$. But then $u=gh^{-1}$ suggests that $u\in{G_{n}^{0}(\mathbb{Z}_{p})}$, thus we prove the decomposition of $G_{n}^{0}(\mathbb{Z}_{p})$, while the decomposition of $N(\mathbb{Z}_{p})$ itself can be shown in a similar way.
+\end{proof}
+After this computation of $G_{n}^{0}(\mathbb{Z}_{p})$, we need to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge. By applying \textbf{Fubini's theorem} for semidirect products of topological groups, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det\varphi|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+(\mathbb{Q}_p)}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
 where $H^+(\mathbb{Q}_p)$ consists of all $h\in H(\mathbb{Q}_p)$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in G_{n}^{+}(\mathbb{Q}_p)$, and, for a given $h\in H^+(\mathbb{Q}_p)$, we set $N_h^+(\mathbb{Q}_p):=\{u\in N(\mathbb{Q}_p) : uh\in{G_{n}}^+(\mathbb{Q}_p)\}$. 
 
 The computation of $\det{h}$ of the form stated above is easy and given by $\det{h}=\prod_{i=1}^{n-1}\lambda_i^{i(n-i)}$, which can be shown by induction on $n$, and since $\det{u}=1$ for all $u\in{N(\mathbb{Q}_{p})}$, we have that $|\det{uh}|_p^s=|\det{h}|_p^s$
