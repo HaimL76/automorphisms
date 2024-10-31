@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 OCT 2024 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 OCT 2024 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,7 +667,12 @@ Overfull \hbox (8.56427pt too wide) in paragraph at lines 73--74
 mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
-[3] [4] [5] [6] [7] [8]
+[3] [4] [5]
+
+LaTeX Warning: Reference `equation.proisomorphic.zeta' on page 6 undefined on i
+nput line 120.
+
+[6] [7] [8]
 LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 187.
 
 
@@ -686,19 +691,11 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 187.
 
-
-LaTeX Warning: Reference `eq:p-adic.integral' on page 9 undefined on input line
- 191.
-
 [9] [10] [11] [12]
 Overfull \hbox (5.83618pt too wide) in paragraph at lines 306--306
 []\OT1/cmr/m/n/12 By ap-ply-ing Fu-bini's the-o-rem for semidi-rect prod-ucts o
 f topo-log-i-cal groups,
  []
-
-
-LaTeX Warning: Reference `prop:G.n.Zp.decomposition' on page 13 undefined on in
-put line 307.
 
 [13]
 Overfull \hbox (7.54454pt too wide) detected at line 313
@@ -720,9 +717,6 @@ LaTeX Font Warning: Size substitutions with differences
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -756,7 +750,7 @@ ila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
 b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 308011 bytes).
+Output written on proposal-long-review.pdf (15 pages, 307510 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
