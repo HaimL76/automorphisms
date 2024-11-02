@@ -120,8 +120,9 @@ Observe that $[L_{p}:M]=|\det\varphi|_p^{-1}$, where $|\cdot|_p$ is the $p$-adic
 We fix a specific right Haar measure $\mu$ on the group $G(\mathbb{Q}_{p})$ by normalizing $\mu(G(\mathbb{Z}_p))=1$. Now we are able to express $\zeta_{L,p}^{\wedge}(s)$ as a $p$-adic integral, as first done by du Sautoy and Lubotzky \cite{DuSautoyLubotzky}. Since $|\det{g}|_{p}^{s}$ is constant on right cosets of $G(\mathbb{Z}_{p})$, we have $|\det\varphi|_{p}^{s}=\displaystyle\int_{G(\mathbb{Z}_p)\varphi}{|\det{g}|_{p}^{s}}d\mu(g)$. By \eqref{eq:proisomorphic.zeta}, we have \[\zeta_{L,p}^{\wedge}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}|\det\varphi|_{p}^{s}=\underset{\scriptscriptstyle{G(\mathbb{Z}_p)}\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}\displaystyle{\int_{G(\mathbb{Z}_p)\varphi}}{|\det{g}|_{p}^{s}}d\mu(g)\]
 which results in \begin{equation}
 \label{eq:p-adic.integral}
-\zeta_{L,p}^{\wedge}(s)=\displaystyle\int_{G^{+}(\mathbb{Z}_p)}{|\det{g}|_{p}^{s}}d\mu(g)
+\zeta_{L,p}^{\wedge}(s)=\displaystyle\int_{G^{+}(\mathbb{Q}_p)}{|\det{g}|_{p}^{s}}d\mu(g)
 \end{equation}
+See \cite{GrunewaldSegalSmith}.
 \section{Research Goals and Methodology}
 \subsection{The Lie algebras $L_{n}$}
 Let $R$ be a commutative ring, and let $L_{n}(R)$ be the set of strictly upper triangular $n\times{n}$ matrices with elements in $R$. The commutator Lie bracket $[A,B]=AB-BA$ gives $L_{n}(R)$ the structure of a nilpotent $R$-Lie algebra. Set $L_{n}=L_{n}(\mathbb{Z})$ and $\mathcal{L}_{n}=L_{n}(\mathbb{Q})$, while $L_{n,p}=L_{n}(\mathbb{Z}_{p})$ and $\mathcal{L}_{n,p}=L_{n}(\mathbb{Q}_{p})$.
@@ -294,7 +295,7 @@ where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varph
 After this computation of $G_{n}^{0}(\mathbb{Z}_{p})$, we need to identify the monoid $G_{n}^{+}(\mathbb{Q}_p)$, which is expected to be a substantial challenge.
 
 By applying Fubini's theorem for semidirect products of topological groups, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
-where $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
+where $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$, see \cite{BermanGlazerSchein}. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
 
 Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$ where $m=\mathrm{rank}\,L_{n,p}=\binom{n}{2}$ be an enumeration of the subgroups
 \[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}\]
