@@ -90,7 +90,7 @@ Let $G$ be a $\mathcal{T}$-group, i.e. finitely-generated, nilpotent and torsion
 \textbf{Polynomial growth and convergence}. There exist constants $b$ and $C$ such that $a_{n}^{\leq}(G)\leq{C}{n}^{b}$ for all $n\in\mathbb{N}$. Hence $\zeta_{G}^{\ast}(s)$ converges on some right half plane $\mathrm{Re}\,s>\alpha$. The abscissae of convergence \[\alpha^{\ast}:=\inf\{\alpha : \zeta_{G}^{\ast}(s)\,\mathrm{converges}\,\mathrm{on}\,\mathrm{Re}\,s>\alpha\}\] are known to be rational numbers.
 
 \textbf{Euler decomposition}.
-We have that $\zeta_{G}^{\ast}(s)=\prod_{p}\zeta_{G,p}^{\ast}(s)$, where the product runs over all primes $p$ and $\zeta_{G,p}^{\ast}(s)=\sum_{k=0}^{\infty}a_{p^k}^{\ast}(G)p^{-ks}$.
+We have that $\zeta_{G}^{\ast}(s)=\prod_{p}\zeta_{G,p}^{\ast}(s)$, where the product runs over all primes $p$ and $\zeta_{G,p}^{\ast}(s)=\sum_{k=0}^{\infty}a_{p^k}^{\ast}(G)p^{-ks}$. \cite{BermanGlazerSchein}
 
 \textbf{Rationality}. For all primes $p$, there is a rational function $W_{p}^{\ast}\in\mathbb{Q}(X)$ such that $\zeta_{G,p}^{\ast}(s)=W_{p}^{\ast}(p^{-s})$.
 \end{proposition}
@@ -117,7 +117,7 @@ Observe that $[L_{p}:M]=|\det\varphi|_p^{-1}$, where $|\cdot|_p$ is the $p$-adic
 \zeta_{L,p}^{\wedge}(s)=\underset{\overset{\scriptscriptstyle M\leq L_{p}}{\scriptscriptstyle M\cong L_{p}}}{\sum}[L_{p}:M]^{-s}=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^{+}(\mathbb{Q}_p)}{\sum}|\det\varphi|_p^s
 \end{equation}.
 \subsection{$p$-adic Integration}
-We fix a specific right Haar measure $\mu$ on the group $G(\mathbb{Q}_{p})$ by normalizing $\mu(G(\mathbb{Z}_p))=1$. Now we are able to express $\zeta_{L,p}^{\wedge}(s)$ as a $p$-adic integral, as first done by du Sautoy and Lubotzky \cite{DuSautoyLubotzky}. Since $|\det{g}|_{p}^{s}$ is constant on right cosets of $G(\mathbb{Z}_{p})$, we have $|\det\varphi|_{p}^{s}=\displaystyle\int_{G(\mathbb{Z}_p)\varphi}{|\det{g}|_{p}^{s}}d\mu(g)$. By \eqref{equation.proisomorphic.zeta}, we have \[\zeta_{L,p}^{\wedge}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}|\det\varphi|_{p}^{s}=\underset{\scriptscriptstyle{G(\mathbb{Z}_p)}\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}\displaystyle{\int_{G(\mathbb{Z}_p)\varphi}}{|\det{g}|_{p}^{s}}d\mu(g)\]
+We fix a specific right Haar measure $\mu$ on the group $G(\mathbb{Q}_{p})$ by normalizing $\mu(G(\mathbb{Z}_p))=1$. Now we are able to express $\zeta_{L,p}^{\wedge}(s)$ as a $p$-adic integral, as first done by du Sautoy and Lubotzky \cite{DuSautoyLubotzky}. Since $|\det{g}|_{p}^{s}$ is constant on right cosets of $G(\mathbb{Z}_{p})$, we have $|\det\varphi|_{p}^{s}=\displaystyle\int_{G(\mathbb{Z}_p)\varphi}{|\det{g}|_{p}^{s}}d\mu(g)$. By \eqref{eq:proisomorphic.zeta}, we have \[\zeta_{L,p}^{\wedge}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}|\det\varphi|_{p}^{s}=\underset{\scriptscriptstyle{G(\mathbb{Z}_p)}\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}\displaystyle{\int_{G(\mathbb{Z}_p)\varphi}}{|\det{g}|_{p}^{s}}d\mu(g)\]
 which results in \begin{equation}
 \label{eq:p-adic.integral}
 \zeta_{L,p}^{\wedge}(s)=\displaystyle\int_{G^{+}(\mathbb{Z}_p)}{|\det{g}|_{p}^{s}}d\mu(g)
