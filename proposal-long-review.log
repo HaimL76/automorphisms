@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  4 NOV 2024 12:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  5 NOV 2024 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,38 +660,34 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout4 = `proposal-long-review.toc'.
 
  [2]
-Overfull \hbox (8.56427pt too wide) in paragraph at lines 73--74
+Overfull \hbox (8.56427pt too wide) in paragraph at lines 74--75
 \OT1/cmr/m/n/12 the num-ber of sub-groups of $\OML/cmm/m/it/12 G$ \OT1/cmr/m/n/
 12 of in-dex $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 and con-sider the se-quence $
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G\OT1/c
 mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
-[3]
-
-LaTeX Warning: Citation `Voll' on page 4 undefined on input line 98.
-
-[4] [5] [6] [7] [8]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 188.
+[3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 189.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 188.
+(Font)              size <5> substituted on input line 189.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 188.
+(Font)              size <5> substituted on input line 189.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 188.
+(Font)              size <5> substituted on input line 189.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 188.
+(Font)              size <5> substituted on input line 189.
 
 [9] [10] [11]
-Overfull \hbox (3.57661pt too wide) in paragraph at lines 285--286
+Overfull \hbox (3.57661pt too wide) in paragraph at lines 286--287
 []\OT1/cmr/m/n/12 As we saw ear-lier, the cal-cu-la-tion of $\OML/cmm/m/it/12 ^
 ^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$ re-quires un-der-stan
 d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
@@ -699,20 +695,20 @@ d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
  []
 
 [12]
-Overfull \hbox (5.83618pt too wide) in paragraph at lines 297--297
+Overfull \hbox (5.83618pt too wide) in paragraph at lines 298--298
 []\OT1/cmr/m/n/12 By ap-ply-ing Fu-bini's the-o-rem for semidi-rect prod-ucts o
 f topo-log-i-cal groups,
  []
 
 
-Overfull \hbox (10.83401pt too wide) detected at line 297
+Overfull \hbox (10.83401pt too wide) detected at line 298
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
 [] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
  d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 [13]
-Overfull \hbox (11.54448pt too wide) detected at line 304
+Overfull \hbox (11.54448pt too wide) detected at line 305
 \OMS/cmsy/m/n/12 N[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h; u[]; [] ; u[]\OT1/cmr/
 m/n/12 ) := \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[] \OMS/cmsy/m/n/12 2 N[] \OT1/
 cmr/m/n/12 : \OMS/cmsy/m/n/12 9[] [] [] \OML/cmm/m/it/12 u[] [] []h \OMS/cmsy/m
@@ -729,47 +725,42 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15299 strings out of 474486
- 324402 string characters out of 5743755
+ 15303 strings out of 474486
+ 324460 string characters out of 5743755
  1945528 words of memory out of 5000000
- 37292 multiletter control sequences out of 15000+600000
- 576504 words of font info for 114 fonts, out of 8000000 for 9000
+ 37295 multiletter control sequences out of 15000+600000
+ 576841 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,14n,121p,1506b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/isi
-la/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
-sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/is
-ila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
-b><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 307155 bytes).
+ <C:\Users\isila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/isila/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/isila/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/isila
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
+rs/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/isila/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/isila/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/isila/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/isila
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Us
+ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/symbols/msbm7.pfb>
+Output written on proposal-long-review.pdf (15 pages, 308025 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
