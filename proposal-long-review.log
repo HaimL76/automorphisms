@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  5 NOV 2024 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  6 NOV 2024 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,12 +667,12 @@ Overfull \hbox (8.56427pt too wide) in paragraph at lines 74--75
 mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
-[3]
+[3] [4] [5] [6] [7]
 
-LaTeX Warning: Citation `HrushovskiMartinRideau' on page 4 undefined on input l
-ine 91.
+LaTeX Warning: Citation `CarnevaleScheinVoll' on page 8 undefined on input line
+ 151.
 
-[4] [5] [6] [7] [8]
+[8]
 LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 192.
 
 
@@ -738,10 +738,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15307 strings out of 474486
- 324533 string characters out of 5743755
+ 15308 strings out of 474486
+ 324554 string characters out of 5743755
  1943528 words of memory out of 5000000
- 37299 multiletter control sequences out of 15000+600000
+ 37300 multiletter control sequences out of 15000+600000
  576841 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,14n,121p,1584b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -769,7 +769,7 @@ ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 310159 bytes).
+Output written on proposal-long-review.pdf (15 pages, 310255 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
