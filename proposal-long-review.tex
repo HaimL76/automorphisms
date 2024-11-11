@@ -102,7 +102,7 @@ Let $G$ be a $\mathcal{T}$-group, then $\zeta_{G,p}^{\leq}(s)$ satisfies a funct
 
 There are specific examples of $\mathcal{T}$-groups of nilpotency class $3$, such that $\zeta_{G,p}^{\trianglelefteq}(s)$ is \textbf{uniform}, i.e. $\zeta_{G,p}^{\trianglelefteq}(s)=W(p,p^{-s})$, but $W(p,p^{-s})$ does not satisfy a functional equation.
 
-In the case of pro-isomorphic zeta-functions, there are results showing that under restrictive conditions, $\zeta_{G,p}^{\wedge}(s)$ is uniform and satisfies a functional equation, see, for instance, \cite{BermanKlopschOnn}. However, there are examples of $G$ of nilpotency class $4$ such that $\zeta_{G,p}^{\wedge}(s)$ is uniform but does not have a functional equation.
+In the case of pro-isomorphic zeta-functions, there are results showing that under restrictive conditions, $\zeta_{G,p}^{\wedge}(s)$ is uniform and satisfies a functional equation, see, for instance, \cite[Theorem 1.1]{Berman} and \cite[Theorem B]{DuSautoyLubotzky}. However, there are examples of $G$ of nilpotency class $4$ such that $\zeta_{G,p}^{\wedge}(s)$ is uniform but does not have a functional equation, see \cite{BermanKlopschOnn}. 
 
 If any Dirichlet series, in particular $\zeta_{G}^{\ast}(s)$, convergences on some subset of $\mathbb{C}$, one may reconstruct its coefficients $a_{n}^{\ast}(G)$, the sequence of our interest, using Perron's formula, which is an implementation of a reverse Mellin transform; see, for instance, \cite{MontgomeryVaughan}.\par
 As an example, consider the group $G=\mathbb{Z}$, for which every finite-index subgroup $H\leq{\mathbb{Z}}$ is of the form $H=n\mathbb{Z}=\langle n\rangle$ for some $n\in\mathbb{N}$. Thus $H\cong \mathbb{Z}$, as both are infinite cyclic groups, and so $\widehat{H}\cong\widehat{\mathbb{Z}}$. Since we have only one subgroup of index $n$ for every $n\in\mathbb{N}$, then $a_{n}^{\ast}(\mathbb{Z})=1$, for $\ast\in\{\leq,\trianglelefteq,\wedge\}$. Thus, its pro-isomorphic zeta-function is $\zeta_{\mathbb{Z}}^{\wedge}(s)=\sum_{i=1}^{\infty}n^{-s}=\zeta(s)$, the Riemann zeta-function, which is known to converge for $\mathrm{Re}\,s>1$. It is known that the Riemann zeta-function decomposes into an infinite product of local zeta-functions, that is, $\zeta(s)=\prod_p\zeta_p(s)=\prod_p\sum_{k=0}^\infty p^{-ks}=\prod_p\frac{1}{1-p^{-s}}$, where the product runs over all the prime numbers.\par
@@ -128,7 +128,7 @@ See also \cite[Proposition 4.2]{GrunewaldSegalSmith}.
 \subsection{The Lie algebras $L_{n}$}
 Let $R$ be a commutative ring, and let $L_{n}(R)$ be the set of strictly upper triangular $n\times{n}$ matrices with elements in $R$. The commutator Lie bracket $[A,B]=AB-BA$ gives $L_{n}(R)$ the structure of a nilpotent $R$-Lie algebra. Set $L_{n}=L_{n}(\mathbb{Z})$ and $\mathcal{L}_{n}=L_{n}(\mathbb{Q})$, while $L_{n,p}=L_{n}(\mathbb{Z}_{p})$ and $\mathcal{L}_{n,p}=L_{n}(\mathbb{Q}_{p})$.
 
-Let $e_{ij}\in{L_{n}}$ be the matrix with $1$ in the $(i,j)$ entry and $0$ elsewhere. Then $B:=\{e_{ij} : 1\leq{i}<{j}\leq{n}\}$ is a basis of $L_{n}$, which we order as follows: $(e_{12},\dots,e_{n-1,n},e_{13},\dots,e_{n-2,n},e_{14},\dots,e_{n-3,n},\dots,e_{1n})$. In other words we order the elements of $B$ so that $e_{ij}<e_{kl}$ if either $j-i<l-k$ or if $j-i=l-k$ and $i<k$. Note that $\gamma_{1}L_{n},\dots,\gamma_{n-1}L_{n}$ are spanned by final segments of $B$. The aim of our research is to study the pro-isomorphic zeta function of $L_{n}$. Berman has computed $\zeta_{L_{4,p}}^{\wedge}(s)$ explicitly for all $p$ \cite[\S{3.3.7}]{Berman} and has shown that $\zeta_{L_{5,p}}^{\wedge}(s)$ are uniform \cite[Proposition 3.12]{Berman}.
+Let $e_{ij}\in{L_{n}}$ be the matrix with $1$ in the $(i,j)$ entry and $0$ elsewhere. Then $B:=\{e_{ij} : 1\leq{i}<{j}\leq{n}\}$ is a basis of $L_{n}$, which we order as follows: $(e_{12},\dots,e_{n-1,n},e_{13},\dots,e_{n-2,n},e_{14},\dots,e_{n-3,n},\dots,e_{1n})$. In other words we order the elements of $B$ so that $e_{ij}<e_{kl}$ if either $j-i<l-k$ or if $j-i=l-k$ and $i<k$. Note that $\gamma_{1}L_{n},\dots,\gamma_{n-1}L_{n}$ are spanned by final segments of $B$. The aim of our research is to study the pro-isomorphic zeta function of $L_{n}$. Berman has computed $\zeta_{L_{4,p}}^{\wedge}(s)$ explicitly for all $p$ \cite[\S{3.3.7}]{BermanThesis} and has shown that $\zeta_{L_{5,p}}^{\wedge}(s)$ are uniform \cite[Proposition 3.12]{BermanThesis}.
 \begin{remark}
 Let $U_n(R)$ be the group of $n\times{n}$ upper unitriangular matrices over $R$. By the Mal'cev correspondence, ${\zeta^\wedge_{U_{n}(\mathbb{Z}_{p})}}(s)={\zeta^\wedge_{L_{n,p}}}(s)$, for all but finitely many primes $p$. This relates the subject of our research to the group-theoretic motivation presented at the beginning of this paper.
 \end{remark}
@@ -141,7 +141,7 @@ Computing the automorphism group $G_{n}(\mathbb{Q}_{p})$ of the $\mathbb{Q}_p$-L
 Showing that the pro-isomorphic zeta-functions $\zeta_{L_{n,p}}^{\wedge}(s)$ are uniform, or finitely uniform, for all $n\in\mathbb{N}$. We expect the method used by Berman in the case $n=5$ to generalize.
 \item
 Giving an explicit uniform formula for the zeta-functions $\zeta_{L_{n,p}}^{\wedge}(s)$.
-We aim to compute an explicit formula for $\zeta_{L_{n,p}}^{\wedge}(s)$ for all $n \geq 4$ and all primes $p$ in terms of a suitable combinatorical framework that is compatible with the complicated structure of $G_{n}^{+}(\mathbb{Q}_p)$. We will study whether $\zeta_{L_{n,p}}^{\wedge}(s)$ have functional equations and in particular whether they satisfy the conjecture of \cite[Conjecture 1.5]{BermanKlopschOnn}, which says that if $\zeta_{L,p}^{\wedge}(s)$ has functional equations and $L$ is graded, then the exponent $b$ in the symmetry factor must be the weight of a minimal grading of $L$. Note that $L_{n}$ is naturally graded by its lower central series, with minimal grading of weight $\sum_{i=1}^{n-1}{i(n-i)}$. In the event that we do not succeed in this task in general, we still expect to complete Berman's unfinished calculation in the case $n=5$. In this case, the combinatorics is just simple enough to handle directly, possibly with some assistance from a computer.
+We aim to compute an explicit formula for $\zeta_{L_{n,p}}^{\wedge}(s)$ for all $n \geq 4$ and all primes $p$ in terms of a suitable combinatorical framework that is compatible with the complicated structure of $G_{n}^{+}(\mathbb{Q}_p)$. We will study whether $\zeta_{L_{n,p}}^{\wedge}(s)$ have functional equations and in particular whether they satisfy the conjecture of \cite[Conjecture 1.8]{BermanKlopschOnn}, which says that if $\zeta_{L,p}^{\wedge}(s)$ has functional equations and $L$ is graded, then the exponent $b$ in the symmetry factor must be the weight of a minimal grading of $L$. Note that $L_{n}$ is naturally graded by its lower central series, with minimal grading of weight $\sum_{i=1}^{n-1}{i(n-i)}$. In the event that we do not succeed in this task in general, we still expect to complete Berman's unfinished calculation in the case $n=5$. In this case, the combinatorics is just simple enough to handle directly, possibly with some assistance from a computer.
 \end{enumerate}
 We make several remarks about these research goals.
 \begin{enumerate}
@@ -189,7 +189,7 @@ Note that $\begin{pmatrix}
 M_{11} & \vline & M_{12}\\
 \hline
 0 & \vline & M_{22}\\
-\end{pmatrix}$ gives an element of $Aut_{\mathbb{Q}_{p}}(\sfrac{\mathcal{L}_{n,p}}{\gamma_{3}\mathcal{L}_{n,p}})$. Berman determined this automorphism group for all $n$ and $p$ \cite[Proposition 3.6]{Berman}. It follows that the block $M_{11}$ must be either diagonal or anti-diagonal.
+\end{pmatrix}$ gives an element of $Aut_{\mathbb{Q}_{p}}(\sfrac{\mathcal{L}_{n,p}}{\gamma_{3}\mathcal{L}_{n,p}})$. Berman determined this automorphism group for all $n$ and $p$ \cite[Proposition 3.6]{BermanThesis}. It follows that the block $M_{11}$ must be either diagonal or anti-diagonal.
 \subsection{Preliminary results}
 \label{preliminary.results}
 We have made progress towards step 1 of our research program, namely determining the automorphism groups $G_{n}(\mathbb{Q}_p)$, based on Berman's results cited above.
@@ -254,7 +254,7 @@ We need to verify that for all $1\leq{i<j}\leq{n}$ and $1\leq{l<m}\leq{n}$ we ha
         0 & : \mathrm{otherwise}
     \end{cases}
 \]
-We can verify explicitly for $n=4$ that these relations are true. Alternatively, Berman did this in \cite{Berman}. For $n>4$, one considers the injection $\iota:\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, mapping each $e_{i,i+1}\in\mathcal{L}_{n-1,p}$ to $e_{i,i+1}\in\mathcal{L}_{n,p}$ for all $1\leq{i}\leq{n-2}$. By induction it suffices to consider the cases $j=n$ and $m=n$. The exceptional cases $\varphi'_{n-2}(a)$ and $\varphi''_{n-2}(a)$ can easily be verified directly to be automorphisms.
+We can verify explicitly for $n=4$ that these relations are true. Alternatively, Berman did this in \cite{BermanThesis}. For $n>4$, one considers the injection $\iota:\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, mapping each $e_{i,i+1}\in\mathcal{L}_{n-1,p}$ to $e_{i,i+1}\in\mathcal{L}_{n,p}$ for all $1\leq{i}\leq{n-2}$. By induction it suffices to consider the cases $j=n$ and $m=n$. The exceptional cases $\varphi'_{n-2}(a)$ and $\varphi''_{n-2}(a)$ can easily be verified directly to be automorphisms.
 \end{proof}
 Fix some $r,k$ and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. It is easy to see that $N_{r,k}\leq{G_{n}^{0}(\mathbb{Q}_{p})}$ and $N_{r,k}\cong\mathbb{Q}_{p}$.
 Also denote by $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and by $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}$, and it is easy to see that the same applies for $N'_{n-2}$ and $N''_{n-2}$.
@@ -307,10 +307,19 @@ Every $\varphi\in{G_{n}^{0}(\mathbb{Q}_{p})}$ can be written uniquely as $\varph
 \zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{H^{+}}\displaystyle\int_{\mathcal{N}_{1}^{+}(h)}\displaystyle\int_{\mathcal{N}_{2}^{+}(h,u_{1})}\cdots\displaystyle\int_{\mathcal{N}_{m}^{+}(h,u_{1},\dots,u_{m-1})}|\det{h}|_{p}^{s}d\mu_{H}d\mu_{\mathcal{N}_{1}}\cdots{d\mu_{\mathcal{N}_{m}}}\]
 where each $\mu_{\mathcal{N}_{i}}$ is Haar measure on $\mathcal{N}_{i}(\mathbb{Q}_{p})$ normalized so that $\mu_{\mathcal{N}_{i}}(\mathcal{N}_{i}(\mathbb{Z}_{p}))=1$, and \[\mathcal{N}_{i}^{+}(h,u_{1},\dots,u_{i-1}):=\{u_{i}\in\mathcal{N}_{i} : \exists{u_{i+1},\dots,u_{m}}\,\mathrm{such}\,\mathrm{that}\,u_{m}\cdots{u_{1}}h\in{G_{n}^{+}(\mathbb{Q}_{p})}\}.\]
 \begin{thebibliography}{2}
-\bibitem{Berman} M. N. Berman,
+\bibitem{BermanThesis} M. N. Berman,
 Proisomorphic zeta functions of groups
 , Ph.D. thesis, University of Oxford,
 2005.
+\bibitem{Berman}
+M. N. Berman,
+Uniformity and functional equations for local zeta functions of
+K
+-split
+algebraic groups
+, Amer. J. Math.
+133
+(2011), no. 1, 1–27.
 \bibitem{BermanGlazerSchein} M. N. Berman, I. Glazer, and M. M. Schein, Pro-isomorphic zeta functions of nilpotent groups and lie rings under base extension, Trans. Amer. Math. Soc. 375 (2022), 1051–1100.
 \bibitem{BermanKlopschOnn} M. N. Berman, B. Klopsch, and U. Onn,
 On pro-isomorphic zeta functions of $D^{\ast}$-groups of even Hirsch length, arXiv/1511.06360v3.
