@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  12 NOV 2024 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  12 NOV 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,7 +667,11 @@ Overfull \hbox (8.56427pt too wide) in paragraph at lines 75--76
 mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
-[3] [4] [5] [6] [7] [8]
+[3] [4] [5] [6] [7]
+
+LaTeX Warning: Citation `Segal' on page 8 undefined on input line 154.
+
+[8]
 LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 191.
 
 
@@ -715,7 +719,13 @@ cmr/m/n/12 : \OMS/cmsy/m/n/12 9[] [] [] \OML/cmm/m/it/12 u[] [] []h \OMS/cmsy/m
 /n/12 2 []g\OML/cmm/m/it/12 :
  []
 
-[14] [15] (proposal-long-review.aux)
+[14]
+Underfull \hbox (badness 1320) in paragraph at lines 361--363
+[]\OT1/cmr/m/n/12 D. Se-gal, On the au-to-mor-phism groups of cer-tain Lie al-g
+e-bras,
+ []
+
+[15] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -725,15 +735,21 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15309 strings out of 474486
- 324562 string characters out of 5743755
+ 15310 strings out of 474486
+ 324569 string characters out of 5743755
  1944528 words of memory out of 5000000
- 37301 multiletter control sequences out of 15000+600000
+ 37302 multiletter control sequences out of 15000+600000
  576841 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,14n,121p,1584b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,14n,121p,1597b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -758,7 +774,7 @@ ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 310856 bytes).
+Output written on proposal-long-review.pdf (15 pages, 311204 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
