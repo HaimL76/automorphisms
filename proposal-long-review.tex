@@ -13,6 +13,7 @@
 \usepackage{setspace}
 \usepackage{xfrac}
 \usepackage{yfonts}
+\setcounter{MaxMatrixCols}{11}
 
 \newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -171,17 +172,15 @@ M=\begin{pmatrix}
 \]
 Since the elements $\{\gamma_{k}\mathcal{L}_{n,p}\}_{k=1}^{n-1}$ of the lower central series are characteristic subalgebras, $M$ has the block-diagonal form
 \[M=\begin{pmatrix}
-M_{11}&\vline&M_{12}&\vline& M_{13}
-&\dots&\vline&M_{1,n-2}&\vline&M_{1,n-1}\\
+M_{11} & \vline & M_{12} & \vline & M_{13} & \vline & \dots & \vline & M_{1,n-2} & \vline & M_{1,n-1}\\
 \hline
-0&\vline&M_{22}&\vline&M_{23}&\dots&\vline 
-&M_{2,n-2} &\vline& M_{2,n-1}\\
+0 & \vline & M_{22} & \vline & M_{23} & \vline & \dots & \vline & M_{2,n-2} & \vline & M_{2,n-1}\\
 \hline
-\vdots & \vline & \vdots&\vline & \vdots & \ddots &\vline & \vdots &\vline& \vdots\\
+\vdots & \vline & \vdots & \vline & \vdots & \vline & \ddots & \vline & \vdots & \vline & \vdots\\
 \hline
-0 & \vline & 0&\vline & 0 & \dots &\vline & M_{2,n-2} &\vline& M_{2,n-1}\\
+0 & \vline & 0 & \vline & 0 & \vline & \dots & \vline & M_{2,n-2} & \vline & M_{2,n-1}\\
 \hline
-0 & \vline & 0 &\vline & 0 & \dots &\vline & 0 &\vline& M_{n-1,n-1}\\
+0 & \vline & 0 &\vline & 0 & \vline & \dots & \vline & 0 & \vline & M_{n-1,n-1}\\
 \end{pmatrix}
 \]
 where each block $M_{ij}$ is an $(n-i)\times{(n-j)}$ matrix.\par
