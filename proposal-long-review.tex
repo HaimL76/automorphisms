@@ -53,7 +53,7 @@
 \setlength{\arrayrulewidth}{0.2pt}
 \title{The pro-isomorphic zeta-functions of some nilpotent Lie algebras over integer rings}
 \subtitle{Research proposal for a Ph.D. Thesis\\
-Under the supervision of Prof. Michael M. Schein\\
+under the supervision of Prof. Michael M. Schein\\
 Department of Mathematics, Bar-Ilan University}
 \author{Haim Lavi}
 \date{\today}
@@ -85,19 +85,19 @@ the number of \textbf{pro-isomorphic} subgroups of $G$.
 Now we define generating functions determined by these sequences. 
 \begin{definition}
 \label{def:zeta.function}
-Let $G$ be a finitely-generated group, and let $\ast\in\{\leq,\trianglelefteq,\wedge\}$, then we define the zeta-function $\zeta_{G}^{\ast}(s)$ to be the Dirichlet series $\sum_{n=1}^{\infty}a_{n}^{\ast}(G){n}^{-s}$. 
+Let $G$ be a finitely-generated group, and let\\ $\ast\in\{\leq,\trianglelefteq,\wedge\}$, then we define the zeta-function $\zeta_{G}^{\ast}(s)$ to be the Dirichlet series $\sum_{n=1}^{\infty}a_{n}^{\ast}(G){n}^{-s}$. 
 \end{definition}
 \begin{proposition}
 Let $G$ be a $\mathcal{T}$-group, i.e. finitely-generated, nilpotent and torsion-free group, and let $\ast\in\{\leq,\trianglelefteq,\wedge\}$. Then the zeta-functions for $G$ have the following properties:\par
-\textbf{Polynomial growth and convergence}. There exist constants $b$ and $C$ such that $a_{n}^{\leq}(G)\leq{C}{n}^{b}$ for all $n\in\mathbb{N}$. Hence $\zeta_{G}^{\ast}(s)$ converges on some right half plane $\mathrm{Re}\,s>\alpha$. The abscissae of convergence \[\alpha^{\ast}:=\inf\{\alpha : \zeta_{G}^{\ast}(s)\,\mathrm{converges}\,\mathrm{on}\,\mathrm{Re}\,s>\alpha\}\] are known to be rational numbers. See \cite[Theorem 1.1]{DuSautoyGrunewald} for $\{\leq,\trianglelefteq\}$ and \cite[Theorem 7.2]{HrushovskiMartinRideau} for all three types.
+\textbf{Polynomial growth and convergence}. There exist constants $b$ and $C$ such that $a_{n}^{\leq}(G)\leq{C}{n}^{b}$ for all $n\in\mathbb{N}$. Hence $\zeta_{G}^{\ast}(s)$ converges on some right half plane $\mathrm{Re}\,s>\alpha$. The abscissae of convergence \[\alpha^{\ast}:=\inf\{\alpha : \zeta_{G}^{\ast}(s)\,\mathrm{converges}\,\mathrm{on}\,\mathrm{Re}\,s>\alpha\}\] are known to be rational numbers. See \cite[Theorem 1.1]{DuSautoyGrunewald} for $\{\leq,\trianglelefteq\}$ and see \cite[Theorem 7.2]{HrushovskiMartinRideau} for all three types.
 
 \textbf{Euler decomposition}.
-We have that $\zeta_{G}^{\ast}(s)=\prod_{p}\zeta_{G,p}^{\ast}(s)$, where the product runs over all primes $p$ and $\zeta_{G,p}^{\ast}(s)=\sum_{k=0}^{\infty}a_{p^k}^{\ast}(G)p^{-ks}$ \cite[Proposition 4]{GrunewaldSegalSmith}.
+We have that $\zeta_{G}^{\ast}(s)=\prod_{p}\zeta_{G,p}^{\ast}(s)$, where the product runs over all primes $p$ and where $\zeta_{G,p}^{\ast}(s)=\sum_{k=0}^{\infty}a_{p^k}^{\ast}(G)p^{-ks}$\\ \cite[Proposition 4]{GrunewaldSegalSmith}.
 
 \textbf{Rationality}. For all primes $p$, there is a rational function $W_{p}^{\ast}\in\mathbb{Q}(X)$ such that $\zeta_{G,p}^{\ast}(s)=W_{p}^{\ast}(p^{-s})$ \cite[Theorem 1]{GrunewaldSegalSmith}.
 \end{proposition}
 \begin{definition}
-Let $\zeta_{L,p}^{\ast}$ be a \textbf{finitely uniform} zeta-function, i.e. there are rational functions $W_{1}^{\ast}(X,Y),\dots,W_{r}^{\ast}(X,Y)\in\mathbb{Q}(X,Y)$, such that for all $p$, there is some $1\leq{i}\leq{r}$ such that $\zeta_{G,p}^{\ast}(s)=W_{i}^{\ast}(p,p^{-s})$. We say $W_{i}^{\ast}$ satisfies a \textbf{functional equation} if $W_{i}^{\ast}(X^{-1},Y^{-1})=\pm{X}^{a}{Y}^{b}{W_{i}^{\ast}(X,Y)}$, where $a,b\in\mathbb{N}\cup\{0\}$. The factor $X^{a}Y^{b}$ is being called the \textbf{symmetry factor}. See a comprehensive discussion on functional equations for zeta-functions in \cite{Voll}.
+Let $\zeta_{L,p}^{\ast}$ be a \textbf{finitely uniform} zeta-function, i.e. there are rational functions $W_{1}^{\ast}(X,Y),\dots,W_{r}^{\ast}(X,Y)\in\mathbb{Q}(X,Y)$, such that for all $p$, there is some $1\leq{i}\leq{r}$ such that $\zeta_{G,p}^{\ast}(s)=W_{i}^{\ast}(p,p^{-s})$. We say $W_{i}^{\ast}$ satisfies a \textbf{functional equation} if $W_{i}^{\ast}(X^{-1},Y^{-1})=\pm{X}^{a}{Y}^{b}{W_{i}^{\ast}(X,Y)}$, where $a,b\in\mathbb{N}\cup\{0\}$. The factor $X^{a}Y^{b}$ is called the \textbf{symmetry factor}. See a comprehensive discussion on functional equations for zeta-functions in \cite{Voll}.
 \end{definition}
 Let $G$ be a $\mathcal{T}$-group, then $\zeta_{G,p}^{\leq}(s)$ satisfies a functional equation, for all but finitely many $p$, with the same symmetry factor. If $G$ is a $\mathcal{T}$-group of nilpotency class $2$, the same is true for $\zeta_{G,p}^{\trianglelefteq}(s)$.
 
@@ -149,7 +149,7 @@ We aim to compute an explicit formula for $\zeta_{L_{n,p}}^{\wedge}(s)$ for all 
 We make several remarks about these research goals.
 \begin{enumerate}
     \item 
-Automorphism groups of Lie algebras, and in particular $G_{n}(\mathbb{Q}_{p})$, have been studied before from a different point of view, and there are classical results showing that any automorphism may be expressed as a product of automorphisms of a specific type; see, for instance, the main result of Gibbs \cite{Gibbs}.  These statements are not explicit enough for our purposes; indeed, the submonoid $G_{n}^{+}(\mathbb{Q}_p)$ arises for us as the domain of integration of a $p$-adic integral.  In order to calculate this integral, it will be useful to decompose the automorphism group $G_{n}(\mathbb{Q}_p)$ into a repeated semi-direct product of groups with a simple structure.
+Automorphism groups of Lie algebras, and in particular $G_{n}(\mathbb{Q}_{p})$, have been studied before from a different point of view, and there are classical results showing that any automorphism may be expressed as a product of automorphisms of a specific type; see, for instance, the main result of Gibbs \cite{Gibbs}.  These statements are not explicit enough for our purposes; indeed, the submonoid $G_{n}^{+}(\mathbb{Q}_p)$ arises for us as the domain of integration of a $p$-adic integral. In order to calculate this integral, it will be useful to decompose the automorphism group $G_{n}(\mathbb{Q}_p)$ into a repeated semi-direct product of groups with a simple structure.
 \item 
 We will need to analyze the monoid $G_{n}^{+}(\mathbb{Q}_p)$ and its $G_{n}(\mathbb{Z}_p)$ right-cosets, as we have seen above. This will give us both the integrand, which is $|\det\varphi|_{p}^{s}$, and the domain of integration, which is the monoid $G_{n}^{+}(\mathbb{Q}_p)$. It is expected that $G_{n}^{+}(\mathbb{Q}_{p})$ will have a complicated structure, and expressing $\zeta_{L_{n,p}}^{\wedge}(s)$ explicitly in a way that allows us to verify functional equations will depend on finding a suitable class of combinatorially defined functions in terms of which $\zeta_{L_{n,p}}$ may be expressed; cf. \cite[Theorem 4.21]{CarnevaleScheinVoll}. However, we expect that the method of Berman's proof of uniformity in the case $n=5$, which relies on generalizations of results by Stanley on generating functions of polyhedral cell complexes, will generalize to all $n\geq{4}$.
 \item 
