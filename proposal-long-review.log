@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  12 NOV 2024 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 NOV 2024 03:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,31 +667,31 @@ Overfull \hbox (8.56427pt too wide) in paragraph at lines 75--76
 mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
-[3] [4] [5] [6] [7]
+[3] [4]
 
-LaTeX Warning: Citation `Segal' on page 8 undefined on input line 154.
+LaTeX Warning: Citation `Voll2' on page 5 undefined on input line 106.
 
-[8]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 191.
+[5] [6] [7] [8] [9]
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 193.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 191.
+(Font)              size <5> substituted on input line 193.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 191.
+(Font)              size <5> substituted on input line 193.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 191.
+(Font)              size <5> substituted on input line 193.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 191.
+(Font)              size <5> substituted on input line 193.
 
-[9] [10] [11] [12]
-Overfull \hbox (3.57661pt too wide) in paragraph at lines 288--289
+[10] [11] [12]
+Overfull \hbox (3.57661pt too wide) in paragraph at lines 290--291
 []\OT1/cmr/m/n/12 As we saw ear-lier, the cal-cu-la-tion of $\OML/cmm/m/it/12 ^
 ^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$ re-quires un-der-stan
 d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
@@ -699,33 +699,27 @@ d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (2.57233pt too wide) in paragraph at lines 300--300
+Overfull \hbox (2.57233pt too wide) in paragraph at lines 302--302
 []\OT1/cmr/m/n/12 By ap-ply-ing Fu-bini's the-o-rem for semidi-rect prod-ucts o
 f topo-log-i-cal groups
  []
 
 
-Overfull \hbox (10.83401pt too wide) detected at line 300
+Overfull \hbox (10.83401pt too wide) detected at line 302
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
 [] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
  d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 [13]
-Overfull \hbox (14.80833pt too wide) detected at line 307
+Overfull \hbox (14.80833pt too wide) detected at line 309
 \OMS/cmsy/m/n/12 N[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h; u[]; [] ; u[]\OT1/cmr/
 m/n/12 ) := \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[] \OMS/cmsy/m/n/12 2 N[] \OT1/
 cmr/m/n/12 : \OMS/cmsy/m/n/12 9[] [] [] \OML/cmm/m/it/12 u[] [] []h \OMS/cmsy/m
 /n/12 2 []g\OML/cmm/m/it/12 :
  []
 
-[14]
-Underfull \hbox (badness 1320) in paragraph at lines 361--363
-[]\OT1/cmr/m/n/12 D. Se-gal, On the au-to-mor-phism groups of cer-tain Lie al-g
-e-bras,
- []
-
-[15] (proposal-long-review.aux)
+[14] [15] [16] (proposal-long-review.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -743,10 +737,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15310 strings out of 474486
- 324569 string characters out of 5743755
- 1944528 words of memory out of 5000000
- 37302 multiletter control sequences out of 15000+600000
+ 15311 strings out of 474486
+ 324576 string characters out of 5743755
+ 1945528 words of memory out of 5000000
+ 37303 multiletter control sequences out of 15000+600000
  576841 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,14n,121p,1597b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -774,9 +768,9 @@ ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (15 pages, 311204 bytes).
+Output written on proposal-long-review.pdf (16 pages, 311903 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
