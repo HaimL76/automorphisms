@@ -115,7 +115,7 @@ We may transfer the ideas from the above discussion about groups to a linear con
 If $L$ is a $\mathbb{Z}$-Lie algebra, namely a free $\mathbb{Z}$-module of finite rank with a Lie bracket operation, then consider the number $a_{n}^{\wedge}(L)$ of subalgebras $M\leq L$ of index $n$ such that $M\otimes_{\mathbb{Z}}\mathbb{Z}_p\cong L\otimes_{\mathbb{Z}}\mathbb{Z}_p$ for all primes $p$. It is known that $a_{n}^{\wedge}(L)<\infty$ for all $n\in\mathbb{N}$. The Dirichlet series $\zeta_{L}^{\wedge}(s):=\sum_{n=1}^{\infty}{a_{n}^{\wedge}}(L)n^{-s}$ is called the \textbf{pro-isomorphic zeta-function} of $L$. By the Mal'cev correspondence, to every $\mathcal{T}$-group $G$ one may associate a Lie algebra $L=L(G)$ such that $\zeta_{G,p}^{\wedge}(s)=\zeta_{L,p}^{\wedge}(s)$ for all but finitely many primes $p$. If $G$ has nilpotency class $2$, one may obtain the equality for all primes \cite[Theorem 4.1]{GrunewaldSegalSmith}.\par
 Let $L$ be a $\mathbb{Z}$-Lie algebra. Choose a basis $(b_1,\dots,b_r)$, where $r=\mathrm{rank}\,L$. Let $\mathcal{L}_{p}=L\otimes_{\mathbb{Z}}\mathbb{Q}_p$, for any prime $p$. This is a $\mathbb{Q}_p$-Lie algebra, and our choice of basis allows us to identify the automorphism group $G(\mathbb{Q}_p)=Aut_{\mathbb{Q}_p}(\mathcal{L}_{p})$ with a subgroup of $GL_r(\mathbb{Q}_p)$. Note that $\mathcal{L}_{p}$ contains a $\mathbb{Z}_p$-lattice $L_{p}=L\otimes_{\mathbb{Z}}\mathbb{Z}_p$. If $\varphi\in G(\mathbb{Q}_p)$, then $\varphi(L_{p})=L_{p}$ if and only if $\varphi\in G(\mathbb{Z}_p)=G(\mathbb{Q}_p)\cap GL_r(\mathbb{Z}_p)$. Similarly, $\varphi(L_{p})\subseteq L_{p}$ if and only if $\varphi\in G^{+}(\mathbb{Q}_p):=G(\mathbb{Q}_p)\cap {M}_r(\mathbb{Z}_p)$, where ${M}_r(\mathbb{Z}_p)$ is the collection of $r\times r$ matrices with entries in $\mathbb{Z}_p$. Note that $G^{+}(\mathbb{Q}_p)$ is a monoid, not a group.\par
 We consider automorphisms as acting from the right, hence, we observe that there is a bijection between the set $G(\mathbb{Z}_p)\backslash G^{+}(\mathbb{Q}_p)$ of right cosets of $G(\mathbb{Z}_p)$ and the set $\{M\leq L_{p} : M\cong L_{p}\}$ of $\mathbb{Z}_{p}$-subalgebras of $L_{p}$ which are isomorphic to $L_{p}$ itself. This bijection takes $G(\mathbb{Z}_p)g$ to $M=\varphi(L_{p})$, for $\varphi\in G(\mathbb{Z}_p)g$.
-Observe that $[L_{p}:M]=|\det\varphi|_p^{-1}$, where $|\cdot|_p$ is the $p$-adic norm on $\mathbb{Q}_{p}$, and therefore,
+Observe that $[L_{p}:M]=|\det\varphi|_p^{-1}$, where $|\cdot|_p$ is the $p$-adic norm on $\mathbb{Q}_{p}$ (recall that $|p|_{p}=p^{-1}$), and therefore,
 \begin{equation}
 \label{eq:proisomorphic.zeta}
 \zeta_{L,p}^{\wedge}(s)=\underset{\overset{\scriptscriptstyle M\leq L_{p}}{\scriptscriptstyle M\cong L_{p}}}{\sum}[L_{p}:M]^{-s}=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^{+}(\mathbb{Q}_p)}{\sum}|\det\varphi|_p^s
@@ -126,7 +126,6 @@ which results in \begin{equation}
 \label{eq:p-adic.integral}
 \zeta_{L,p}^{\wedge}(s)=\displaystyle\int_{G^{+}(\mathbb{Q}_p)}{|\det{g}|_{p}^{s}}d\mu(g)
 \end{equation}
-See also \cite[Proposition 1.1]{DuSautoyLubotzky}.
 \section{Research Goals and Methodology}
 \subsection{The Lie algebras $L_{n}$}
 Let $R$ be a commutative ring, and let $L_{n}(R)$ be the set of strictly upper triangular $n\times{n}$ matrices with elements in $R$. The commutator Lie bracket $[A,B]=AB-BA$ gives $L_{n}(R)$ the structure of a nilpotent $R$-Lie algebra. Set $L_{n}=L_{n}(\mathbb{Z})$ and $\mathcal{L}_{n}=L_{n}(\mathbb{Q})$, while $L_{n,p}=L_{n}(\mathbb{Z}_{p})$ and $\mathcal{L}_{n,p}=L_{n}(\mathbb{Q}_{p})$.
@@ -141,7 +140,7 @@ The project consists of three major steps:
 \item
 Computing the automorphism group $G_{n}(\mathbb{Q}_{p})$ of the $\mathbb{Q}_p$-Lie algebras $\mathcal{L}_{n,p}$, for all $n\in\mathbb{N}$ and all primes $p$, and understanding the submonoid $G_{n}^{+}(\mathbb{Q}_{p})$.
 \item
-Showing that the pro-isomorphic zeta-functions $\zeta_{L_{n,p}}^{\wedge}(s)$ are uniform, or finitely uniform, for all $n\in\mathbb{N}$. We expect the method used by Berman in the case $n=5$ to generalize.
+Showing that the pro-isomorphic zeta-functions $\zeta_{L_{n,p}}^{\wedge}(s)$ are uniform for all $n\in\mathbb{N}$. We expect the method used by Berman in the case $n=5$ to generalize.
 \item
 Giving an explicit uniform formula for the zeta-functions $\zeta_{L_{n,p}}^{\wedge}(s)$.
 We aim to compute an explicit formula for $\zeta_{L_{n,p}}^{\wedge}(s)$ for all $n \geq 4$ and all primes $p$ in terms of a suitable combinatorial framework that is compatible with the complicated structure of $G_{n}^{+}(\mathbb{Q}_p)$. We will study whether $\zeta_{L_{n,p}}^{\wedge}(s)$ have functional equations and in particular whether they satisfy the conjecture of \cite[Conjecture 1.8]{BermanKlopschOnn}, which says that if $\zeta_{L,p}^{\wedge}(s)$ has functional equations and $L$ is graded, then the exponent $b$ in the symmetry factor must be the weight of a minimal grading of $L$. Note that $L_{n}$ is naturally graded by its lower central series, with minimal grading of weight $\sum_{i=1}^{n-1}{i(n-i)}$. In the event that we do not succeed in this task in general, we still expect to complete Berman's unfinished calculation in the case $n=5$. In this case, the combinatorics is just simple enough to handle directly, possibly with some assistance from a computer.
@@ -153,7 +152,7 @@ Automorphism groups of Lie algebras, and in particular $G_{n}(\mathbb{Q}_{p})$, 
 \item 
 We will need to analyze the monoid $G_{n}^{+}(\mathbb{Q}_p)$ and its $G_{n}(\mathbb{Z}_p)$ right-cosets, as we have seen above. This will give us both the integrand, which is $|\det\varphi|_{p}^{s}$, and the domain of integration, which is the monoid $G_{n}^{+}(\mathbb{Q}_p)$. It is expected that $G_{n}^{+}(\mathbb{Q}_{p})$ will have a complicated structure, and expressing $\zeta_{L_{n,p}}^{\wedge}(s)$ explicitly in a way that allows us to verify functional equations will depend on finding a suitable class of combinatorially defined functions in terms of which $\zeta_{L_{n,p}}$ may be expressed; cf. \cite[Theorem 4.21]{CarnevaleScheinVoll}. However, we expect that the method of Berman's proof of uniformity in the case $n=5$, which relies on generalizations of results by Stanley on generating functions of polyhedral cell complexes, will generalize to all $n\geq{4}$.
 \item 
-Let $K$ be a number field of degree $d=[K:\mathbb{Q}]$, and let $\mathcal{O}_K$ be its ring of integers. Let $L$ be a $\mathbb{Z}$-Lie algebra of rank $r$. We can naturally consider the base extension $L_{K}=L\otimes_{\mathbb{Z}}\mathcal{O}_{K}$ as a $\mathbb{Z}$-Lie algebra of rank $rd$, and by extension of scalars we can consider also $\mathcal{L}_{K,p}=(L\otimes_{\mathbb{Z}}\mathcal{O}_K)\otimes_{\mathbb{Z}}\mathbb{Q}_p$ as a $\mathbb{Q}_p$-Lie algebra of the same rank. If $\mathcal{L}_{p}$ has a certain property originally introduced by Segal \cite{Segal}, which we call \textbf{rigidity}, then Berman, Glazer and Schein have shown that a simple modification of the calculation of $\zeta_{L,p}^{\wedge}(s)$ gives $\zeta_{L_{K},p}^{\wedge}(s)$ for all $K$ without any substantial extra effort \cite[Proposition 3.14]{BermanGlazerSchein}. They give a criterion for rigidity in terms of the centralizers of elements of $L_{p}$ \cite[Theorem 3.9]{BermanGlazerSchein}. Note that the criterion does not necessarily apply for all $p$. We shall study whether the criterion applies to the $\mathbb{Q}_p$-Lie algebras $\mathcal{L}_{n,p}$ of our work. If so, then uniformity of $\zeta_{L,p}^{\wedge}(s)$ will imply finite uniformity of $\zeta_{L_{K},p}^{\wedge}(s)$. Indeed, for each of the finitely many decomposition types of a prime in $\mathcal{O}_K$, there is a rational function in two variables $W\in\mathbb{Q}(X,Y)$ such that $\zeta_{\mathcal{L}\otimes\mathcal{O}_K,p}^{\wedge}(s)=W(p,p^{-s})$ for all $p$ of that decomposition type.
+Let $K$ be a number field of degree $d=[K:\mathbb{Q}]$, and let $\mathcal{O}_K$ be its ring of integers. Let $L$ be a $\mathbb{Z}$-Lie algebra of rank $r$. We can naturally consider the base extension $L_{K}=L\otimes_{\mathbb{Z}}\mathcal{O}_{K}$ as a $\mathbb{Z}$-Lie algebra of rank $rd$, and by extension of scalars we can consider also $\mathcal{L}_{K,p}=(L\otimes_{\mathbb{Z}}\mathcal{O}_K)\otimes_{\mathbb{Z}}\mathbb{Q}_p$ as a $\mathbb{Q}_p$-Lie algebra of the same rank. If $\mathcal{L}_{p}$ has a certain property originally introduced by Segal \cite{Segal}, which we call rigidity, then Berman, Glazer and Schein have shown that a simple modification of the calculation of $\zeta_{L,p}^{\wedge}(s)$ gives $\zeta_{L_{K},p}^{\wedge}(s)$ for all $K$ without any substantial extra effort \cite[Proposition 3.14]{BermanGlazerSchein}. They give a criterion for rigidity in terms of the centralizers of elements of $L_{p}$ \cite[Theorem 3.9]{BermanGlazerSchein}. Note that the criterion does not necessarily apply for all $p$. We shall study whether the criterion applies to the $\mathbb{Q}_p$-Lie algebras $\mathcal{L}_{n,p}$ of our work. If so, then uniformity of $\zeta_{L,p}^{\wedge}(s)$ will imply finite uniformity of $\zeta_{L_{K},p}^{\wedge}(s)$. Indeed, for each of the finitely many decomposition types of a prime in $\mathcal{O}_K$, there would be a rational function in two variables $W\in\mathbb{Q}(X,Y)$ such that $\zeta_{\mathcal{L}\otimes\mathcal{O}_K,p}^{\wedge}(s)=W(p,p^{-s})$ for all $p$ of that decomposition type.
 \end{enumerate}
 \subsection{Representing matrices of automorphisms of $\mathcal{L}_{n,p}$}
 To sum up what is already known about automorphisms of $\mathcal{L}_{n,p}$, let $\varphi\in{G_{n}}(\mathbb{Q}_p)$. Let $M$ be the matrix of $\varphi$ with respect to the ordered basis $B$, where $M$ acts from the right on row vectors.  Thus:
@@ -199,7 +198,7 @@ We check, for any $\lambda_{1},\lambda_{2},\dots,\lambda_{n-1}\in\mathbb{Q}_{p}^
 represents an automorphism of $\mathcal{L}_{n,p}$. Thus every $g\in{G_{n}^{0}(\mathbb{Q}_{p})}$ has a unique decomposition $g=uh$, where $h$ is of the above form and $u$ has $1$'s on the diagonal. It is easy to see that $\det{h}=\prod_{i=1}^{n-1}\lambda_i^{i(n-i)}$ by induction on $n$. Since $\det{u}=1$, it follows that $|\det{g}|_{p}^{s}=|\det{h}|_{p}^{s}$.
 
 The collection $H(\mathbb{Q}_{p})$ of $h$'s as above is the reductive part of $G_{n}^{0}(\mathbb{Q}_{p})$. The collection $N(\mathbb{Q}_{p})$ of $u$'s as above is the unipotent radical of $G_{n}^{0}(\mathbb{Q}_{p})$. We aim to determine the structure of the unipotent radical $N(\mathbb{Q}_p)$ by decomposing it into an iterative semidirect product of abelian subgroups.
-For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\leq{N(\mathbb{Q}_{p})}$ the subgroup of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. In other words, $N_{r}$ is the kernel of the natural map $G_{n}^{0}(\mathbb{Q}_{p})\rightarrow{Aut_{\mathbb{Q}_{p}}(\sfrac{\mathcal{L}_{n,p}}{\gamma_{r}\mathcal{L}_{n,p}})}$. We can define $N_{n-1}$ explicitly as the following set of block matrices \[
+For all $2\leq{r}\leq{n-1}$ we denote by $N_{r}\leq{N(\mathbb{Q}_{p})}$ the subgroup of all automorphisms of $\mathcal{L}_{n,p}$, such that $M_{11}=I_{n}$ and $M_{12}=M_{13}=\cdots=M_{1,r-1}=0$. In other words, $N_{r}$ is the kernel of the natural map $G_{n}^{0}(\mathbb{Q}_{p})\rightarrow{Aut_{\mathbb{Q}_{p}}(\sfrac{\mathcal{L}_{n,p}}{\gamma_{r}\mathcal{L}_{n,p}})}$. We can describe $N_{n-1}$ explicitly as the following set of block matrices \[
 N_{n-1}=\left\{\begin{pmatrix}
 I_{n-1} & 0 & \cdots & 0 & M_{1,n-1}\\
 0 & I_{n-2} & \cdots & 0 & 0\\
@@ -208,7 +207,7 @@ I_{n-1} & 0 & \cdots & 0 & M_{1,n-1}\\
 0 & 0 & \cdots & 0 & 1\\
 \end{pmatrix}\right\}
 \]
-where $M_{1,n-1}$ is an arbitrary $(n-1)\times{1}$ matrix with entries in $\mathbb{Q}_{p}$ and of course the $0$ are zero matrices of suitable size. The map $\varphi\mapsto{M_{1,n-1}}$ for all $\varphi\in{N_{n-1}}$ gives an isomorphism $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$.
+where $M_{1,n-1}$ is an arbitrary $(n-1)\times{1}$ matrix with entries in $\mathbb{Q}_{p}$ and the $0$ blocks are zero matrices of suitable size. The map $\varphi\mapsto{M_{1,n-1}}$ for all $\varphi\in{N_{n-1}}$ gives an isomorphism $N_{n-1}\cong\mathbb{Q}_{p}^{n-1}$.
 \begin{proposition}
 \label{block.1r.structure}
 Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
@@ -218,7 +217,7 @@ Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
 \end{enumerate}
 \end{proposition}
 \begin{proof}
-From the relation $[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=0$ where $l>k+1$, we deduce that $a_{ij}\neq{0}$ only if either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(r+1,1),(r+2,1),(n-r-2,n-r),(n-r-1,n-r)\}$. If $r<n-2$ then it follows from the conditions
+From the relation $[\varphi(e_{k,k+1}),\varphi(e_{l,l+1})]=0$ where $l>k+1$, we deduce that $a_{ij}\neq{0}$ only if either $i=j$ or $i=j+r-1$ or\\ $(i,j)\in\{(r+1,1),(r+2,1),(n-r-2,n-r),(n-r-1,n-r)\}$. If $r<n-2$ then it follows from the conditions
 \begin{align*}
 [\varphi(e_{n-r-2,n-r-1}),\varphi(e_{n-r-2,n-r})]=0\\
 [\varphi(e_{n-r-1,n-r}),\varphi(e_{n-r-2,n-r})]=0\\
@@ -229,7 +228,7 @@ that the four exceptional cases cannot occur. Similar considerations eliminate t
 \end{proof}
 \begin{proposition}
 \label{phi.r.k}
-Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$.
+Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$. We extend our notation of basis elements to include $e_{01}=e_{n,n+1}=0$.
 \begin{enumerate}
 \item There is an automorphism $\varphi_{r,k}(a)\in{G_{n}^{0}(\mathbb{Q}_{p})}$ determined by \[
     \varphi_{r,k}(a)(e_{i,i+1})=\begin{cases}
@@ -300,9 +299,10 @@ where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varph
 By contrast, describing the structure of the monoid $G_{n}^{+}(\mathbb{Q}_p)$ is expected to be a substantial challenge.
 
 By applying Fubini's theorem for semidirect products of topological groups \cite[Proposition 28]{Nachbin}, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
-where $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
+where \[H^+(\mathbb{Q}_p):=\{\mathrm{diag}(\lambda_{1},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1}) : \lambda_{i}\in\mathbb{Z}_{p}\setminus\{0\}\}.\]
+That is, $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
 
-Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$ where $m=\binom{n}{2}$ be an enumeration of the subgroups
+Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$, where $m=\binom{n}{2}$, be an enumeration of the subgroups
 \[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}\]
 Every $\varphi\in{G_{n}^{0}(\mathbb{Q}_{p})}$ can be written uniquely as $\varphi=u_{m}\cdots{u_{1}h}$, where $u_{i}\in{\mathcal{N}_{i}}$. Thus, by Fubini \[
 \zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{H^{+}}\displaystyle\int_{\mathcal{N}_{1}^{+}(h)}\displaystyle\int_{\mathcal{N}_{2}^{+}(h,u_{1})}\cdots\displaystyle\int_{\mathcal{N}_{m}^{+}(h,u_{1},\dots,u_{m-1})}|\det{h}|_{p}^{s}d\mu_{H}d\mu_{\mathcal{N}_{1}}\cdots{d\mu_{\mathcal{N}_{m}}}\]
