@@ -299,8 +299,8 @@ where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varph
 By contrast, describing the structure of the monoid $G_{n}^{+}(\mathbb{Q}_p)$ is expected to be a substantial challenge.
 
 By applying Fubini's theorem for semidirect products of topological groups \cite[Proposition 28]{Nachbin}, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
-where \[H^+(\mathbb{Q}_p):=\{\mathrm{diag}(\lambda_{1},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1}) : \lambda_{i}\in\mathbb{Z}_{p}\setminus\{0\}\}.\]
-That is, $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
+where \[H^+(\mathbb{Q}_p):=\{\mathrm{diag}(\lambda_{1},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1}) : \lambda_{i}\in\mathbb{Z}_{p}\setminus\{0\}\},\]
+that is, $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}(\mathbb{Q}_{p})$ at the price of replacing a single integral by multiple integrals.
 
 Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$, where $m=\binom{n}{2}$, be an enumeration of the subgroups
 \[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}\]
@@ -309,69 +309,61 @@ Every $\varphi\in{G_{n}^{0}(\mathbb{Q}_{p})}$ can be written uniquely as $\varph
 where each $\mu_{\mathcal{N}_{i}}$ is Haar measure on $\mathcal{N}_{i}(\mathbb{Q}_{p})$ normalized so that $\mu_{\mathcal{N}_{i}}(\mathcal{N}_{i}(\mathbb{Z}_{p}))=1$, and \[\mathcal{N}_{i}^{+}(h,u_{1},\dots,u_{i-1}):=\{u_{i}\in\mathcal{N}_{i} : \exists{u_{i+1},\dots,u_{m}}\,\mathrm{such}\,\mathrm{that}\,u_{m}\cdots{u_{1}}h\in{G_{n}^{+}(\mathbb{Q}_{p})}\}.\]
 \begin{thebibliography}{2}
 \bibitem{BermanThesis} M. N. Berman,
-Proisomorphic zeta functions of groups
-, Ph.D. thesis, University of Oxford,
+Proisomorphic zeta functions of groups, Ph.D. thesis, University of Oxford,
 2005.
 \bibitem{Berman}
 M. N. Berman,
 Uniformity and functional equations for local zeta functions of
-K
--split
-algebraic groups
-, Amer. J. Math.
+K-split
+algebraic groups, Amer. J. Math.
 133
-(2011), no. 1, 1–27.
-\bibitem{BermanGlazerSchein} M. N. Berman, I. Glazer and M. M. Schein, Pro-isomorphic zeta functions of nilpotent groups and lie rings under base extension, Trans. Amer. Math. Soc. 375 (2022), 1051–1100.
+(2011), 1–27.
+\bibitem{BermanGlazerSchein} M. N. Berman, I. Glazer and M. M. Schein, Pro-isomorphic zeta functions of nilpotent groups and Lie rings under base extension, Trans. Amer. Math. Soc. 375 (2022), 1051–1100.
 \bibitem{BermanKlopschOnn} M. N. Berman, B. Klopsch and U. Onn,
-On pro-isomorphic zeta functions of $D^{\ast}$-groups of even Hirsch length, arXiv/1511.06360v3.
+On pro-isomorphic zeta functions of $D^{\ast}$-groups of even Hirsch length, arXiv/1511.06360v5. To appear in Israel J. Math.
 \bibitem{CarnevaleScheinVoll}
  A. Carnevale, M. M. Schein and C. Voll, Generalized Igusa functions and
  ideal growth in nilpotent Lie rings, Algebra Number Theory 18 (2024), 537-582.
 \bibitem{DuSautoyGrunewald}
 M. P. F. du Sautoy and F. J. Grunewald,
 Analytic properties of zeta functions and subgroup
-growth
-, Ann. of Math. (2)
+growth, Ann. of Math. (2)
 152
-(2000), no. 3, 793–833.
+(2000), 793–833.
 \bibitem{DuSautoyLubotzky} M. P. F. du Sautoy and A. Lubotzky, Functional equations and uniformity for
-local zeta functions of nilpotent groups, Amer. J. Math. 118 (1996), no. 1, 39–
-90.
+local zeta functions of nilpotent groups, Amer. J. Math. 118 (1996), 39–90.
 \bibitem{Gibbs} J. A. Gibbs, Automorphisms of certain unipotent groups, J. Algebra 14 (1970), 203-228.
 \bibitem{GrunewaldSegalSmith} F. J. Grunewald, D. Segal and G. C. Smith, Subgroups of finite index in nilpotent groups,
-Invent. Math. 93 (1988), no. 1, 185–223.
+Invent. Math. 93 (1988), 185–223.
 \bibitem{HrushovskiMartinRideau}
  E. Hrushovski, B. Martin and S. Rideau,
 Definable equivalence relations and
-zeta functions of groups
-, J. Eur. Math. Soc. (JEMS)
+zeta functions of groups, J. Eur. Math. Soc. (JEMS)
 20
-(2018), no. 10, 2467–2537. 
+(2018), 2467–2537. 
 \bibitem{LubotzkySegal}
 A. Lubotzky and D. Segal, Subgroup growth, Progress in Mathematics, vol. 212,
- Birkh¨auser Verlag, Basel, 2003.
+ Birkhäuser Verlag, Basel, 2003.
 \bibitem{LubotzkyMannSegal} A. Lubotzky, A. Mann and D. Segal,
 Finitely generated groups of polynomial
-subgroup growth
-, Israel J. Math.
+subgroup growth, Israel J. Math.
 82
-(1993), no. 1-3, 363–371.
+(1993), 363–371.
 \bibitem{MontgomeryVaughan} H. L. Montgomery and R. C. Vaughan, Multiplicative Number Theory I. Classical Theory, Cambridge Studies in Advanced Mathematics 97.
 \bibitem{Nachbin}
 L. Nachbin, The Haar Integral. D. Van Nostrand, 1965.
 \bibitem{Segal}
  D. Segal, On the automorphism groups of certain Lie algebras, Math. Proc. Cambridge
- Philos. Soc. 106 (1989), no. 1, 67–76.
+ Philos. Soc. 106 (1989), 67–76.
 \bibitem{Voll}
  C. Voll,
 Functional equations for zeta
-functions of groups and rings
-, Ann. of Math.
+functions of groups and rings, Ann. of Math.
 (2)
 172
-(2010), no. 2, 1181–1218.
+(2010), 1181–1218.
 \bibitem{Voll2}
 C. Voll, Local functional equations for submodule zeta functions associated to nilpotent
-algebras of endomorphisms, Int. Math. Res. Not. IMRN 7 (2019), 2137–2176.
+algebras of endomorphisms, Int. Math. Res. Not. IMRN (2019), 2137–2176.
 \end{thebibliography}
 \end{document}
