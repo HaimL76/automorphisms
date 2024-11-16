@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  15 NOV 2024 13:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  17 NOV 2024 01:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,6 +558,7 @@ Now handling font encoding LYG ...
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 )
 \c@theorem=\count297
+\c@theorem2=\count298
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
@@ -575,54 +576,54 @@ Package: arydshln 2019/02/21 v1.76
 \adl@depth=\dimen273
 \adl@depthsave=\dimen274
 \adl@finaldepth=\dimen275
-\adl@columns=\count298
-\adl@ncol=\count299
-\adl@currentcolumn=\count300
-\adl@currentcolumnsave=\count301
-\adl@totalheight=\count302
-\adl@totalheightsave=\count303
-\adl@dash=\count304
-\adl@gap=\count305
-\adl@cla=\count306
-\adl@clb=\count307
+\adl@columns=\count299
+\adl@ncol=\count300
+\adl@currentcolumn=\count301
+\adl@currentcolumnsave=\count302
+\adl@totalheight=\count303
+\adl@totalheightsave=\count304
+\adl@dash=\count305
+\adl@gap=\count306
+\adl@cla=\count307
+\adl@clb=\count308
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
 )
 (proposal-long-review.aux)
 \openout1 = `proposal-long-review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
+\scratchcounter=\count309
 \scratchdimen=\dimen277
 \scratchbox=\box71
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\nofMPsegments=\count310
+\nofMParguments=\count311
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count311
+\MPscratchCnt=\count312
 \MPscratchDim=\dimen278
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
 \everyMPtoPDFconversion=\toks46
 )
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -635,18 +636,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
  (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 61
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70
 .
 
 (C:\Users\isila\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -660,7 +661,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout4 = `proposal-long-review.toc'.
 
  [2]
-Overfull \hbox (8.56427pt too wide) in paragraph at lines 75--76
+Overfull \hbox (8.56427pt too wide) in paragraph at lines 84--85
 \OT1/cmr/m/n/12 the num-ber of sub-groups of $\OML/cmm/m/it/12 G$ \OT1/cmr/m/n/
 12 of in-dex $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 and con-sider the se-quence $
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 a[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G\OT1/c
@@ -668,26 +669,26 @@ mr/m/n/12 )\OMS/cmsy/m/n/12 g[]$\OT1/cmr/m/n/12 .
  []
 
 [3] [4] [5] [6] [7] [8] [9]
-LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 192.
+LaTeX Font Info:    Calculating math sizes for size <8.4> on input line 202.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 192.
+(Font)              size <5> substituted on input line 202.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.2> not available
-(Font)              size <5> substituted on input line 192.
+(Font)              size <5> substituted on input line 202.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 192.
+(Font)              size <5> substituted on input line 202.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.2> not available
-(Font)              size <5> substituted on input line 192.
+(Font)              size <5> substituted on input line 202.
 
 [10] [11] [12]
-Overfull \hbox (3.57661pt too wide) in paragraph at lines 289--290
+Overfull \hbox (3.57661pt too wide) in paragraph at lines 299--300
 []\OT1/cmr/m/n/12 As we saw ear-lier, the cal-cu-la-tion of $\OML/cmm/m/it/12 ^
 ^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 )$ re-quires un-der-stan
 d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
@@ -695,20 +696,20 @@ d-ing $\OML/cmm/m/it/12 G[]\OT1/cmr/m/n/12 (\U/msb/m/n/12 Z[]\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (2.57233pt too wide) in paragraph at lines 301--301
+Overfull \hbox (2.57233pt too wide) in paragraph at lines 311--311
 []\OT1/cmr/m/n/12 By ap-ply-ing Fu-bini's the-o-rem for semidi-rect prod-ucts o
 f topo-log-i-cal groups
  []
 
 
-Overfull \hbox (10.83401pt too wide) detected at line 301
+Overfull \hbox (10.83401pt too wide) detected at line 311
 \OML/cmm/m/it/12 ^^P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = []
 [] \OMS/cmsy/m/n/12 j [] \OML/cmm/m/it/12 '\OMS/cmsy/m/n/12 j[]\OML/cmm/m/it/12
  d^^V[] \OT1/cmr/m/n/12 = [][] [] \OML/cmm/m/it/12 d^^V[]
  []
 
 [13]
-Overfull \hbox (14.80833pt too wide) detected at line 309
+Overfull \hbox (14.80833pt too wide) detected at line 319
 \OMS/cmsy/m/n/12 N[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 h; u[]; [] ; u[]\OT1/cmr/
 m/n/12 ) := \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 u[] \OMS/cmsy/m/n/12 2 N[] \OT1/
 cmr/m/n/12 : \OMS/cmsy/m/n/12 9[] [] [] \OML/cmm/m/it/12 u[] [] []h \OMS/cmsy/m
@@ -725,15 +726,18 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15313 strings out of 474486
- 324596 string characters out of 5743755
- 1943528 words of memory out of 5000000
- 37305 multiletter control sequences out of 15000+600000
+ 15342 strings out of 474486
+ 324961 string characters out of 5743755
+ 1945528 words of memory out of 5000000
+ 37334 multiletter control sequences out of 15000+600000
  576841 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,14n,121p,1587b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,14n,121p,1617b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -758,7 +762,7 @@ ers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb>
-Output written on proposal-long-review.pdf (16 pages, 312191 bytes).
+Output written on proposal-long-review.pdf (16 pages, 312143 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

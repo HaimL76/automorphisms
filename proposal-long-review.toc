@@ -6,4 +6,4 @@
 \contentsline {subsection}{\numberline {2.1}The Lie algebras $L_{n}$}{7}{}%
 \contentsline {subsection}{\numberline {2.2}Research goals}{7}{}%
 \contentsline {subsection}{\numberline {2.3}Representing matrices of automorphisms of $\mathcal {L}_{n,p}$}{9}{}%
-\contentsline {subsection}{\numberline {2.4}Preliminary results}{10}{}%
+\contentsline {section}{\numberline {3}Preliminary results}{10}{}%
