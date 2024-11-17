@@ -127,8 +127,8 @@ We consider automorphisms as acting from the right, hence, we observe that there
 Observe that $[L_{p}:M]=|\det\varphi|_p^{-1}$, where $|\cdot|_p$ is the $p$-adic norm on $\mathbb{Q}_{p}$ (recall that $|p|_{p}=p^{-1}$), and therefore,
 \begin{equation}
 \label{eq:proisomorphic.zeta}
-\zeta_{L,p}^{\wedge}(s)=\underset{\overset{\scriptscriptstyle M\leq L_{p}}{\scriptscriptstyle M\cong L_{p}}}{\sum}[L_{p}:M]^{-s}=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^{+}(\mathbb{Q}_p)}{\sum}|\det\varphi|_p^s
-\end{equation}.
+\zeta_{L,p}^{\wedge}(s)=\underset{\overset{\scriptscriptstyle M\leq L_{p}}{\scriptscriptstyle M\cong L_{p}}}{\sum}[L_{p}:M]^{-s}=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash G^{+}(\mathbb{Q}_p)}{\sum}|\det\varphi|_p^s.
+\end{equation}
 \subsection{$p$-adic Integration}
 We fix a specific right Haar measure $\mu$ on the locally compact group $G(\mathbb{Q}_{p})$ by normalizing $\mu(G(\mathbb{Z}_p))=1$. Now we are able to express $\zeta_{L,p}^{\wedge}(s)$ as a $p$-adic integral, as first done by Grunewald, Segal and Smith \cite[Proposition 4.2]{GrunewaldSegalSmith}. Since $|\det{g}|_{p}^{s}$ is constant on right cosets of $G(\mathbb{Z}_{p})$, we have \[|\det\varphi|_{p}^{s}=\displaystyle\int_{G(\mathbb{Z}_p)\varphi}{|\det{g}|_{p}^{s}}d\mu(g).\]
 By \eqref{eq:proisomorphic.zeta}, we have \[\zeta_{L,p}^{\wedge}(s)=\underset{\scriptscriptstyle G(\mathbb{Z}_p)\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}|\det\varphi|_{p}^{s}=\underset{\scriptscriptstyle{G(\mathbb{Z}_p)}\varphi\in G(\mathbb{Z}_p)\backslash{G^{+}(\mathbb{Q}_p)}}{\sum}\displaystyle{\int_{G(\mathbb{Z}_p)\varphi}}{|\det{g}|_{p}^{s}}d\mu(g),\]
@@ -275,10 +275,10 @@ The following proposition follows from a simple computation.
 Consider $\varphi\in{N_{r}}$.
 \begin{enumerate}
     \item 
-If $r<n-2$, denote by $\psi$ the automorphism \[\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r+1,1})\]
+If $r<n-2$, denote by $\psi$ the automorphism \[\psi:=\varphi\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r+1,1}).\]
 Then $\psi\in{N_{r+1}}$.
     \item 
-If $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0})\]
+If $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0}).\]
 Then $\psi_{n-2}\in{N_{n-1}}$.
 \end{enumerate}
 \end{proposition2}
@@ -287,9 +287,9 @@ Then $\psi_{n-2}\in{N_{n-1}}$.
 We have the following decompositions:
 \begin{enumerate}
     \item 
-For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,0}\rtimes(\cdots(N_{r,n-r-1}\rtimes{N_{r,n-r}})\cdots))\]
+For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,0}\rtimes(\cdots(N_{r,n-r-1}\rtimes{N_{r,n-r}})\cdots)).\]
 \item For $r=n-2$, we have 
-\[N_{n-2}=N_{n-1}\rtimes({N_{n-2,0}}\rtimes(N_{n-2,1}\rtimes(N_{n-2,2}\rtimes(N''_{n-2}\rtimes{N'_{n-2}}))))\]
+\[N_{n-2}=N_{n-1}\rtimes({N_{n-2,0}}\rtimes(N_{n-2,1}\rtimes(N_{n-2,2}\rtimes(N''_{n-2}\rtimes{N'_{n-2}})))).\]
 \end{enumerate}
 \end{corollary2}
 This is immediate from Proposition \ref{prop:psi.automorphism}.
@@ -299,23 +299,23 @@ Corollary \ref{cor:Nr.decomposition} provides a recursive decomposition of the u
 As we saw earlier, the calculation of $\zeta_{L_{n,p}}^{\wedge}(s)$ requires understanding $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. As $G_{n}(\mathbb{Z}_{p})$ is a group, its structure is easily deduced from the above.
 \begin{proposition2}
 \label{prop:G.n.Zp.decomposition}
-For all $n\geq{4}$ the group $G_{n}^{0}(\mathbb{Z}_{p})$ has the decomposition $G_{n}^{0}(\mathbb{Z}_{p})=N(\mathbb{Z}_{p})\rtimes{H(\mathbb{Z}_{p})}$, where \[N(\mathbb{Z}_{p}):=M_{\binom{n}{2}}(\mathbb{Z}_{p})\cap{N(\mathbb{Q}_{p})}\]
-\[H(\mathbb{Z}_{p}):=\{\mathrm{diag}(\lambda_{1},\lambda_{2},\dots,) : \lambda_1,\dots,\lambda_{n-1}\in\mathbb{Z}_{p}^{\ast}\}\]
+For all $n\geq{4}$ the group $G_{n}^{0}(\mathbb{Z}_{p})$ has the decomposition $G_{n}^{0}(\mathbb{Z}_{p})=N(\mathbb{Z}_{p})\rtimes{H(\mathbb{Z}_{p})}$, where \[N(\mathbb{Z}_{p}):=M_{\binom{n}{2}}(\mathbb{Z}_{p})\cap{N(\mathbb{Q}_{p})},\]
+\[H(\mathbb{Z}_{p}):=\{\mathrm{diag}(\lambda_{1},\lambda_{2},\dots,) : \lambda_1,\dots,\lambda_{n-1}\in\mathbb{Z}_{p}^{\ast}\}.\]
 Moreover, $N(\mathbb{Z}_{p})$ itself has the decomposition: \[N(\mathbb{Z}_{p})=\Tilde{N}_{2}(\mathbb{Z}_{p})=
 \Tilde{N}_{n-1}\rtimes({\Tilde{N}_{n-2,0}}\rtimes(\Tilde{N}_{n-2,1}\rtimes(\Tilde{N}_{n-2,2}\rtimes(\Tilde{N}''_{n-2}\rtimes{\Tilde{N}'_{n-2}}))))\rtimes\cdots\]\[\cdots\rtimes{(\Tilde{N}_{2,0}\rtimes(\cdots(\Tilde{N}_{2,n-3}\rtimes{\Tilde{N}_{2,n-2}})\cdots))}
-\]
-where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varphi_{r,k}(a) : a\in\mathbb{Z}_{p}\}$
+,\]
+where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varphi_{r,k}(a) : a\in\mathbb{Z}_{p}\}$.
 \end{proposition2}
 By contrast, describing the structure of the monoid $G_{n}^{+}(\mathbb{Q}_p)$ is expected to be a substantial challenge.
 
-By applying Fubini's theorem for semidirect products of topological groups \cite[Proposition 28]{Nachbin}, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)}\]
+By applying Fubini's theorem for semidirect products of topological groups \cite[Proposition 28]{Nachbin}, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)},\]
 where \[H^+(\mathbb{Q}_p):=\{\mathrm{diag}(\lambda_{1},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1}) : \lambda_{i}\in\mathbb{Z}_{p}\setminus\{0\}\},\]
 that is, $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}$ at the price of replacing a single integral by multiple integrals.
 
 Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$, where $m=\binom{n}{2}$, be an enumeration of the subgroups
-\[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}\]
+\[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}.\]
 Every $\varphi\in{G_{n}^{0}(\mathbb{Q}_{p})}$ can be written uniquely as $\varphi=u_{m}\cdots{u_{1}h}$, where $u_{i}\in{\mathcal{N}_{i}}$. Thus, by Fubini \[
-\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{H^{+}}\displaystyle\int_{\mathcal{N}_{1}^{+}(h)}\displaystyle\int_{\mathcal{N}_{2}^{+}(h,u_{1})}\cdots\displaystyle\int_{\mathcal{N}_{m}^{+}(h,u_{1},\dots,u_{m-1})}|\det{h}|_{p}^{s}d\mu_{H}d\mu_{\mathcal{N}_{1}}\cdots{d\mu_{\mathcal{N}_{m}}}\]
+\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{H^{+}}\displaystyle\int_{\mathcal{N}_{1}^{+}(h)}\displaystyle\int_{\mathcal{N}_{2}^{+}(h,u_{1})}\cdots\displaystyle\int_{\mathcal{N}_{m}^{+}(h,u_{1},\dots,u_{m-1})}|\det{h}|_{p}^{s}d\mu_{H}d\mu_{\mathcal{N}_{1}}\cdots{d\mu_{\mathcal{N}_{m}}},\]
 where each $\mu_{\mathcal{N}_{i}}$ is Haar measure on $\mathcal{N}_{i}(\mathbb{Q}_{p})$ normalized so that\\ $\mu_{\mathcal{N}_{i}}(\mathcal{N}_{i}(\mathbb{Z}_{p}))=1$, and \[\mathcal{N}_{i}^{+}(h,u_{1},\dots,u_{i-1}):=\{u_{i}\in\mathcal{N}_{i} : \exists{u_{i+1},\dots,u_{m}}\,\mathrm{such}\,\mathrm{that}\,u_{m}\cdots{u_{1}}h\in{G_{n}^{+}(\mathbb{Q}_{p})}\}.\]
 \begin{thebibliography}{2}
 \bibitem{BermanThesis} M. N. Berman,
