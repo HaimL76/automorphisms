@@ -1,0 +1,192 @@
+\documentclass{article}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\usepackage{amsfonts, amssymb}
+\usepackage{mathrsfs, mathdots} 
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{setspace}
+\usepackage{xfrac}
+\usepackage{yfonts}
+\setcounter{MaxMatrixCols}{11}
+
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notations}[theorem]{Notations}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+\newtheorem{theorem2}{Theorem}[section]
+\newtheorem{proposition2}[theorem2]{Proposition}
+\newtheorem{corollary2}[theorem2]{Corollary}
+\newtheorem{lemma2}[theorem2]{Lemma}
+\newtheorem{notations2}[theorem2]{Notations}
+\newtheorem{definition2}[theorem2]{Definition}
+\newtheorem{example2}[theorem2]{Example}
+\newtheorem{remark2}[theorem2]{Remark}
+
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }
+ {
+  (
+  \alec_cycle:nn { #1 } { #2 }
+  )
+ }
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+  \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 }
+  \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+\usepackage{arydshln}
+\setcounter{tocdepth}{2}
+\setlength{\dashlinedash}{1.2pt}
+\setlength{\dashlinegap}{1.5pt}
+\setlength{\arrayrulewidth}{0.2pt}
+\usepackage{graphicx} % Required for inserting images
+
+\title{homework}
+\author{haiml76 }
+\date{November 2024}
+
+\begin{document}
+
+\maketitle
+\begin{proposition2}
+\label{block.1r.structure}
+Let $\varphi_{r}\in{N(\mathbb{Q}_{p})}$ be a unipotent automorphism of $\mathcal{L}_{n,p}$ such that the matrix upper blocks $M_{1s}$, for all $s<r$, are zero matrices. Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
+\begin{enumerate}
+    \item Let $2\leq{r}<{n-2}$. If $a_{ij}\neq{0}$, then either $i=j$ or $i=j+r-1$, and we have the relation $a_{i+r,i+1}=-a_{ii}$.
+    \item Let $r=n-2$. If $a_{ij}\neq{0}$, then either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(1,2),(n-1,1)\}$, with the same relation as above.
+\end{enumerate}
+\end{proposition2}
+\begin{proof}
+From the relation $[\varphi_{r}(e_{k,k+1}),\varphi_{r}(e_{l,l+1})]=0$ where $l>k+1$, we deduce that $a_{ij}\neq{0}$ only if either $i=j$ or $i=j+r-1$ or\\ $(i,j)\in\{(r+1,1),(r+2,1),(n-r-2,n-r),(n-r-1,n-r)\}$. If $r<n-2$ then it follows from the conditions
+\begin{align*}
+[\varphi_{r}(e_{n-r-2,n-r-1}),\varphi_{r}(e_{n-r-2,n-r})]=0\\
+[\varphi_{r}(e_{n-r-1,n-r}),\varphi_{r}(e_{n-r-2,n-r})]=0\\
+[\varphi_{r}(e_{r+1,r+2}),\varphi_{r}(e_{r+1,r+3})]=0\\
+[\varphi_{r}(e_{r+2,r+3}),\varphi_{r}(e_{r+1,r+3})]=0\\
+\end{align*}
+that the four exceptional cases cannot occur. When $r=n-2$, we have that $(n-r-2,n-r)=(0,2)$ and $(r+2,1)=(n,1)$ so these cases do not exist, but so are the four conditions above, which means that the two remaining cases, $(r+1,1)=(n-1,1)$ and $(n-r-1,n-r)=(1,2)$, do not necessarily vanish.
+\end{proof}
+\begin{proposition2}
+Denote by $N_{r}:=\{\varphi_{r} : 2\leq{r}\leq{n-2}\}\subset{N(\mathbb{Q}_{p})}$ the set of all automorphisms of the form described in \ref{block.1r.structure}, then $N_{r}\leq{N(\mathbb{Q}_{p})}$. Note that $N_2=N(\mathbb{Q}_{p})$.
+\end{proposition2}
+\begin{proposition2}
+\label{phi.r.k}
+Let $2\leq{r}\leq{n-2}$, and let $0\leq{k}\leq{n-r}$, and let $a\in\mathbb{Q}_{p}$. We extend our notation of basis elements to include $e_{01}=e_{n,n+1}=0$.
+\begin{enumerate}
+\item There is an automorphism $\varphi_{r,k}(a)\in{N(\mathbb{Q}_{p})}$ determined by \[
+    \varphi_{r,k}(a)(e_{i,i+1}):=\begin{cases}
+        e_{k,k+1}+a{e_{k,k+r}} & : i=k\\
+        e_{k+r,k+r+1}-a{e_{k+1,k+r+1}} & : i=k+r\\
+        e_{i,i+1} & : i\notin\{k,k+r\}
+    \end{cases}
+\]
+\item Suppose that $r=n-2$, let $(k,l)\in\{(1,2),(n-1,1)\}$, and let $a\in\mathbb{Q}_{p}$. There is an automorphism $\varphi_{n-2,k,l}(a)\in{G_{n}^{0}(\mathbb{Q}_{p})}$ determined by \[
+    \varphi_{n-2,k,l}(a)(e_{i,i+1}):=\begin{cases}
+        e_{k,k+1}+a{e_{l,l+r}} & : i=k\\
+        e_{i,i+1} & : i\neq{k}
+    \end{cases}
+\]
+    We denote $\varphi'_{n-2}(a):=\varphi_{n-2,1,2}(a)$ and $\varphi''_{n-2}(a):=\varphi_{n-2,n-1,1}(a)$.
+\end{enumerate}
+\end{proposition2}
+\begin{proof}
+We need to verify that for all $1\leq{i<j}\leq{n}$ and $1\leq{l<m}\leq{n}$ we have the following relations \[
+    [\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]=\begin{cases}
+    \varphi_{r,k}(a)(e_{im}) & : j=l\\
+        -\varphi_{r,k}(a)(e_{lj}) & : i=m\\
+        0 & : \mathrm{otherwise}
+    \end{cases}
+\]
+We can verify explicitly for $n=4$ that these relations are true. Alternatively, Berman did this in \cite[\S{3.3.7}]{BermanThesis}. For $n>4$, let $m=n$, then \[[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{lm})]=[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{ln})].\]
+If $i>1$, then we consider the inclusion $\iota:\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, mapping each $e_{i,i+1}\in\mathcal{L}_{n-1,p}$ to $e_{i+1,i+2}\in\mathcal{L}_{n,p}$ for all $1\leq{i}\leq{n-2}$. By the assumption on $\mathcal{L}_{n-1,p}$, we have that \[
+(\iota\circ\iota^{-1})([\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{ln})])=\iota([\iota^{-1}(\varphi_{r,k}(a)(e_{ij})),\iota^{-1}(\varphi_{r,k}(a)(e_{ln}))])=\]\[=\iota([\varphi_{r,k}(a)(e_{i-1,j-1}),\varphi_{r,k}(a)(e_{l-1,n-1})])=\]\[=\begin{cases}
+\iota(\varphi_{r,k}(a)(e_{i-1,n-1}))=\varphi_{r,k}(a)(e_{in}) & : j=l\\
+        0 & : j\neq{l}
+    \end{cases}
+\]
+If $i=1$, then \[[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{ln})]=[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{ln})]=\]\[=[\varphi_{r,k}(a)(e_{1j}),[\varphi_{r,k}(a)(e_{l,n-1}),\varphi_{r,k}(a)(e_{n-1,n})]].\]
+By the Jacobi identity, we have that \[[\varphi_{r,k}(a)(e_{1j}),[\varphi_{r,k}(a)(e_{l,n-1}),\varphi_{r,k}(a)(e_{n-1,n})]]=\]\[=-[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{l,n-1})]].\]
+Now we use the inclusion $\iota':\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, where $\iota'(e_{i,i+1})=e_{i,i+1}$ for all $1\leq{i}\leq{n-1}$, to obtain, same as above, that \[[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{l,n-1})]]=[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1,n-1})]].\]
+[TBC]
+\end{proof}
+Fix the two parameters $2\leq{r}\leq{n-2}$ and $0\leq{k}\leq{n-r}$, and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. Also denote $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}.$
+\begin{proposition}
+Let $N_{r,k}$, $N'_{n-2}$ and $N''_{n-2}$ be the subsets defined above, then
+\begin{enumerate}
+    \item $N_{r,k},N'_{n-2},N''_{n-2}\leq{G_{n}^{0}(\mathbb{Q}_{p})}.$
+    \item $N_{r,k},N'_{n-2},N''_{n-2}\cong{\mathbb{Q}_{p}}.$
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+A simple check shows that these subsets are subgroups of $G_{n}^{0}(\mathbb{Q}_p)$. Define $\tau_{r,k}:\mathbb{Q}_{p}\rightarrow{N_{r,k}}$. For every $a,b\in\mathbb{Q}_{p}$, it is easy to see that the image of the sum, $\tau_{r,k}(a+b)=\tau_{r,k}(a)\cdot\tau_{r,k}(b)$, is the product of the images of $a$ and $b$, and that $\tau_{r,k}^{-1}(I)=\{0\}$.
+\end{proof}
+The following proposition follows from a simple computation.
+\begin{proposition2}
+\label{prop:psi.automorphism}
+Consider $\varphi_{r}\in{N_{r}}$.
+\begin{enumerate}
+    \item 
+If $r<n-2$, denote by $\psi_{r}$ the automorphism \[\psi_{r}:=\varphi_{r}\circ\varphi_{r,n-r}(-a_{n-r,n-r})\circ\cdots\circ\varphi_{r,1}(-a_{11})\circ\varphi_{r,0}(-a_{r+1,1}).\]
+Then $\psi_{r}\in{N_{r+1}}$.
+    \item 
+If $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi_{r}\circ\varphi'_{n-2}(-a_{12})\circ\varphi''_{n-2}(-a_{n-1,1})\circ\]\[\circ\varphi_{n-2,2}(-a_{n-2,2})\circ\varphi_{n-2,1}(-a_{n-2,1})\circ\varphi_{n-2,0}(-a_{n-2,0}).\]
+Then $\psi_{n-2}\in{N_{n-1}}$.
+\end{enumerate}
+\end{proposition2}
+\begin{corollary2}
+\label{cor:Nr.decomposition}
+We have the following decompositions:
+\begin{enumerate}
+    \item 
+For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,0}\rtimes(\cdots(N_{r,n-r-1}\rtimes{N_{r,n-r}})\cdots)).\]
+\item For $r=n-2$, we have 
+\[N_{n-2}=N_{n-1}\rtimes({N_{n-2,0}}\rtimes(N_{n-2,1}\rtimes(N_{n-2,2}\rtimes(N''_{n-2}\rtimes{N'_{n-2}})))).\]
+\end{enumerate}
+\end{corollary2}
+This is immediate from Proposition \ref{prop:psi.automorphism}.
+
+Corollary \ref{cor:Nr.decomposition} provides a recursive decomposition of the unipotent radical $N(\mathbb{Q}_{p})$ as an iterated semidirect product of $N_{n-1}$ and subgroups isomorphic to $\mathbb{Q}_{p}$.
+
+As we saw earlier, the calculation of $\zeta_{L_{n,p}}^{\wedge}(s)$ requires understanding $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. As $G_{n}(\mathbb{Z}_{p})$ is a group, its structure is easily deduced from the above.
+\begin{proposition2}
+\label{prop:G.n.Zp.decomposition}
+For all $n\geq{4}$ the group $G_{n}^{0}(\mathbb{Z}_{p})$ has the decomposition $G_{n}^{0}(\mathbb{Z}_{p})=N(\mathbb{Z}_{p})\rtimes{H(\mathbb{Z}_{p})}$, where \[N(\mathbb{Z}_{p}):=M_{\binom{n}{2}}(\mathbb{Z}_{p})\cap{N(\mathbb{Q}_{p})},\]
+\[H(\mathbb{Z}_{p}):=\{\mathrm{diag}(\lambda_{1},\lambda_{2},\dots,) : \lambda_1,\dots,\lambda_{n-1}\in\mathbb{Z}_{p}^{\ast}\}.\]
+Moreover, $N(\mathbb{Z}_{p})$ itself has the decomposition: \[N(\mathbb{Z}_{p})=\Tilde{N}_{2}(\mathbb{Z}_{p})=
+\Tilde{N}_{n-1}\rtimes({\Tilde{N}_{n-2,0}}\rtimes(\Tilde{N}_{n-2,1}\rtimes(\Tilde{N}_{n-2,2}\rtimes(\Tilde{N}''_{n-2}\rtimes{\Tilde{N}'_{n-2}}))))\rtimes\cdots\]\[\cdots\rtimes{(\Tilde{N}_{2,0}\rtimes(\cdots(\Tilde{N}_{2,n-3}\rtimes{\Tilde{N}_{2,n-2}})\cdots))}
+,\]
+where $\Tilde{N}_{r}=N_{r}\cap{N(\mathbb{Z}_{p})}$ and $\Tilde{N}_{r,k}=\{\varphi_{r,k}(a) : a\in\mathbb{Z}_{p}\}$.
+\end{proposition2}
+By contrast, describing the structure of the monoid $G_{n}^{+}(\mathbb{Q}_p)$ is expected to be a substantial challenge.
+
+By applying Fubini's theorem for semidirect products of topological groups \cite[Proposition 28]{Nachbin}, we have that \[\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{G_{n}^{+}(\mathbb{Q}_p)}|\det{\varphi}|_p^sd\mu_{G_{n}(\mathbb{Z}_p)\varphi}=\displaystyle\int_{H^+(\mathbb{Q}_p)}\left(\displaystyle\int_{N_{h}^+}|\det{uh}|_p^sd\mu_{N(\mathbb{Q}_p)}\right)d\mu_{H(\mathbb{Q}_p)},\]
+where \[H^+(\mathbb{Q}_p):=\{\mathrm{diag}(\lambda_{1},\dots,\lambda_{n-1},\lambda_{1}\lambda_{2},\dots,\lambda_{1}\lambda_{2}\cdots\lambda_{n-2}\lambda_{n-1}) : \lambda_{i}\in\mathbb{Z}_{p}\setminus\{0\}\},\]
+that is, $H^+(\mathbb{Q}_p)$ consists of all $h\in{H(\mathbb{Q}_{p})}$ that appear in the decomposition $\varphi=uh$ for some $\varphi\in{G_{n}^{+}(\mathbb{Q}_{p})}$, and, for a given $h\in{H^{+}(\mathbb{Q}_{p})}$, we set $N_{h}^{+}:=\{u\in{N(\mathbb{Q}_{p}) : uh\in{G_{n}^{+}(\mathbb{Q}_{p})}}\}$. The integrand is constant on $N_{h}^{+}$, so computing the inner integral amounts to finding the measure of $N_{h}^+$, which is complicated, but using the decomposition from Corollary \ref{cor:Nr.decomposition}, we can simplify $N_{h}^{+}$ at the price of replacing a single integral by multiple integrals.
+
+Let $\mathcal{N}_{1},\mathcal{N}_{2},\dots,\mathcal{N}_{m}$, where $m=\binom{n}{2}$, be an enumeration of the subgroups
+\[N_{2,n-2},N_{2,n-3},\dots,N_{2,0},N_{3,n-3},\dots,N_{3,0},\dots\]\[\dots,N_{n-2,2},N_{n-2,1},N_{n-2,0},N'_{n-2},N''_{n-2},N_{n-1}.\]
+Every $\varphi\in{G_{n}^{0}(\mathbb{Q}_{p})}$ can be written uniquely as $\varphi=u_{m}\cdots{u_{1}h}$, where $u_{i}\in{\mathcal{N}_{i}}$. Thus, by Fubini \[
+\zeta_{L_{n,p}}^{\wedge}(s)=\displaystyle\int_{H^{+}}\displaystyle\int_{\mathcal{N}_{1}^{+}(h)}\displaystyle\int_{\mathcal{N}_{2}^{+}(h,u_{1})}\cdots\displaystyle\int_{\mathcal{N}_{m}^{+}(h,u_{1},\dots,u_{m-1})}|\det{h}|_{p}^{s}d\mu_{H}d\mu_{\mathcal{N}_{1}}\cdots{d\mu_{\mathcal{N}_{m}}},\]
+where each $\mu_{\mathcal{N}_{i}}$ is Haar measure on $\mathcal{N}_{i}(\mathbb{Q}_{p})$ normalized so that\\ $\mu_{\mathcal{N}_{i}}(\mathcal{N}_{i}(\mathbb{Z}_{p}))=1$, and \[\mathcal{N}_{i}^{+}(h,u_{1},\dots,u_{i-1}):=\{u_{i}\in\mathcal{N}_{i} : \exists{u_{i+1},\dots,u_{m}}\,\mathrm{such}\,\mathrm{that}\,u_{m}\cdots{u_{1}}h\in{G_{n}^{+}(\mathbb{Q}_{p})}\}.\]
+\end{document}
