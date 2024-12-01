@@ -127,8 +127,26 @@ If $i>1$, then we consider the inclusion $\iota:\mathcal{L}_{n-1,p}\hookrightarr
 \]
 If $i=1$, then \[[\varphi_{r,k}(a)(e_{ij}),\varphi_{r,k}(a)(e_{ln})]=[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{ln})]=\]\[=[\varphi_{r,k}(a)(e_{1j}),[\varphi_{r,k}(a)(e_{l,n-1}),\varphi_{r,k}(a)(e_{n-1,n})]].\]
 By the Jacobi identity, we have that \[[\varphi_{r,k}(a)(e_{1j}),[\varphi_{r,k}(a)(e_{l,n-1}),\varphi_{r,k}(a)(e_{n-1,n})]]=\]\[=-[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{l,n-1})]].\]
-Now we use the inclusion $\iota':\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, where $\iota'(e_{i,i+1})=e_{i,i+1}$ for all $1\leq{i}\leq{n-1}$, to obtain, same as above, that \[[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{l,n-1})]]=[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1,n-1})]].\]
-To continue, we need to prove the following fact: For any $i<j$ such that $j-i>1$, we have $\varphi_{r,k}(a)(e_{ij})=e_{ij}$. It is easy to see that this is true for $h=j-i=2$. For $h>2$, $\varphi_{r,k}(a)(e_{ij})=[\varphi_{r,k}(a)(e_{i,j-1}),\varphi_{r,k}(a)(e_{j-1,j})]$. By the assumption, $[e_{i,j-1},\varphi_{r,k}(a)(e_{j-1,j})]$. If $j-1=k$ then $\varphi_{r,k}(a)(e_{j-1,j})=e_{k,k+1}+ae_{k,k+r}\Rightarrow{[e_{i,j-1},\varphi_{r,k}(a)(e_{j-1,j})]=[e_{i,j-1},e_{k,k+1}+ae_{k,k+r}]=e_{ij}}$, so our induction step for $j-1=k$ holds, and it is easy to check that it holds also for $j-1=k+r$ and $j\notin\{k+1,k+r+1\}$. 
+Now we use the inclusion $\iota':\mathcal{L}_{n-1,p}\hookrightarrow\mathcal{L}_{n,p}$, where $\iota'(e_{i,i+1})=e_{i,i+1}$ for all $1\leq{i}\leq{n-1}$, to obtain, same as above, that \[-[\varphi_{r,k}(a)(e_{n-1,n}),[\varphi_{r,k}(a)(e_{1j}),\varphi_{r,k}(a)(e_{l,n-1})]]=-[\varphi_{r,k}(a)(e_{n-1,n}),\varphi_{r,k}(a)(e_{1,n-1})].\]
+To continue, we need to prove the following auxiliary proposition:
+\begin{proposition2}
+\label{phi.r.k.general.element}
+\[\varphi_{r,k}(a)(e_{k+1-h,k+1})=e_{k+1-h,k+1}+ae_{k+1-h,k+r} : h>0\]
+\[\varphi_{r,k}(a)(e_{k+r,k+r+h})=e_{k+r,k+r+h}-ae_{k+1,k+r+h} : h>0\]
+\[\varphi_{r,k}(a)(e_{ij})=e_{ij} : i\neq{k+r}\land{j\neq{k+1}}\] 
+\end{proposition2}
+\begin{proof}
+For $h=1$, $\varphi_{r,k}(a)(e_{k,k+1})=e_{k,k+1}+ae_{k,k+r}$. For $h'=h>1$, $\varphi_{r,k}(a)(e_{k+1-h',k+1})=[\varphi_{r,k}(a)(e_{k-h,k-h+1}),\varphi_{r,k}(a)(e_{k-h+1,k+1})]$. By the assumption, we have that $[\varphi_{r,k}(a)(e_{k-h,k-h+1}),\varphi_{r,k}(a)(e_{k-h+1,k+1})]=$\[=[\varphi_{r,k}(a)(e_{k-h,k-h+1}),e_{k+1-h,k+1}+ae_{k+1-h,k+r}].\]
+But for all $h>0$, we have that $k-h\neq{k}$ and $k-h+1\neq{k+1}$, and hence \[[\varphi_{r,k}(a)(e_{k-h,k-h+1}),e_{k+1-h,k+1}+ae_{k+1-h,k+r}]=\]\[=[e_{k-h,k-h+1},e_{k+1-h,k+1}+ae_{k+1-h,k+r}=e_{k-h,k+1}+ae_{k-h,k+r}=\]\[=e_{k+1-h',k+1}+ae_{k+1-h',k+r}.\]
+We prove the two other cases in the same way.
+\end{proof}
+By \ref{phi.r.k.general.element} we have that 
+\[\varphi_{r,k}(a)(e_{1,n-1})=\begin{cases}
+        e_{1,n-1}+ae_{1,n} & : r=2\land{k=n-2}\\
+        e_{1,n-1} & : \mathrm{otherwise}
+    \end{cases}
+\]
+while $k+r\neq{1}$ for all $r,k$. Thus, $-[\varphi_{2,n-2}(a)(e_{n-1,n}),\varphi_{2,n-2}(a)(e_{1,n-1})]=-[\varphi_{2,n-2}(a)(e_{n-1,n}),e_{1,n-1}+ae_{1,n}]=[e_{n-1,n},e_{1,n-1}+ae_{1,n}]=e_{1n}$.
 \end{proof}
 Fix the two parameters $2\leq{r}\leq{n-2}$ and $0\leq{k}\leq{n-r}$, and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. Also denote $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}.$
 \begin{proposition}
