@@ -71,7 +71,7 @@
 \maketitle
 \begin{proposition2}
 \label{block.1r.structure}
-Let $\varphi_{r}\in{N(\mathbb{Q}_{p})}$ be a unipotent automorphism of $\mathcal{L}_{n,p}$ such that the matrix upper blocks $M_{1s}$, for all $s<r$, are zero matrices. Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
+Let $\varphi_{r}\in{N(\mathbb{Q}_{p})}$ be a unipotent automorphism of $\mathcal{L}_{n,p}$ such that the matrix upper blocks $M_{1k}$, for all $2\leq{k}\leq{r-1}$, are zero matrices. Consider the $(n-1)\times{(n-r)}$ matrix $M_{1r}=(a_{ij})$. Then,
 \begin{enumerate}
     \item Let $2\leq{r}<{n-2}$. If $a_{ij}\neq{0}$, then either $i=j$ or $i=j+r-1$, and we have the relation $a_{i+r,i+1}=-a_{ii}$.
     \item Let $r=n-2$. If $a_{ij}\neq{0}$, then either $i=j$ or $i=j+r-1$ or $(i,j)\in\{(1,2),(n-1,1)\}$, with the same relation as above.
@@ -146,18 +146,20 @@ By \ref{phi.r.k.general.element} we have that
         e_{1,n-1} & : \mathrm{otherwise}
     \end{cases}
 \]
-while $k+r\neq{1}$ for all $r,k$. Thus, $-[\varphi_{2,n-2}(a)(e_{n-1,n}),\varphi_{2,n-2}(a)(e_{1,n-1})]=-[\varphi_{2,n-2}(a)(e_{n-1,n}),e_{1,n-1}+ae_{1,n}]=[e_{n-1,n},e_{1,n-1}+ae_{1,n}]=e_{1n}$.
+while $k+r\neq{1}$ for all $r,k$. Thus, $-[\varphi_{2,n-2}(a)(e_{n-1,n}),\varphi_{2,n-2}(a)(e_{1,n-1})]=-[\varphi_{2,n-2}(a)(e_{n-1,n}),e_{1,n-1}+ae_{1,n}]=[e_{n-1,n},e_{1,n-1}+ae_{1,n}]=e_{1n}$. 
+
+For $(r,k)\notin(2,n-2)$, if $k+r=n-1$ then $-[\varphi_{r,k}(a)(e_{n-1,n}),\varphi_{r,k}(a)(e_{1,n-1})]=-[e_{n-1,n}-ae_{n-r,n},e_{1,n-1}]=e_{1n}$, otherwise $-[\varphi_{r,k}(a)(e_{n-1,n}),\varphi_{r,k}(a)(e_{1,n-1})]=-[e_{n-1,n},e_{1,n-1}]=e_{1n}$
 \end{proof}
-Fix the two parameters $2\leq{r}\leq{n-2}$ and $0\leq{k}\leq{n-r}$, and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{G_{n}(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. Also denote $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}.$
+Fix the two parameters $2\leq{r}\leq{n-2}$ and $0\leq{k}\leq{n-r}$, and denote by $N_{r,k}:=\{\varphi_{r,k}(a) : a\in\mathbb{Q}_{p}\}\subset{N(\mathbb{Q}_{p})}$ the set of all automorphisms of this form. Also denote $N'_{n-2}:=\{\varphi'_{n-2}(a) : a\in\mathbb{Q}_{p}\}$ and $N''_{n-2}:=\{\varphi''_{n-2}(a) : a\in\mathbb{Q}_{p}\}.$
 \begin{proposition}
 Let $N_{r,k}$, $N'_{n-2}$ and $N''_{n-2}$ be the subsets defined above, then
 \begin{enumerate}
-    \item $N_{r,k},N'_{n-2},N''_{n-2}\leq{G_{n}^{0}(\mathbb{Q}_{p})}.$
+    \item $N_{r,k},N'_{n-2},N''_{n-2}\leq{N(\mathbb{Q}_{p})}.$
     \item $N_{r,k},N'_{n-2},N''_{n-2}\cong{\mathbb{Q}_{p}}.$
 \end{enumerate}
 \end{proposition}
 \begin{proof}
-A simple check shows that these subsets are subgroups of $G_{n}^{0}(\mathbb{Q}_p)$. Define $\tau_{r,k}:\mathbb{Q}_{p}\rightarrow{N_{r,k}}$. For every $a,b\in\mathbb{Q}_{p}$, it is easy to see that the image of the sum, $\tau_{r,k}(a+b)=\tau_{r,k}(a)\cdot\tau_{r,k}(b)$, is the product of the images of $a$ and $b$, and that $\tau_{r,k}^{-1}(I)=\{0\}$.
+A simple check shows that these subsets are subgroups of $N(\mathbb{Q}_p)$. Define $\tau_{r,k}:\mathbb{Q}_{p}\rightarrow{N_{r,k}}$. For every $a,b\in\mathbb{Q}_{p}$, it is easy to see that the image of the sum, $\tau_{r,k}(a+b)=\tau_{r,k}(a)\cdot\tau_{r,k}(b)$, is the product of the images of $a$ and $b$, and that $\tau_{r,k}^{-1}(I)=\{0\}$.
 \end{proof}
 The following proposition follows from a simple computation.
 \begin{proposition2}
@@ -172,6 +174,9 @@ If $r=n-2$, denote by $\psi_{n-2}$ the automorphism \[\psi_{n-2}:=\varphi_{r}\ci
 Then $\psi_{n-2}\in{N_{n-1}}$.
 \end{enumerate}
 \end{proposition2}
+\begin{proof}
+By the definition, $\varphi_{r}$ has $1$ on the main diagonal and all the upper blocks $M_{1k}$, for $2\leq{k}\leq{r-1}$ are zero matrices. One checks that the composition of $\varphi_{r}$ and the chain of compositions $\prod_{k=1}^{n-r}\varphi_{r,k}(-a_{kk})\circ\varphi_{r,0}(-a_{r+1,1})$ yields also a matrix with $1$ on the main diagonal whose upper blocks $M_{1k}$, for all $2\leq{k}\leq{r}$, are zero matrices, thus $\psi_{r}\in{N_{r+1}}$. Same applies for the case $r=n-2$, considering the specific structure of $M_{1,n-2}$, as described in the second part of \ref{block.1r.structure}.
+\end{proof}
 \begin{corollary2}
 \label{cor:Nr.decomposition}
 We have the following decompositions:
@@ -182,8 +187,9 @@ For all $2\leq{r}<{n-2}$, we have \[N_{r}=N_{r+1}\rtimes(N_{r,0}\rtimes(\cdots(N
 \[N_{n-2}=N_{n-1}\rtimes({N_{n-2,0}}\rtimes(N_{n-2,1}\rtimes(N_{n-2,2}\rtimes(N''_{n-2}\rtimes{N'_{n-2}})))).\]
 \end{enumerate}
 \end{corollary2}
-This is immediate from Proposition \ref{prop:psi.automorphism}.
-
+\begin{proof}
+This is immediate from Proposition \ref{prop:psi.automorphism}, since we have that \[\varphi_{r}=\psi_{r}\circ\varphi_{r,0}(-a_{r+1,1})\circ\varphi_{r,1}(-a_{11})\circ\cdots\circ\varphi_{r,n-r}(-a_{n-r,n-r}).\]
+\end{proof}
 Corollary \ref{cor:Nr.decomposition} provides a recursive decomposition of the unipotent radical $N(\mathbb{Q}_{p})$ as an iterated semidirect product of $N_{n-1}$ and subgroups isomorphic to $\mathbb{Q}_{p}$.
 
 As we saw earlier, the calculation of $\zeta_{L_{n,p}}^{\wedge}(s)$ requires understanding $G_{n}(\mathbb{Z}_p)$ and $G_{n}^{+}(\mathbb{Q}_p)$ first. As $G_{n}(\mathbb{Z}_{p})$ is a group, its structure is easily deduced from the above.
