@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 DEC 2024 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 DEC 2024 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,7 +589,7 @@ Package: arydshln 2019/02/21 v1.76
 \adl@everyvbox=\toks44
 \adl@LTpagetotal=\dimen276
 )
-No file automorphism-group.aux.
+(automorphism-group.aux)
 \openout1 = `automorphism-group.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -662,26 +662,21 @@ r/m/n/10 , then $\OML/cmm/m/it/10 ^^Q\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 e[]; e[
  []
 
 
-LaTeX Warning: Citation `DuSautoyLubotzky' on page 1 undefined on input line 86
+LaTeX Warning: Citation `DuSautoyLubotzky' on page 1 undefined on input line 84
 .
 
 
 LaTeX Warning: Reference `eq:p-adic.integral' on page 1 undefined on input line
- 86.
+ 84.
 
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 
-LaTeX Warning: Reference `block.1r.structure' on page 2 undefined on input line
- 127.
-
-[2]
-
-LaTeX Warning: Citation `BermanThesis' on page 3 undefined on input line 157.
+LaTeX Warning: Citation `BermanThesis' on page 3 undefined on input line 155.
 
 
-Overfull \hbox (27.68785pt too wide) detected at line 166
+Overfull \hbox (27.68785pt too wide) detected at line 164
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 a\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/
 it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
@@ -694,12 +689,7 @@ r/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/
  []
 
 [3]
-
-LaTeX Warning: Reference `phi.r.k.general.element' on page 4 undefined on input
- line 179.
-
-
-Overfull \hbox (3.43913pt too wide) in paragraph at lines 187--188
+Overfull \hbox (3.43913pt too wide) in paragraph at lines 185--186
 []\OT1/cmr/m/n/10 For $(\OML/cmm/m/it/10 r; k\OT1/cmr/m/n/10 ) [] (2\OML/cmm/m/
 it/10 ; n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)$, if $\OML/cmm/m/it/10 k \OT1
 /cmr/m/n/10 + \OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n \OMS/cmsy
@@ -710,7 +700,7 @@ it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (2.45222pt too wide) in paragraph at lines 187--188
+Overfull \hbox (2.45222pt too wide) in paragraph at lines 185--186
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/10 ^^@ 
 \OML/cmm/m/it/10 ae[]; e[]\OT1/cmr/m/n/10 ] = \OML/cmm/m/it/10 e[]$\OT1/cmr/m/n
 /10 , oth-er-wise $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT
@@ -719,43 +709,26 @@ m/n/10 )\OML/cmm/m/it/10 ; '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/1
 0 )(\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )] =
  []
 
-[4]
+[4] [5]
 
-LaTeX Warning: Reference `block.1r.structure' on page 5 undefined on input line
- 214.
-
-
-LaTeX Warning: Reference `prop:psi.automorphism' on page 5 undefined on input l
-ine 227.
+LaTeX Warning: Citation `Nachbin' on page 6 undefined on input line 241.
 
 
-LaTeX Warning: Reference `cor:Nr.decomposition' on page 5 undefined on input li
-ne 229.
-
-[5]
-
-LaTeX Warning: Citation `Nachbin' on page 6 undefined on input line 243.
-
-
-Overfull \hbox (13.40923pt too wide) detected at line 243
+Overfull \hbox (13.40923pt too wide) detected at line 241
 \OML/cmm/m/it/10 ^^P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) = []
 [] \OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 '\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10
  d^^V[] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 d^^V[];
  []
 
 
-LaTeX Warning: Reference `cor:Nr.decomposition' on page 6 undefined on input li
-ne 245.
-
-
-Overfull \hbox (2.44647pt too wide) detected at line 250
+Overfull \hbox (2.44647pt too wide) detected at line 248
 \OML/cmm/m/it/10 ^^P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) = []
 [] [][] [][] [] [][] \OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 h\OMS/cmsy/m/n/10 j
 []\OML/cmm/m/it/10 d^^V[]d^^V[] [] [];
  []
 
 
-Overfull \hbox (5.0832pt too wide) detected at line 251
+Overfull \hbox (5.0832pt too wide) detected at line 249
 \OMS/cmsy/m/n/10 N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h; u[]; [] ; u[]\OT1/cmr/
 m/n/10 ) := \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 2 N[] \OT1/
 cmr/m/n/10 : \OMS/cmsy/m/n/10 9[] [] [] \OML/cmm/m/it/10 u[] [] []h \OMS/cmsy/m
@@ -780,11 +753,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15243 strings out of 474486
- 323120 string characters out of 5743755
- 1947528 words of memory out of 5000000
- 37248 multiletter control sequences out of 15000+600000
- 567837 words of font info for 78 fonts, out of 8000000 for 9000
+ 15239 strings out of 474486
+ 323105 string characters out of 5743755
+ 1946528 words of memory out of 5000000
+ 37243 multiletter control sequences out of 15000+600000
+ 567139 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,14n,121p,691b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\isila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -808,7 +781,7 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/isila/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/i
 sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pf
 b>
-Output written on automorphism-group.pdf (7 pages, 224711 bytes).
+Output written on automorphism-group.pdf (7 pages, 223948 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
