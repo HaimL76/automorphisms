@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 DEC 2024 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  13 DEC 2024 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,9 +748,6 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  15239 strings out of 474486
@@ -781,7 +778,7 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/isila/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/i
 sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pf
 b>
-Output written on automorphism-group.pdf (7 pages, 223948 bytes).
+Output written on automorphism-group.pdf (7 pages, 224524 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
