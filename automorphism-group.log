@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  16 JAN 2025 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  17 JAN 2025 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,19 +665,19 @@ r/m/n/10 , then $\OML/cmm/m/it/10 ^^Q\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 e[]; e[
 
 {C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: Citation `DuSautoyLubotzky' on page 2 undefined on input line 87
+LaTeX Warning: Citation `DuSautoyLubotzky' on page 2 undefined on input line 89
 .
 
 
 LaTeX Warning: Reference `eq:p-adic.integral' on page 2 undefined on input line
- 87.
+ 89.
 
 [2]
 
-LaTeX Warning: Citation `BermanThesis' on page 3 undefined on input line 158.
+LaTeX Warning: Citation `BermanThesis' on page 3 undefined on input line 160.
 
 [3]
-Overfull \hbox (27.68785pt too wide) detected at line 167
+Overfull \hbox (27.68785pt too wide) detected at line 169
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 a\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/
 it/10 ; \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
@@ -690,7 +690,7 @@ r/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 e[]\OT1/cmr/m/n/
  []
 
 [4]
-Overfull \hbox (3.43913pt too wide) in paragraph at lines 188--189
+Overfull \hbox (3.43913pt too wide) in paragraph at lines 190--191
 []\OT1/cmr/m/n/10 For $(\OML/cmm/m/it/10 r; k\OT1/cmr/m/n/10 ) [] (2\OML/cmm/m/
 it/10 ; n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)$, if $\OML/cmm/m/it/10 k \OT1
 /cmr/m/n/10 + \OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n \OMS/cmsy
@@ -701,7 +701,7 @@ it/10 e[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (2.45222pt too wide) in paragraph at lines 188--189
+Overfull \hbox (2.45222pt too wide) in paragraph at lines 190--191
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 e[] \OMS/cmsy/m/n/10 ^^@ 
 \OML/cmm/m/it/10 ae[]; e[]\OT1/cmr/m/n/10 ] = \OML/cmm/m/it/10 e[]$\OT1/cmr/m/n
 /10 , oth-er-wise $\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 '[]\OT
@@ -712,24 +712,24 @@ m/n/10 )\OML/cmm/m/it/10 ; '[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/1
 
 [5]
 
-LaTeX Warning: Citation `Nachbin' on page 6 undefined on input line 244.
+LaTeX Warning: Citation `Nachbin' on page 6 undefined on input line 246.
 
 
-Overfull \hbox (13.40923pt too wide) detected at line 244
+Overfull \hbox (13.40923pt too wide) detected at line 246
 \OML/cmm/m/it/10 ^^P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) = []
 [] \OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 '\OMS/cmsy/m/n/10 j[]\OML/cmm/m/it/10
  d^^V[] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 d^^V[];
  []
 
 [6]
-Overfull \hbox (2.44647pt too wide) detected at line 251
+Overfull \hbox (2.44647pt too wide) detected at line 253
 \OML/cmm/m/it/10 ^^P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) = []
 [] [][] [][] [] [][] \OMS/cmsy/m/n/10 j [] \OML/cmm/m/it/10 h\OMS/cmsy/m/n/10 j
 []\OML/cmm/m/it/10 d^^V[]d^^V[] [] [];
  []
 
 
-Overfull \hbox (5.0832pt too wide) detected at line 252
+Overfull \hbox (5.0832pt too wide) detected at line 254
 \OMS/cmsy/m/n/10 N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h; u[]; [] ; u[]\OT1/cmr/
 m/n/10 ) := \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 2 N[] \OT1/
 cmr/m/n/10 : \OMS/cmsy/m/n/10 9[] [] [] \OML/cmm/m/it/10 u[] [] []h \OMS/cmsy/m
@@ -748,9 +748,6 @@ LaTeX Font Warning: Size substitutions with differences
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -782,7 +779,7 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/isila/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/i
 sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pf
 b>
-Output written on automorphism-group.pdf (7 pages, 229995 bytes).
+Output written on automorphism-group.pdf (7 pages, 230217 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
