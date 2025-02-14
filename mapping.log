@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 FEB 2025 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 FEB 2025 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -153,8 +153,7 @@ tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
-)
-No file mapping.aux.
+) (mapping.aux)
 \openout1 = `mapping.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -224,8 +223,8 @@ Overfull \hbox (119.71365pt too wide) detected at line 96
  []
 
 
-Overfull \hbox (158.35484pt too wide) detected at line 112
-\OML/cmm/m/it/10 N[]N[]N[]N[]N[]N[]N[]N[] \OT1/cmr/m/n/10 = []
+Overfull \hbox (177.23682pt too wide) detected at line 112
+\OML/cmm/m/it/10 N[]N[]N[]N[]N[]N[]N[]N[]N[] \OT1/cmr/m/n/10 = []
  []
 
 [2] [3] (mapping.aux)
@@ -235,10 +234,10 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3041 strings out of 474486
- 50087 string characters out of 5743755
- 1968528 words of memory out of 5000000
- 25330 multiletter control sequences out of 15000+600000
+ 3044 strings out of 474486
+ 50162 string characters out of 5743755
+ 1969528 words of memory out of 5000000
+ 25331 multiletter control sequences out of 15000+600000
  562232 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,226b,199s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -252,7 +251,7 @@ ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/isila/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/isila/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/i
 sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on mapping.pdf (3 pages, 86937 bytes).
+Output written on mapping.pdf (3 pages, 86967 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
