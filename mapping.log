@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 FEB 2025 10:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  14 FEB 2025 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -222,12 +222,12 @@ Overfull \hbox (119.71365pt too wide) detected at line 96
 \OML/cmm/m/it/10 N[]N[]N[]N[]N[]N[]N[]N[] \OT1/cmr/m/n/10 = []
  []
 
-
-Overfull \hbox (177.23682pt too wide) detected at line 112
-\OML/cmm/m/it/10 N[]N[]N[]N[]N[]N[]N[]N[]N[] \OT1/cmr/m/n/10 = []
+[2]
+Overfull \hbox (4.97285pt too wide) detected at line 112
+[]
  []
 
-[2] [3] (mapping.aux)
+[3] (mapping.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -236,7 +236,7 @@ L3 programming layer <2024-01-04>
 Here is how much of TeX's memory you used:
  3044 strings out of 474486
  50162 string characters out of 5743755
- 1969528 words of memory out of 5000000
+ 1961528 words of memory out of 5000000
  25331 multiletter control sequences out of 15000+600000
  562232 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -251,7 +251,7 @@ ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/isila/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/isila/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/i
 sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on mapping.pdf (3 pages, 86967 bytes).
+Output written on mapping.pdf (3 pages, 86950 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
