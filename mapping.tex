@@ -9,11 +9,33 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 
-\title{Your Paper}
-\author{You}
+\title{Mapping}
 
 \begin{document}
 \maketitle
+We are using $a$ for most of the elements, where the superscript in parentheses is $r$, the horizontal index of the block $M_{1r}$. For each block $M_{1r}$, every element on the block diagonal $(1,1),(2,2),\dots,(i,i),\dots,(n-r,n-r)$ has the subscript $i$, so any such element, and its occurrences in any other place in the matrix, are $a_{i}^{(r)}$. In addition, we have
+\begin{itemize}
+\item $a_{0}^{(r)}$, the element in the location $(r,1)$ of each block.
+\item $a'$, the element in the location $(1,2)$ of the block $M_{1,n-2}$.
+\item $a''$, the element in the location $(n-1,1)$ of the block $M_{1,n-2}$.
+\end{itemize}
+For the block $M_{1,n-1}$, we will use $b_1,b_2,\dots,b_{n-1}$.
+
+The mapping between our notations and the notations of Berman are
+\begin{itemize}
+    \item $a_{11}\rightarrow{a_{1}^{(2)}}$
+    \item $a_{22}\rightarrow{a_{2}^{(2)}}$
+    \item $a_{33}\rightarrow{a_{3}^{(2)}}$
+    \item $b_{11}\rightarrow{a_{1}^{(3)}}$
+    \item $b_{12}\rightarrow{a'}$
+    \item $b_{22}\rightarrow{a_{2}^{(3)}}$
+    \item $b_{31}\rightarrow{a_{0}^{(3)}}$
+    \item $b_{41}\rightarrow{a''}$
+    \item $c_{1}\rightarrow{a'a_0^{(2)}+b_{1}}$
+    \item $c_{2}\rightarrow{a_2^{(3)}a_0^{(2)}+b_{2}}$
+    \item $c_{3}\rightarrow{a_0^{(3)}a_3^{(2)}+b_{3}}$
+    \item $c_{4}\rightarrow{a''a_3^{(2)}+b_{4}}$
+\end{itemize}
 \[
 N_{2,0}N_{2,2}N_{2,1}N_{2,3}=
   \begin{bmatrix}
@@ -109,5 +131,19 @@ N_{3,0}N_{3,2}N''_3N'_3N_{2,0}N_{2,2}N_{2,1}N_{2,3}N_{3,1}=\]\[
     & & & & & & & & & 1 \\
   \end{bmatrix}
 \]
-
+\[
+N_{3,0}N_{3,2}N''_3N'_3N_{2,0}N_{2,2}N_{2,1}N_{2,3}N_{3,1}N_{4}=\]\[
+  \begin{bmatrix}
+    1 & 0 & 0 & 0 & a_1^{(2)} & 0 & 0 & a_1^{(3)} & a' & a'a_0^{(2)}+b_{1} \\
+    0 & 1 & 0 & 0 & a_0^{(2)} & a_2^{(2)} & 0 & a_0^{(2)}a_2^{(2)} & a_2^{(3)} & a_2^{(3)}a_0^{(2)}+b_{2} \\
+    0 & 0 & 1 & 0 & 0 & -a_1^{(2)} & a_3^{(2)} & a_0^{(3)} & -a_1^{(2)}a_3^{(2)} & a_0^{(3)}a_3^{(2)}+b_{3} \\
+    0 & 0 & 0 & 1 & 0 & 0 & -a_2^{(2)} & a'' & a_1^{(2)}a_2^{(2)}-a_1^{(3)} & a''a_3^{(2)}+b_{4} \\
+    & & & & 1 & 0 & 0 & a_2^{(2)} & 0 & a_2^{(3)} \\
+    & & & & 0 & 1 & 0 & a_0^{(2)} & a_3^{(2)} & a_0^{(2)}a_3^{(2)}\\
+    & & & & 0 & 0 & 1 & 0 & -a_1^{(2)} & a_0^{(3)} \\
+    & & & & & & & 1 & 0 & a_3^{(2)} \\
+    & & & & & & & 0 & 1 & a_0^{(2)} \\
+    & & & & & & & & & 1 \\
+  \end{bmatrix}
+\]
 \end{document}
