@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  22 FEB 2025 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  23 FEB 2025 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,8 +164,7 @@ tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
-)
-No file n5.aux.
+) (n5.aux)
 \openout1 = `n5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -237,20 +236,21 @@ Overfull \hbox (59.7298pt too wide) in paragraph at lines 28--29
 
 [1
 
-{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (n5.aux)
+{C:/Users/isila/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+(n5.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3570 strings out of 474486
- 56176 string characters out of 5743755
- 1937528 words of memory out of 5000000
- 25840 multiletter control sequences out of 15000+600000
+ 3573 strings out of 474486
+ 56236 string characters out of 5743755
+ 1943528 words of memory out of 5000000
+ 25841 multiletter control sequences out of 15000+600000
  564712 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,1054b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,1898b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -265,9 +265,9 @@ sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on n5.pdf (1 page, 128794 bytes).
+Output written on n5.pdf (2 pages, 136110 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
