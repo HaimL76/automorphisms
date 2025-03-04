@@ -97,19 +97,13 @@ $\Rightarrow{\alpha=v_{2}+\max\{v_{1},v_{4}\}+v_{11}\geq{\max\{v_{1},v_{4}\}-\mi
 
 $\Rightarrow{\beta=\min\{v_{2},v_{4},\alpha\}}\geq{0}\Rightarrow{v_{3}+\alpha>0}\Rightarrow{v_{22}\geq{-(v_{3}+\beta)}}$. 
 
-For the inner integral $\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})$, we have two cases. If $v_{3}+v_{22}\geq{0}$, then $\min\{0,v_{3}+v_{22}\}=0\Rightarrow{\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})}=\displaystyle\int_{v_{22}\geq{-v_{3}}}1d\mu(a_{22})$. If $v_{3}+v_{22}<0$, then $\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})=\displaystyle\int_{v_{22}<-v_{3}}p^{v_{3}+v_{22}}d\mu(a_{22})$. But we said earlier that $v_{22}\geq{-(v_{3}+\beta)}$, hence $-v_{3}-\beta\leq{v_{22}}\leq{-v_{3}-1}\Rightarrow{-\beta\leq{v_{3}+v_{22}}\leq{-1}}$, which means that we can compute the integral over $a_{22}$ as a sum of $\beta-1$ integrals, $\displaystyle\int_{-v_{3}-\beta\leq{v_{22}}\leq{-v_{3}-1}}p^{v_{3}+v_{22}}d\mu(a_{22})=\sum_{\tau=1}^{\beta}\displaystyle\int_{v_{22}=-v_{3}-\tau}p^{-\tau}d\mu(a_{22})$. To evaluate each integral in the sum, we need to calculate the measure of its domain, namely $\mu(\{v_{22}=-(v_{3}+\tau)\})=\mu(\{v_{22}\geq{-(v_{3}+\tau+1)}\}\setminus{\{v_{22}\geq{-(v_{3}+\tau)}\}})=\mu(p^{-(v_{3}+\tau+1)}\mathbb{Z}_{p}\setminus{p^{-(v_{3}+\tau)}\mathbb{Z}_{p}})=p^{v_{3}+\tau+1}-p^{v_{3}+\tau}=p^{v_{3}+\tau}(p-1)$.
+For the inner integral $\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})$, we have two cases. If $v_{3}+v_{22}\geq{0}$, then $\min\{0,v_{3}+v_{22}\}=0\Rightarrow{\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})}=\displaystyle\int_{v_{22}\geq{-v_{3}}}1d\mu(a_{22})=p^{v_{3}}$. 
 
+If $v_{3}+v_{22}<0$, then $\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})=\displaystyle\int_{v_{22}<-v_{3}}p^{v_{3}+v_{22}}d\mu(a_{22})$. But we said earlier that $v_{22}\geq{-(v_{3}+\beta)}$, hence $-v_{3}-\beta\leq{v_{22}}\leq{-v_{3}-1}\Rightarrow{-\beta\leq{v_{3}+v_{22}}\leq{-1}}$, which means that we can compute the integral over $a_{22}$ as a sum of $\beta$ integrals, $\displaystyle\int_{-v_{3}-\beta\leq{v_{22}}\leq{-v_{3}-1}}p^{v_{3}+v_{22}}d\mu(a_{22})=\sum_{\tau=1}^{\beta}\displaystyle\int_{v_{22}=-v_{3}-\tau}p^{-\tau}d\mu(a_{22})$. To evaluate each integral in the sum, we need to calculate the measure of its domain, namely $\mu(\{v_{22}=-(v_{3}+\tau)\})=\mu(\{v_{22}\geq{-(v_{3}+\tau+1)}\}\setminus{\{v_{22}\geq{-(v_{3}+\tau)}\}})=\mu(p^{-(v_{3}+\tau+1)}\mathbb{Z}_{p}\setminus{p^{-(v_{3}+\tau)}\mathbb{Z}_{p}})=p^{v_{3}+\tau+1}-p^{v_{3}+\tau}=p^{v_{3}+\tau}(p-1)$, which means that each integral evaluates as $p^{v_{3}+\tau}(p-1)p^{\tau}=p^{v_{3}}(p-1)$, and the sum is over $\beta$ such integrals, so we have that $\displaystyle\int_{a_{22}}p^{\min\{0,v_{3}+v_{22}\}}d\mu(a_{22})=p^{v_{3}}+\beta{p^{v_{3}}(p-1)}$, where $\beta$ depends also on $v_{11}$.
 
+Hence, we need to compute the integral 
 
+$\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}p^{v_{3}}[1+\beta(p-1)]d\mu(a_{11})$. We denote $I(\underline{\lambda},\underline{c},\underline{b},a_{21},a_{33},a_{22}):=I(\underline{\lambda},\underline{c},\underline{b},a_{21},a_{33},a_{22})p^{v_{3}}$, so $\zeta_{L_{5,p}}^{\wedge}(s)=$
 
-
-
-
-
-
-which means that we need to compute the measure $\mu(p^{-(v_{3}+\beta)}\mathbb{Z}_{p}\setminus{p^{-(v_{3}+1)}\mathbb{Z}_{p}})=\mu(\coprod_{\tau=1}^{\beta}p^{-(v_{3}+\tau+1)}\mathbb{Z}_{p}\setminus{p^{-(v_{3}+\tau)}\mathbb{Z}_{p}})=\sum_{\tau=1}^{\beta}\mu(p^{-(v_{3}+\tau+1)}\mathbb{Z}_{p}\setminus{p^{-(v_{3}+\tau)}\mathbb{Z}_{p}})=\sum_{\tau=1}^{\beta}\mu(p^{v_{3}+\tau+1}-p^{v_{3}+\tau})$, by the additivity of $\mu$.
-
-
-
-But this means that we have $\displaystyle\int_{v_{22}<-v_{3}}p^{v_{3}+v_{22}}d\mu(a_{22})=\displaystyle\int_{v_{22}<-v_{3}}p^{v_{3}+v_{22}}d\mu(a_{22})=\sum_{\tau=1}^{\beta}p^{\tau}$
+$=\displaystyle\int_{\underline\lambda}I(\underline{\lambda},\underline{c},\underline{b},a_{21},a_{33},a_{22})\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\beta(p-1)]d\mu(a_{11})$. But as we saw earlier, $p^{\min\{0,v_{2}+v_{11}\}}$.
 \end{document}

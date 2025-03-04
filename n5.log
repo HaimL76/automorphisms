@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  3 MAR 2025 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  4 MAR 2025 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,25 +256,50 @@ Overfull \hbox (7.50017pt too wide) in paragraph at lines 72--73
  []
 
 
-Overfull \hbox (3.46922pt too wide) in paragraph at lines 78--79
-[]\OT1/cmr/m/n/10 Denote $\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10
- ; []; []; a[]\OT1/cmr/m/n/10 ) := \OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cm
-m/m/it/10 ; []; []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 p[]$ \OT1/cmr/m/n/10 and $\
-OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; []; a[]; a[]\OT1/cmr
-/m/n/10 ) :=
+Overfull \hbox (0.3718pt too wide) in paragraph at lines 83--84
+[]$\OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10
+ ; []; []; a[]; a[]\OT1/cmr/m/n/10 ) [][] \OML/cmm/m/it/10 p[] [][] p[]d^^V\OT1
+/cmr/m/n/10 ([])\OML/cmm/m/it/10 d^^V\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 d^^V\
+OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 :$ 
  []
 
 
-Overfull \hbox (37.7128pt too wide) in paragraph at lines 78--79
-\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; []; a[]\OT1/cmr/m/n
-/10 )\OML/cmm/m/it/10 p[]$\OT1/cmr/m/n/10 . We have $\OML/cmm/m/it/10 ^^P[]\OT1
-/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 I\OT1/
-cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ) [][] 1\OML/cmm/m/it/10
- d^^V\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 d^^V\OT1/cmr/m/n/10 ([])\OML/cmm/m/it
-/10 d^^V\OT1/cmr/m/n/10 ([]) =$ 
+Overfull \hbox (25.87416pt too wide) in paragraph at lines 100--101
+\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 0$, then $[]\OMS/cmsy
+/m/n/10 f\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; v[] \OT1/cmr/m/n/10 + \OML/cmm/m/i
+t/10 v[]\OMS/cmsy/m/n/10 g \OT1/cmr/m/n/10 = 0 \OMS/cmsy/m/n/10 ) [] \OT1/cmr/m
+/n/10 = [][] 1\OML/cmm/m/it/10 d^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cm
+r/m/n/10 ) =
  []
 
-[3] (n5.aux)
+
+Overfull \hbox (19.58157pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/10 a sum of $\OML/cmm/m/it/10 ^^L$ \OT1/cmr/m/n/10 in-te-grals, $[
+][] \OML/cmm/m/it/10 p[]d^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/1
+0 ) = [] [][] \OML/cmm/m/it/10 p[]d^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1
+/cmr/m/n/10 )$.
+ []
+
+
+Overfull \hbox (22.57524pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/10 main, namely $\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OMS/cmsy/m/
+n/10 f\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 )
+\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OMS
+/cmsy/m/n/10 f\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^U []g n []\OT1/cmr/m/n/10
+ ) =
+ []
+
+[3]
+Overfull \hbox (2.66943pt too wide) in paragraph at lines 106--107
+[]$[][] \OML/cmm/m/it/10 p[]p[]\OT1/cmr/m/n/10 [1 + \OML/cmm/m/it/10 ^^L\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1)]\OML/cmm/m
+/it/10 d^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 )$. We de-note 
+$\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []; []; a[]; a[]; a[]\
+OT1/cmr/m/n/10 ) :=
+ []
+
+[4] (n5.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -302,9 +327,9 @@ sers/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmsy7.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on n5.pdf (3 pages, 146237 bytes).
+Output written on n5.pdf (4 pages, 151513 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
