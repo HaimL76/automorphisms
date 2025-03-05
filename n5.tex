@@ -107,4 +107,13 @@ $\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}p^{v_{3}}[1+\beta(p-1)]d\mu
 
 $=\displaystyle\int_{\underline\lambda}I(\underline{\lambda},\underline{c},\underline{b},a_{21},a_{33},a_{22})\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\beta(p-1)]d\mu(a_{11})$. But similar to what we saw earlier, $p^{\min\{0,v_{2}+v_{11}\}}$ has two cases. If $v_{11}\geq{-v_{2}}$, then $p^{\min\{0,v_{2}+v_{11}\}}=p^{0}$. If $v_{11}<-v_{2}$, then $p^{\min\{0,v_{2}+v_{11}\}}=p^{v_{2}+v_{11}}$.
 We saw earlier that $v_{11}\geq{-(v_{2}+v_{3})}\Rightarrow{v_{11}+v_{2}\geq{-v_{3}}}$, so for this case, we have that $-v_{3}\leq{v_{11}+v_{2}}\leq{0}$, which means that $\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\beta(p-1)]d\mu(a_{11})=\displaystyle\int_{v_{11}\leq{-v_{2}}}1+\beta(p-1)d\mu(a_{11})+\displaystyle\int_{v_{11}+v_{2}\geq{-v_{3}}}p^{v_{2}+v_{11}}[1+\beta(p-1)]d\mu(a_{11})=\displaystyle\int_{v_{11}\leq{-v_{2}}}1+\beta(p-1)d\mu(a_{11})+\sum_{\tau=1}^{v_{3}}\displaystyle\int_{v_{11}\geq{-(v_{3}+v_{2})}}p^{-\tau}[1+\beta(p-1)]d\mu(a_{11})$. Now we need to resolve $\beta=\min\{v_{2},v_{4},v_{2}+\max\{v_{1},v_{4}\}+v_{11}\}$, hence we need to divide the inner integral to different orderings of $v_{1},v_{2},v_{3},v_{4}$.
+
+Case 1: $v_{1}\geq{v_{2}}\geq{v_{3}}\geq{v_{4}}$.
+For this case, we have that $\beta=\min\{v_{2},v_{4},v_{2}+\max\{v_{1},v_{4}\}+v_{11}\}=\min\{v_{4},v_{1}+v_{2}+v_{11}\}$.
+
+The two possible minimum values are equal when $v_{4}=v_{1}+v_{2}+v_{11}$, that is, when $v_{2}+v_{11}=-(v_{1}-v_{4})$. But for this case we have two subcases. If $v_{1}-v_{4}\leq{v_{3}}$, then, since $v_{11}\geq{-(v_{2}+v_{3})}$, we have that $v_{11}+v_{2}\geq{-v_{3}}\geq{-(v_{1}-v_{4})}\Rightarrow{v_{1}+v_{2}+v_{11}\geq{v_{4}}}\Rightarrow{\beta=v_{4}}$, hence 
+
+$\displaystyle\int_{\underline{\lambda}}I(\underline{\lambda},\underline{b},a_{33},a_{33},a_{33})\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}(1+v_{4}(1-p^{-1}))d\mu(a_{11})=$
+
+$=\displaystyle\int_{\underline{\lambda}}I(\underline{\lambda},\underline{b},a_{33},a_{33},a_{33})(1+v_{4}(1-p^{-1}))\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})$, but same as earlier $\displaystyle\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})=p^{0}\mu(v_{11})$ 
 \end{document}
