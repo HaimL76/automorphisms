@@ -115,5 +115,7 @@ The two possible minimum values are equal when $v_{4}=v_{1}+v_{2}+v_{11}$, that 
 
 $\displaystyle\int_{\underline{\lambda}}I(\underline{\lambda},\underline{b},a_{33},a_{33},a_{33})\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}(1+v_{4}(1-p^{-1}))d\mu(a_{11})=$
 
-$=\displaystyle\int_{\underline{\lambda}}I(\underline{\lambda},\underline{b},a_{33},a_{33},a_{33})(1+v_{4}(1-p^{-1}))\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})$, but same as earlier $\displaystyle\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})=p^{0}\mu(v_{11})$ 
+$=\displaystyle\int_{\underline{\lambda}}I(\underline{\lambda},\underline{b},a_{33},a_{33},a_{33})(1+v_{4}(1-p^{-1}))\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})$, but same as earlier $\displaystyle\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})=p^{0}\mu(\{v_{11}+v_{2}\geq{0}\})+\displaystyle\int_{{v_{2}+v_{11}}<{0}}p^{v_{2}+v_{11}}d\mu(a_{11})=1\mu(\{v_{11}\geq{-v_{2}}\})+\displaystyle\int_{{v_{2}+v_{11}}<{0}}p^{v_{2}+v_{11}}d\mu(a_{11})=p^{v_{2}}+\displaystyle\int_{-v_{3}\leq{v_{11}}<-v_{2}}p^{v_{2}+v_{11}}d\mu(a_{11})=p^{v_{2}}+\sum_{\tau=-v_{3}}^{-(v_{2}+1)}\displaystyle\int_{v_{11}=\tau}p^{v_{2}+\tau}d\mu(a_{11})=$
+
+$=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}\displaystyle\int_{v_{11}=-(v_{2}+\tau)}p^{\tau}d\mu(a_{11})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{-\tau}(p^{v_{2}+\tau}-p^{v_{2}+\tau-1})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{v_{2}}(1-p^{-1})=p^{2}+v_{3}=p^{v_{2}}(1+v_{3}(1-p^{-1}))$
 \end{document}
