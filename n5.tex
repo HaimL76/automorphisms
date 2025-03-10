@@ -119,5 +119,29 @@ $\displaystyle\int_{\underline{\lambda}}I_{5}\int_{a_{11}}p^{\min\{0,v_{2}+v_{11
 
 $=\displaystyle\int_{\underline{\lambda}}I_{5}(1+v_{4}(1-p^{-1}))\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})$, but same as earlier $\displaystyle\int_{v_{11}\geq{-(v_{2}+v_{3})}}p^{\min\{0,v_{2}+v_{11}\}}d\mu(a_{11})=p^{0}\mu(\{v_{11}+v_{2}\geq{0}\})+\displaystyle\int_{{v_{2}+v_{11}}<{0}}p^{v_{2}+v_{11}}d\mu(a_{11})=1\mu(\{v_{11}\geq{-v_{2}}\})+\displaystyle\int_{{v_{2}+v_{11}}<{0}}p^{v_{2}+v_{11}}d\mu(a_{11})=p^{v_{2}}+\displaystyle\int_{-v_{3}\leq{v_{11}}<-v_{2}}p^{v_{2}+v_{11}}d\mu(a_{11})=p^{v_{2}}+\sum_{\tau=-v_{3}}^{-(v_{2}+1)}\displaystyle\int_{v_{11}=\tau}p^{v_{2}+\tau}d\mu(a_{11})=$
 
-$=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}\displaystyle\int_{v_{11}=-(v_{2}+\tau)}p^{\tau}d\mu(a_{11})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{-\tau}(p^{v_{2}+\tau}-p^{v_{2}+\tau-1})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{v_{2}}(1-p^{-1})=p^{2}+v_{3}=p^{v_{2}}(1+v_{3}(1-p^{-1}))$. Denote $I_{6}:=I_{5}p^{v_{2}}(1+v_{3}(1-p^{-1}))$, thus we have $\zeta_{L_{5,p}}^{\wedge}(s)=\displaystyle\int_{\underline{\lambda}}I_{6}d\mu(\lambda)$. We compute the full expression $I_{6}=p^{7v_{1}+11v_{2}+11v_{3}+8v_{4}}(1+v_{3}(1-p^{-1}))(1+v_{4}(1+p^{-1}))p^{(4v_{1}+6v_{2}+6v_{3}+4v_{4})s}$, and integrate over $\underline{\lambda}$.
+$=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}\displaystyle\int_{v_{11}=-(v_{2}+\tau)}p^{\tau}d\mu(a_{11})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{-\tau}(p^{v_{2}+\tau}-p^{v_{2}+\tau-1})=p^{v_{2}}+\sum_{\tau=1}^{v_{3}}p^{v_{2}}(1-p^{-1})=p^{2}+v_{3}=p^{v_{2}}(1+v_{3}(1-p^{-1}))$. Denote $I_{6}:=I_{5}p^{v_{2}}(1+v_{3}(1-p^{-1}))$, thus we have $\zeta_{L_{5,p}}^{\wedge}(s)=\displaystyle\int_{\underline{\lambda}}I_{6}d\mu(\lambda)$. We compute the complete expression $I_{6}=p^{4(v_{1}+v_{2}+v_{3}+v_{4})}p^{-(v_{2}+v_{3})-\max\{v_{1},v_{4}\}}p^{v_{1}+v_{2}}p^{v_{3}+v_{4}}p^{v_{3}}p^{v_{2}}(1+v_{3}(1-p^{-1}))p^{-(4v_{1}+6v_{2}+6v_{3}+4v_{4})s}=p^{7v_{1}+11v_{2}+11v_{3}+8v_{4}}(1+v_{3}(1-p^{-1}))(1+v_{4}(1+p^{-1}))p^{-(4v_{1}+6v_{2}+6v_{3}+4v_{4})s}=p^{(7-4s)v_{1}}p^{(11-6s)v_{2}}p^{(11-6s)v_{3}}p^{(8-4s)v_{4}}(1+v_{3}(1-p^{-1}))(1+v_{4}(1-p^{-1}))$ and integrate it over $\underline{\lambda}$, which translates to the infinite sum 
+
+$S:=\sum_{v_{1}\geq{v_{2}\geq{v_{3}}\geq{v_{4}}}}p^{(7-4s)v_{1}}p^{(11-6s)v_{2}}p^{(11-6s)v_{3}}p^{(8-4s)v_{4}}(1+v_{3}(1-p^{-1}))(1+v_{4}(1+p^{-1}))$.
+
+We notice that we have no constraint which dictates an order relation between $v_{1}$ and $v_{2}$, thus we have the following constraints
+
+$v_{2}\geq{v_{3}}\geq{v_{4}}$ and $v_{1}\geq{v_{3}+v_{4}}\geq{v_{3}}\geq{v_{4}}$. But this allows us to break the computed sum into separate sums, where the index of summation must preserve the constraints between $v_{1},v_{2},v_{3},v_{4}$.
+
+Denote $u_{4}:=v_{4}$, $u_{3}:=v_{3}-v_{4}$, ${u_{2}:=v_{2}-v_{3}}$ and $u_{1}:=v_{1}-(v_{3}+v_{4})$. With these notations, we have 
+
+$S=\sum_{u_{1}=0}^{\infty}\sum_{u_{2}=0}^{\infty}\sum_{u_{3}=0}^{\infty}\sum_{u_{4}=0}^{\infty}p^{(7-4s)(u_{1}+u_{3}+2u_{4})}p^{(11-6s)(u_{2}+u_{3}+u_{4})}p^{(11-6s)(u_{3}+u_{4})}p^{(8-4s)u_{4}}(1+(u_{3}+u_{4})(1-p^{-1}))(1+u_{4}(1-p^{-1}))=$
+
+$\sum_{u_{1}=0}^{\infty}p^{(7-4s)u_{1}}\sum_{u_{2}=0}^{\infty}p^{(11-6s)u_{2}}\sum_{u_{3}=0}^{\infty}p^{(29-16s)u_{3}}\sum_{u_{4}=0}^{\infty}p^{(44-24s)u_{4}}(1+(u_{3}+2u_{4})(1-p^{-1})+(u_{3}u_{4}+u_{4}^{2}(1-p^{-1})))$.
+Denote $w_{1}:=p^{(7-4s)}$, $w_{2}:=p^{(11-6s)}$, $w_{3}:=p^{(29-16s)}$ and $w_{4}:=p^{(44-24s)}$.
+We shall compute each summand separately.
+
+$\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}=\frac{1}{1-w_{1}^{u_{1}}}+\frac{1}{1-w_{2}^{u_{2}}}+\frac{1}{1-w_{3}^{u_{3}}}+\frac{1}{1-w_{4}^{u_{4}}}$.
+
+$\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})(1-p^{-1})=$
+
+$=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})=$
+
+$=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})=$
+
+$=(1-p^{-1})[\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}+\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}2u_{4}w_{4}^{u_{4}}]=\frac{1}{1-w_{1}^{u_{1}}}+\frac{1}{1-w_{2}^{u_{2}}}+\frac{1}{1-w_{3}^{u_{3}}}+\frac{1}{1-w_{4}^{u_{4}}}$.
 \end{document}
