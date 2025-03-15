@@ -135,13 +135,23 @@ $\sum_{u_{1}=0}^{\infty}p^{(7-4s)u_{1}}\sum_{u_{2}=0}^{\infty}p^{(11-6s)u_{2}}\s
 Denote $w_{1}:=p^{(7-4s)}$, $w_{2}:=p^{(11-6s)}$, $w_{3}:=p^{(29-16s)}$ and $w_{4}:=p^{(44-24s)}$.
 We shall compute each summand separately.
 
-$\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}=\frac{1}{1-w_{1}^{u_{1}}}+\frac{1}{1-w_{2}^{u_{2}}}+\frac{1}{1-w_{3}^{u_{3}}}+\frac{1}{1-w_{4}^{u_{4}}}$.
+$S_{1}:=\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}=\frac{1}{1-w_{1}^{u_{1}}}\frac{1}{1-w_{2}^{u_{2}}}\frac{1}{1-w_{3}^{u_{3}}}\frac{1}{1-w_{4}^{u_{4}}}$.
 
-$\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})(1-p^{-1})=$
-
-$=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})=$
+$S_{2}:=\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})(1-p^{-1})=$
 
 $=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})=$
 
-$=(1-p^{-1})[\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}+\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}2u_{4}w_{4}^{u_{4}}]=\frac{1}{1-w_{1}^{u_{1}}}+\frac{1}{1-w_{2}^{u_{2}}}+\frac{1}{1-w_{3}^{u_{3}}}+\frac{1}{1-w_{4}^{u_{4}}}$.
+$=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}(u_{3}+2u_{4})=$
+
+$=(1-p^{-1})\Bigl[\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}+$
+
+$+\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}2u_{4}w_{4}^{u_{4}}\Bigr]=(1-p^{-1})\Bigl[\frac{1}{1-w_{1}}\frac{1}{1-w_{2}}\frac{w_{3}}{(1-w_{3})^{2}}\frac{1}{1-w_{4}}+2\frac{1}{1-w_{1}}\frac{1}{1-w_{2}}\frac{1}{1-w_{3}}\frac{w_{4}}{(1-w_{4})^{2}}\Bigr]$.
+
+$S_{3}:=\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}u_{4}(1-p^{-1})=$
+
+$=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}u_{3}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}w_{4}^{u_{4}}u_{4}=$
+
+$=\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}\frac{1}{1-w_{1}}\frac{1}{1-w_{2}}\frac{1}{1-w_{3}}\frac{w_{4}}{(1-w_{4})^{2}}$.
+
+The second case is when $\min\{v_{4},v_{1}+v_{2}+v_{11}\}=v_{1}+v_{2}+v_{11}\Rightarrow{v_{1}+v_{2}+v_{11}<v_{4}}$, we use a strong inequality here, because we have already counted the case where $v_{4}=v_{1}+v_{2}+v_{11}$. But $v_{11}\geq{-(v_{2}+v_{3})}\Rightarrow{v_{11}+v_{2}\geq{-v_{3}}}$, hence $v_{1}-v_{3}\leq{\beta}\leq{v_{4}-1}$.
 \end{document}
