@@ -153,5 +153,32 @@ $=(1-p^{-1})\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}
 
 $=\sum_{u_{1}}^{\infty}w_{1}^{u_{1}}\sum_{u_{2}}^{\infty}w_{2}^{u_{2}}\sum_{u_{3}}^{\infty}w_{3}^{u_{3}}\sum_{u_{4}}^{\infty}\frac{1}{1-w_{1}}\frac{1}{1-w_{2}}\frac{1}{1-w_{3}}\frac{w_{4}}{(1-w_{4})^{2}}$.
 
-The second case is when $\min\{v_{4},v_{1}+v_{2}+v_{11}\}=v_{1}+v_{2}+v_{11}\Rightarrow{v_{1}+v_{2}+v_{11}<v_{4}}$, we use a strong inequality here, because we have already counted the case where $v_{4}=v_{1}+v_{2}+v_{11}$. But $v_{11}\geq{-(v_{2}+v_{3})}\Rightarrow{v_{11}+v_{2}\geq{-v_{3}}}$, hence $v_{1}-v_{3}\leq{\beta}\leq{v_{4}-1}$.
+The second case is when $\beta=\min\{v_{4},v_{1}+v_{2}+v_{11}\}=v_{1}+v_{2}+v_{11}\Rightarrow{v_{1}+v_{2}+v_{11}<v_{4}}$, we use a strong inequality here, because we have already counted the case where $v_{4}=v_{1}+v_{2}+v_{11}$. But $v_{11}\geq{-(v_{2}+v_{3})}\Rightarrow{v_{11}+v_{2}\geq{-v_{3}}}$, hence $v_{1}-v_{3}\leq{\beta}\leq{v_{4}-1}$. For this case, the expression $\beta(1-p^{-1})$ is not constant, but a finite number of constant values, where $\beta\in\{v_{1}-v_{3},v_{1}-v_{3}+1,v_{1}-v_{3}+2,\dots,v_{4}-2,v_{4}-1\}$.
+
+Comparing the two possible ranges of $v_{11}$, we observe that the lower bound is $-(v_2+v_3)$ in both cases, but the upper bound is either $-(v_2+1)$ coming from $\min\{0,v_2+v_{11}\}$, or $v_4-1-(v_1+v_2)=v_4-v_1-(v_2+1)$ coming from $\beta$, and since $v_4-v_1\leq{0}$, we have that $v_4-v_1-(v_2+1)\leq{-(v_2+1)}$, hence the range of $v_{11}$, for this particular subcase, must be $-(v_2+v_3)\leq{v_{11}}\leq{v_4-v_1}-(v_2-1)$, and therefore 
+
+
+
+
+$\displaystyle\int_{\underline\lambda}I_{5}\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\beta(1-p^{-1})]d\mu(a_{11})=$
+
+$=\displaystyle\int_{\underline\lambda}I_{5}\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-v_1-(v_2-1)}p^{v_{2}+v_{11}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})=$
+
+$=\displaystyle\int_{\underline\lambda}I_{5}\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-v_1-(v_2-1)}p^{v_{2}+v_{11}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})=$
+
+$=\displaystyle\int_{\underline\lambda}I_{5}\Bigl[p^{-v_{3}}[1+(v_1-v_3)(1-p^{-1})]\mu(p^{-(v_{2}+v_3)}\mathbb{Z}_{p}\setminus{p^{-(v_{2}+v_3)+1}\mathbb{Z}_{p}})+$
+
+$+p^{-v_{3}+1}[1+(v_1-v_3+1)(1-p^{-1})]\mu(p^{-(v_{2}+v_3)+1}\mathbb{Z}_{p}\setminus{p^{-(v_{2}+v_3)+2}\mathbb{Z}_{p}})+$
+
+$\vdots$
+
+$+p^{-(v_{4}+v_1)+1}[1+(v_4+1)(1-p^{-1})]\mu(p^{-(v_{4}+v_1)+1}\mathbb{Z}_{p}\setminus{p^{-(v_{4}+v_1)+2}\mathbb{Z}_{p}})\Bigr]=$
+
+$=\displaystyle\int_{\underline\lambda}I_{5}\Bigl[p^{-v_{3}}[1+(v_1-v_3)(1-p^{-1})]p^{v_{2}+v_3}-p^{v_{2}+v_3-1}+$
+
+$+p^{-v_{3}+1}[1+(v_1-v_3+1)(1-p^{-1})]p^{v_{2}+v_3-1}-p^{v_{2}+v_3-2})+$
+
+$\vdots$
+
+$+p^{-(v_{4}+v_1)+1}[1+(v_4+1)(1-p^{-1})]p^{v_{4}+v_1-1}-p^{v_{4}+v_1-2}\mathbb{Z}_{p})\Bigr]=$
 \end{document}
