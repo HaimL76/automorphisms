@@ -167,24 +167,13 @@ Therefore, we have
 \[S_{11}=\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\beta(1-p^{-1})]d\mu(a_{11})=\displaystyle\int_{a_{11}}p^{\min\{0,v_{2}+v_{11}\}}[1+\alpha(1-p^{-1})]d\mu(a_{11})=\]
 \[=\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-(v_1+v_2+1)}p^{\min\{0,v_2+v_{11}\}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})\]
 
-We notice that for this case we do not have $\min\{0,v_2+v_{11}\}=0$, because $\max{v_{11}}=v_4-(v_1+v_2+1)$, hence if $v_2+v_{11}=0$, then $v_{11}=-v_2=v_4-v_1-v_2-1\Rightarrow{v_4-v_1-1=0}\Rightarrow{v_4-v_1=1}$, which contradicts $v_1\geq{v_4}$. Therefore 
-\[S_{11}=\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-(v_1+v_2+1)}p^{v_2+v_{11}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})\]
+We notice that for this case we do not have $\min\{0,v_2+v_{11}\}=0$, because $\max{v_{11}}=v_4-(v_1+v_2+1)$, hence if $v_2+v_{11}=0$, then $v_{11}=-v_2=v_4-v_1-v_2-1\Rightarrow{v_4-v_1-1=0}\Rightarrow{v_4-v_1=1}$, which contradicts $v_1\geq{v_4}$. Therefore,
+\[S_{11}=\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-(v_1+v_2+1)}p^{v_2+v_{11}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})=\]
 
-$=\displaystyle\int_{\underline\lambda}I_{5}\sum_{v_{11}=-(v_2+v_3)}^{v_{4}-v_1-(v_2-1)}p^{v_{2}+v_{11}}[1+(v_1+v_2+v_{11})(1-p^{-1})]d\mu(a_{11})=$
-
-$=\displaystyle\int_{\underline\lambda}I_{5}\Bigl[p^{-v_{3}}[1+(v_1-v_3)(1-p^{-1})]\mu(p^{-(v_{2}+v_3)}\mathbb{Z}_{p}\setminus{p^{-(v_{2}+v_3)+1}\mathbb{Z}_{p}})+$
-
-$+p^{-v_{3}+1}[1+(v_1-v_3+1)(1-p^{-1})]\mu(p^{-(v_{2}+v_3)+1}\mathbb{Z}_{p}\setminus{p^{-(v_{2}+v_3)+2}\mathbb{Z}_{p}})+$
-
-$\vdots$
-
-$+p^{-(v_{4}+v_1)+1}[1+(v_4+1)(1-p^{-1})]\mu(p^{-(v_{4}+v_1)+1}\mathbb{Z}_{p}\setminus{p^{-(v_{4}+v_1)+2}\mathbb{Z}_{p}})\Bigr]=$
-
-$=\displaystyle\int_{\underline\lambda}I_{5}\Bigl[p^{-v_{3}}[1+(v_1-v_3)(1-p^{-1})]p^{v_{2}+v_3}-p^{v_{2}+v_3-1}+$
-
-$+p^{-v_{3}+1}[1+(v_1-v_3+1)(1-p^{-1})]p^{v_{2}+v_3-1}-p^{v_{2}+v_3-2})+$
-
-$\vdots$
-
-$+p^{-(v_{4}+v_1)+1}[1+(v_4+1)(1-p^{-1})]p^{v_{4}+v_1-1}-p^{v_{4}+v_1-2}\mathbb{Z}_{p})\Bigr]=$
+\[
+=p^{-v_3}[1+(v_1-v_3)(1-p^{-1})]\mu()+\]
+\[+p^{-v_3+1}[1+(v_1-v_3+1)(1-p^{-1})]\mu()+\]
+\[\vdots\]
+\[+p^{v_4-v_1-1}[1+(v_4-1)(1-p^{-1})]\mu()
+\]
 \end{document}
