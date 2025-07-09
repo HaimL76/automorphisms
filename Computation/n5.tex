@@ -8,15 +8,15 @@
  left=20mm,
  top=20mm,
  }
-\title{v_{11}}
+\title{$v_{11}$}
 \author{haiml76 }
 \date{June 2025}
 
 \begin{document}
 
-%\maketitle
+\maketitle
 
-\section{Introduction}
+\section{Computation}
 We have the following facts about expressions with $v_{11}$:
 \begin{enumerate}
     \item 
@@ -27,15 +27,20 @@ $v_{11}\geq{-v_2-\min\{v_1,v_3\}}$
 		  p^{-j} & v_{11}=-v_2-j, \text{where\,}j\geq{1}
 	\end{array}
 \right.$
-\item Following from the previous fact, we obtain that
-
-$p^{\min\{0,v_2+v_{11}\}}\mu(a_{11})=\left\{
+\item $\mu(a_{11})=\left\{
 	\begin{array}{ll}
-		p^0p^{v_2}=p^{v_2}  & v_{11}\geq{-v_2} \\
-		  p^{-j}(p^{v_2+j}-p^{v_2+j-1)}=p^{v_2}(1-p^{-1}) & v_{11}=-v_2-j, \text{where\,}j\geq{1}
+		p^{v_2}  & v_{11}\geq{-v_2} \\
+		  p^{v_2+j}-p^{v_2+j-1}=p^{v_2}(1-p^{-1}) & v_{11}=-v_2-j, \text{where\,}j\geq{1}
 	\end{array}
 \right.$
+\item $\Rightarrow{p^{\min\{0,v_2+v_{11}\}}\mu(a_{11})=\left\{
+	\begin{array}{ll}
+		p^{v_2}  & v_{11}\geq{-v_2} \\
+		  p^{-j}(p^{v_2+j}-p^{v_2+j-1)}=p^{v_2}(1-p^{-1}) & v_{11}=-v_2-j, \text{where\,}j\geq{1}
+	\end{array}
+\right.}$
 \item $\alpha=\min\{\beta,v_{11}+v_2+\gamma\}$, where $\beta=\min\{v_2,v_4\}$ and $\gamma=\max\{v_1,v_4\}$.
+
 Hence, we have the following settings:
 \begin{enumerate}
     \item $\beta=v_2$ and $\gamma=v_1$
@@ -54,27 +59,27 @@ $\alpha=\left\{
 		  v_2-j & v_{11}=-v_4-j, \text{where\,}j\geq{1}
 	\end{array}
 \right.$    
-\item $\beta=v_42$ and $\gamma=v_1$
+\item $\beta=v_4$ and $\gamma=v_1$
 
 $\alpha=\left\{
 	\begin{array}{ll}
             v_4  & v_{11}\geq{v_4-v_1-v_2} \\
-		  v_4--j & v_{11}=v_4-v_2-v_1-j, \text{where\,}j\geq{1}
+		  v_4-j & v_{11}=v_4-v_2-v_1-j, \text{where\,}j\geq{1}
 	\end{array}
 \right.$    
-\item $\beta=v_42$ and $\gamma=v_41$
+\item $\beta=v_4$ and $\gamma=v_4$
 
 $\alpha=\left\{
 	\begin{array}{ll}
-            v_42  & v_{11}\geq{-v_21} \\
-		  v_42-j & v_{11}=-v_21-j, \text{where\,}j\geq{1}
+            v_4  & v_{11}\geq{-v_2} \\
+		  v_4-j & v_{11}=-v_2-j, \text{where\,}j\geq{1}
 	\end{array}
 \right.$
 \end{enumerate}
 \end{enumerate}
 \begin{enumerate}
 %%%%%%%%%% Case 1 %%%%%%%%%%
-    \item $\min\{v_1,v_3\}=v_3$, $\min\{v_2,v_4\}=v_2$, $\max\{v_1,v_4\}=v_1$
+    \item $\min\{v_1,v_3\}=v_3$, $\min\{v_2,v_4\}=v_2$, $\max\{v_1,v_4\}=v_1\Rightarrow{v_1}\geq{v_4}>v_2$ and $v_1\geq{v_3}$
     
     \textbf{Constraints}
     \begin{enumerate}
@@ -112,7 +117,7 @@ $
         \item $\Rightarrow{S=\left\{
 	\begin{array}{ll}
             p^{v_2}(1+(v_1-v_2)(1-p^{-1}))(1+v_2(1-p^{-1}))  & v_{11}\geq{-v_1} \\
-		              p^{v_2}[(v_2-(v_1-v_3))(1-p^{-1})+[\binom{v_2}{2}-\binom{v_1-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{-v_1-1} \\
+		              p^{v_2}[(v_2+v_3-v_1)(1-p^{-1})+[\binom{v_2}{2}-\binom{v_1-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{-v_1-1} \\
 	\end{array}
 \right.}.$
         \end{enumerate}
@@ -157,7 +162,7 @@ $
         \item $\Rightarrow{S=\left\{
 	\begin{array}{ll}
             p^{v_2}(1+(v_4-v_2)(1-p^{-1}))(1+v_2(1-p^{-1}))  & v_{11}\geq{-v_4} \\
-		              p^{v_2}[(v_2-(v_4-v_3))(1-p^{-1})+[\binom{v_2}{2}-\binom{v_4-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{-v_4-1} \\
+		              p^{v_2}[(v_2+v_3-v_4)(1-p^{-1})+[\binom{v_2}{2}-\binom{v_4-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{-v_4-1} \\
 	\end{array}
 \right.}.$
         \end{enumerate}
@@ -190,20 +195,20 @@ $
             \left\{
 	\begin{array}{ll}
             p^{v_2}(1+(v_1-v_4)(1-p^{-1})) & v_{11}\geq{v_4-v_1-v_2} \\
-		  p^{v_2}(v_2+v_3-v_4)(1-p^{-1})) & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
+		  p^{v_2}(v_3+v_4-v_1)(1-p^{-1})) & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
 	\end{array}
 \right.
 $
             \item $\alpha=\left\{
 	\begin{array}{ll}
             v_4  & v_{11}\geq{v_4-v_1-v_2} \\
-		  v_4+v_{11}+v_1 & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
+		  v_2+v_{11}+v_1 & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
 	\end{array}
 \right.$
         \item $\Rightarrow{S=\left\{
 	\begin{array}{ll}
-            p^{v_2}(1+(v_1-v_4)(1-p^{-1}))(1+v_2(1-p^{-1}))  & v_{11}\geq{v_4-v_1-v_2} \\
-		              p^{v_2}[(v_2-(v_4-v_3))(1-p^{-1})+[\binom{v_4}{2}-\binom{v_1-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
+            p^{v_2}(1+(v_1-v_4)(1-p^{-1}))(1+v_4(1-p^{-1}))  & v_{11}\geq{v_4-v_1-v_2} \\
+		              p^{v_2}[(v_3+v_4-v_1)(1-p^{-1})+[\binom{v_4}{2}-\binom{v_1-v_3}{2}](1-p^{-1})^2]  & -v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1} \\
 	\end{array}
 \right.}.$
         \end{enumerate}
@@ -348,6 +353,38 @@ $
 	\begin{array}{ll}
             p^{v_2}(1+(v_1-v_4)(1-p^{-1}))(1+v_4(1-p^{-1}))  & v_{11}\geq{v_4-v_2-v_1} \\
 		              p^{v_2}[v_4(1-p^{-1})+[\binom{v_4}{2}](1-p^{-1})^2]  & -v_2-v_1\leq{v_{11}}\leq{v_4-v_2-v_1-1} \\
+	\end{array}
+\right.}.$
+        \end{enumerate}
+
+            %%%%%%%%%% Case 8 %%%%%%%%%%
+    \item $\min\{v_1,v_3\}=v_1$, $\min\{v_2,v_4\}=v_4$, $\max\{v_1,v_4\}=v_1$
+    
+    \textbf{Constraints}
+    \begin{enumerate}
+        \item $v_{11}\geq{-v_2-v_1}$
+        \item $\alpha=\min\{v_4,v_2+v_{11}+v_4\}$
+    \end{enumerate}
+There are no sub cases here
+        \begin{enumerate}
+            \item $p^{\min\{0,v_2+v_{11}\}}\mu(a_{11})=
+            \left\{
+	\begin{array}{ll}
+            p^{v_2} & v_{11}\geq{-v_2} \\
+		  p^{v_2}v_1(1-p^{-1})) & -v_2-v_1\leq{v_{11}}\leq{v_4-v_2-v_1-1} \\
+	\end{array}
+\right.
+$
+            \item $\alpha=\left\{
+	\begin{array}{ll}
+            v_4  & v_{11}\geq{-v_2} \\
+		  v_2+v_{11}+v_4 & -v_2-v_1\leq{v_{11}}\leq{-v_2-1} \\
+	\end{array}
+\right.$
+        \item $\Rightarrow{S=\left\{
+	\begin{array}{ll}
+            p^{v_2}(1+(v_1-v_4)(1-p^{-1}))(1+v_4(1-p^{-1}))  & v_{11}\geq{-v_2} \\
+		              p^{v_2}[v_1(1-p^{-1})+[\binom{v_4}{2}](1-p^{-1})^2]  & -v_2-v_1\leq{v_{11}}\leq{-v_2-1} \\
 	\end{array}
 \right.}.$
         \end{enumerate}
