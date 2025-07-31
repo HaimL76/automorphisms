@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\title{cases}
+\author{haiml76 }
+\date{July 2025}
+
+\begin{document}
+
+\maketitle
+Denote $p^{\min}:=p^{\min\{0,v_2+v_{11}\}}$
+
+Denote $\rho:=(1-p^{-1})$
+\section{Case 1}
+$v_3>v_1\geq{v_4}>v_2\geq{0}$
+
+$\Rightarrow{v_{11}}\geq{-v_2-v_1}$
+
+$\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_1\}=     \begin{cases}
+       v_2, & v_{11}\geq{-v_1}\\
+       v_2-1,v_2-2,\dots, & v_{11}<{-v_1}\\
+     \end{cases}$
+
+For $v_{11}\geq{-v_2}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=p^{v_2}(1+v_2\rho)$.
+
+For $-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{-v_1}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}\rho(v_1-v_2)(1+v_2\rho)=p^{v_2}\rho(v_1-v_2)+p^{v_2}\rho^2v_2(v_1-v_2)$.
+
+For $-v_2-v_1\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{-v_2-v_1}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}v_2\rho+p^{v_2}v_2\rho^2-p^{-v_2}\rho\binom{v_2+1}{2}=p^{v_2}v_2\rho+p^{v_2}\rho^2-p^{v_2}\rho^2\binom{v_2+1}{2}$
+
+So we have $\sum_{v_{11}\geq{-v_2-v_1}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+v_2(v_1-v_2)\rho^2+v_2\rho+v_2\rho^2-\frac{(v_2+1)v_2}{2}\rho^2).$
+We compute the differences between $v_1,v_2,v_3,v_4$,
+
+$v_3\overset{d}{>}v_1\overset{c}{\geq}{v_4}\overset{b}>v_2\overset{a}{\geq}{0}$
+
+Thus, we substitute $v_1\rightarrow{a+b+c}$, $v_2\rightarrow{a}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a+b}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}$.
+
+\section{Case 2}
+$v_1\geq{v_3}\geq{v_4}>v_2\geq{0}$
+
+$\Rightarrow{v_{11}}\geq{-v_2-v_3}$
+
+$\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_1\}=\begin{cases}
+       v_2, & v_{11}\geq{-v_1}\\
+       v_2-1,v_2-2,\dots, & v_{11}<{-v_1}\\
+     \end{cases}$
+
+We have two sub cases.
+\subsection{Sub case I}
+$-v_2-v_3\geq{-v_1}\Rightarrow{v_1\geq{v_2+v_3}}$
+
+Here there is no phase transition, because the phase transition occurs at $-v_1-1<{-v_2-v_3}\leq{v_{11}}$
+
+For $v_{11}\geq{-v_2}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=p^{v_2}(1+v_2\rho)$.
+
+For $-v_2-v_3\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{-v_2-v_3}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}v_3\rho(1+v_2\rho)=p^{v_2}v_3\rho+p^{v_2}v_3v_2\rho^2$.
+
+So we have $\sum_{v_{11}\geq{-v_2-v_2}}=p^{v_2}(1+v_2\rho+v_3\rho+v_2v_3\rho^2).$
+We compute the differences between $v_1,v_2,v_3,v_4$,
+
+$v_1\overset{d}{\geq}{v_2+v_3}\overset{e}{\geq}v_3\overset{c}{\geq}{v_4}\overset{b}>v_2\overset{a}{\geq}{0}$
+
+But $e=v_2+v_3-v_3=v_2=a$
+
+Thus, we substitute $v_1\rightarrow{2a+b+c+d}$, $v_2\rightarrow{a}$, $v_3\rightarrow{a+b+c}$, $v_4\rightarrow{a+b}$, and compute series with the new variables as indices, where $a,c,d\geq{0}$ and $b\geq{1}$.
+
+
+
+
+
+
+
+\end{document}
