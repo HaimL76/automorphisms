@@ -190,4 +190,49 @@ But $v_1+v_2-d-c-b=v_1\Rightarrow{v_2=v_1+v_2-v_1=b+c+d}$
 
 Thus, we substitute $v_1\rightarrow{a+b+c+d}$, $v_2\rightarrow{b+c+d}$, $v_3\rightarrow{a+2b+c+d}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a\geq{0}$ and $b,c,d\geq{1}$
 \end{enumerate}
+
+
+\section{Case 4}
+$v_4>v_1\geq{v_3}\geq{0}$
+
+$v_4>v_2\geq{0}$
+
+$\Rightarrow{v_{11}}\geq{-v_2-v_3}$
+
+$\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_4\}=\begin{cases}
+       v_2, & v_{11}\geq{-v_4}\\
+       v_2-1,v_2-2,\dots, & v_{11}<{-v_4}\\
+     \end{cases}$
+
+We have two sub cases
+
+\subsection{Sub case 4.1}
+$-v_2-v_3\geq{-v_4}\Rightarrow{v_2+v_3\leq{v_4}}$
+
+There is no phase transition here, since $v_{11}\geq{-v_2-v_3}\geq{-v_4}$
+
+For $v_{11}\geq{-v_2}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=p^{v_2}(1+v_2\rho).$
+
+For $-v_2-v_3\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{-v_2-v_3}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}v_3\rho(1+v_2\rho)=p^{v_2}v_3\rho+p^{v_2}v_2v_3\rho^2.$
+
+So we have $\sum_{-v_2-v_3}p^{\min}\mu(a_{11})(a+\alpha\rho)=p^{v_2}(1+v_2\rho+v_3\rho+v_2v_3\rho^2).$
+
+We have several arrangements,
+\begin{enumerate}
+\item 
+$v_4\overset{d}{\geq}v_2+v_3\overset{c}{>}v_1\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
+
+But $v_2+v_3-c-b=v_3\Rightarrow{v_2=v_2+v_3-v_3=b+c}$
+
+Thus, we substitute $v_1\rightarrow{a+2b+c}$, $v_2\rightarrow{b+c}$, $v_3\rightarrow{a+b+c}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $b,d\geq{0}$ and $a,c\geq{1}$
+
+\item 
+$v_4\overset{d}{\geq}v_2+v_3\overset{c}{>}v_1\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
+
+But $v_2+v_3-c-b=v_2\Rightarrow{v_3=v_2+v_3-v_2=b+c}$
+
+Thus, we substitute $v_1\rightarrow{a+2b+c}$, $v_2\rightarrow{a+b+c}$, $v_3\rightarrow{b+c}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$
+
+\end{enumerate}
+
 \end{document}

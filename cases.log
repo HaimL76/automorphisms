@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  1 AUG 2025 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  1 AUG 2025 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -248,7 +248,16 @@ Overfull \hbox (9.2099pt too wide) in paragraph at lines 191--192
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
-[4] (cases.aux)
+[4]
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 216--217
+[]\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
+0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
+have $\OML/cmm/m/it/10 p[]^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/
+10 )(1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 p[]^^Z\
+OT1/cmr/m/n/10 (1 +
+ []
+
+[5] (cases.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -275,9 +284,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
 Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on cases.pdf (4 pages, 132267 bytes).
+Output written on cases.pdf (5 pages, 135071 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
