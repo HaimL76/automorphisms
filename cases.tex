@@ -330,4 +330,42 @@ $v_3\overset{d}{\geq}v_4\overset{c}{>}v_2\overset{b}{>}{v_1}\overset{a}{\geq}{0}
 Thus, we substitute $v_1\rightarrow{a}$, $v_2\rightarrow{a+b}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a+b+c}$, and compute series with the new variables as indices, where $a,d\geq{0}$ and $b,c\geq{1}$
 
 \end{enumerate}
+\section{Case 7}
+$v_2\geq{v_4}\geq{0}$
+
+$v_3>v_1\geq{v_4}\geq{0}$
+
+$\Rightarrow{v_{11}}\geq{-v_2-v_1}$
+
+$\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_1\}=\begin{cases}
+       v_4, & v_{11}\geq{v_4-v_1-v_2}\\
+       v_4-1,v_4-2,\dots, & v_{11}<{v_4-v_1-v_2}\\
+     \end{cases}$
+
+There are no two sub cases here, because the phase transition occurs at $v_{11}={v_4-v_1-v_2}\geq{-v_2-v_1}$
+
+For $v_{11}\geq{-v_2}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=p^{v_2}(1+v_4\rho).$
+
+For $v_4-v_1-v_2\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{v_4-v_1-v_2}^{-v_2-1}p^{v_2}\rho(1+v_4\rho)=\sum_{i=1}^{v_4-v_1}p^{v_2}\rho(1+v_4\rho)=p^{v_2}(v_4-v_1)\rho(1+v_4\rho)=p^{v_2}((v_4-v_1)\rho+(v_4-v_1)v_4\rho^2).$
+
+For $-v_1-v_2\leq{v_{11}}\leq{v_4-v_1-v_2-1}$, we have $p^{\min}\mu(a_{11})(1+\alpha\rho)=\sum_{-v_1-v_2}^{v_4-v_1-v_2-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_4-1}p^{v_2}\rho(1+(v_4-i)\rho)=p^{v_2}(v_4-v_1)\rho(1+v_4\rho)=p^{v_2}((v_4-v_1)\rho+(v_4-v_1)v_4\rho^2)=p^{v_2}((v_4-1)\rho+(v_4-1)v_4\rho^2-\binom{v_4}{2}\rho^2).$
+
+So we have $v_{11}\geq{-v_2-v_1}$, we have $p^{\min}\mu(a_{11})=p^{v_2}(1+v_4\rho+(v_4-v_1)\rho+(v_4-v_1)v_4\rho^2+(v_4-1)\rho+(v_4-1)v_4\rho^2-\frac{v_4(v_4-1)}{2}\rho^2)$
+
+We have several arrangements,
+\begin{enumerate}
+    \item 
+$v_2\overset{d}{\geq}v_3\overset{c}{>}v_1\overset{b}{\geq}{v_4}\overset{a}{\geq}{0}$
+
+Thus, we substitute $v_1\rightarrow{a+b}$, $v_2\rightarrow{a+b+c+d}$, $v_3\rightarrow{a+b+c}$, $v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$    
+\item 
+$v_3\overset{d}{>}v_2\overset{c}{>}v_1\overset{b}{\geq}{v_4}\overset{a}{\geq}{0}$
+
+Thus, we substitute $v_1\rightarrow{a+b}$, $v_2\rightarrow{a+b+c}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b\geq{0}$ and $c,d\geq{1}$
+    \item 
+$v_3\overset{d}{>}v_1\overset{c}{\geq}v_2\overset{b}{\geq}{v_4}\overset{a}{\geq}{0}$
+
+Thus, we substitute $v_1\rightarrow{a+b+c}$, $v_2\rightarrow{a+b}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,c\geq{0}$ and $d\geq{1}$
+
+\end{enumerate}
 \end{document}
