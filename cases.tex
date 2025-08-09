@@ -89,11 +89,6 @@ $v_1\overset{d}{\geq}{v_4}\overset{c}{>}v_2+v_3\overset{a}{\geq}{v_3}\overset{b}
 
 Thus, we substitute $v_1\rightarrow{2a+b+c+d}$, $v_2\rightarrow{a}$, $v_3\rightarrow{a+b}$, $v_4\rightarrow{2a+b+c}$, and compute series with the new variables as indices, where $a,d\geq{0}$ and $b,c\geq{1}.$
 \end{enumerate}
-
-
-@@@CHECKED@@@
-
-
 \subsection{Sub case 2.2}
 $-v_2-v_3<{-v_1}\Rightarrow{v_1<{v_2+v_3}}$
 
@@ -101,33 +96,47 @@ For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2
 
 For $-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_1}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}(v_1-v_2)\rho(1+v_2\rho)=p^{v_2}(v_1-v_2)\rho+p^{v_2}(v_1-v_2)v_2\rho^2$.
 
-For $-v_2-v_3\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2+v_3-v_1}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}(v_2-v_3+v_1)\rho+p^{v_2}(v_2-v_3+v_1)v_2\rho^2-p^{v_2}\binom{v_2+v_3-v_1+1}{2}\rho^2$.
+For $-v_2-v_3\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2+v_3-v_1}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}(v_2+v_3-v_1)\rho+p^{v_2}(v_2+v_3-v_1)v_2\rho^2-p^{v_2}\binom{v_2+v_3-v_1+1}{2}\rho^2$.
 
-So we have $\sum_{v_{11}\geq{-v_2-v_3}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+(v_1-v_2)v_2\rho^2+(v_2-v_3+v_1)\rho+(v_2-v_3+v_1)v_2\rho^2-\frac{(v_2-v_3+v_1+1)(v_2-v_3+v_1)}{2}\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_3}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+(v_1-v_2)v_2\rho^2+(v_2+v_3-v_1)\rho+(v_2+v_3-v_1)v_2\rho^2-\frac{(v_2+v_3-v_1+1)(v_2+v_3-v_1)}{2}\rho^2).$
 We compute the differences between $v_1,v_2,v_3,v_4$, we have several arrangements,
 \begin{enumerate}
     \item 
 $v_2+v_3\overset{d}{>}v_1\overset{c}{\geq}v_3\overset{b}{\geq}{v_4}\overset{a}>v_2\overset{e}{\geq}{0}$
 
-But $c=v_1-v_3$ and $d=v_2+v_3-v_1$, so $e=v_2=c+d$
+But $v_2+v_3-d-c=v_3\Rightarrow{v_2=c+d}$
 
-Thus, we substitute $v_1\rightarrow{a+b+2c+d}$, $v_2\rightarrow{c+d}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a+c+d}$, and compute series with the new variables as indices, where $b,c\geq{0}$ and $a,d\geq{1}$.
+Thus, we substitute 
+$v_1\rightarrow{a+b+2c+d}$, 
+$v_2\rightarrow{c+d}$, 
+$v_3\rightarrow{a+b+c+d}$, 
+$v_4\rightarrow{a+c+d}$, and compute series with the new variables as indices, where $b,c\geq{0}$ and $a,d\geq{1}$.
 
 \item 
 $v_2+v_3\overset{d}{>}v_1\overset{c}{\geq}v_4\overset{b}{>}{v_3}\overset{a}>v_2\overset{e}{\geq}{0}$
 
-But $v_2+v_3-d-c-b=v_3\Rightarrow{b+c+d=v_2+v_3-v_3=v_2}$
+But $v_2+v_3-d-c-b=v_3\Rightarrow{v_2=v_2+v_3-v_3=b+c+d}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+2c+d}$, $v_2\rightarrow{b+c+d}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices, where $c\geq{0}$ and $a,b,d\geq{1}$.
+Thus, we substitute 
+$v_1\rightarrow{a+2b+2c+d}$, 
+$v_2\rightarrow{b+c+d}$, 
+$v_3\rightarrow{a+b+c+d}$, 
+$v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices, where $c\geq{0}$ and $a,b,d\geq{1}$.
 
 \item 
 $v_2+v_3\overset{d}{>}v_1\overset{c}{\geq}v_4\overset{b}{>}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
 
 But $v_2+v_3-d-c-b=v_2\Rightarrow{v_3=v_2+v_3-v_2=b+c+d}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+2c+d}$, $v_2\rightarrow{a+b+c+d}$, $v_3\rightarrow{b+c+d}$, $v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}$.
+Thus, we substitute 
+$v_1\rightarrow{a+2b+2c+d}$, 
+$v_2\rightarrow{a+b+c+d}$, 
+$v_3\rightarrow{b+c+d}$, 
+$v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}$.
 
 \end{enumerate}
+
+@@@CHECKED@@@
 \section{Case 3}
 $v_3>v_1\geq{0}$
 
