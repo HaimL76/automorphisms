@@ -136,7 +136,6 @@ $v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices
 
 \end{enumerate}
 
-@@@CHECKED@@@
 \section{Case 3}
 $v_3>v_1\geq{0}$
 
@@ -160,9 +159,9 @@ There is no phase transition here, since $v_{11}\geq{-v_2-v_1}\geq{-v_4}$
 
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2\rho)$.
 
-For $-v_2-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_1}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}v_1\rho+p^{v_2}v_1v_2\rho^2)$.
+For $-v_2-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_1}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}v_1\rho+p^{v_2}v_1v_2\rho^2$.
 
-So we have $\sum_{v_{11}\geq{-v_2+v_1}}p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{2}(1+v_2\rho+v_1\rho+v_1v_2\rho^2.$
+So we have $\sum_{v_{11}\geq{-v_2-v_1}}p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2\rho+v_1\rho+v_1v_2\rho^2).$
 
 We have several arrangements,
 
@@ -172,14 +171,48 @@ $v_4\overset{d}{\geq}v_1+v_2\overset{c}{\geq}v_3\overset{b}{>}{v_2}\overset{a}{>
 
 But $v_1+v_2-c-b=v_2\Rightarrow{v_1=v_1+v_2-v_2=b+c}$
 
-Thus, we substitute $v_1\rightarrow{b+c}$, $v_2\rightarrow{a+b+c}$, $v_3\rightarrow{a+2b+c}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $c,d\geq{0}$ and $a,b\geq{1}$.
+Thus, we substitute 
+$v_1\rightarrow{b+c}$, 
+$v_2\rightarrow{a+b+c}$, 
+$v_3\rightarrow{a+2b+c}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $c,d\geq{0}$ and $a,b\geq{1}$.
 \item 
 $v_4\overset{d}{\geq}v_1+v_2\overset{a}{\geq}v_2\overset{c}{\geq}{v_3}\overset{b}{>}v_1\overset{a}{\geq}{0}$
 
-We substitute $v_1\rightarrow{a}$, $v_2\rightarrow{a+b+c}$, $v_3\rightarrow{a+b}$, $v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,c,d\geq{0}$ and $b\geq{1}$.
+We substitute 
+$v_1\rightarrow{a}$, 
+$v_2\rightarrow{a+b+c}$, 
+$v_3\rightarrow{a+b}$, 
+$v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,c,d\geq{0}$ and $b\geq{1}$.
+\item 
+$v_4\overset{d}{\geq}v_1+v_2\overset{c}{\geq}v_3\overset{b}{>}{v_1}\overset{a}{\geq}v_2\overset{e}{\geq}{0}$
 
+But $v_1+v_2-c-b=v_1\Rightarrow{v_2=v_1+v_2-v_1=b+c}$
+
+We substitute 
+$v_1\rightarrow{a+b+c}$, 
+$v_2\rightarrow{b+c}$, 
+$v_3\rightarrow{a+2b+c}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,c,d\geq{0}$ and $b\geq{1}$.
+\item 
+$v_4\overset{d}{>}v_3\overset{c}{\geq}v_1+v_2\overset{a}{\geq}{v_1}\overset{b}{\geq}v_2\overset{a}{\geq}{0}$
+
+We substitute 
+$v_1\rightarrow{a+b}$, 
+$v_2\rightarrow{a}$, 
+$v_3\rightarrow{2a+b+c}$, 
+$v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,b,c\geq{0}$ and $d\geq{1}$.
+\item 
+$v_3\overset{d}{\geq}v_4\overset{c}{>}v_1+v_2\overset{a}{\geq}{v_1}\overset{b}{\geq}v_2\overset{a}{\geq}{0}$
+
+We substitute 
+$v_1\rightarrow{a+b}$, 
+$v_2\rightarrow{a}$, 
+$v_3\rightarrow{2a+b+c+d}$, 
+$v_4\rightarrow{2a+b+c}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$.
 \end{enumerate}
 
+@@@CHECKED@@@
 \subsection{Sub case 3.2}
 $-v_2-v_1<{-v_4}\Rightarrow{v_2+v_1>{v_4}}$
 
