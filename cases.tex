@@ -265,9 +265,28 @@ But $v_1+v_2-d-c-b=v_1\Rightarrow{v_2=v_1+v_2-v_1=b+c+d}$
 
 Thus, we substitute 
 $v_1\rightarrow{a+b+c+d}$, $v_2\rightarrow{b+c+d}$, $v_3\rightarrow{a+2b+2c+d}$, $v_4\rightarrow{a+2b+c+d}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}$
-\end{enumerate}
+\item 
+$v_3\overset{d}{\geq}v_1+v_2\overset{c}{>}v_4\overset{b}{>}{v_2}\overset{a}{>}v_1\overset{e}{\geq}{0}$
 
-@@@CHECKED@@@
+But $v_1+v_2-c-b=v_2\Rightarrow{v_1=v_1+v_2-v_2=b+c}$
+
+Thus, we substitute 
+$v_1\rightarrow{b+c}$, 
+$v_2\rightarrow{a+b+c}$, 
+$v_3\rightarrow{a+2b+2c+d}$, 
+$v_4\rightarrow{a+2b+c}$, and compute series with the new variables as indices, where $d\geq{0}$ and $a,b,c\geq{1}$
+\item 
+$v_3\overset{d}{\geq}v_1+v_2\overset{c}{>}v_4\overset{b}{>}{v_1}\overset{a}{\geq}v_2\overset{e}{\geq}{0}$
+
+But $v_1+v_2-c-b=v_1\Rightarrow{v_2=v_1+v_2-v_1=b+c}$
+
+Thus, we substitute 
+$v_1\rightarrow{a+b+c}$, 
+$v_2\rightarrow{b+c}$, 
+$v_3\rightarrow{a+2b+2c+d}$, 
+$v_4\rightarrow{a+2b+c}$, and compute series with the new variables as indices, where $a,d\geq{0}$ and $b,c\geq{1}$
+
+\end{enumerate}
 
 \section{Case 4}
 $v_4>v_1\geq{v_3}\geq{0}$
@@ -292,39 +311,61 @@ For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2
 
 For $-v_2-v_3\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}v_3\rho(1+v_2\rho)=p^{v_2}v_3\rho+p^{v_2}v_2v_3\rho^2.$
 
-So we have $\sum_{-v_2-v_3}p^{\min}\mu(a_{11})(a+\alpha\rho)=p^{v_2}(1+v_2\rho+v_3\rho+v_2v_3\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_3}}p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2\rho+v_3\rho+v_2v_3\rho^2).$
 
 We have several arrangements,
 \begin{enumerate}
 \item 
-$v_4\overset{d}{\geq}v_2+v_3\overset{c}{>}v_1\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
+$v_4\overset{d}{\geq}v_2+v_3\overset{c}{\geq}v_1\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
 
 But $v_2+v_3-c-b=v_3\Rightarrow{v_2=v_2+v_3-v_3=b+c}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+c}$, $v_2\rightarrow{b+c}$, $v_3\rightarrow{a+b+c}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $b,d\geq{0}$ and $a,c\geq{1}$
+Thus, we substitute 
+$v_1\rightarrow{a+2b+c}$, 
+$v_2\rightarrow{b+c}$, 
+$v_3\rightarrow{a+b+c}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $b,c,d\geq{0}$ and $a\geq{1}$
 
 \item 
-$v_4\overset{d}{\geq}v_2+v_3\overset{c}{>}v_1\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
+$v_4\overset{d}{\geq}v_2+v_3\overset{c}{\geq}v_1\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
 
 But $v_2+v_3-c-b=v_2\Rightarrow{v_3=v_2+v_3-v_2=b+c}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+c}$, $v_2\rightarrow{a+b+c}$, $v_3\rightarrow{b+c}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$
+Thus, we substitute 
+$v_1\rightarrow{a+2b+c}$, 
+$v_2\rightarrow{a+b+c}$, 
+$v_3\rightarrow{b+c}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,b,c,d\geq{0}$.
+\item 
+$v_4\overset{d}{\geq}v_2+v_3\overset{a}{\geq}v_2\overset{c}{>}{v_1}\overset{b}{\geq}v_3\overset{a}{\geq}{0}$
+
+
+Thus, we substitute 
+$v_1\rightarrow{a+b}$, 
+$v_2\rightarrow{a+b+c}$, 
+$v_3\rightarrow{a}$, 
+$v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$.
 
 \item 
-$v_4\overset{d}{\geq}v_1\overset{c}{\geq}v_2+v_3\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
+$v_4\overset{d}{>}v_1\overset{c}{\geq}v_2+v_3\overset{a}{\geq}{v_2}\overset{b}{\geq}v_3\overset{a}{\geq}{0}$
 
-But $v_2+v_3-b=v_2\Rightarrow{v_3=v_2+v_3-v_2=b}$
-
-Thus, we substitute $v_1\rightarrow{a+b+c}$, $v_2\rightarrow{a+b}$, $v_3\rightarrow{b}$, $v_4\rightarrow{a+b+c+d}$, and compute series with the new variables as indices, where $a,b,c,d\geq{0}.$
+Thus, we substitute 
+$v_1\rightarrow{2a+b+c}$, 
+$v_2\rightarrow{a+b}$, 
+$v_3\rightarrow{a}$, 
+$v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,b,c\geq{0}$ and $d\leq{1}$.
 
 \item 
-$v_4\overset{d}{\geq}v_1\overset{c}{\geq}v_2+v_3\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
+$v_4\overset{d}{>}v_1\overset{c}{\geq}v_2+v_3\overset{a}{\geq}{v_3}\overset{b}{>}v_2\overset{a}{\geq}{0}$
 
-But $v_2+v_3-b=v_3\Rightarrow{v_2=v_2+v_3-v_3=b}$
-
-Thus, we substitute $v_1\rightarrow{a+b+c}$, $v_2\rightarrow{b}$, $v_3\rightarrow{a+b}$, $v_4\rightarrow{a+b+c+d}$, and compute series with the new variables as indices, where $b,c,d\geq{0}$ and $b\geq{1}.$
+Thus, we substitute 
+$v_1\rightarrow{2a+b+c}$, 
+$v_2\rightarrow{a}$, 
+$v_3\rightarrow{a+b}$, 
+$v_4\rightarrow{2a+b+c+d}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}.$
 
 \end{enumerate}
+
 \subsection{Sub case 4.2}
 $-v_2-v_3<{-v_4}\Rightarrow{v_2+v_3>{v_4}}$
 
@@ -332,26 +373,47 @@ For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2
 
 For $-v_4\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_4}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}(v_4-v_2)\rho(1+v_2\rho)=p^{v_2}(v_4-v_2)\rho+p^{v_2}v_2(v_4-v_2)\rho^2.$
 
-For $-v_2-v_3\leq{v_{11}}\leq{-v_4-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_4-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2+v_3-v_4}p^{v_2}\rho(1+(v_2-i))\rho)=p^{v_2}(v_2+v_3-v_4))\rho+(v_2+v_3-v_4)v_2\rho^2-\binom{v_2+v_3-v_4+1}{2}\rho^2.$
+For $-v_2-v_3\leq{v_{11}}\leq{-v_4-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_4-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2+v_3-v_4}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}(v_2+v_3-v_4)\rho+(v_2+v_3-v_4)v_2\rho^2-\binom{v_2+v_3-v_4+1}{2}\rho^2.$
 
-So we have $\sum_{v_{11}\geq{-v_2-v_3}}p^{\min}\mu(a_{11})(a+\alpha\rho)=p^{v_2}(1+v_2\rho+v_3\rho+v_2(v_4-v_2)\rho^2+(v_2+v_3-v_4)\rho+(v_2+v_3-v_4)v_2\rho^2-\frac{(v_2+v_3-v_4+1)(v_2+v_3-v_4)}{2}\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_3}}p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2\rho+(v_4-v_2))\rho+v_2(v_4-v_2)\rho^2+(v_2+v_3-v_4)\rho+(v_2+v_3-v_4)v_2\rho^2-\frac{(v_2+v_3-v_4+1)(v_2+v_3-v_4)}{2}\rho^2).$
 
 We have several arrangements,
 \begin{enumerate}
 \item 
-$v_2+v_3\overset{d}{\geq}v_4\overset{c}{>}v_1\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
+$v_2+v_3\overset{d}{>}v_4\overset{c}{>}v_1\overset{b}{\geq}{v_2}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
 
 But $v_2+v_3-d-c-b=v_2\Rightarrow{v_3=v_2+v_3-v_2=b+c+d}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+c+d}$, $v_2\rightarrow{a+b+c+d}$, $v_3\rightarrow{b+c+d}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$
+Thus, we substitute 
+$v_1\rightarrow{a+2b+c+d}$, 
+$v_2\rightarrow{a+b+c+d}$, 
+$v_3\rightarrow{b+c+d}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $a,b\geq{0}$ and $c,d\geq{1}$
+
 \item 
-$v_2+v_3\overset{d}{\geq}v_4\overset{c}{>}v_1\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
+$v_2+v_3\overset{d}{>}v_4\overset{c}{>}v_1\overset{b}{\geq}{v_3}\overset{a}{>}v_2\overset{e}{\geq}{0}$
 
 But $v_2+v_3-d-c-b=v_3\Rightarrow{v_2=v_2+v_3-v_3=b+c+d}$
 
-Thus, we substitute $v_1\rightarrow{a+2b+c+d}$, $v_2\rightarrow{b+c+d}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $b,d\geq{0}$ and $a,c\geq{1}$
+Thus, we substitute 
+$v_1\rightarrow{a+2b+c+d}$, 
+$v_2\rightarrow{b+c+d}$, 
+$v_3\rightarrow{a+b+c+d}$, 
+$v_4\rightarrow{a+2b+2c+d}$, and compute series with the new variables as indices, where $b\geq{0}$ and $a,c,d\geq{1}$
+\item 
+$v_2+v_3\overset{d}{>}v_4\overset{c}{>}v_2\overset{b}{>}{v_1}\overset{a}{\geq}v_3\overset{e}{\geq}{0}$
+
+But $v_2+v_3-d-c=v_2\Rightarrow{v_3=v_2+v_3-v_2=c+d}$
+
+Thus, we substitute 
+$v_1\rightarrow{a+c+d}$, 
+$v_2\rightarrow{a+b+c+d}$, 
+$v_3\rightarrow{c+d}$, 
+$v_4\rightarrow{a+b+2c+d}$, and compute series with the new variables as indices, where $a\geq{0}$ and $b,c,d\geq{1}$
 
 \end{enumerate}
+
+@@@CHECKED@@@
 \section{Case 5}
 $v_2\geq{v_4}>v_1>v_3\geq{0}$
 
