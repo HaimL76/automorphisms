@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  11 AUG 2025 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  13 AUG 2025 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -327,7 +327,7 @@ Overfull \hbox (9.2099pt too wide) in paragraph at lines 398--404
  []
 
 
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 429--430
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 428--429
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -336,7 +336,7 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 [7]
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 450--451
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 454--455
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -345,7 +345,7 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 [8]
-Overfull \hbox (21.52367pt too wide) in paragraph at lines 486--487
+Overfull \hbox (21.52367pt too wide) in paragraph at lines 491--492
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
 10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []
 $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
@@ -354,7 +354,7 @@ $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
  []
 
 [9]
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 530--531
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 537--538
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -363,7 +363,7 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (21.52367pt too wide) in paragraph at lines 559--560
+Overfull \hbox (21.52367pt too wide) in paragraph at lines 566--567
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
 10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []
 $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
@@ -372,7 +372,7 @@ $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
  []
 
 
-Overfull \hbox (10.20413pt too wide) in paragraph at lines 574--576
+Overfull \hbox (10.20413pt too wide) in paragraph at lines 581--583
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
@@ -391,7 +391,7 @@ Here is how much of TeX's memory you used:
  24409 multiletter control sequences out of 15000+600000
  565624 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,359b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,312b,220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -405,7 +405,7 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
 Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on cases.pdf (11 pages, 154534 bytes).
+Output written on cases.pdf (11 pages, 154469 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
