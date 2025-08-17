@@ -12,6 +12,8 @@
 Denote $p^{\min}:=p^{\min\{0,v_2+v_{11}\}}$
 
 Denote $\rho:=(1-p^{-1})$
+
+Denote $f(p,t)$ the $p$ and $t$ product $p^{7v_1+10v_2+11v_3+7v_4+\min\{v_1,v_4\}}t^{4v_1+6v_2+6v_3+4v_4}$
 \section{Case 1}
 $v_3>v_1\geq{v_4}>v_2\geq{0}$
 
@@ -22,13 +24,15 @@ $\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_1\}=     \begin{cases}
        v_2-1,v_2-2,\dots, & v_{11}<{-v_1}\\
      \end{cases}$
 
+    $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_4}t^{4v_1+6v_2+6v_3+4v_4}=p^{7v_1+10v_2+11v_3+8v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
+
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_2\rho)$.
 
 For $-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_1}^{-v_2-1}p^{v_2}\rho(1+v_2\rho)=p^{v_2}(v_1-v_2)\rho(1+v_2\rho)=p^{v_2}(v_1-v_2)\rho+p^{v_2}v_2(v_1-v_2)\rho^2$.
 
 For $-v_2-v_1\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_1}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}v_2\rho+p^{v_2}v_2^2\rho^2-p^{v_2}\binom{v_2+1}{2}\rho^2.$
 
-So we have $\sum_{v_{11}\geq{-v_2-v_1}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+v_2(v_1-v_2)\rho^2+v_2\rho+v_2^2\rho^2-\frac{(v_2+1)v_2}{2}\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_1}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+v_2(v_1-v_2)\rho^2+v_2\rho+v_2^2\rho^2-\frac{(v_2+1)v_2}{2}\rho^2)=p^{v_2}(1+v_1\rho+v_2v_1\rho^2+v_2\rho-\frac{v_2^2}{2}\rho^2-\frac{v_2}{2}\rho^2).$
 We compute the differences between $v_1,v_2,v_3,v_4$,
 
 $v_3\overset{d}{>}v_1\overset{c}{\geq}{v_4}\overset{b}>v_2\overset{a}{\geq}{0}$
@@ -46,6 +50,8 @@ $\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_1\}=\begin{cases}
        v_2, & v_{11}\geq{-v_1}\\
        v_2-1,v_2-2,\dots, & v_{11}<{-v_1}\\
      \end{cases}$
+
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_4}t^{4v_1+6v_2+6v_3+4v_4}=p^{7v_1+10v_2+11v_3+8v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
 
 We have two sub cases.
 \subsection{Sub case 2.1}
@@ -98,7 +104,7 @@ For $-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\
 
 For $-v_2-v_3\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2+v_3-v_1}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}(v_2+v_3-v_1)\rho+p^{v_2}(v_2+v_3-v_1)v_2\rho^2-p^{v_2}\binom{v_2+v_3-v_1+1}{2}\rho^2$.
 
-So we have $\sum_{v_{11}\geq{-v_2-v_3}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+(v_1-v_2)v_2\rho^2+(v_2+v_3-v_1)\rho+(v_2+v_3-v_1)v_2\rho^2-\frac{(v_2+v_3-v_1+1)(v_2+v_3-v_1)}{2}\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_3}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+(v_1-v_2)v_2\rho^2+(v_2+v_3-v_1)\rho+(v_2+v_3-v_1)v_2\rho^2-\frac{(v_2+v_3-v_1+1)(v_2+v_3-v_1)}{2}\rho^2)=p^{v_2}(1+v_2\rho+v_3\rho-\frac{v_2^2}{2}\rho^2+\frac{v_2v_1}{2}\rho^2-\frac{v_3^2}{2}\rho^2+\frac{v_3v_1}{2}\rho^2+\frac{v_1v_2}{2}\rho^2+\frac{v_1v_3}{2}\rho^2-\frac{v_1^2}{2}\rho^2-\frac{v_2}{2}\rho^2-\frac{v_3}{2}\rho^2+\frac{v_1}{2}\rho^2)=p^{v_2}(1+v_2\rho+v_3\rho-\frac{v_2^2}{2}\rho^2+v_2v_1\rho^2-\frac{v_3^2}{2}\rho^2+v_3v_1\rho^2-\frac{v_1^2}{2}\rho^2-\frac{v_2}{2}\rho^2-\frac{v_3}{2}\rho^2+\frac{v_1}{2}\rho^2).$
 We compute the differences between $v_1,v_2,v_3,v_4$, we have several arrangements,
 \begin{enumerate}
     \item 
@@ -149,6 +155,8 @@ $\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_4\}=\begin{cases}
        v_2, & v_{11}\geq{-v_4}\\
        v_2-1,v_2-2,\dots, & v_{11}<{-v_4}\\
      \end{cases}$
+
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_1}t^{4v_1+6v_2+6v_3+4v_4}=p^{8v_1+10v_2+11v_3+7v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
 
 We have two sub cases
 
@@ -308,6 +316,8 @@ $\Rightarrow\alpha:=\min\{v_2,v_2+v_{11}+v_4\}=\begin{cases}
        v_2-1,v_2-2,\dots, & v_{11}<{-v_4}\\
      \end{cases}$
 
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_1}t^{4v_1+6v_2+6v_3+4v_4}=p^{8v_1+10v_2+11v_3+7v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
+
 We have two sub cases
 
 \subsection{Sub case 4.1}
@@ -431,6 +441,8 @@ $\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_4\}=\begin{cases}
        v_4-1,v_4-2,\dots, & v_{11}<{-v_2}\\
      \end{cases}$
 
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_1}t^{4v_1+6v_2+6v_3+4v_4}=p^{8v_1+10v_2+11v_3+7v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
+
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_4\rho).$
 
 For $-v_2-v_3\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{-v_2-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_3}p^{v_2}\rho(1+(v_4-i)\rho)=p^{v_2}(v_3\rho+v_3v_4\rho^2-\binom{v_3+1}{2}\rho^2).$
@@ -456,6 +468,8 @@ $\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_4\}=\begin{cases}
        v_4, & v_{11}\geq{-v_2}\\
        v_4-1,v_4-2,\dots, & v_{11}<{-v_2}\\
      \end{cases}$
+
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_1}t^{4v_1+6v_2+6v_3+4v_4}=p^{8v_1+10v_2+11v_3+7v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
 
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_4\rho).$
 
@@ -486,6 +500,8 @@ $v_2\geq{v_4}\geq{0}$
 $v_3>v_1\geq{v_4}\geq{0}$
 
 $\Rightarrow{v_{11}}\geq{-v_2-v_1}$
+
+$\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_4}t^{4v_1+6v_2+6v_3+4v_4}=p^{7v_1+10v_2+11v_3+8v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
 
 $\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_1\}=\begin{cases}
        v_4, & v_{11}\geq{v_4-v_1-v_2}\\
@@ -532,6 +548,8 @@ $\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_1\}=\begin{cases}
        v_4, & v_{11}\geq{v_4-v_1-v_2}\\
        v_4-1,v_4-2,\dots, & v_{11}<{v_4-v_1-v_2}\\
      \end{cases}$
+
+     $\Rightarrow{f(p,t)=p^{7v_1+10v_2+11v_3+7v_4+v_4}t^{4v_1+6v_2+6v_3+4v_4}=p^{7v_1+10v_2+11v_3+8v_4}t^{4v_1+6v_2+6v_3+4v_4}}$
 
 There are two sub cases here
 
