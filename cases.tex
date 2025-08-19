@@ -508,7 +508,7 @@ $\Rightarrow\alpha:=\min\{v_4,v_2+v_{11}+v_1\}=\begin{cases}
        v_4-1,v_4-2,\dots, & v_{11}<{v_4-v_1-v_2}\\
      \end{cases}$
 
-There are no two sub cases here, because the phase transition occurs at $v_{11}={v_4-v_1-v_2}\geq{-v_2-v_1}$
+There are no two sub cases here, because the phase transition occurs at $v_{11}={v_4-v_1-v_2-1}$, thus if $v_4=0$ then the transition would be at $v_{11}=-v_2-v_1-1<-v_2-v_1$, which is a contradiction. For $v_4=1$ the transition would be at $a_{11}=-v_2-v_1$, but then $\alpha=0=v_4$ so there is no transition as well. For $v_4>1$ we have $\alpha<v_4$.
 
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_4\rho).$
 
@@ -516,7 +516,7 @@ For $v_4-v_1-v_2\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_
 
 For $-v_1-v_2\leq{v_{11}}\leq{v_4-v_1-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_1-v_2}^{v_4-v_1-v_2-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_4}p^{v_2}\rho(1+(v_4-i)\rho)=p^{v_2}v_4\rho+p^{v_2}v_4^2\rho^2-p^{v_2}\binom{v_4+1}{2}\rho^2.$
 
-So we have $\sum_{v_{11}\geq{-v_2-v_1}}p^{\min}\mu(a_{11})=p^{v_2}(1+v_4\rho+(v_4-v_1)\rho+(v_4-v_1)v_4\rho^2+v_4\rho+v_4^2\rho^2-\frac{v_4(v_4-1)}{2}\rho^2)$
+So we have $\sum_{v_{11}\geq{-v_2-v_1}}p^{\min}\mu(a_{11})=p^{v_2}(1+v_4\rho+(v_4-v_1)\rho+(v_4-v_1)v_4\rho^2+v_4\rho+v_4^2\rho^2-\frac{v_4(v_4-1)}{2}\rho^2)=p^{v_2}(1+3v_4\rho-v_1\rho+2v_4^2\rho^2-v_1v_4\rho^2-\frac{v_4^2}{2}\rho^2+\frac{v_4}{2}\rho^2)$
 
 We have several arrangements,
 \begin{enumerate}
@@ -534,7 +534,6 @@ $v_3\overset{d}{>}v_1\overset{c}{\geq}v_2\overset{b}{\geq}{v_4}\overset{a}{\geq}
 Thus, we substitute $v_1\rightarrow{a+b+c}$, $v_2\rightarrow{a+b}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,c\geq{0}$ and $d\geq{1}$
 
 \end{enumerate}
-
 \section{Case 8}
 $v_2\geq{v_4}\geq{0}$
 
