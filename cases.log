@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  18 AUG 2025 00:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  19 AUG 2025 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,14 +346,14 @@ Overfull \hbox (9.2099pt too wide) in paragraph at lines 405--410
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
-
+[7]
 Overfull \hbox (9.2099pt too wide) in paragraph at lines 416--422
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
-[7]
+
 Overfull \hbox (49.4429pt too wide) in paragraph at lines 444--445
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
@@ -459,7 +459,7 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
 Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on cases.pdf (12 pages, 160071 bytes).
+Output written on cases.pdf (12 pages, 161512 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
