@@ -577,34 +577,66 @@ So we have $\sum_{v_{11}\geq{-v_2-v_3}}p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}
 We have several arrangements,
 \begin{enumerate}
     \item 
-$v_1\overset{d}{\geq}v_2+v_3\overset{e}{\geq}v_3\overset{c}{>}{v_2}\overset{b}{\geq}v_4\overset{a}{\geq}{0}$
+$v_1\overset{d}{\geq}v_3+v_4\overset{a}{\geq}v_3\overset{c}{>}{v_2}\overset{b}{\geq}v_4\overset{a}{\geq}{0}$
 
 But $e=v_2+v_3-v_3=v_2=a+b.$
 
 Thus, we substitute 
-$v_1\rightarrow{2a+2b+c+d}$, 
+$v_1\rightarrow{2a+b+c+d}$, 
 $v_2\rightarrow{a+b}$, 
 $v_3\rightarrow{a+b+c}$, 
 $v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$  
     \item 
-$v_1\overset{d}{\geq}v_2+v_3\overset{e}{\geq}v_2\overset{c}{\geq}{v_3}\overset{b}{\geq}v_4\overset{a}{\geq}{0}$
+$v_1\overset{d}{\geq}v_3+v_4\overset{c}{\geq}v_2\overset{b}{\geq}{v_3}\overset{a}{\geq}v_4\overset{e}{\geq}{0}$
 
-But $e=v_2+v_3-v_2=v_3=a+b.$
+But $v_3=v_3+v_4-c-b\Rightarrow{v_4=b+c}$
 
 Thus, we substitute 
-$v_1\rightarrow{2a+2b+c+d}$, 
-$v_2\rightarrow{a+b+c}$, 
-$v_3\rightarrow{a+b}$, 
-$v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,c,d\geq{0}.$
+$v_1\rightarrow{a+2b+2c+d}$, 
+$v_2\rightarrow{a+2b+c}$, 
+$v_3\rightarrow{a+b+c}$, 
+$v_4\rightarrow{b+c}$, and compute series with the new variables as indices, where $a,b,c,d\geq{0}.$
 
     \item 
-$v_1\overset{d}{\geq}v_2+v_3\overset{a}{\geq}v_2\overset{c}{\geq}{v_4}\overset{b}{>}v_3\overset{a}{\geq}{0}$
+$v_1\overset{d}{\geq}v_3+v_4\overset{c}{\geq}v_2\overset{b}{\geq}{v_4}\overset{a}>v_3\overset{e}{\geq}{0}$
+
+Thus, we substitute 
+$v_1\rightarrow{a+2b+2c+d}$, 
+$v_2\rightarrow{a+2b+c}$, 
+$v_3\rightarrow{a+b+c}$, 
+$v_4\rightarrow{b+c}$, and compute series with the new variables as indices, where $b,c,d\geq{0}$ and $a\geq{1}$
+    \item 
+$v_1\overset{d}{\geq}v_2\overset{c}>v_3+v_4\overset{a}{\geq}{v_4}\overset{b}>v_3\overset{a}{\geq}{0}$
 
 Thus, we substitute 
 $v_1\rightarrow{2a+b+c+d}$, 
-$v_2\rightarrow{a+b+c}$, 
+$v_2\rightarrow{2a+b+c}$, 
 $v_3\rightarrow{a}$, 
-$v_4\rightarrow{a+b}$, and compute series with the new variables as indices, where $a,c,d\geq{0}$ and $b\geq{1}$
+$v_4\rightarrow{a+b}$, and compute series with the new variables as indices, where $a,d\geq{0}$ and $b,c\geq{1}$
+    \item 
+$v_1\overset{d}{\geq}v_2\overset{c}>v_3+v_4\overset{a}{\geq}{v_3}\overset{b}\geq{v_4}\overset{a}{\geq}{0}$
+
+Thus, we substitute 
+$v_1\rightarrow{2a+b+c+d}$, 
+$v_2\rightarrow{2a+b+c}$, 
+$v_3\rightarrow{a+b}$, 
+$v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,d\geq{0}$ and $c\geq{1}$
+\item 
+$v_2\overset{d}>v_1\overset{c}{\geq}v_3+v_4\overset{a}{\geq}{v_3}\overset{b}\geq{v_4}\overset{a}{\geq}{0}$
+
+Thus, we substitute 
+$v_1\rightarrow{2a+b+c}$, 
+$v_2\rightarrow{2a+b+c+d}$, 
+$v_3\rightarrow{a+b}$, 
+$v_4\rightarrow{a}$, and compute series with the new variables as indices, where $a,b,c\geq{0}$ and $d\geq{1}$
+\item 
+$v_2\overset{d}>v_1\overset{c}{\geq}v_3+v_4\overset{a}{\geq}{v_4}\overset{b}>{v_3}\overset{a}{\geq}{0}$
+
+Thus, we substitute 
+$v_1\rightarrow{2a+b+c}$, 
+$v_2\rightarrow{2a+b+c+d}$, 
+$v_3\rightarrow{a}$, 
+$v_4\rightarrow{a+b}$, and compute series with the new variables as indices, where $a,c\geq{0}$ and $b,d\geq{1}$
 \end{enumerate}
 
 \subsection{Sub case 8.2}
@@ -687,18 +719,36 @@ $v_4\rightarrow{a}$, and compute series with the new variables as indices, where
 Checking all the cases by the $4!$ arrangements.
 
 \begin{enumerate}
+
+    \item $v_1\geq{v_2}\geq{v_3}\geq{v_4}\geq{0}$
+
+    $v_1\geq{v_3+v_4}\geq{v_2}\geq{v_3}\geq{v_4}\geq{0}$ (8.1.2)
+    
+    $v_1\geq{v_2}>v_3+v_4\geq{v_3}\geq{v_4}\geq{0}$ (8.1.5)
+    
+    $v_3+v_4>v_1\geq{v_2}\geq{v_3}\geq{v_4}\geq{0}$ (8.2.2)
+
+    \item $v_1\geq{v_2}\geq{v_4}>v_3\geq{0}$
+
+    $v_1\geq{v_3+v_4}\geq{v_2}\geq{v_4}>v_3\geq{0}$ (8.1.3)
+    
+    $v_1\geq{v_2}>v_3+v_4\geq{v_4}>v_3\geq{0}$ (8.1.4)
+    
+    $v_3+v_4>v_1\geq{v_2}\geq{v_4}>v_3\geq{0}$ (8.2.3)
+
+
+    \item $v_1\geq{v_3}>v_2\geq{v_4}\geq{0}$
+
+    $v_1\geq{v_3+v_4}\geq{v_3}>v_2\geq{v_4}\geq{0}$ (8.1.1)
+    
+    $v_3+v_4>v_1\geq{v_3}>v_2\geq{v_4}\geq{0}$ (8.2.1)
+
     \item $v_1\geq{v_3}\geq{v_4}>v_2\geq{0}$
 
 $v_1\geq{v_2+v_3}\geq{v_3}\geq{v_4}>v_2\geq{0}$ (2.1.1)
 
 $v_2+v_3>v_1\geq{v_3}\geq{v_4}>v_2\geq{0}$ (2.2.1)
-\item $v_1\geq{v_4}>v_3>v_2\geq{0}$
 
-    $v_1\geq{v_2+v_3}\geq{v_4}>v_3>v_2\geq{0}$ (2.1.2)
-
-    $v_1\geq{v_4}>v_2+v_3\geq{v_3}>v_2\geq{0}$ (2.1.5)
-
-    $v_2+v_3>v_1\geq{v_4}>v_3>v_2\geq{0}$ (2.2.2)
     \item $v_1\geq{v_4}>v_2\geq{v_3}\geq{0}$
 
     $v_1\geq{v_2+v_3}\geq{v_4}>v_2\geq{v_3}\geq{0}$ (2.1.3)
@@ -706,14 +756,56 @@ $v_2+v_3>v_1\geq{v_3}\geq{v_4}>v_2\geq{0}$ (2.2.1)
     $v_1\geq{v_4}>v_2+v_3\geq{v_2}\geq{v_3}\geq{0}$ (2.1.4)
 
     $v_2+v_3>v_1\geq{v_4}>v_2\geq{v_3}\geq{0}$ (2.2.3)
+\item $v_1\geq{v_4}>v_3>v_2\geq{0}$
+
+    $v_1\geq{v_2+v_3}\geq{v_4}>v_3>v_2\geq{0}$ (2.1.2)
+
+    $v_1\geq{v_4}>v_2+v_3\geq{v_3}>v_2\geq{0}$ (2.1.5)
+
+    $v_2+v_3>v_1\geq{v_4}>v_3>v_2\geq{0}$ (2.2.2)
+
+
+
+
+
+
+\item $v_3>v_1\geq{v_4}>v_2\geq{0}$ (1)
+
     \item $v_4>v_3>v_3>v_1\geq{0}$
 
     \item $v_4>v_1\geq{v_3}>v_2\geq{0}$
 
-    \item $v_2\geq{v_4}>v_1\geq{v_3}\geq{0}$
+    \item $v_2\geq{v_4}>v_1\geq{v_3}\geq{0}$ (5)
+
+    \item $v_2\geq{v_4}>v_3>v_1\geq{0}$ (6.1)
+    \item $v_2\geq{v_3}\geq{v_4}>v_1\geq{0}$ (6.2)
+    \item $v_3>v_2\geq{v_4}>v_1\geq{0}$ (6.3)
+
+    \item $v_2\geq{v_3}>v_1\geq{v_4}\geq{0}$ (7.1)
+    \item $v_3>v_2>v_1\geq{v_4}\geq{0}$ (7.2)
+    \item $v_3v_1\geq{v_2}\geq{v_4}\geq{0}$ (7.3)
+
+    \item $v_2>v_1\geq{v_4}>v_3\geq{0}$
+
+    $v_3+v_4>v_2>v_1\geq{v_4}>v_3\geq{0}$
+
+    \item $v_2>v_1\geq{v_3}\geq{v_4}\geq{0}$
+
+    $v_2>v_1\geq{v_3+v_4}\geq{v_3}\geq{v_4}\geq{0}$ (8.1.6)
+
+    $v_2\geq{v_3+v_4}>v_1\geq{v_3}\geq{v_4}\geq{0}$ (8.2.7)
+
+    $v_2>v_1\geq{v_3+v_4}\geq{v_3}\geq{v_4}\geq{0}$ (8.2.9)
+
+    \item $v_2>v_1\geq{v_4}>v_3\geq{0}$
+
+    $v_2>v_1\geq{v_3+v_4}\geq{v_4}>v_3\geq{0}$ (8.1.7)
+
+    $v_3+v_4\geq{v_2}>v_1\geq{v_4}>v_3\geq{0}$ (8.2.4)
+
+    $v_2\geq{v_3+v_4}>v_1\geq{v_4}>{v_3}\geq{0}$ (8.2.8)
 
     
-
     
 \end{enumerate}
 \end{document}

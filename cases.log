@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  31 AUG 2025 01:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  1 SEP 2025 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,7 +410,21 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 [10]
-Overfull \hbox (21.52367pt too wide) in paragraph at lines 616--617
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 594--599
+[]\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
+! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
+/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 603--609
+[]\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
+! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
+/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (21.52367pt too wide) in paragraph at lines 648--649
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
 10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []
 $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
@@ -418,21 +432,21 @@ $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
 10 a[]\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 p[]^^Z\OT1/cmr/m/n/10 (1 +
  []
 
-
-Overfull \hbox (10.20413pt too wide) in paragraph at lines 631--633
-[]\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
-! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
-/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
- []
-
 [11]
-Overfull \hbox (1.86395pt too wide) in paragraph at lines 667--669
+Overfull \hbox (10.20413pt too wide) in paragraph at lines 663--665
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
-[12] [13] (cases.aux)
+[12]
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 699--701
+[]\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
+! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
+/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
+ []
+
+[13] [14] (cases.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -459,9 +473,9 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
 Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on cases.pdf (13 pages, 163793 bytes).
+Output written on cases.pdf (14 pages, 165694 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
