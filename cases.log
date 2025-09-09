@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  10 SEP 2025 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.14)  10 SEP 2025 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -256,7 +256,7 @@ $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10
  []
 
 [4]
-Overfull \hbox (14.28748pt too wide) in paragraph at lines 252--254
+Overfull \hbox (14.28748pt too wide) in paragraph at lines 251--253
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -265,40 +265,40 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (9.2099pt too wide) in paragraph at lines 265--267
+Overfull \hbox (9.2099pt too wide) in paragraph at lines 264--266
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (9.2099pt too wide) in paragraph at lines 281--283
+Overfull \hbox (9.2099pt too wide) in paragraph at lines 280--282
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 [5]
-Overfull \hbox (14.20992pt too wide) in paragraph at lines 289--292
+Overfull \hbox (14.20992pt too wide) in paragraph at lines 288--291
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (14.20992pt too wide) in paragraph at lines 296--299
+Overfull \hbox (14.20992pt too wide) in paragraph at lines 295--298
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (49.4429pt too wide) in paragraph at lines 333--334
+Overfull \hbox (49.4429pt too wide) in paragraph at lines 331--332
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
 
 [6]
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 344--345
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 342--343
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -307,7 +307,7 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (10.71114pt too wide) in paragraph at lines 375--380
+Overfull \hbox (10.71114pt too wide) in paragraph at lines 373--378
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 a$\OT1/cmr/m/n/
@@ -315,7 +315,7 @@ Overfull \hbox (10.71114pt too wide) in paragraph at lines 375--380
  []
 
 
-Overfull \hbox (15.71115pt too wide) in paragraph at lines 384--389
+Overfull \hbox (15.71115pt too wide) in paragraph at lines 382--387
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 a$\OT1/cmr/m/n/
@@ -323,7 +323,7 @@ Overfull \hbox (15.71115pt too wide) in paragraph at lines 384--389
  []
 
 
-Overfull \hbox (15.71115pt too wide) in paragraph at lines 393--398
+Overfull \hbox (15.71115pt too wide) in paragraph at lines 391--396
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/1
 0 a$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/
@@ -331,7 +331,7 @@ Overfull \hbox (15.71115pt too wide) in paragraph at lines 393--398
  []
 
 
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 408--409
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 406--407
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -340,26 +340,26 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 [7]
-Overfull \hbox (9.2099pt too wide) in paragraph at lines 419--424
+Overfull \hbox (9.2099pt too wide) in paragraph at lines 417--422
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (9.2099pt too wide) in paragraph at lines 430--436
+Overfull \hbox (9.2099pt too wide) in paragraph at lines 428--434
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (49.4429pt too wide) in paragraph at lines 458--459
+Overfull \hbox (49.4429pt too wide) in paragraph at lines 456--457
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
 
 
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 462--463
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 460--461
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -368,12 +368,12 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 [8]
-Overfull \hbox (49.4429pt too wide) in paragraph at lines 486--487
+Overfull \hbox (49.4429pt too wide) in paragraph at lines 484--485
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
 
 
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 490--491
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 488--489
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -382,12 +382,12 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (49.4429pt too wide) in paragraph at lines 518--519
+Overfull \hbox (49.4429pt too wide) in paragraph at lines 516--517
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
 
 [9]
-Overfull \hbox (21.52367pt too wide) in paragraph at lines 533--534
+Overfull \hbox (21.52367pt too wide) in paragraph at lines 531--532
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
 10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []
 $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
@@ -396,12 +396,12 @@ $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
  []
 
 
-Overfull \hbox (49.4429pt too wide) in paragraph at lines 569--570
+Overfull \hbox (49.4429pt too wide) in paragraph at lines 567--568
 []$\OMS/cmsy/m/n/10 ) []$ 
  []
 
 [10]
-Overfull \hbox (4.28745pt too wide) in paragraph at lines 579--580
+Overfull \hbox (4.28745pt too wide) in paragraph at lines 577--578
 []\OT1/cmr/m/n/10 For $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/1
 0 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []$\OT1/cmr/m/n/10 , we 
 have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m/it/10 ^^Z\OT1/cmr/m/
@@ -410,21 +410,21 @@ n/10 )\OML/cmm/m/it/10 ^^V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (1.86395pt too wide) in paragraph at lines 600--605
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 598--603
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (1.86395pt too wide) in paragraph at lines 609--615
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 607--613
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 [11]
-Overfull \hbox (21.52367pt too wide) in paragraph at lines 654--655
+Overfull \hbox (21.52367pt too wide) in paragraph at lines 652--653
 []\OT1/cmr/m/n/10 For $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
 10 v[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^T [] ^^T []
 $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
@@ -433,14 +433,14 @@ $\OT1/cmr/m/n/10 , we have $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (1 + \OML/cmm/m
  []
 
 
-Overfull \hbox (10.20413pt too wide) in paragraph at lines 669--671
+Overfull \hbox (10.20413pt too wide) in paragraph at lines 667--669
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
  []
 
 [12]
-Overfull \hbox (1.86395pt too wide) in paragraph at lines 705--706
+Overfull \hbox (1.86395pt too wide) in paragraph at lines 703--704
 []\OT1/cmr/m/n/10 Thus, we sub-sti-tute $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 
 ! []$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n
 /10 , $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ! []$\OT1/cmr/m/n/10 ,
@@ -473,7 +473,7 @@ sila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
 Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
 .pfb><C:/Users/isila/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on cases.pdf (15 pages, 167289 bytes).
+Output written on cases.pdf (15 pages, 167357 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
