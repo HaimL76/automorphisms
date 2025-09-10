@@ -643,13 +643,14 @@ $v_4\rightarrow{a+b}$, and compute series with the new variables as indices, whe
 \subsection{Sub case 8.2}
 
 $-v_2-v_3<{v_4-v_1-v_2}\Rightarrow{-v_3<{v_4-v_1}}\Rightarrow{v_1<{v_3+v_4}}$
-
+\begin{enumerate}
+    \item 
 For $v_{11}\geq{-v_2}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=p^{v_2}(1+v_4\rho).$
-
+\item 
 For $v_4-v_1-v_2\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{v_4-v_1-v_2}^{-v_2-1}p^{v_2}\rho(1+v_4\rho)=p^{v_2}((v_1-v_4)\rho+(v_1-v_4)v_4\rho^2).$
-
+\item 
 For $-v_2-v_3\leq{v_{11}}\leq{v_4-v_1-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_3}^{v_4-v_1-v_2-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_3+v_4-v_1}p^{v_2}\rho(1+(v_4-i))\rho)=p^{v_2}((v_3+v_4-v_1)\rho+(v_3+v_4-v_1)v_4\rho^2-\binom{v_3+v_4-v_1+1}{2}\rho^2).$
-
+\end{enumerate}
 So we have $\sum_{v_{11}\geq{-v_2-v_3}}\rho(1+\alpha\rho)=p^{v_2}(
 1+v_4\rho+(v_1-v_4)\rho+(v_1-v_4)v_4\rho^2+
 (v_3+v_4-v_1)\rho+(v_3+v_4-v_1)v_4\rho^2-\frac{(v_3+v_4-v_1+1)(v_3+v_4-v_1)}{2}\rho^2)=p^{v_2}(1+v_3\rho+v_4\rho-\frac{v_3^2}{2}\rho^2+v_1v_3\rho^2-\frac{v_4^2}{2}\rho^2+v_1v_4\rho^2-\frac{v_1^2}{2}\rho^2-v_3\rho^2-v_4\rho^2+v_1\rho^2)$.
@@ -687,7 +688,7 @@ But $v_3+v_4-d-c-b=v_3\Rightarrow{v_4=b+c+d}.$
 
 Thus, we substitute $v_1\rightarrow{a+2b+c+d}$, $v_2\rightarrow{a+2b+2c+d}$, $v_3\rightarrow{a+b+c+d}$, $v_4\rightarrow{b+c+d}$, and compute series with the new variables as indices, where $a,b\geq{0}$ and $c,d\geq{1}$
     \item 
-$v_2\overset{d}{>}v_3+v_4\overset{c}{>}v_1\overset{b}{\geq}{v_4}\overset{a}{>}v_3\overset{e}{\geq}{0}$
+$v_2\overset{d}{\geq}v_3+v_4\overset{c}{>}v_1\overset{b}{\geq}{v_4}\overset{a}{>}v_3\overset{e}{\geq}{0}$
 
 But $v_3+v_4-c-b=v_4\Rightarrow{v_3=b+c}.$
 
@@ -760,7 +761,7 @@ $v_2+v_3>v_1\geq{v_3}\geq{v_4}>v_2\geq{0}$ (2.2.1)
 
     $v_2>v_1\geq{v_3+v_4}\geq{v_4}>v_3\geq{0}$ (8.1.7)
 
-    $v_2>v_3+v_4>v_1\geq{v_4}>v_3\geq{0}$ (8.2.6)
+    $v_2\geq{v_3+v_4}>v_1\geq{v_4}>v_3\geq{0}$ (8.2.6)
 
     $v_3+v_4\geq{v_2}>v_1\geq{v_4}>v_3\geq{0}$ (8.2.4)
 
