@@ -34,7 +34,7 @@ For $-v_1\leq{v_{11}}\leq{-v_2-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\
 \item
 For $-v_2-v_1\leq{v_{11}}\leq{-v_1-1}$, we have $p^{\min}(1+\alpha\rho)\mu(a_{11})=\sum_{-v_2-v_1}^{-v_1-1}p^{v_2}\rho(1+\alpha\rho)=\sum_{i=1}^{v_2}p^{v_2}\rho(1+(v_2-i)\rho)=p^{v_2}v_2\rho+p^{v_2}v_2^2\rho^2-p^{v_2}\binom{v_2+1}{2}\rho^2.$
 \end{enumerate}
-So we have $\sum_{v_{11}\geq{-v_2-v_1}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+v_2(v_1-v_2)\rho^2+v_2\rho+v_2^2\rho^2-\frac{(v_2+1)v_2}{2}\rho^2)=p^{v_2}(1+v_1\rho+v_2v_1\rho^2+v_2\rho-\frac{v_2^2}{2}\rho^2-\frac{v_2}{2}\rho^2).$
+So we have $\sum_{v_{11}\geq{-v_2-v_1}}=p^{v_2}(1+v_2\rho+(v_1-v_2)\rho+v_2(v_1-v_2)\rho^2+v_2\rho+v_2^2\rho^2-\frac{(v_2+1)v_2}{2}\rho^2)=p^{v_2}(1+v_1\rho+v_2\rho+v_2v_1\rho^2-\frac{v_2^2}{2}\rho^2-\frac{v_2}{2}\rho^2).$
 We compute the differences between $v_1,v_2,v_3,v_4$,
 
 $v_3\overset{d}{>}v_1\overset{c}{\geq}{v_4}\overset{b}>v_2\overset{a}{\geq}{0}$
@@ -442,7 +442,7 @@ $v_3\rightarrow{c+d}$,
 $v_4\rightarrow{a+b+2c+d}$, and compute series with the new variables as indices, where $a,d\geq{0}$ and $b,c\geq{1}$
 \end{enumerate}
 \section{Case 5}
-$v_2\geq{v_4}>v_1>v_3\geq{0}$
+$v_2\geq{v_4}>v_1\geq{v_3}\geq{0}$
 
 $\Rightarrow{v_{11}}\geq{-v_2-v_3}$
 
@@ -852,5 +852,39 @@ But \[(\sum_{a\geq{0}}x^a)''=[\frac{1}{(1-x)^2}]'=((1-x)^{-2})'=-2\cdot(1-x)^-3\
 
 \[
 \textcolor{blue}{\sum_{a\geq{1}}a^2x^a}=\sum_{a\geq{0}}a^2x^a-0^2x^0=\sum_{a\geq{0}}a^2x^a=\textcolor{blue}{\frac{x^2+x}{(1-x)^3}}
+\]
+
+\textbf{Case 1}
+
+$f(v_1,v_2,v_3,v_4)=p^{7v_1+11v_2+11v_3+8v_4}t^{4v_1+6v_2+6v_3+4v_4}$
+
+$g(v_1,v_2,v_3,v_4)=1+v_1\rho+v_2\rho+v_2v_1\rho^2-\frac{v_2^2}{2}\rho^2-\frac{v_2}{2}\rho^2$.
+
+$v_1\rightarrow{a+b+c},
+v_2\rightarrow{a},
+v_3\rightarrow{a+b+c+d},
+v_4\rightarrow{a+b}$.
+
+$a,c\geq{0}$, $b,d\geq{1}$.
+
+$f(a,b,c,d)=(p^{37}t^{20})^a(p^{26}t^{14})^b(p^{18}t^{10})^c(p^{11}t^{6})^d=x_0^ax_1^bx_2^cx_3^d$.
+
+$g(a,b,c,d)=1+(2a+b+c)\rho+(\frac{a^2}{2}+ab+ac-\frac{a}{2})\rho^2$.
+
+\[(fg)(a,b,c,d)=\]\[=
+\frac{x_1x_3}{(1-x_0)(1-x_1)(1-x_2)(1-x_3)}+\]
+\[+\frac{2\rho{x_0}x_1x_3}{(1-x_0)^2(1-x_1)(1-x_2)(1-x_3)}+
+\]
+\[+\frac{\rho{x_1}x_3}{(1-x_0)(1-x_1)^2(1-x_2)(1-x_3)}+
+\]
+\[+\frac{\rho{x_2}x_1x_3}{(1-x_0)(1-x_1)(1-x_2)^2(1-x_3)}+
+\]
+\[+\frac{\rho^2(x_0^2+x_0)x_1x_3}{2(1-x_0)^3(1-x_1)(1-x_2)(1-x_3)}+
+\]
+\[+\frac{\rho^2x_0x_1x_3}{(1-x_0)^2(1-x_1)^2(1-x_2)(1-x_3)}+
+\]
+\[+\frac{\rho^2x_0x_2x_1x_3}{(1-x_0)^2(1-x_1)(1-x_2)^2(1-x_3)}-
+\]
+\[-\frac{\rho^2x_0x_1x_3}{2(1-x_0)^2(1-x_1)(1-x_2)(1-x_3)}
 \]
 \end{document}
